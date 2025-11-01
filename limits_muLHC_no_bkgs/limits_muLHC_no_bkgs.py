@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#
+# python3.10 limits_muLHC_no_bkgs_v2.py  --lumi-fb 1000 --aeps 1.0  --make-plots --make-counting-limits --make-shape-limits --outdir out_muLHC
+#
+
 # =============================================================================
 # γγ → W⁺W⁻ @ μLHC (semi-leptonic) — SM vs EFT (f = ±1 TeV⁻⁴)
 # Ready-to-run with only:
-#   python3 limits_muLHC_no_bkgs.py --lumi-fb 1000 --aeps 1.0 \
+#   python3.10 limits_muLHC_no_bkgs_v2.py --lumi-fb 1000 --aeps 1.0 \
 #       --make-plots --make-counting-limits --make-shape-limits --outdir out_muLHC
 #
 # Features:
 #   * Uses your default LHE paths (can override via CLI)
-#   * Reads σ(pb) from each LHE <init> block automatically
+#   * Reads σ(pb) from each LHE banner (<MGGenerationInfo>: Integrated weight (pb))
+#     and falls back to a strict <init> parser if the banner is missing
 #   * Detects beams (μ, p) from <init> and builds the label (Eμ, Ep)
 #   * Correct Δηjj and lepton centrality Cℓ, Cℓ^exp
 #   * Robust per-event init of W candidates; jet-pairing near mW
@@ -19,19 +24,22 @@
 # =============================================================================
 
 
-import argparse, gzip, io, math, os, sys, json
+
+import argparse, gzip, io, math, os, json
 from typing import List, Tuple, Optional
 import numpy as np
 import matplotlib.pyplot as plt
 import mplhep as hep
-
-# PyROOT for 4-vectors
 import ROOT
+
 
 hep.style.use("CMS")
 
+
 MW = 80.4  # GeV
 PB_TO_FB = 1e3
+
+
 
 # --------------------------
 # Paths (defaults to your samples; CLI can override)
@@ -39,6 +47,9 @@ PB_TO_FB = 1e3
 DEFAULT_LHE_SM = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww_semi_leptonic/Events/run_01/muLHC_SM_aa_ww_semi_leptonic.lhe"
 DEFAULT_LHE_P  = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_01/muLHC_EFT_aa_ww_semi_leptonic.lhe"
 DEFAULT_LHE_M  = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_02/muLHC_EFT_aa_ww_semi_leptonic.lhe"
+
+
+
 
 # --------------------------
 # I/O helpers
@@ -50,38 +61,64 @@ def open_any(path: str):
 
 def read_lhe_xsec_and_beams(path: str):
     """
-    Returns (xsec_pb, (id1,id2,E1_GeV,E2_GeV)).
-    Sums xsec over all nprup subprocesses.
+    Robustly return (xsec_pb, (id1,id2,E1_GeV,E2_GeV)).
+
+    Strategy:
+      1) Prefer banner <MGGenerationInfo>: a line like "Integrated weight (pb)  :  <value>"
+      2) Fallback to <init>:
+         - Read header: idbmup1 idbmup2 ebmup1 ebmup2 pdfgup1 pdfgup2 idwtup nprup
+         - Sum XSECUP over the next exactly nprup lines (first token), accepting D/E exponents.
+
+    Notes:
+      * This addresses the previous bug where unrelated large integers were mixed into σ.
     """
-    xsec_sum = 0.0
+    # 1) Try banner first
+    xs_banner = None
+    with open_any(path) as f:
+        for line in f:
+            if "Integrated weight (pb)" in line:
+                try:
+                    xs_banner = float(line.split(":")[-1].strip())
+                except Exception:
+                    xs_banner = None
+                break  # first occurrence is enough
+
+    # 2) Parse beams and (if needed) <init> σ
     id1 = id2 = None
     E1 = E2 = None
+    xs_init = None
     with open_any(path) as f:
-        lines = iter(f)
-        for line in lines:
+        it = iter(f)
+        for line in it:
             if "<init>" in line:
-                # first numeric line: idbmup1 idbmup2 ebmup1 ebmup2 pdfgup1 pdfgup2 idwtup nprup
+                # Next non-empty numeric header: id1 id2 E1 E2 pdf1 pdf2 idwt nprup
                 header = ""
                 while True:
-                    header = next(lines).strip()
-                    if header and header[0].isdigit() or header.startswith("-"):
+                    header = next(it).strip()
+                    if header and (header[0].isdigit() or header[0] == "-"):
                         break
                 parts = header.split()
-                if len(parts) < 8:
-                    break
-                id1, id2 = int(parts[0]), int(parts[1])
-                E1, E2 = float(parts[2]), float(parts[3])
-                nprup = int(parts[7])
-                # next nprup lines: xsecup xerrup xmaxup lprup
-                for _ in range(nprup):
-                    l = next(lines).strip()
-                    # skip comments within init if any
-                    while l == "" or (not l[0].isdigit() and l[0] != "-"):
-                        l = next(lines).strip()
-                    xs = float(l.split()[0])
-                    xsec_sum += xs
+                if len(parts) >= 8:
+                    id1, id2 = int(parts[0]), int(parts[1])
+                    E1, E2   = float(parts[2]), float(parts[3])
+                    nprup    = int(parts[7])
+                    s = 0.0
+                    # Exactly nprup subprocess lines: take the first token (XSECUP)
+                    for _ in range(nprup):
+                        l = next(it).strip()
+                        while not l or (not l[0].isdigit() and l[0] != "-"):
+                            l = next(it).strip()
+                        tok0 = l.replace("D", "E").split()[0]
+                        s += float(tok0)
+                    xs_init = s
                 break
-    return xsec_sum, (id1, id2, E1, E2)
+
+    # Prefer banner σ; otherwise use <init>; error if neither found
+    if xs_banner is not None:
+        return xs_banner, (id1, id2, E1, E2)
+    if xs_init is not None:
+        return xs_init, (id1, id2, E1, E2)
+    raise RuntimeError(f"Could not find cross section in {path}")
 
 def label_from_beams(info, fallback="μLHC @ Eμ=1 TeV, Ep=7 TeV"):
     id1, id2, E1, E2 = info
@@ -95,6 +132,9 @@ def label_from_beams(info, fallback="μLHC @ Eμ=1 TeV, Ep=7 TeV"):
     except Exception:
         pass
     return fallback
+
+
+
 
 # --------------------------
 # Physics/util helpers
@@ -125,6 +165,8 @@ def q_asimov(mu, mu0):
     if mu <= 0 or mu0 <= 0:
         return float("inf")
     return 2.0*(mu - mu0 + mu0*math.log(mu0/mu))
+
+
 
 def interval_asimov_exact(c, A, B, L_fb, Aeps, q_target=3.84, f_scan=300.0):
     """Two-sided 95% CL for σ(f)=c+Af+Bf² using Asimov q."""
@@ -160,6 +202,8 @@ def interval_asimov_exact(c, A, B, L_fb, Aeps, q_target=3.84, f_scan=300.0):
 
     return f_minus, f_plus
 
+
+
 def build_shape_coeffs(edges, y_sm, y_p, y_m, f0, Wmin=0.0, Wmax=None):
     if Wmax is None: Wmax = edges[-1]
     lo = edges[:-1]; hi = edges[1:]
@@ -169,12 +213,15 @@ def build_shape_coeffs(edges, y_sm, y_p, y_m, f0, Wmin=0.0, Wmax=None):
     γ_full = (np.asarray(y_p)[mask] + np.asarray(y_m)[mask] - 2.0*np.asarray(y_sm)[mask])/(2.0*f0*f0)
     widths = (hi - lo)[mask].copy()
     # adjust partial first bin if Wmin cuts inside
-    i0 = np.argmax(mask)
-    if lo[i0] < Wmin < hi[i0]:
-        frac = (hi[i0]-Wmin)/(hi[i0]-lo[i0])
-        widths[0] *= frac
+    if mask.any():
+        i0 = np.argmax(mask)
+        if lo[i0] < Wmin < hi[i0]:
+            frac = (hi[i0]-Wmin)/(hi[i0]-lo[i0])
+            widths[0] *= frac
     α = np.clip(α_full, 1e-18, None)
     return α, β_full, γ_full, widths
+
+
 
 def asimov_shape_interval(α, β, γ, widths, L_fb, Aeps, q_target=3.84, f_scan=1e3):
     const = L_fb * Aeps * 1000.0
@@ -208,6 +255,9 @@ def asimov_shape_interval(α, β, γ, widths, L_fb, Aeps, q_target=3.84, f_scan=
         else: fhi = mid
     fl = -0.5*(flo+fhi)
     return fl, fr
+
+
+
 
 # --------------------------
 # LHE parsing to observables
@@ -317,6 +367,8 @@ def parse_lhe_file(path: str):
 
     return {k: np.asarray(v, dtype=float) for k, v in out.items()}
 
+
+
 # --------------------------
 # Differential spectra helper
 # --------------------------
@@ -324,6 +376,8 @@ def make_dsigma(arr, xs_pb, nbins, r):
     counts, edges = safe_hist(arr, nbins, r)
     width = (r[1] - r[0]) / nbins
     return edges[:-1], dsigma_from_counts(counts, xs_pb, int(arr.size), width)
+
+
 
 # --------------------------
 # Plot helpers
@@ -333,6 +387,7 @@ def style():
     plt.legend()
     plt.tight_layout()
 
+
 # --------------------------
 # Main
 # --------------------------
@@ -341,7 +396,7 @@ def main():
     ap.add_argument("--lhe-sm", default=DEFAULT_LHE_SM)
     ap.add_argument("--lhe-plus", default=DEFAULT_LHE_P, help="EFT +f0 sample (f0=1 TeV^-4)")
     ap.add_argument("--lhe-minus", default=DEFAULT_LHE_M, help="EFT -f0 sample")
-    # xs are OPTIONAL now; if omitted, read from LHE <init>
+    # xs are OPTIONAL now; if omitted, read from LHE banner/<init>
     ap.add_argument("--xs-sm", type=float, default=None, help="σ_SM in pb (overrides LHE)")
     ap.add_argument("--xs-plus", type=float, default=None, help="σ(+f0) in pb (overrides LHE)")
     ap.add_argument("--xs-minus", type=float, default=None, help="σ(-f0) in pb (overrides LHE)")
@@ -389,6 +444,8 @@ def main():
     x_p,  y_mWW_p  = make_dsigma(D_p["mWW"],   xs_p,  NB, R_mWW)
     x_m,  y_mWW_m  = make_dsigma(D_m["mWW"],   xs_m,  NB, R_mWW)
 
+
+
     # --- Optional plots
     if args.make_plots:
         plt.figure(figsize=(8,6))
@@ -410,6 +467,8 @@ def main():
             "lumi_fb": args.lumi_fb, "aeps": args.aeps
         }
     }
+
+
 
     # --- Counting (tail σ)
     THRS = [400, 500, 600, 700, 800, 900, 1000, 1200, 1400]
@@ -454,16 +513,19 @@ def main():
     with open(os.path.join(args.outdir, "summary.json"), "w") as jf:
         json.dump(out_summary, jf, indent=2)
 
+
     # Console summary
     print("\n== Inputs ==")
     print(json.dumps(out_summary["inputs"], indent=2))
     if "counting_limits" in out_summary:
         print("\n== Counting limits (95% CL) ==")
         for r in out_summary["counting_limits"]:
-            print(f"Wmin={r['thr_GeV']:>4.0f} GeV :  f in [{r['f_lo_95CL']:.3g}, {r['f_hi_95CL']:.3g}]")
+            print(f"Wmin={r['thr_GeV']:>4.0f} GeV :  f in [{r['f_lo_95CL']:.5g}, {r['f_hi_95CL']:.5g}]")
     if "shape_best_interval" in out_summary and out_summary["shape_best_interval"]:
         b = out_summary["shape_best_interval"]
-        print(f"\n== Shape best window ==\nWmin={b['Wmin_GeV']} GeV :  f in [{b['f_lo_95CL']:.3g}, {b['f_hi_95CL']:.3g}]")
+        print(f"\n== Shape best window ==\nWmin={b['Wmin_GeV']} GeV :  f in [{b['f_lo_95CL']:.5g}, {b['f_hi_95CL']:.5g}]")
 
 if __name__ == "__main__":
     main()
+
+

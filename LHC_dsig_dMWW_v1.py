@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-μLHC γγ→W+W− : dσ/dM_WW (SM vs EFT) with CMS-style overlay+ratio and counts/dsig modes.
+LHC γγ→W+W− : dσ/dM_WW (SM vs EFT) with CMS-style overlay+ratio and counts/dsig modes.
 
 - Finds W+ (PDG=24) and W- (PDG=-24), computes M_WW per event.
 - Uses per-event weight XWGTUP when available; else σ_int / N from header (MG5 LO).
@@ -251,7 +251,7 @@ def plot_overlay_and_ratio(edges, y_sm, dy_sm, y_eft, dy_eft,
 # Main
 # -----------------------------
 def main():
-    ap = argparse.ArgumentParser(description="μLHC γγ→W+W− : M_WW spectra (SM vs EFT) with CMS-style overlay+ratio.")
+    ap = argparse.ArgumentParser(description="LHC γγ→W+W− : M_WW spectra (SM vs EFT) with CMS-style overlay+ratio.")
     ap.add_argument("sm_lhe",  help="SM LHE path")
     ap.add_argument("eft_lhe", help="EFT LHE path")
 
@@ -269,7 +269,7 @@ def main():
                     help="Use log scale on Y axis.")
     ap.add_argument("--out-prefix", default="mww_compare_muLHC_SM_vs_EFT",
                     help="Output prefix for .png/.pdf/.csv")
-    ap.add_argument("--title", default=r"μLHC: $p(\gamma)\otimes \mu(\gamma)\to W^+W^-$",
+    ap.add_argument("--title", default=r"LHC: $p(\gamma)\otimes p(\gamma)\to W^+W^-$",
                     help="Plot title.")
     ap.add_argument("--eft-text", default=r"$f_{M2}/\Lambda^4 = 1\ \mathrm{TeV}^{-4}$",
                     help="EFT tag to show in the info panel.")
@@ -371,8 +371,8 @@ def main():
 
     # Console summary
     Ns = len(Ms_sm); Ne = len(Ms_eft)
-    print(f"[μLHC] Events with W+W-: SM={Ns}, EFT={Ne}")
-    print(f"[μLHC] Header σ: SM={meta_sm.get('sigma_pb')} pb ; EFT={meta_eft.get('sigma_pb')} pb")
+    print(f"[LHC] Events with W+W-: SM={Ns}, EFT={Ne}")
+    print(f"[LHC] Header σ: SM={meta_sm.get('sigma_pb')} pb ; EFT={meta_eft.get('sigma_pb')} pb")
     ratio = None
     try:
         num = float(meta_eft.get("sigma_pb")) if meta_eft.get("sigma_pb") is not None else None
@@ -382,9 +382,9 @@ def main():
     except Exception:
         ratio = None
     if ratio is not None:
-        print(f"[μLHC] Header σ ratio (EFT/SM) = {ratio:.5f}")
+        print(f"[LHC] Header σ ratio (EFT/SM) = {ratio:.5f}")
     else:
-        print("[μLHC] Header σ ratio (EFT/SM) = n/a")
+        print("[LHC] Header σ ratio (EFT/SM) = n/a")
 
 if __name__ == "__main__":
     main()

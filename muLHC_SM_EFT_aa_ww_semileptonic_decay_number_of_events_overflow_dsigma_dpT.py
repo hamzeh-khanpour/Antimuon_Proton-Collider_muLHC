@@ -8,7 +8,7 @@ muLHC one-lepton + two-jet analysis with 'overflow -> last bin' folding.
 - Default yield mode: counts @ muLHC lumi = 1000 fb^-1
 
 Now also produces EFT/SM ratio plots with per-bin uncertainties (from sumw^2),
-and supports plotting in dsig/dX (pb/unit) via --yield-mode dsig.
+and supports plotting in dsig/dX (pb/GeV) via --yield-mode dsig.
 """
 
 import argparse
@@ -250,7 +250,7 @@ def save_plot_and_csv(x, y_sm, y_eft, edges, out_prefix: str, xlabel: str,
     plt.step(x_sm,  y_sm2,  where="post", label=sm_label,  linewidth=2.8, linestyle=sm_ls)
     plt.step(x_eft, y_eft2, where="post", label=eft_label, linewidth=2.8, linestyle=eft_ls)
     plt.xlabel(xlabel)
-    plt.ylabel("Events" if mode == "counts" else r"d$\sigma$/dX  [pb / unit]")
+    plt.ylabel("Events" if mode == "counts" else r"d$\sigma$/dX  [pb / GeV]")
     if logy:
         plt.yscale("log")
     plt.legend()
@@ -260,7 +260,7 @@ def save_plot_and_csv(x, y_sm, y_eft, edges, out_prefix: str, xlabel: str,
     if annotate_overflow:
         ax = plt.gca()
         ymax = ax.get_ylim()[1]
-        ax.text(edges[-1], 0.95*ymax, "overflow", rotation=90, va="top", ha="right", fontsize=18)
+        ax.text(edges[-1], 0.95*ymax, "overflow", rotation=90, va="top", ha="right", fontsize=30)
 
     plt.tight_layout()
     for ext in ("png", "pdf"):
@@ -350,13 +350,59 @@ def _report_last_bin(name, edges, y_sm, y_eft, mode, lumi_fb):
 def analyze_one_sample(path: str,
                        bins_lep=60, rng_lep=(0.0, 200.0),
                        bins_j =60, rng_j  =(0.0, 200.0),
-                       use_per_event_weights=True):
+                       use_per_event_weights=True,
+                       weight_source: str = "auto"):
     # header/meta
     text = read_file_text(path)
     meta = parse_header_metadata(text)
     sigma_pb = meta.get("sigma_pb") or 1.0
     nevt     = meta.get("nevents") or 1
     w_global = sigma_pb / nevt
+
+    # --- Minimal, robust weight selection (AUTO/HEADER/LHE), no physics changes
+    def _sample_xwgtup_median(p: str, max_ev: int = 200) -> Optional[float]:
+        vals = []
+        opener = gzip.open if p.endswith(".gz") else open
+        with opener(p, "rt", encoding="utf-8", errors="ignore") as f:
+            in_event = False; buf=[]
+            for line in f:
+                if "<event" in line:
+                    in_event = True; buf=[]; continue
+                if in_event:
+                    if "</event" in line:
+                        if buf:
+                            header = buf[0].strip().split()
+                            if len(header) >= 3:
+                                try:
+                                    vals.append(abs(float(header[2])))
+                                except Exception:
+                                    pass
+                        in_event = False
+                    else:
+                        buf.append(line)
+                if len(vals) >= max_ev:
+                    break
+        if not vals:
+            return None
+        arr = np.asarray(vals, float)
+        return float(np.median(arr))
+
+    if weight_source in ("header", "lhe"):
+        chosen_mode = weight_source
+        print(f"[weights] {path}: FORCED → {chosen_mode.upper()}")
+    else:
+        med = _sample_xwgtup_median(path, max_ev=200)
+        if med is None:
+            chosen_mode = "header"
+            print(f"[weights] {path}: AUTO→HEADER (no XWGTUP found); σ/N={w_global:g} pb/evt")
+        else:
+            ratio = med / (w_global if w_global > 0 else 1.0)
+            if 0.1 <= ratio <= 10.0:
+                chosen_mode = "lhe"
+                print(f"[weights] {path}: AUTO→LHE (median|XWGTUP|={med:g}, σ/N={w_global:g}, ratio≈{ratio:g})")
+            else:
+                chosen_mode = "header"
+                print(f"[weights] {path}: AUTO→HEADER (median|XWGTUP|={med:g}, σ/N={w_global:g}, ratio≈{ratio:g})")
 
     # observables
     pt_lep_vals, wts_lep = [], []
@@ -366,8 +412,14 @@ def analyze_one_sample(path: str,
     n_total = 0
     for w_ev, ev in parse_lhe_events_with_weights(path):
         n_total += 1
-        # weight choice
-        w = (w_ev if (use_per_event_weights and (w_ev is not None)) else w_global)
+        # weight choice (normalization fix only; physics unchanged)
+        if chosen_mode == "header":
+            w = w_global
+        elif chosen_mode == "lhe":
+            w = w_ev if (w_ev is not None) else w_global
+        else:
+            # legacy behavior if user explicitly relies on it
+            w = (w_ev if (use_per_event_weights and (w_ev is not None)) else w_global)
 
         lep = pick_hardest_lepton(ev)
         if lep is not None:
@@ -409,7 +461,7 @@ def main():
 
     # yields/units
     ap.add_argument("--yield-mode", choices=["dsig", "counts"], default="counts",
-                    help="Plot dsig/dX (pb/unit) or expected counts (needs lumi).")
+                    help="Plot dsig/dX (pb/GeV) or expected counts (needs lumi).")
     ap.add_argument("--lumi-fb", type=float, default=1000.0,
                     help="Integrated luminosity in fb^-1 for --yield-mode counts (default: 1000).")
     ap.add_argument("--logy", action=argparse.BooleanOptionalAction, default=False, help="log-scale y")
@@ -417,6 +469,8 @@ def main():
     # weights
     ap.add_argument("--use-per-event-weights", action=argparse.BooleanOptionalAction, default=True,
                     help="Use XWGTUP per-event weights when available (fallback to σ/nevt).")
+    ap.add_argument("--weight-source", choices=["auto","header","lhe"], default="auto",
+                    help="Per-event weights: 'header' uses σ/N; 'lhe' uses XWGTUP; 'auto' decides from a small sample.")
 
     # overflow controls (default ON)
     ap.add_argument("--overflow-lastbin-lep", action=argparse.BooleanOptionalAction, default=True,
@@ -438,13 +492,15 @@ def main():
         args.sm_lhe,
         bins_lep=args.bins_lep, rng_lep=tuple(args.range_lep),
         bins_j=args.bins_j, rng_j=tuple(args.range_j),
-        use_per_event_weights=args.use_per_event_weights
+        use_per_event_weights=args.use_per_event_weights,
+        weight_source=args.weight_source
     )
     eft = analyze_one_sample(
         args.eft_lhe,
         bins_lep=args.bins_lep, rng_lep=tuple(args.range_lep),
         bins_j=args.bins_j, rng_j=tuple(args.range_j),
-        use_per_event_weights=args.use_per_event_weights
+        use_per_event_weights=args.use_per_event_weights,
+        weight_source=args.weight_source
     )
 
     # compact banner

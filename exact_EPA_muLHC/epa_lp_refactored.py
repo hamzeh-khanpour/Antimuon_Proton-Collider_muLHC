@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # Elastic γγ luminosity S_γγ and σ(γγ→ττ) for lepton–proton (ℓ–p) with elastic proton EPA
-# Generalized from LHeC (e–p) to arbitrary lepton ℓ ∈ {e, μ}, with compare mode for LHeC vs μLHC.
+# Generalized from LHeC (e–p) to arbitrary lepton ℓ = {e, μ}, with compare mode for LHeC vs μLHC.
 # Original authorship & physics content: Hamzeh Khanpour, Laurent Forthomme, Krzysztof Piotrzkowski (Nov 2024)
-# Refactor by ChatGPT (Nov 2025) to support μ–p and CLI.
+# Refactor(Nov 2025) to support μ–p and CLI.
 
 import numpy as np
 import math
@@ -14,8 +14,9 @@ import argparse
 # ------------------------- Constants -------------------------
 ALPHA2PI = 7.2973525693e-3 / math.pi  # α/π
 pmass = 0.938272081   # Proton mass [GeV]
+
 # Lepton masses [GeV]
-MASS_E = 0.000510999
+MASS_E  = 0.000510999
 MASS_MU = 0.1056583755
 
 DEFAULT_Q2L_MAX = 10.0   # lepton-side Q^2 max [GeV^2]

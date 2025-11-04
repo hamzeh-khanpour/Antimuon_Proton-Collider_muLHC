@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-muLHC one-lepton + two-jet analysis with 'overflow -> last bin' folding.
+muLHC at 7.5 TeV one-lepton + two-jet analysis with 'overflow -> last bin' folding.
 
 - Inputs: two LHE files (SM, EFT)
 - Observables: pT(lepton), pT(j1), pT(j2)
@@ -255,7 +255,7 @@ def save_plot_and_csv(x, y_sm, y_eft, edges, out_prefix: str, xlabel: str,
         plt.yscale("log")
     plt.legend()
     plt.grid(True, which="both", alpha=0.3)
-    plt.title(rf"EL–EL: $\gamma\gamma$ @ muLHC @ 5.3 TeV @ $L={lumi_fb:g}\,\mathrm{{fb}}^{{-1}}$")
+    plt.title(rf"EL–EL: $\gamma\gamma$ @ muLHC @ 7.5 TeV @ $L={lumi_fb:g}\,\mathrm{{fb}}^{{-1}}$")
 
     if annotate_overflow:
         ax = plt.gca()
@@ -548,21 +548,21 @@ def main():
     Lfb  = args.lumi_fb
 
     save_plot_and_csv(c_lep, y_lep_sm, y_lep_eft, e_lep,
-                      "pt_lepton_muLHC_SM_vs_EFT",
+                      "pt_lepton_muLHC_SM_vs_EFT_at_7_5_TeV",
                       r"$p_T(\ell)$ [GeV]",
                       args.logy, label(sm["meta"], "SM"), label(eft["meta"], "EFT"),
                       sm_ls="--", eft_ls="-", mode=mode, lumi_fb=Lfb,
                       annotate_overflow=args.overflow_lastbin_lep)
 
     save_plot_and_csv(c_j1, y_j1_sm, y_j1_eft, e_j1,
-                      "pt_j1_muLHC_SM_vs_EFT",
+                      "pt_j1_muLHC_SM_vs_EFT_at_7_5_TeV",
                       r"$p_T(j_1)$ [GeV]",
                       args.logy, label(sm["meta"], "SM"), label(eft["meta"], "EFT"),
                       sm_ls="--", eft_ls="-", mode=mode, lumi_fb=Lfb,
                       annotate_overflow=args.overflow_lastbin_j1)
 
     save_plot_and_csv(c_j2, y_j2_sm, y_j2_eft, e_j2,
-                      "pt_j2_muLHC_SM_vs_EFT",
+                      "pt_j2_muLHC_SM_vs_EFT_at_7_5_TeV",
                       r"$p_T(j_2)$ [GeV]",
                       args.logy, label(sm["meta"], "SM"), label(eft["meta"], "EFT"),
                       sm_ls="--", eft_ls="-", mode=mode, lumi_fb=Lfb,
@@ -570,11 +570,11 @@ def main():
 
     # ratio plots (EFT/SM) with uncertainties
     save_ratio_plot_csv(c_lep, e_lep, y_lep_sm, y_lep_eft, err_lep_sm, err_lep_eft,
-                        "pt_lepton_muLHC_SM_vs_EFT_ratio", r"$p_T(\ell)$ [GeV]", mode, Lfb)
+                        "pt_lepton_muLHC_SM_vs_EFT_ratio_at_7_5_TeV", r"$p_T(\ell)$ [GeV]", mode, Lfb)
     save_ratio_plot_csv(c_j1,  e_j1,  y_j1_sm,  y_j1_eft,  err_j1_sm,  err_j1_eft,
-                        "pt_j1_muLHC_SM_vs_EFT_ratio",     r"$p_T(j_1)$ [GeV]", mode, Lfb)
+                        "pt_j1_muLHC_SM_vs_EFT_rati_at_7_5_TeVo",     r"$p_T(j_1)$ [GeV]", mode, Lfb)
     save_ratio_plot_csv(c_j2,  e_j2,  y_j2_sm,  y_j2_eft,  err_j2_sm,  err_j2_eft,
-                        "pt_j2_muLHC_SM_vs_EFT_ratio",     r"$p_T(j_2)$ [GeV]", mode, Lfb)
+                        "pt_j2_muLHC_SM_vs_EFT_ratio_at_7_5_TeV",     r"$p_T(j_2)$ [GeV]", mode, Lfb)
 
     # after each plot: print last-bin (overflow-inclusive) summary
     _report_last_bin("pT(j1)", e_j1, y_j1_sm, y_j1_eft, mode, Lfb)

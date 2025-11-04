@@ -1,0 +1,42 @@
+
+muLHC
+
+python3.10 muLHC_dsig_dMWW_v1_at_7_5_TeV.py \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww/Events/run_02/muLHC_SM_aa_ww.lhe \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww/Events/run_02/muLHC_EFT_aa_ww.lhe \
+  --bins 60 --range 160 3600 --yield-mode dsig --logy \
+  --out-prefix muLHC_mww_compare_muLHC_SM_vs_EFT_dsig_logy_at_7_5_TeV
+
+
+
+python3.10 muLHC_dsig_dMWW_v1_at_7_5_TeV.py \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww/Events/run_02/muLHC_SM_aa_ww.lhe \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww/Events/run_02/muLHC_EFT_aa_ww.lhe \
+  --bins 60 --range 160 3600 --yield-mode counts --logy --lumi-fb 1   \
+  --out-prefix muLHC_mww_compare_muLHC_SM_vs_EFT_dsig_logy_counts_at_7_5_TeV
+
+
+
+
+
+
+
+muLHC  muLHC_SM_EFT_aa_ww_semileptonic_decay_number_of_events_overflow_dsigma_dpT_at_7_5_TeV.py  for  overflow bins
+
+
+python muLHC_SM_EFT_aa_ww_semileptonic_decay_number_of_events_overflow_dsigma_dpT_at_7_5_TeV.py   "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww_semi_leptonic/Events/run_02/muLHC_SM_aa_ww_semi_leptonic.lhe"   "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_03/muLHC_EFT_aa_ww_semi_leptonic.lhe"   --bins-lep 16 --range-lep 0 360 --bins-j 16 --range-j 0 360  --lumi-fb 100   --yield-mode counts  --logy --overflow-lastbin-all
+
+
+
+python muLHC_SM_EFT_aa_ww_semileptonic_decay_number_of_events_overflow_dsigma_dpT_at_7_5_TeV.py   "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww_semi_leptonic/Events/run_02/muLHC_SM_aa_ww_semi_leptonic.lhe"   "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_03/muLHC_EFT_aa_ww_semi_leptonic.lhe"   --bins-lep 16 --range-lep 0 360 --bins-j 16 --range-j 0 360   --yield-mode dsig --logy --no-overflow-lastbin-j1 --no-overflow-lastbin-j2 --no-overflow-lastbin-lep
+
+
+
+
+
+
+
+
+
+
+

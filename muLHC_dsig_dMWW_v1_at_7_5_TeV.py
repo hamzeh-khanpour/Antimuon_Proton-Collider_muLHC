@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-μLHC γγ→W+W− : dσ/dM_WW (SM vs EFT) with CMS-style overlay+ratio and counts/dsig modes.
+μLHC  at 7.5 TeV γγ→W+W− : dσ/dM_WW (SM vs EFT) with CMS-style overlay+ratio and counts/dsig modes.
 
 - Finds W+ (PDG=24) and W- (PDG=-24), computes M_WW per event.
 - Uses per-event weight XWGTUP when available; else σ_int / N from header (MG5 LO).
@@ -267,11 +267,11 @@ def main():
                     help="Integrated luminosity in fb^-1 (used only if --yield-mode counts).")
     ap.add_argument("--logy", action=argparse.BooleanOptionalAction, default=False,
                     help="Use log scale on Y axis.")
-    ap.add_argument("--out-prefix", default="mww_compare_muLHC_SM_vs_EFT",
+    ap.add_argument("--out-prefix", default="mww_compare_muLHC_SM_vs_EF_at_7_5_TeV",
                     help="Output prefix for .png/.pdf/.csv")
-    ap.add_argument("--title", default=r"μLHC: $p(\gamma)\otimes \mu(\gamma)\to W^+W^-$",
+    ap.add_argument("--title", default=r"μLHC@7.5TeV: $p(\gamma)\otimes \mu(\gamma)\to W^+W^-$",
                     help="Plot title.")
-    ap.add_argument("--eft-text", default=r"$f_{M2}/\Lambda^4 = 1\ \mathrm{TeV}^{-4}$",
+    ap.add_argument("--eft-text", default=r"$f_{M2}/\Lambda^4 = 0.1\ \mathrm{TeV}^{-4}$",
                     help="EFT tag to show in the info panel.")
     # NEW: choose per-event weight source (minimal change to fix normalization)
     ap.add_argument("--weight-source", choices=["auto","header","lhe"], default="auto",

@@ -255,7 +255,7 @@ def save_plot_and_csv(x, y_sm, y_eft, edges, out_prefix: str, xlabel: str,
         plt.yscale("log")
     plt.legend()
     plt.grid(True, which="both", alpha=0.3)
-    plt.title(rf"EL–EL: $\gamma\gamma$ @ muLHC @ 5.3 TeV @ $L={lumi_fb:g}\,\mathrm{{fb}}^{{-1}}$")
+    plt.title(rf"EL–EL: $\gamma\gamma$ @ muLHC @ 7.5 TeV @ $L={lumi_fb:g}\,\mathrm{{fb}}^{{-1}}$")
 
     if annotate_overflow:
         ax = plt.gca()

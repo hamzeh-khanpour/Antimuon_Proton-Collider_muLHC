@@ -33,6 +33,10 @@ python muLHC_SM_EFT_aa_ww_semileptonic_decay_number_of_events_overflow_dsigma_dp
 
 
 
+python muLHC_SM_EFT_aa_ww_semileptonic_decay_number_of_events_overflow_dsigma_dpT_at_7_5_TeV_pt_lepton_cut.py   "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww_semi_leptonic/Events/run_02/muLHC_SM_aa_ww_semi_leptonic.lhe"   "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_03/muLHC_EFT_aa_ww_semi_leptonic.lhe"   --bins-lep 16 --range-lep 0 600 --bins-j 16 --range-j 0 600   --yield-mode dsig --logy  --lumi-fb 1    --no-overflow-lastbin-j1 --no-overflow-lastbin-j2 --no-overflow-lastbin-lep --pt-lepton 250
+
+
+
 
 
 

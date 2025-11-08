@@ -23,6 +23,12 @@ warnings.filterwarnings(
     "ignore", message="This figure includes Axes that are not compatible with tight_layout")
 import matplotlib.pyplot as plt
 
+
+
+#import matplotlib as mpl
+#mpl.rcParams['legend.fontsize'] = 30
+
+
 # Try to use mplhep "CMS" style; fall back silently if not installed.
 try:
     import mplhep as hep
@@ -159,10 +165,10 @@ def annotate_panel(ax,
                    xs_gen_sm: float, xs_gen_eft: float,
                    xs_fid_sm: float, xs_fid_eft: float,
                    eft_text: Optional[str] = r"$f_{M2}/\Lambda^4 = 1\ \mathrm{TeV}^{-4}$"):
-    txt = (rf"SM:  $\sigma_{{gen}}={xs_gen_sm:.3g}\ \mathrm{{pb}}$,  "
-           rf"$\sigma_{{fid}}={xs_fid_sm:.3g}\ \mathrm{{pb}}$" "\n"
-           rf"EFT: $\sigma_{{gen}}={xs_gen_eft:.3g}\ \mathrm{{pb}}$,  "
-           rf"$\sigma_{{fid}}={xs_fid_eft:.3g}\ \mathrm{{pb}}$" "\n"
+    txt = (rf"SM:  $\sigma_{{gen}}={xs_gen_sm:.3g}\ \mathrm{{pb}}$,  " "\n"
+#           rf"$\sigma_{{fid}}={xs_fid_sm:.3g}\ \mathrm{{pb}}$" "\n"
+           rf"EFT: $\sigma_{{gen}}={xs_gen_eft:.3g}\ \mathrm{{pb}}$,  " "\n"
+#           rf"$\sigma_{{fid}}={xs_fid_eft:.3g}\ \mathrm{{pb}}$" "\n"
            + (eft_text or ""))
     ax.text(0.04, 0.3, txt, transform=ax.transAxes, va="top", ha="left",
             fontsize=18, bbox=dict(fc=(1,1,1,0), ec=(1,1,1,1), linewidth=2))
@@ -351,9 +357,16 @@ def main():
     centers, edges, y_sm,  dy_sm  = hist_weighted(Ms_sm,  w_sm,  args.bins, lo, hi)
     _,      _,     y_eft, dy_eft = hist_weighted(Ms_eft, w_eft, args.bins, lo, hi)
 
-    # Labels incl. header σ and N (CMS style)
-    sm_label  = make_label(meta_sm,  "SM")
-    eft_label = make_label(meta_eft, "EFT")
+    ## Labels incl. header σ and N (CMS style)
+    #sm_label  = make_label(meta_sm,  "SM")
+    #eft_label = make_label(meta_eft, "EFT")
+
+
+
+    sm_label  = "SM"
+    eft_label = "EFT"
+
+
 
     # Pass σ_gen/σ_fid to the plot function via function attributes (simple thread-through)
     plot_overlay_and_ratio._xs_gen_sm  = meta_sm.get("sigma_pb")  or 0.0

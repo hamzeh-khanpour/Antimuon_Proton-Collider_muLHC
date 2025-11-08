@@ -80,7 +80,7 @@ Sig_mu_i = np.interp(W0_common, W0_mu, Sig_mu)
 np.savetxt(
     "exact_zz_cross_section_elastic_muLHC5_vs_muLHC7_CMS.txt",
     np.column_stack([W0_common, Sig_e_i, Sig_mu_i]),
-    header="W0 [GeV]\tSigma_muLHC@5.3 TeV [pb]\tSigma_muLHC@7.5 TeV [pb]",
+    header="W0 [GeV]\tSigma_muLHC@7.5 TeV [pb]\tSigma_muLHC@5.3 TeV [pb]",
     fmt="%.8e", delimiter="\t"
 )
 

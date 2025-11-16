@@ -19,7 +19,7 @@ hep.style.use("CMS")
 # ---------------- Load data ----------------
 # (Two-column text with a header line: W   Sgg)
 f_e  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-f_mu = "Sgg_elastic_mu_El1000_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_mu = "Sgg_elastic_mu_El600_Ep7000_q2lmax_8317_q2pmax_8317.txt"
 
 W_e,  S_e  = np.loadtxt(f_e,  unpack=True, comments="#")
 W_mu, S_mu = np.loadtxt(f_mu, unpack=True, comments="#")
@@ -42,7 +42,7 @@ ax.set_ylim(1.0e-7, 1.0e-1)
 ax.loglog(W_e,  S_e,  linestyle="--", linewidth=3.0,
           label=r"LHeC ($e$–p), $E_e=50$ GeV, $E_p=7$ TeV")
 ax.loglog(W_mu, S_mu, linestyle="-",  linewidth=3.0,
-          label=r"$\mu$LHC ($\mu$–p), $E_\mu=1000$ GeV, $E_p=7$ TeV")
+          label=r"$\mu$LHC ($\mu$–p), $E_\mu=600$ GeV, $E_p=7$ TeV")
 
 
 
@@ -58,7 +58,7 @@ ax.grid(True, which="both", linestyle="--", alpha=0.50)
 
 
 # Save & show
-plt.savefig("Sgg_elastic_LHeC_vs_muLHC_CMS.pdf")
-plt.savefig("Sgg_elastic_LHeC_vs_muLHC_CMS.png", dpi=300)
+plt.savefig("Sgg_elastic_LHeC_vs_muLHC_4TeV.pdf")
+plt.savefig("Sgg_elastic_LHeC_vs_muLHC_4TeV.png", dpi=300)
 plt.show()
 

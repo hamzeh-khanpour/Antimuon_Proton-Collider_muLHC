@@ -14,7 +14,7 @@ hep.style.use("CMS")
 
 # ----------------------- Inputs -----------------------
 f_LHeC  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-f_muLHC = "Sgg_elastic_mu_El1000_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_muLHC = "Sgg_elastic_mu_El600_Ep7000_q2lmax_8317_q2pmax_8317.txt"
 
 
 def load_sgg(fname):
@@ -93,7 +93,7 @@ Sig_mu_i = np.interp(W0_common, W0_mu, Sig_mu)
 
 # ---------------- Save table ----------------
 np.savetxt(
-    "exact_ww_cross_section_elastic_LHeC_vs_muLHC.txt",
+    "exact_ww_cross_section_elastic_LHeC_vs_muLHC_4TeV.txt",
     np.column_stack([W0_common, Sig_e_i, Sig_mu_i]),
     header="W0 [GeV]\tSigma_LHeC [pb]\tSigma_muLHC [pb]",
     fmt="%.8e", delimiter="\t"
@@ -114,7 +114,7 @@ ax.loglog(W0_common, Sig_e_i,
           label=r"LHeC (e–p), $E_e=50$ GeV, $E_p=7$ TeV",
           linestyle="--", linewidth=4)
 ax.loglog(W0_common, Sig_mu_i,
-          label=r"$\mu$LHC ($\mu$–p), $E_\mu=1000$ GeV, $E_p=7$ TeV",
+          label=r"$\mu$LHC ($\mu$–p), $E_\mu=600$ GeV, $E_p=7$ TeV",
           linestyle="solid", linewidth=4)
 
 
@@ -129,6 +129,6 @@ ax.legend(title=r"Elastic ($Q^2_\ell<M_Z^2$ GeV$^2$, $Q^2_p<M_Z^2$ GeV$^2$)", lo
 ax.grid(True, which="both", linestyle="--", alpha=0.45)
 
 
-plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_CMS.pdf")
-plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_CMS.png", dpi=300)
+plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_4TeV.pdf")
+plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_4TeV.png", dpi=300)
 plt.show()

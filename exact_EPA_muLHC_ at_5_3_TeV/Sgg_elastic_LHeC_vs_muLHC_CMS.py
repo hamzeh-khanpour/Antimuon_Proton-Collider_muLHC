@@ -18,12 +18,14 @@ hep.style.use("CMS")
 
 # ---------------- Load data ----------------
 # (Two-column text with a header line: W   Sgg)
-f_e  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-f_mu = "Sgg_elastic_mu_El600_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_LHec  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_muLHC = "Sgg_elastic_mu_El600_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_FCCmuh = "FCC_muh_Sgg_elastic_mu_El500_Ep50000_q2lmax_8317_q2pmax_8317.txt"
 
-W_e,  S_e  = np.loadtxt(f_e,  unpack=True, comments="#")
-W_mu, S_mu = np.loadtxt(f_mu, unpack=True, comments="#")
 
+W_LHeC,  S_LHeC  = np.loadtxt(f_LHec,  unpack=True, comments="#")
+W_muLHC, S_muLHC = np.loadtxt(f_muLHC, unpack=True, comments="#")
+W_FCCmuh, S_FCCmuh = np.loadtxt(f_FCCmuh, unpack=True, comments="#")
 
 
 # ---------------- Plot ----------------
@@ -39,11 +41,12 @@ ax.set_ylim(1.0e-7, 1.0e-1)
 
 
 # Curves (solid vs dashed for clear comparison)
-ax.loglog(W_e,  S_e,  linestyle="--", linewidth=3.0,
+ax.loglog(W_LHeC,  S_LHeC,  linestyle="--", linewidth=3.0,
           label=r"LHeC ($e$–p), $E_e=50$ GeV, $E_p=7$ TeV")
-ax.loglog(W_mu, S_mu, linestyle="-",  linewidth=3.0,
-          label=r"$\mu$LHC ($\mu$–p), $E_\mu=600$ GeV, $E_p=7$ TeV")
-
+ax.loglog(W_muLHC, S_muLHC, linestyle="-",  linewidth=3.0,
+          label=r"LH$\mu$C ($\mu$–p), $E_\mu=500$ GeV, $E_p=7$ TeV")
+ax.loglog(W_FCCmuh, S_FCCmuh, linestyle="-",  linewidth=3.0,
+          label=r"FCC_$\mu$h ($\mu$–p), $E_\mu=500$ GeV, $E_p=50$ TeV")
 
 
 # Labels and legend (same wording/units as your JHEP-style plots)
@@ -58,7 +61,7 @@ ax.grid(True, which="both", linestyle="--", alpha=0.50)
 
 
 # Save & show
-plt.savefig("Sgg_elastic_LHeC_vs_muLHC_4TeV.pdf")
-plt.savefig("Sgg_elastic_LHeC_vs_muLHC_4TeV.png", dpi=300)
+plt.savefig("Sgg_elastic_LHeC_vs_muLHC_FCCmuh.pdf")
+plt.savefig("Sgg_elastic_LHeC_vs_muLHC_FCCmuh.png", dpi=300)
 plt.show()
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Compare integrated σ(γγ→ZZ; W>W0) using ELASTIC photon–photon luminosities
-# LHeC (e–p, Ee=50 GeV, Ep=7 TeV) vs μLHC (μ–p, Eμ=1000 GeV, Ep=7 TeV)
+# LHeC (e–p, Ee=50 GeV, Ep=7 TeV) vs μLHC (μ–p, Eμ=500 GeV, Ep=7 TeV) vs FCC-μH (μ–p, Eμ=500 GeV, Ep=50 TeV)
 # Styling matches your WW plot: CMS, margins, log–log. ZZ threshold W_thr = 2 mZ ≈ 182.4 GeV.
 
 import numpy as np
@@ -12,9 +12,9 @@ hep.style.use("CMS")
 # plt.style.use(hep.style.ROOT)
 
 # ----------------------- Inputs -----------------------
-f_LHeC  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-f_muLHC = "Sgg_elastic_mu_El1000_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-
+f_LHeC   = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_muLHC  = "Sgg_elastic_mu_El500_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_FCCmuh = "FCC_muh_Sgg_elastic_mu_El500_Ep50000_q2lmax_8317_q2pmax_8317.txt"
 
 def load_sgg(fname):
     arr = np.loadtxt(fname, comments="#")
@@ -23,9 +23,9 @@ def load_sgg(fname):
     i = np.argsort(W)
     return W[i], S[i]
 
-
-W_e,  S_e  = load_sgg(f_LHeC)
-W_mu, S_mu = load_sgg(f_muLHC)
+W_e,   S_e   = load_sgg(f_LHeC)
+W_mu,  S_mu  = load_sgg(f_muLHC)
+W_FCC, S_FCC = load_sgg(f_FCCmuh)
 
 # ---------------- γγ → ZZ σ(W) in pb (vectorized fit; 0 below threshold) ----------------
 def cs_zz_W(W):
@@ -64,23 +64,26 @@ def integrate_sigma(W, S):
         Sig[k] = acc
     return W0, Sig
 
-W0_e,  Sig_e  = integrate_sigma(W_e,  S_e)
-W0_mu, Sig_mu = integrate_sigma(W_mu, S_mu)
+W0_e,   Sig_e   = integrate_sigma(W_e,   S_e)
+W0_mu,  Sig_mu  = integrate_sigma(W_mu,  S_mu)
+W0_FCC, Sig_FCC = integrate_sigma(W_FCC, S_FCC)
 
 # ---------------- Common W0 grid ----------------
-mZ = 91.186
+mZ   = 91.186
 Wthr = 2.0*mZ
-Wmin = max(Wthr, W0_e.min(), W0_mu.min(), 200.0)   # follow your previous ZZ x-range start
-Wmax = min(1000.0, W0_e.max(), W0_mu.max())
+Wmin = max(Wthr, W0_e.min(), W0_mu.min(), W0_FCC.min(), 200.0)   # follow your previous ZZ x-range start
+Wmax = min(1000.0, W0_e.max(), W0_mu.max(), W0_FCC.max())
 W0_common = np.logspace(np.log10(Wmin), np.log10(Wmax), 500)
-Sig_e_i  = np.interp(W0_common, W0_e,  Sig_e)
-Sig_mu_i = np.interp(W0_common, W0_mu, Sig_mu)
+
+Sig_e_i   = np.interp(W0_common, W0_e,   Sig_e)
+Sig_mu_i  = np.interp(W0_common, W0_mu,  Sig_mu)
+Sig_FCC_i = np.interp(W0_common, W0_FCC, Sig_FCC)
 
 # ---------------- Save table ----------------
 np.savetxt(
-    "exact_zz_cross_section_elastic_LHeC_vs_muLHC.txt",
-    np.column_stack([W0_common, Sig_e_i, Sig_mu_i]),
-    header="W0 [GeV]\tSigma_LHeC [pb]\tSigma_muLHC [pb]",
+    "exact_zz_cross_section_elastic_LHeC_vs_muLHC_FCCmuh.txt",
+    np.column_stack([W0_common, Sig_e_i, Sig_mu_i, Sig_FCC_i]),
+    header="W0 [GeV]\tSigma_LHeC [pb]\tSigma_muLHC [pb]\tSigma_FCCmuh [pb]",
     fmt="%.8e", delimiter="\t"
 )
 
@@ -97,8 +100,11 @@ ax.loglog(W0_common, Sig_e_i,
           label=r"LHeC (e–p), $E_e=50$ GeV, $E_p=7$ TeV",
           linestyle="--", linewidth=4)
 ax.loglog(W0_common, Sig_mu_i,
-          label=r"$\mu$LHC ($\mu$–p), $E_\mu=1000$ GeV, $E_p=7$ TeV",
+          label=r"$\mu$LHC ($\mu$–p), $E_\mu=500$ GeV, $E_p=7$ TeV",
           linestyle="solid", linewidth=4)
+ax.loglog(W0_common, Sig_FCC_i,
+          label=r"FCC-$\mu$H ($\mu$–p), $E_\mu=500$ GeV, $E_p=50$ TeV",
+          linestyle=":", linewidth=4)
 
 ax.set_xlabel(r"$W_0$ [GeV]")
 ax.set_ylabel(r"$\sigma(\gamma\gamma\to ZZ;\, W>W_0)$  [pb]")
@@ -108,6 +114,6 @@ ax.legend(title=r"Elastic ($Q^2_\ell<M_Z^2$ GeV$^2$, $Q^2_p<M_Z^2$ GeV$^2$)", lo
 
 ax.grid(True, which="both", linestyle="--", alpha=0.45)
 
-plt.savefig("exact_zz_cross_section_elastic_LHeC_vs_muLHC_CMS.pdf")
-plt.savefig("exact_zz_cross_section_elastic_LHeC_vs_muLHC_CMS.png", dpi=300)
+plt.savefig("exact_zz_cross_section_elastic_LHeC_vs_muLHC_FCCmuh.pdf")
+plt.savefig("exact_zz_cross_section_elastic_LHeC_vs_muLHC_FCCmuh.png", dpi=300)
 plt.show()

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-# Compare elastic S_γγ(W): LHeC (e–p) vs μLHC (μ–p), CMS style & exact axes.
+# Compare elastic S_γγ(W): LHeC (e–p) vs μLHC (μ–p) vs FCCmuh (μ–p), CMS style & exact axes.
 # Inputs (present in the working directory):
 #   - Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt
-#   - Sgg_elastic_mu_El1000_Ep7000_q2lmax_8317_q2pmax_8317.txt
+#   - Sgg_elastic_mu_El500_Ep7000_q2lmax_8317_q2pmax_8317.txt
+#   - FCC_muh_Sgg_elastic_mu_El500_Ep50000_q2lmax_8317_q2pmax_8317.txt
 
 
 import numpy as np
@@ -19,7 +20,7 @@ hep.style.use("CMS")
 # ---------------- Load data ----------------
 # (Two-column text with a header line: W   Sgg)
 f_LHec  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-f_muLHC = "Sgg_elastic_mu_El600_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_muLHC = "Sgg_elastic_mu_El500_Ep7000_q2lmax_8317_q2pmax_8317.txt"
 f_FCCmuh = "FCC_muh_Sgg_elastic_mu_El500_Ep50000_q2lmax_8317_q2pmax_8317.txt"
 
 

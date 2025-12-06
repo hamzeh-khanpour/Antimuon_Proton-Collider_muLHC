@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Compare integrated σ(γγ→W+W−; W>W0) using ELASTIC photon–photon luminosities
-# LHeC (e–p, Ee=50 GeV, Ep=7 TeV) vs μLHC (μ–p, Eμ=1000 GeV, Ep=7 TeV)
+# LHeC (e–p, Ee=50 GeV, Ep=7 TeV) vs μLHC (μ–p, Eμ=500 GeV, Ep=7 TeV) vs FCC-μH (μ–p, Eμ=500 GeV, Ep=50 TeV)
 # Styling matches your WW plot: CMS, 8x9", margins, log–log, xlim(161,1000), ylim(1e-4,1e1).
 
 import numpy as np
@@ -11,11 +11,10 @@ from pathlib import Path
 hep.style.use("CMS")
 # plt.style.use(hep.style.ROOT)
 
-
 # ----------------------- Inputs -----------------------
-f_LHeC  = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-f_muLHC = "Sgg_elastic_mu_El600_Ep7000_q2lmax_8317_q2pmax_8317.txt"
-
+f_LHeC   = "Sgg_elastic_e_El50_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_muLHC  = "Sgg_elastic_mu_El500_Ep7000_q2lmax_8317_q2pmax_8317.txt"
+f_FCCmuh = "FCC_muh_Sgg_elastic_mu_El500_Ep50000_q2lmax_8317_q2pmax_8317.txt"
 
 def load_sgg(fname):
     arr = np.loadtxt(fname, comments="#")
@@ -24,9 +23,9 @@ def load_sgg(fname):
     i = np.argsort(W)
     return W[i], S[i]
 
-W_e,  S_e  = load_sgg(f_LHeC)
-W_mu, S_mu = load_sgg(f_muLHC)
-
+W_e,   S_e   = load_sgg(f_LHeC)
+W_mu,  S_mu  = load_sgg(f_muLHC)
+W_FCC, S_FCC = load_sgg(f_FCCmuh)
 
 # ---------------- γγ → W+W− Born σ(W) in pb ----------------
 # PR364-style expression, guarded below threshold (W < 2 mW -> 0).
@@ -80,55 +79,53 @@ def integrate_sigma(W, S):
         Sig[k] = acc
     return W0, Sig
 
-W0_e,  Sig_e  = integrate_sigma(W_e,  S_e)
-W0_mu, Sig_mu = integrate_sigma(W_mu, S_mu)
-
+W0_e,   Sig_e   = integrate_sigma(W_e,   S_e)
+W0_mu,  Sig_mu  = integrate_sigma(W_mu,  S_mu)
+W0_FCC, Sig_FCC = integrate_sigma(W_FCC, S_FCC)
 
 # ---------------- Common W0 grid (follow your figure ranges) ----------------
-Wmin = max(161.0, W0_e.min(), W0_mu.min())
-Wmax = min(1000.0, W0_e.max(), W0_mu.max())
+Wmin = max(161.0, W0_e.min(), W0_mu.min(), W0_FCC.min())
+Wmax = min(1000.0, W0_e.max(), W0_mu.max(), W0_FCC.max())
 W0_common = np.logspace(np.log10(Wmin), np.log10(Wmax), 500)
-Sig_e_i  = np.interp(W0_common, W0_e,  Sig_e)
-Sig_mu_i = np.interp(W0_common, W0_mu, Sig_mu)
+
+Sig_e_i   = np.interp(W0_common, W0_e,   Sig_e)
+Sig_mu_i  = np.interp(W0_common, W0_mu,  Sig_mu)
+Sig_FCC_i = np.interp(W0_common, W0_FCC, Sig_FCC)
 
 # ---------------- Save table ----------------
 np.savetxt(
-    "exact_ww_cross_section_elastic_LHeC_vs_muLHC_4TeV.txt",
-    np.column_stack([W0_common, Sig_e_i, Sig_mu_i]),
-    header="W0 [GeV]\tSigma_LHeC [pb]\tSigma_muLHC [pb]",
+    "exact_ww_cross_section_elastic_LHeC_vs_muLHC_FCCmuh.txt",
+    np.column_stack([W0_common, Sig_e_i, Sig_mu_i, Sig_FCC_i]),
+    header="W0 [GeV]\tSigma_LHeC [pb]\tSigma_muLHC [pb]\tSigma_FCCmuh [pb]",
     fmt="%.8e", delimiter="\t"
 )
-
 
 # ---------------- Plot (match your JHEP-like style) ----------------
 fig, ax = plt.subplots(figsize=(10.0, 12.0))
 plt.subplots_adjust(left=0.15, right=0.95, bottom=0.12, top=0.95)
 
-
 ax.set_xlim(161.0, 1000.0)
 ax.set_ylim(1.0e-4, 1.0e+1)
-
 
 # Solid vs dashed, thick lines—consistent with your plots
 ax.loglog(W0_common, Sig_e_i,
           label=r"LHeC (e–p), $E_e=50$ GeV, $E_p=7$ TeV",
           linestyle="--", linewidth=4)
 ax.loglog(W0_common, Sig_mu_i,
-          label=r"$\mu$LHC ($\mu$–p), $E_\mu=600$ GeV, $E_p=7$ TeV",
+          label=r"$\mu$LHC ($\mu$–p), $E_\mu=500$ GeV, $E_p=7$ TeV",
           linestyle="solid", linewidth=4)
-
+ax.loglog(W0_common, Sig_FCC_i,
+          label=r"FCC-$\mu$H ($\mu$–p), $E_\mu=500$ GeV, $E_p=50$ TeV",
+          linestyle=":", linewidth=4)
 
 ax.set_xlabel(r"$W_0$ [GeV]")
 ax.set_ylabel(r"$\sigma(\gamma\gamma\to W^+W^-;\, W>W_0)$  [pb]")
 
-
 # Legend title reflects the elastic caps embedded in your S_γγ files (Q^2_ℓ,p < M_Z^2 GeV^2)
 ax.legend(title=r"Elastic ($Q^2_\ell<M_Z^2$ GeV$^2$, $Q^2_p<M_Z^2$ GeV$^2$)", loc="upper right")
 
-
 ax.grid(True, which="both", linestyle="--", alpha=0.45)
 
-
-plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_4TeV.pdf")
-plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_4TeV.png", dpi=300)
+plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_FCCmuh.pdf")
+plt.savefig("exact_ww_cross_section_elastic_LHeC_vs_muLHC_FCCmuh.png", dpi=300)
 plt.show()

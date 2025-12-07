@@ -1,3 +1,13 @@
+muLHC
+
+python3.10 muLHC_dsig_dMWW_v1_at_3_7_TeV.py \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_SM_aa_ww/Events/run_01/muLHC_SM_aa_ww.lhe \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_EFT_aa_ww/Events/run_01/muLHC_EFT_aa_ww.lhe \
+  --bins 60 --range 160 1600 --yield-mode dsig --logy \
+  --out-prefix muLHC_mww_compare_muLHC_SM_vs_EFT_dsig_logy_at_3_7_TeV
+
+
+
 
 muLHC
 

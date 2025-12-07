@@ -1,0 +1,7 @@
+FCC-muh
+
+python3.12 FCCmuh_dsig_dMWW_v1_at_10_TeV.py \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_6/FCC_muh_SM_aa_ww/Events/run_01/FCC_muh_SM_aa_ww.lhe \
+  /home/hamzeh-khanpour/MG5_aMC_v3_6_6/FCC_muh_EFT_aa_ww/Events/run_01/FCC_muh_EFT_aa_ww.lhe \
+  --bins 60 --range 160 2600 --yield-mode dsig --logy \
+  --out-prefix FCC_muh_mww_compare_FCC_muh_SM_vs_EFT_dsig_logy_at_10_TeV

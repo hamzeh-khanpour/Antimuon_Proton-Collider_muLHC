@@ -1,0 +1,12 @@
+<SAFheader>
+</SAFheader>
+
+<InitialCounter>
+"Initial number of events"      #
+100000          0               # nentries
+7.255850e-02    0.000000e+00    # sum of weights
+5.264736e-08    0.000000e+00    # sum of weights^2
+</InitialCounter>
+
+<SAFfooter>
+</SAFfooter>

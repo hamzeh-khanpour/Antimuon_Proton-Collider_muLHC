@@ -1,0 +1,16 @@
+set main.currentdir = /home/hamzeh-khanpour/MG5_aMC_v3_6_6/mugamma_muh_muLHC_FCCmuh
+import /home/hamzeh-khanpour/MG5_aMC_v3_6_6/mugamma_muh_muLHC_FCCmuh/bin/internal/ufomodel
+import /home/hamzeh-khanpour/MG5_aMC_v3_6_6/mugamma_muh_muLHC_FCCmuh/Events/run_02/unweighted_events.lhe.gz as run_02
+define vl = 12 14 16
+define vl~ = -16 -14 -12
+define invisible = vm~ vt ve~ ve vm vt~ vl vl~
+set main.graphic_render = root
+plot THT   40 0 500 [logY]
+plot MET   40 0 500 [logY]
+plot SQRTS 40 0 500 [logY]
+plot  PT(h[1]) 40 0  500 [logY]
+plot ETA(h[1]) 40 -10 10 [logY]
+plot  PT(mu+[1]) 40 0  500 [logY]
+plot ETA(mu+[1]) 40 -10 10 [logY]
+plot M(h[1] mu+[1]) 40 0  500 [logY ]
+plot DELTAR(h[1],mu+[1]) 40 0 10 [logY ]

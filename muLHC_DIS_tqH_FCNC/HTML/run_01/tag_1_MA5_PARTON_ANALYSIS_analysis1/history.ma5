@@ -1,0 +1,35 @@
+set main.currentdir = /home/hamzeh-khanpour/MG5_aMC_v3_6_6
+import /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/bin/internal/ufomodel
+import /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/Events/run_01/unweighted_events.lhe.gz as run_01
+define vl = 12 14 16
+define vl~ = -16 -14 -12
+define invisible = ve~ ve vm vt vm~ vt~ vl vl~
+set main.graphic_render = root
+plot THT   40 0 500 [logY]
+plot MET   40 0 500 [logY]
+plot SQRTS 40 0 500 [logY]
+plot  PT(mu+[1]) 40 0  500 [logY]
+plot ETA(mu+[1]) 40 -10 10 [logY]
+plot  PT(p[1]) 40 0  500 [logY]
+plot ETA(p[1]) 40 -10 10 [logY]
+plot  PT(t[1]) 40 0  500 [logY]
+plot ETA(t[1]) 40 -10 10 [logY]
+plot  PT(h[1]) 40 0  500 [logY]
+plot ETA(h[1]) 40 -10 10 [logY]
+plot M(mu+[1] h[1]) 40 0  500 [logY ]
+plot M(mu+[1] p[1]) 40 0  500 [logY ]
+plot M(mu+[1] p[1] h[1]) 40 0  500 [logY ]
+plot M(mu+[1] p[1] t[1]) 40 0  500 [logY ]
+plot M(mu+[1] p[1] t[1] h[1]) 40 0  500 [logY ]
+plot M(mu+[1] t[1]) 40 0  500 [logY ]
+plot M(mu+[1] t[1] h[1]) 40 0  500 [logY ]
+plot M(p[1] h[1]) 40 0  500 [logY ]
+plot M(p[1] t[1]) 40 0  500 [logY ]
+plot M(p[1] t[1] h[1]) 40 0  500 [logY ]
+plot M(t[1] h[1]) 40 0  500 [logY ]
+plot DELTAR(mu+[1],h[1]) 40 0 10 [logY ]
+plot DELTAR(mu+[1],p[1]) 40 0 10 [logY ]
+plot DELTAR(mu+[1],t[1]) 40 0 10 [logY ]
+plot DELTAR(p[1],h[1]) 40 0 10 [logY ]
+plot DELTAR(p[1],t[1]) 40 0 10 [logY ]
+plot DELTAR(t[1],h[1]) 40 0 10 [logY ]

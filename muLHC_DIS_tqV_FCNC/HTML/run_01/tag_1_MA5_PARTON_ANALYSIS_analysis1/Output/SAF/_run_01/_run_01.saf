@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<SampleGlobalInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+4.627930e-02   3.407169e-05   100000         4.627930e+03   0.000000e+00   
+</SampleGlobalInfo>
+
+<FileInfo>
+"/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqV_FCNC/Events/run_01/unweighted_events.lhe.gz" # file 1 / 1
+</FileInfo>
+
+<SampleDetailedInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+4.627930e-02   3.407169e-05   100000         4.627930e+03   0.000000e+00    # file 1 / 1
+</SampleDetailedInfo>
+
+<SAFfooter>
+</SAFfooter>

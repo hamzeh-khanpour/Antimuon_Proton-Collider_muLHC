@@ -1,0 +1,141 @@
+*************************************************************
+*        W E L C O M E  to  M A D A N A L Y S I S  5        *
+*                                                           *
+*   MA5 release : 1.9.60                       2025-11-27   *
+*                                                           *
+*         Comput. Phys. Commun. 184 (2013) 222-256          *
+*             Eur. Phys. J. C74 (2014) 3103                 *
+*************************************************************
+Executing the commands from the script
+...
+ma5>import /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/bin/internal/ufomodel
+UFO model folder is detected
+Import all particles defined in the model ...
+43 particles have been successfully exported.
+Adding 'gha' 'gha~' 've' 've~' 'vm' 'vm~' 'vt' 'vt~' to 'invisible' multiparticle
+ma5>import /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/Events/run_01/unweighted_events.lhe.gz as run_01
+   -> Storing the file 'unweighted_events.lhe.gz' in the dataset 'run_01'.
+ma5>define vl = 12 14 16
+ma5>define vl~ = -16 -14 -12
+ma5>define invisible = ve~ ve vm vt vm~ vt~ vl vl~
+ma5>set main.graphic_render = root
+ma5>plot THT   40 0 500 [logY]
+ma5>plot MET   40 0 500 [logY]
+ma5>plot SQRTS 40 0 500 [logY]
+ma5>plot  PT(mu+[1]) 40 0  500 [logY]
+ma5>plot ETA(mu+[1]) 40 -10 10 [logY]
+ma5>plot  PT(p[1]) 40 0  500 [logY]
+ma5>plot ETA(p[1]) 40 -10 10 [logY]
+ma5>plot  PT(t[1]) 40 0  500 [logY]
+ma5>plot ETA(t[1]) 40 -10 10 [logY]
+ma5>plot  PT(h[1]) 40 0  500 [logY]
+ma5>plot ETA(h[1]) 40 -10 10 [logY]
+ma5>plot M(mu+[1] h[1]) 40 0  500 [logY ]
+ma5>plot M(mu+[1] p[1]) 40 0  500 [logY ]
+ma5>plot M(mu+[1] p[1] h[1]) 40 0  500 [logY ]
+ma5>plot M(mu+[1] p[1] t[1]) 40 0  500 [logY ]
+ma5>plot M(mu+[1] p[1] t[1] h[1]) 40 0  500 [logY ]
+ma5>plot M(mu+[1] t[1]) 40 0  500 [logY ]
+ma5>plot M(mu+[1] t[1] h[1]) 40 0  500 [logY ]
+ma5>plot M(p[1] h[1]) 40 0  500 [logY ]
+ma5>plot M(p[1] t[1]) 40 0  500 [logY ]
+ma5>plot M(p[1] t[1] h[1]) 40 0  500 [logY ]
+ma5>plot M(t[1] h[1]) 40 0  500 [logY ]
+ma5>plot DELTAR(mu+[1],h[1]) 40 0 10 [logY ]
+ma5>plot DELTAR(mu+[1],p[1]) 40 0 10 [logY ]
+ma5>plot DELTAR(mu+[1],t[1]) 40 0 10 [logY ]
+ma5>plot DELTAR(p[1],h[1]) 40 0 10 [logY ]
+ma5>plot DELTAR(p[1],t[1]) 40 0 10 [logY ]
+ma5>plot DELTAR(t[1],h[1]) 40 0 10 [logY ]
+ma5>submit /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1
+   Creating folder 'MA5_PARTON_ANALYSIS_analysis1'...
+   Copying 'SampleAnalyzer' source files...
+   Inserting your selection into 'SampleAnalyzer'...
+   Writing the list of datasets...
+   Writing the command line history...
+   Creating Makefiles...
+   Compiling 'SampleAnalyzer'...
+   Linking 'SampleAnalyzer'...
+   Running 'SampleAnalyzer' over dataset 'run_01'...
+    *******************************************************
+    * SampleAnalyzer for MadAnalysis 5 - Welcome.
+    * Initializing all components
+    - version: 1.11.0 (2025/04/23) [ python interface version: 1.9.60 (2025-11-27) ]
+    - general: everything is default.
+    - extracting the list of event samples...
+    - analyzer 'MadAnalysis5job'
+    * Running over files ...
+    * 1/1  /home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/Events/run_01/unweighted_events.lhe.gz
+    => file size: 15.73 Mo
+    => sample format: LHE file produced by MadGraph5.
+    => total number of events: 100000 ( analyzed: 100000 ; skipped: 0 )
+    * Finalizing all components ...
+    * Total number of processed events: 100000.
+    * Goodbye.
+    *******************************************************
+   Checking SampleAnalyzer output...
+   Extracting data from the output files...
+   Preparing data for the reports ...
+   Generating all plots ...
+   Generating the HMTL report ...
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_0.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_1.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_2.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_3.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_4.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_5.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_6.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_7.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_8.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_9.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_10.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_11.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_12.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_13.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_14.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_15.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_16.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_17.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_18.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_19.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_20.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_21.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_22.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_23.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_24.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_25.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_26.png' is not found.
+File called '/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/HTML/MadAnalysis5job_0/selection_27.png' is not found.
+     -> To open this HTML report, please type 'open'.
+   Generating the PDF report ...
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_0.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_1.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_2.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_3.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_4.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_5.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_6.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_7.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_8.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_9.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_10.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_11.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_12.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_13.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_14.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_15.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_16.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_17.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_18.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_19.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_20.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_21.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_22.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_23.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_24.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_25.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_26.png does not exist.
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0/selection_27.png does not exist.
+     -> To open this PDF report, please type 'open muLHC_DIS_tqH_FCNC/MA5_PARTON_ANALYSIS_analysis1/Output/PDF/MadAnalysis5job_0'.
+   Generating the DVI report ...
+   Well done! Elapsed time = 15.93 seconds

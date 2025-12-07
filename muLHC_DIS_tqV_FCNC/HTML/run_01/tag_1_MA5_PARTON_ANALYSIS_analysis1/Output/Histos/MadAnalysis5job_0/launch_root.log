@@ -1,0 +1,19 @@
+BEGIN-STAMP
+ERROR in cling::CIFactory::createCI(): cannot extract standard library include paths!
+Invoking:
+  LC_ALL=C x86_64-linux-gnu-g++-11   -xc++ -E -v /dev/null 2>&1 | sed -n -e '/^.include/,${' -e '/^ \/.*++/p' -e '}'
+Results was:
+With exit code 0
+cling::DynamicLibraryManager::loadLibrary(): libtiff.so.5: cannot open shared object file: No such file or directory
+Error in <TInterpreter::TCling::AutoLoad>: failure loading library libASImage.so for TASImage
+cling::DynamicLibraryManager::loadLibrary(): libtiff.so.5: cannot open shared object file: No such file or directory
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_0.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_1.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_2.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_3.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_4.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_5.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_6.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_7.eps has been created
+Info in <TCanvas::Print>: eps file ../../DVI/MadAnalysis5job_0/selection_8.eps has been created
+END-STAMP

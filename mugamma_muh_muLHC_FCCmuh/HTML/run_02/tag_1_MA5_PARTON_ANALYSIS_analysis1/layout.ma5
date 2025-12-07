@@ -1,0 +1,131 @@
+################################################################################
+#                  MADANALYSIS5 CONFIGURATION FILE FOR PLOTS                   #
+#                   produced by MadAnalysis5 version 1.9.60                    #
+#                                  2025-11-27                                  #
+################################################################################
+
+################################################################################
+#                               Files and Paths                                #
+################################################################################
+<Files>
+  jobdir = /home/hamzeh-khanpour/MG5_aMC_v3_6_6/mugamma_muh_muLHC_FCCmuh/MA5_PARTON_ANALYSIS_analysis1
+  html = 1
+  latex = 1
+  pdflatex = 1
+</Files>
+
+################################################################################
+#                   Global information related to the layout                   #
+################################################################################
+<Main>
+  <Normalization>
+    normalize = "2"
+    lumi = 10 # fb^{-1}
+  </Normalization>
+  <Histograming>
+    stack = 1
+  </Histograming>
+  <Selection>
+    fom = "4"
+    x = "0"
+  </Selection>
+</Main>
+
+################################################################################
+#                            Definition of datasets                            #
+################################################################################
+<Datasets>
+<Dataset name="run_02">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = run_02
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+</Datasets>
+
+################################################################################
+#                            Definition of regions                             #
+################################################################################
+<Regions>
+</Regions>
+
+################################################################################
+#              Definition of the selection : histograms and cuts               #
+################################################################################
+<Selection>
+  <Histogram name="selection0">
+    stack = 0
+    titleX = "H_{T} (GeV) "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 500.0
+  </Histogram>
+  <Histogram name="selection1">
+    stack = 0
+    titleX = "#slash{E}_{T} (GeV) "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 500.0
+  </Histogram>
+  <Histogram name="selection2">
+    stack = 0
+    titleX = "#sqrt{#hat{s}} (GeV) "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 500.0
+  </Histogram>
+  <Histogram name="selection3">
+    stack = 0
+    titleX = "p_{T} [ h_{1} ] (GeV/c) "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 500.0
+  </Histogram>
+  <Histogram name="selection4">
+    stack = 0
+    titleX = "#eta [ h_{1} ] "
+    titleY = "Events "
+    xmin = -10.0
+    xmax = 10.0
+  </Histogram>
+  <Histogram name="selection5">
+    stack = 0
+    titleX = "p_{T} [ mu+_{1} ] (GeV/c) "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 500.0
+  </Histogram>
+  <Histogram name="selection6">
+    stack = 0
+    titleX = "#eta [ mu+_{1} ] "
+    titleY = "Events "
+    xmin = -10.0
+    xmax = 10.0
+  </Histogram>
+  <Histogram name="selection7">
+    stack = 0
+    titleX = "M [ h_{1} mu+_{1} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 500.0
+  </Histogram>
+  <Histogram name="selection8">
+    stack = 0
+    titleX = "#DeltaR [ h_{1}, mu+_{1} ] "
+    titleY = "Events "
+    xmin = 0.0
+    xmax = 10.0
+  </Histogram>
+</Selection>
+

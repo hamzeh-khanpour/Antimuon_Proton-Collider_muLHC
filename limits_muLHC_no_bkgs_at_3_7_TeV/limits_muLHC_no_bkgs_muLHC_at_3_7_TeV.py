@@ -1,6 +1,6 @@
 
 # =======================================================================
-#     Hamzeh khanpour -- 2025 -- μLHC
+#     Hamzeh khanpour -- 2025 -- μLHC @ 3.7 TeV
 # =======================================================================
 
 
@@ -189,11 +189,11 @@ plt.subplots_adjust(left=0.15, right=0.95, bottom=0.12, top=0.95)
 
 
 # Parse signal and background files
-signal_file_0 = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_01/muLHC_EFT_aa_ww_semi_leptonic.lhe"
-signal_file_2 = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_EFT_aa_ww_semi_leptonic/Events/run_02/muLHC_EFT_aa_ww_semi_leptonic.lhe"
+signal_file_0 = "/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_EFT_aa_ww_semi_leptonic/Events/run_01/muLHC_EFT_aa_ww_semi_leptonic.lhe"
+signal_file_2 = "/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_EFT_aa_ww_semi_leptonic/Events/run_02/muLHC_EFT_aa_ww_semi_leptonic.lhe"
 
 
-background_file = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww_semi_leptonic/Events/run_01/muLHC_SM_aa_ww_semi_leptonic.lhe"
+background_file = "/home/hamzeh-khanpour/MG5_aMC_v3_6_6/muLHC_SM_aa_ww_semi_leptonic/Events/run_01/muLHC_SM_aa_ww_semi_leptonic.lhe"
 
 
 
@@ -226,11 +226,11 @@ background_file = "/home/hamzeh-khanpour/MG5_aMC_v3_6_4/muLHC_SM_aa_ww_semi_lept
 # Parameters for differential cross-section
 
 
-# 1   NP = 1
-signal_cross_section_0    = 0.079143     # pb  FM2 =  1
-signal_cross_section_2    = 0.079401     # pb  FM2 = -1
+# 1   NP = 1 @ μLHC @ 3.7 TeV
+signal_cross_section_0    = 0.04799     # pb  FM2 =  1
+signal_cross_section_2    = 0.048103     # pb  FM2 = -1
 
-background_cross_section  = 0.075456    # pb
+background_cross_section  = 0.047546    # pb
 
 
 
@@ -377,12 +377,12 @@ m_w_hadronic_leptonic_bins_background, dsigma_background_m_w_hadronic_leptonic =
 # Plot the differential cross-sections
 # plt.figure(figsize=(10, 8))
 
-plt.step(pt_bins_signal_0, dsigma_signal_pt_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=+1$]", color="red", linewidth=3)
-plt.step(pt_bins_signal_2, dsigma_signal_pt_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=-1$]", color="green", linewidth=3)
-plt.step(pt_bins_background, dsigma_background_pt, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(pt_bins_signal_0, dsigma_signal_pt_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=+1$]", color="red", linewidth=3)
+plt.step(pt_bins_signal_2, dsigma_signal_pt_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=-1$]", color="green", linewidth=3)
+plt.step(pt_bins_background, dsigma_background_pt, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$p_T^{\ell} \ \mathrm{[GeV]}$")
 plt.ylabel(r"$\frac{d\sigma}{dp_T^{\ell}} \ \mathrm{[pb/GeV]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.legend()
 plt.grid(True, linestyle="--", alpha=0.6)
@@ -397,12 +397,12 @@ plt.show()
 # Plot the differential cross-sections for eta
 #plt.figure(figsize=(10, 8))
 
-plt.step(eta_bins_signal_0, dsigma_signal_eta_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
-plt.step(eta_bins_signal_2, dsigma_signal_eta_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
-plt.step(eta_bins_background, dsigma_background_eta, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(eta_bins_signal_0, dsigma_signal_eta_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
+plt.step(eta_bins_signal_2, dsigma_signal_eta_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
+plt.step(eta_bins_background, dsigma_background_eta, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$\eta^{\ell}$")
 plt.ylabel(r"$\frac{d\sigma}{d\eta^{\ell}} \ \mathrm{[pb]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.0001, 0.1)
 plt.legend()
@@ -417,12 +417,12 @@ plt.show()
 # Plot the differential cross-sections for leading jet pT
 #plt.figure(figsize=(10, 8))
 
-plt.step(pt_jet_bins_signal_0, dsigma_signal_jet_pt_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=+1$]", color="red", linewidth=3)
-plt.step(pt_jet_bins_signal_2, dsigma_signal_jet_pt_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=-1$]", color="green", linewidth=3)
-plt.step(pt_jet_bins_background, dsigma_background_jet_pt, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(pt_jet_bins_signal_0, dsigma_signal_jet_pt_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=+1$]", color="red", linewidth=3)
+plt.step(pt_jet_bins_signal_2, dsigma_signal_jet_pt_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=-1$]", color="green", linewidth=3)
+plt.step(pt_jet_bins_background, dsigma_background_jet_pt, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$p_T^{\mathrm{leading~jet}} \ \mathrm{[GeV]}$")
 plt.ylabel(r"$\frac{d\sigma}{dp_T^{\mathrm{leading~jet}}} \ \mathrm{[pb/GeV]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.000001, 0.01)
 plt.legend()
@@ -435,12 +435,12 @@ plt.show()
 
 
 # Plot Delta R differential cross-section
-plt.step(delta_r_bins_signal_0, dsigma_signal_delta_r_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
-plt.step(delta_r_bins_signal_2, dsigma_signal_delta_r_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
-plt.step(delta_r_bins_background, dsigma_background_delta_r, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(delta_r_bins_signal_0, dsigma_signal_delta_r_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
+plt.step(delta_r_bins_signal_2, dsigma_signal_delta_r_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
+plt.step(delta_r_bins_background, dsigma_background_delta_r, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$\Delta R(\ell, \mathrm{leading~jet})$")
 plt.ylabel(r"$\frac{d\sigma}{d\Delta R} \ \mathrm{[pb]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.0001, 1.0)
 plt.legend()
@@ -454,12 +454,12 @@ plt.show()
 
 
 # Plot the differential cross-sections for Missing Transverse Energy (MET)
-plt.step(met_bins_signal_0, dsigma_signal_met_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=+1$]", color="red", linewidth=3)
-plt.step(met_bins_signal_2, dsigma_signal_met_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=-1$]", color="green", linewidth=3)
-plt.step(met_bins_background, dsigma_background_met, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(met_bins_signal_0, dsigma_signal_met_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=+1$]", color="red", linewidth=3)
+plt.step(met_bins_signal_2, dsigma_signal_met_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4=-1$]", color="green", linewidth=3)
+plt.step(met_bins_background, dsigma_background_met, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$\mathrm{MET} \ \mathrm{[GeV]}$")
 plt.ylabel(r"$\frac{d\sigma}{d\mathrm{MET}} \ \mathrm{[pb/GeV]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.legend()
 plt.grid(True, linestyle="--", alpha=0.6)
@@ -480,13 +480,13 @@ dsigma_signal_centrality_2_norm = dsigma_signal_centrality_2 / np.sum(dsigma_sig
 dsigma_background_centrality_norm = dsigma_background_centrality / np.sum(dsigma_background_centrality)
 
 # Plot the normalized distributions for Lepton Centrality
-plt.step(centrality_bins_signal_0, dsigma_signal_centrality_0_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
-plt.step(centrality_bins_signal_2, dsigma_signal_centrality_2_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
-plt.step(centrality_bins_background, dsigma_background_centrality_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(centrality_bins_signal_0, dsigma_signal_centrality_0_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
+plt.step(centrality_bins_signal_2, dsigma_signal_centrality_2_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
+plt.step(centrality_bins_background, dsigma_background_centrality_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 # Axis labels and title
 plt.xlabel(r"$\eta_{leading \; jet}$")
 plt.ylabel("Normalized Distribution")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 #plt.yscale("log")
 plt.ylim(0.0, 0.2)  # Adjust as needed for log scale
 # Add legend, grid, and formula
@@ -504,12 +504,12 @@ plt.show()
 
 
 # Plot the differential cross-sections for Lepton Centrality
-plt.step(centrality_bins_signal_0, dsigma_signal_centrality_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
-plt.step(centrality_bins_signal_2, dsigma_signal_centrality_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
-plt.step(centrality_bins_background, dsigma_background_centrality, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(centrality_bins_signal_0, dsigma_signal_centrality_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
+plt.step(centrality_bins_signal_2, dsigma_signal_centrality_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
+plt.step(centrality_bins_background, dsigma_background_centrality, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$\eta_{leading \; jet}$")
 plt.ylabel(r"$\frac{d\sigma}{d\eta_{leading \; jet}}} \ \mathrm{[pb]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.00001, 0.1)
 plt.legend()
@@ -535,13 +535,13 @@ dsigma_background_exp_centrality_norm = dsigma_background_exp_centrality / np.su
 
 
 # Plot the normalized distributions for Exponential Lepton Centrality
-plt.step(exp_centrality_bins_signal_0, dsigma_signal_exp_centrality_0_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(exp_centrality_bins_signal_2, dsigma_signal_exp_centrality_2_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(exp_centrality_bins_background, dsigma_background_exp_centrality_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(exp_centrality_bins_signal_0, dsigma_signal_exp_centrality_0_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(exp_centrality_bins_signal_2, dsigma_signal_exp_centrality_2_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(exp_centrality_bins_background, dsigma_background_exp_centrality_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 # Axis labels and title
 plt.xlabel(r"$C_{\ell}^{\mathrm{exp}}$")
 plt.ylabel("Normalized Distribution")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(1e-5, 1.0)  # Adjust as needed for log scale
 # Add legend, grid, and formula
@@ -557,12 +557,12 @@ plt.show()
 
 
 # Plot the differential cross-sections for Exponential Lepton Centrality (exp_centrality)
-plt.step(exp_centrality_bins_signal_0, dsigma_signal_exp_centrality_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
-plt.step(exp_centrality_bins_signal_2, dsigma_signal_exp_centrality_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
-plt.step(exp_centrality_bins_background, dsigma_background_exp_centrality, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(exp_centrality_bins_signal_0, dsigma_signal_exp_centrality_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="red", linewidth=3)
+plt.step(exp_centrality_bins_signal_2, dsigma_signal_exp_centrality_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$]", color="green", linewidth=3)
+plt.step(exp_centrality_bins_background, dsigma_background_exp_centrality, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$C_{\ell}^{\mathrm{exp}}$")
 plt.ylabel(r"$\frac{d\sigma}{dC_{\ell}^{\mathrm{exp}}} \ \mathrm{[pb]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.00001, 100.0)
 plt.legend()
@@ -585,13 +585,13 @@ dsigma_signal_jet_centrality_2_norm = dsigma_signal_jet_centrality_2 / np.sum(ds
 dsigma_background_jet_centrality_norm = dsigma_background_jet_centrality / np.sum(dsigma_background_jet_centrality)
 
 # Plot the normalized distributions for Jet Centrality
-plt.step(jet_centrality_bins_signal_0, dsigma_signal_jet_centrality_0_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(jet_centrality_bins_signal_2, dsigma_signal_jet_centrality_2_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(jet_centrality_bins_background, dsigma_background_jet_centrality_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(jet_centrality_bins_signal_0, dsigma_signal_jet_centrality_0_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(jet_centrality_bins_signal_2, dsigma_signal_jet_centrality_2_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(jet_centrality_bins_background, dsigma_background_jet_centrality_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 # Axis labels and title
 plt.xlabel(r"$C_{\mathrm{jets}}$")
 plt.ylabel("Normalized Distribution")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 #plt.yscale("log")
 plt.ylim(0.02, 0.08)  # Adjusted for normalized scale
 # Add legend, grid, and formula inside the plot
@@ -610,12 +610,12 @@ plt.show()
 
 
 # Plot the differential cross-sections for Jet Centrality
-plt.step(jet_centrality_bins_signal_0, dsigma_signal_jet_centrality_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(jet_centrality_bins_signal_2, dsigma_signal_jet_centrality_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(jet_centrality_bins_background, dsigma_background_jet_centrality, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(jet_centrality_bins_signal_0, dsigma_signal_jet_centrality_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(jet_centrality_bins_signal_2, dsigma_signal_jet_centrality_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(jet_centrality_bins_background, dsigma_background_jet_centrality, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$C_{\mathrm{jets}}$")
 plt.ylabel(r"$\frac{d\sigma}{dC_{\mathrm{jets}}} \ \mathrm{[pb]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.00001, 100.0)
 plt.legend()
@@ -634,12 +634,12 @@ plt.show()
 
 
 # Plot the differential cross-sections for Pseudorapidity Difference Between Jets (Δηjj)
-plt.step(delta_eta_jj_bins_signal_0, dsigma_signal_delta_eta_jj_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(delta_eta_jj_bins_signal_2, dsigma_signal_delta_eta_jj_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(delta_eta_jj_bins_background, dsigma_background_delta_eta_jj, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(delta_eta_jj_bins_signal_0, dsigma_signal_delta_eta_jj_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(delta_eta_jj_bins_signal_2, dsigma_signal_delta_eta_jj_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(delta_eta_jj_bins_background, dsigma_background_delta_eta_jj, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$\eta_{subleading \; jet}$")
 plt.ylabel(r"$\frac{d\sigma}{d\eta_{subleading \; jet}} \ \mathrm{[pb]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.0001, 0.1)
 plt.legend()
@@ -675,12 +675,12 @@ dsigma_background_m_w_hadronic_norm = dsigma_background_m_w_hadronic / np.sum(ds
 # Plot the normalized Hadronic W Boson Mass (M_W^jj)
 #plt.figure(figsize=(10, 8))
 
-plt.step(m_w_hadronic_bins_signal_0, dsigma_signal_m_w_hadronic_0_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(m_w_hadronic_bins_signal_2, dsigma_signal_m_w_hadronic_2_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(m_w_hadronic_bins_background, dsigma_background_m_w_hadronic_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(m_w_hadronic_bins_signal_0, dsigma_signal_m_w_hadronic_0_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(m_w_hadronic_bins_signal_2, dsigma_signal_m_w_hadronic_2_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(m_w_hadronic_bins_background, dsigma_background_m_w_hadronic_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$M_W^{jj} \ \mathrm{[GeV]}$")
 plt.ylabel(r"Normalized Distribution")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 #plt.yscale("log")
 #plt.ylim(0.0, 0.08)  # Adjusted for normalized scale
 plt.legend()
@@ -694,12 +694,12 @@ plt.show()
 
 # --------------------------------------------
 # Plot the differential cross-sections for Hadronic W Boson Mass (M_W^jj)
-plt.step(m_w_hadronic_bins_signal_0, dsigma_signal_m_w_hadronic_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(m_w_hadronic_bins_signal_2, dsigma_signal_m_w_hadronic_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(m_w_hadronic_bins_background, dsigma_background_m_w_hadronic, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(m_w_hadronic_bins_signal_0, dsigma_signal_m_w_hadronic_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(m_w_hadronic_bins_signal_2, dsigma_signal_m_w_hadronic_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(m_w_hadronic_bins_background, dsigma_background_m_w_hadronic, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$M_W^{jj} \ \mathrm{[GeV]}$")
 plt.ylabel(r"$\frac{d\sigma}{dM_W^{jj}} \ \mathrm{[pb/GeV]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.00001, 0.1)
 plt.legend()
@@ -725,12 +725,12 @@ dsigma_background_m_w_leptonic_norm = dsigma_background_m_w_leptonic / np.sum(ds
 # --------------------------------------------
 # Plot the normalized Leptonic W Boson Mass (M_W^ℓν)
 #plt.figure(figsize=(10, 8))
-plt.step(m_w_leptonic_bins_signal_0, dsigma_signal_m_w_leptonic_0_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(m_w_leptonic_bins_signal_2, dsigma_signal_m_w_leptonic_2_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(m_w_leptonic_bins_background, dsigma_background_m_w_leptonic_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(m_w_leptonic_bins_signal_0, dsigma_signal_m_w_leptonic_0_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(m_w_leptonic_bins_signal_2, dsigma_signal_m_w_leptonic_2_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(m_w_leptonic_bins_background, dsigma_background_m_w_leptonic_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$M_W^{\ell\nu_{\ell}} \ \mathrm{[GeV]}$")
 plt.ylabel(r"Normalized Distribution")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 #plt.yscale("log")
 #plt.ylim(0.0, 0.08)  # Adjusted for normalized scale
 plt.legend()
@@ -744,12 +744,12 @@ plt.show()
 
 # --------------------------------------------
 # Plot the differential cross-sections for Leptonic W Boson Mass (M_W^ℓν)
-plt.step(m_w_leptonic_bins_signal_0, dsigma_signal_m_w_leptonic_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
-plt.step(m_w_leptonic_bins_signal_2, dsigma_signal_m_w_leptonic_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
-plt.step(m_w_leptonic_bins_background, dsigma_background_m_w_leptonic, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(m_w_leptonic_bins_signal_0, dsigma_signal_m_w_leptonic_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="red", linewidth=3)
+plt.step(m_w_leptonic_bins_signal_2, dsigma_signal_m_w_leptonic_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \Lambda^4$)", color="green", linewidth=3)
+plt.step(m_w_leptonic_bins_background, dsigma_background_m_w_leptonic, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$M_W^{\ell\nu_{\ell}} \ \mathrm{[GeV]}$")
 plt.ylabel(r"$\frac{d\sigma}{dM_W^{\ell\nu_{\ell}}} \ \mathrm{[pb/GeV]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.00001, 0.1)
 plt.legend()
@@ -782,12 +782,12 @@ dsigma_background_m_w_hadronic_leptonic_norm = dsigma_background_m_w_hadronic_le
 
 # --------------------------------------------
 # Plot the normalized Reconstructed WW Invariant Mass (M_WW)
-plt.step(m_w_hadronic_leptonic_bins_signal_0, dsigma_signal_m_w_hadronic_leptonic_0_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=+1$)", color="red", linewidth=3)
-plt.step(m_w_hadronic_leptonic_bins_signal_2, dsigma_signal_m_w_hadronic_leptonic_2_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=-1$)", color="green", linewidth=3)
-plt.step(m_w_hadronic_leptonic_bins_background, dsigma_background_m_w_hadronic_leptonic_norm, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(m_w_hadronic_leptonic_bins_signal_0, dsigma_signal_m_w_hadronic_leptonic_0_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=+1$)", color="red", linewidth=3)
+plt.step(m_w_hadronic_leptonic_bins_signal_2, dsigma_signal_m_w_hadronic_leptonic_2_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=-1$)", color="green", linewidth=3)
+plt.step(m_w_hadronic_leptonic_bins_background, dsigma_background_m_w_hadronic_leptonic_norm, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 plt.xlabel(r"$M_{WW} \ \mathrm{[GeV]}$")
 plt.ylabel("Normalized Distribution")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 # plt.yscale("log")  # usually off for normalized shapes; keep commented like your leptonic plot
 plt.legend()
 plt.grid(True, linestyle="--", alpha=0.6)
@@ -803,14 +803,14 @@ plt.show()
 
 # --------------------------------------------
 # Plot the differential cross-sections for Reconstructed WW Invariant Mass (M_WW)
-plt.step(m_w_hadronic_leptonic_bins_signal_0, dsigma_signal_m_w_hadronic_leptonic_0, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=+1$)", color="red", linewidth=3)
-plt.step(m_w_hadronic_leptonic_bins_signal_2, dsigma_signal_m_w_hadronic_leptonic_2, where="mid", alpha=0.7, label="μLHC@5.3 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=-1$)", color="green", linewidth=3)
-plt.step(m_w_hadronic_leptonic_bins_background, dsigma_background_m_w_hadronic_leptonic, where="mid", alpha=0.7, label="μLHC@5.3 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
+plt.step(m_w_hadronic_leptonic_bins_signal_0, dsigma_signal_m_w_hadronic_leptonic_0, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=+1$)", color="red", linewidth=3)
+plt.step(m_w_hadronic_leptonic_bins_signal_2, dsigma_signal_m_w_hadronic_leptonic_2, where="mid", alpha=0.7, label="μLHC@3.7 TeV : Signal ($w^+ w^-) [f_{M_2} / \\Lambda^4=-1$)", color="green", linewidth=3)
+plt.step(m_w_hadronic_leptonic_bins_background, dsigma_background_m_w_hadronic_leptonic, where="mid", alpha=0.7, label="μLHC@3.7 TeV : SM background ($w^+ w^-$)", color="blue", linewidth=3)
 
 
 plt.xlabel(r"$M_{WW} \ \mathrm{[GeV]}$")
 plt.ylabel(r"$\frac{d\sigma}{dM_{WW}} \ \mathrm{[pb/GeV]}$")
-plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@5.3 TeV", fontsize=24)
+plt.title(r"$e^- p \to e^- w^+ w^- p \to e^- j j \ell \nu_{\ell} p$ : μLHC@3.7 TeV", fontsize=24)
 plt.yscale("log")
 plt.ylim(0.000001, 0.001)
 plt.legend()

@@ -6,7 +6,7 @@
 #
 
 # =============================================================================
-# γγ → W⁺W⁻ @ μLHC (semi-leptonic) — SM vs EFT (f = ±1 TeV⁻⁴)
+# γγ → W⁺W⁻ @ μLHC (semi-leptonic) — SM vs EFT (f = ±1 TeV⁻⁴) @ 3.7 TeV
 # Ready-to-run with only:
 #   python3.10 limits_muLHC_no_bkgs_v2.py --lumi-fb 1000 --aeps 1.0 \
 #       --make-plots --make-counting-limits --make-shape-limits --outdir out_muLHC
@@ -120,7 +120,7 @@ def read_lhe_xsec_and_beams(path: str):
         return xs_init, (id1, id2, E1, E2)
     raise RuntimeError(f"Could not find cross section in {path}")
 
-def label_from_beams(info, fallback="μLHC @ Eμ=1 TeV, Ep=7 TeV"):
+def label_from_beams(info, fallback="μLHC @ Eμ=0.5 TeV, Ep=7 TeV"):
     id1, id2, E1, E2 = info
     try:
         def is_mu(x): return abs(int(x)) == 13

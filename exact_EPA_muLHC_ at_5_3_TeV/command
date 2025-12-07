@@ -1,9 +1,16 @@
-python epa_lp_refactored.py --lepton mu --El 1000 --Ep 7000 --q2lmax 10 --q2pmax 10 --cores 20 --label "μLHC (μ–p)"
+python epa_lp_refactored.py --lepton mu --El 1000 --Ep 7000 --q2lmax 10 --q2pmax 10 --cores 50 --label "μLHC (μ–p)"
 
 
 
-python epa_lp_refactored.py --lepton e --El 50 --Ep 7000 --q2lmax 10 --q2pmax 10 --cores 20 --label "LHeC (e–p)"
+
+python epa_lp_refactored.py --lepton e --El 50 --Ep 7000 --q2lmax 10 --q2pmax 10 --cores 50 --label "LHeC (e–p)"
 
 
 
-python epa_lp_refactored.py --lepton mu --El 1000 --Ep 7000 --compare --cores 20 --label "μLHC (μ–p)"
+
+python epa_lp_refactored.py --lepton mu --El 1000 --Ep 7000 --compare --cores 50 --label "μLHC (μ–p)"
+
+
+
+
+python epa_lp_refactored.py --lepton mu --El 500 --Ep 50000 --compare --cores 50 --label "FCC-μp (μ–p)"

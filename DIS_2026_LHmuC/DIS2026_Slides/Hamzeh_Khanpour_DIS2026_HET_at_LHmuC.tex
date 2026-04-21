@@ -1,0 +1,777 @@
+% 
+% Hamzeh Khanpour
+% 
+
+\documentclass[aspectratio=1610,english]{beamer}
+
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+
+\usepackage{tikz}
+
+\usepackage{comment}
+
+\usetikzlibrary{calc,positioning,arrows.meta,decorations.pathmorphing,patterns}
+
+\usepackage{hyperref}
+
+\makeatletter
+\patchcmd{\itemize}{\raggedright}{\justifying}{}{}
+\patchcmd{\beamer@enum@}{\raggedright}{\justifying}{}{}
+\patchcmd{\@@description}{\raggedright}{\justifying}{}{}
+\makeatother
+
+\mode<beamer>{
+    \definecolor{links}{HTML}{2A1B81}
+    \hypersetup{pdfpagemode=FullScreen,colorlinks,linkcolor=,urlcolor=links}
+    \usetheme[parttitle=rightfooter]{AGH}
+}
+
+\graphicspath{{./}{/mnt/data/}}
+
+\definecolor{LHRed}{RGB}{170,20,30}
+\definecolor{LHBlue}{RGB}{25,60,180}
+\definecolor{LHGreen}{RGB}{0,120,60}
+\definecolor{LHOrange}{RGB}{210,110,20}
+\definecolor{LHPurple}{RGB}{110,60,160}
+
+
+
+\newcommand{\LHCmu}{LH$\mu$C}
+\newcommand{\placeholdergraphic}[2]{%
+\begin{center}
+\fbox{\parbox[c][#2][c]{0.86\textwidth}{\centering\vspace{1ex}\textbf{Placeholder for later screenshot}\\[0.6ex]\small #1\vspace{1ex}}}
+\end{center}}
+
+
+
+\newcommand{\takehome}[1]{%
+\begin{alertblock}{Take-home message}
+\small #1
+\end{alertblock}}
+
+
+
+\title[Perspectives for HET physics studies at \LHCmu]{\justifying {\color{red}Very first draft:} Perspectives for HET physics studies at a muon-hadron collider at CERN}
+%\subtitle{DIS2026 -- WG3 Electroweak Physics, Top, Higgs and Beyond the Standard Model}
+\author[Hamzeh Khanpour]{Hamzeh Khanpour\\
+{\scriptsize \href{(on behalf of HELP4CERN Study Group)}{(on behalf of HELP4CERN Study Group)}}}
+\institute[AGH]{Faculty of Physics and Applied Computer Science\\AGH University of Krakow}
+
+\date{{\setlength{\fboxsep}{4pt}\colorbox{cyan!15}{\strut DIS 2026, Bologna, May 7, 2026}}}
+
+
+
+\begin{document}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 1
+% --------------------------------------------------------------------------
+\begin{frame} 
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.60cm, yshift=-1.50cm]
+at (current page.north east)
+{\includegraphics[width=2.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+
+\titlepage
+
+%\vspace{-0.8em}
+%\begin{center}
+%{\scriptsize Based on recent $\mu$LHC studies and the ongoing HELP4CERN white paper effort}
+%\end{center}
+
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 2
+% --------------------------------------------------------------------------
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+
+
+\section{Physics motivation and benchmarks}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 3
+% --------------------------------------------------------------------------
+\begin{frame}{Talk scope and central message}
+\begin{itemize}
+%\item This talk focuses on the \textbf{physics case} of the proposed antimuon--hadron collider at CERN, and in particular on the \textbf{Higgs--Electroweak--Top (HET)} programme.
+%\item The goal is not to review accelerator or detector R\&D in detail, but to assess what multi-TeV $\mu p$ collisions with high luminosity can deliver for Higgs, top, electroweak, photon-induced, and BSM studies.
+\justifying
+\item The core message is that \LHCmu{} is \textbf{not only a QCD machine}: it also opens a serious HET factory, with especially strong reach in the \textbf{top sector} and a broad programme in \textbf{precision Higgs, EW, EFT, and $\gamma\gamma$ physics}.
+\end{itemize}
+
+\begin{block}{Benchmark working points used throughout the talk}
+\small
+\justifying 
+Baseline: $E_\mu=500$ GeV with $E_p=7$ TeV ($\sqrt{s}\simeq 3.7$ TeV), typically assuming $\mathcal{L}_{\mathrm{int}}=250$ fb$^{-1}$;\\
+Upgrade: $E_\mu=1$ TeV with $E_p=7$ TeV ($\sqrt{s}\simeq 5.3$ TeV), typically assuming $\mathcal{L}_{\mathrm{int}}=1000$ fb$^{-1}$.
+\end{block}
+\small  \scriptsize
+{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Krzysztof Piotrzkowski}}}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 4
+% --------------------------------------------------------------------------
+\begin{frame}{Benchmark machines and representative event samples}
+\begin{columns} 
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item Relative to the LHeC, moving from electrons to muons lifts the synchrotron-radiation limitation and pushes the centre-of-mass energy deep into the multi-TeV regime.
+%\item For the HET physics case, the useful comparison is between:
+%\begin{itemize}
+%\justifying
+%\item 60 GeV LHeC as the electron--hadron reference,
+%\item 500 GeV \LHCmu{} as the baseline HET benchmark,
+%\item 1 TeV \LHCmu{} as the upgrade / extended-reach benchmark.
+%\end{itemize}
+%\item The expected raw event counts are already very large:
+%\begin{itemize}
+%\justifying
+%\item $\sim 1.10\times 10^5$ CC Higgs events at 500 GeV,
+%\item $\sim 5.32\times 10^6$ single-top events at 500 GeV,
+%\item $\sim 2.23\times 10^6$ $t\bar t$ events at 1 TeV,
+%\item $\sim 3.68\times 10^7$ single-top events at 1 TeV.
+%\end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\small  \scriptsize
+{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Krzysztof Piotrzkowski}}}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 5
+% --------------------------------------------------------------------------
+\begin{frame}{Why a muon-hadron collider? Kinematic reach and physics landscape}
+\begin{columns} 
+\begin{column}{0.55\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{xbjq2_diagram.pdf}
+\caption{\justifying \scriptsize Available $(x,Q^2)$ plane for the proposed LHeC and LH$\mu$C, in comparison to existing fixed-target and collider datasets, and the planned EIC kinematic reach. An inelasticity range of $4\times10^{-3}<y<1$ is assumed to evaluate the lower and upper bounds.}
+\end{figure}
+\end{column}
+\begin{column}{0.55\textwidth}
+\begin{itemize}
+\justifying
+\item The multi-TeV $\mu p$ configuration extends the DIS kinematic coverage well beyond HERA and significantly beyond the LHeC.
+\item This motivates the broader CERN bridge-project narrative: LH$\mu$C strengthens both the QCD frontier and the HET/BSM programme.
+\item The same machine that reaches extreme $x$ and $Q^2$ also provides high rates for Higgs, top, EW and photon-induced reactions.
+\item \scriptsize
+{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Piotr Kotko}}}
+\end{itemize}
+\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+
+
+\section{HET overview: Higgs, electroweak and top}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 6
+% --------------------------------------------------------------------------
+\begin{frame}{Representative HET benchmark cross sections}
+\small
+\begin{table}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Process & 20 GeV LHeC & 60 GeV LHeC & 500 GeV \LHCmu{} & 1 TeV \LHCmu{} \\
+\midrule
+$\sigma(\ell p\to \nu_\ell H+\mathrm{jet}+X)$ [fb] & 52 & 164 & 438 & 731 \\
+$\sigma(\ell p\to \ell H+\mathrm{jet}+X)$ [fb] & 5.6 & 19 & 135 & 221 \\
+$\sigma(\ell p\to \ell\, t\bar t +X)$ [pb] & 0.0015 & 0.0323 & 1.03 & 2.23 \\
+$\sigma(\ell p\to \nu_\ell t +X)$ [pb] & 0.55 & 2.89 & 21.26 & 36.77 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.4em}
+\begin{itemize}
+\justifying
+\item The qualitative pattern is already clear at the inclusive level: Higgs production rises strongly, while the \textbf{largest gain is in the top sector}.
+\item Relative to the 60 GeV LHeC, the 500 GeV \LHCmu{} increases rates by factors of about $\sim2.7$ (CC Higgs), $\sim7$ (single top) and $\sim32$ ($t\bar t$).
+\item This table is the cleanest bridge from machine benchmarks to the actual physics case.
+\end{itemize}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\vspace{0.3em}
+{\scriptsize
+\setlength{\fboxsep}{4pt}%
+\colorbox{green!15}{%
+\parbox{0.86\linewidth}{%
+HELP4CERN collaboration, White Paper on High Energy, High Luminosity Lepton--Hadron Colliders at CERN, in preparation.
+}%
+}%
+}
+\end{frame}
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 7
+% --------------------------------------------------------------------------
+\begin{frame}{Higgs production at \LHCmu: channels, rates, and statistics}
+\begin{columns}[T]
+\begin{column}{0.70\textwidth}
+\begin{itemize}
+\justifying
+\item Higgs production is dominated by \textbf{charged-current VBF} with a subleading but still sizeable neutral-current contribution.
+\item Using the current benchmarks:
+\begin{itemize}
+\justifying
+\item 500 GeV \LHCmu: $\sigma_{\mathrm{CC}}\simeq 438$ fb, $\sigma_{\mathrm{NC}}\simeq 135$ fb,
+\item 1 TeV \LHCmu: $\sigma_{\mathrm{CC}}\simeq 731$ fb, $\sigma_{\mathrm{NC}}\simeq 221$ fb.
+\end{itemize}
+\item For the benchmark integrated luminosities, these correspond to roughly:
+\begin{itemize}
+\justifying
+\item $1.10\times10^5$ CC Higgs and $3.38\times10^4$ NC Higgs events at 500 GeV,
+\item $7.31\times10^5$ CC Higgs and $2.21\times10^5$ NC Higgs events at 1 TeV.
+\end{itemize}
+\item This already motivates precision Higgs-coupling studies beyond a mere rescaling of LHeC expectations.
+\end{itemize}
+\end{column}
+\begin{column}{0.55\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Higgs.jpg}
+\caption{\justifying\scriptsize Higgs boson production cross sections at the LHeC and LH$\mu$C versus centre-of-mass energy, showing the dominant charged-current ($W$-fusion) and subleading neutral-current ($Z$-fusion) contributions.}
+\end{figure}
+\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 8
+% --------------------------------------------------------------------------
+\begin{frame}{Precision Higgs case study: $h\to b\bar b$ and coupling prospects}
+\begin{columns}[T]
+		
+\begin{column}{0.58\textwidth}
+\begin{itemize}
+\justifying
+\item A concrete benchmark already exists for the charged-current VBF process with $h\to b\bar b$.
+				
+\item In the HELP4CERN draft, parton showering, fast detector simulation, and a cut-based analysis were used to estimate:
+\begin{itemize}
+\justifying
+\item $\Delta \sigma/\sigma \simeq 1.19\%$ and $0.69\%$ for the two $\mu p$ collider setups,
+\item corresponding benchmark sensitivities of about $0.77\%$ and $0.60\%$ on $g_{hbb}$.
+\end{itemize}
+\justifying
+\item This strongly supports the claim that \LHCmu{} can be a competitive Higgs factory.		
+%\item \textbf{Important caveat:} the global coupling-fit programme is still under development, and naive recycling of LHeC signal-strength projections is not yet sufficient for the final LH$\mu$C coupling case.
+\end{itemize}
+\end{column}
+		
+\begin{column}{0.40\textwidth}
+\begin{table}
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcc}
+\toprule
+					& $\mu p$-1 & $\mu p$-2 \\
+\midrule
+					$\sigma_{\rm sig}$ [pb] & 0.24 & 0.39 \\
+					$\sigma_{\rm bgd\text{-}Z}$ [pb] & 0.30 & 0.50 \\
+					$\sigma_{\rm bgd\text{-}mj}$ [pb] & 357.9 & 563.8 \\
+					$\epsilon^{\rm sig}_{\rm cut}$ & 0.22 & 0.21 \\
+					$\epsilon^{\rm bgd\text{-}Z}_{\rm cut}$ & 0.025 & 0.025 \\
+					$\epsilon^{\rm bgd\text{-}mj}_{\rm cut}$ & $9.7\times10^{-5}$ & $1.23\times10^{-4}$ \\
+\midrule
+					$\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
+					$\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
+\bottomrule
+\end{tabular}
+\caption{\justifying\scriptsize Benchmark $h\to b\bar b$ case study at $\mu p$ colliders: signal and background cross sections, cut efficiencies, and projected sensitivities for the Higgs coupling to bottom quarks.}
+\end{table}
+\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 9
+% --------------------------------------------------------------------------
+\begin{frame}{Electroweak programme and EFT opportunities}
+\begin{itemize}
+\justifying
+\item Beyond Higgs rates, \LHCmu{} offers a broader electroweak programme based on high-$Q^2$ DIS, vector-boson fusion, and photon-induced reactions.
+\item The larger kinematic span relative to the LHeC is expected to strengthen sensitivity to precision electroweak parameters such as $m_W$ and $\sin^2\theta_W$, while also extending the SMEFT lever arm.
+\item The white-paper draft explicitly highlights:
+\begin{itemize}
+\justifying
+\item precision electroweak measurements,
+\item orthogonal SMEFT directions relative to $pp$ and $e^+e^-$ machines,
+\item tests of lepton universality,
+\item and photon-induced EFT sensitivity in $\gamma\gamma\to W^+W^-$, $ZZ$, and heavy final states.
+\end{itemize}
+\end{itemize}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+\section{High-energy $\gamma\gamma$ physics at \LHCmu}
+
+% --------------------------------------------------------------------------
+% Slide 10
+% --------------------------------------------------------------------------
+\begin{frame}{High-energy $\gamma \gamma$ physics is a natural part of the \LHCmu{} programme}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item \LHCmu{} naturally operates as a high-energy $\gamma\gamma$ collider through quasi-real photons radiated from the incoming muon and proton beams.
+\item In the 500 GeV baseline, the effective $\gamma\gamma$ centre-of-mass energy extends into the multi-TeV regime, opening a broad programme of clean exclusive measurements.
+\item This part of the physics case is directly relevant to the HET talk because it connects to:
+\begin{itemize}
+\justifying
+\item anomalous $\tau$ moments,
+\item $\gamma\gamma\to W^+W^-$ and quartic gauge couplings,
+\item loop-induced $\gamma\gamma\to ZZ$,
+\item exclusive $t\bar t$ production,
+\item and BSM charged-particle pair production.
+\end{itemize}
+\end{itemize}
+\end{column}
+%\begin{column}{0.38\textwidth}
+%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 3 (broad overview of $\gamma\gamma$ physics at LH$\mu$C and FCC-$\mu h$).}{0.58\textheight}
+%\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 11
+% --------------------------------------------------------------------------
+\begin{frame}{Flagship $\gamma\gamma$ channel I: $\tau^+\tau^-$ and anomalous $\tau$ moments}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item The elastic $\gamma\gamma\to\tau^+\tau^-$ rate at \LHCmu{} is already very large:
+\begin{itemize}
+\justifying
+\item $\sigma_{\mathrm{el}}\simeq 58.56$ pb at 3.7 TeV,
+\item rising to about $70.3$ pb for the 5.3 TeV upgrade benchmark.
+\end{itemize}
+\justifying
+\item This delivers a high-statistics laboratory for precision studies of the $\gamma\tau\tau$ vertex and for anomalous magnetic / electric dipole moment analyses.
+\item The central phenomenological idea is simple: anomalous contributions harden the high-$M_{\tau\tau}$ tail, so the invariant-mass spectrum becomes the main discriminating observable.
+\item This is one of the cleanest examples showing how \LHCmu{} combines high energy with a low-background, exclusive topology.
+\end{itemize}
+\end{column}
+%\begin{column}{0.40\textwidth}
+%\placeholdergraphic{Best figure source: \texttt{Hamzeh\_Khanpour\_a\_tau\_LHeC\_LHmuC.pdf}, slides 18--24 for mass-spectrum and BSM/SM-ratio plots.\\
+%Alternative rate plot: \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 5.}{0.60\textheight}
+%\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 12
+% --------------------------------------------------------------------------
+\begin{frame}{Flagship $\gamma\gamma$ channel II: $W^+W^-$ and anomalous quartic gauge couplings}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item The elastic $\gamma\gamma\to W^+W^-$ cross section grows from about $0.037$ pb at the LHeC to about $0.166$ pb at \LHCmu{}@3.7 TeV and $0.258$ pb at the 5.3 TeV upgrade benchmark.
+\item The EFT signal is not mainly an overall rate effect: the real sensitivity comes from the \textbf{high-$M_{WW}$ tail}, where dimension-8 operators enhance the spectrum.
+\item Relative to the LHC, the $\mu p$ environment offers cleaner event topology, more precise kinematics, and potentially simpler control of proton/muon tagging.
+\item This makes \LHCmu{} a serious laboratory for aQGC studies rather than merely an auxiliary by-product of the machine.
+\end{itemize}
+\end{column}
+%\begin{column}{0.38\textwidth}
+%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 11 (generator-level $M_{WW}$ spectra for LHC, LH$\mu$C, FCC-$\mu h$) \\
+%OR \texttt{Hamzeh\_Khanpour\_CERN\_11Nov.pdf}, slides 15--16.}{0.60\textheight}
+%\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 13
+% --------------------------------------------------------------------------
+\begin{frame}{Flagship $\gamma\gamma$ channels III: $ZZ$, $t\bar t$, and heavy exclusive final states}
+\begin{itemize}
+\justifying
+\item Loop-induced $\gamma\gamma\to ZZ$ is especially interesting because it is absent at tree level in the Standard Model and therefore provides a clean probe of high-mass electroweak dynamics.
+\item Representative elastic cross sections at 3.7 TeV are:
+\begin{itemize}
+\justifying
+\item $\sigma_{\mathrm{el}}(\gamma\gamma\to ZZ)\simeq 0.284$ fb,
+\item $\sigma_{\mathrm{el}}(\gamma\gamma\to t\bar t)\simeq 0.486$ fb.
+\end{itemize}
+\justifying
+\item Although smaller than the $\tau\tau$ and $WW$ cases, these channels gain importance because they probe loop structure, heavy thresholds, and the onset of high-energy electroweak / top dynamics.
+\item The same photon-induced framework also extends to exclusive pair production of BSM charged states such as higgsinos and sleptons.
+\end{itemize}
+
+%\placeholdergraphic{Suggested screenshot source:\\
+%From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slides 7--9 (ZZ, $t\bar t$, and SUSY-pair plots).}{0.25\textheight}
+
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+\section{Top physics at \LHCmu{}}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 14
+% --------------------------------------------------------------------------
+\begin{frame}{\LHCmu{} as a top factory}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item The most striking HET advantage of \LHCmu{} relative to the LHeC is the \textbf{top sector}.
+\item Inclusive benchmark rates:
+\begin{itemize}
+\item single top: $21.26$ pb at 500 GeV and $36.77$ pb at 1 TeV,
+\item $t\bar t$: $1.03$ pb at 500 GeV and $2.23$ pb at 1 TeV.
+\end{itemize}
+\justifying
+\item For the benchmark integrated luminosities, this translates into:
+\begin{itemize}
+\justifying
+\item $\sim 5.3\times10^6$ single-top events at 500 GeV,
+\item $\sim 2.6\times10^5$ $t\bar t$ events at 500 GeV,
+\item $\sim 3.7\times10^7$ single-top events at 1 TeV,
+\item $\sim 2.2\times10^6$ $t\bar t$ events at 1 TeV.
+\end{itemize}
+\justifying
+\item This is why the current collaboration narrative repeatedly describes \LHCmu{} as a genuine top factory.
+\end{itemize}
+\end{column}
+%\begin{column}{0.38\textwidth}
+%\placeholdergraphic{Best compact figure source: \texttt{Hamzeh\_Khanpour\_Help4CERN\_13Jan.pdf}, slide with inclusive top and Higgs cross-section table; \\
+%Alternative: \texttt{LHuC\_KP.pdf}, page 19.}{0.60\textheight}
+%\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 15
+% --------------------------------------------------------------------------
+\begin{frame}{Top event topology, acceptance, and why \LHCmu{} helps experimentally}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item Beyond inclusive rates, dedicated semileptonic $t\bar t$ studies indicate that the \LHCmu{} event topology is more central than the LHeC one.
+\item This matters because the gain at generator level is not purely from larger cross sections; it is also supported by strong kinematic acceptance.
+\item Representative semileptonic acceptance numbers show only modest degradation even for tighter lepton rapidity cuts, with the \LHCmu{} case remaining particularly favourable.
+\item Therefore the larger top rates are not merely formal parton-level advantages: they are likely to remain exploitable after realistic selections.
+\end{itemize}
+\end{column}
+%\begin{column}{0.38\textwidth}
+%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_29Dec.pdf}, slides 10--13: acceptance table, light-jet pseudorapidity, reconstructed $W$ mass, and lepton-$\eta$ comparison.}{0.60\textheight}
+%\end{column}
+\end{columns}
+%\takehome{For the talk, one acceptance/centrality slide is enough; do not overload with many detector-level details.}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 16
+% --------------------------------------------------------------------------
+\begin{frame}{Rare top, FCNC, and EFT directions}
+\begin{itemize}
+\justifying
+\item The top sector at \LHCmu{} is interesting not only for statistics, but also for \textbf{rare processes and anomalous couplings}.
+\item Dedicated studies already show that top-FCNC sensitivities improve substantially from the LHeC to the \LHCmu{}, reflecting both the higher rates and the harder kinematics.
+\item The characteristic $\mu p$ topology provides a useful environment for studying anomalous $tq\gamma$, $tqZ$, and $tqH$ interactions, as well as broader EFT deformations in single-top and associated channels.
+\item In the presentation, this part should be framed as one representative example of how the enormous top samples can be converted into BSM reach.
+\end{itemize}
+
+%\placeholdergraphic{Suggested source: \texttt{Hamzeh\_Khanpour\_Help4CERN\_3Feb.pdf}, slides 14--18 for FCNC cross-section/coupling dependence and kinematic distributions.}{0.28\textheight}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+\section{Beyond SM and long-term outlook}
+
+% --------------------------------------------------------------------------
+% Slide 17
+% --------------------------------------------------------------------------
+\begin{frame}{Why \LHCmu{} is also a distinctive BSM machine}
+\begin{itemize}
+\justifying
+\item Muon--proton collisions combine a point-like lepton beam, high centre-of-mass energy, and the possibility of \textbf{resonant single production} of new states that are more difficult to isolate at hadron colliders.
+\item The \LHCmu{} is naturally powerful for BSM scenarios tied to second-generation leptons.
+\item Representative examples include:
+\begin{itemize}
+\justifying
+\item R-parity-violating squark searches,
+\item color-octet muons (leptogluons),
+\item excited leptons,
+\item contact interactions,
+\item and other muon-coupled new-physics scenarios.
+\end{itemize}
+\item The talk should keep this part selective: one or two benchmark examples are enough to make the point.
+\end{itemize}
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+	at (current page.north east)
+	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\vspace{0.3em}
+{\justifying \scriptsize
+\setlength{\fboxsep}{4pt}%
+\colorbox{green!15}{%
+\parbox{0.92\linewidth}{%
+Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton collider}, Phys.\ Rev.\ D~103 (2021) 116009.%
+}%
+}%
+}
+\end{frame}
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 18
+% --------------------------------------------------------------------------
+\begin{frame}{Representative BSM benchmarks: RPV SUSY and color-octet muons}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item \textbf{RPV SUSY:} The $\mu p$ collisions can probe resonantly produced squarks with coupling reaches stronger than HL-LHC bounds in the on-shell regime.
+\item \textbf{Color-octet muons:} A 5$\sigma$ discovery reach of about:
+\begin{itemize}
+\justifying
+\item $\sim 2.3$ TeV at the HL-LHC,
+\item $\sim 3.0$ TeV for the 500 GeV \LHCmu{} option,
+\item $\sim 4.2$ TeV for the 1 TeV \LHCmu{} option.
+\end{itemize}
+\justifying
+\item These examples are sufficient to demonstrate that the BSM case is not generic hype: it is tied to concrete channels where the $\mu p$ initial state is a genuine advantage.
+\end{itemize}
+\end{column}
+%\begin{column}{0.40\textwidth}
+%\placeholdergraphic{Suggested screenshot source:\\
+%RPV: \texttt{Physics potential of a muon-proton collider.pdf}, Fig.~2 / page 4 \\
+%OR \texttt{HELP4CERN.pdf}, Fig.~2 / pages 13--15.\\[0.8ex]
+%Color-octet muon: \texttt{HELP4CERN.pdf}, Fig.~4 / pages 15--17.}{0.60\textheight}
+%\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\vspace{0.3em}
+{\justifying \scriptsize
+\setlength{\fboxsep}{4pt}%
+\colorbox{green!15}{%
+\parbox{0.92\linewidth}{%
+Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton collider}, Phys.\ Rev.\ D~103 (2021) 116009.%
+}%
+}%
+}
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 19
+% --------------------------------------------------------------------------
+\begin{frame}{FCC-hh era outlook and final take-home points}
+\begin{columns}[T]
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying
+\item The long-term perspective goes well beyond the 3.7 TeV baseline.
+\item The FCC-hh era is explicitly connected to a future high-energy $\mu p$ option, turning the current \LHCmu{} concept into a stepping stone toward even more powerful HET and BSM programmes.
+\item In particular, a future FCC-$\mu h$ machine would extend:
+\begin{itemize}
+\justifying
+\item Higgs statistics and coupling reach,
+\item top and rare-top production,
+\item high-mass electroweak and $\gamma\gamma$ studies,
+\item and resonant BSM sensitivity.
+\end{itemize}
+\end{itemize}
+
+\begin{block}{HET@\LHCmu{}}
+\small
+\justifying
+(1) \LHCmu{} is a serious HET factory;\\
+(2) the \textbf{top sector} is one of its clearest near-term strengths;\\
+(3) Higgs, EW, EFT, and $\gamma\gamma$ studies are all strongly motivated;\\
+(4) the concept also provides a natural bridge toward FCC-era $\mu p$ physics.
+\end{block}
+
+\end{column}
+%\begin{column}{0.39\textwidth}
+%\placeholdergraphic{Suggested figure source: \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, title/overview slides for LH$\mu$C@3.7 TeV \& FCC-$\mu h$@10 TeV, or \texttt{HELP4CERN.pdf} section 3.2.9 on page 30.}{0.58\textheight}
+%\end{column}
+\end{columns}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 20
+% --------------------------------------------------------------------------
+\begin{frame}[plain]
+\begin{center}
+\includegraphics[width=0.85\paperwidth,height=0.85\paperheight,keepaspectratio]{Thank_You_2.jpg}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+
+

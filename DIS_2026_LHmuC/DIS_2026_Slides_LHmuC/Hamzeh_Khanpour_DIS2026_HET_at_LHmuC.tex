@@ -61,8 +61,7 @@
 
 
 
-\title[Perspectives for HET physics studies at \LHCmu]{\justifying {\color{red}Very first draft:} Perspectives for HET physics studies at a muon-hadron collider at CERN}
-%\subtitle{DIS2026 -- WG3 Electroweak Physics, Top, Higgs and Beyond the Standard Model}
+\title[Perspectives for HET physics studies at \LHCmu]{\justifying {\color{red}Updating:}Perspectives for HET physics studies at a muon-hadron collider at CERN}
 \author[Hamzeh Khanpour]{Hamzeh Khanpour\\
 {\scriptsize \href{(on behalf of HELP4CERN Study Group)}{(on behalf of HELP4CERN Study Group)}}}
 \institute[AGH]{Faculty of Physics and Applied Computer Science\\AGH University of Krakow}
@@ -74,7 +73,6 @@
 \begin{document}
 
 
-
 % --------------------------------------------------------------------------
 % Slide 1
 % --------------------------------------------------------------------------
@@ -84,14 +82,7 @@
 at (current page.north east)
 {\includegraphics[width=2.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
-
 \titlepage
-
-%\vspace{-0.8em}
-%\begin{center}
-%{\scriptsize Based on recent $\mu$LHC studies and the ongoing HELP4CERN white paper effort}
-%\end{center}
-
 \end{frame}
 
 
@@ -105,111 +96,158 @@ at (current page.north east)
 \end{frame}
 
 
-
-
 \section{Physics motivation and benchmarks}
+
+
+
 
 
 
 % --------------------------------------------------------------------------
 % Slide 3
 % --------------------------------------------------------------------------
-\begin{frame}{Talk scope and central message}
+\begin{frame}{Why a muon--hadron collider for HET physics?}
+
 \begin{itemize}
-%\item This talk focuses on the \textbf{physics case} of the proposed antimuon--hadron collider at CERN, and in particular on the \textbf{Higgs--Electroweak--Top (HET)} programme.
-%\item The goal is not to review accelerator or detector R\&D in detail, but to assess what multi-TeV $\mu p$ collisions with high luminosity can deliver for Higgs, top, electroweak, photon-induced, and BSM studies.
 \justifying
-\item The core message is that \LHCmu{} is \textbf{not only a QCD machine}: it also opens a serious HET factory, with especially strong reach in the \textbf{top sector} and a broad programme in \textbf{precision Higgs, EW, EFT, and $\gamma\gamma$ physics}.
+\item A muon-hadron collider combines the clean lepton-hadron initial state of DIS with a multi-TeV centre-of-mass energy, opening a new regime for Higgs, electroweak, top, and BSM studies.
+
+\item Relative to an electron-proton collider, replacing the electron beam by a muon beam strongly relaxes the synchrotron-radiation limitation, allowing significantly higher beam energies and hence much larger hard-scattering rates, and pushes the centre-of-mass energy deep into the multi-TeV regime.
+	
+\item Relative to proton-proton collisions, the $\mu p$ environment remains experimentally cleaner, with smaller QCD backgrounds for many precision and BSM channels.
 \end{itemize}
 
-\begin{block}{Benchmark working points used throughout the talk}
+
+\begin{alertblock}{Three complementary physics paths at LH$\mu$C}
 \small
-\justifying 
-Baseline: $E_\mu=500$ GeV with $E_p=7$ TeV ($\sqrt{s}\simeq 3.7$ TeV), typically assuming $\mathcal{L}_{\mathrm{int}}=250$ fb$^{-1}$;\\
-Upgrade: $E_\mu=1$ TeV with $E_p=7$ TeV ($\sqrt{s}\simeq 5.3$ TeV), typically assuming $\mathcal{L}_{\mathrm{int}}=1000$ fb$^{-1}$.
-\end{block}
-\small  \scriptsize
-{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Krzysztof Piotrzkowski}}}
+\justifying
+LH$\mu$C combines three powerful and complementary directions: a strong QCD programme, high-precision Higgs/top/electroweak measurements, and a powerful probe of physics beyond the Standard Model.
+\end{alertblock}
+
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
-{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
 \end{frame}
-
 
 
 % --------------------------------------------------------------------------
 % Slide 4
 % --------------------------------------------------------------------------
-\begin{frame}{Benchmark machines and representative event samples}
+\begin{frame}{Benchmark working points used in this talk}
+	
 \begin{columns} 
-\begin{column}{0.99\textwidth}
+\begin{column}{0.70\textwidth}
 \begin{itemize}
 \justifying
-\item Relative to the LHeC, moving from electrons to muons lifts the synchrotron-radiation limitation and pushes the centre-of-mass energy deep into the multi-TeV regime.
-%\item For the HET physics case, the useful comparison is between:
-%\begin{itemize}
-%\justifying
-%\item 60 GeV LHeC as the electron--hadron reference,
-%\item 500 GeV \LHCmu{} as the baseline HET benchmark,
-%\item 1 TeV \LHCmu{} as the upgrade / extended-reach benchmark.
-%\end{itemize}
-%\item The expected raw event counts are already very large:
-%\begin{itemize}
-%\justifying
-%\item $\sim 1.10\times 10^5$ CC Higgs events at 500 GeV,
-%\item $\sim 5.32\times 10^6$ single-top events at 500 GeV,
-%\item $\sim 2.23\times 10^6$ $t\bar t$ events at 1 TeV,
-%\item $\sim 3.68\times 10^7$ single-top events at 1 TeV.
-%\end{itemize}
+\small
+\item The present talk focuses on the physics case of the LH$\mu$C, using the current HELP4CERN working benchmarks: 
+				
+\item The nominal baseline is
+\[
+E_\mu=500~\mathrm{GeV}, \, E_p=7~\mathrm{TeV},
+\, \sqrt{s} \simeq 3.7~\mathrm{TeV},
+\]
+with a $\mathcal{L}_{\mathrm{int}}=250~\mathrm{fb}^{-1}$.
+				
+\item The main upgrade scenario is
+\[
+E_\mu=1~\mathrm{TeV}, \, E_p=7~\mathrm{TeV},
+\, \sqrt{s}\simeq 5.3~\mathrm{TeV},
+\]
+with a $\mathcal{L}_{\mathrm{int}}=1000~\mathrm{fb}^{-1}$.
+				
+{
+\setbeamercolor{block title}{fg=white,bg=green!55!black}
+\setbeamercolor{block body}{fg=black,bg=green!10}
+	
+\begin{block}{LH$\mu$C physics message}
+\justifying
+\scriptsize
+These working points are sufficient to demonstrate the main message of LH$\mu$C: already at the 500~GeV baseline, LH$\mu$C enters the multi-TeV regime and becomes highly competitive for Higgs, top, electroweak, $\gamma\gamma$, and representative BSM studies.
+\end{block}
+}
+
 \end{itemize}
 \end{column}
+		
+\begin{column}{0.42\textwidth}
+\begin{alertblock}{Benchmarks}
+\small
+\justifying
+\begin{tabular}{@{}ll@{}}
+\textbf{Machine} & \textbf{Benchmark} \\[0.2em]
+LHeC & $E_e=20,\,60$ GeV \\
+LH$\mu$C baseline & $E_\mu=500$ GeV \\
+LH$\mu$C upgrade & $E_\mu=1$ TeV
+\end{tabular}
+				
+\vspace{0.1em}
+				
+\begin{tabular}{@{}ll@{}}
+\textbf{Configuration} & \textbf{Value} \\[0.2em]
+$\sqrt{s}_{\mu p}$ (baseline) & $\simeq 3.7$ TeV \\
+$\sqrt{s}_{\mu p}$ (upgrade) & $\simeq 5.3$ TeV \\
+$\mathcal{L}_{\rm int}$ (baseline) & $250~\mathrm{fb}^{-1}$ \\
+$\mathcal{L}_{\rm int}$ (upgrade) & $1000~\mathrm{fb}^{-1}$
+\end{tabular}
+\end{alertblock}
+			
+\centering
+\includegraphics[width=0.5\linewidth]{HELP4CERN.jpg}
+{\scriptsize
+\setlength{\fboxsep}{4pt}%
+\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Krzysztof Piotrzkowski}}%
+}
+\end{column}
 \end{columns}
-\small  \scriptsize
-{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Krzysztof Piotrzkowski}}}
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-at (current page.north east)
-{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
 \end{frame}
-
 
 
 
 % --------------------------------------------------------------------------
 % Slide 5
 % --------------------------------------------------------------------------
-\begin{frame}{Why a muon-hadron collider? Kinematic reach and physics landscape}
+\begin{frame}{Kinematic reach and QCD physics landscape}
+
 \begin{columns} 
 \begin{column}{0.55\textwidth}
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{xbjq2_diagram.pdf}
-\caption{\justifying \scriptsize Available $(x,Q^2)$ plane for the proposed LHeC and LH$\mu$C, in comparison to existing fixed-target and collider datasets, and the planned EIC kinematic reach. An inelasticity range of $4\times10^{-3}<y<1$ is assumed to evaluate the lower and upper bounds.}
+\includegraphics[width=\linewidth]{LHmuC_xQ2.jpg}
+\scriptsize Available $(x,Q^2)$ plane for the proposed LH$\mu$C, compared with fixed-target, collider, and EIC kinematic coverage.
 \end{figure}
 \end{column}
-\begin{column}{0.55\textwidth}
+
+
+\begin{column}{0.61\textwidth}
+{
+\setbeamercolor{block title}{fg=white,bg=blue!45!black}
+\setbeamercolor{block body}{fg=black,bg=blue!10}
+	
+\begin{block}{QCD program at LH$\mu$C}
 \begin{itemize}
 \justifying
 \item The multi-TeV $\mu p$ configuration extends the DIS kinematic coverage well beyond HERA and significantly beyond the LHeC.
+\item The same machine that reaches extreme $x$ and $Q^2$ also strengthens the QCD programme through improved access to proton PDFs, and precise determinations of $\alpha_s$. 
 \item This motivates the broader CERN bridge-project narrative: LH$\mu$C strengthens both the QCD frontier and the HET/BSM programme.
-\item The same machine that reaches extreme $x$ and $Q^2$ also provides high rates for Higgs, top, EW and photon-induced reactions.
-\item \scriptsize
-{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Piotr Kotko}}}
 \end{itemize}
+\end{block}
+}
+
+\centering
+\scriptsize
+{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Piotr Kotko}}}
+
 \end{column}
 \end{columns}
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
 \end{frame}
-
-
-
 
 
 
@@ -223,42 +261,77 @@ at (current page.north east)
 % Slide 6
 % --------------------------------------------------------------------------
 \begin{frame}{Representative HET benchmark cross sections}
+\begin{columns}[T,onlytextwidth]
+		
+%---------------------------------------
+\begin{column}{0.40\textwidth}	
+\begin{block}{What does this table show?}
 \small
-\begin{table}
+\justifying LH$\mu$C as a genuine HET factory:
+Higgs production is large enough to support precision Higgs physics, including benchmark coupling studies {\color{red}\&} 
+the top sector benefits the most, enabling both precision top measurements and sensitivity to rare top processes, {\color{red}\&}  
+even the 500~GeV baseline opens a qualitatively new regime for electroweak, EFT, and BSM physics.  
+\end{block}
+\end{column}
+
+
+
+%---------------------------------------
+\begin{column}{0.56\textwidth}
+			
+{
+\setbeamercolor{block title}{fg=white,bg=red!65!black}
+\setbeamercolor{block body}{fg=black,bg=red!3}
+				
+\begin{block}{Benchmark inclusive cross sections}
 \centering
+%\small
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
-Process & 20 GeV LHeC & 60 GeV LHeC & 500 GeV \LHCmu{} & 1 TeV \LHCmu{} \\
+Process & 20 GeV & 50 GeV & 500 GeV & 1 TeV \\
+& LHeC & LHeC & LH$\mu$C & LH$\mu$C \\
 \midrule
-$\sigma(\ell p\to \nu_\ell H+\mathrm{jet}+X)$ [fb] & 52 & 164 & 438 & 731 \\
-$\sigma(\ell p\to \ell H+\mathrm{jet}+X)$ [fb] & 5.6 & 19 & 135 & 221 \\
-$\sigma(\ell p\to \ell\, t\bar t +X)$ [pb] & 0.0015 & 0.0323 & 1.03 & 2.23 \\
-$\sigma(\ell p\to \nu_\ell t +X)$ [pb] & 0.55 & 2.89 & 21.26 & 36.77 \\
+$\sigma(\ell p\to \nu_\ell H+\mathrm{jet}+X)$ [fb]
+& 52 & 164 & 438 & 731 \\
+					
+$\sigma(\ell p\to \ell H+\mathrm{jet}+X)$ [fb]
+& 5.6 & 19 & 135 & 221 \\
+							
+$\sigma(\ell p\to \ell\, t\bar t +X)$ [pb]
+& 0.0015 & 0.0323 & 1.03 & 2.23 \\
+							
+$\sigma(\ell p\to \nu_\ell t +X)$ [pb]
+& 0.55 & 2.89 & 21.26 & 36.77 \\
 \bottomrule
-\end{tabular}
-\end{table}
-
-\vspace{0.4em}
-\begin{itemize}
+\end{tabular}%
+}
+				
+%\vspace{0.5em}
+%{\tiny \justifying
+%Benchmark inclusive cross sections for representative Higgs and top production processes at the LHeC and LH$\mu$C working points.
+%}
+					
+\vspace{0.4em}	
+\begin{alertblock}{Key comparisons}
+\small
 \justifying
-\item The qualitative pattern is already clear at the inclusive level: Higgs production rises strongly, while the \textbf{largest gain is in the top sector}.
-\item Relative to the 60 GeV LHeC, the 500 GeV \LHCmu{} increases rates by factors of about $\sim2.7$ (CC Higgs), $\sim7$ (single top) and $\sim32$ ($t\bar t$).
-\item This table is the cleanest bridge from machine benchmarks to the actual physics case.
-\end{itemize}
+Relative to the 50~GeV LHeC benchmark, the 500~GeV LH$\mu$C increases rates by approximately: $\sim 2.7$ for charged-current Higgs production, $\sim 7$ for single-top production, and $\sim 32$ for $t\bar t$ production.
+\end{alertblock}
+					
+\end{block}
+}
+			
+\end{column}
+\end{columns}
+	
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
-{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
-\vspace{0.3em}
-{\scriptsize
-\setlength{\fboxsep}{4pt}%
-\colorbox{green!15}{%
-\parbox{0.86\linewidth}{%
-HELP4CERN collaboration, White Paper on High Energy, High Luminosity Lepton--Hadron Colliders at CERN, in preparation.
-}%
-}%
-}
+	
 \end{frame}
 
 
@@ -289,19 +362,24 @@ HELP4CERN collaboration, White Paper on High Energy, High Luminosity Lepton--Had
 \item This already motivates precision Higgs-coupling studies beyond a mere rescaling of LHeC expectations.
 \end{itemize}
 \end{column}
+
 \begin{column}{0.55\textwidth}
+
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{Higgs.jpg}
 \caption{\justifying\scriptsize Higgs boson production cross sections at the LHeC and LH$\mu$C versus centre-of-mass energy, showing the dominant charged-current ($W$-fusion) and subleading neutral-current ($Z$-fusion) contributions.}
 \end{figure}
+
 \end{column}
 \end{columns}
+
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
+
 \end{frame}
 
 

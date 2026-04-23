@@ -26,6 +26,8 @@
 
 \usepackage{hyperref}
 
+\usepackage[table]{xcolor}
+
 \makeatletter
 \patchcmd{\itemize}{\raggedright}{\justifying}{}{}
 \patchcmd{\beamer@enum@}{\raggedright}{\justifying}{}{}
@@ -455,11 +457,13 @@ at (current page.north east)
 %----------------------------------------
 % Cross-section plot
 %----------------------------------------
-\justifying
+\centering
 \includegraphics[width=0.99\linewidth]{mupVBFH_xsec_nocut.png}
-\vspace{0.15em}
+\justifying
+%\vspace{0.35em}			
 {\scriptsize
-Higgs boson production cross sections at LH$\mu$C for the CC (\(W\)-fusion) and subleading NC (\(Z\)-fusion) contributions.}
+Higgs boson production cross sections at LH$\mu$C for the CC (\(W\)-fusion) and subleading NC (\(Z\)-fusion) contributions.
+}
 		
 \end{column}
 		
@@ -478,72 +482,17 @@ at (current page.north east)
 
 
 
+
+
 % --------------------------------------------------------------------------
 % Slide 8
 % --------------------------------------------------------------------------
 \begin{frame}{Precision Higgs case study: $h\to b\bar b$ and coupling prospects}
-\begin{columns}[T]
-		
-\begin{column}{0.58\textwidth}
-\begin{itemize}
-\justifying
-\item A concrete benchmark already exists for the charged-current VBF process with $h\to b\bar b$.
-				
-\item The parton showering, fast detector simulation, and a cut-based analysis were used to estimate:
-\begin{itemize}
-\justifying
-\item $\Delta \sigma/\sigma \simeq 1.19\%$ and $0.69\%$ for the two $\mu p$ collider setups,
-\item corresponding benchmark sensitivities of about $0.77\%$ and $0.60\%$ on $g_{hbb}$.
-\end{itemize}
-\justifying
-\item This strongly supports the claim that \LHCmu{} can be a competitive Higgs factory.		
-%\item \textbf{Important caveat:} the global coupling-fit programme is still under development, and naive recycling of LHeC signal-strength projections is not yet sufficient for the final LH$\mu$C coupling case.
-\end{itemize}
-\end{column}
-
-\begin{column}{0.40\textwidth}
-\begin{table}
-\centering
-\scriptsize
-\renewcommand{\arraystretch}{1.15}
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{lcc}
-\toprule
-& $\mu p$-1 & $\mu p$-2 \\
-\midrule
-$\sigma_{\rm sig}$ [pb] & 0.24 & 0.39 \\
-$\sigma_{\rm bgd\text{-}Z}$ [pb] & 0.30 & 0.50 \\
-$\sigma_{\rm bgd\text{-}mj}$ [pb] & 357.9 & 563.8 \\
-$\epsilon^{\rm sig}_{\rm cut}$ & 0.22 & 0.21 \\
-$\epsilon^{\rm bgd\text{-}Z}_{\rm cut}$ & 0.025 & 0.025 \\
-$\epsilon^{\rm bgd\text{-}mj}_{\rm cut}$ & $9.7\times10^{-5}$ & $1.23\times10^{-4}$ \\
-\midrule
-$\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
-$\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
-\bottomrule
-\end{tabular}
-\caption{\justifying \scriptsize Benchmark $h\to b\bar b$ case study at $\mu p$ colliders: signal and background cross sections, cut efficiencies, and projected sensitivities for the Higgs coupling to bottom quarks.}
-\end{table}
-\end{column}
-\end{columns}
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-at (current page.north east)
-{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-\end{frame}
-
-
-
-% --------------------------------------------------------------------------
-% Slide A
-% --------------------------------------------------------------------------
-\begin{frame}{Benchmark precision Higgs case: $h\to b\bar b$ in CC VBF}
 	
 \begin{columns}[T]
-		
+
 %----------------------------------------
-\begin{column}{0.56\textwidth}
+\begin{column}{0.65\textwidth}
 \begin{itemize}
 \justifying
 \small
@@ -557,7 +506,7 @@ p\mu^{+}\to j\,\bar{\nu}_{\mu}\,h,\qquad h\to b\bar b .
 \begin{itemize}
 \justifying
 \small
-\item MadGraph5\_aMC@NLO + Pythia6 + FastJet + Delphes,
+\item MG5\_aMC@NLO + Pythia6 + FastJet + Delphes,
 \item LHeC-like asymmetric detector setup and 75\% $b$-tagging efficiency,
 \item selection with exactly two $b$-jets and
 \[
@@ -565,27 +514,21 @@ p\mu^{+}\to j\,\bar{\nu}_{\mu}\,h,\qquad h\to b\bar b .
 \]
 \end{itemize}
 				
-\item This gives a direct benchmark on the measurable rate
+\item This gives a benchmark on the measurable rate which can be translated into a sensitivity on $g_{hbb}$:
 \[
 \sigma(p\mu^{+}\to j\,\bar{\nu}_{\mu}\,b\bar b)
 \;\propto\;
 \frac{g_{hWW}^2\,g_{hbb}^2}{\Gamma_h},
 \]
-which can be translated into a benchmark sensitivity on $g_{hbb}$.
+
 				
 \end{itemize}
-			
-\vspace{0.2em}
-\begin{alertblock}{Take-home message}
-\small
-The current LH$\mu$C benchmark study already reaches sub-percent sensitivity to
-$g_{hbb}$ in the charged-current Higgs channel, turning the large production rates into
-a concrete precision-Higgs case.
-\end{alertblock}
 \end{column}
 		
+		
+		
 %----------------------------------------
-\begin{column}{0.42\textwidth}
+\begin{column}{0.45\textwidth}
 \centering
 \scriptsize
 \renewcommand{\arraystretch}{1.15}
@@ -602,16 +545,23 @@ $\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
 $\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
 \bottomrule
 \end{tabular}
-			
-\vspace{0.35em}
-{\scriptsize
+
 \justifying
-Benchmark charged-current $h\to b\bar b$ sensitivities in the current HELP4CERN study.
-The quoted coupling reach follows from the benchmark rate measurement after propagating
-the external uncertainty on $g_{hWW}^2/\Gamma_h$.
+\vspace{0.35em}			
+{\scriptsize
+Benchmark charged-current $h\to b\bar b$ sensitivities in our study.
+The quoted coupling reach follows from the benchmark rate measurement after propagating the external uncertainty on $g_{hWW}^2/\Gamma_h$.
 }
+\vspace{0.2em}
+\begin{alertblock}{Key finding}
+\scriptsize
+\justifying
+The current LH$\mu$C benchmark study already reaches sub-percent sensitivity to
+$g_{hbb}$ in the charged-current Higgs channel, turning the large production rates into
+a concrete precision-Higgs case.
+\end{alertblock}
+
 \end{column}
-		
 \end{columns}
 
 \begin{tikzpicture}[remember picture,overlay]
@@ -629,71 +579,55 @@ at (current page.north east)
 
 
 % --------------------------------------------------------------------------
-% Slide B
+% Slide 9
 % --------------------------------------------------------------------------
-\begin{frame}{Broader Higgs-coupling reach: exploratory global-fit picture}
+\begin{frame}{Broader Higgs-coupling reach: a global-fit picture}
 	
 \begin{columns}[T]
 		
 %----------------------------------------
-\begin{column}{0.46\textwidth}
+\begin{column}{0.60\textwidth}
 \begin{itemize}
-\justifying
-\small
-				
-\item Beyond the dedicated $h\to b\bar b$ benchmark, the current white-paper draft also
-includes an exploratory Higgs coupling fit in the \textbf{kappa-3} framework.
-		
-\item The compared scenarios are:
+\justifying 
+\small 
+\item Beyond the dedicated $h\to b\bar b$ benchmark, we also
+examined a Higgs coupling fit in the kappa-3 framework.
+
+\item These results are obtained in a first explorative study:
 \begin{itemize}
-\justifying
-\small
-\item HL-LHC,
-\item HL-LHC improved,
-\item LHeC,
-\item LHeC + LH$\mu$C-500 / 1000 / 2000.
+\justifying 
+\scriptsize 
+\item the same systematic factors as in the underlying LHeC-based setup,
+\item the statistical error is rescaled using the benchmark LH$\mu$C cross sections,
+\item and the fit results shown here were obtained with the \textsc{SMEFiT} framework.
 \end{itemize}
 				
-\item The strongest visible improvement is in the \textbf{vector sector}:
+\item The strongest visible improvement is in the vector sector:
+{\scriptsize
 \[
-\delta\kappa_W \simeq 0.19\% \;\;(\mathrm{LH}\mu\mathrm{C}\text{-}1000),\qquad
-0.16\% \;\;(\mathrm{LH}\mu\mathrm{C}\text{-}2000).
+\delta\kappa_W \simeq 0.29\% \;\;(\mathrm{LH}\mu\mathrm{C}\text{-}0.5\mathrm{TeV}),\,
+0.19\% \;\;(\mathrm{LH}\mu\mathrm{C}\text{-}1\mathrm{TeV}).
 \]
-				
-\item The companion fermion and loop panels show further, generally milder, gains;
-the cleanest conference-level headline is that higher-energy LH$\mu$C stages can make a
-particularly strong contribution to \(\kappa_W\) and \(\kappa_Z\).
-				
+}				
+\item The clearest message of the current exploratory fit is the strong projected improvement in the vector sector, especially for \(\kappa_W\) and \(\kappa_Z\), at the higher-energy LH$\mu$C stages.
+
 \end{itemize}
-			
-\vspace{0.2em}
-\begin{block}{Important caveat}
-\small
-This is a \emph{first explorative} global-fit study.
-The draft explicitly assumes LHeC-like systematics and rescales the statistical component
-with the benchmark LH$\mu$C cross sections.
-Since neither HL-LHC nor any $\ell p$ collider directly measures the Higgs width,
-the fit imposes \(\kappa_V\le 1\).
-\end{block}
 \end{column}
-		
+
 %----------------------------------------
-\begin{column}{0.52\textwidth}
+\begin{column}{0.50\textwidth}
+\vspace{0.9em}
 \centering
 \includegraphics[width=\linewidth]{LHmuC_vector.pdf}
-		
 \vspace{0.2em}
 {\scriptsize
 \justifying
 Exploratory vector-modifier result in the kappa-3 framework.
-The panel compares HL-LHC-based benchmarks with LHeC and with LHeC+LH$\mu$C stages.
-The most important message for the talk is the strong projected improvement in the vector sector,
-especially for \(\kappa_W\).
-}
+The panel compares HL-LHC-based benchmarks with LHeC and with LHeC+LH$\mu$C stages.}
 \end{column}
-		
+
 \end{columns}
-	
+
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
@@ -701,11 +635,6 @@ at (current page.north east)
 \end{tikzpicture}
 	
 \end{frame}
-
-
-
-
-
 
 
 
@@ -1113,7 +1042,60 @@ at (current page.north east)
 \end{frame}
 
 
+
+
+% --------------------------------------------------------------------------
+% Backup slide
+% --------------------------------------------------------------------------
+\begin{frame}{The HELP4CERN collaboration}
+	
+\begin{columns}[T] % [T,onlytextwidth]
+	
+%========================================
+% Left column
+%========================================
+\begin{column}{0.55\textwidth}
+
+\setbeamercolor{greenbox}{bg=green!10,fg=black}
+\begin{beamercolorbox}[wd=\linewidth,sep=0.9em,rounded=true,shadow=true]{greenbox}
+\justifying
+\small
+\textbf{HELP4CERN} collaboration focuses on the physics case for
+high-energy, high-luminosity lepton-hadron colliders at CERN.
+
+\begin{itemize}
+\justifying
+\small
+\item assess the physics potential of future lepton-hadron collider options,
+\item develop benchmark studies for Higgs, electroweak, top, QCD, and BSM physics,
+\item provide a common framework for phenomenology, detector studies, and future projections,
+\item new contributions and physics studies are very welcome,
+\end{itemize}
+
+\textbf{Contact:} \texttt{help-4-cern@cern.ch}
+\end{beamercolorbox}
+\end{column}
+		
+%========================================
+% Right column
+%========================================
+\begin{column}{0.50\textwidth}
+\centering
+\includegraphics[width=\linewidth]{White_Paper.jpg}
+\end{column}
+
+\end{columns}
+	
+\end{frame}
+
+
 \end{document}
+
+
+
+
+
+
 
 
 
@@ -1196,6 +1178,62 @@ at (current page.north east)
 
 
 
+
+
+% --------------------------------------------------------------------------
+% Slide 8
+% --------------------------------------------------------------------------
+\begin{frame}{Precision Higgs case study: $h\to b\bar b$ and coupling prospects}
+	\begin{columns}[T]
+		
+		\begin{column}{0.58\textwidth}
+			\begin{itemize}
+				\justifying
+				\item A concrete benchmark already exists for the charged-current VBF process with $h\to b\bar b$.
+				
+				\item The parton showering, fast detector simulation, and a cut-based analysis were used to estimate:
+				\begin{itemize}
+					\justifying
+					\item $\Delta \sigma/\sigma \simeq 1.19\%$ and $0.69\%$ for the two $\mu p$ collider setups,
+					\item corresponding benchmark sensitivities of about $0.77\%$ and $0.60\%$ on $g_{hbb}$.
+				\end{itemize}
+				\justifying
+				\item This strongly supports the claim that \LHCmu{} can be a competitive Higgs factory.		
+				%\item \textbf{Important caveat:} the global coupling-fit programme is still under development, and naive recycling of LHeC signal-strength projections is not yet sufficient for the final LH$\mu$C coupling case.
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.40\textwidth}
+			\begin{table}
+				\centering
+				\scriptsize
+				\renewcommand{\arraystretch}{1.15}
+				\setlength{\tabcolsep}{3.5pt}
+				\begin{tabular}{lcc}
+					\toprule
+					& $\mu p$-1 & $\mu p$-2 \\
+					\midrule
+					$\sigma_{\rm sig}$ [pb] & 0.24 & 0.39 \\
+					$\sigma_{\rm bgd\text{-}Z}$ [pb] & 0.30 & 0.50 \\
+					$\sigma_{\rm bgd\text{-}mj}$ [pb] & 357.9 & 563.8 \\
+					$\epsilon^{\rm sig}_{\rm cut}$ & 0.22 & 0.21 \\
+					$\epsilon^{\rm bgd\text{-}Z}_{\rm cut}$ & 0.025 & 0.025 \\
+					$\epsilon^{\rm bgd\text{-}mj}_{\rm cut}$ & $9.7\times10^{-5}$ & $1.23\times10^{-4}$ \\
+					\midrule
+					$\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
+					$\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
+					\bottomrule
+				\end{tabular}
+				\caption{\justifying \scriptsize Benchmark $h\to b\bar b$ case study at $\mu p$ colliders: signal and background cross sections, cut efficiencies, and projected sensitivities for the Higgs coupling to bottom quarks.}
+			\end{table}
+		\end{column}
+	\end{columns}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+\end{frame}
 
 
 

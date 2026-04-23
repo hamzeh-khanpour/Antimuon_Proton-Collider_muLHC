@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{LH$\mu $C@CERN: physics motivation and benchmarks}{3}{0}{1}
+\beamer@sectionintoc {2}{HET overview: Higgs, electroweak and top}{6}{0}{2}
+\beamer@sectionintoc {3}{Precision Higgs physics at LH$\mu $C}{7}{0}{3}
+\beamer@sectionintoc {4}{High-energy $\gamma \gamma $ physics at LH$\mu $C}{11}{0}{4}
+\beamer@sectionintoc {5}{Top physics at LH$\mu $C{}}{15}{0}{5}
+\beamer@sectionintoc {6}{Beyond SM and long-term outlook}{18}{0}{6}

@@ -17,10 +17,12 @@
 \usepackage{etoolbox}
 
 \usepackage{tikz}
-
 \usepackage{comment}
 
-\usetikzlibrary{calc,positioning,arrows.meta,decorations.pathmorphing,patterns}
+\usepackage{tikz-feynman}
+\tikzfeynmanset{compat=1.1.0}
+
+\usetikzlibrary{calc,positioning,arrows.meta,decorations.pathmorphing,patterns,shapes.geometric}
 
 \usepackage{hyperref}
 
@@ -261,7 +263,7 @@ at (current page.north east)
 % Slide 6
 % --------------------------------------------------------------------------
 \begin{frame}{Representative HET benchmark cross sections}
-\begin{columns}[T,onlytextwidth]
+\begin{columns}%[T,onlytextwidth]
 		
 %---------------------------------------
 \begin{column}{0.40\textwidth}	
@@ -336,54 +338,143 @@ at (current page.north east)
 
 
 
-
-
 % --------------------------------------------------------------------------
 % Slide 7
 % --------------------------------------------------------------------------
 \begin{frame}{Higgs production at \LHCmu: channels, rates, and statistics}
-\begin{columns}[T]
-\begin{column}{0.70\textwidth}
+	
+\begin{columns}%[T,onlytextwidth]
+		
+%========================================
+% Left column: text
+%========================================
+\begin{column}{0.65\textwidth}
 \begin{itemize}
 \justifying
-\item Higgs production is dominated by \textbf{charged-current VBF} with a subleading but still sizeable neutral-current contribution.
+\small
+\item Higgs production is dominated by CC VBF, with a subleading but still sizeable NC contribution.
+				
 \item Using the current benchmarks:
 \begin{itemize}
 \justifying
-\item 500 GeV \LHCmu: $\sigma_{\mathrm{CC}}\simeq 438$ fb, $\sigma_{\mathrm{NC}}\simeq 135$ fb,
-\item 1 TeV \LHCmu: $\sigma_{\mathrm{CC}}\simeq 731$ fb, $\sigma_{\mathrm{NC}}\simeq 221$ fb.
+\small
+\item 500~GeV \LHCmu: $\sigma_{\mathrm{CC}}\simeq 438$~fb, $\sigma_{\mathrm{NC}}\simeq 135$~fb,
+\item 1~TeV \LHCmu: $\sigma_{\mathrm{CC}}\simeq 731$~fb, $\sigma_{\mathrm{NC}}\simeq 221$~fb.
 \end{itemize}
+				
 \item For the benchmark integrated luminosities, these correspond to roughly:
 \begin{itemize}
 \justifying
-\item $1.10\times10^5$ CC Higgs and $3.38\times10^4$ NC Higgs events at 500 GeV,
-\item $7.31\times10^5$ CC Higgs and $2.21\times10^5$ NC Higgs events at 1 TeV.
+\small
+\item $1.10\times10^5$ CC Higgs and $3.38\times10^4$ NC Higgs events at 500~GeV,
+\item $7.31\times10^5$ CC Higgs and $2.21\times10^5$ NC Higgs events at 1~TeV.
 \end{itemize}
+				
 \item This already motivates precision Higgs-coupling studies beyond a mere rescaling of LHeC expectations.
 \end{itemize}
 \end{column}
-
-\begin{column}{0.55\textwidth}
-
-\begin{figure}
+		
+%========================================
+% Right column: diagrams + plot
+%========================================
+\begin{column}{0.45\textwidth}
+			
+%----------------------------------------
+% Small diagrams on top
+%----------------------------------------
+\begin{columns}[T,onlytextwidth]
+				
+%----------------------
+% CC diagram
+%----------------------
+\begin{column}{0.45\textwidth}
 \centering
-\includegraphics[width=\linewidth]{Higgs.jpg}
-\caption{\justifying\scriptsize Higgs boson production cross sections at the LHeC and LH$\mu$C versus centre-of-mass energy, showing the dominant charged-current ($W$-fusion) and subleading neutral-current ($Z$-fusion) contributions.}
-\end{figure}
-
+\begin{tikzpicture}[scale=0.45, transform shape]
+\begin{feynman}
+\vertex (i1) at (-2.5,  1.7) {\(d\)};
+\vertex (i2) at (-2.5, -1.7) {\(\mu^{+}\)};
+\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0,1.1) {};
+\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (0,-1.1) {};
+\vertex (o1) at (2.5,  1.7) {\(u\)};
+\vertex (o2) at (2.5, -1.7) {\(\bar{\nu}_{\mu}\)};
+\vertex (h1) at (2.5,0.0) {\(h\)};
+\vertex (m1) at (0,0.0);
+							
+\diagram*{
+(i1) -- [fermion, draw=green!60!black, line width=1.0pt] (v1)
+-- [fermion, draw=green!60!black, line width=1.0pt] (o1),
+(i2) -- [anti fermion, draw=green!60!black, line width=1.0pt] (v2)
+-- [anti fermion, draw=green!60!black, line width=1.0pt] (o2),
+(v1) -- [boson, edge label=\(W^{+}\), line width=1.0pt] (m1),
+(m1) -- [boson, edge label=\(W^{+}\), line width=1.0pt] (v2),
+(m1) -- [scalar, line width=1.0pt] (h1),
+};
+\end{feynman}
+\end{tikzpicture}
+					
+\vspace{0.05em}
+{\scriptsize CC: \(\mu^{+} p \to \bar{\nu}_{\mu}\,j\,h\)}
 \end{column}
+				
+%----------------------
+% NC diagram
+%----------------------
+\begin{column}{0.45\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.45, transform shape]
+\begin{feynman}
+\vertex (i1) at (-2.5,  1.7) {\(b\)};
+\vertex (i2) at (-2.5, -1.7) {\(\mu^{+}\)};
+\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0,1.1) {};
+\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (0,-1.1) {};
+\vertex (o1) at (2.5,  1.7) {\(b\)};
+\vertex (o2) at (2.5, -1.7) {\(\mu^{+}\)};
+\vertex (h1) at (2.5,0.0) {\(h\)};
+\vertex (m1) at (0,0.0);
+							
+\diagram*{
+(i1) -- [fermion, draw=green!60!black, line width=1.0pt] (v1)
+-- [fermion, draw=green!60!black, line width=1.0pt] (o1),
+(i2) -- [anti fermion, draw=green!60!black, line width=1.0pt] (v2)
+-- [anti fermion, draw=green!60!black, line width=1.0pt] (o2),
+(v1) -- [boson, edge label=\(Z\), line width=1.0pt] (m1),
+(m1) -- [boson, edge label=\(Z\), line width=1.0pt] (v2),
+(m1) -- [scalar, line width=1.0pt] (h1),
+};
+\end{feynman}
+\end{tikzpicture}
+					
+\vspace{0.05em}
+{\scriptsize NC: \(\mu^{+} p \to \mu^{+}\,j\,h\)}
+\end{column}
+				
 \end{columns}
-
+			
+\vspace{0.20em}
+			
+%----------------------------------------
+% Cross-section plot
+%----------------------------------------
+\justifying
+\includegraphics[width=0.95\linewidth]{Higgs.jpg}
+\vspace{0.15em}
+{\scriptsize
+Higgs boson production cross sections at LH$\mu$C for the CC (\(W\)-fusion) and subleading NC (\(Z\)-fusion) contributions.}
+		
+\end{column}
+		
+\end{columns}
+	
+%----------------------------------------
+% HELP4CERN logo
+%----------------------------------------
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
 {\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
-
+	
 \end{frame}
-
-
-
 
 
 
@@ -398,7 +489,7 @@ at (current page.north east)
 \justifying
 \item A concrete benchmark already exists for the charged-current VBF process with $h\to b\bar b$.
 				
-\item In the HELP4CERN draft, parton showering, fast detector simulation, and a cut-based analysis were used to estimate:
+\item The parton showering, fast detector simulation, and a cut-based analysis were used to estimate:
 \begin{itemize}
 \justifying
 \item $\Delta \sigma/\sigma \simeq 1.19\%$ and $0.69\%$ for the two $\mu p$ collider setups,
@@ -409,7 +500,7 @@ at (current page.north east)
 %\item \textbf{Important caveat:} the global coupling-fit programme is still under development, and naive recycling of LHeC signal-strength projections is not yet sufficient for the final LH$\mu$C coupling case.
 \end{itemize}
 \end{column}
-		
+
 \begin{column}{0.40\textwidth}
 \begin{table}
 \centering
@@ -418,29 +509,200 @@ at (current page.north east)
 \setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{lcc}
 \toprule
-					& $\mu p$-1 & $\mu p$-2 \\
+& $\mu p$-1 & $\mu p$-2 \\
 \midrule
-					$\sigma_{\rm sig}$ [pb] & 0.24 & 0.39 \\
-					$\sigma_{\rm bgd\text{-}Z}$ [pb] & 0.30 & 0.50 \\
-					$\sigma_{\rm bgd\text{-}mj}$ [pb] & 357.9 & 563.8 \\
-					$\epsilon^{\rm sig}_{\rm cut}$ & 0.22 & 0.21 \\
-					$\epsilon^{\rm bgd\text{-}Z}_{\rm cut}$ & 0.025 & 0.025 \\
-					$\epsilon^{\rm bgd\text{-}mj}_{\rm cut}$ & $9.7\times10^{-5}$ & $1.23\times10^{-4}$ \\
+$\sigma_{\rm sig}$ [pb] & 0.24 & 0.39 \\
+$\sigma_{\rm bgd\text{-}Z}$ [pb] & 0.30 & 0.50 \\
+$\sigma_{\rm bgd\text{-}mj}$ [pb] & 357.9 & 563.8 \\
+$\epsilon^{\rm sig}_{\rm cut}$ & 0.22 & 0.21 \\
+$\epsilon^{\rm bgd\text{-}Z}_{\rm cut}$ & 0.025 & 0.025 \\
+$\epsilon^{\rm bgd\text{-}mj}_{\rm cut}$ & $9.7\times10^{-5}$ & $1.23\times10^{-4}$ \\
 \midrule
-					$\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
-					$\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
+$\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
+$\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
 \bottomrule
 \end{tabular}
-\caption{\justifying\scriptsize Benchmark $h\to b\bar b$ case study at $\mu p$ colliders: signal and background cross sections, cut efficiencies, and projected sensitivities for the Higgs coupling to bottom quarks.}
+\caption{\justifying \scriptsize Benchmark $h\to b\bar b$ case study at $\mu p$ colliders: signal and background cross sections, cut efficiencies, and projected sensitivities for the Higgs coupling to bottom quarks.}
 \end{table}
 \end{column}
 \end{columns}
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
 \end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide A
+% --------------------------------------------------------------------------
+\begin{frame}{Benchmark precision Higgs case: $h\to b\bar b$ in CC VBF}
+	
+\begin{columns}[T]
+		
+%----------------------------------------
+\begin{column}{0.56\textwidth}
+\begin{itemize}
+\justifying
+\small
+				
+\item A concrete benchmark study already exists for the charged-current VBF channel
+\[
+p\mu^{+}\to j\,\bar{\nu}_{\mu}\,h,\qquad h\to b\bar b .
+\]
+				
+\item Analysis chain used in this study:
+\begin{itemize}
+\justifying
+\small
+\item MadGraph5\_aMC@NLO + Pythia6 + FastJet + Delphes,
+\item LHeC-like asymmetric detector setup and 75\% $b$-tagging efficiency,
+\item selection with exactly two $b$-jets and
+\[
+|m_{bb}-m_h|<25~\mathrm{GeV}.
+\]
+\end{itemize}
+				
+\item This gives a direct benchmark on the measurable rate
+\[
+\sigma(p\mu^{+}\to j\,\bar{\nu}_{\mu}\,b\bar b)
+\;\propto\;
+\frac{g_{hWW}^2\,g_{hbb}^2}{\Gamma_h},
+\]
+which can be translated into a benchmark sensitivity on $g_{hbb}$.
+				
+\end{itemize}
+			
+\vspace{0.2em}
+\begin{alertblock}{Take-home message}
+\small
+The current LH$\mu$C benchmark study already reaches sub-percent sensitivity to
+$g_{hbb}$ in the charged-current Higgs channel, turning the large production rates into
+a concrete precision-Higgs case.
+\end{alertblock}
+\end{column}
+		
+%----------------------------------------
+\begin{column}{0.42\textwidth}
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc}
+\toprule
+& LH$\mu$C-500 & LH$\mu$C-1000 \\
+\midrule
+$\sigma_{\rm sig}$ [pb]      & 0.24 & 0.39 \\
+$\sigma_{\rm bgd\text{-}Z}$ [pb] & 0.30 & 0.50 \\
+$\sigma_{\rm bgd\text{-}mj}$ [pb] & 357.9 & 563.8 \\
+\midrule
+$\Delta \sigma/\sigma$ & 1.19\% & 0.69\% \\
+$\Delta g_{hbb}/g_{hbb}$ & 0.77\% & 0.60\% \\
+\bottomrule
+\end{tabular}
+			
+\vspace{0.35em}
+{\scriptsize
+\justifying
+Benchmark charged-current $h\to b\bar b$ sensitivities in the current HELP4CERN study.
+The quoted coupling reach follows from the benchmark rate measurement after propagating
+the external uncertainty on $g_{hWW}^2/\Gamma_h$.
+}
+\end{column}
+		
+\end{columns}
+
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+	
+\end{frame}
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide B
+% --------------------------------------------------------------------------
+\begin{frame}{Broader Higgs-coupling reach: exploratory global-fit picture}
+	
+\begin{columns}[T]
+		
+%----------------------------------------
+\begin{column}{0.46\textwidth}
+\begin{itemize}
+\justifying
+\small
+				
+\item Beyond the dedicated $h\to b\bar b$ benchmark, the current white-paper draft also
+includes an exploratory Higgs coupling fit in the \textbf{kappa-3} framework.
+		
+\item The compared scenarios are:
+\begin{itemize}
+\justifying
+\small
+\item HL-LHC,
+\item HL-LHC improved,
+\item LHeC,
+\item LHeC + LH$\mu$C-500 / 1000 / 2000.
+\end{itemize}
+				
+\item The strongest visible improvement is in the \textbf{vector sector}:
+\[
+\delta\kappa_W \simeq 0.19\% \;\;(\mathrm{LH}\mu\mathrm{C}\text{-}1000),\qquad
+0.16\% \;\;(\mathrm{LH}\mu\mathrm{C}\text{-}2000).
+\]
+				
+\item The companion fermion and loop panels show further, generally milder, gains;
+the cleanest conference-level headline is that higher-energy LH$\mu$C stages can make a
+particularly strong contribution to \(\kappa_W\) and \(\kappa_Z\).
+				
+\end{itemize}
+			
+\vspace{0.2em}
+\begin{block}{Important caveat}
+\small
+This is a \emph{first explorative} global-fit study.
+The draft explicitly assumes LHeC-like systematics and rescales the statistical component
+with the benchmark LH$\mu$C cross sections.
+Since neither HL-LHC nor any $\ell p$ collider directly measures the Higgs width,
+the fit imposes \(\kappa_V\le 1\).
+\end{block}
+\end{column}
+		
+%----------------------------------------
+\begin{column}{0.52\textwidth}
+\centering
+\includegraphics[width=\linewidth]{LHmuC_vector.pdf}
+		
+\vspace{0.2em}
+{\scriptsize
+\justifying
+Exploratory vector-modifier result in the kappa-3 framework.
+The panel compares HL-LHC-based benchmarks with LHeC and with LHeC+LH$\mu$C stages.
+The most important message for the talk is the strong projected improvement in the vector sector,
+especially for \(\kappa_W\).
+}
+\end{column}
+		
+\end{columns}
+	
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+	
+\end{frame}
+
+
 
 
 
@@ -456,7 +718,7 @@ at (current page.north east)
 \justifying
 \item Beyond Higgs rates, \LHCmu{} offers a broader electroweak programme based on high-$Q^2$ DIS, vector-boson fusion, and photon-induced reactions.
 \item The larger kinematic span relative to the LHeC is expected to strengthen sensitivity to precision electroweak parameters such as $m_W$ and $\sin^2\theta_W$, while also extending the SMEFT lever arm.
-\item The white-paper draft explicitly highlights:
+\item To explicitly highlights:
 \begin{itemize}
 \justifying
 \item precision electroweak measurements,
@@ -466,9 +728,9 @@ at (current page.north east)
 \end{itemize}
 \end{itemize}
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
 \end{frame}
 
@@ -476,6 +738,7 @@ at (current page.north east)
 
 
 \section{High-energy $\gamma\gamma$ physics at \LHCmu}
+
 
 % --------------------------------------------------------------------------
 % Slide 10
@@ -851,6 +1114,88 @@ at (current page.north east)
 
 
 \end{document}
+
+
+
+
+
+%=====================================================
+\begin{frame}{Representative Higgs-production channels at LH$\mu$C}
+	
+	\begin{columns}%[T,onlytextwidth]
+		
+		%------------------------------------------------
+		\begin{column}{0.48\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.56, transform shape]
+				\begin{feynman}
+					\vertex (i1) at (-2.5,  1.7) {\(d\)};
+					\vertex (i2) at (-2.5, -1.7) {\(\mu^{+}\)};
+					\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0,1.1) {};
+					\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (0,-1.1) {};
+					\vertex (o1) at (2.5,  1.7) {\(u\)};
+					\vertex (o2) at (2.5, -1.7) {\(\bar{\nu}_{\mu}\)};
+					\vertex (h1) at (2.5,0.0) {\(h\)};
+					\vertex (m1) at (0,0.0);
+					
+					\diagram*{
+						(i1) -- [fermion, draw=green!60!black, line width=1.0pt] (v1)
+						-- [fermion, draw=green!60!black, line width=1.0pt] (o1),
+						(i2) -- [anti fermion, draw=green!60!black, line width=1.0pt] (v2)
+						-- [anti fermion, draw=green!60!black, line width=1.0pt] (o2),
+						(v1) -- [boson, edge label=\(W^{+}\), line width=1.0pt] (m1),
+						(m1) -- [boson, edge label=\(W^{+}\), line width=1.0pt] (v2),
+						(m1) -- [scalar, line width=1.0pt] (h1),
+					};
+				\end{feynman}
+				\node[blue!90!black, font=\scriptsize] at (0.0,0.82) {\textbf{}};
+				\node[blue!90!black, font=\scriptsize] at (0.0,-0.82) {\textbf{}};
+			\end{tikzpicture}
+			
+			\vspace{0.2em}
+			{\scriptsize CC contribution to \(\mu^{+} d \to \bar{\nu}_{\mu}\,u\,h\)}
+		\end{column}
+		
+		%------------------------------------------------
+		\begin{column}{0.48\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.56, transform shape]
+				\begin{feynman}
+					\vertex (i1) at (-2.5,  1.7) {\(b\)};
+					\vertex (i2) at (-2.5, -1.7) {\(\mu^{+}\)};
+					\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0,1.1) {};
+					\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (0,-1.1) {};
+					\vertex (o1) at (2.5,  1.7) {\(b\)};
+					\vertex (o2) at (2.5, -1.7) {\(\mu^{+}\)};
+					\vertex (h1) at (2.5,0.0) {\(h\)};
+					\vertex (m1) at (0,0.0);
+					
+					\diagram*{
+						(i1) -- [fermion, draw=green!60!black, line width=1.0pt] (v1)
+						-- [fermion, draw=green!60!black, line width=1.0pt] (o1),
+						(i2) -- [anti fermion, draw=green!60!black, line width=1.0pt] (v2)
+						-- [anti fermion, draw=green!60!black, line width=1.0pt] (o2),
+						(v1) -- [boson, edge label=\(Z\), line width=1.0pt] (m1),
+						(m1) -- [boson, edge label=\(Z\), line width=1.0pt] (v2),
+						(m1) -- [scalar, line width=1.0pt] (h1),
+					};
+				\end{feynman}
+				\node[blue!90!black, font=\scriptsize] at (0.0, 0.82) {\textbf{}};
+				\node[blue!90!black, font=\scriptsize] at (0.0,-0.82) {\textbf{}};
+			\end{tikzpicture}
+			
+			\vspace{0.2em}
+			{\scriptsize NC contribution to \(\mu^{+} b \to \mu^{+}\,b\,h\)}
+		\end{column}
+		
+	\end{columns}
+	
+\end{frame}
+%=====================================================
+
+
+
+
 
 
 

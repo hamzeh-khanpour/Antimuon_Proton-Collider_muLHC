@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  22 APR 2026 22:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  23 APR 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -893,14 +893,19 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \CommentStream=\write5
 
 Excluding comment 'comment')
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikz-feynman.sty
+Package: tikz-feynman 2016/02/05v1.1.0Feynman diagrams with TikZ
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks51
+\pgfopts@list@add@b@toks=\toks52
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzlibraryfeynman.code.t
+ex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
 code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -910,7 +915,9 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowlinewidth=\dimen326
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.pathmorphing.code.tex
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
@@ -926,8 +933,24 @@ e.tex
 )
 \tikz@lib@dec@box=\box83
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/gra
+phs/tikzlibrarygraphs.code.tex
+File: tikzlibrarygraphs.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\tikz@lib@auto@number=\count352
+\tikz@qnode@count=\count353
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -936,7 +959,21 @@ File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 e.tex
 File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 37.
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.code.tex
+)))
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
  (./beamerthemeAGH.sty
 Package: beamerthemeAGH 2024/02/03
 
@@ -955,115 +992,115 @@ Package: beamercolorthemeAGH 2024/02/02
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 66.
+(hyperref)                removing `\\' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 73.
+(hyperref)                removing `\<let>-command' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\spaceskip' on input line 73.
+(hyperref)                removing `\spaceskip' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 73.
+(hyperref)                removing `\z@' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 73.
+(hyperref)                removing `\<let>-command' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 73.
+(hyperref)                removing `\\' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@raggedtwoe@savedcr' on input line 73.
+(hyperref)                removing `\@raggedtwoe@savedcr' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 73.
+(hyperref)                removing `\<let>-command' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@gnewline' on input line 73.
+(hyperref)                removing `\@gnewline' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 73.
+(hyperref)                removing `\z@' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@rightskip' on input line 73.
+(hyperref)                removing `\@rightskip' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 73.
+(hyperref)                removing `\z@' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightskip' on input line 73.
+(hyperref)                removing `\rightskip' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@rightskip' on input line 73.
+(hyperref)                removing `\@rightskip' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parfillskip' on input line 73.
+(hyperref)                removing `\parfillskip' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\JustifyingParfillskip' on input line 73.
+(hyperref)                removing `\JustifyingParfillskip' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parindent' on input line 73.
+(hyperref)                removing `\parindent' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\JustifyingParindent' on input line 73.
+(hyperref)                removing `\JustifyingParindent' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 73.
+(hyperref)                removing `\let' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\color' on input line 73.
+(hyperref)                removing `\color' on input line 75.
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 7
-3.
+5.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count352
+\l__color_backend_stack_int=\count354
 \l__pdf_internal_box=\box84
 )
 (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.aux)
 \openout1 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1101,17 +1138,17 @@ LaTeX Font Info:    ... okay on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count353
+\scratchcounter=\count355
 \scratchdimen=\dimen338
 \scratchbox=\box85
-\nofMPsegments=\count354
-\nofMParguments=\count355
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count356
+\nofMPsegments=\count356
+\nofMParguments=\count357
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count358
 \MPscratchDim=\dimen339
-\MPnumerator=\count357
-\makeMPintoPDFobject=\count358
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count359
+\makeMPintoPDFobject=\count360
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1121,7 +1158,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 75.
 
 (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.out)
 (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.out)
@@ -1129,74 +1166,74 @@ Package hyperref Info: Link coloring ON on input line 73.
 \openout6 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 73.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 73.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 73.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 73.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 75.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 75.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 73
+(Font)              `pureletters' in the math version `normal' on input line 75
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> T1/lmss/m/it on input line 73
+(Font)                  OT1/mathkerncmss/m/sl --> T1/lmss/m/it on input line 75
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 73.
+(Font)              `pureletters' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/m/it on input line 7
-3.
+5.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 73.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 73.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 73.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 73.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 73.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 73.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 73.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 73.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 73.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 73.
+(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 73.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 73.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 73.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 73.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 73.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 75.
+LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 75.
 
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `boldpureletters' in the math version `normal' on input lin
-e 73.
+e 75.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `norma
 l'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/bx/it on input line 
-73.
+75.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `boldpureletters' in the math version `bold' on input line 
-73.
+75.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
 
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/bx/it on input line 
-73.
+75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1222,72 +1259,77 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
+
+Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
+utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
+luatex=false on input line 75.
+
 ..................................................................
 You are using the AGH beamer theme created by Stanislaw Polak
 Version: 1.6.1, Feb 2024
 ..................................................................
 (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.nav)
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-73.
+75.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-3.
+5.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-73.
+75.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-73.
+75.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 73.
+(Font)              <6> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 73.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+(Font)              <5> on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 73.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 73.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 75.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
-3.
+5.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 73.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 73.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 75.
 <HELP4CERN.jpg, id=35, 141.95892pt x 77.43214pt>
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 86.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 88.
 (pdftex.def)             Requested size: 71.13188pt x 38.79985pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 [][]\T1/lmss/m/n/14.4 Updating:[]Perspectives for HET
  []
 
@@ -1312,42 +1354,42 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 132.
+(Font)              <12> on input line 134.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 132.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 134.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 132.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 134.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 132.
+(Font)              <10> on input line 134.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 132.
+(Font)              <7> on input line 134.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 132.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 134.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 132.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 134.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 132.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 134.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 132.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 134.
 
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 132.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 134.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
  [3
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
-5.
+7.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 205.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 207.
 (pdftex.def)             Requested size: 72.75288pt x 39.68481pt.
  [4
 
@@ -1356,194 +1398,305 @@ s/lm/lm-mathsy.enc}]
 <LHmuC_xQ2.jpg, id=236, 1322.9425pt x 1268.74pt>
 File: LHmuC_xQ2.jpg Graphic file (type jpg)
 <use LHmuC_xQ2.jpg>
-Package pdftex.def Info: LHmuC_xQ2.jpg  used on input line 250.
+Package pdftex.def Info: LHmuC_xQ2.jpg  used on input line 252.
 (pdftex.def)             Requested size: 190.54518pt x 182.73326pt.
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 250.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 252.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
  [5
 
  <./LHmuC_xQ2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \T1/lmss/m/n/10 to sup-port pre-ci-sion Higgs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \T1/lmss/m/n/10 physics, in-clud-ing bench-mark
  []
 
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 335.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 337.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 [6
 
 ]
-Underfull \hbox (badness 1067) in paragraph at lines 383--383
-[]\T1/lmss/m/n/10.95 Higgs pro-duc-tion is dom-i-nated by \T1/lmss/bx/n/10.95 c
-harged-
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Overfull \hbox (2.71344pt too wide) in paragraph at lines 477--477
+ [][] 
+ []
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 477.
+
+
+Overfull \hbox (3.31786pt too wide) in paragraph at lines 477--477
+ [][] 
  []
 
 <Higgs.jpg, id=356, 415.98268pt x 313.60017pt>
 File: Higgs.jpg Graphic file (type jpg)
 <use Higgs.jpg>
-Package pdftex.def Info: Higgs.jpg  used on input line 383.
-(pdftex.def)             Requested size: 190.54518pt x 143.6501pt.
+Package pdftex.def Info: Higgs.jpg  used on input line 477.
+(pdftex.def)             Requested size: 148.10327pt x 111.65182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--477
+[][]
+ []
+
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 383.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 477.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 383.
+(Font)              <14.4> on input line 477.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 383.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 477.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 383.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 477.
+
+
+Overfull \vbox (6.93459pt too high) detected at line 477
+ []
 
 [7
 
  <./Higgs.jpg>]
-Overfull \hbox (9.2269pt too wide) in paragraph at lines 443--443
+Overfull \hbox (9.2269pt too wide) in paragraph at lines 534--534
  [] 
  []
 
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 443.
-(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 534.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 [8
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 623--623
+[]\T1/lmss/m/n/10 LHeC-like asym-met-ric de-tec-tor
+ []
+
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 473.
-(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
- [9
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 623.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+Overfull \vbox (124.30386pt too high) detected at line 623
+ []
+
+[9
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 478.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 478.
+Underfull \hbox (badness 1337) in paragraph at lines 703--703
+[]\T1/lmss/m/n/10 The strongest vis-i-ble im-prove-
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 478.
+Overfull \hbox (101.86353pt too wide) detected at line 703
+\OML/lmm/m/it/10 ^^N^^T[] \OMS/lmsy/m/n/10 ' \T1/lmss/m/n/10 0\OML/lmm/m/it/10 
+:\T1/lmss/m/n/10 19\OT1/lmss/m/n/10 %  ([]\OML/lmm/m/it/10 ^^V\T1/lmr/m/n/10 C[
+]\T1/lmss/m/n/10 1000\OT1/lmss/m/n/10 )\OML/lmm/m/it/10 ;  \T1/lmss/m/n/10 0\OM
+L/lmm/m/it/10 :\T1/lmss/m/n/10 16\OT1/lmss/m/n/10 %  ([]\OML/lmm/m/it/10 ^^V\T1
+/lmr/m/n/10 C[]\T1/lmss/m/n/10 2000\OT1/lmss/m/n/10 )\OML/lmm/m/it/10 :
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 478.
+Underfull \hbox (badness 5832) in paragraph at lines 703--703
+[]\T1/lmss/m/n/10 The com-pan-ion fermion and
+ []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 478.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 478.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 478.
-
+<LHmuC_vector.pdf, id=472, 448.79669pt x 333.16472pt>
+File: LHmuC_vector.pdf Graphic file (type pdf)
+<use LHmuC_vector.pdf>
+Package pdftex.def Info: LHmuC_vector.pdf  used on input line 703.
+(pdftex.def)             Requested size: 180.15228pt x 133.7363pt.
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 510.
-(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 703.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+Overfull \vbox (191.67867pt too high) detected at line 703
+ []
+
 [10
 
-]
+ <./LHmuC_vector.pdf>]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 547.
-(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 735.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
  [11
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 740.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 740.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 740.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 740.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 740.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 740.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 740.
+
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 576.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 773.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
- [12
+[12
 
 ]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 606.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 810.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
  [13
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 613.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 613.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 613.
-
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 654.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 839.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
-[14
+ [14
 
 ]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 683.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 869.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
  [15
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 876.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 876.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 876.
+
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 706.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 917.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
- [16
+[16
 
 ]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 747.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 946.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
  [17
 
 ]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 794.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 969.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
  [18
 
 ]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 838.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1010.
 (pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
  [19
 
 ]
-<Thank_You_2.jpg, id=752, 911.54839pt x 577.29964pt>
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+ [20
+
+]
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1101.
+(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+ [21
+
+]
+<Thank_You_2.jpg, id=871, 911.54839pt x 577.29964pt>
 File: Thank_You_2.jpg Graphic file (type jpg)
 <use Thank_You_2.jpg>
-Package pdftex.def Info: Thank_You_2.jpg  used on input line 850.
+Package pdftex.def Info: Thank_You_2.jpg  used on input line 1113.
 (pdftex.def)             Requested size: 381.87407pt x 241.84756pt.
 
-Overfull \hbox (35.43019pt too wide) in paragraph at lines 850--850
+Overfull \hbox (35.43019pt too wide) in paragraph at lines 1113--1113
  [] 
  []
 
-[20
+[22
 
  <./Thank_You_2.jpg>]
 \tf@nav=\write7
@@ -1565,31 +1718,37 @@ s not changed.
 (rerunfilecheck)             Checksum: 15AC18E3D773C65A5B81D96834F53DC9;1017.
  ) 
 Here is how much of TeX's memory you used:
- 28324 strings out of 474222
- 571083 string characters out of 5748732
- 1954975 words of memory out of 5000000
- 49915 multiletter control sequences out of 15000+600000
+ 30379 strings out of 474222
+ 630731 string characters out of 5748732
+ 1972975 words of memory out of 5000000
+ 51927 multiletter control sequences out of 15000+600000
  720896 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,18n,123p,14590b,1383s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r7.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmsy8.pfb>
-Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (20 pages, 1348951 b
+ 128i,18n,123p,14590b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (22 pages, 1595278 b
 ytes).
 PDF statistics:
- 880 PDF objects out of 1000 (max. 8388607)
- 698 compressed objects within 7 object streams
- 46 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1007 PDF objects out of 1200 (max. 8388607)
+ 798 compressed objects within 8 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 552 words of extra memory for PDF output out of 10000 (max. 10000000)
 

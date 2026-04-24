@@ -22,6 +22,9 @@
 \usepackage{tikz-feynman}
 \tikzfeynmanset{compat=1.1.0}
 
+
+
+
 \usetikzlibrary{calc,positioning,arrows.meta,decorations.pathmorphing,patterns,shapes.geometric}
 
 \usepackage{hyperref}
@@ -234,7 +237,7 @@ $\mathcal{L}_{\rm int}$ (upgrade) & $1000~\mathrm{fb}^{-1}$
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{LHmuC_xQ2.jpg}
-\scriptsize Available $(x,Q^2)$ plane for the proposed LH$\mu$C, compared with fixed-target, collider, and EIC kinematic coverage.
+\justifying \scriptsize Available $(x,Q^2)$ plane for the proposed LH$\mu$C, compared with fixed-target, collider, and EIC kinematic coverage.
 \end{figure}
 \end{column}
 
@@ -477,11 +480,8 @@ at (current page.north east)
 %----------------------------------------
 \centering
 \includegraphics[width=0.99\linewidth]{mupVBFH_xsec_nocut.png}
-\justifying
 %\vspace{0.35em}			
-{\scriptsize
-Higgs boson production cross sections at LH$\mu$C for the CC (\(W\)-fusion) and subleading NC (\(Z\)-fusion) contributions.
-}
+\justifying \scriptsize Higgs boson production cross sections at LH$\mu$C for the CC (\(W\)-fusion) and subleading NC (\(Z\)-fusion) contributions.
 		
 \end{column}
 		
@@ -638,10 +638,7 @@ examined a Higgs coupling fit in the kappa-3 framework.
 \centering
 \includegraphics[width=\linewidth]{LHmuC_vector.pdf}
 \vspace{0.2em}
-{\scriptsize
-\justifying
-Exploratory vector-modifier result in the kappa-3 framework.
-The panel compares HL-LHC-based benchmarks with LHeC and with LHeC+LH$\mu$C stages.}
+\justifying \scriptsize Exploratory vector-modifier result in the kappa-3 framework. The panel compares HL-LHC-based benchmarks with LHeC and with LHeC+LH$\mu$C stages.
 \end{column}
 
 \end{columns}
@@ -660,7 +657,7 @@ at (current page.north east)
 
 
 % --------------------------------------------------------------------------
-% Slide 9
+% Slide 10
 % --------------------------------------------------------------------------
 % --------------------------------------------------------------------------
 % Electroweak programme and EFT opportunities
@@ -725,34 +722,52 @@ at (current page.north east)
 
 
 
+
 \section{High-energy $\gamma\gamma$ physics at \LHCmu}
 
 
+
 % --------------------------------------------------------------------------
-% Slide 10
+% Slide 11
 % --------------------------------------------------------------------------
 \begin{frame}{High-energy $\gamma \gamma$ physics is a natural part of the \LHCmu{} programme}
 \begin{columns}[T]
-\begin{column}{0.99\textwidth}
+\begin{column}{0.55\textwidth}
+
+\begin{alertblock}{Interesting HET directions}
 \begin{itemize}
 \justifying
-\item \LHCmu{} naturally operates as a high-energy $\gamma\gamma$ collider through quasi-real photons radiated from the incoming muon and proton beams.
+\small
+\item \LHCmu{} naturally operates as a high-energy $\gamma\gamma$ collider.% through photons radiated from the incoming muon and proton beams.
 \item In the 500 GeV baseline, the effective $\gamma\gamma$ centre-of-mass energy extends into the multi-TeV regime, opening a broad programme of clean exclusive measurements.
-\item This part of the physics case is directly relevant to the HET talk because it connects to:
-\begin{itemize}
 \justifying
+\footnotesize
+\setlength{\itemsep}{0.1em}
+\begin{itemize}
 \item anomalous $\tau$ moments,
-\item $\gamma\gamma\to W^+W^-$ and quartic gauge couplings,
+\item $\gamma\gamma\to W^+W^-$ and anomalous quartic gauge couplings (qQGC),
 \item loop-induced $\gamma\gamma\to ZZ$,
 \item exclusive $t\bar t$ production,
-\item and BSM charged-particle pair production.
+\item light-by-light scattering (LbL) 
+\item BSM charged-particle pair production.
 \end{itemize}
 \end{itemize}
+\end{alertblock}
+
 \end{column}
-%\begin{column}{0.38\textwidth}
-%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 3 (broad overview of $\gamma\gamma$ physics at LH$\mu$C and FCC-$\mu h$).}{0.58\textheight}
-%\end{column}
+
+
+\begin{column}{0.45\textwidth}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Syy.jpg}
+\justifying \scriptsize Elastic photon-photon luminosity spectrum $S_{\gamma\gamma}$ as a function of the $\gamma\gamma$ invariant mass $W$, comparing the LHeC, LH$\mu$C, and FCC-$\mu h$ benchmark configurations.
+\end{figure}
+\end{column}
+
 \end{columns}
+
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
@@ -766,95 +781,216 @@ at (current page.north east)
 
 
 % --------------------------------------------------------------------------
-% Slide 11
-% --------------------------------------------------------------------------
-\begin{frame}{Flagship $\gamma\gamma$ channel I: $\tau^+\tau^-$ and anomalous $\tau$ moments}
-\begin{columns}[T]
-\begin{column}{0.99\textwidth}
-\begin{itemize}
-\justifying
-\item The elastic $\gamma\gamma\to\tau^+\tau^-$ rate at \LHCmu{} is already very large:
-\begin{itemize}
-\justifying
-\item $\sigma_{\mathrm{el}}\simeq 58.56$ pb at 3.7 TeV,
-\item rising to about $70.3$ pb for the 5.3 TeV upgrade benchmark.
-\end{itemize}
-\justifying
-\item This delivers a high-statistics laboratory for precision studies of the $\gamma\tau\tau$ vertex and for anomalous magnetic / electric dipole moment analyses.
-\item The central phenomenological idea is simple: anomalous contributions harden the high-$M_{\tau\tau}$ tail, so the invariant-mass spectrum becomes the main discriminating observable.
-\item This is one of the cleanest examples showing how \LHCmu{} combines high energy with a low-background, exclusive topology.
-\end{itemize}
-\end{column}
-%\begin{column}{0.40\textwidth}
-%\placeholdergraphic{Best figure source: \texttt{Hamzeh\_Khanpour\_a\_tau\_LHeC\_LHmuC.pdf}, slides 18--24 for mass-spectrum and BSM/SM-ratio plots.\\
-%Alternative rate plot: \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 5.}{0.60\textheight}
-%\end{column}
-\end{columns}
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-\end{frame}
-
-
-
-
-% --------------------------------------------------------------------------
 % Slide 12
 % --------------------------------------------------------------------------
-\begin{frame}{Flagship $\gamma\gamma$ channel II: $W^+W^-$ and anomalous quartic gauge couplings}
-\begin{columns}[T]
-\begin{column}{0.99\textwidth}
-\begin{itemize}
+\begin{frame}{Flagship $\gamma\gamma$ channel: $\tau^+\tau^-$ and anomalous $\tau$ moments}
+	
+\begin{columns}[T]%[T,onlytextwidth]
+		
+%========================================
+% Left column: text + topology
+%========================================
+\begin{column}{0.55\textwidth}
+	
+{
+\setbeamercolor{uppercol}{fg=white,bg=green!60!black}
+\setbeamercolor{lowercol}{fg=black,bg=green!8}
+		
+\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{LH$\mu$C $\tau^+\tau^-$ physics message}
 \justifying
-\item The elastic $\gamma\gamma\to W^+W^-$ cross section grows from about $0.037$ pb at the LHeC to about $0.166$ pb at \LHCmu{}@3.7 TeV and $0.258$ pb at the 5.3 TeV upgrade benchmark.
-\item The EFT signal is not mainly an overall rate effect: the real sensitivity comes from the \textbf{high-$M_{WW}$ tail}, where dimension-8 operators enhance the spectrum.
-\item Relative to the LHC, the $\mu p$ environment offers cleaner event topology, more precise kinematics, and potentially simpler control of proton/muon tagging.
-\item This makes \LHCmu{} a serious laboratory for aQGC studies rather than merely an auxiliary by-product of the machine.
+\small
+			
+\begin{itemize}
+\setlength{\itemsep}{0.35em}
+\justifying
+\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV and about \(70.3\) pb at the 5.3 TeV upgrade benchmark. 
+\item This provides a high-statistics probe of the \(\gamma\tau\tau\) vertex and anomalous magnetic ($a_\tau$) and electric ($d_\tau$) dipole moments.
+\item Anomalous contributions harden the high-\(M_{\tau\tau}\) tail, making the invariant-mass spectrum the key discriminating observable.
+\item This is one of the cleanest examples of how \LHCmu{} combines high energy with a low-background exclusive topology.
 \end{itemize}
+			
+\end{beamerboxesrounded}
+}
+	
 \end{column}
-%\begin{column}{0.38\textwidth}
-%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 11 (generator-level $M_{WW}$ spectra for LHC, LH$\mu$C, FCC-$\mu h$) \\
-%OR \texttt{Hamzeh\_Khanpour\_CERN\_11Nov.pdf}, slides 15--16.}{0.60\textheight}
-%\end{column}
+		
+%========================================
+% Right column: figure
+%========================================
+\begin{column}{0.45\textwidth}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth,height=0.73\textheight,keepaspectratio]{elastic_tau_tau.jpg}
+\justifying\scriptsize Elastic $\gamma\gamma\to\tau^+\tau^-$ cross section above the threshold $W_0$, comparing the LHeC, LH$\mu$C, and FCC-$\mu h$ benchmark configurations.
+\end{figure}
+\end{column}
+		
 \end{columns}
+	
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
+	
 \end{frame}
+
 
 
 
 % --------------------------------------------------------------------------
 % Slide 13
 % --------------------------------------------------------------------------
-\begin{frame}{Flagship $\gamma\gamma$ channels III: $ZZ$, $t\bar t$, and heavy exclusive final states}
-\begin{itemize}
-\justifying
-\item Loop-induced $\gamma\gamma\to ZZ$ is especially interesting because it is absent at tree level in the Standard Model and therefore provides a clean probe of high-mass electroweak dynamics.
-\item Representative elastic cross sections at 3.7 TeV are:
-\begin{itemize}
-\justifying
-\item $\sigma_{\mathrm{el}}(\gamma\gamma\to ZZ)\simeq 0.284$ fb,
-\item $\sigma_{\mathrm{el}}(\gamma\gamma\to t\bar t)\simeq 0.486$ fb.
-\end{itemize}
-\justifying
-\item Although smaller than the $\tau\tau$ and $WW$ cases, these channels gain importance because they probe loop structure, heavy thresholds, and the onset of high-energy electroweak / top dynamics.
-\item The same photon-induced framework also extends to exclusive pair production of BSM charged states such as higgsinos and sleptons.
-\end{itemize}
 
-%\placeholdergraphic{Suggested screenshot source:\\
-%From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slides 7--9 (ZZ, $t\bar t$, and SUSY-pair plots).}{0.25\textheight}
-
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+% --------------------------------------------------------------------------
+% Merged gamma-gamma summary slide
+% --------------------------------------------------------------------------
+\begin{frame}{Exclusive $\gamma\gamma$ channels: electroweak, top, and BSM reach}
+	
+\centering
+%	\vspace{-0.35em}
+	
+\begin{tikzpicture}[x=1cm,y=1cm]
+		
+%------------------------------------------------
+% Styles
+%------------------------------------------------
+		\tikzset{
+			connector/.style={
+				draw=blue!65!black,
+				line width=1.0pt
+			},
+			hubbox/.style={
+				rounded corners=6pt,
+				draw=blue!65!black,
+				line width=1.1pt,
+				fill=white,
+				minimum width=2.9cm,
+				minimum height=2.0cm,
+				inner sep=3pt,
+				align=center
+			},
+			boxww/.style={
+				rounded corners=9pt,
+				draw=green!50!black,
+				line width=1.15pt,
+				fill=green!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxzz/.style={
+				rounded corners=9pt,
+				draw=violet!55!black,
+				line width=1.15pt,
+				fill=violet!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxtt/.style={
+				rounded corners=9pt,
+				draw=orange!70!black,
+				line width=1.15pt,
+				fill=orange!12,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxbsm/.style={
+				rounded corners=9pt,
+				draw=red!65!black,
+				line width=1.15pt,
+				fill=red!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			takehome/.style={
+				rounded corners=5pt,
+				draw=red!60!black,
+				line width=0.95pt,
+				fill=red!8,
+				text width=11.1cm,
+				minimum height=0.82cm,
+				align=center,
+				inner sep=3.5pt
+			}
+		}
+		
+%------------------------------------------------
+% Central hub
+%------------------------------------------------
+\node[hubbox] (hub) at (0,0.00) {%
+\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.15em]
+{\scriptsize \textbf{Exclusive high-energy}}\\[-0.05em]
+{\scriptsize \textbf{$\gamma\gamma$ programme}}
+};
+		
+		%------------------------------------------------
+		% Outer nodes
+		%------------------------------------------------
+		\node[boxww] (ww) at (-4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to W^+W^-$}\\[0.20em]
+%			{\footnotesize largest EW benchmark;}\\
+			{\footnotesize Strong aQGC sensitivity comes from}\\
+			{\footnotesize the high-$M_{WW}$ tail}\\[0.15em]
+%			{\footnotesize $\sigma_{\rm el}\simeq 0.166$ pb at 3.7 TeV}
+		};
+		
+		\node[boxzz] (zz) at (4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to ZZ$}\\[0.20em]
+			{\footnotesize Loop-induced in the SM;}\\
+			{\footnotesize clean probe of high-mass}\\
+			{\footnotesize electroweak dynamics}\\[0.15em]
+%			{\footnotesize $\sigma_{\rm el}\simeq 0.284$ fb at 3.7 TeV}
+		};
+		
+		\node[boxtt] (tt) at (-4.15,-1.85) {%
+			{\bfseries \small $\gamma\gamma\to t\bar t$}\\[0.20em]
+			{\footnotesize Probes heavy thresholds}\\
+			{\footnotesize and top-sector dynamics}\\
+			{\footnotesize in exclusive topology}\\[0.15em]
+%			{\footnotesize $\sigma_{\rm el}\simeq 0.486$ fb at 3.7 TeV}
+		};
+		
+		\node[boxbsm] (bsm) at (4.15,-1.85) {%
+			{\bfseries \small Exclusive BSM pairs}\\[0.20em]
+%			{\footnotesize same framework extends to}\\
+			{\footnotesize Charged states such as}\\
+			{\footnotesize higgsinos and sleptons}\\[0.15em]
+%			{\footnotesize qualitative opportunity; no rate quoted here}
+		};
+		
+		%------------------------------------------------
+		% Connectors
+		%------------------------------------------------
+		\draw[connector] (hub.north west) .. controls (-1.1,0.95) and (-2.4,1.35) .. (ww.east);
+		\draw[connector] (hub.north east) .. controls ( 1.1,0.95) and ( 2.4,1.35) .. (zz.west);
+		\draw[connector] (hub.south west) .. controls (-1.1,-0.85) and (-2.4,-1.35) .. (tt.east);
+		\draw[connector] (hub.south east) .. controls ( 1.1,-0.85) and ( 2.4,-1.35) .. (bsm.west);
+		
+%------------------------------------------------
+% Take-home message
+%------------------------------------------------
+\node[takehome] at (0,-4.00) {%
+{\justifying\scriptsize Beyond $\tau^+\tau^-$, the high-energy $\gamma\gamma$ programme at LH$\mu$C spans
+electroweak, top, and BSM-sensitive channels in a clean exclusive environment.}
+};
+		
 \end{tikzpicture}
+	
 \end{frame}
+% --------------------------------------------------------------------------
 
 
 
@@ -865,96 +1001,306 @@ at (current page.north east)
 
 
 
-% --------------------------------------------------------------------------
-% Slide 14
-% --------------------------------------------------------------------------
-\begin{frame}{\LHCmu{} as a top factory}
-\begin{columns}[T]
-\begin{column}{0.99\textwidth}
-\begin{itemize}
-\justifying
-\item The most striking HET advantage of \LHCmu{} relative to the LHeC is the \textbf{top sector}.
-\item Inclusive benchmark rates:
-\begin{itemize}
-\item single top: $21.26$ pb at 500 GeV and $36.77$ pb at 1 TeV,
-\item $t\bar t$: $1.03$ pb at 500 GeV and $2.23$ pb at 1 TeV.
-\end{itemize}
-\justifying
-\item For the benchmark integrated luminosities, this translates into:
-\begin{itemize}
-\justifying
-\item $\sim 5.3\times10^6$ single-top events at 500 GeV,
-\item $\sim 2.6\times10^5$ $t\bar t$ events at 500 GeV,
-\item $\sim 3.7\times10^7$ single-top events at 1 TeV,
-\item $\sim 2.2\times10^6$ $t\bar t$ events at 1 TeV.
-\end{itemize}
-\justifying
-\item This is why the current collaboration narrative repeatedly describes \LHCmu{} as a genuine top factory.
-\end{itemize}
-\end{column}
-%\begin{column}{0.38\textwidth}
-%\placeholdergraphic{Best compact figure source: \texttt{Hamzeh\_Khanpour\_Help4CERN\_13Jan.pdf}, slide with inclusive top and Higgs cross-section table; \\
-%Alternative: \texttt{LHuC\_KP.pdf}, page 19.}{0.60\textheight}
-%\end{column}
-\end{columns}
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-\end{frame}
-
 
 
 
 % --------------------------------------------------------------------------
-% Slide 15
+% Slide 14 
 % --------------------------------------------------------------------------
-\begin{frame}{Top event topology, acceptance, and why \LHCmu{} helps experimentally}
-\begin{columns}[T]
-\begin{column}{0.99\textwidth}
-\begin{itemize}
+
+
+% --------------------------------------------------------------------------
+% Merged top-physics slide
+% --------------------------------------------------------------------------
+\begin{frame}{Top physics at \LHCmu{}: production mechanisms and experimental promise}
+
+\begin{columns}[T]%[T,onlytextwidth]
+
+%================================================
+% Left column: text
+%================================================
+
+\begin{column}{0.65\textwidth}
+\small
+\begin{itemize} \itemsep 0.45em
 \justifying
-\item Beyond inclusive rates, dedicated semileptonic $t\bar t$ studies indicate that the \LHCmu{} event topology is more central than the LHeC one.
-\item This matters because the gain at generator level is not purely from larger cross sections; it is also supported by strong kinematic acceptance.
-\item Representative semileptonic acceptance numbers show only modest degradation even for tighter lepton rapidity cuts, with the \LHCmu{} case remaining particularly favourable.
-\item Therefore the larger top rates are not merely formal parton-level advantages: they are likely to remain exploitable after realistic selections.
+
+\item The top sector is one of the clearest HET advantages of \LHCmu{} relative to the LHeC.
+
+\item \textbf{Single-top production} is dominated by charged-current DIS, with representative subprocess $\mu^{+} b \to \bar{\nu}_{\mu}\, t ,$ 
+mediated by \(t\)-channel \(W^{+}\) exchange in the 5-flavor scheme.
+
+\item \textbf{Top-pair production} is dominated by neutral-current lepton--gluon scattering, with representative process $\mu^{+} g \to \mu^{+} t\bar t ,$
+driven mainly by \(\gamma^\ast g \to t\bar t\), while \(Z^\ast g \to t\bar t\) is subleading.
+
+\item The top advantage is not only a formal cross-section enhancement: it is also supported by favourable acceptance, making the programme experimentally promising after realistic selections.
+
 \end{itemize}
 \end{column}
-%\begin{column}{0.38\textwidth}
-%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_29Dec.pdf}, slides 10--13: acceptance table, light-jet pseudorapidity, reconstructed $W$ mass, and lepton-$\eta$ comparison.}{0.60\textheight}
-%\end{column}
+
+
+%================================================
+% Right column: diagrams
+%================================================
+\vspace{-0.5em}
+\begin{column}{0.47\textwidth}
+\vspace{-0.5em}
+
+\centering
+
+%-----------------------------
+% Diagram A: single top
+%-----------------------------
+\begin{minipage}{\linewidth}
+\centering
+\begin{center}
+	\setlength{\fboxsep}{3pt}
+	\fcolorbox{black!40}{yellow!20}{%
+		\parbox{0.65\linewidth}{\centering\scriptsize\textbf{LO CC single-top production}}%
+	}
+\end{center}
+\vspace{-0.25em}
+
+\begin{tikzpicture}[scale=0.55, transform shape]
+\begin{feynman}
+						\vertex (muin)  at (-2.4,  1.45) {\(\mu^{+}\)};
+						\vertex (bin)   at (-2.4, -1.45) {\(b\)};
+						\vertex (nuout) at ( 2.4,  1.45) {\(\bar{\nu}_{\mu}\)};
+						\vertex (tout)  at ( 2.4, -1.45) {\(t\)};
+						
+						\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0,  0.85) {};
+						\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (0, -0.85) {};
+						
+						\diagram*{
+							(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
+							-- [anti fermion, draw=green!60!black, line width=1.0pt] (nuout),
+							
+							(bin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
+							-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
+							
+							(v1)    -- [boson, edge label'=\(W^{+}\), line width=1.0pt] (v2),
+};
+\end{feynman}
+\end{tikzpicture}
+
+\vspace{0.1em}
+
+\justifying \scriptsize CC DIS with \(t\)-channel \(W^{+}\) exchange (5F scheme) with inclusive rates: \(\sigma=21.26~\mathrm{pb}\), and \(36.77~\mathrm{pb}\). 
+\end{minipage}
+
+\vspace{0.2em}
+
+%-----------------------------
+% Diagram B: top pair
+%-----------------------------
+\begin{minipage}{\linewidth}
+\centering
+\begin{center}
+\setlength{\fboxsep}{3pt}
+\fcolorbox{black!40}{yellow!20}{%
+\parbox{0.65\linewidth}{\centering\scriptsize\textbf{LO NC top-pair production}}%
+}
+\end{center}
+\vspace{-0.25em}
+
+\begin{tikzpicture}[scale=0.50, transform shape]
+\begin{feynman}
+						\vertex (muin)   at (-2.6,  1.55) {\(\mu^{+}\)};
+						\vertex (muout)  at ( 2.6,  1.55) {\(\mu^{+}\)};
+						\vertex (gin)    at (-2.6, -1.75) {\(g\)};
+						\vertex (tbarout)at ( 2.6, -0.25) {\(\bar t\)};
+						\vertex (tout)   at ( 2.6, -1.95) {\(t\)};
+						
+						\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0,  1.05) {};
+						\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (0, -0.20) {};
+						\vertex [dot, fill=green!60!black, minimum size=5pt] (v3) at (0, -1.45) {};
+						
+						\diagram*{
+							(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
+							-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
+							
+							(v1)    -- [boson, edge label=\(\gamma^{\ast}/Z^{\ast}\), line width=1.0pt] (v2),
+							
+							(v2)    -- [anti fermion, draw=green!60!black, line width=1.0pt] (tbarout),
+							(v2)    -- [fermion, draw=green!60!black, edge label'=\(t\), line width=1.0pt] (v3),
+							
+							(gin)   -- [gluon, line width=1.0pt] (v3),
+							(v3)    -- [fermion, draw=green!60!black, line width=1.0pt] (tout),
+						};
+\end{feynman}
+\end{tikzpicture}
+
+\vspace{0.1em}
+
+\justifying \scriptsize Dominant hard subprocess: \(\gamma^\ast g \to t\bar t\); \(Z^\ast g \to t\bar t\) is subleading with inclusive rates:
+\(\sigma=1.03~\mathrm{pb}\), and \(2.23~\mathrm{pb}\). 
+\end{minipage}
+
+\end{column}
 \end{columns}
-%\takehome{For the talk, one acceptance/centrality slide is enough; do not overload with many detector-level details.}
+
+%------------------------------------------------
+% HELP4CERN logo overlay
+%------------------------------------------------
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
+
 \end{frame}
+% --------------------------------------------------------------------------
+
+
+
 
 
 
 
 % --------------------------------------------------------------------------
-% Slide 16
+% Slide 15 
 % --------------------------------------------------------------------------
-\begin{frame}{Rare top, FCNC, and EFT directions}
-\begin{itemize}
+\begin{frame}{Top-FCNC probes at \LHCmu{}: \(tq\gamma\) and \(tqZ\)}
+	
+\begin{columns}[T]
+		
+%================================================
+% Left column: text
+%================================================
+\begin{column}{0.68\textwidth}
+\small
+\begin{itemize}\itemsep0.48em
 \justifying
-\item The top sector at \LHCmu{} is interesting not only for statistics, but also for \textbf{rare processes and anomalous couplings}.
-\item Dedicated studies already show that top-FCNC sensitivities improve substantially from the LHeC to the \LHCmu{}, reflecting both the higher rates and the harder kinematics.
-\item The characteristic $\mu p$ topology provides a useful environment for studying anomalous $tq\gamma$, $tqZ$, and $tqH$ interactions, as well as broader EFT deformations in single-top and associated channels.
-\item In the presentation, this part should be framed as one representative example of how the enormous top samples can be converted into BSM reach.
+				
+\item In the Standard Model, top-FCNC transitions are forbidden at tree level and remain highly suppressed at loop level by the GIM mechanism; any observable signal would therefore be a clean indication of physics beyond the Standard Model.
+				
+\item The key rare-top vertices are \(tq\gamma\) and \(tqZ\) with \(q=u,c\), naturally parameterized by anomalous couplings or SMEFT dimension-6 operators.
+				
+\item At \LHCmu{}, the large top sample, harder kinematics, and characteristic \(\mu p\) topology make anomalous single-top and associated production natural benchmarks for converting top statistics into BSM reach.
+				
 \end{itemize}
-
-%\placeholdergraphic{Suggested source: \texttt{Hamzeh\_Khanpour\_Help4CERN\_3Feb.pdf}, slides 14--18 for FCNC cross-section/coupling dependence and kinematic distributions.}{0.28\textheight}
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\end{column}
+		
+%================================================
+% Right column: diagrams
+%================================================
+\begin{column}{0.47\textwidth}
+\centering
+			
+%-----------------------------
+% Diagram A: tqgamma / tqZ
+%-----------------------------
+%-----------------------------
+% Diagram A: tqgamma and tqZ side by side
+%-----------------------------
+\begin{minipage}{\linewidth}
+\centering
+\begin{center}
+\setlength{\fboxsep}{3pt}
+\fcolorbox{black!40}{yellow!20}{%
+\parbox{0.50\linewidth}{\centering\scriptsize\textbf{Top-FCNC at \LHCmu{}}}%
+}
+\end{center}
+\vspace{-0.35em}
+	
+\begin{minipage}{0.48\linewidth}
+\centering
+\begin{tikzpicture}[scale=0.45, transform shape]
+\begin{feynman}
+\vertex (muin)  at (-2.5,  1.95) {\(\mu^{+}\)};
+\vertex (muout) at ( 2.5,  1.95) {\(\mu^{+}\)};
+\vertex (qin)   at (-2.5, -1.95) {\(q\)};
+\vertex (tout)  at ( 2.5, -1.95) {\(t\)};
+				
+\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0, 0.90) {};
+\vertex [dot, fill=black, minimum size=8.5pt] (v2) at (0,-0.35) {};
+				
+\diagram*{
+					(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
+					-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
+					
+					(v1)    -- [boson, edge label=\(\gamma^{\ast}\), line width=1.0pt] (v2),
+					
+					(qin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
+					-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
+				};
+\end{feynman}
+\node[font=\large\bfseries,text=orange!85!black] at (0.0,-0.95) {\(tq\gamma\)};
 \end{tikzpicture}
+		
+%\vspace{-0.2em}
+%{\scriptsize \textcolor{orange!85!black}{\textbf{\(tq\gamma\)}}}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\begin{tikzpicture}[scale=0.43, transform shape]
+\begin{feynman}
+				\vertex (muin)  at (-2.5,  1.95) {\(\mu^{+}\)};
+				\vertex (muout) at ( 2.5,  1.95) {\(\mu^{+}\)};
+				\vertex (qin)   at (-2.5, -1.95) {\(q\)};
+				\vertex (tout)  at ( 2.5, -1.95) {\(t\)};
+				
+				\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0, 0.90) {};
+				\vertex [dot, fill=black, minimum size=8.5pt] (v2) at (0,-0.35) {};
+				
+				\diagram*{
+					(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
+					-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
+					
+					(v1)    -- [boson, edge label=\(Z^{\ast}\), line width=1.0pt] (v2),
+					
+					(qin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
+					-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
+				};
+\end{feynman}
+\node[font=\large\bfseries, text=blue!80!black] at (0.0,-0.95) {\(tqZ\)};
+
+\end{tikzpicture}
+		
+%\vspace{-0.2em}
+%{\scriptsize \textcolor{blue!80!black}{\textbf{\(tqZ\)}}}
+
+\end{minipage}
+	
+\vspace{0.5em}
+	
+\justifying\scriptsize
+Representative process: \(\mu^{+} q \to \mu^{+} t\), with \(q=u,c\).
+Neutral-current exchange probes anomalous \(tq\gamma\) and \(tqZ\) couplings.
+\end{minipage}
+			
+\end{column}
+\end{columns}
+
+\begin{center}
+\setlength{\fboxsep}{6pt}
+\fcolorbox{red!50!black}{red!10}{%
+\parbox{0.88\linewidth}{%
+\justifying\small
+Improved sensitivity relative to the LHeC is expected at \LHCmu{}, but quantitative limits remain channel-dependent and require realistic event selections, detector modelling, and systematic-uncertainty estimates.
+}%
+}
+\end{center}
+
+
+	
+%------------------------------------------------
+% HELP4CERN logo overlay
+%------------------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+
 \end{frame}
+% --------------------------------------------------------------------------
+
+
+
+
 
 
 
@@ -962,8 +1308,13 @@ at (current page.north east)
 
 \section{Beyond SM and long-term outlook}
 
+
+
+
+
+
 % --------------------------------------------------------------------------
-% Slide 17
+% Slide 16
 % --------------------------------------------------------------------------
 \begin{frame}{Why \LHCmu{} is also a distinctive BSM machine}
 \begin{itemize}
@@ -979,7 +1330,7 @@ at (current page.north east)
 \item contact interactions,
 \item and other muon-coupled new-physics scenarios.
 \end{itemize}
-\item The talk should keep this part selective: one or two benchmark examples are enough to make the point.
+%\item The talk should keep this part selective: one or two benchmark examples are enough to make the point.
 \end{itemize}
 \begin{tikzpicture}[remember picture,overlay]
 	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
@@ -1001,8 +1352,12 @@ Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton 
 
 
 
+
+
+
+
 % --------------------------------------------------------------------------
-% Slide 18
+% Slide 17
 % --------------------------------------------------------------------------
 \begin{frame}{Representative BSM benchmarks: RPV SUSY and color-octet muons}
 \begin{columns}[T]
@@ -1047,8 +1402,12 @@ Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton 
 
 
 
+
+
+
+
 % --------------------------------------------------------------------------
-% Slide 19
+% Slide 18
 % --------------------------------------------------------------------------
 \begin{frame}{FCC-hh era outlook and final take-home points}
 \begin{columns}[T]
@@ -1091,6 +1450,10 @@ at (current page.north east)
 
 
 
+
+
+
+
 % --------------------------------------------------------------------------
 % Slide 20
 % --------------------------------------------------------------------------
@@ -1099,6 +1462,10 @@ at (current page.north east)
 \includegraphics[width=0.85\paperwidth,height=0.85\paperheight,keepaspectratio]{Thank_You_2.jpg}
 \end{center}
 \end{frame}
+
+
+
+
 
 
 
@@ -1131,7 +1498,8 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 \item new contributions and physics studies are very welcome,
 \end{itemize}
 
-\textbf{Contact:} \texttt{help-4-cern@cern.ch}
+\textbf{Contact:} \texttt{help-4-cern@cern.ch}\\
+\textbf{Visit:} \texttt{https://help4cern.web.cern.ch}
 \end{beamercolorbox}
 \end{column}
 		
@@ -1148,11 +1516,145 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 \end{frame}
 
 
+
+
 \end{document}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 14
+% --------------------------------------------------------------------------
+\begin{frame}{Flagship $\gamma\gamma$ channel II: $W^+W^-$ and anomalous quartic gauge couplings}
+	\begin{columns}[T]
+		\begin{column}{0.99\textwidth}
+			\begin{itemize}
+				\justifying
+				\item The elastic $\gamma\gamma\to W^+W^-$ cross section grows from about $0.037$ pb at the LHeC to about $0.166$ pb at \LHCmu{}@3.7 TeV and $0.258$ pb at the 5.3 TeV upgrade benchmark.
+				\item The EFT signal is not mainly an overall rate effect: the real sensitivity comes from the \textbf{high-$M_{WW}$ tail}, where dimension-8 operators enhance the spectrum.
+				\item Relative to the LHC, the $\mu p$ environment offers cleaner event topology, more precise kinematics, and potentially simpler control of proton/muon tagging.
+				\item This makes \LHCmu{} a serious laboratory for aQGC studies rather than merely an auxiliary by-product of the machine.
+			\end{itemize}
+		\end{column}
+		%\begin{column}{0.38\textwidth}
+		%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slide 11 (generator-level $M_{WW}$ spectra for LHC, LH$\mu$C, FCC-$\mu h$) \\
+			%OR \texttt{Hamzeh\_Khanpour\_CERN\_11Nov.pdf}, slides 15--16.}{0.60\textheight}
+		%\end{column}
+	\end{columns}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 15
+% --------------------------------------------------------------------------
+\begin{frame}{Flagship $\gamma\gamma$ channels III: $ZZ$, $t\bar t$, and heavy exclusive final states}
+	\begin{itemize}
+		\justifying
+		\item Loop-induced $\gamma\gamma\to ZZ$ is especially interesting because it is absent at tree level in the Standard Model and therefore provides a clean probe of high-mass electroweak dynamics.
+		\item Representative elastic cross sections at 3.7 TeV are:
+		\begin{itemize}
+			\justifying
+			\item $\sigma_{\mathrm{el}}(\gamma\gamma\to ZZ)\simeq 0.284$ fb,
+			\item $\sigma_{\mathrm{el}}(\gamma\gamma\to t\bar t)\simeq 0.486$ fb.
+		\end{itemize}
+		\justifying
+		\item Although smaller than the $\tau\tau$ and $WW$ cases, these channels gain importance because they probe loop structure, heavy thresholds, and the onset of high-energy electroweak / top dynamics.
+		\item The same photon-induced framework also extends to exclusive pair production of BSM charged states such as higgsinos and sleptons.
+	\end{itemize}
+	
+	%\placeholdergraphic{Suggested screenshot source:\\
+		%From \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, slides 7--9 (ZZ, $t\bar t$, and SUSY-pair plots).}{0.25\textheight}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+	
+	
+	\begin{tikzpicture}[scale=0.55, transform shape]
+		\begin{feynman}
+			
+			%------------------------------------------------
+			% External states
+			%------------------------------------------------
+			\vertex (i1) at (-2.8,  1.8) {\(\ell\)};
+			\vertex (i2) at (-2.8, -1.8) {\(p\)};
+			
+			\vertex (o1) at ( 2.7,  1.8) {\(\ell\)};
+			\vertex (o2) at ( 2.9, -1.8) {\(p^{(*)}\)};
+			
+			\vertex (t1) at ( 2.7,  0.75) {\(\tau^{+}\)};
+			\vertex (t2) at ( 2.7, -0.75) {\(\tau^{-}\)};
+			
+			%------------------------------------------------
+			% Interaction vertices
+			%------------------------------------------------
+			\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (-0.7,  1.5) {};
+			\vertex [dot, fill=green!60!black, minimum size=5pt] (v2) at (-0.8, -1.5) {};
+			
+			\vertex [dot, fill=green!60!black, minimum size=5pt] (v3) at ( 0.95,  0.55) {};
+			\vertex [dot, fill=green!60!black, minimum size=5pt] (v4) at ( 0.95, -0.55) {};
+			
+			%------------------------------------------------
+			% Diagram
+			%------------------------------------------------
+			\diagram*{
+				(i1) -- [fermion, draw=green!60!black, line width=1.0pt] (v1)
+				-- [fermion, draw=green!60!black, line width=1.0pt] (o1),
+				
+				(i2) -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
+				-- [fermion, draw=green!60!black, line width=1.0pt] (o2),
+				
+				(v1) -- [photon, edge label=\(\gamma^\ast\), line width=1.0pt] (v3),
+				(v2) -- [photon, edge label'=\(\gamma^\ast\), line width=1.0pt] (v4),
+				
+				(v3) -- [fermion, draw=green!60!black, line width=1.0pt] (v4),
+				
+				(v3) -- [anti fermion, draw=green!60!black, line width=1.0pt] (t1),
+				(v4) -- [fermion, draw=green!60!black, line width=1.0pt] (t2),
+			};
+			
+		\end{feynman}
+	\end{tikzpicture}
+	
+	
+\end{frame}
 
 
 
@@ -1329,6 +1831,108 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 	\end{tikzpicture}
 \end{frame}
 
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 14
+% --------------------------------------------------------------------------
+\begin{frame}{\LHCmu{} as a top factory}
+	\begin{columns}[T]
+		\begin{column}{0.99\textwidth}
+			\begin{itemize}
+				\justifying
+				\item The most striking HET advantage of \LHCmu{} relative to the LHeC is the \textbf{top sector}.
+				\item Inclusive benchmark rates:
+				\begin{itemize}
+					\item single top: $21.26$ pb at 500 GeV and $36.77$ pb at 1 TeV,
+					\item $t\bar t$: $1.03$ pb at 500 GeV and $2.23$ pb at 1 TeV.
+				\end{itemize}
+				\justifying
+				\item For the benchmark integrated luminosities, this translates into:
+				\begin{itemize}
+					\justifying
+					\item $\sim 5.3\times10^6$ single-top events at 500 GeV,
+					\item $\sim 2.6\times10^5$ $t\bar t$ events at 500 GeV,
+					\item $\sim 3.7\times10^7$ single-top events at 1 TeV,
+					\item $\sim 2.2\times10^6$ $t\bar t$ events at 1 TeV.
+				\end{itemize}
+				\justifying
+				\item This is why the current collaboration narrative repeatedly describes \LHCmu{} as a genuine top factory.
+			\end{itemize}
+		\end{column}
+		%\begin{column}{0.38\textwidth}
+		%\placeholdergraphic{Best compact figure source: \texttt{Hamzeh\_Khanpour\_Help4CERN\_13Jan.pdf}, slide with inclusive top and Higgs cross-section table; \\
+			%Alternative: \texttt{LHuC\_KP.pdf}, page 19.}{0.60\textheight}
+		%\end{column}
+	\end{columns}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 15
+% --------------------------------------------------------------------------
+\begin{frame}{Top event topology, acceptance, and why \LHCmu{} helps experimentally}
+	\begin{columns}[T]
+		\begin{column}{0.99\textwidth}
+			\begin{itemize}
+				\justifying
+				\item Beyond inclusive rates, dedicated semileptonic $t\bar t$ studies indicate that the \LHCmu{} event topology is more central than the LHeC one.
+				\item This matters because the gain at generator level is not purely from larger cross sections; it is also supported by strong kinematic acceptance.
+				\item Representative semileptonic acceptance numbers show only modest degradation even for tighter lepton rapidity cuts, with the \LHCmu{} case remaining particularly favourable.
+				\item Therefore the larger top rates are not merely formal parton-level advantages: they are likely to remain exploitable after realistic selections.
+			\end{itemize}
+		\end{column}
+		%\begin{column}{0.38\textwidth}
+		%\placeholdergraphic{From \texttt{Hamzeh\_Khanpour\_CERN\_29Dec.pdf}, slides 10--13: acceptance table, light-jet pseudorapidity, reconstructed $W$ mass, and lepton-$\eta$ comparison.}{0.60\textheight}
+		%\end{column}
+	\end{columns}
+	%\takehome{For the talk, one acceptance/centrality slide is enough; do not overload with many detector-level details.}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 15 
+% --------------------------------------------------------------------------
+\begin{frame}{Rare top, FCNC, and EFT directions}
+	\begin{itemize}
+		\justifying
+		\item The top sector at \LHCmu{} is interesting not only for statistics, but also for \textbf{rare processes and anomalous couplings}.
+		\item Dedicated studies already show that top-FCNC sensitivities improve substantially from the LHeC to the \LHCmu{}, reflecting both the higher rates and the harder kinematics.
+		\item The characteristic $\mu p$ topology provides a useful environment for studying anomalous $tq\gamma$, $tqZ$, and $tqH$ interactions, as well as broader EFT deformations in single-top and associated channels.
+		%\item In the presentation, this part should be framed as one representative example of how the enormous top samples can be converted into BSM reach.
+	\end{itemize}
+	
+	%\placeholdergraphic{Suggested source: \texttt{Hamzeh\_Khanpour\_Help4CERN\_3Feb.pdf}, slides 14--18 for FCNC cross-section/coupling dependence and kinematic distributions.}{0.28\textheight}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+\end{frame}
 
 
 

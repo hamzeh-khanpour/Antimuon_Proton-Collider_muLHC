@@ -1595,4 +1595,363 @@ r-
 
 Underfull \hbox (badness 3199) in paragraph at lines 721--721
 []\T1/lmss/m/n/10 Overall, LH$\OML/lmm/m/it/10 ^^V$\T1/lmss/m/n/10 C is ex-pect
-ed t
+ed to
+ []
+
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 721.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+
+[10
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 726.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 726.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 726.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 726.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 726.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 726.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 726.
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 776--776
+[]\T1/lmss/m/n/10 LH$\OML/lmm/m/it/10 ^^V$\T1/lmss/m/n/10 C nat-u-rally op-er-a
+tes as a high-
+ []
+
+<Syy.jpg, id=573, 360.48964pt x 422.00517pt>
+File: Syy.jpg Graphic file (type jpg)
+<use Syy.jpg>
+Package pdftex.def Info: Syy.jpg  used on input line 776.
+(pdftex.def)             Requested size: 155.89868pt x 182.50185pt.
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 776.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+
+[11
+
+ <./Syy.jpg>]
+Underfull \hbox (badness 4060) in paragraph at lines 837--837
+[]\T1/lmss/m/n/10 Anomalous con-tri-bu-tions harden the
+ []
+
+<elastic_tau_tau.jpg, id=619, 403.93768pt x 476.20767pt>
+File: elastic_tau_tau.jpg Graphic file (type jpg)
+<use elastic_tau_tau.jpg>
+Package pdftex.def Info: elastic_tau_tau.jpg  used on input line 837.
+(pdftex.def)             Requested size: 155.9017pt x 183.79466pt.
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 837.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+
+[12
+
+ <./elastic_tau_tau.jpg>]
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 992.
+(pdftex.def)             Requested size: 58.32823pt x 31.81473pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 992.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 992.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 992.
+
+
+Overfull \hbox (0.4068pt too wide) in paragraph at lines 992--992
+ [][] 
+ []
+
+
+
+[13
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1000.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 1000.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1000.
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 1151--1151
+\T1/lmss/m/n/10 current DIS, with rep-re-sen-ta-tive sub-pro-cess
+ []
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1151.
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 1151--1151
+[]\T1/lmss/m/n/8 Dominant hard sub-pro-cess: $\OML/lmm/m/it/8 ^^M[]\T1/lmss/m/s
+l/8 g \OMS/lmsy/m/n/8 ! \T1/lmss/m/sl/8 t[]$\T1/lmss/m/n/8 ;
+ []
+
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1151.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+
+[14
+
+]
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
+tance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
+stance' requires LuaTeX. It will be ignored. on input line 1298.
+
+
+Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
+distance' requires LuaTeX. It will be ignored. on input line 1298.
+
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1298.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
+
+
+[15
+
+]
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1349.
+(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+
+
+[16
+
+]
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1400.
+(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+
+
+[17
+
+]
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1448.
+(pdftex.def)             Requested size: 51.21504pt x 27.93462pt.
+
+
+[18
+
+]
+<Thank_You_2.jpg, id=838, 911.54839pt x 577.29964pt>
+File: Thank_You_2.jpg Graphic file (type jpg)
+<use Thank_You_2.jpg>
+Package pdftex.def Info: Thank_You_2.jpg  used on input line 1464.
+(pdftex.def)             Requested size: 381.87407pt x 241.84756pt.
+
+Overfull \hbox (35.43019pt too wide) in paragraph at lines 1464--1464
+ [] 
+ []
+
+
+
+[19
+
+ <./Thank_You_2.jpg>]
+Underfull \hbox (badness 5161) in paragraph at lines 1516--1516
+\T1/lmss/m/n/10 elec-troweak, top, QCD, and BSM
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+516.
+(d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<White_Paper.jpg, id=878, 443.08392pt x 542.45518pt>
+File: White_Paper.jpg Graphic file (type jpg)
+<use White_Paper.jpg>
+Package pdftex.def Info: White_Paper.jpg  used on input line 1516.
+(pdftex.def)             Requested size: 173.22194pt x 212.06985pt.
+
+Overfull \vbox (15.39958pt too high) detected at line 1516
+ []
+
+
+
+[20
+
+ <./White_Paper.jpg>]
+\tf@nav=\write7
+\openout7 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.nav'.
+
+\tf@toc=\write8
+\openout8 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.toc'.
+
+\tf@snm=\write9
+\openout9 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.snm'.
+
+ (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+Package rerunfilecheck Info: File `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.out' ha
+s not changed.
+(rerunfilecheck)             Checksum: 15F2B02717B870011A61B1D3FA3F4530;1275.
+ ) 
+Here is how much of TeX's memory you used:
+ 30935 strings out of 473190
+ 639825 string characters out of 5719978
+ 1417872 words of memory out of 5000000
+ 53469 multiletter control sequences out of 15000+600000
+ 749098 words of font info for 156 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,18n,123p,14590b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2025
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/texlive/2025/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2025/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><d:/
+texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/texlive/2025/texmf
+-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmmi6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
+><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/t
+exmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/typ
+e1/public/lm/lmr6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pf
+b><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/t
+exmf-dist/fonts/type1/public/lm/lmss10.pfb><d:/texlive/2025/texmf-dist/fonts/ty
+pe1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss
+8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss9.pfb><d:/texlive/2
+025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/f
+onts/type1/public/lm/lmsso10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public
+/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso8.pfb><d
+:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso9.pfb><d:/texlive/2025/tex
+mf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type
+1/public/lm/lmsy6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.p
+fb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025
+/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (20 pages, 2324889 b
+ytes).
+PDF statistics:
+ 1036 PDF objects out of 1200 (max. 8388607)
+ 793 compressed objects within 8 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 731 words of extra memory for PDF output out of 10000 (max. 10000000)
+

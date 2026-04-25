@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  25 APR 2026 11:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  25 APR 2026 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1951,7 +1951,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<White_Paper.jpg, id=912, 443.08392pt x 542.45518pt>
+<White_Paper.jpg, id=913, 443.08392pt x 542.45518pt>
 File: White_Paper.jpg Graphic file (type jpg)
 <use White_Paper.jpg>
 Package pdftex.def Info: White_Paper.jpg  used on input line 1741.
@@ -1965,6 +1965,82 @@ Overfull \vbox (15.39958pt too high) detected at line 1741
 [21
 
  <./White_Paper.jpg>]
+File: HELP4CERN.jpg Graphic file (type jpg)
+<use HELP4CERN.jpg>
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 2085.
+(pdftex.def)             Requested size: 58.32823pt x 31.81473pt.
+LaTeX Font Info:    Calculating math sizes for size <20> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <13.99994> on input line 2085.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <20> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <13.99994> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <20> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <13.99994> not available
+
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <24> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <16.79993> on input line 2085.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <16.79993> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <24> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <16.79993> not available
+
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+LaTeX Font Info:    Calculating math sizes for size <26> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <26> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <18.19992> on input line 2085.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <13> on input line 2085.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <26> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <18.19992> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <13> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2085.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <26> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <18.19992> not available
+
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <13> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2085
+.
+
+Overfull \hbox (0.4068pt too wide) in paragraph at lines 2085--2085
+ [][] 
+ []
+
+
+
+[22
+
+{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 \tf@nav=\write7
 \openout7 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.nav'.
 
@@ -1974,7 +2050,8 @@ Overfull \vbox (15.39958pt too high) detected at line 1741
 \tf@snm=\write9
 \openout9 = `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.snm'.
 
- (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.aux)
+
+(./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1984,11 +2061,11 @@ s not changed.
 (rerunfilecheck)             Checksum: 15F2B02717B870011A61B1D3FA3F4530;1275.
  ) 
 Here is how much of TeX's memory you used:
- 30973 strings out of 473190
- 640532 string characters out of 5719978
+ 31383 strings out of 473190
+ 648008 string characters out of 5719978
  1417872 words of memory out of 5000000
- 53505 multiletter control sequences out of 15000+600000
- 749098 words of font info for 156 fonts, out of 8000000 for 9000
+ 53908 multiletter control sequences out of 15000+600000
+ 880863 words of font info for 240 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,14590b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/tex
@@ -1998,31 +2075,34 @@ t/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2025/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><d:/
-texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/texlive/2025/texmf
--dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/
-public/lm/lmmi6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
-><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/t
-exmf-dist/fonts/type1/public/lm/lmmi9.pfb><d:/texlive/2025/texmf-dist/fonts/typ
-e1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.p
-fb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><d:/texlive/2025/
-texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/typ
-e1/public/lm/lmr9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.
-pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/20
-25/texmf-dist/fonts/type1/public/lm/lmss8.pfb><d:/texlive/2025/texmf-dist/fonts
-/type1/public/lm/lmss9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lm
-ssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><d:/te
-xlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><d:/texlive/2025/texmf-
-dist/fonts/type1/public/lm/lmsso8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/p
-ublic/lm/lmsso9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pf
-b><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><d:/texlive/2025/
-texmf-dist/fonts/type1/public/lm/lmsy7.pfb><d:/texlive/2025/texmf-dist/fonts/ty
-pe1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy9
-.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (21 pages, 2764822 b
+texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf
+-dist/fonts/type1/public/lm/lmmi10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pf
+b><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><d:/texlive/2025/
+texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/ty
+pe1/public/lm/lmmi9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10
+.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><d:/texlive/202
+5/texmf-dist/fonts/type1/public/lm/lmr7.pfb><d:/texlive/2025/texmf-dist/fonts/t
+ype1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.
+pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb><d:/texlive/20
+25/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/font
+s/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/
+lmss8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss9.pfb><d:/texli
+ve/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-di
+st/fonts/type1/public/lm/lmsso10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/pu
+blic/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.p
+fb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso8.pfb><d:/texlive/202
+5/texmf-dist/fonts/type1/public/lm/lmsso9.pfb><d:/texlive/2025/texmf-dist/fonts
+/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/l
+msy6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><d:/texliv
+e/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dist/f
+onts/type1/public/lm/lmsy9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/l
+m/lmtt10.pfb>
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (22 pages, 2810253 b
 ytes).
 PDF statistics:
- 1084 PDF objects out of 1200 (max. 8388607)
- 829 compressed objects within 9 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 1129 PDF objects out of 1200 (max. 8388607)
+ 865 compressed objects within 9 object streams
+ 51 named destinations out of 1000 (max. 500000)
  741 words of extra memory for PDF output out of 10000 (max. 10000000)
 

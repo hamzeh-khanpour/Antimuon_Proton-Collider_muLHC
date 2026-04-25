@@ -1743,6 +1743,352 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 
 
 
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 13
+% --------------------------------------------------------------------------
+
+% --------------------------------------------------------------------------
+% Merged gamma-gamma summary slide
+% --------------------------------------------------------------------------
+\begin{frame}{Exclusive $\gamma\gamma$ channels: electroweak, top, and BSM reach}
+	
+	\centering
+	%	\vspace{-0.35em}
+	
+	\begin{tikzpicture}[x=1cm,y=1cm]
+		
+		%------------------------------------------------
+		% Styles
+		%------------------------------------------------
+		\tikzset{
+			connector/.style={
+				draw=blue!65!black,
+				line width=1.0pt
+			},
+			hubbox/.style={
+				rounded corners=6pt,
+				draw=blue!65!black,
+				line width=1.1pt,
+				fill=white,
+				minimum width=2.9cm,
+				minimum height=2.0cm,
+				inner sep=3pt,
+				align=center
+			},
+			boxww/.style={
+				rounded corners=9pt,
+				draw=green!50!black,
+				line width=1.15pt,
+				fill=green!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxzz/.style={
+				rounded corners=9pt,
+				draw=violet!55!black,
+				line width=1.15pt,
+				fill=violet!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxtt/.style={
+				rounded corners=9pt,
+				draw=orange!70!black,
+				line width=1.15pt,
+				fill=orange!12,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxbsm/.style={
+				rounded corners=9pt,
+				draw=red!65!black,
+				line width=1.15pt,
+				fill=red!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			takehome/.style={
+				rounded corners=5pt,
+				draw=red!60!black,
+				line width=0.95pt,
+				fill=red!8,
+				text width=11.1cm,
+				minimum height=0.82cm,
+				align=center,
+				inner sep=3.5pt
+			}
+		}
+		
+		%------------------------------------------------
+		% Central hub
+		%------------------------------------------------
+		\node[hubbox] (hub) at (0,0.00) {%
+			\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.15em]
+			{\scriptsize \textbf{Exclusive high-energy}}\\[-0.05em]
+			{\scriptsize \textbf{$\gamma\gamma$ programme}}
+		};
+		
+		%------------------------------------------------
+		% Outer nodes
+		%------------------------------------------------
+		\node[boxww] (ww) at (-4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to W^+W^-$}\\[0.20em]
+			%			{\footnotesize largest EW benchmark;}\\
+			{\footnotesize Strong aQGC sensitivity comes from}\\
+			{\footnotesize the high-$M_{WW}$ tail}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.166$ pb at 3.7 TeV}
+		};
+		
+		\node[boxzz] (zz) at (4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to ZZ$}\\[0.20em]
+			{\footnotesize Loop-induced in the SM;}\\
+			{\footnotesize clean probe of high-mass}\\
+			{\footnotesize electroweak dynamics}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.284$ fb at 3.7 TeV}
+		};
+		
+		\node[boxtt] (tt) at (-4.15,-1.85) {%
+			{\bfseries \small $\gamma\gamma\to t\bar t$}\\[0.20em]
+			{\footnotesize Probes heavy thresholds}\\
+			{\footnotesize and top-sector dynamics}\\
+			{\footnotesize in exclusive topology}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.486$ fb at 3.7 TeV}
+		};
+		
+		\node[boxbsm] (bsm) at (4.15,-1.85) {%
+			{\bfseries \small Exclusive BSM pairs}\\[0.20em]
+			%			{\footnotesize same framework extends to}\\
+			{\footnotesize Charged states such as}\\
+			{\footnotesize higgsinos and sleptons}\\[0.15em]
+			%			{\footnotesize qualitative opportunity; no rate quoted here}
+		};
+		
+		%------------------------------------------------
+		% Connectors
+		%------------------------------------------------
+		\draw[connector] (hub.north west) .. controls (-1.1,0.95) and (-2.4,1.35) .. (ww.east);
+		\draw[connector] (hub.north east) .. controls ( 1.1,0.95) and ( 2.4,1.35) .. (zz.west);
+		\draw[connector] (hub.south west) .. controls (-1.1,-0.85) and (-2.4,-1.35) .. (tt.east);
+		\draw[connector] (hub.south east) .. controls ( 1.1,-0.85) and ( 2.4,-1.35) .. (bsm.west);
+		
+		%------------------------------------------------
+		% Inset Feynman diagram: gamma gamma -> W+ W-
+		%------------------------------------------------
+		\begin{scope}[
+			shift={(0,2.18)},
+			scale=0.255,
+			transform shape,
+			line cap=round,
+			line join=round,
+			>=Triangle
+			]
+			
+			% Coordinates
+			\coordinate (wwEin)   at (-4.00,  2.25);
+			\coordinate (wwEv)    at (-1.25,  1.25);
+			\coordinate (wwEout)  at ( 2.10,  2.15);
+			
+			\coordinate (wwPin)   at (-4.00, -2.75);
+			\coordinate (wwPv)    at (-1.05, -1.85);
+			\coordinate (wwPout)  at ( 2.20, -2.75);
+			
+			\coordinate (wwB)     at ( 0.55, -0.05);
+			\def\wwBr{0.35}
+			
+			\coordinate (wwGtopEnd) at ( 0.27,  0.17);
+			\coordinate (wwGbotEnd) at ( 0.24, -0.36);
+			
+			\coordinate (wwWupA)  at ( 0.86,  0.10);
+			\coordinate (wwWupB)  at ( 2.55,  0.78);
+			
+			\coordinate (wwWdnA)  at ( 0.86, -0.20);
+			\coordinate (wwWdnB)  at ( 2.55, -0.72);
+			
+			% Electron line
+			\draw[line width=0.9pt] (wwEin) -- (wwEv) -- (wwEout);
+			
+			\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+			(-2.95,1.87) -- (-2.10,1.56);
+			
+			\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+			(0.10,1.60) -- (0.95,1.83);
+			
+			% Proton line
+			\draw[line width=1.4pt] (wwPin) -- (wwPv) -- (wwPout);
+			
+			\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+			(-3.05,-2.46) -- (-2.10,-2.17);
+			
+			\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+			(0.05,-2.16) -- (1.00,-2.42);
+			
+			% Off-shell photons
+			\draw[
+			decorate,
+			decoration={snake, amplitude=2.8pt, segment length=8pt},
+			line width=1.2pt
+			] (wwEv) -- (wwGtopEnd);
+			
+			\draw[
+			decorate,
+			decoration={snake, amplitude=2.8pt, segment length=8pt},
+			line width=1.2pt
+			] (wwPv) -- (wwGbotEnd);
+			
+			% Central red striped effective-interaction blob
+			\begin{scope}
+				\clip (wwB) circle (\wwBr);
+				\fill[white] (wwB) circle (\wwBr);
+				
+				\foreach \t in {-1.30,-1.15,...,1.30}{
+					\draw[red!85!black, line width=1.3pt]
+					($(wwB)+(\t,-1.20)$) -- ($(wwB)+(\t+1.60,0.40)$);
+				}
+			\end{scope}
+			
+			\draw[red!85!black, line width=1.5pt] (wwB) circle (\wwBr);
+			
+			% W bosons
+			\draw[line width=1.2pt, dashed] (wwWupA) -- (wwWupB);
+			\draw[line width=1.2pt, dashed] (wwWdnA) -- (wwWdnB);
+			
+			\draw[-{Triangle[length=5.4pt,width=4.5pt]}, line width=0.50pt]
+			(2.02,0.56) -- (1.52,0.36);
+			
+			\draw[-{Triangle[length=5.4pt,width=4.5pt]}, line width=0.50pt]
+			(2.02,-0.56) -- (1.52,-0.40);
+			
+			% Labels
+			\node[font=\fontsize{20}{22}\selectfont] at (-4.40,  2.75) {$\ell$};
+			\node[font=\fontsize{20}{22}\selectfont] at ( 2.42,  2.65) {$\ell$};
+			
+			\node[font=\fontsize{20}{22}\selectfont] at (-4.42, -3.05) {$p$};
+			\node[font=\fontsize{20}{22}\selectfont] at ( 2.95, -3.12) {$p^{(*)}$};
+			
+			\node[font=\fontsize{24}{26}\selectfont] at (-1.55,  0.33) {$\gamma^{*}$};
+			\node[font=\fontsize{24}{26}\selectfont] at (-1.60, -0.92) {$\gamma^{*}$};
+			
+			\node[font=\fontsize{24}{26}\selectfont, anchor=west] at ( 2.92,  0.96) {$W^{+}$};
+			\node[font=\fontsize{24}{26}\selectfont, anchor=west] at ( 2.92, -0.96) {$W^{-}$};
+			
+		\end{scope}
+		
+		%------------------------------------------------
+		% Inset Feynman diagram: gamma gamma -> Htilde+ Htilde-
+		%------------------------------------------------
+		\begin{scope}[
+			shift={(0,-2.45)},
+			scale=0.220,
+			transform shape,
+			line cap=round,
+			line join=round,
+			>=Triangle
+			]
+			
+			% Coordinates
+			\coordinate (hhLin)   at (-4.00,  2.70);
+			\coordinate (hhLv)    at (-0.90,  1.95);
+			\coordinate (hhLout)  at ( 3.50,  2.70);
+			
+			\coordinate (hhPin)   at (-4.00, -3.20);
+			\coordinate (hhPv)    at (-0.90, -2.45);
+			\coordinate (hhPout)  at ( 3.50, -3.20);
+			
+			\coordinate (hhTopJ)  at ( 1.25,  0.35);
+			\coordinate (hhBotJ)  at ( 1.25, -1.05);
+			
+			\coordinate (hhTopR)  at ( 4.05,  0.35);
+			\coordinate (hhBotR)  at ( 4.05, -1.05);
+			
+			% Upper lepton line
+			\draw[line width=0.9pt] (hhLin) -- (hhLv) -- (hhLout);
+			
+			\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+			(-2.95,2.45) -- (-2.05,2.23);
+			
+			\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+			(0.80,2.25) -- (1.70,2.47);
+			
+			% Lower proton line
+			\draw[line width=1.4pt] (hhPin) -- (hhPv) -- (hhPout);
+			
+			\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+			(-2.95,-2.93) -- (-2.00,-2.70);
+			
+			\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+			(0.80,-2.70) -- (1.75,-2.93);
+			
+			% Off-shell photons
+			\draw[
+			decorate,
+			decoration={snake, amplitude=2.8pt, segment length=8pt},
+			line width=1.2pt
+			] (hhLv) -- (hhTopJ);
+			
+			\draw[
+			decorate,
+			decoration={snake, amplitude=2.8pt, segment length=8pt},
+			line width=1.2pt
+			] (hhPv) -- (hhBotJ);
+			
+			% Double-dashed interaction structure
+			\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25, 0.44) -- (4.05, 0.44);
+			\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25, 0.26) -- (4.05, 0.26);
+			
+			\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25,-0.96) -- (4.05,-0.96);
+			\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25,-1.14) -- (4.05,-1.14);
+			
+			\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.16, 0.35) -- (1.16,-1.05);
+			\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.34, 0.35) -- (1.34,-1.05);
+			
+			% Labels
+			\node[font=\fontsize{20}{22}\selectfont] at (-4.40,  3.10) {$\ell$};
+			\node[font=\fontsize{20}{22}\selectfont] at ( 3.95,  3.10) {$\ell$};
+			
+			\node[font=\fontsize{20}{22}\selectfont] at (-4.42, -3.72) {$p$};
+			\node[font=\fontsize{20}{22}\selectfont] at ( 4.25, -3.95) {$p^{(*)}$};
+			
+			\node[font=\fontsize{26}{28}\selectfont] at (-0.35,  0.55) {$\gamma^{*}$};
+			\node[font=\fontsize{26}{28}\selectfont] at (-0.35, -1.10) {$\gamma^{*}$};
+			
+			\node[font=\fontsize{24}{26}\selectfont, anchor=west] at (4.45,  0.45) {$\widetilde{H}^{+}$};
+			\node[font=\fontsize{24}{26}\selectfont, anchor=west] at (4.45, -1.15) {$\widetilde{H}^{-}$};
+			
+		\end{scope}
+		
+		%------------------------------------------------
+		% Take-home message
+		%------------------------------------------------
+		\node[takehome] at (0,-4.00) {%
+			{\justifying\scriptsize Beyond $\tau^+\tau^-$, the high-energy $\gamma\gamma$ programme at LH$\mu$C spans
+				electroweak, top, and BSM-sensitive channels in a clean exclusive environment.}
+		};
+		
+	\end{tikzpicture}
+	
+\end{frame}
+% --------------------------------------------------------------------------
+
+
+
+
+
 \end{document}
 
 
@@ -1751,41 +2097,234 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 
 
 
+\begin{frame}
+	\centering
+	\begin{tikzpicture}[
+		x=1cm,
+		y=1cm,
+		scale=0.40,
+		transform shape,
+		line cap=round,
+		line join=round,
+		>=Triangle
+		]
+		
+		%------------------------------------------------------------------
+		% Coordinates
+		%------------------------------------------------------------------
+		\coordinate (eIn)   at (-4.00,  2.25);
+		\coordinate (eV)    at (-1.25,  1.25);
+		\coordinate (eOut)  at ( 2.10,  2.15);
+		
+		\coordinate (pIn)   at (-4.00, -2.75);
+		\coordinate (pV)    at (-1.05, -1.85);
+		\coordinate (pOut)  at ( 2.20, -2.75);
+		
+		\coordinate (B)     at ( 0.55, -0.05);
+		\def\Br{0.35}
+		
+		\coordinate (gTopEnd) at ( 0.27,  0.17);
+		\coordinate (gBotEnd) at ( 0.24, -0.36);
+		
+		% Shortened W lines so they do not run into the labels
+		\coordinate (WUpA)  at ( 0.86,  0.10);
+		\coordinate (WUpB)  at ( 2.55,  0.78);
+		
+		\coordinate (WDnA)  at ( 0.86, -0.20);
+		\coordinate (WDnB)  at ( 2.55, -0.72);
+		
+		%------------------------------------------------------------------
+		% Electron line
+		%------------------------------------------------------------------
+		\draw[line width=0.9pt] (eIn) -- (eV) -- (eOut);
+		
+		% Electron arrows
+		\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+		(-2.95,1.87) -- (-2.10,1.56);
+		
+		\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+		(0.10,1.60) -- (0.95,1.83);
+		
+		%------------------------------------------------------------------
+		% Proton line
+		%------------------------------------------------------------------
+		\draw[line width=1.4pt] (pIn) -- (pV) -- (pOut);
+		
+		% Proton arrows
+		\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+		(-3.05,-2.46) -- (-2.10,-2.17);
+		
+		\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+		(0.05,-2.16) -- (1.00,-2.42);
+		
+		%------------------------------------------------------------------
+		% Off-shell photons
+		%------------------------------------------------------------------
+		\draw[
+		decorate,
+		decoration={snake, amplitude=2.8pt, segment length=8pt},
+		line width=1.2pt
+		] (eV) -- (gTopEnd);
+		
+		\draw[
+		decorate,
+		decoration={snake, amplitude=2.8pt, segment length=8pt},
+		line width=1.2pt
+		] (pV) -- (gBotEnd);
+		
+		%------------------------------------------------------------------
+		% Central red striped effective-interaction blob
+		%------------------------------------------------------------------
+		\begin{scope}
+			\clip (B) circle (\Br);
+			\fill[white] (B) circle (\Br);
+			
+			% red diagonal hatching
+			\foreach \t in {-1.30,-1.15,...,1.30}{
+				\draw[red!85!black, line width=1.3pt]
+				($(B)+(\t,-1.20)$) -- ($(B)+(\t+1.60,0.40)$);
+			}
+		\end{scope}
+		
+		\draw[red!85!black, line width=1.5pt] (B) circle (\Br);
+		
+		%------------------------------------------------------------------
+		% W bosons: dashed lines, arrows pointing toward the blob
+		%------------------------------------------------------------------
+		\draw[line width=1.2pt, dashed] (WUpA) -- (WUpB);
+		\draw[line width=1.2pt, dashed] (WDnA) -- (WDnB);
+		
+		% W arrows pointing leftward toward the central blob
+		\draw[-{Triangle[length=5.4pt,width=4.5pt]}, line width=0.50pt]
+		(2.02,0.56) -- (1.52,0.36);
+		
+		\draw[-{Triangle[length=5.4pt,width=4.5pt]}, line width=0.50pt]
+		(2.02,-0.56) -- (1.52,-0.40);
+		
+		%------------------------------------------------------------------
+		% Labels
+		%------------------------------------------------------------------
+		\node[font=\fontsize{20}{22}\selectfont] at (-4.40,  2.75) {$\ell$};
+		\node[font=\fontsize{20}{22}\selectfont] at ( 2.42,  2.65) {$\ell$};
+		
+		\node[font=\fontsize{20}{22}\selectfont] at (-4.42, -3.05) {$p$};
+		\node[font=\fontsize{20}{22}\selectfont] at ( 2.95, -3.12) {$p^{(*)}$};
+		
+		\node[font=\fontsize{24}{26}\selectfont] at (-1.55,  0.33) {$\gamma^{*}$};
+		\node[font=\fontsize{24}{26}\selectfont] at (-1.60, -0.92) {$\gamma^{*}$};
+		
+		% Moved farther right so dashed lines do not cross the labels
+		\node[font=\fontsize{24}{26}\selectfont, anchor=west] at ( 2.92,  0.96) {$W^{+}$};
+		\node[font=\fontsize{24}{26}\selectfont, anchor=west] at ( 2.92, -0.96) {$W^{-}$};
+		
+	\end{tikzpicture}
+\end{frame}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{frame}
+	\centering
+	\begin{tikzpicture}[
+		x=1cm,
+		y=1cm,
+		scale=0.35,
+		transform shape,
+		line cap=round,
+		line join=round,
+		>=Triangle
+		]
+		
+		%------------------------------------------------------------------
+		% Coordinates
+		%------------------------------------------------------------------
+		\coordinate (lIn)   at (-4.00,  2.70);
+		\coordinate (lV)    at (-0.90,  1.95);
+		\coordinate (lOut)  at ( 3.50,  2.70);
+		
+		\coordinate (pIn)   at (-4.00, -3.20);
+		\coordinate (pV)    at (-0.90, -2.45);
+		\coordinate (pOut)  at ( 3.50, -3.20);
+		
+		% Photon end points / left junctions of the double-dashed structure
+		\coordinate (TopJ)  at ( 1.25,  0.35);
+		\coordinate (BotJ)  at ( 1.25, -1.05);
+		
+		% Right ends of the double-dashed structure
+		\coordinate (TopR)  at ( 4.05,  0.35);
+		\coordinate (BotR)  at ( 4.05, -1.05);
+		
+		%------------------------------------------------------------------
+		% Upper lepton line
+		%------------------------------------------------------------------
+		\draw[line width=0.9pt] (lIn) -- (lV) -- (lOut);
+		
+		% Lepton arrows
+		\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+		(-2.95,2.45) -- (-2.05,2.23);
+		
+		\draw[-{Triangle[length=5.8pt,width=7.0pt]}, line width=0.5pt]
+		(0.80,2.25) -- (1.70,2.47);
+		
+		%------------------------------------------------------------------
+		% Lower proton line
+		%------------------------------------------------------------------
+		\draw[line width=1.4pt] (pIn) -- (pV) -- (pOut);
+		
+		% Proton arrows
+		\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+		(-2.95,-2.93) -- (-2.00,-2.70);
+		
+		\draw[-{Triangle[length=6.0pt,width=5.2pt]}, line width=1.0pt]
+		(0.80,-2.70) -- (1.75,-2.93);
+		
+		%------------------------------------------------------------------
+		% Off-shell photons
+		%------------------------------------------------------------------
+		\draw[
+		decorate,
+		decoration={snake, amplitude=2.8pt, segment length=8pt},
+		line width=1.2pt
+		] (lV) -- (TopJ);
+		
+		\draw[
+		decorate,
+		decoration={snake, amplitude=2.8pt, segment length=8pt},
+		line width=1.2pt
+		] (pV) -- (BotJ);
+		
+		%------------------------------------------------------------------
+		% Double-dashed interaction structure
+		%------------------------------------------------------------------
+		% Upper horizontal double-dashed line
+		\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25, 0.44) -- (4.05, 0.44);
+		\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25, 0.26) -- (4.05, 0.26);
+		
+		% Lower horizontal double-dashed line
+		\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25,-0.96) -- (4.05,-0.96);
+		\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.25,-1.14) -- (4.05,-1.14);
+		
+		% Left vertical double-dashed connector
+		\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.16, 0.35) -- (1.16,-1.05);
+		\draw[line width=1.2pt, dash pattern=on 6pt off 5pt] (1.34, 0.35) -- (1.34,-1.05);
+		
+		%------------------------------------------------------------------
+		% Labels
+		%------------------------------------------------------------------
+		\node[font=\fontsize{20}{22}\selectfont] at (-4.40,  3.10) {$\ell$};
+		\node[font=\fontsize{20}{22}\selectfont] at ( 3.95,  3.10) {$\ell$};
+		
+		\node[font=\fontsize{20}{22}\selectfont] at (-4.42, -3.72) {$p$};
+		\node[font=\fontsize{20}{22}\selectfont] at ( 4.25, -3.95) {$p^{(*)}$};
+		
+		\node[font=\fontsize{26}{28}\selectfont] at (-0.35,  0.55) {$\gamma^{*}$};
+		\node[font=\fontsize{26}{28}\selectfont] at (-0.35, -1.10) {$\gamma^{*}$};
+		
+		\node[font=\fontsize{24}{26}\selectfont, anchor=west] at (4.45,  0.45) {$\widetilde{H}^{+}$};
+		\node[font=\fontsize{24}{26}\selectfont, anchor=west] at (4.45, -1.15) {$\widetilde{H}^{-}$};
+		
+	\end{tikzpicture}
+\end{frame}
 
 
 

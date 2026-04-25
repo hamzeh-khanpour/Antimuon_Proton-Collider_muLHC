@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  25 APR 2026 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  25 APR 2026 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1627,37 +1627,42 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \hbox (badness 1642) in paragraph at lines 774--774
 []\T1/lmss/m/n/10 LH$\OML/lmm/m/it/10 ^^V$\T1/lmss/m/n/10 C nat-u-rally op-er-a
-tes as a high-
+tes as \T1/lmss/m/sl/10 a high-
  []
 
-<Sgg.jpg, id=573, 1134.2375pt x 1326.9575pt>
-File: Sgg.jpg Graphic file (type jpg)
-<use Sgg.jpg>
-Package pdftex.def Info: Sgg.jpg  used on input line 774.
-(pdftex.def)             Requested size: 155.89868pt x 182.37117pt.
+<Sgg_New.jpg, id=573, 837.1275pt x 969.6225pt>
+File: Sgg_New.jpg Graphic file (type jpg)
+<use Sgg_New.jpg>
+Package pdftex.def Info: Sgg_New.jpg  used on input line 774.
+(pdftex.def)             Requested size: 155.89868pt x 180.56097pt.
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
 Package pdftex.def Info: HELP4CERN.jpg  used on input line 774.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 [11
 
- <./Sgg.jpg>]
+ <./Sgg_New.jpg>]
 Underfull \hbox (badness 4060) in paragraph at lines 835--835
 []\T1/lmss/m/n/10 Anomalous con-tri-bu-tions harden the
  []
 
-<elastic_tau_tau.jpg, id=619, 403.93768pt x 476.20767pt>
-File: elastic_tau_tau.jpg Graphic file (type jpg)
-<use elastic_tau_tau.jpg>
-Package pdftex.def Info: elastic_tau_tau.jpg  used on input line 835.
-(pdftex.def)             Requested size: 155.9017pt x 183.79466pt.
+<yytautau.jpg, id=619, 815.045pt x 957.5775pt>
+File: yytautau.jpg Graphic file (type jpg)
+<use yytautau.jpg>
+Package pdftex.def Info: yytautau.jpg  used on input line 835.
+(pdftex.def)             Requested size: 155.89238pt x 183.15436pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 835--835
+[][]
+ []
+
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
 Package pdftex.def Info: HELP4CERN.jpg  used on input line 835.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 [12
 
- <./elastic_tau_tau.jpg>]
+ <./yytautau.jpg>]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
 Package pdftex.def Info: HELP4CERN.jpg  used on input line 990.
@@ -2027,7 +2032,7 @@ s not changed.
  ) 
 Here is how much of TeX's memory you used:
  31237 strings out of 474222
- 646642 string characters out of 5748732
+ 646621 string characters out of 5748732
  1973975 words of memory out of 5000000
  52763 multiletter control sequences out of 15000+600000
  880095 words of font info for 240 fonts, out of 8000000 for 9000
@@ -2059,7 +2064,7 @@ mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (22 pages, 2843305 b
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (22 pages, 2709299 b
 ytes).
 PDF statistics:
  1129 PDF objects out of 1200 (max. 8388607)

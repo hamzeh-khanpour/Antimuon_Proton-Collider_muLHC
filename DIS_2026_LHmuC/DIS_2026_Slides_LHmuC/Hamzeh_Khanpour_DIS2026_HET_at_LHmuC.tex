@@ -1,7 +1,7 @@
 
-% Hamzeh Khanpour
-% DIS 2026 talk
-% Perspectives for HET physics studies at a muon-hadron collider at CERN
+%   Hamzeh Khanpour
+%   DIS 2026 talk
+%   Perspectives for HET physics studies at a muon-hadron collider at CERN
 
 \documentclass[aspectratio=1610,english]{beamer}
 
@@ -21,8 +21,6 @@
 
 \usepackage{tikz-feynman}
 \tikzfeynmanset{compat=1.1.0}
-
-
 
 
 \usetikzlibrary{calc,positioning,arrows.meta,decorations.pathmorphing,patterns,shapes.geometric}
@@ -1284,8 +1282,6 @@ Improved sensitivity relative to the LHeC is expected at \LHCmu{}, but quantitat
 }
 \end{center}
 
-
-	
 %------------------------------------------------
 % HELP4CERN logo overlay
 %------------------------------------------------
@@ -1300,16 +1296,7 @@ at (current page.north east)
 
 
 
-
-
-
-
-
-
 \section{Beyond SM and long-term outlook}
-
-
-
 
 
 
@@ -1318,9 +1305,16 @@ at (current page.north east)
 % --------------------------------------------------------------------------
 \begin{frame}{Why \LHCmu{} is also a distinctive BSM machine}
 \begin{itemize}
-\justifying
-\item Muon--proton collisions combine a point-like lepton beam, high centre-of-mass energy, and the possibility of \textbf{resonant single production} of new states that are more difficult to isolate at hadron colliders.
-\item The \LHCmu{} is naturally powerful for BSM scenarios tied to second-generation leptons.
+\justifying 
+\item $\mu^+p$ collisions provide a distinctive BSM environment: a point-like muon beam scatters from quarks and gluons at multi-TeV centre-of-mass energy. 
+\item The key advantage is channel-specific: \(\mu q\) and \(\mu g\) initial states can directly probe new particles coupled to second-generation leptons, 
+\[
+\mu q \to X,
+\qquad
+\mu g \to X .
+\]
+\item This enables resonant single production of states that may be harder to isolate through pair production or inclusive searches at hadron colliders. 
+\item The \LHCmu{} is naturally powerful for BSM scenarios tied to second-generation leptons. 
 \item Representative examples include:
 \begin{itemize}
 \justifying
@@ -1330,25 +1324,25 @@ at (current page.north east)
 \item contact interactions,
 \item and other muon-coupled new-physics scenarios.
 \end{itemize}
-%\item The talk should keep this part selective: one or two benchmark examples are enough to make the point.
 \end{itemize}
+
 \begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
-	at (current page.north east)
-	{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
-\vspace{0.3em}
-{\justifying \scriptsize
-\setlength{\fboxsep}{4pt}%
-\colorbox{green!15}{%
-\parbox{0.92\linewidth}{%
-Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton collider}, Phys.\ Rev.\ D~103 (2021) 116009.%
-}%
-}%
-}
+
+%\vspace{0.3em}
+%{\justifying \scriptsize
+%\setlength{\fboxsep}{4pt}%
+%\colorbox{green!15}{%
+%\parbox{0.92\linewidth}{%
+%Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton collider}, Phys.\ Rev.\ D~103 (2021) 116009.%
+%}%
+%}%
+%}
+
 \end{frame}
-
-
 
 
 
@@ -1359,47 +1353,161 @@ Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton 
 % --------------------------------------------------------------------------
 % Slide 17
 % --------------------------------------------------------------------------
-\begin{frame}{Representative BSM benchmarks: RPV SUSY and color-octet muons}
-\begin{columns}[T]
-\begin{column}{0.99\textwidth}
-\begin{itemize}
+\begin{frame}{Representative BSM benchmarks: RPV squarks and color-octet muons}
+	
+\begin{columns}[T]%[T,onlytextwidth]
+		
+%================================================
+% Left column: benchmark results
+%================================================
+\begin{column}{0.60\textwidth}
+\footnotesize
+\begin{itemize}\itemsep0.42em
 \justifying
-\item \textbf{RPV SUSY:} The $\mu p$ collisions can probe resonantly produced squarks with coupling reaches stronger than HL-LHC bounds in the on-shell regime.
-\item \textbf{Color-octet muons:} A 5$\sigma$ discovery reach of about:
-\begin{itemize}
-\justifying
-\item $\sim 2.3$ TeV at the HL-LHC,
-\item $\sim 3.0$ TeV for the 500 GeV \LHCmu{} option,
-\item $\sim 4.2$ TeV for the 1 TeV \LHCmu{} option.
+				
+\item RPV SUSY: 
+\(LQD\)-type operators can give resonant squark production in \(\mu q\) scattering. 
+In favourable NC benchmark channels, 
+\(\lambda'_{2j1}\sim 0.01\text{-}0.02\) can be tested for squark masses of 
+\(1\)-\(3~\mathrm{TeV}\), approaching an order-of-magnitude improvement over LHC bounds in the on-shell regime.
+				
+\item Color-octet muon \(\mu_8\) / leptogluon: 
+the direct \(\mu g\) initial state enables resonant single production,
+\[
+\mu g \to \mu_8 \to \mu g ,
+\]
+whereas \(pp\) searches mainly rely on pair production.
+
 \end{itemize}
-\justifying
-\item These examples are sufficient to demonstrate that the BSM case is not generic hype: it is tied to concrete channels where the $\mu p$ initial state is a genuine advantage.
-\end{itemize}
+
+
+
+\vspace{0.10em}
+
+
+
+%------------------------------------------------
+% Yellow benchmark reach box
+%------------------------------------------------
+\begin{center}
+\setlength{\fboxsep}{4pt}
+\fcolorbox{black!35}{yellow!15}{%
+\parbox{0.70\linewidth}{%
+\centering\scriptsize
+\textbf{Representative \(5\sigma\) reach for \(\mu_8\)}\\[0.45ex]
+\begin{tabular}{lc}
+HL-LHC & \(\sim 2.3~\mathrm{TeV}\) \\
+\LHCmu{}, \(E_\mu=500~\mathrm{GeV}\) & \(\sim 3.0~\mathrm{TeV}\) \\
+\LHCmu{}, \(E_\mu=1~\mathrm{TeV}\) & \(\sim 4.2~\mathrm{TeV}\)
+\end{tabular}
+}%
+}
+\end{center}
+
+\vspace{0.10em}
+
+%------------------------------------------------
+% Red caution box
+%------------------------------------------------
+\begin{center}
+\setlength{\fboxsep}{4pt}
+\fcolorbox{red!50!black}{red!8}{%
+\parbox{0.90\linewidth}{%
+\justifying\scriptsize
+These are representative benchmark studies. Final reach requires channel-specific selections, detector/MDI modelling, and systematic-uncertainty estimates.
+}%
+}
+\end{center}
+
 \end{column}
-%\begin{column}{0.40\textwidth}
-%\placeholdergraphic{Suggested screenshot source:\\
-%RPV: \texttt{Physics potential of a muon-proton collider.pdf}, Fig.~2 / page 4 \\
-%OR \texttt{HELP4CERN.pdf}, Fig.~2 / pages 13--15.\\[0.8ex]
-%Color-octet muon: \texttt{HELP4CERN.pdf}, Fig.~4 / pages 15--17.}{0.60\textheight}
-%\end{column}
+
+
+
+%================================================
+% Right column: figures
+%================================================
+\begin{column}{0.50\textwidth}
+
+\vspace{-0.5em}
+\centering
+
+%-----------------------------
+% RPV figure
+%-----------------------------
+\begin{center}
+\setlength{\fboxsep}{3pt}
+\fcolorbox{black!40}{yellow!20}{%
+\parbox{0.60\linewidth}{\centering\scriptsize\textbf{RPV squark coupling reach}}%
+}
+\end{center}
+\vspace{-0.35em}
+
+
+\includegraphics[
+width=0.99\linewidth,
+height=0.26\textheight,
+keepaspectratio
+]{exclusion_limits.jpg}
+
+
+
+\vspace{0.18em}
+
+%-----------------------------
+% mu8 figure
+%-----------------------------
+\begin{center}
+\setlength{\fboxsep}{3pt}
+\fcolorbox{black!40}{yellow!20}{%
+\parbox{0.60\linewidth}{\centering\scriptsize\textbf{Color-octet muon \(\mu_8\) reach}}%
+}
+\end{center}
+
+\vspace{-0.35em}
+
+\includegraphics[
+width=0.99\linewidth,
+height=0.26\textheight,
+keepaspectratio
+]{mu8.jpg}
+
+\vspace{0.05em}
+
+\justifying\scriptsize
+The key advantage is the resonant \(\mu g\) channel, which is absent in \(pp\) pair-production searches.
+
+\end{column}
+
 \end{columns}
+
+
+%------------------------------------------------
+% HELP4CERN logo overlay
+%------------------------------------------------
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
-{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
-\vspace{0.3em}
-{\justifying \scriptsize
-\setlength{\fboxsep}{4pt}%
-\colorbox{green!15}{%
-\parbox{0.92\linewidth}{%
-Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton collider}, Phys.\ Rev.\ D~103 (2021) 116009.%
-}%
-}%
-}
+
+\vspace{0.15em}
+	
+%------------------------------------------------
+% Reference box
+%------------------------------------------------
+%\begin{center}
+%\setlength{\fboxsep}{4pt}
+%\colorbox{green!15}{%
+%\parbox{0.90\linewidth}{%
+%\scriptsize
+%K. Cheung and Z. S. Wang, \textit{Physics potential of a muon-proton collider},
+%Phys.\ Rev.\ D~103 (2021) 116009; HELP4CERN white-paper draft benchmark studies.
+%}%
+%}
+%\end{center}
+	
 \end{frame}
-
-
+% --------------------------------------------------------------------------
 
 
 
@@ -1409,7 +1517,7 @@ Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton 
 % --------------------------------------------------------------------------
 % Slide 18
 % --------------------------------------------------------------------------
-\begin{frame}{FCC-hh era outlook and final take-home points}
+\begin{frame}{Toward FCC-\(\mu h\): final outlook and take-home points}
 \begin{columns}[T]
 \begin{column}{0.99\textwidth}
 \begin{itemize}
@@ -1429,23 +1537,136 @@ Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton 
 \begin{block}{HET@\LHCmu{}}
 \small
 \justifying
-(1) \LHCmu{} is a serious HET factory;\\
-(2) the \textbf{top sector} is one of its clearest near-term strengths;\\
-(3) Higgs, EW, EFT, and $\gamma\gamma$ studies are all strongly motivated;\\
+(1) \LHCmu{} is a serious HET factory; \\
+(2) the top sector is one of its clearest near-term strengths; \\
+(3) Higgs, EW, EFT, and $\gamma\gamma$ studies are all strongly motivated; \\
 (4) the concept also provides a natural bridge toward FCC-era $\mu p$ physics.
 \end{block}
 
 \end{column}
-%\begin{column}{0.39\textwidth}
-%\placeholdergraphic{Suggested figure source: \texttt{Hamzeh\_Khanpour\_CERN\_9Dec.pdf}, title/overview slides for LH$\mu$C@3.7 TeV \& FCC-$\mu h$@10 TeV, or \texttt{HELP4CERN.pdf} section 3.2.9 on page 30.}{0.58\textheight}
-%\end{column}
 \end{columns}
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
 at (current page.north east)
-{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
 \end{frame}
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Summary and conclusions
+% --------------------------------------------------------------------------
+\begin{frame}{Summary and conclusions}
+
+\vspace{0.35em}
+
+%------------------------------------------------
+% Four-pillar physics summary
+%------------------------------------------------
+\begin{columns}[T,onlytextwidth]
+
+%================================================
+% Left pair
+%================================================
+\begin{column}{0.49\textwidth}
+
+% QCD / DIS box
+\setlength{\fboxsep}{5pt}
+\fcolorbox{green!50!black}{green!8}{%
+\parbox{0.96\linewidth}{%
+\scriptsize
+\textbf{\textcolor{green!45!black}{QCD \& DIS frontier}}\\[0.4ex]
+\justifying
+Multi-TeV \(\mu p\) scattering extends the accessible \((x,Q^2)\) plane well beyond HERA and the EIC/LHeC, strengthening the PDF, small-\(x\), and \(\alpha_s\) programme.
+}%
+}
+
+\vspace{0.55em}
+
+% Higgs / EW box
+\fcolorbox{blue!55!black}{blue!5}{%
+\parbox{0.96\linewidth}{%
+\scriptsize
+\textbf{\textcolor{blue!70!black}{Higgs--EW precision}}\\[0.4ex]
+\justifying
+Large CC/NC Higgs samples enable concrete coupling studies; the \(h\to b\bar b\) benchmark reaches sub-percent sensitivity to \(g_{hbb}\), while EW/SMEFT observables gain a larger high-\(Q^2\) lever arm.
+}%
+}
+
+\end{column}
+
+%================================================
+% Right pair
+%================================================
+\begin{column}{0.49\textwidth}
+
+% Top box
+\setlength{\fboxsep}{5pt}
+\fcolorbox{red!55!black}{red!6}{%
+\parbox{0.96\linewidth}{%
+\scriptsize
+\textbf{\textcolor{red!70!black}{Top and rare-top physics}}\\[0.4ex]
+\justifying
+The top sector gives the clearest rate gain: already the 500~GeV \LHCmu{} benchmark enhances \(t\bar t\) production by \(\sim32\) relative to the 50~GeV LHeC case, motivating precision top and FCNC studies.
+}%
+}
+
+\vspace{0.55em}
+
+% gamma gamma / BSM box
+\fcolorbox{orange!70!black}{orange!8}{%
+\parbox{0.96\linewidth}{%
+\scriptsize
+\textbf{\textcolor{orange!80!black}{\(\gamma\gamma\) and BSM portals}}\\[0.4ex]
+\justifying
+Photon-induced channels provide high-statistics \(\tau^+\tau^-\) samples and high-mass \(WW,ZZ,t\bar t\) probes, while direct \(\mu q\) and \(\mu g\) portals target RPV squarks, color-octet muons, and other muon-coupled BSM states.
+}%
+}
+
+\end{column}
+
+\end{columns}
+
+\vspace{0.55em}
+
+%------------------------------------------------
+% Final take-home message
+%------------------------------------------------
+\begin{center}
+\setlength{\fboxsep}{6pt}
+\fcolorbox{black!45}{yellow!25}{%
+\parbox{0.92\linewidth}{%
+\justifying \small
+Looking ahead:  
+\LHCmu{} is not simply an energy upgrade of the LHeC; it opens a 
+multi-TeV lepton-hadron regime where QCD, Higgs, electroweak, top, photon-induced, and several BSM studies become quantitatively competitive.
+}%
+}
+\end{center}
+	
+%\vspace{0.15em}
+	
+%\begin{center}
+%\scriptsize
+%\textcolor{black!65}{Results shown here are benchmark physics projections; detector, MDI, and systematic studies remain essential for final sensitivity estimates.}
+%\end{center}
+
+
+%------------------------------------------------
+% HELP4CERN logo overlay
+%------------------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+	
+\end{frame}
+% --------------------------------------------------------------------------
+
 
 
 
@@ -1462,6 +1683,10 @@ at (current page.north east)
 \includegraphics[width=0.85\paperwidth,height=0.85\paperheight,keepaspectratio]{Thank_You_2.jpg}
 \end{center}
 \end{frame}
+
+
+
+
 
 
 
@@ -1519,6 +1744,38 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1933,6 +2190,58 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
 	\end{tikzpicture}
 \end{frame}
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 17
+% --------------------------------------------------------------------------
+\begin{frame}{Representative BSM benchmarks: RPV SUSY and color-octet muons}
+	\begin{columns}[T]
+		\begin{column}{0.99\textwidth}
+			\begin{itemize}
+				\justifying
+				\item \textbf{RPV SUSY:} The $\mu p$ collisions can probe resonantly produced squarks with coupling reaches stronger than HL-LHC bounds in the on-shell regime.
+				\item \textbf{Color-octet muons:} A 5$\sigma$ discovery reach of about:
+				\begin{itemize}
+					\justifying
+					\item $\sim 2.3$ TeV at the HL-LHC,
+					\item $\sim 3.0$ TeV for the 500 GeV \LHCmu{} option,
+					\item $\sim 4.2$ TeV for the 1 TeV \LHCmu{} option.
+				\end{itemize}
+				\justifying
+				\item These examples are sufficient to demonstrate that the BSM case is not generic hype: it is tied to concrete channels where the $\mu p$ initial state is a genuine advantage.
+			\end{itemize}
+		\end{column}
+		%\begin{column}{0.40\textwidth}
+		%\placeholdergraphic{Suggested screenshot source:\\
+			%RPV: \texttt{Physics potential of a muon-proton collider.pdf}, Fig.~2 / page 4 \\
+			%OR \texttt{HELP4CERN.pdf}, Fig.~2 / pages 13--15.\\[0.8ex]
+			%Color-octet muon: \texttt{HELP4CERN.pdf}, Fig.~4 / pages 15--17.}{0.60\textheight}
+		%\end{column}
+	\end{columns}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-1.25cm]
+		at (current page.north east)
+		{\includegraphics[width=1.8cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+	\vspace{0.3em}
+	{\justifying \scriptsize
+		\setlength{\fboxsep}{4pt}%
+		\colorbox{green!15}{%
+			\parbox{0.92\linewidth}{%
+				Kingman Cheung and Zeren Simon Wang, \textit{Physics potential of a muon-proton collider}, Phys.\ Rev.\ D~103 (2021) 116009.%
+			}%
+		}%
+	}
+\end{frame}
+
+
+
 
 
 

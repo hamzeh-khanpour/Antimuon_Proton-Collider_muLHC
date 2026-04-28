@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  28 APR 2026 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  28 APR 2026 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1326,16 +1326,11 @@ File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
 Package pdftex.def Info: HELP4CERN.jpg  used on input line 97.
 (pdftex.def)             Requested size: 71.13188pt x 38.79985pt.
-
-Overfull \vbox (11.95255pt too high) detected at line 97
- []
-
-[1{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/202
-6/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
+ [1{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/20
+26/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
 
 {c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./HELP4CERN.jpg>
-]
-(./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.toc
+] (./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2086,7 +2081,7 @@ s not changed.
  ) 
 Here is how much of TeX's memory you used:
  31468 strings out of 467525
- 649372 string characters out of 5423209
+ 649366 string characters out of 5423209
  1433504 words of memory out of 5000000
  59651 multiletter control sequences out of 15000+600000
  949747 words of font info for 244 fonts, out of 8000000 for 9000
@@ -2122,7 +2117,7 @@ msy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texliv
 e/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2026/texmf-dist/f
 onts/type1/public/lm/lmsy9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/l
 m/lmtt10.pfb>
-Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (23 pages, 2724663 b
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (23 pages, 2724668 b
 ytes).
 PDF statistics:
  1203 PDF objects out of 1440 (max. 8388607)

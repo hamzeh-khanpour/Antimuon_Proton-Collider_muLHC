@@ -1,0 +1,1046 @@
+
+% !TEX program = pdflatex
+% ============================================================
+% Learning notes on LHmuC Higgs and BSM benchmark slides
+%
+% Compile locally in the folder containing:
+%   LHmuC_vector.pdf
+%   LHmuC_fermion.pdf
+%   LHmuC_loop.pdf
+%   exclusion_limits.jpg
+%   mu8.jpg
+%
+% Suggested:
+%   pdflatex LHmuC_Higgs_BSM_learning_notes.tex
+%   pdflatex LHmuC_Higgs_BSM_learning_notes.tex
+% ============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+% ---------- Commands ----------
+\newcommand{\LHmuC}{LH\ensuremath{\mu}C}
+\newcommand{\muLHC}{\ensuremath{\mu}LHC}
+\newcommand{\LHeC}{LHeC}
+\newcommand{\HL}{HL-LHC}
+\newcommand{\FCCee}{FCC-ee}
+\newcommand{\mup}{\ensuremath{\mu p}}
+\newcommand{\mupplus}{\ensuremath{\mu^+p}}
+\newcommand{\mupminus}{\ensuremath{\mu^-p}}
+\newcommand{\gev}{\ensuremath{~\mathrm{GeV}}}
+\newcommand{\tev}{\ensuremath{~\mathrm{TeV}}}
+\newcommand{\invfb}{\ensuremath{~\mathrm{fb}^{-1}}}
+\newcommand{\invab}{\ensuremath{~\mathrm{ab}^{-1}}}
+\newcommand{\pb}{\ensuremath{~\mathrm{pb}}}
+\newcommand{\fb}{\ensuremath{~\mathrm{fb}}}
+\newcommand{\BR}{\ensuremath{\mathrm{BR}}}
+\newcommand{\ghbb}{\ensuremath{g_{hbb}}}
+\newcommand{\ghWW}{\ensuremath{g_{hWW}}}
+\newcommand{\Gamh}{\ensuremath{\Gamma_h}}
+\newcommand{\kW}{\ensuremath{\kappa_W}}
+\newcommand{\kZ}{\ensuremath{\kappa_Z}}
+\newcommand{\kV}{\ensuremath{\kappa_V}}
+\newcommand{\muoct}{\ensuremath{\mu_8}}
+
+% ---------- Safe figure inclusion ----------
+\newcommand{\includefig}[2][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{%
+  \fbox{\begin{minipage}[c][3.5cm][c]{0.85\linewidth}
+  \centering Missing figure file: \texttt{#2}
+  \end{minipage}}}%
+}
+
+% ---------- Lightweight note boxes ----------
+\definecolor{aghgreen}{RGB}{0,105,65}
+\definecolor{aghred}{RGB}{170,20,50}
+\definecolor{darkblue}{RGB}{30,60,110}
+
+\newenvironment{keypoint}[1]{%
+\par\medskip\noindent{\large\bfseries\color{aghgreen}#1}\par\noindent
+\begin{minipage}{0.97\linewidth}\itshape
+}{\end{minipage}\par\medskip}
+
+\newenvironment{warningnote}[1]{%
+\par\medskip\noindent{\large\bfseries\color{aghred}#1}\par\noindent
+\begin{minipage}{0.97\linewidth}
+}{\end{minipage}\par\medskip}
+
+\newenvironment{learningnote}[1]{%
+\par\medskip\noindent{\large\bfseries\color{darkblue}#1}\par\noindent
+\begin{minipage}{0.97\linewidth}
+}{\end{minipage}\par\medskip}
+
+\title{\vspace{-1.0cm}
+\textbf{Higgs Precision and BSM Benchmarks at \LHmuC}\\[1mm]
+\large Charged-current \(h\to b\bar b\), \(\kappa\)-framework fits, RPV squarks, and color-octet muons}
+
+%\author{Prepared as reading notes for the LH\(\mu\)C / HELP4CERN presentation}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+These notes collect the physics discussion behind four presentation topics:
+(i) the precision Higgs case study \(p\mu^+\to j\bar\nu_\mu h\), \(h\to b\bar b\);
+(ii) the broader Higgs-coupling reach in a \(\kappa\)-framework global-fit picture;
+(iii) why \LHmuC{} is also a distinctive BSM machine; and
+(iv) representative BSM benchmarks, namely R-parity-violating squarks and color-octet muons.
+The emphasis is pedagogical: what the slides are claiming, how the numbers are obtained,
+what the plots mean, and what caveats should be stated during a conference talk.
+\end{abstract}
+
+
+
+\section{Executive summary}
+
+
+
+\begin{keypoint}{The short physics story}
+\vspace{0.25cm}
+\LHmuC{} is not simply an energy upgrade of the LHeC.  It opens a multi-TeV
+lepton--hadron regime where weak-boson-fusion Higgs production, high-\(Q^2\)
+electroweak measurements, photon-induced reactions, top production, and direct
+\(\mu q/\mu g\) BSM resonances become quantitatively competitive.
+\end{keypoint}
+
+
+The four target slides should be understood as one connected narrative:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Concrete Higgs benchmark:} charged-current VBF production,
+  \(p\mu^+\to j\bar\nu_\mu h\), followed by \(h\to b\bar b\), can be translated into
+  a sensitivity on \(\ghbb\).
+  \item \textbf{Global Higgs fit:} beyond a single channel, the strongest visible improvement
+  is in vector modifiers, especially \(\kW\) and \(\kZ\), because Higgs production at
+  \LHmuC{} is dominated by weak-boson fusion.
+  \item \textbf{BSM logic:} \LHmuC{} is special because it directly probes \(\mu q\) and
+  \(\mu g\) initial states at multi-TeV energy.
+  \item \textbf{BSM benchmarks:} RPV squarks test the \(\mu q\) portal, while color-octet
+  muons test the \(\mu g\) portal.
+\end{enumerate}
+
+\section{Benchmark setup and notation}
+
+The current presentation uses the following working points:
+\begin{table}[H]
+\centering
+\caption{Nominal \LHmuC{} benchmark points used in the slides.}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Scenario & \(E_\mu\) & \(E_p\) & \(\sqrt{s_{\mu p}}\) and luminosity \\
+\midrule
+\LHmuC{} baseline & \(500\gev\) & \(7\tev\) &
+\(\sqrt{s}\simeq3.7\tev,\quad L_{\rm int}=250\invfb\)\\
+\LHmuC{} upgrade & \(1\tev\) & \(7\tev\) &
+\(\sqrt{s}\simeq5.3\tev,\quad L_{\rm int}=1000\invfb\)\\
+Possible higher stage & \(2\tev\) & \(7\tev\) &
+\(\sqrt{s}\simeq7.5\tev,\quad L_{\rm int}=1000\invfb\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{warningnote}{Important consistency issue}
+The \(h\to b\bar b\) table in the slide gives
+\(\Delta\sigma/\sigma=0.69\%\) for the \(1\tev\) \LHmuC{} benchmark.
+Using the table cross sections and efficiencies, this value corresponds more closely to
+\(L_{\rm int}=500\invfb\), not \(1000\invfb\).  If the slide keeps the global benchmark
+\(L_{\rm int}=1000\invfb\), the rate uncertainty should be closer to \(0.49\%\), under
+the same assumptions.  This point should be fixed before the talk.
+\end{warningnote}
+
+
+
+\section{Precision Higgs case study: \(h\to b\bar b\)}
+
+\subsection{Why charged-current VBF dominates}
+
+
+At a lepton--hadron collider, Higgs production is mainly electroweak vector-boson fusion:
+\begin{align}
+  \text{CC VBF:}\quad & p\mu^+\to j\,\bar\nu_\mu\,h,\\
+  \text{NC VBF:}\quad & p\mu^+\to j\,\mu^+\,h.
+\end{align}
+The charged-current process is larger because it is driven by \(W\)-exchange.  In the current
+benchmarks, the slides quote approximately
+\begin{align}
+  \sigma_{\rm CC}(500\gev)&\simeq438\fb, &
+  \sigma_{\rm NC}(500\gev)&\simeq135\fb,\\
+  \sigma_{\rm CC}(1\tev)&\simeq731\fb, &
+  \sigma_{\rm NC}(1\tev)&\simeq221\fb.
+\end{align}
+This already gives large Higgs statistics:
+\begin{align}
+  N_{\rm CC}(500\gev)&\simeq 438\fb\times250\invfb \simeq1.10\times10^5,\\
+  N_{\rm CC}(1\tev)&\simeq 731\fb\times1000\invfb \simeq7.31\times10^5.
+\end{align}
+
+\begin{learningnote}{Why the muon beam matters}
+\vspace{0.25cm}
+The physics is analogous to the LHeC, but a muon beam allows much higher lepton energy
+because synchrotron radiation is much weaker for muons than electrons.  This raises
+\(\sqrt{s_{\mu p}}\), increases the hard-scattering phase space, and enhances Higgs, top,
+electroweak, and BSM rates.
+\end{learningnote}
+
+\subsection{Why \(h\to b\bar b\) is the natural benchmark}
+
+The decay \(h\to b\bar b\) is the largest Standard Model Higgs decay mode and directly
+probes the bottom Yukawa coupling.  It is experimentally nontrivial because the final state
+contains hadronic jets and backgrounds from \(Z\to b\bar b\) and multijet production.
+However, the lepton--hadron environment is cleaner than \(pp\) collisions and the topology
+is more constrained.
+
+The benchmark signal is
+\begin{equation}
+  p\mu^+\to j\,\bar\nu_\mu\,h,\qquad h\to b\bar b .
+\end{equation}
+The dominant backgrounds are
+\begin{align}
+  p\mu^+&\to j\,\bar\nu_\mu\,Z,\qquad Z\to b\bar b,\\
+  p\mu^+&\to \bar\nu_\mu\,j\,j\,j .
+\end{align}
+
+
+
+\subsection{Analysis chain}
+
+The benchmark analysis uses
+\begin{itemize}[leftmargin=*]
+  \item MG5\_aMC@NLO for event generation;
+  \item Pythia6 for showering and hadronization;
+  \item FastJet for jet clustering;
+  \item Delphes with an LHeC-like asymmetric detector card;
+  \item \(75\%\) \(b\)-tagging efficiency;
+  \item exactly two reconstructed \(b\)-jets;
+  \item the Higgs mass-window cut
+  \begin{equation}
+    |m_{bb}-m_h|<25\gev.
+  \end{equation}
+\end{itemize}
+
+
+
+\subsection{Rate and coupling interpretation}
+
+The measured final-state rate is
+\begin{equation}
+  \sigma(p\mu^+\to j\bar\nu_\mu b\bar b)
+  =
+  \sigma(p\mu^+\to j\bar\nu_\mu h)\,
+  {\rm BR}(h\to b\bar b).
+\end{equation}
+Since charged-current VBF scales as \(g_{hWW}^2\), while
+\[
+  {\rm BR}(h\to b\bar b)\propto \frac{g_{hbb}^2}{\Gamma_h},
+\]
+the final-state rate scales as
+\begin{equation}
+  \sigma(p\mu^+\to j\bar\nu_\mu b\bar b)
+  \propto
+  \frac{g_{hWW}^2\,g_{hbb}^2}{\Gamma_h}.
+  \label{eq:hbb_rate}
+\end{equation}
+Thus the \(hbb\) channel does not measure \(g_{hbb}\) alone.  It measures a product involving
+the production coupling, the decay coupling, and the total Higgs width.
+
+The event yields are
+\begin{align}
+  N_s &= L_{\rm int}\,\sigma_{\rm sig}\,\epsilon_{\rm sig},\\
+  N_b &= L_{\rm int}\left[
+    \sigma_{\rm bgd-Z}\epsilon_{\rm bgd-Z}
+    +
+    \sigma_{\rm bgd-mj}\epsilon_{\rm bgd-mj}
+  \right].
+\end{align}
+The statistical rate uncertainty is
+\begin{equation}
+  \frac{\Delta\sigma}{\sigma}
+  =
+  \frac{\sqrt{N_s+N_b}}{N_s}.
+  \label{eq:rate_unc}
+\end{equation}
+
+To extract \(\ghbb\), external information on \(g_{hWW}^2/\Gamma_h\) is used:
+\begin{equation}
+  \frac{\Delta g_{hbb}}{g_{hbb}}
+  =
+  \frac{1}{2}
+  \sqrt{
+  \left(\frac{\Delta\sigma}{\sigma}\right)^2+
+  \left[
+  \frac{
+  \Delta(g_{hWW}^2/\Gamma_h)
+  }{
+  g_{hWW}^2/\Gamma_h
+  }
+  \right]^2
+  }.
+  \label{eq:ghbb_precision}
+\end{equation}
+The factor \(1/2\) appears because the rate depends on \(g_{hbb}^2\), not linearly on
+\(g_{hbb}\).
+
+
+
+
+
+\subsection{Numerical check}
+
+
+For the \(500\gev\) benchmark, using
+\[
+  L_{\rm int}=250\invfb=250000\pb^{-1},
+\]
+\[
+  \sigma_{\rm sig}=0.24\pb,\quad \epsilon_{\rm sig}=0.22,
+\]
+\[
+  \sigma_{\rm bgd-Z}=0.30\pb,\quad \epsilon_{\rm bgd-Z}=0.025,
+\]
+\[
+  \sigma_{\rm bgd-mj}=357.9\pb,\quad \epsilon_{\rm bgd-mj}=9.7\times10^{-5},
+\]
+one obtains
+\begin{align}
+  N_s &\simeq 250000\times0.24\times0.22\simeq13200,\\
+  N_{b,Z} &\simeq 250000\times0.30\times0.025\simeq1875,\\
+  N_{b,{\rm mj}} &\simeq 250000\times357.9\times9.7\times10^{-5}\simeq8680.
+\end{align}
+Then
+\begin{equation}
+  \frac{\Delta\sigma}{\sigma}
+  \simeq
+  \frac{\sqrt{13200+1875+8680}}{13200}
+  \simeq1.17\%,
+\end{equation}
+consistent with the quoted \(1.19\%\).
+
+For the \(1\tev\) benchmark, using
+\[
+  \sigma_{\rm sig}=0.39\pb,\quad \epsilon_{\rm sig}=0.21,\quad
+  \sigma_{\rm bgd-Z}=0.50\pb,\quad \epsilon_{\rm bgd-Z}=0.025,
+\]
+\[
+  \sigma_{\rm bgd-mj}=563.8\pb,\quad \epsilon_{\rm bgd-mj}=1.23\times10^{-4},
+\]
+one obtains
+\[
+  \Delta\sigma/\sigma\simeq0.49\%
+\]
+if \(L_{\rm int}=1000\invfb\), but
+\[
+  \Delta\sigma/\sigma\simeq0.69\%
+\]
+if \(L_{\rm int}=500\invfb\).  This is the origin of the consistency warning above.
+
+Using the external uncertainty
+\[
+  \frac{\Delta(g_{hWW}^2/\Gamma_h)}{g_{hWW}^2/\Gamma_h}=0.985\%,
+\]
+the quoted coupling precisions are reproduced:
+\begin{align}
+  \frac{\Delta g_{hbb}}{g_{hbb}}
+  &=
+  \frac12\sqrt{(1.19\%)^2+(0.985\%)^2}
+  \simeq0.77\%,\\
+  \frac{\Delta g_{hbb}}{g_{hbb}}
+  &=
+  \frac12\sqrt{(0.69\%)^2+(0.985\%)^2}
+  \simeq0.60\%.
+\end{align}
+
+
+
+\section{Broader Higgs-coupling reach: global-fit picture}
+
+\subsection{The \(\kappa\)-framework}
+
+
+In the \(\kappa\)-framework, Higgs couplings are rescaled relative to the SM:
+\begin{equation}
+  g_{hXX}=\kappa_X\,g_{hXX}^{\rm SM}.
+\end{equation}
+The relevant modifiers include:
+\begin{align}
+  \kappa_W,\ \kappa_Z &: \text{couplings to weak vector bosons},\\
+  \kappa_b,\ \kappa_c,\ \kappa_t,\ \kappa_\tau,\ \kappa_\mu &: \text{fermion Yukawa modifiers},\\
+  \kappa_g,\ \kappa_\gamma,\ \kappa_{Z\gamma} &: \text{effective loop-induced modifiers}.
+\end{align}
+Additional BSM branching fractions can be included:
+\[
+  {\rm Br}_{\rm inv},\qquad {\rm Br}_{\rm und}.
+\]
+
+A measured signal strength behaves schematically as
+\begin{equation}
+  \mu(i\to h\to f)
+  \sim
+  \frac{\kappa_i^2\kappa_f^2}{\kappa_h^2},
+\end{equation}
+where \(\kappa_h^2\) encodes the total-width rescaling.  This is why a global fit is needed:
+individual channels measure products of production and decay couplings divided by the total width.
+
+
+
+\subsection{The \(\kappa_V\le1\) condition}
+
+The condition
+
+\begin{equation}
+  \kappa_V\le1,\qquad V=W,Z,
+\end{equation}
+is often imposed in future-collider Higgs fits when the total Higgs width is not directly and
+model-independently measured.  It helps break a flat direction between the total width and
+the couplings.  This is a useful benchmark assumption, but it is not fully model independent;
+some BSM scenarios can violate it.
+
+
+
+\begin{warningnote}{How to phrase this in a talk}
+\vspace{0.25cm}
+Say: ``The fit uses the standard \(\kappa_V\le1\) benchmark assumption to control the
+Higgs-width flat direction.  This is useful for comparisons, but it is not a fully
+model-independent statement.''
+\end{warningnote}
+
+\subsection{How the \LHmuC{} projection is obtained}
+
+The global-fit result in the slide should be described as an \textbf{exploratory projection}.
+The idea is:
+\begin{enumerate}[leftmargin=*]
+  \item start from LHeC Higgs signal-strength projections;
+  \item keep the LHeC systematic scale factors fixed;
+  \item rescale statistical uncertainties using \LHmuC{} benchmark cross sections and luminosities;
+  \item perform the \(\kappa\)-framework fit using SMEFiT.
+\end{enumerate}
+This is not yet a full detector-level \LHmuC{} Higgs global fit.
+
+\subsection{Vector, fermion, and loop modifier plots}
+
+\begin{figure}[H]
+\centering
+\includefig[width=0.72\linewidth]{LHmuC_vector.pdf}
+\caption{Vector-modifier uncertainties in the \(\kappa\)-3 framework.  The clearest
+improvements appear in \(\kappa_W\) and \(\kappa_Z\), especially for higher-energy
+\LHmuC{} stages.}
+\label{fig:kappa_vector}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{0.48\linewidth}
+\centering
+\includefig[width=\linewidth]{LHmuC_fermion.pdf}
+\caption{Fermion modifiers.}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\linewidth}
+\centering
+\includefig[width=\linewidth]{LHmuC_loop.pdf}
+\caption{Loop-induced modifiers.}
+\end{subfigure}
+\caption{Fermion and loop-induced modifier projections.  In the displayed setup, the most
+visible \LHmuC{} improvement is in the vector sector.}
+\label{fig:kappa_fermion_loop}
+\end{figure}
+
+The vector panel shows that \(\kappa_W\) improves from about \(0.33\%\) for the LHeC-only
+case to about \(0.29\%\), \(0.19\%\), and \(0.16\%\) for LHeC+\LHmuC{}-500,
+LHeC+\LHmuC{}-1000, and LHeC+\LHmuC{}-2000 respectively.  The \(\kappa_Z\) uncertainty
+also improves.  The physics reason is simple: \LHmuC{} Higgs production is mostly
+weak-boson fusion.
+
+\begin{keypoint}{Main message of the global-fit slide}
+\vspace{0.25cm}
+Because Higgs production at a lepton--hadron collider is driven by weak-boson fusion,
+\LHmuC{} most directly improves the vector Higgs couplings, especially \(\kappa_W\) and
+\(\kappa_Z\).  The result is promising, but should be called an exploratory projection.
+\end{keypoint}
+
+
+
+\section{Why \LHmuC{} is a distinctive BSM machine}
+
+\subsection{The basic mechanism}
+
+The defining BSM advantage of \LHmuC{} is access to direct partonic initial states
+\begin{equation}
+  \mu q,\qquad \mu g,\qquad \gamma\gamma,\qquad \gamma q,
+\end{equation}
+at multi-TeV energy.  The most important resonant channels are
+\begin{equation}
+  \mu q\to X,\qquad \mu g\to X.
+\end{equation}
+
+At a \(pp\) collider, many new colored particles are searched for through pair production,
+\[
+  pp\to X\bar X,
+\]
+or through deviations in high-mass tails.  At \LHmuC{}, if a new particle couples directly
+to a muon and a quark or gluon, it can be produced singly.  This can be a major advantage
+because single production has a lower threshold than pair production.
+
+\subsection{Natural BSM examples}
+
+\begin{itemize}[leftmargin=*]
+  \item RPV squarks: \(\mu q\to\tilde q\);
+  \item leptoquarks: \(\mu q\to{\rm LQ}\);
+  \item color-octet muons / leptogluons: \(\mu g\to\mu_8\);
+  \item excited muons;
+  \item contact interactions;
+  \item photon-induced anomalous dipole and quartic-gauge-coupling probes.
+\end{itemize}
+
+\begin{keypoint}{Best sentence for the BSM motivation slide}
+\vspace{0.25cm}
+\LHmuC{} is not just a higher-energy DIS machine; it is a direct \(\mu q/\mu g\)
+resonance machine for new physics coupled to second-generation leptons.
+\end{keypoint}
+
+\section{RPV squarks}
+
+\subsection{R-parity violation}
+
+If R-parity is violated, the MSSM superpotential may contain
+\begin{equation}
+  W_{\rm RPV}
+  =
+  \epsilon_iL_i\cdot H_u
+  +
+  \frac12\lambda_{ijk}L_i\cdot L_j\bar E_k
+  +
+  \lambda'_{ijk}L_i\cdot Q_j\bar D_k
+  +
+  \frac12\lambda''_{ijk}\bar U_i\bar D_j\bar D_k.
+  \label{eq:wrpv}
+\end{equation}
+The \(LQD\)-type term,
+\[
+  \lambda'_{ijk}L_iQ_j\bar D_k,
+\]
+is directly relevant for lepton--hadron colliders because it couples a lepton, a quark,
+and a squark.  For \(i=2\), the lepton is a muon-type lepton.
+
+\subsection{Benchmark channels}
+
+The benchmark processes can be written schematically as
+\begin{align}
+  p\mu^+ &\to d\,\mu^+ && \text{neutral-current-like channel},\\
+  p\mu^+ &\to \bar d\,\bar\nu_\mu && \text{charged-current-like channel}.
+\end{align}
+The neutral-current channel can be stronger because it can involve valence-quark PDFs and
+contains a high-\(p_T\) muon in the final state.
+
+\subsection{How the exclusion curves are obtained}
+
+The workflow is:
+\begin{enumerate}[leftmargin=*]
+  \item turn on one RPV coupling at a time;
+  \item scan the squark mass and the coupling;
+  \item generate signal and background with MG5\_aMC@NLO using an RPV-MSSM UFO model;
+  \item shower/hadronize with Pythia6;
+  \item cluster jets with FastJet;
+  \item simulate detector effects with Delphes;
+  \item apply event selection, including at least one jet and exactly one muon in the NC case;
+  \item apply a hard \(p_T\)-sum threshold,
+  \[
+    p_T^{j_1}+p_T^{j_2}>p_T^{\rm cut};
+  \]
+  \item compute
+  \[
+    S_{\rm stat}=\frac{N_s}{\sqrt{N_b}};
+  \]
+  \item define the \(95\%\) CL exclusion by \(S_{\rm stat}=2\).
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includefig[width=0.80\linewidth]{exclusion_limits.jpg}
+\caption{Representative \(95\%\) CL exclusion limits for an RPV neutral-current benchmark.
+The horizontal axis is the squark mass, while the vertical axis is the RPV coupling.
+Lower curves mean stronger sensitivity.  Different colored curves correspond to different
+jet-\(p_T\)-sum thresholds.  The red curves show LHC and HL-LHC bounds.}
+\label{fig:rpv_exclusion}
+\end{figure}
+
+The green curve uses no hard \(p_T\)-sum threshold.  It is strongest at low mass but weakens
+at high mass.  The blue and purple curves impose harder cuts.  They are weaker at low mass
+but better for heavier squarks, whose decay products are naturally harder.
+
+\begin{keypoint}{RPV takeaway}
+\vspace{0.25cm}
+In favorable neutral-current benchmark channels, \LHmuC{} can probe
+\[
+  \lambda'_{2j1}\sim0.01{-}0.02
+\]
+for squark masses around \(1{-}3\tev\).  This can approach an order-of-magnitude improvement
+over LHC bounds in the on-shell region, but it is a benchmark-specific statement.
+\end{keypoint}
+
+\section{Color-octet muons / leptogluons}
+
+\subsection{What is \(\mu_8\)?}
+
+A color-octet muon, denoted \(\mu_8\), is a hypothetical strongly interacting partner of
+the muon.  It appears in composite-lepton scenarios, where Standard Model leptons may
+have more fundamental constituents.  The SM muon is a color singlet, while \(\mu_8\)
+transforms as an octet under \(SU(3)_c\).
+
+\subsection{Effective interaction}
+
+A common effective interaction is
+\begin{equation}
+  \mathcal{L}
+  =
+  \frac{1}{2\Lambda}
+  \left\{
+  \bar l_8^\alpha
+  g_sG_{\mu\nu}^\alpha
+  \sigma^{\mu\nu}
+  \left(\eta_Ll_L+\eta_Rl_R\right)
+  +{\rm h.c.}
+  \right\}.
+  \label{eq:leptogluon}
+\end{equation}
+Here \(\Lambda\) is the compositeness scale, \(g_s\) is the strong coupling,
+\(G_{\mu\nu}^\alpha\) is the gluon field strength, \(l_8^\alpha\) is the color-octet lepton,
+and \(\eta_L,\eta_R\) are chirality coefficients.  The benchmark usually assumes
+\[
+  \Lambda=m_{\mu_8}.
+\]
+
+\subsection{Why \(\mu p\) is special}
+
+At \(pp\) colliders, \(\mu_8\) searches mainly rely on pair production:
+\[
+  pp\to\mu_8\bar\mu_8.
+\]
+At a \(\mu p\) collider, the incoming muon can scatter directly on a gluon:
+\[
+  \mu g\to\mu_8\to\mu g.
+\]
+This single-resonance channel benefits from the gluon PDF, has a lower mass threshold than
+pair production, and gives a clean \(\mu+j\) final state.
+
+\subsection{Analysis strategy}
+
+The benchmark analysis uses:
+\begin{itemize}[leftmargin=*]
+  \item signal: \(\mu p\to\mu_8\to\mu j\);
+  \item background: SM \(\mu p\to\mu j\);
+  \item exactly one muon and one jet;
+  \item \(p_T^\mu>400\gev\), \(p_T^j>400\gev\);
+  \item \(|\eta_j|<3.5\), \(|\eta_\mu|<3\);
+  \item extraction of signal and background from the \(m_{\mu j}\) spectrum;
+  \item significance
+  \[
+    Z=\frac{S}{\sqrt{B}}.
+  \]
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includefig[width=0.82\linewidth]{mu8.jpg}
+\caption{Representative statistical significance for color-octet muon searches.
+The horizontal axis is \(m_{\mu_8}\); the vertical axis is \(S/\sqrt{B}\).
+The horizontal lines mark \(2\sigma\), \(3\sigma\), and \(5\sigma\).  The \LHmuC{}
+curves extend to higher mass than the HL-LHC benchmark because \(\mu g\to\mu_8\)
+is a direct single-resonance channel.}
+\label{fig:mu8_significance}
+\end{figure}
+
+The representative \(5\sigma\) reaches are approximately
+\[
+  m_{\mu_8}^{5\sigma}\sim
+  2.3\tev\quad(\HL),
+  \qquad
+  3.0\tev\quad(\LHmuC\text{-}500),
+  \qquad
+  4.2\tev\quad(\LHmuC\text{-}1000).
+\]
+
+\begin{keypoint}{Best slide sentence}
+\vspace{0.25cm}
+The key advantage is the resonant \(\mu g\) channel,
+\[
+  \mu g\to\mu_8\to\mu g,
+\]
+which is absent in \(pp\) pair-production searches.
+\end{keypoint}
+
+\section{How to explain each plot}
+
+\subsection{\(h\to b\bar b\) table}
+
+The table summarizes signal and background cross sections and the final projected rate and
+coupling sensitivities.  The key point is not only that the signal rate is large, but that the
+backgrounds can be suppressed enough by the two-\(b\)-jet requirement and the Higgs mass
+window to make a percent-level rate measurement plausible.
+
+Suggested caption:
+\begin{quote}
+Cut-based charged-current \(h\to b\bar b\) benchmark.  The quoted \(g_{hbb}\) reach follows
+from the measured \(j\bar\nu_\mu b\bar b\) rate after propagating external information on
+\(g_{hWW}^2/\Gamma_h\).
+\end{quote}
+
+\subsection{Vector \(\kappa\)-modifier plot}
+
+The vector plot shows projected uncertainties on \(\kappa_W\), \(\kappa_Z\), \({\rm Br}_{\rm inv}\),
+and \({\rm Br}_{\rm und}\).  The strongest trend is the improvement in \(\kappa_W\) and
+\(\kappa_Z\).  The reason is that \LHmuC{} Higgs production is dominated by weak-boson fusion.
+
+Suggested caption:
+\begin{quote}
+Exploratory \(\kappa\)-framework projection using SMEFiT.  \LHmuC{} improves the vector
+modifiers most strongly, under LHeC-like systematic assumptions and \(\kappa_V\le1\).
+\end{quote}
+
+\subsection{RPV plot}
+
+The RPV plot shows \(95\%\) CL exclusion curves in the plane of squark mass and RPV coupling.
+Lower curves are better.  Harder \(p_T\)-sum cuts are useful at high mass because heavy
+resonances produce harder jets.
+
+Suggested caption:
+\begin{quote}
+RPV squark coupling reach from \(\mu q\)-initiated resonance production.  Different curves
+show different jet-\(p_T\)-sum thresholds; lower curves correspond to stronger coupling reach.
+\end{quote}
+
+\subsection{\(\mu_8\) plot}
+
+The \(\mu_8\) plot shows \(S/\sqrt{B}\) as a function of \(m_{\mu_8}\).  The \LHmuC{} curves
+remain above the \(5\sigma\) line to larger masses than the HL-LHC benchmark.  This is the
+visual demonstration of the single-resonance \(\mu g\) advantage.
+
+Suggested caption:
+\begin{quote}
+Leptogluon reach from resonant \(\mu g\to\mu_8\to\mu g\).  The \LHmuC{} curves extend to
+higher masses than the HL-LHC pair-production benchmark.
+\end{quote}
+
+\section{Improved slide text}
+
+\subsection{Slide: concrete Higgs benchmark}
+
+\textbf{Improved title:} Concrete Higgs benchmark: \(h\to b\bar b\) in charged-current VBF
+
+\textbf{Improved bullets:}
+\begin{itemize}[leftmargin=*]
+  \item Benchmark channel:
+  \[
+    p\mu^+\to j\bar\nu_\mu h,\qquad h\to b\bar b.
+  \]
+  \item Simulation chain: MG5\_aMC@NLO + Pythia6 + FastJet + Delphes.
+  \item LHeC-like asymmetric detector setup with \(75\%\) \(b\)-tagging.
+  \item Selection: exactly two \(b\)-jets and \(|m_{bb}-m_h|<25\gev\).
+  \item Rate interpretation:
+  \[
+    \sigma(j\bar\nu_\mu b\bar b)\propto
+    \frac{g_{hWW}^2g_{hbb}^2}{\Gamma_h}.
+  \]
+\end{itemize}
+
+\textbf{Key finding:}
+Already with LHeC-like detector assumptions, \LHmuC{} reaches a sub-percent \(g_{hbb}\)
+benchmark sensitivity.  Final robustness requires validated luminosity, detector/MDI
+background, and systematic assumptions.
+
+\subsection{Slide: global Higgs fit}
+
+\textbf{Improved title:} Exploratory global Higgs fit: vector modifiers benefit most
+
+\textbf{Improved bullets:}
+\begin{itemize}[leftmargin=*]
+  \item Beyond the dedicated \(h\to b\bar b\) benchmark, we perform an exploratory
+        \(\kappa\)-framework fit.
+  \item LHeC systematic scale factors are kept fixed.
+  \item Statistical uncertainties are rescaled using \LHmuC{} benchmark Higgs rates.
+  \item The fit is performed with SMEFiT.
+  \item The clearest projected improvement is in the vector sector:
+  \[
+    \delta\kappa_W\simeq0.29\%~(\LHmuC\text{-}500),
+    \qquad
+    0.19\%~(\LHmuC\text{-}1000).
+  \]
+\end{itemize}
+
+\textbf{Caveat:}
+The fit assumes \(\kappa_V\le1\) to control the Higgs-width flat direction; this is a standard
+benchmark assumption, not a fully model-independent statement.
+
+\subsection{Slide: why \LHmuC{} is a BSM machine}
+
+\textbf{Improved title:} Why \LHmuC{} is a distinctive BSM machine
+
+\textbf{Improved bullets:}
+\begin{itemize}[leftmargin=*]
+  \item \LHmuC{} combines a point-like muon beam with quark and gluon partons at multi-TeV energy.
+  \item Its channel-specific advantage is direct access to
+  \[
+    \mu q\to X,\qquad \mu g\to X.
+  \]
+  \item This enables resonant single production of new states coupled to second-generation leptons.
+  \item Representative portals: RPV squarks, leptoquarks, color-octet muons, excited leptons,
+        and contact interactions.
+  \item Compared with \(pp\), \LHmuC{} can test selected models through single-resonance production
+        rather than only pair production or inclusive tails.
+\end{itemize}
+
+\subsection{Slide: representative BSM benchmarks}
+
+\textbf{Improved title:} Benchmark BSM portals: \(\mu q\) squarks and \(\mu g\) leptogluons
+
+\textbf{Improved bullets:}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{RPV SUSY:} \(LQD\)-type couplings give resonant squark production in
+        \(\mu q\) scattering.  In favorable NC channels,
+  \[
+    \lambda'_{2j1}\sim0.01{-}0.02
+  \]
+  can be probed for \(m_{\tilde q}\sim1{-}3\tev\).
+  \item \textbf{Color-octet muon / leptogluon:}
+  \[
+    \mu g\to\mu_8\to\mu g.
+  \]
+  This direct \(\mu g\) resonance is absent in \(pp\) pair-production searches.
+  \item Representative \(5\sigma\) reach:
+  \[
+    \HL:\ 2.3\tev,\qquad
+    \LHmuC\text{-}500:\ 3.0\tev,\qquad
+    \LHmuC\text{-}1000:\ 4.2\tev.
+  \]
+\end{itemize}
+
+\textbf{Caveat:}
+Representative benchmark studies; final reach requires detector/MDI backgrounds, systematic
+uncertainties, and channel-specific optimization.
+
+\section{Speaker notes}
+
+\subsection{\(h\to b\bar b\)}
+
+This is the most concrete Higgs benchmark in the talk.  The process is charged-current
+VBF, \(p\mu^+\to j\bar\nu_\mu h\), followed by the dominant Higgs decay \(h\to b\bar b\).
+The signal is selected with two \(b\)-jets and a Higgs mass window.  The measured rate scales as
+\(g_{hWW}^2g_{hbb}^2/\Gamma_h\), so after using external information on
+\(g_{hWW}^2/\Gamma_h\), we obtain a projected \(g_{hbb}\) sensitivity.  The key point is that
+the large \LHmuC{} rate turns this into a sub-percent benchmark, although the final number
+depends on luminosity and systematic assumptions.
+
+\subsection{Global fit}
+
+The previous slide was a single-channel study.  This slide asks what happens in a broader Higgs
+coupling interpretation.  We use a \(\kappa\)-framework fit, implemented with SMEFiT.  This is
+exploratory: we keep the LHeC systematic scale factors and rescale the statistical part using the
+\LHmuC{} rates.  The clearest improvement is in the vector modifiers, especially \(\kappa_W\) and
+\(\kappa_Z\), which is natural because Higgs production at a lepton--hadron collider is primarily
+weak-boson fusion.
+
+\subsection{BSM motivation}
+
+The BSM point is simple but important.  In \(pp\), many colored new particles are searched for
+through pair production, which costs energy because two heavy particles must be produced.  At
+\LHmuC{}, if the new state couples to a muon and a quark or gluon, it can be produced singly as
+a resonance.  This is why RPV squarks and color-octet muons are natural benchmark examples.
+
+\subsection{BSM benchmarks}
+
+These two examples show the same BSM principle in two different initial states.  RPV squarks use
+\(\mu q\) resonance production through \(LQD\)-type couplings, and favorable NC channels can
+probe \(\lambda'\) around \(10^{-2}\).  Color-octet muons use the \(\mu g\) initial state.  The
+single-resonance channel \(\mu g\to\mu_8\to\mu g\) gives a stronger reach than HL-LHC pair
+production in this benchmark.  The exact numbers should be understood as representative, pending
+full detector and MDI studies.
+
+\section{Likely audience questions and compact answers}
+
+\paragraph{Q: How robust is the \(hbb\) sensitivity once systematics are included?}
+The quoted rate precision is primarily statistical.  The coupling extraction includes external
+information on \(g_{hWW}^2/\Gamma_h\), but a final study must include \(b\)-tagging, jet-energy
+scale, background normalization, theory/PDF uncertainties, and beam-induced backgrounds.
+
+\paragraph{Q: Why do you need external information on \(g_{hWW}^2/\Gamma_h\)?}
+Because the measured rate is proportional to \(g_{hWW}^2g_{hbb}^2/\Gamma_h\).  A single rate
+cannot isolate \(g_{hbb}\) without information on the production coupling and total width
+combination.
+
+\paragraph{Q: Is the global fit independent, or mostly a rescaling?}
+It should be presented as an exploratory projection.  Statistical uncertainties are rescaled using
+\LHmuC{} cross sections, while LHeC systematic factors are retained.
+
+\paragraph{Q: Why impose \(\kappa_V\le1\)?}
+It controls the Higgs-width flat direction in fits without a direct model-independent Higgs width
+measurement.  It is useful for comparison, but not fully model independent.
+
+\paragraph{Q: Why are RPV squarks like leptoquarks here?}
+The \(LQD\) operator couples a lepton, a quark, and a squark.  Phenomenologically, the squark
+can appear as a leptoquark-like resonance in \(\mu q\) scattering.
+
+\paragraph{Q: Are interference effects included in the RPV benchmark?}
+The benchmark treatment neglects subdominant interference between signal and background.  A
+final study should include it.
+
+\paragraph{Q: Why is \(\mu p\) better than \(pp\) for \(\mu_8\)?}
+Because \(\mu p\) provides the direct single-resonance process \(\mu g\to\mu_8\), whereas \(pp\)
+searches mainly rely on pair production.
+
+\paragraph{Q: How model-dependent is the \(\mu_8\) reach?}
+It depends strongly on the effective operator, the chirality assumptions, and especially \(\Lambda\).
+The benchmark assumes \(\Lambda=m_{\mu_8}\).
+
+\paragraph{Q: What about muon-decay beam-induced backgrounds?}
+This is a central detector/MDI issue.  The benchmark studies are promising, but realistic shielding,
+timing, and detector-response simulations are needed before final experimental claims.
+
+\section{Final checklist before the presentation}
+
+\subsection*{Must fix}
+\begin{enumerate}[leftmargin=*]
+  \item Resolve the \(hbb\) luminosity consistency issue for the \(1\tev\) benchmark.
+  \item Label \(\sigma_{\rm sig}\) clearly: inclusive \(h\) production or final \(b\bar b\) state.
+  \item Replace ``explorative'' with ``exploratory''.
+  \item Add one caveat line to the global-fit slide: LHeC-like systematic factors are retained.
+  \item Fix spacing: ``\LHmuC{} benchmark'', not ``\LHmuC{}benchmark''.
+\end{enumerate}
+
+\subsection*{Should improve if time}
+\begin{enumerate}[leftmargin=*]
+  \item Add a short explanation of \(\kappa_V\le1\).
+  \item Mention \(\Lambda=m_{\mu_8}\) in the \(\mu_8\) caption or speaker note.
+  \item Make plot captions carry the physics message.
+  \item Replace ``Color-octet muon \(\mu_8\) reach'' by
+  ``Leptogluon reach from resonant \(\mu g\to\mu_8\to\mu g\)''.
+\end{enumerate}
+
+\section{Further reading map}
+
+\begin{longtable}{@{}p{0.23\linewidth}p{0.35\linewidth}p{0.34\linewidth}@{}}
+\caption{Suggested references and what to learn from each.}\\
+\toprule
+Topic & Reference & Why read it \\
+\midrule
+\endfirsthead
+\toprule
+Topic & Reference & Why read it \\
+\midrule
+\endhead
+\LHmuC{} concept and HELP4CERN physics case &
+HELP4CERN white paper draft &
+Overall collider motivation, benchmark cross sections, Higgs, \(\gamma\gamma\), top, and BSM overview. \\
+Muon--proton Higgs and RPV benchmarks &
+Cheung and Wang, Phys. Rev. D 103, 116009 (2021), arXiv:2101.10476 &
+Original \(\mu p\) benchmark for \(hbb\) and RPV squark reach. \\
+Future Higgs \(\kappa\)-framework &
+de Blas et al., JHEP 01 (2020) 139, arXiv:1905.03764 &
+Standard future-collider Higgs comparison and \(\kappa\)-framework context. \\
+Future collider SMEFT fits &
+de Blas et al., arXiv:2206.08326 &
+SMEFT global-fit context and future-collider projections. \\
+SMEFiT and precision reach &
+Armadillo et al., arXiv:2604.16596 &
+Recent multi-framework precision interpretation and updated SMEFiT release. \\
+\(\mu\)LHC and color-octet muons &
+Akturk et al., arXiv:2506.15445 &
+\(\mu^+p\) collider design and color-octet muon benchmark. \\
+Historical RPV at \(\mu p\) &
+Carena, Choudhury, Quigg, Raychaudhuri, Phys. Rev. D 62, 095010 &
+Classic study of RPV resonances at muon--proton colliders. \\
+Leptogluon phenomenology &
+Goncalves-Netto et al.; Acar--Kaya--Oner &
+Color-octet lepton / leptogluon theory and collider phenomenology. \\
+\bottomrule
+\end{longtable}
+
+\begin{thebibliography}{99}
+
+\bibitem{HELP4CERN}
+D.~Acosta et al.,
+\emph{White Paper on High Energy, High Luminosity Lepton--Hadron Colliders at CERN},
+HELP4CERN Study Group draft.
+
+\bibitem{KhanpourDIS}
+H.~Khanpour,
+\emph{Perspectives for HET physics studies at a muon-hadron collider at CERN},
+DIS 2026 presentation draft.
+
+\bibitem{CheungWang}
+K.~Cheung and Z.~S.~Wang,
+\emph{Physics potential of a muon-proton collider},
+Phys. Rev. D \textbf{103}, 116009 (2021),
+doi:10.1103/PhysRevD.103.116009,
+arXiv:2101.10476.
+
+\bibitem{deBlasHiggs}
+J.~de Blas et al.,
+\emph{Higgs Boson Studies at Future Particle Colliders},
+JHEP \textbf{01} (2020) 139,
+arXiv:1905.03764.
+
+\bibitem{deBlasSMEFT}
+J.~de Blas, Y.~Du, C.~Grojean, J.~Gu, V.~Miralles, M.~E.~Peskin, J.~Tian, M.~Vos and E.~Vryonidou,
+\emph{Global SMEFT Fits at Future Colliders},
+Snowmass 2021,
+arXiv:2206.08326.
+
+\bibitem{Armadillo}
+T.~Armadillo, E.~Celada, J.~ter Hoeve, F.~Maltoni, L.~Mantani, J.~Rojo, A.~N.~Rossia,
+S.~Tentori, M.~O.~A.~Thomas and E.~Vryonidou,
+\emph{New Physics Reach through Precision at Future Colliders: a Multi-Pronged Approach},
+arXiv:2604.16596.
+
+\bibitem{Akturk}
+D.~Akturk et al.,
+\emph{\(\mu\)LHC: Antimuon Ring and HL-LHC based \(\mu^+p\) Collider},
+arXiv:2506.15445.
+
+\bibitem{Carena}
+M.~Carena, D.~Choudhury, C.~Quigg and S.~Raychaudhuri,
+\emph{Study of R-parity violation at a muon proton collider},
+Phys. Rev. D \textbf{62}, 095010 (2000),
+arXiv:hep-ph/0006144.
+
+\bibitem{Leptogluon}
+D.~Goncalves-Netto, D.~Lopez-Val, K.~Mawatari, I.~Wigmore and T.~Plehn,
+\emph{Looking for leptogluons},
+Phys. Rev. D \textbf{87} (2013).
+
+\bibitem{Acar}
+Y.~C.~Acar, U.~Kaya and B.~B.~Oner,
+\emph{Resonant production of color octet muons at Future Circular Collider-based muon-proton colliders},
+Chin. Phys. C \textbf{42} (2018) 083108.
+
+\bibitem{MG5}
+J.~Alwall et al.,
+\emph{MadGraph 5: Going Beyond},
+JHEP \textbf{06} (2011) 128.
+
+\bibitem{FastJet}
+M.~Cacciari, G.~P.~Salam and G.~Soyez,
+\emph{FastJet user manual},
+Eur. Phys. J. C \textbf{72} (2012) 1896.
+
+\bibitem{Delphes}
+J.~de Favereau et al.,
+\emph{DELPHES 3: a modular framework for fast simulation of a generic collider experiment},
+JHEP \textbf{02} (2014) 057.
+
+\end{thebibliography}
+
+\end{document}

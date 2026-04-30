@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  29 APR 2026 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  30 APR 2026 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1328,11 +1328,15 @@ File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
 Package pdftex.def Info: HELP4CERN.jpg  used on input line 97.
 (pdftex.def)             Requested size: 71.13188pt x 38.79985pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-ec.enc}
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <./HELP4CERN.jpg>]
-(./Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.toc
+
+Package hyperref Warning: Suppressing link with empty target on input line 97.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <./HELP4CERN.jpg>] (./Hamze
+h_Khanpour_DIS2026_HET_at_LHmuC.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1414,7 +1418,7 @@ Overfull \vbox (0.40804pt too high) detected at line 229
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
 s/lm/lm-mathsy.enc}]
-<LHmuC_xQ2.jpg, id=242, 1322.9425pt x 1268.74pt>
+<LHmuC_xQ2.jpg, id=241, 1322.9425pt x 1268.74pt>
 File: LHmuC_xQ2.jpg Graphic file (type jpg)
 <use LHmuC_xQ2.jpg>
 Package pdftex.def Info: LHmuC_xQ2.jpg  used on input line 277.
@@ -1522,7 +1526,7 @@ Overfull \hbox (3.31786pt too wide) in paragraph at lines 509--509
  [][] 
  []
 
-<mupVBFH_xsec_nocut.png, id=360, 578.16pt x 433.62pt>
+<mupVBFH_xsec_nocut.png, id=359, 578.16pt x 433.62pt>
 File: mupVBFH_xsec_nocut.png Graphic file (type png)
 <use mupVBFH_xsec_nocut.png>
 Package pdftex.def Info: mupVBFH_xsec_nocut.png  used on input line 509.
@@ -1567,7 +1571,7 @@ mm/m/it/8 ^^V\T1/lmr/m/n/8 C[]\T1/lmss/m/n/8 1[]\OT1/lmss/m/n/8 )\OML/lmm/m/it/
 8 :
  []
 
-<LHmuC_vector.pdf, id=439, 448.79669pt x 333.16472pt>
+<LHmuC_vector.pdf, id=438, 448.79669pt x 333.16472pt>
 File: LHmuC_vector.pdf Graphic file (type pdf)
 <use LHmuC_vector.pdf>
 Package pdftex.def Info: LHmuC_vector.pdf  used on input line 667.
@@ -1583,12 +1587,12 @@ Overfull \vbox (2.84793pt too high) detected at line 667
 [9
 
  <./LHmuC_vector.pdf>]
-<LHmuC_fermion.pdf, id=510, 448.79669pt x 333.16472pt>
+<LHmuC_fermion.pdf, id=509, 448.79669pt x 333.16472pt>
 File: LHmuC_fermion.pdf Graphic file (type pdf)
 <use LHmuC_fermion.pdf>
 Package pdftex.def Info: LHmuC_fermion.pdf  used on input line 727.
 (pdftex.def)             Requested size: 173.22194pt x 128.59161pt.
-<LHmuC_loop.pdf, id=511, 448.79669pt x 333.16472pt>
+<LHmuC_loop.pdf, id=510, 448.79669pt x 333.16472pt>
 File: LHmuC_loop.pdf Graphic file (type pdf)
 <use LHmuC_loop.pdf>
 Package pdftex.def Info: LHmuC_loop.pdf  used on input line 727.
@@ -1656,7 +1660,7 @@ Underfull \hbox (badness 1642) in paragraph at lines 851--851
 tes as \T1/lmss/m/sl/10 a high-
  []
 
-<Sgg_New.jpg, id=647, 837.1275pt x 969.6225pt>
+<Sgg_New.jpg, id=646, 837.1275pt x 969.6225pt>
 File: Sgg_New.jpg Graphic file (type jpg)
 <use Sgg_New.jpg>
 Package pdftex.def Info: Sgg_New.jpg  used on input line 851.
@@ -1672,7 +1676,7 @@ Underfull \hbox (badness 4060) in paragraph at lines 912--912
 []\T1/lmss/m/n/10 Anomalous con-tri-bu-tions harden the
  []
 
-<yytautau.jpg, id=692, 815.045pt x 957.5775pt>
+<yytautau.jpg, id=691, 815.045pt x 957.5775pt>
 File: yytautau.jpg Graphic file (type jpg)
 <use yytautau.jpg>
 Package pdftex.def Info: yytautau.jpg  used on input line 912.
@@ -1866,12 +1870,12 @@ Underfull \hbox (badness 1048) in paragraph at lines 1601--1601
 lmsy/m/n/9 ^^X
  []
 
-<exclusion_limits.jpg, id=841, 720.97928pt x 487.8225pt>
+<exclusion_limits.jpg, id=840, 720.97928pt x 487.8225pt>
 File: exclusion_limits.jpg Graphic file (type jpg)
 <use exclusion_limits.jpg>
 Package pdftex.def Info: exclusion_limits.jpg  used on input line 1601.
 (pdftex.def)             Requested size: 154.17143pt x 104.31407pt.
-<mu8.jpg, id=842, 719.68875pt x 527.39893pt>
+<mu8.jpg, id=841, 719.68875pt x 527.39893pt>
 File: mu8.jpg Graphic file (type jpg)
 <use mu8.jpg>
 Package pdftex.def Info: mu8.jpg  used on input line 1601.
@@ -1938,7 +1942,7 @@ Package pdftex.def Info: HELP4CERN.jpg  used on input line 1759.
 [20
 
 ]
-<Thank_You_2.jpg, id=947, 911.54839pt x 577.29964pt>
+<Thank_You_2.jpg, id=946, 911.54839pt x 577.29964pt>
 File: Thank_You_2.jpg Graphic file (type jpg)
 <use Thank_You_2.jpg>
 Package pdftex.def Info: Thank_You_2.jpg  used on input line 1785.
@@ -1955,26 +1959,26 @@ Package pdftex.def Info: HELP4CERN.jpg  used on input line 1785.
 [21
 
  <./Thank_You_2.jpg>]
-Underfull \hbox (badness 5161) in paragraph at lines 1848--1848
+Underfull \hbox (badness 5161) in paragraph at lines 1850--1850
 \T1/lmss/m/n/10 elec-troweak, top, QCD, and BSM
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-848.
+850.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<White_Paper.jpg, id=987, 443.08392pt x 542.45518pt>
+<White_Paper.jpg, id=986, 906.38625pt x 1204.5pt>
 File: White_Paper.jpg Graphic file (type jpg)
 <use White_Paper.jpg>
-Package pdftex.def Info: White_Paper.jpg  used on input line 1848.
-(pdftex.def)             Requested size: 173.22194pt x 212.06985pt.
+Package pdftex.def Info: White_Paper.jpg  used on input line 1850.
+(pdftex.def)             Requested size: 173.22194pt x 230.18068pt.
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 1848.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 1850.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \vbox (16.39958pt too high) detected at line 1848
+Overfull \vbox (9.2864pt too high) detected at line 1850
  []
 
 [22
@@ -1982,81 +1986,81 @@ Overfull \vbox (16.39958pt too high) detected at line 1848
  <./White_Paper.jpg>]
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 2199.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 2201.
 (pdftex.def)             Requested size: 58.32823pt x 31.81473pt.
-LaTeX Font Info:    Calculating math sizes for size <20> on input line 2199.
+LaTeX Font Info:    Calculating math sizes for size <20> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20> on input line 2199.
+(Font)              <20> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.99994> on input line 2199.
+(Font)              <13.99994> on input line 2201.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <20> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <13.99994> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <20> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <13.99994> not available
 
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 2199.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24> on input line 2199.
+(Font)              <24> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <16.79993> on input line 2199.
+(Font)              <16.79993> on input line 2201.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <16.79993> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <24> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <16.79993> not available
 
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
-LaTeX Font Info:    Calculating math sizes for size <26> on input line 2199.
+LaTeX Font Info:    Calculating math sizes for size <26> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <26> on input line 2199.
+(Font)              <26> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.19992> on input line 2199.
+(Font)              <18.19992> on input line 2201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 2199.
+(Font)              <13> on input line 2201.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <26> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <18.19992> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <13> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2199.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2201.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <26> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <18.19992> not available
 
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <13> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2199
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 2201
 .
 File: HELP4CERN.jpg Graphic file (type jpg)
 <use HELP4CERN.jpg>
-Package pdftex.def Info: HELP4CERN.jpg  used on input line 2199.
+Package pdftex.def Info: HELP4CERN.jpg  used on input line 2201.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \hbox (0.4068pt too wide) in paragraph at lines 2199--2199
+Overfull \hbox (0.4068pt too wide) in paragraph at lines 2201--2201
  [][] 
  []
 
 
-Overfull \vbox (3.87083pt too high) detected at line 2199
+Overfull \vbox (3.87083pt too high) detected at line 2201
  []
 
 [23
@@ -2115,11 +2119,11 @@ mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (23 pages, 2725433 b
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (23 pages, 2644583 b
 ytes).
 PDF statistics:
- 1203 PDF objects out of 1440 (max. 8388607)
- 931 compressed objects within 10 object streams
+ 1202 PDF objects out of 1440 (max. 8388607)
+ 930 compressed objects within 10 object streams
  53 named destinations out of 1000 (max. 500000)
  751 words of extra memory for PDF output out of 10000 (max. 10000000)
 

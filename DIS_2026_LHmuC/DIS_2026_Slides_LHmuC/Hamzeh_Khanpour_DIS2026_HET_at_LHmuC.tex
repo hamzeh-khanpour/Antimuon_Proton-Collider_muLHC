@@ -16,6 +16,7 @@
 \usepackage{ragged2e}
 \usepackage{etoolbox}
 
+
 \usepackage{tikz}
 \usepackage{comment}
 
@@ -68,16 +69,17 @@
 
 \title[Perspectives for HET physics studies at \LHCmu]{\justifying Perspectives for HET physics studies at a muon-hadron collider at CERN}
 \author[Hamzeh Khanpour]{Hamzeh Khanpour\\
-{\scriptsize \href{}{(on behalf of HELP4CERN Study Group)}}}
+{\scriptsize \href{}{AGH University of Krakow}}}
 
-\institute[AGH]{Faculty of Physics and Applied Computer Science\\AGH University of Krakow}
+\institute[AGH]{\textbf{(on behalf of HELP4CERN Study Group)}}
 
 \date{{\setlength{\fboxsep}{4pt}\colorbox{cyan!15}{\strut DIS 2026, Bologna, May 7, 2026}}}
  
  
 % \textbf{Contact:} \texttt{help-4-cern@cern.ch}
  
- 
+
+
 \begin{document}
  
  
@@ -814,13 +816,13 @@ at (current page.north east)
 \justifying
 \small
 \item \LHCmu{} naturally operates as {\textit {a high-energy $\gamma\gamma$ collider}}.% through photons radiated from the incoming muon and proton beams.
-\item In the 1000 GeV baseline, the effective $\gamma\gamma$ centre-of-mass energy extends into the multi-TeV regime, opening a broad programme of clean exclusive measurements.
+\item In the nominal \(5.3~\mathrm{TeV}\) baseline, the effective $\gamma\gamma$ centre-of-mass energy extends into the multi-TeV regime, opening a broad programme of clean exclusive measurements.
 \justifying
 \footnotesize
 \setlength{\itemsep}{0.1em}
 \begin{itemize}
 \item anomalous $\tau$ moments,
-\item $\gamma\gamma\to W^+W^-$ and anomalous quartic gauge couplings (qQGC),
+\item $\gamma\gamma\to W^+W^-$ and anomalous quartic gauge couplings (aQGC),
 \item loop-induced $\gamma\gamma\to ZZ$,
 \item exclusive $t\bar t$ production,
 \item light-by-light scattering (LbL) 
@@ -858,7 +860,7 @@ at (current page.north east)
 % --------------------------------------------------------------------------
 % Slide 12
 % --------------------------------------------------------------------------
-\begin{frame}{Flagship $\gamma\gamma$ channel: $\tau^+\tau^-$ and anomalous $\tau$ moments}
+\begin{frame}{Benchmark \(\gamma\gamma\) channel: \(\tau^+\tau^-\) and anomalous \(\tau\) moments}
 	
 \begin{columns}[T]%[T,onlytextwidth]
 		
@@ -878,9 +880,13 @@ at (current page.north east)
 \begin{itemize}
 \setlength{\itemsep}{0.35em}
 \justifying
-\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV and about \(70.3\) pb at the 5.3 TeV upgrade benchmark. 
+\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV, and about \(70.3\) pb at the nominal
+\(5.3~\mathrm{TeV}\) baseline. 
+
 \item This provides a high-statistics probe of the \(\gamma\tau\tau\) vertex and anomalous magnetic ($a_\tau$) and electric ($d_\tau$) dipole moments.
+
 \item Anomalous contributions harden the high-\(M_{\tau\tau}\) tail, making the invariant-mass spectrum the key discriminating observable.
+
 \item This is one of the cleanest examples of how \LHCmu{} combines high energy with a low-background exclusive topology.
 \end{itemize}
 			
@@ -912,167 +918,6 @@ at (current page.north east)
 \end{frame}
 
 
-
-
-% --------------------------------------------------------------------------
-% Slide 13
-% --------------------------------------------------------------------------
-
-% --------------------------------------------------------------------------
-% Merged gamma-gamma summary slide
-% --------------------------------------------------------------------------
-\begin{frame}{Exclusive $\gamma\gamma$ channels: electroweak, top, and BSM reach}
-	
-\centering
-%	\vspace{-0.35em}
-	
-\begin{tikzpicture}[x=1cm,y=1cm]
-		
-%------------------------------------------------
-% Styles
-%------------------------------------------------
-		\tikzset{
-			connector/.style={
-				draw=blue!65!black,
-				line width=1.0pt
-			},
-			hubbox/.style={
-				rounded corners=6pt,
-				draw=blue!65!black,
-				line width=1.1pt,
-				fill=white,
-				minimum width=2.9cm,
-				minimum height=2.0cm,
-				inner sep=3pt,
-				align=center
-			},
-			boxww/.style={
-				rounded corners=9pt,
-				draw=green!50!black,
-				line width=1.15pt,
-				fill=green!10,
-				minimum width=3.85cm,
-				minimum height=2.75cm,
-				text width=3.20cm,
-				align=center,
-				inner sep=4pt
-			},
-			boxzz/.style={
-				rounded corners=9pt,
-				draw=violet!55!black,
-				line width=1.15pt,
-				fill=violet!10,
-				minimum width=3.85cm,
-				minimum height=2.75cm,
-				text width=3.20cm,
-				align=center,
-				inner sep=4pt
-			},
-			boxtt/.style={
-				rounded corners=9pt,
-				draw=orange!70!black,
-				line width=1.15pt,
-				fill=orange!12,
-				minimum width=3.85cm,
-				minimum height=2.75cm,
-				text width=3.20cm,
-				align=center,
-				inner sep=4pt
-			},
-			boxbsm/.style={
-				rounded corners=9pt,
-				draw=red!65!black,
-				line width=1.15pt,
-				fill=red!10,
-				minimum width=3.85cm,
-				minimum height=2.75cm,
-				text width=3.20cm,
-				align=center,
-				inner sep=4pt
-			},
-			takehome/.style={
-				rounded corners=5pt,
-				draw=red!60!black,
-				line width=0.95pt,
-				fill=red!8,
-				text width=11.1cm,
-				minimum height=0.82cm,
-				align=center,
-				inner sep=3.5pt
-			}
-		}
-		
-%------------------------------------------------
-% Central hub
-%------------------------------------------------
-\node[hubbox] (hub) at (0,0.00) {%
-\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.15em]
-{\scriptsize \textbf{Exclusive high-energy}}\\[-0.05em]
-{\scriptsize \textbf{$\gamma\gamma$ programme}}
-};
-		
-		%------------------------------------------------
-		% Outer nodes
-		%------------------------------------------------
-		\node[boxww] (ww) at (-4.15,1.65) {%
-			{\bfseries \small $\gamma\gamma\to W^+W^-$}\\[0.20em]
-%			{\footnotesize largest EW benchmark;}\\
-			{\footnotesize Strong aQGC sensitivity comes from}\\
-			{\footnotesize the high-$M_{WW}$ tail}\\[0.15em]
-%			{\footnotesize $\sigma_{\rm el}\simeq 0.166$ pb at 3.7 TeV}
-		};
-		
-		\node[boxzz] (zz) at (4.15,1.65) {%
-			{\bfseries \small $\gamma\gamma\to ZZ$}\\[0.20em]
-			{\footnotesize Loop-induced in the SM;}\\
-			{\footnotesize clean probe of high-mass}\\
-			{\footnotesize electroweak dynamics}\\[0.15em]
-%			{\footnotesize $\sigma_{\rm el}\simeq 0.284$ fb at 3.7 TeV}
-		};
-		
-		\node[boxtt] (tt) at (-4.15,-1.85) {%
-			{\bfseries \small $\gamma\gamma\to t\bar t$}\\[0.20em]
-			{\footnotesize Probes heavy thresholds}\\
-			{\footnotesize and top-sector dynamics}\\
-			{\footnotesize in exclusive topology}\\[0.15em]
-%			{\footnotesize $\sigma_{\rm el}\simeq 0.486$ fb at 3.7 TeV}
-		};
-		
-		\node[boxbsm] (bsm) at (4.15,-1.85) {%
-			{\bfseries \small Exclusive BSM pairs}\\[0.20em]
-%			{\footnotesize same framework extends to}\\
-			{\footnotesize Charged states such as}\\
-			{\footnotesize higgsinos and sleptons}\\[0.15em]
-%			{\footnotesize qualitative opportunity; no rate quoted here}
-		};
-		
-		%------------------------------------------------
-		% Connectors
-		%------------------------------------------------
-		\draw[connector] (hub.north west) .. controls (-1.1,0.95) and (-2.4,1.35) .. (ww.east);
-		\draw[connector] (hub.north east) .. controls ( 1.1,0.95) and ( 2.4,1.35) .. (zz.west);
-		\draw[connector] (hub.south west) .. controls (-1.1,-0.85) and (-2.4,-1.35) .. (tt.east);
-		\draw[connector] (hub.south east) .. controls ( 1.1,-0.85) and ( 2.4,-1.35) .. (bsm.west);
-		
-%------------------------------------------------
-% Take-home message
-%------------------------------------------------
-\node[takehome] at (0,-4.00) {%
-{\justifying\scriptsize Beyond $\tau^+\tau^-$, the high-energy $\gamma\gamma$ programme at LH$\mu$C spans
-electroweak, top, and BSM-sensitive channels in a clean exclusive environment.}
-};
-		
-\end{tikzpicture}
-%------------------------------------------------
-% HELP4CERN logo overlay
-%------------------------------------------------
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
-	at (current page.north east)
-	{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-\end{frame}
-% --------------------------------------------------------------------------
 
 
 
@@ -1829,16 +1674,38 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 \textbf{Visit:} \texttt{https://help4cern.web.cern.ch}
 \end{beamercolorbox}
 \end{column}
-		
+	
 %========================================
 % Right column
 %========================================
 \begin{column}{0.50\textwidth}
 \centering
 \includegraphics[width=\linewidth]{White_Paper.jpg}
+
+
+\vspace{0.55em}
+
+
+\begin{beamercolorbox}[
+rounded=true,
+shadow=true,
+sep=6pt,
+wd=0.92\linewidth
+]{block body}
+\scriptsize
+\justifying
+Next steps for HELP4CERN:
+\begin{itemize}
+\justifying
+\item turn the current benchmark studies into a coherent white-paper assessment of high-energy lepton-hadron options at CERN by the end of 2026;
+\item foster a worldwide study effort, in close coordination with the LHeC Study Group, aimed at preparing a dedicated HELP4CERN proposal by 2028.
+\end{itemize}
+\end{beamercolorbox}
+
 \end{column}
 
 \end{columns}
+
 %------------------------------------------------
 % HELP4CERN logo overlay
 %------------------------------------------------
@@ -1847,12 +1714,178 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 	at (current page.north east)
 	{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}	
+
 \end{frame}
 
 
 
 
 
+
+
+
+% --------------------------------------------------------------------------
+% Slide 13
+% --------------------------------------------------------------------------
+
+% --------------------------------------------------------------------------
+% Merged gamma-gamma summary slide
+% --------------------------------------------------------------------------
+\begin{frame}{Exclusive $\gamma\gamma$ channels: electroweak, top, and BSM reach}
+	
+\centering
+%	\vspace{-0.35em}
+	
+\begin{tikzpicture}[x=1cm,y=1cm]
+		
+%------------------------------------------------
+% Styles
+%------------------------------------------------
+\tikzset{
+connector/.style={
+draw=blue!65!black,
+line width=1.0pt
+},
+hubbox/.style={
+				rounded corners=6pt,
+				draw=blue!65!black,
+				line width=1.1pt,
+				fill=white,
+				minimum width=2.9cm,
+				minimum height=2.0cm,
+				inner sep=3pt,
+				align=center
+			},
+			boxww/.style={
+				rounded corners=9pt,
+				draw=green!50!black,
+				line width=1.15pt,
+				fill=green!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxzz/.style={
+				rounded corners=9pt,
+				draw=violet!55!black,
+				line width=1.15pt,
+				fill=violet!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxtt/.style={
+				rounded corners=9pt,
+				draw=orange!70!black,
+				line width=1.15pt,
+				fill=orange!12,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxbsm/.style={
+				rounded corners=9pt,
+				draw=red!65!black,
+				line width=1.15pt,
+				fill=red!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			takehome/.style={
+				rounded corners=5pt,
+				draw=red!60!black,
+				line width=0.95pt,
+				fill=red!8,
+				text width=11.1cm,
+				minimum height=0.82cm,
+				align=center,
+				inner sep=3.5pt
+}
+}
+		
+%------------------------------------------------
+% Central hub
+%------------------------------------------------
+\node[hubbox] (hub) at (0,0.00) {%
+\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.15em]
+{\scriptsize \textbf{Exclusive high-energy}}\\[-0.05em]
+{\scriptsize \textbf{$\gamma\gamma$ programme}}
+};
+		
+%------------------------------------------------
+% Outer nodes
+%------------------------------------------------
+\node[boxww] (ww) at (-4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to W^+W^-$}\\[0.20em]
+			%			{\footnotesize largest EW benchmark;}\\
+			{\footnotesize Strong aQGC sensitivity comes from}\\
+			{\footnotesize the high-$M_{WW}$ tail}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.166$ pb at 3.7 TeV}
+};
+		
+		\node[boxzz] (zz) at (4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to ZZ$}\\[0.20em]
+			{\footnotesize Loop-induced in the SM;}\\
+			{\footnotesize clean probe of high-mass}\\
+			{\footnotesize electroweak dynamics}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.284$ fb at 3.7 TeV}
+};
+		
+		\node[boxtt] (tt) at (-4.15,-1.85) {%
+			{\bfseries \small $\gamma\gamma\to t\bar t$}\\[0.20em]
+			{\footnotesize Probes heavy thresholds}\\
+			{\footnotesize and top-sector dynamics}\\
+			{\footnotesize in exclusive topology}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.486$ fb at 3.7 TeV}
+};
+		
+		\node[boxbsm] (bsm) at (4.15,-1.85) {%
+			{\bfseries \small Exclusive BSM pairs}\\[0.20em]
+			%			{\footnotesize same framework extends to}\\
+			{\footnotesize Charged states such as}\\
+			{\footnotesize higgsinos and sleptons}\\[0.15em]
+			%			{\footnotesize qualitative opportunity; no rate quoted here}
+};
+		
+%------------------------------------------------
+% Connectors
+%------------------------------------------------
+		\draw[connector] (hub.north west) .. controls (-1.1,0.95) and (-2.4,1.35) .. (ww.east);
+		\draw[connector] (hub.north east) .. controls ( 1.1,0.95) and ( 2.4,1.35) .. (zz.west);
+		\draw[connector] (hub.south west) .. controls (-1.1,-0.85) and (-2.4,-1.35) .. (tt.east);
+		\draw[connector] (hub.south east) .. controls ( 1.1,-0.85) and ( 2.4,-1.35) .. (bsm.west);
+		
+%------------------------------------------------
+% Take-home message
+%------------------------------------------------
+\node[takehome] at (0,-4.00) {%
+			{\justifying\scriptsize Beyond $\tau^+\tau^-$, the high-energy $\gamma\gamma$ programme at LH$\mu$C spans
+				electroweak, top, and BSM-sensitive channels in a clean exclusive environment.}
+};
+		
+\end{tikzpicture}
+%------------------------------------------------
+% HELP4CERN logo overlay
+%------------------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+\end{frame}
+% --------------------------------------------------------------------------
+
+
+\end{document}
 
 
 
@@ -2190,24 +2223,16 @@ high-energy, high-luminosity lepton-hadron colliders at CERN.
 		};
 		
 	\end{tikzpicture}
-%------------------------------------------------
-% HELP4CERN logo overlay
-%------------------------------------------------
-\begin{tikzpicture}[remember picture,overlay]
-	\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
-	at (current page.north east)
-	{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
+	%------------------------------------------------
+	% HELP4CERN logo overlay
+	%------------------------------------------------
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+		at (current page.north east)
+		{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
 \end{frame}
 % --------------------------------------------------------------------------
-
-
-
-
-
-\end{document}
-
-
 
 
 

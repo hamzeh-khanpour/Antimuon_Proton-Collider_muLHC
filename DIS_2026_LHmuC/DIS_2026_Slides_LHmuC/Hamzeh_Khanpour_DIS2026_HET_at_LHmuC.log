@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  1 MAY 2026 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.27)  1 MAY 2026 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1955,8 +1955,8 @@ File: White_Paper.jpg Graphic file (type jpg)
 Package pdftex.def Info: White_Paper.jpg  used on input line 1718.
 (pdftex.def)             Requested size: 173.22194pt x 89.6056pt.
 
-Underfull \hbox (badness 1400) in paragraph at lines 1718--1718
-[]\T1/lmss/m/n/8 foster a world-wide study ef-fort, in
+Underfull \hbox (badness 5460) in paragraph at lines 1718--1718
+\T1/lmss/m/n/8 co-or-di-na-tion with the \T1/lmtt/m/n/8 LHeC Study
  []
 
 File: HELP4CERN.jpg Graphic file (type jpg)
@@ -2009,11 +2009,11 @@ s not changed.
 (rerunfilecheck)             Checksum: 15F2B02717B870011A61B1D3FA3F4530;1275.
  ) 
 Here is how much of TeX's memory you used:
- 30873 strings out of 474222
- 640363 string characters out of 5748732
+ 30875 strings out of 474222
+ 640384 string characters out of 5748732
  1973975 words of memory out of 5000000
- 52404 multiletter control sequences out of 15000+600000
- 748330 words of font info for 156 fonts, out of 8000000 for 9000
+ 52405 multiletter control sequences out of 15000+600000
+ 748651 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,14590b,2429s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
@@ -2039,12 +2039,13 @@ ic/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (22 pages, 2575352 b
+fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmtt8.pfb>
+Output written on Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.pdf (22 pages, 2596887 b
 ytes).
 PDF statistics:
- 1168 PDF objects out of 1200 (max. 8388607)
- 900 compressed objects within 9 object streams
+ 1174 PDF objects out of 1200 (max. 8388607)
+ 903 compressed objects within 10 object streams
  51 named destinations out of 1000 (max. 500000)
  787 words of extra memory for PDF output out of 10000 (max. 10000000)
 

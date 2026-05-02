@@ -224,7 +224,7 @@ $\mathcal{L}_{\rm int}$ (option 2) & $1000~\mathrm{fb}^{-1}$
 \includegraphics[width=0.25\linewidth]{HELP4CERN.jpg}
 {\scriptsize
 \setlength{\fboxsep}{4pt}%
-\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Krzysztof Piotrzkowski}}%
+\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/contributions/289190/}{\strut See talk by Krzysztof Piotrzkowski}}%
 }
 \end{column}
 \end{columns}
@@ -264,7 +264,7 @@ $\mathcal{L}_{\rm int}$ (option 2) & $1000~\mathrm{fb}^{-1}$
 
 \centering
 \scriptsize
-{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/overview}{\strut See talk by Piotr Kotko}}}
+{\setlength{\fboxsep}{4pt}\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/contributions/289240/}{\strut See talk by Piotr Kotko}}}
 
 \end{column}
 
@@ -921,12 +921,79 @@ at (current page.north east)
 
 
 
+% --------------------------------------------------------------------------
+% current limits + LHeC vs LHmuC shape leverage
+% --------------------------------------------------------------------------
+\begin{frame}{Current limits and high-\(M_{\tau\tau}\) sensitivity to \(\delta a_\tau\)}
+		
+\begin{columns}[T]%[T,onlytextwidth]
+		
+%------------------------------------------------
+\begin{column}{0.55\textwidth}
+			
+\begin{itemize}
+\scriptsize
+\justifying
+				
+\item For the benchmark deformation \(\delta a_\tau=0.005\), the deviation
+from the SM remains small at low \(M_{\tau\tau}\), but grows in the
+high-\(M_{\tau\tau}\) tail; this is the main source of sensitivity.
+				
+\item Compared with the LHeC benchmark, the nominal \LHCmu{} setup probes
+a harder kinematic regime and retains better statistical reach in the tail,
+giving stronger sensitivity leverage on anomalous \(\tau\) dipole couplings.
+
+\item These distributions therefore indicate good  expected sensitivity
+at \LHCmu{}, but a quantitative projected limit still requires a dedicated
+detector-level statistical analysis.
+
+\end{itemize}
+\begin{alertblock}{Tail-driven sensitivity}
+\scriptsize
+\justifying
+The sensitivity to anomalous \(\tau\) dipole couplings is tail-driven.
+Relative to the LHeC benchmark, \LHCmu{} combines a larger event sample
+with a stronger high-\(M_{\tau\tau}\) lever arm, making it a promising
+benchmark for \(a_\tau\) and \(d_\tau\) studies.
+\end{alertblock}			
+		
+\end{column}
+		
+%------------------------------------------------
+\begin{column}{0.55\textwidth}
+\centering	
+\includegraphics[width=0.49\linewidth]{LHeC_tauta.jpg}
+\includegraphics[width=0.49\linewidth]{LHmuC_tautau.jpg}
+
+\begin{exampleblock}{Current LHC limits on \(a_\tau\)}
+\scriptsize
+\justifying
+CMS exclusive \(pp\) photon-induced \(\tau^+\tau^-\) production gives $a_\tau \in [-0.0022,\,0.0041]$ [{\color{magenta} 2406.03975 [hep-ex]}], while the ATLAS high-mass \(\tau^+\tau^-\) analysis gives $a_\tau \in [-0.0024,\,0.0047]
+\quad (95\%~\mathrm{CL})$ [{\color{magenta}2503.19836 [hep-ex]}].
+\end{exampleblock}
+		
+\end{column}
+		
+\end{columns}
+	
+%----------------------------------------
+% HELP4CERN logo
+%----------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
 
 
 
 \section{Top physics at \LHCmu{}}
-
-
 
 
 
@@ -1078,150 +1145,6 @@ at (current page.north east)
 \end{frame}
 % --------------------------------------------------------------------------
 
-
-
-
-
-
-
-% --------------------------------------------------------------------------
-% Slide 15 
-% --------------------------------------------------------------------------
-\begin{frame}{Top-FCNC probes at \LHCmu{}: \(tq\gamma\) and \(tqZ\)}
-	
-\begin{columns}[T]
-		
-%================================================
-% Left column: text
-%================================================
-\begin{column}{0.68\textwidth}
-\small
-\begin{itemize}\itemsep0.48em
-\justifying
-				
-\item In the Standard Model, top-FCNC transitions are forbidden at tree level and remain highly suppressed at loop level by the GIM mechanism; any observable signal would therefore be a clean indication of physics beyond the Standard Model.
-				
-\item The key rare-top vertices are \(tq\gamma\) and \(tqZ\) with \(q=u,c\), naturally parameterized by anomalous couplings or SMEFT dimension-6 operators.
-				
-\item At \LHCmu{}, the large top sample, harder kinematics, and characteristic \(\mu p\) topology make anomalous single-top and associated production natural benchmarks for converting top statistics into BSM reach.
-				
-\end{itemize}
-\end{column}
-		
-%================================================
-% Right column: diagrams
-%================================================
-\begin{column}{0.47\textwidth}
-\centering
-			
-%-----------------------------
-% Diagram A: tqgamma / tqZ
-%-----------------------------
-%-----------------------------
-% Diagram A: tqgamma and tqZ side by side
-%-----------------------------
-\begin{minipage}{\linewidth}
-\centering
-\begin{center}
-\setlength{\fboxsep}{3pt}
-\fcolorbox{black!40}{yellow!20}{%
-\parbox{0.50\linewidth}{\centering\scriptsize\textbf{Top-FCNC at \LHCmu{}}}%
-}
-\end{center}
-\vspace{-0.35em}
-	
-\begin{minipage}{0.48\linewidth}
-\centering
-\begin{tikzpicture}[scale=0.45, transform shape]
-\begin{feynman}
-\vertex (muin)  at (-2.5,  1.95) {\(\mu^{+}\)};
-\vertex (muout) at ( 2.5,  1.95) {\(\mu^{+}\)};
-\vertex (qin)   at (-2.5, -1.95) {\(q\)};
-\vertex (tout)  at ( 2.5, -1.95) {\(t\)};
-				
-\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0, 0.90) {};
-\vertex [dot, fill=black, minimum size=8.5pt] (v2) at (0,-0.35) {};
-				
-\diagram*{
-					(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
-					-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
-					
-					(v1)    -- [boson, edge label=\(\gamma^{\ast}\), line width=1.0pt] (v2),
-					
-					(qin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
-					-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
-				};
-\end{feynman}
-\node[font=\large\bfseries,text=orange!85!black] at (0.0,-0.95) {\(tq\gamma\)};
-\end{tikzpicture}
-		
-%\vspace{-0.2em}
-%{\scriptsize \textcolor{orange!85!black}{\textbf{\(tq\gamma\)}}}
-
-\end{minipage}
-\hfill
-\begin{minipage}{0.48\linewidth}
-\centering
-\begin{tikzpicture}[scale=0.43, transform shape]
-\begin{feynman}
-				\vertex (muin)  at (-2.5,  1.95) {\(\mu^{+}\)};
-				\vertex (muout) at ( 2.5,  1.95) {\(\mu^{+}\)};
-				\vertex (qin)   at (-2.5, -1.95) {\(q\)};
-				\vertex (tout)  at ( 2.5, -1.95) {\(t\)};
-				
-				\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0, 0.90) {};
-				\vertex [dot, fill=black, minimum size=8.5pt] (v2) at (0,-0.35) {};
-				
-				\diagram*{
-					(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
-					-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
-					
-					(v1)    -- [boson, edge label=\(Z^{\ast}\), line width=1.0pt] (v2),
-					
-					(qin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
-					-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
-				};
-\end{feynman}
-\node[font=\large\bfseries, text=blue!80!black] at (0.0,-0.95) {\(tqZ\)};
-
-\end{tikzpicture}
-		
-%\vspace{-0.2em}
-%{\scriptsize \textcolor{blue!80!black}{\textbf{\(tqZ\)}}}
-
-\end{minipage}
-	
-\vspace{0.5em}
-	
-\justifying\scriptsize
-Representative process: \(\mu^{+} q \to \mu^{+} t\), with \(q=u,c\).
-Neutral-current exchange probes anomalous \(tq\gamma\) and \(tqZ\) couplings.
-\end{minipage}
-			
-\end{column}
-\end{columns}
-
-\begin{center}
-\setlength{\fboxsep}{6pt}
-\fcolorbox{red!50!black}{red!10}{%
-\parbox{0.88\linewidth}{%
-\justifying\small
-Improved sensitivity relative to the LHeC is expected at \LHCmu{}, but quantitative limits remain channel-dependent and require realistic event selections, detector modelling, and systematic-uncertainty estimates.
-}%
-}
-\end{center}
-
-%------------------------------------------------
-% HELP4CERN logo overlay
-%------------------------------------------------
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
-at (current page.north east)
-{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-
-\end{frame}
-% --------------------------------------------------------------------------
 
 
 
@@ -1715,6 +1638,7 @@ at (current page.north east)
 {\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}	
 
+
 \end{frame}
 
 
@@ -1885,7 +1809,265 @@ at (current page.north east)
 % --------------------------------------------------------------------------
 
 
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 15 
+% --------------------------------------------------------------------------
+\begin{frame}{Top-FCNC probes at \LHCmu{}: \(tq\gamma\) and \(tqZ\)}
+	
+\begin{columns}[T]
+		
+%================================================
+% Left column: text
+%================================================
+\begin{column}{0.68\textwidth}
+\small
+\begin{itemize}\itemsep0.48em
+\justifying
+				
+\item In the Standard Model, top-FCNC transitions are forbidden at tree level and remain highly suppressed at loop level by the GIM mechanism; any observable signal would therefore be a clean indication of physics beyond the Standard Model.
+				
+\item The key rare-top vertices are \(tq\gamma\) and \(tqZ\) with \(q=u,c\), naturally parameterized by anomalous couplings or SMEFT dimension-6 operators.
+				
+\item At \LHCmu{}, the large top sample, harder kinematics, and characteristic \(\mu p\) topology make anomalous single-top and associated production natural benchmarks for converting top statistics into BSM reach.
+				
+\end{itemize}
+\end{column}
+		
+%================================================
+% Right column: diagrams
+%================================================
+\begin{column}{0.47\textwidth}
+\centering
+			
+%-----------------------------
+% Diagram A: tqgamma / tqZ
+%-----------------------------
+%-----------------------------
+% Diagram A: tqgamma and tqZ side by side
+%-----------------------------
+\begin{minipage}{\linewidth}
+\centering
+\begin{center}
+\setlength{\fboxsep}{3pt}
+\fcolorbox{black!40}{yellow!20}{%
+\parbox{0.50\linewidth}{\centering\scriptsize\textbf{Top-FCNC at \LHCmu{}}}%
+}
+\end{center}
+\vspace{-0.35em}
+				
+\begin{minipage}{0.48\linewidth}
+\centering
+\begin{tikzpicture}[scale=0.45, transform shape]
+\begin{feynman}
+							\vertex (muin)  at (-2.5,  1.95) {\(\mu^{+}\)};
+							\vertex (muout) at ( 2.5,  1.95) {\(\mu^{+}\)};
+							\vertex (qin)   at (-2.5, -1.95) {\(q\)};
+							\vertex (tout)  at ( 2.5, -1.95) {\(t\)};
+							
+							\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0, 0.90) {};
+							\vertex [dot, fill=black, minimum size=8.5pt] (v2) at (0,-0.35) {};
+							
+							\diagram*{
+								(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
+								-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
+								
+								(v1)    -- [boson, edge label=\(\gamma^{\ast}\), line width=1.0pt] (v2),
+								
+								(qin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
+								-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
+							};
+\end{feynman}
+						\node[font=\large\bfseries,text=orange!85!black] at (0.0,-0.95) {\(tq\gamma\)};
+\end{tikzpicture}
+					
+%\vspace{-0.2em}
+%{\scriptsize \textcolor{orange!85!black}{\textbf{\(tq\gamma\)}}}
+					
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\begin{tikzpicture}[scale=0.43, transform shape]
+\begin{feynman}
+							\vertex (muin)  at (-2.5,  1.95) {\(\mu^{+}\)};
+							\vertex (muout) at ( 2.5,  1.95) {\(\mu^{+}\)};
+							\vertex (qin)   at (-2.5, -1.95) {\(q\)};
+							\vertex (tout)  at ( 2.5, -1.95) {\(t\)};
+							
+							\vertex [dot, fill=green!60!black, minimum size=5pt] (v1) at (0, 0.90) {};
+							\vertex [dot, fill=black, minimum size=8.5pt] (v2) at (0,-0.35) {};
+							
+							\diagram*{
+								(muin)  -- [anti fermion, draw=green!60!black, line width=1.0pt] (v1)
+								-- [anti fermion, draw=green!60!black, line width=1.0pt] (muout),
+								
+								(v1)    -- [boson, edge label=\(Z^{\ast}\), line width=1.0pt] (v2),
+								
+								(qin)   -- [fermion, draw=green!60!black, line width=1.0pt] (v2)
+								-- [fermion, draw=green!60!black, line width=1.0pt] (tout),
+							};
+\end{feynman}
+						\node[font=\large\bfseries, text=blue!80!black] at (0.0,-0.95) {\(tqZ\)};
+						
+\end{tikzpicture}
+					
+%\vspace{-0.2em}
+%{\scriptsize \textcolor{blue!80!black}{\textbf{\(tqZ\)}}}
+					
+\end{minipage}
+				
+\vspace{0.5em}
+				
+\justifying\scriptsize
+Representative process: \(\mu^{+} q \to \mu^{+} t\), with \(q=u,c\).
+Neutral-current exchange probes anomalous \(tq\gamma\) and \(tqZ\) couplings.
+\end{minipage}
+			
+\end{column}
+\end{columns}
+	
+\begin{center}
+\setlength{\fboxsep}{6pt}
+\fcolorbox{red!50!black}{red!10}{%
+\parbox{0.88\linewidth}{%
+\justifying\small
+Improved sensitivity relative to the LHeC is expected at \LHCmu{}, but quantitative limits remain channel-dependent and require realistic event selections, detector modelling, and systematic-uncertainty estimates.
+}%
+}
+\end{center}
+	
+%------------------------------------------------
+% HELP4CERN logo overlay
+%------------------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+	
+\end{frame}
+% --------------------------------------------------------------------------
+
+
+% --------------------------------------------------------------------------
+% Extra slide: current a_tau and d_tau context
+% --------------------------------------------------------------------------
+\begin{frame}{Current \(a_\tau,d_\tau\) context: why the benchmark matters}
+	
+	\begin{columns}[T]%[T,onlytextwidth]
+		
+		%------------------------------------------------
+		\begin{column}{0.36\textwidth}
+			\vspace{-0.2em}
+			\centering
+			\includegraphics[width=0.8\linewidth]{y_tau_tau.jpg}
+			
+			\vspace{0.4em}
+			
+			\begin{block}{Benchmark topology}
+				\scriptsize
+				\justifying
+				Photon-induced
+				\[
+				\gamma\gamma\to\tau^+\tau^-
+				\]
+				directly probes the \(\gamma\tau\tau\) vertex.  It is therefore a clean
+				channel for anomalous magnetic and electric dipole moments,
+				\(a_\tau\) and \(d_\tau\).
+			\end{block}
+
+			
+		\end{column}
+		
+		%------------------------------------------------
+		\begin{column}{0.63\textwidth}
+			\vspace{-0.2em}
+			
+			\begin{block}{Current 95\% CL constraints on \(a_\tau\)}
+				\tiny
+				\centering
+				\begin{tabular}{l l c c}
+					\hline
+					Experiment & Channel & Dataset & \(a_\tau\) interval \\
+					\hline
+					DELPHI & \(e^+e^-\to e^+e^-\tau^+\tau^-\) &
+					\(650~{\rm pb}^{-1}\) &
+					\([-0.052,\,0.013]\) \\
+					
+					ATLAS 2022 & PbPb UPC &
+					\(1.44~{\rm nb}^{-1}\) &
+					\([-0.057,\,0.024]\) \\
+					
+					CMS 2022 & PbPb UPC &
+					\(1.34~{\rm nb}^{-1}\) &
+					\([-0.030,\,0.017]\) \\
+					
+					\textcolor{magenta}{CMS 2024} &
+					\textcolor{magenta}{\(pp\) exclusive \(\gamma\gamma\to\tau\tau\)} &
+					\textcolor{magenta}{\(138~{\rm fb}^{-1}\)} &
+					\textcolor{magenta}{\([-0.0022,\,0.0041]\)} \\
+					
+					\textcolor{magenta}{ATLAS 2025} &
+					\textcolor{magenta}{\(pp\) high-mass \(\tau\tau\)} &
+					\textcolor{magenta}{\(140~{\rm fb}^{-1}\)} &
+					\textcolor{magenta}{\([-0.0024,\,0.0047]\)} \\
+					\hline
+				\end{tabular}
+			\end{block}
+			
+			\vspace{0.25em}
+			
+			\begin{itemize}
+				\scriptsize
+				\justifying
+				\item The SM expectation is
+				\[
+				a_\tau^{\rm SM}\simeq 117721\times10^{-8}\simeq1.18\times10^{-3}.
+				\]
+				
+				\item CMS 2024 also reports
+				\[
+				a_\tau=0.0009^{+0.0032}_{-0.0031},
+				\qquad
+				|d_\tau|<2.9\times10^{-17}\,e\,{\rm cm}
+				\quad (95\%~{\rm CL}).
+				\]
+				
+				\item Present LHC constraints are therefore already at the few-\(10^{-3}\)
+				level for \(a_\tau\).  The LH\(\mu\)C motivation is a much larger
+				high-mass exclusive \(\tau^+\tau^-\) sample.
+			\end{itemize}
+			
+			\vspace{0.2em}
+			
+			
+		\end{column}
+		
+	\end{columns}
+	
+	%----------------------------------------
+	% HELP4CERN logo
+	%----------------------------------------
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+		at (current page.north east)
+		{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+	
+\end{frame}
+
+
+
+
 \end{document}
+
+
+
+
 
 
 

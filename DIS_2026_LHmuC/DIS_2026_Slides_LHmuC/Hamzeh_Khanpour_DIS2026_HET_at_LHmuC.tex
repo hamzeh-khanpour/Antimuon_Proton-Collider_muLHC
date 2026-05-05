@@ -3,6 +3,7 @@
 %   DIS 2026 talk
 %   Perspectives for HET physics studies at a muon-hadron collider at CERN
 
+
 \documentclass[aspectratio=1610,english]{beamer}
 
 \usepackage{babel}
@@ -743,7 +744,9 @@ at (current page.north east)
 % Electroweak programme and EFT opportunities
 % --------------------------------------------------------------------------
 \begin{frame}{Electroweak programme and EFT opportunities}
-	
+
+\vspace{-0.5cm}
+
 \begin{columns}[T]%[T,onlytextwidth]
 		
 %========================================
@@ -760,6 +763,10 @@ at (current page.north east)
 \item The larger kinematic span relative to the LHeC is expected to strengthen sensitivity to key electroweak observables, in particular $m_W$ and $\sin^2\theta_W$, while also extending the SMEFT lever arm.
 					
 \item Overall, LH$\mu$C is expected to extend the precision electroweak reach beyond that projected for the LHeC.
+{\scriptsize
+\setlength{\fboxsep}{4pt}%
+\colorbox{green!20}{\href{https://agenda.infn.it/event/47074/contributions/289190/}{\strut HET@LHeC: Paul Newman}}%
+}
 \end{itemize}
 \end{alertblock}
 			
@@ -1229,7 +1236,7 @@ In favourable NC [$p\mu^+ \to d\,\mu^+$] benchmark channels,
 \(1\)-\(3~\mathrm{TeV}\), approaching an order-of-magnitude improvement over LHC bounds in the on-shell regime 
 [{\centering
 \tiny
-{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut Phys. Rev. D 103 (2021) 116009.}}}]
+{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut Phys. Rev. D 103 (2021) 116009}}}]. 
 
 
 \item Color-octet muon \(\mu_8\) / leptogluon: 
@@ -1388,7 +1395,8 @@ at (current page.north east)
 \justifying
 \item The long-term perspective goes well beyond the 5.3 TeV baseline.
 \item The FCC-hh era is explicitly connected to a future high-energy $\mu p$ option, turning the current \LHCmu{} concept into a stepping stone toward even more powerful HET and BSM programmes.
-\item In particular, a future FCC-$\mu h$ machine would extend:
+\item In particular, a future FCC-$\mu h$ machine, with representative 
+\(\sqrt{s_{\mu p}}\sim 15\) and \(30~\mathrm{TeV}\) configurations would extend:
 \begin{itemize}
 \justifying
 \item Higgs statistics and coupling reach,
@@ -1398,14 +1406,14 @@ at (current page.north east)
 \end{itemize}
 \end{itemize}
 
-\begin{block}{HET@\LHCmu{}}
+\begin{exampleblock}{HET@\LHCmu{}}
 \small
 \justifying
 (1) \LHCmu{} is a serious HET factory; \\
 (2) the top sector is one of its clearest near-term strengths; \\
 (3) Higgs, EW, EFT, and $\gamma\gamma$ studies are all strongly motivated; \\
 (4) the concept also provides a natural bridge toward FCC-era $\mu p$ physics.
-\end{block}
+\end{exampleblock}
 
 \end{column}
 \end{columns}
@@ -2267,7 +2275,114 @@ at (current page.north east)
 
 
 
+
+% --------------------------------------------------------------------------
+% Backup slide: technical concept behind LHmuC
+% --------------------------------------------------------------------------
+\begin{frame}{Technical concept behind the LH$\mu$C proposal}
+	
+\begin{columns}[T]%[T,onlytextwidth]
+		
+%========================================
+% Left column: layout figure
+%========================================
+\begin{column}{0.5\textwidth}
+\centering
+\includegraphics[width=\linewidth]{LHmuC_ring.jpg}
+			
+\vspace{0.3em}
+\scriptsize
+\centering
+Conceptual layout of the proposed LH$\mu$C configuration.
+\end{column}
+		
+%========================================
+% Right column: technical message
+%========================================
+\begin{column}{0.55\textwidth}
+\small
+\begin{itemize}\itemsep0.45em
+\justifying
+				
+\item The LH$\mu$C proposal aims to re-use key elements of the
+LHeC infrastructure to make high-energy, high-luminosity
+\(\mu^+ p\) collisions. 
+				
+\item The basic ingredients are:
+\begin{itemize}
+\small
+\justifying
+\item an ultra-cold positive-muon source,
+\item acceleration / booster stages for the \(\mu^+\) beam,
+\item a dedicated \(\mu^+\) storage ring. 
+\end{itemize}
+{\scriptsize
+\setlength{\fboxsep}{4pt}%
+\colorbox{blue!20}{\href{https://agenda.infn.it/event/47074/contributions/289190/}{\strut See talk by Krzysztof Piotrzkowski}}%
+}				
+\end{itemize}
+			
+	
+\end{column}
+		
+\end{columns}
+	
+%----------------------------------------
+% HELP4CERN logo
+%----------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+
+
+\begin{exampleblock}{References}
+\scriptsize
+\justifying
+
+(1) \(\mu\)TRISTAN: Y.~Hamada \textit{et al.},
+\emph{Prog.\ Theor.\ Exp.\ Phys.} \textbf{2022} (2022) 053B02. 
+	
+\vspace{0.25em}
+
+(2) \(\mu\)LHC: Antimuon Ring and High Luminosity-LHC-Based \(\mu^+p\) Collider: D.~Akturk \textit{et al.},
+\emph{Prog.\ Theor.\ Exp.\ Phys.} \textbf{2026} (2026) 033C04.
+
+\vspace{0.25em}
+
+(3) HELP4CERN White Paper (in preparation)
+
+\end{exampleblock}
+
+	
+\end{frame}
+
+
+
+
+
+
+
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

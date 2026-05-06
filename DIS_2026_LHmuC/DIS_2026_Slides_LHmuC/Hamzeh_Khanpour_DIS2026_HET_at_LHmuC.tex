@@ -1229,170 +1229,200 @@ at (current page.north east)
 
 
 % --------------------------------------------------------------------------
-% Slide 17
+% Slide: RPV squarks
 % --------------------------------------------------------------------------
-\begin{frame}{Representative BSM benchmarks: RPV squarks and color-octet muons}
+\begin{frame}{RPV squarks at \texorpdfstring{\LHCmu{}}{LHmuC}: resonant \(\mu q\) production}
 	
 \begin{columns}[T]%[T,onlytextwidth]
 		
 %================================================
-% Left column: benchmark results
+% Left column
 %================================================
 \begin{column}{0.60\textwidth}
-\footnotesize
-\begin{itemize}\itemsep0.42em
+			
+\vspace{-0.5em}
+			
+\begin{itemize}
+\scriptsize
 \justifying
-
-\item RPV SUSY: 
-\(LQD\)-type operators can give resonant squark production in \(\mu q\) scattering. 
-In favourable NC [$p\mu^+ \to d\,\mu^+$] benchmark channels, 
-\(\lambda'_{2j1}\sim 0.01\text{-}0.02\) can be tested for squark masses of 
-\(1\)-\(3~\mathrm{TeV}\), approaching an order-of-magnitude improvement over LHC bounds in the on-shell regime 
+\item R-parity-violating SUSY allows lepton-quark-squark couplings.  The relevant superpotential terms are
+				\[
+				W_{\text{RPV}} =\epsilon_i L_i\cdot H_u + \frac{1}{2}\lambda_{ijk}L_i\cdot L_j \bar{E}_k + \lambda'_{ijk} L_i\cdot Q_j \bar{D}_k + \frac{1}{2}\lambda''_{ijk} \bar{U}_i \bar{D}_j \bar{D}_k,
+				\]
+\item The LH\(\mu\)C benchmark focuses on the \(LQD\)-type term
+				\[
+				W_{\rm RPV}\supset \lambda'_{ijk}L_iQ_j\bar D_k ,
+				\]
+where \(i=2\) selects the muon generation.
+\end{itemize}
+			
+\vspace{0.15em}
+			
+\begin{itemize}
+\scriptsize
+\justifying
+\item The neutral-current benchmark is $p\mu^+ \to d\,\mu^+$, mediated by a resonant squark in the \(\mu q\) channel.
+				
+\item The signal is selected with one reconstructed muon and at least one jet; high jet-\(p_T\)-sum thresholds suppress the DIS-like SM background.
+				
+\item In favourable neutral-current channels, \(\lambda'_{2j1}\sim0.01\text{-}0.02\)
+can be tested for \(m_{\tilde q}\sim1\text{-}3~\mathrm{TeV}\).
+				
 [{\centering
 \tiny
-{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut Phys. Rev. D 103 (2021) 116009}}}]. 
-
-
-\item Color-octet muon \(\mu_8\) / leptogluon: 
-the direct \(\mu g\) initial state enables resonant single production,
-\[
-\mu g \to \mu_8 \to \mu g ,
-\]
-whereas \(pp\) searches mainly rely on pair production [{\centering
-\tiny
-{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut2506.15445 [physics.acc-ph]}}}].
-
+{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut Phys. Rev. D 103 (2021) 116009.}}}]
 \end{itemize}
-
-
-
-
-\vspace{0.10em}
-
-
-
-%------------------------------------------------
-% Yellow benchmark reach box
-%------------------------------------------------
-\begin{center}
-\setlength{\fboxsep}{4pt}
-\fcolorbox{black!35}{yellow!15}{%
-\parbox{0.70\linewidth}{%
-\centering\scriptsize
-\textbf{Representative \(5\sigma\) reach for \(\mu_8\)}\\[0.45ex]
-\begin{tabular}{lc}
-HL-LHC & \(\sim 2.3~\mathrm{TeV}\) \\
-\LHCmu{}, \(E_\mu=500~\mathrm{GeV}\) & \(\sim 3.0~\mathrm{TeV}\) \\
-\LHCmu{}, \(E_\mu=1~\mathrm{TeV}\) & \(\sim 4.2~\mathrm{TeV}\)
-\end{tabular}
-}%
-}
-\end{center}
-
-%\vspace{0.10em}
-
-%------------------------------------------------
-% Red caution box
-%------------------------------------------------
-\begin{center}
-\setlength{\fboxsep}{4pt}
-\fcolorbox{red!50!black}{red!8}{%
-\parbox{0.90\linewidth}{%
-\justifying\scriptsize
-These are representative benchmark studies. Final reach requires channel-specific selections, detector/MDI modelling, and systematic-uncertainty estimates.
-}%
-}
-\end{center}
-
+			
+			
 \end{column}
-
-
-
+		
+		
 %================================================
-% Right column: figures
+% Right column
 %================================================
-\begin{column}{0.50\textwidth}
-
-\vspace{-0.5em}
+\begin{column}{0.55\textwidth}
+			
+\vspace{-0.9em}
+			
 \centering
-
-%-----------------------------
-% RPV figure
-%-----------------------------
-%\begin{center}
-%\setlength{\fboxsep}{3pt}
-%\fcolorbox{black!40}{yellow!20}{%
-%\parbox{0.60\linewidth}{\centering\scriptsize\textbf{RPV %squark coupling reach}}%
-%}
-%\end{center}
-%\vspace{-0.35em}
-
-
-\includegraphics[
-width=0.99\linewidth,
-height=0.40\textheight,
-keepaspectratio
-]{RPV_1.jpg}
-
-
-
-\vspace{0.2em}
-
-%-----------------------------
-% mu8 figure
-%-----------------------------
-%\begin{center}
-%\setlength{\fboxsep}{3pt}
-%\fcolorbox{black!40}{yellow!20}{%
-%\parbox{0.60\linewidth}{\centering\scriptsize\textbf{Color-octet muon \(\mu_8\) reach}}%
-%}
-%\end{center}
-
-\vspace{-0.35em}
-
-\includegraphics[
-width=0.99\linewidth,
-height=0.43\textheight,
-keepaspectratio
-]{mu8.jpg}
-
-%\vspace{0.05em}
-
-%\justifying\scriptsize
-%The key advantage is the resonant \(\mu g\) channel, which is absent in \(pp\) pair-production searches.
-
+			
+\includegraphics[width=0.95\linewidth]{RPV_1.jpg}
+			
+			%\vspace{-0.5em}
+			%{\tiny
+				%NC \(p\mu^+\to d\mu^+\), \(E_\mu=500~\mathrm{GeV}\), %\(250~\mathrm{fb}^{-1}\).
+				%}
+			
+\vspace{0.1em}
+			
+\includegraphics[width=0.95\linewidth]{RPV_2.jpg}
+			
+			%\vspace{-0.5em}
+			%{\tiny
+				%NC \(p\mu^+\to d\mu^+\), \(E_\mu=1~\mathrm{TeV}\), %\(500~\mathrm{fb}^{-1}\).
+				%}
+			
+			%\vspace{0.4em}
+			
+			%\begin{exampleblock}{Reading the curves}
+			%\tiny
+			%\justifying
+			%The curves show 95\% CL limits from \(S=N_s/\sqrt{N_b}=2\).
+			%Lower \(\lambda'\) means stronger reach; red curves show LHC/HL-LHC reference bounds.  Higher jet-\(p_T\)-sum cuts improve the heavy-squark reach.
+			%\end{exampleblock}
+			
 \end{column}
-
+	
 \end{columns}
-
-
-%------------------------------------------------
-% HELP4CERN logo overlay
-%------------------------------------------------
+	
+%----------------------------------------
+% HELP4CERN logo
+%----------------------------------------
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
 at (current page.north east)
 {\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
 \end{tikzpicture}
-
-\vspace{0.15em}
-	
-%------------------------------------------------
-% Reference box
-%------------------------------------------------
-%\begin{center}
-%\setlength{\fboxsep}{4pt}
-%\colorbox{green!15}{%
-%\parbox{0.90\linewidth}{%
-%\scriptsize
-%K. Cheung and Z. S. Wang, \textit{Physics potential of a muon-proton collider},
-%Phys.\ Rev.\ D~103 (2021) 116009; HELP4CERN white-paper draft benchmark studies.
-%}%
-%}
-%\end{center}
 	
 \end{frame}
+
+
+
+
 % --------------------------------------------------------------------------
+% Slide: color-octet muons / leptogluons
+% --------------------------------------------------------------------------
+\begin{frame}{Color-octet muons at \texorpdfstring{\LHCmu{}}{LHmuC}: resonant \(\mu g\) production}
+	
+\vspace{-0.25em}
+	
+\begin{columns}[T]%[T,onlytextwidth]
+	
+%================================================
+% Left column
+%================================================
+\begin{column}{0.65\textwidth}
+			
+\begin{itemize}
+\scriptsize
+\justifying
+\item In composite-lepton scenarios, the SM muon can have a color-octet partner
+\(\mu_8\), also called a leptogluon.  The effective interaction is 
+[{\centering
+\tiny
+{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut2506.15445 [physics.acc-ph]}}}]
+				\[
+				\mathcal{L}
+				=
+				\frac{1}{2\Lambda}
+				\left\{
+				\bar{\ell}^{\alpha}_{8}\,
+				g_s G^{\alpha}_{\mu\nu}\,
+				\sigma^{\mu\nu}
+				\left(\eta_L \ell_L+\eta_R \ell_R\right)
+				+{\rm h.c.}
+				\right\}.
+				\]
+Here \(\ell^\alpha_8\) is the color-octet lepton, \(G^\alpha_{\mu\nu}\) is the gluon field strength, \(\Lambda\) is the compositeness scale, and
+\(\eta_{L,R}\) are chiral factors.
+\end{itemize}
+			
+\vspace{0.15em}
+			
+\begin{itemize}
+\scriptsize
+\justifying
+\item The benchmark assumes \(\Lambda=m_{\mu_8}\) and targets the resonant
+single-production channel  $\mu g\to\mu_8\to\mu g$.
+				
+\item Signal topology: $\mu p\to \mu_8 X\to \mu j X$, with one high-\(p_T\) muon and one high-\(p_T\) jet.
+				
+\item Dominant background: $\mu p\to \mu j X$, from SM neutral-current DIS-like scattering.
+	
+\item The key advantage is the direct \(\mu g\) initial state; \(pp\) searches mainly rely on QCD pair production.
+\end{itemize}
+			
+			
+\end{column}
+		
+%================================================
+% Right column
+%================================================
+\begin{column}{0.50\textwidth}
+\centering
+			
+\includegraphics[width=0.95\linewidth]{mu8.jpg}
+			
+\vspace{0.25em}
+			
+\begin{exampleblock}{Representative \(5\sigma\) reach}
+\scriptsize
+\centering
+\begin{tabular}{lc}
+\hline
+Setup & \(m_{\mu_8}\) reach \\
+\hline
+HL-LHC, \(1~{\rm ab}^{-1}\) & \(\sim 2.3~{\rm TeV}\) \\
+\LHCmu{}, \(E_\mu=500~{\rm GeV}\), \(250~{\rm fb}^{-1}\) & \(\sim 3.0~{\rm TeV}\) \\
+\LHCmu{}, \(E_\mu=1~{\rm TeV}\), \(500~{\rm fb}^{-1}\) & \(\sim 4.2~{\rm TeV}\) \\
+\hline
+\end{tabular}
+\end{exampleblock}
+			
+\end{column}
+		
+\end{columns}
+	
+%----------------------------------------
+% HELP4CERN logo
+%----------------------------------------
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+at (current page.north east)
+{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+\end{tikzpicture}
+	
+\end{frame}
 
 
 
@@ -2090,207 +2120,6 @@ at (current page.north east)
 
 
 % --------------------------------------------------------------------------
-% Slide: RPV squarks
-% --------------------------------------------------------------------------
-\begin{frame}{RPV squarks at \texorpdfstring{\LHCmu{}}{LHmuC}: resonant \(\mu q\) production}
-	
-\begin{columns}[T]%[T,onlytextwidth]
-		
-%================================================
-% Left column
-%================================================
-\begin{column}{0.60\textwidth}
-
-\vspace{-0.5em}
-			
-\begin{itemize}
-\scriptsize
-\justifying
-\item R-parity-violating SUSY allows lepton-quark-squark couplings.  The relevant superpotential terms are
-				\[
-    W_{\text{RPV}} =\epsilon_i L_i\cdot H_u + \frac{1}{2}\lambda_{ijk}L_i\cdot L_j \bar{E}_k + \lambda'_{ijk} L_i\cdot Q_j \bar{D}_k + \frac{1}{2}\lambda''_{ijk} \bar{U}_i \bar{D}_j \bar{D}_k,
-				\]
-\item The LH\(\mu\)C benchmark focuses on the \(LQD\)-type term
-				\[
-				W_{\rm RPV}\supset \lambda'_{ijk}L_iQ_j\bar D_k ,
-				\]
-where \(i=2\) selects the muon generation.
-\end{itemize}
-			
-\vspace{0.15em}
-			
-\begin{itemize}
-\scriptsize
-\justifying
-\item The neutral-current benchmark is $p\mu^+ \to d\,\mu^+$, mediated by a resonant squark in the \(\mu q\) channel.
-				
-\item The signal is selected with one reconstructed muon and at least one jet; high jet-\(p_T\)-sum thresholds suppress the DIS-like SM background.
-			
-\item In favourable neutral-current channels, \(\lambda'_{2j1}\sim0.01\text{-}0.02\)
-can be tested for \(m_{\tilde q}\sim1\text{-}3~\mathrm{TeV}\).
-
-[{\centering
-\tiny
-{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut Phys. Rev. D 103 (2021) 116009.}}}]
-\end{itemize}
-
-
-\end{column}
-
-
-%================================================
-% Right column
-%================================================
-\begin{column}{0.55\textwidth}
-	
-\vspace{-0.9em}
-
-\centering
-			
-\includegraphics[width=0.95\linewidth]{RPV_1.jpg}
-		
-%\vspace{-0.5em}
-%{\tiny
-%NC \(p\mu^+\to d\mu^+\), \(E_\mu=500~\mathrm{GeV}\), %\(250~\mathrm{fb}^{-1}\).
-%}
-			
-\vspace{0.1em}
-			
-\includegraphics[width=0.95\linewidth]{RPV_2.jpg}
-		
-%\vspace{-0.5em}
-%{\tiny
-%NC \(p\mu^+\to d\mu^+\), \(E_\mu=1~\mathrm{TeV}\), %\(500~\mathrm{fb}^{-1}\).
-%}
-			
-%\vspace{0.4em}
-			
-%\begin{exampleblock}{Reading the curves}
-%\tiny
-%\justifying
-%The curves show 95\% CL limits from \(S=N_s/\sqrt{N_b}=2\).
-%Lower \(\lambda'\) means stronger reach; red curves show LHC/HL-LHC reference bounds.  Higher jet-\(p_T\)-sum cuts improve the heavy-squark reach.
-%\end{exampleblock}
-			
-\end{column}
-		
-\end{columns}
-	
-%----------------------------------------
-% HELP4CERN logo
-%----------------------------------------
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
-at (current page.north east)
-{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-	
-\end{frame}
-
-
-
-
-% --------------------------------------------------------------------------
-% Slide: color-octet muons / leptogluons
-% --------------------------------------------------------------------------
-\begin{frame}{Color-octet muons at \texorpdfstring{\LHCmu{}}{LHmuC}: resonant \(\mu g\) production}
-	
-\vspace{-0.25em}
-	
-\begin{columns}[T]%[T,onlytextwidth]
-		
-%================================================
-% Left column
-%================================================
-\begin{column}{0.65\textwidth}
-			
-\begin{itemize}
-\scriptsize
-\justifying
-\item In composite-lepton scenarios, the SM muon can have a color-octet partner
-\(\mu_8\), also called a leptogluon.  The effective interaction is 
-[{\centering
-	\tiny
-	{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut2506.15445 [physics.acc-ph]}}}]
-				\[
-				\mathcal{L}
-				=
-				\frac{1}{2\Lambda}
-				\left\{
-				\bar{\ell}^{\alpha}_{8}\,
-				g_s G^{\alpha}_{\mu\nu}\,
-				\sigma^{\mu\nu}
-				\left(\eta_L \ell_L+\eta_R \ell_R\right)
-				+{\rm h.c.}
-				\right\}.
-				\]
-Here \(\ell^\alpha_8\) is the color-octet lepton, \(G^\alpha_{\mu\nu}\) is the
-gluon field strength, \(\Lambda\) is the compositeness scale, and
-\(\eta_{L,R}\) are chiral factors.
-\end{itemize}
-
-\vspace{0.15em}
-
-\begin{itemize}
-\scriptsize
-\justifying
-\item The benchmark assumes \(\Lambda=m_{\mu_8}\) and targets the resonant
-single-production channel  $\mu g\to\mu_8\to\mu g$.
-
-\item Signal topology: $\mu p\to \mu_8 X\to \mu j X$, with one high-\(p_T\) muon and one high-\(p_T\) jet.
-
-\item Dominant background: $\mu p\to \mu j X$, from SM neutral-current DIS-like scattering.
-
-\item The key advantage is the direct \(\mu g\) initial state; \(pp\) searches mainly rely on QCD pair production.
-\end{itemize}
-
-
-\end{column}
-
-%================================================
-% Right column
-%================================================
-\begin{column}{0.50\textwidth}
-\centering
-
-\includegraphics[width=0.95\linewidth]{mu8.jpg}
-
-\vspace{0.25em}
-
-\begin{exampleblock}{Representative \(5\sigma\) reach}
-\scriptsize
-\centering
-\begin{tabular}{lc}
-\hline
-Setup & \(m_{\mu_8}\) reach \\
-\hline
-HL-LHC, \(1~{\rm ab}^{-1}\) & \(\sim 2.3~{\rm TeV}\) \\
-\LHCmu{}, \(E_\mu=500~{\rm GeV}\), \(250~{\rm fb}^{-1}\) & \(\sim 3.0~{\rm TeV}\) \\
-\LHCmu{}, \(E_\mu=1~{\rm TeV}\), \(500~{\rm fb}^{-1}\) & \(\sim 4.2~{\rm TeV}\) \\
-\hline
-\end{tabular}
-\end{exampleblock}
-
-\end{column}
-
-\end{columns}
-
-%----------------------------------------
-% HELP4CERN logo
-%----------------------------------------
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
-at (current page.north east)
-{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
-\end{tikzpicture}
-	
-\end{frame}
-
-
-
-
-
-% --------------------------------------------------------------------------
 % Backup slide: technical concept behind LHmuC
 % --------------------------------------------------------------------------
 \begin{frame}{Technical concept behind the LH$\mu$C proposal}
@@ -2500,6 +2329,174 @@ at (current page.north east)
 
 
 
+
+
+
+% --------------------------------------------------------------------------
+% Slide 17
+% --------------------------------------------------------------------------
+\begin{frame}{Representative BSM benchmarks: RPV squarks and color-octet muons}
+	
+	\begin{columns}[T]%[T,onlytextwidth]
+		
+		%================================================
+		% Left column: benchmark results
+		%================================================
+		\begin{column}{0.60\textwidth}
+			\footnotesize
+			\begin{itemize}\itemsep0.42em
+				\justifying
+				
+				\item RPV SUSY: 
+				\(LQD\)-type operators can give resonant squark production in \(\mu q\) scattering. 
+				In favourable NC [$p\mu^+ \to d\,\mu^+$] benchmark channels, 
+				\(\lambda'_{2j1}\sim 0.01\text{-}0.02\) can be tested for squark masses of 
+				\(1\)-\(3~\mathrm{TeV}\), approaching an order-of-magnitude improvement over LHC bounds in the on-shell regime 
+				[{\centering
+					\tiny
+					{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut Phys. Rev. D 103 (2021) 116009}}}]. 
+				
+				
+				\item Color-octet muon \(\mu_8\) / leptogluon: 
+				the direct \(\mu g\) initial state enables resonant single production,
+				\[
+				\mu g \to \mu_8 \to \mu g ,
+				\]
+				whereas \(pp\) searches mainly rely on pair production [{\centering
+					\tiny
+					{\setlength{\fboxsep}{4pt}\colorbox{magenta!10}{\strut2506.15445 [physics.acc-ph]}}}].
+				
+			\end{itemize}
+			
+			
+			
+			
+			\vspace{0.10em}
+			
+			
+			
+			%------------------------------------------------
+			% Yellow benchmark reach box
+			%------------------------------------------------
+			\begin{center}
+				\setlength{\fboxsep}{4pt}
+				\fcolorbox{black!35}{yellow!15}{%
+					\parbox{0.70\linewidth}{%
+						\centering\scriptsize
+						\textbf{Representative \(5\sigma\) reach for \(\mu_8\)}\\[0.45ex]
+						\begin{tabular}{lc}
+							HL-LHC & \(\sim 2.3~\mathrm{TeV}\) \\
+							\LHCmu{}, \(E_\mu=500~\mathrm{GeV}\) & \(\sim 3.0~\mathrm{TeV}\) \\
+							\LHCmu{}, \(E_\mu=1~\mathrm{TeV}\) & \(\sim 4.2~\mathrm{TeV}\)
+						\end{tabular}
+					}%
+				}
+			\end{center}
+			
+			%\vspace{0.10em}
+			
+			%------------------------------------------------
+			% Red caution box
+			%------------------------------------------------
+			\begin{center}
+				\setlength{\fboxsep}{4pt}
+				\fcolorbox{red!50!black}{red!8}{%
+					\parbox{0.90\linewidth}{%
+						\justifying\scriptsize
+						These are representative benchmark studies. Final reach requires channel-specific selections, detector/MDI modelling, and systematic-uncertainty estimates.
+					}%
+				}
+			\end{center}
+			
+		\end{column}
+		
+		
+		
+		%================================================
+		% Right column: figures
+		%================================================
+		\begin{column}{0.50\textwidth}
+			
+			\vspace{-0.5em}
+			\centering
+			
+			%-----------------------------
+			% RPV figure
+			%-----------------------------
+			%\begin{center}
+			%\setlength{\fboxsep}{3pt}
+			%\fcolorbox{black!40}{yellow!20}{%
+				%\parbox{0.60\linewidth}{\centering\scriptsize\textbf{RPV %squark coupling reach}}%
+				%}
+			%\end{center}
+			%\vspace{-0.35em}
+			
+			
+			\includegraphics[
+			width=0.99\linewidth,
+			height=0.40\textheight,
+			keepaspectratio
+			]{RPV_1.jpg}
+			
+			
+			
+			\vspace{0.2em}
+			
+			%-----------------------------
+			% mu8 figure
+			%-----------------------------
+			%\begin{center}
+			%\setlength{\fboxsep}{3pt}
+			%\fcolorbox{black!40}{yellow!20}{%
+				%\parbox{0.60\linewidth}{\centering\scriptsize\textbf{Color-octet muon \(\mu_8\) reach}}%
+				%}
+			%\end{center}
+			
+			\vspace{-0.35em}
+			
+			\includegraphics[
+			width=0.99\linewidth,
+			height=0.43\textheight,
+			keepaspectratio
+			]{mu8.jpg}
+			
+			%\vspace{0.05em}
+			
+			%\justifying\scriptsize
+			%The key advantage is the resonant \(\mu g\) channel, which is absent in \(pp\) pair-production searches.
+			
+		\end{column}
+		
+	\end{columns}
+	
+	
+	%------------------------------------------------
+	% HELP4CERN logo overlay
+	%------------------------------------------------
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+		at (current page.north east)
+		{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+	
+	\vspace{0.15em}
+	
+	%------------------------------------------------
+	% Reference box
+	%------------------------------------------------
+	%\begin{center}
+	%\setlength{\fboxsep}{4pt}
+	%\colorbox{green!15}{%
+		%\parbox{0.90\linewidth}{%
+			%\scriptsize
+			%K. Cheung and Z. S. Wang, \textit{Physics potential of a muon-proton collider},
+			%Phys.\ Rev.\ D~103 (2021) 116009; HELP4CERN white-paper draft benchmark studies.
+			%}%
+		%}
+	%\end{center}
+	
+\end{frame}
+% --------------------------------------------------------------------------
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  18 MAY 2026 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  19 SEP 2026 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2141,9 +2141,17 @@ Package pdftex.def Info: HELP4CERN.jpg  used on input line 2202.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.out' ha
-s not changed.
-(rerunfilecheck)             Checksum: 15F2B02717B870011A61B1D3FA3F4530;1275.
+
+
+Package rerunfilecheck Warning: File `Hamzeh_Khanpour_DIS2026_HET_at_LHmuC.out'
+ has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Hamzeh_Khanpour_DIS2026_HET_at_LHmu
+C.out':
+(rerunfilecheck)             Before: 52C10840815D12AA9B6B272B1A3AF1C1;1281
+(rerunfilecheck)             After:  15F2B02717B870011A61B1D3FA3F4530;1275.
  ) 
 Here is how much of TeX's memory you used:
  31174 strings out of 473190

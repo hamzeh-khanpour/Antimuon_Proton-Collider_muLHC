@@ -1,9 +1,12 @@
+
 % Hamzeh Khanpour
 % Ultra-cold muons for the LHC, AGH University of Krakow, 24--26 September 2026
 % Talk: Two-Photon Physics
 % Rebuilt from the original Ultra-cold-muons_2026_Slides_LHmuC LaTeX project.
 
+
 \documentclass[aspectratio=1610,english]{beamer}
+
 
 \usepackage{babel}
 \usepackage[T1]{fontenc}
@@ -67,7 +70,11 @@
 \institute[AGH]{\color{magenta}\textbf{(on behalf of HELP4CERN Study Group)}}
 \date{{\setlength{\fboxsep}{4pt}\colorbox{cyan!15}{\strut Ultra-cold muons for the LHC, AGH Krakow, 24--26 September 2026}}}
 
+
+
 \begin{document}
+
+
 
 % --------------------------------------------------------------------------
 % Slide 1 -- Adapted from original Ultra-cold-muons title slide
@@ -80,6 +87,8 @@
 \titlepage
 \end{frame}
 
+
+
 % --------------------------------------------------------------------------
 % Slide 2 -- Photon-focused outline
 % --------------------------------------------------------------------------
@@ -91,64 +100,364 @@
 \end{tikzpicture}
 \end{frame}
 
+
+
 \section{LH$\mu$C and the $\gamma\gamma$ opportunity}
+
+
 
 % --------------------------------------------------------------------------
 % Slide 3 -- Adapted from original motivation slide
 % Source: DIS2026 HET deck + yy_lhec introduction
 % --------------------------------------------------------------------------
 \begin{frame}{Why a muon-hadron collider for two-photon physics?}
+
 \begin{itemize}
-\item A muon-hadron collider combines a \textbf{clean lepton-hadron initial state} with a multi-TeV centre-of-mass energy.
+\justifying
+\item A muon-hadron collider combines a clean lepton-hadron initial state with a multi-TeV centre-of-mass energy.
 \item Replacing the electron beam by a muon beam strongly relaxes the synchrotron-radiation limitation, making much higher lepton-beam energies possible.
 \item The $\mu p$ environment remains experimentally cleaner than $pp$ for many exclusive and semi-exclusive final states: negligible pile-up is a central advantage of the lepton-hadron concept.
 \item Both beams radiate photons. Their electromagnetic fields therefore create a high-energy $\gamma\gamma$ collider \emph{inside} the $\mu p$ machine.
 \end{itemize}
-\takehome{LH$\mu$C combines a high-energy photon source from the muon beam with the electromagnetic photon field of the proton, opening a distinctive high-energy $\gamma\gamma$ programme.}
-\sourceline{Physics motivation adapted from the HELP4CERN / DIS2026 decks and the LHeC $\gamma\gamma$ study.}
+
+\begin{alertblock}{A high-energy $\gamma\gamma$ collider!}
+\small
+\justifying
+LH$\mu$C combines a high-energy photon source from the muon beam with the electromagnetic photon field of the proton, opening a distinctive high-energy $\gamma\gamma$ programme.
+\end{alertblock}
+
 \helplogo
+
 \end{frame}
+
+
+
 
 % --------------------------------------------------------------------------
 % Slide 4 -- Adapted from original benchmark working-points slide
 % --------------------------------------------------------------------------
 \begin{frame}{LH$\mu$C@CERN: benchmark working points}
-\begin{columns}[T]
-\begin{column}{0.61\textwidth}
-\begin{itemize}\small
-\item \textbf{Workshop focus:} $E_\mu=500~\mathrm{GeV}$ and $E_p=7~\mathrm{TeV}$,
-\[
-\sqrt{s_{\mu p}}\simeq 3.7~\mathrm{TeV},\qquad \mathcal L_{\rm int}\simeq 250~\mathrm{fb}^{-1}.
-\]
-\item Higher-energy HELP4CERN working points remain useful for scaling studies:
-\begin{itemize}\small
-\item $E_\mu=1~\mathrm{TeV}\Rightarrow\sqrt{s}\simeq5.3~\mathrm{TeV}$,
-\item $E_\mu=2~\mathrm{TeV}\Rightarrow\sqrt{s}\simeq7.5~\mathrm{TeV}$.
-\end{itemize}
-\item Already the 500 GeV option enters a qualitatively new $\gamma\gamma$ mass regime compared with LHeC.
-\end{itemize}
-\begin{block}{This talk}
-\small The quantitative $\gamma\gamma$ benchmarks shown below emphasise the 500 GeV $\mu$ beam whenever dedicated results exist.
+
+\begin{columns}  
+\begin{column}{0.70\textwidth}
+\begin{itemize} 
+\justifying
+\small
+\item The present talk focuses on the two-photon physics case of the LH$\mu$C, using the current working benchmarks: 
+			
+\item The first option:
+$E_\mu=500~\mathrm{GeV}, \, E_p=7~\mathrm{TeV},
+\, \sqrt{s} \simeq 3.7~\mathrm{TeV},
+$ with a $\mathcal{L}_{\mathrm{int}}=250~\mathrm{fb}^{-1}$.
+			
+\item \alert{The nominal baseline}:
+{\color{blue}$E_\mu=1~\mathrm{TeV}$}, \, {\color{blue}$E_p=7~\mathrm{TeV}$},
+\, {\color{magenta}$\sqrt{s} \simeq 5.3~\mathrm{TeV},$} with a {\color{red}$\mathcal{L}_{\mathrm{int}}=1000~\mathrm{fb}^{-1}$}.
+			
+\item The second option:
+$E_\mu=2~\mathrm{TeV}, \, E_p=7~\mathrm{TeV},
+\, \sqrt{s}\simeq 7.5~\mathrm{TeV},$ with a $\mathcal{L}_{\mathrm{int}}=1000~\mathrm{fb}^{-1}$.
+			
+{
+\setbeamercolor{block title}{fg=white,bg=green!55!black}
+\setbeamercolor{block body}{fg=black,bg=green!10}
+				
+\begin{block}{LH$\mu$C physics message}
+\justifying
+\scriptsize
+These working points are sufficient to demonstrate the main message of LH$\mu$C: already at the 500~GeV, LH$\mu$C enters 
+the multi-TeV regime and becomes highly competitive for $\gamma\gamma$ physics, Higgs, top, electroweak, and representative BSM studies.
 \end{block}
-\end{column}
-\begin{column}{0.36\textwidth}
-\begin{alertblock}{Working points}\small
-\begin{tabular}{@{}lll@{}}
-\toprule
- & $E_\ell$ & $\sqrt{s}$\\
-\midrule
-LHeC & 50 GeV & 1.2 TeV\\
-LH$\mu$C & \textbf{500 GeV} & \textbf{3.7 TeV}\\
-LH$\mu$C & 1 TeV & 5.3 TeV\\
-LH$\mu$C & 2 TeV & 7.5 TeV\\
-\bottomrule
-\end{tabular}
-\end{alertblock}
-\centering\includegraphics[width=0.42\linewidth]{HELP4CERN.jpg}
-\end{column}
-\end{columns}
-\sourceline{HELP4CERN benchmark set used in the DIS2026 HET study.}
+}
+\centering
+\tiny
+
+		
+\end{itemize} 
+\end{column} 
+	
+\begin{column}{0.42\textwidth}
+\begin{alertblock}{Benchmark WPs}
+\small
+\justifying
+\begin{tabular}{@{}ll@{}} 
+\textbf{Machine} & \textbf{Benchmark} \\[0.2em]
+LHeC & $E_e=20,\,50$ GeV \\ 
+LH$\mu$C (option 1) & $E_\mu=500$ GeV \\
+LH$\mu$C (\alert{baseline}) & $E_\mu=1000$ GeV \\
+LH$\mu$C (option 2) & $E_\mu=2000$ GeV
+\end{tabular} 
+			
+\vspace{0.1em} 
+			
+\begin{tabular}{@{}ll@{}} 
+\textbf{Configuration} & \textbf{Value} \\[0.2em]
+$\sqrt{s}_{\mu p}$ (option 1) & $\simeq 3.7$ TeV \\
+$\sqrt{s}_{\mu p}$ (\alert{baseline}) & $\simeq 5.3$ TeV \\
+$\sqrt{s}_{\mu p}$ (option 2) & $\simeq 7.5$ TeV \\
+$\mathcal{L}_{\rm int}$ (option 1) & $250~\mathrm{fb}^{-1}$ \\
+$\mathcal{L}_{\rm int}$ (\alert{baseline}) & $1000~\mathrm{fb}^{-1}$ \\
+$\mathcal{L}_{\rm int}$ (option 2) & $1000~\mathrm{fb}^{-1}$
+\end{tabular} 
+\end{alertblock} 
+		
+\centering 
+\includegraphics[width=0.25\linewidth]{HELP4CERN.jpg} 
+
+\end{column} 
+\end{columns} 
+
+\helplogo 
+\end{frame} 
+
+
+
+% --------------------------------------------------------------------------
+
+
+
+\begin{frame}{Representative benchmark cross sections}
+	
+	\begin{columns}%[T,onlytextwidth]
+
+
+\setbeamercolor{block title}{fg=white,bg=red!45!black}
+\setbeamercolor{block body}{fg=black,bg=green!10}
+		
+		%---------------------------------------
+		\begin{column}{0.55\textwidth}	
+			\begin{block}{Why is this relevant for \(\gamma\gamma\) physics?}
+				\small
+				\justifying Moving from the LHeC to the LH\(\mu\)C strongly increases the available lepton–hadron centre-of-mass energy and opens the multi-TeV regime. The same energy lever arm is crucial for two-photon physics: the photon spectrum from the high-energy muon beam becomes significantly harder, extending the accessible \(W_{\gamma\gamma}\) range. This enhances the reach for heavy \(\gamma\gamma\) final states and increases sensitivity to new interactions in the high-mass tails.
+			\end{block}
+		\end{column}
+		
+		
+		
+		%---------------------------------------
+		\begin{column}{0.56\textwidth}
+			
+			{
+				\setbeamercolor{block title}{fg=white,bg=red!65!black}
+				\setbeamercolor{block body}{fg=black,bg=red!3}
+				
+				\begin{block}{Benchmark inclusive cross sections}
+					\centering
+					%\small
+					\renewcommand{\arraystretch}{1.2}
+					\resizebox{\linewidth}{!}{%
+						\begin{tabular}{lcccc}
+							\toprule
+							Process & 20 GeV & 50 GeV & 500 GeV & 1 TeV \\
+							& LHeC & LHeC & LH$\mu$C & LH$\mu$C \\
+							\midrule
+							$\sigma(\ell p\to \nu_\ell H+\mathrm{jet}+X)$ [fb]
+							& 52 & 164 & 438 & 731 \\
+							
+							$\sigma(\ell p\to \ell H+\mathrm{jet}+X)$ [fb]
+							& 5.6 & 19 & 135 & 221 \\
+							
+							$\sigma(\ell p\to \ell\, t\bar t +X)$ [pb]
+							& 0.0015 & 0.0323 & 1.03 & 2.23 \\
+							
+							$\sigma(\ell p\to \nu_\ell t +X)$ [pb]
+							& 0.55 & 2.89 & 21.26 & 36.77 \\
+							\bottomrule
+						\end{tabular}%
+					}
+					
+					
+					\vspace{0.4em}	
+					\begin{alertblock}{Key comparisons}
+						\small
+						\justifying
+						Relative to the 50~GeV LHeC benchmark, the nominal 1~TeV LH$\mu$C baseline
+						enhances the benchmark inclusive rates by approximately:
+						\(\sim 4.5\) for charged-current Higgs production,
+						\(\sim 12\) for neutral-current Higgs production,
+						\(\sim 13\) for single-top production,
+						and \(\sim 69\) for \(t\bar t\) production.
+					\end{alertblock}
+					
+				\end{block}
+			}
+			
+		\end{column}
+	\end{columns}
+	
+
+\helplogo 
 \end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Merged gamma-gamma summary slide
+% --------------------------------------------------------------------------
+\begin{frame}{Exclusive $\gamma\gamma$ channels: electroweak, top, and BSM reach}
+	
+	\centering
+	%	\vspace{-0.35em}
+	
+	\begin{tikzpicture}[x=1cm,y=1cm]
+		
+		%------------------------------------------------
+		% Styles
+		%------------------------------------------------
+		\tikzset{
+			connector/.style={
+				draw=blue!65!black,
+				line width=1.0pt
+			},
+			hubbox/.style={
+				rounded corners=6pt,
+				draw=blue!65!black,
+				line width=1.1pt,
+				fill=white,
+				minimum width=2.9cm,
+				minimum height=2.0cm,
+				inner sep=3pt,
+				align=center
+			},
+			boxww/.style={
+				rounded corners=9pt,
+				draw=green!50!black,
+				line width=1.15pt,
+				fill=green!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxzz/.style={
+				rounded corners=9pt,
+				draw=violet!55!black,
+				line width=1.15pt,
+				fill=violet!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxtt/.style={
+				rounded corners=9pt,
+				draw=orange!70!black,
+				line width=1.15pt,
+				fill=orange!12,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			boxbsm/.style={
+				rounded corners=9pt,
+				draw=red!65!black,
+				line width=1.15pt,
+				fill=red!10,
+				minimum width=3.85cm,
+				minimum height=2.75cm,
+				text width=3.20cm,
+				align=center,
+				inner sep=4pt
+			},
+			takehome/.style={
+				rounded corners=5pt,
+				draw=red!60!black,
+				line width=0.95pt,
+				fill=red!8,
+				text width=11.1cm,
+				minimum height=0.82cm,
+				align=center,
+				inner sep=3.5pt
+			}
+		}
+		
+		%------------------------------------------------
+		% Central hub
+		%------------------------------------------------
+		\node[hubbox] (hub) at (0,0.00) {%
+			\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.15em]
+			{\scriptsize \textbf{Exclusive high-energy}}\\[-0.05em]
+			{\scriptsize \textbf{$\gamma\gamma$ programme}}
+		};
+		
+		%------------------------------------------------
+		% Outer nodes
+		%------------------------------------------------
+		\node[boxww] (ww) at (-4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to W^+W^-$}\\[0.20em]
+			%			{\footnotesize largest EW benchmark;}\\
+			{\footnotesize Strong aQGC sensitivity comes from}\\
+			{\footnotesize the high-$M_{WW}$ tail}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.166$ pb at 3.7 TeV}
+		};
+		
+		\node[boxzz] (zz) at (4.15,1.65) {%
+			{\bfseries \small $\gamma\gamma\to ZZ$}\\[0.20em]
+			{\footnotesize Loop-induced in the SM;}\\
+			{\footnotesize clean probe of high-mass}\\
+			{\footnotesize electroweak dynamics}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.284$ fb at 3.7 TeV}
+		};
+		
+		\node[boxtt] (tt) at (-4.15,-1.85) {%
+			{\bfseries \small $\gamma\gamma\to t\bar t$}\\[0.20em]
+			{\footnotesize Probes heavy thresholds}\\
+			{\footnotesize and top-sector dynamics}\\
+			{\footnotesize in exclusive topology}\\[0.15em]
+			%			{\footnotesize $\sigma_{\rm el}\simeq 0.486$ fb at 3.7 TeV}
+		};
+		
+		\node[boxbsm] (bsm) at (4.15,-1.85) {%
+			{\bfseries \small Exclusive BSM pairs}\\[0.20em]
+			%			{\footnotesize same framework extends to}\\
+			{\footnotesize Charged states such as}\\
+			{\footnotesize higgsinos and sleptons}\\[0.15em]
+			%			{\footnotesize qualitative opportunity; no rate quoted here}
+		};
+		
+		%------------------------------------------------
+		% Connectors
+		%------------------------------------------------
+		\draw[connector] (hub.north west) .. controls (-1.1,0.95) and (-2.4,1.35) .. (ww.east);
+		\draw[connector] (hub.north east) .. controls ( 1.1,0.95) and ( 2.4,1.35) .. (zz.west);
+		\draw[connector] (hub.south west) .. controls (-1.1,-0.85) and (-2.4,-1.35) .. (tt.east);
+		\draw[connector] (hub.south east) .. controls ( 1.1,-0.85) and ( 2.4,-1.35) .. (bsm.west);
+		
+		%------------------------------------------------
+		% Take-home message
+		%------------------------------------------------
+		\node[takehome] at (0,-4.00) {%
+			{\justifying\scriptsize Beyond $\tau^+\tau^-$, the high-energy $\gamma\gamma$ programme at LH$\mu$C spans
+				electroweak, top, and BSM-sensitive channels in a clean exclusive environment.}
+		};
+		
+	\end{tikzpicture}
+	%------------------------------------------------
+	% HELP4CERN logo overlay
+	%------------------------------------------------
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+		at (current page.north east)
+		{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}
+
+
+\helplogo
+
+
+\end{frame}
+% --------------------------------------------------------------------------
+
+
+
+
+
+
 
 % --------------------------------------------------------------------------
 % Slide 5 -- New conceptual transition slide
@@ -253,7 +562,12 @@ One parent $\mu p$ data set contains several distinct $\gamma\gamma$ topologies 
 \helplogo
 \end{frame}
 
+
+
+
 \section{Equivalent Photon Approximation and $\gamma\gamma$ luminosity}
+
+
 
 % --------------------------------------------------------------------------
 % Slide 7 -- Source: yy_lhec EPA section
@@ -868,9 +1182,11 @@ The harder photon spectrum extends the high-mass LbL region and other loop-induc
 \item \textbf{Forward proton tagging where feasible}, together with control of proton dissociation.
 \item Exploit the defining advantage: the \textbf{clean, low-pile-up $\mu p$ environment}.
 \end{itemize}
+
 \begin{alertblock}{Physics--detector connection}\scriptsize
 The $\gamma\gamma$ programme links central reconstruction, lepton tagging and near-beam instrumentation directly to the usable photon luminosity and kinematic closure.
 \end{alertblock}
+
 \end{column}
 \begin{column}{0.38\textwidth}
 \placeholdergraphic{Suggested figure: LH$\mu$C interaction-region schematic with central detector, scattered-muon acceptance and a near-beam proton tag.}{3.05cm}
@@ -885,27 +1201,138 @@ The $\gamma\gamma$ programme links central reconstruction, lepton tagging and ne
 
 \begin{frame}{Summary and outlook}
 \begin{columns}[T]
-\begin{column}{0.75\textwidth}
-\begin{itemize}\small
+	
+\begin{column}{0.99\textwidth}
+\begin{itemize}
+\justifying 	
+\small 
 \item LH$\mu$C turns $\mu p$ collisions into a \textbf{high-energy $\gamma\gamma$ laboratory} with a substantially harder photon spectrum than the LHeC benchmark.
 \item EPA and $S_{\gamma\gamma}$ connect parent $\mu p$ luminosity transparently to elastic and proton-dissociative two-photon subprocesses.
 \item $\tau^+\tau^-$ and $W^+W^-$ provide high-statistics precision/EFT channels; sensitivity lives in their hard invariant-mass tails.
 \item Loop-induced $ZZ$, exclusive $t\bar t$, light-by-light scattering, $H$, and charged BSM pairs extend the programme to rare quantum processes and heavy thresholds.
 \end{itemize}
-\vspace{0.3em}
-{\small\color{LHRed}\textbf{Bottom line: high-energy $\gamma\gamma$ physics is one of the distinctive physics opportunities of LH$\mu$C.}}
-\end{column}
-\begin{column}{0.21\textwidth}
-\centering
-\includegraphics[width=0.88\linewidth]{HELP4CERN.jpg}
-\vspace{0.7em}
 
-{\Large\bfseries Thank you!}
-\vspace{0.5em}
-
-{\tiny Hamzeh Khanpour\\AGH University of Krakow\\\texttt{hamzeh.khanpour@cern.ch}}
 \end{column}
 \end{columns}
+
+
+\begin{alertblock}
+\scriptsize \justifying 
+Bottom line: high-energy $\gamma\gamma$ physics is one of the distinctive physics opportunities of LH$\mu$C.
+\end{alertblock}
+
+\helplogo
 \end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 20
+% --------------------------------------------------------------------------
+\begin{frame}[plain]
+\begin{center}
+\includegraphics[width=0.85\paperwidth,height=0.85\paperheight,keepaspectratio]{figures/Thank_You_2.jpg}
+\end{center}
+	
+\helplogo
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Backup slide
+% --------------------------------------------------------------------------
+\begin{frame}{The HELP4CERN collaboration}
+	
+	\vspace{-0.25cm}
+	
+	\begin{columns}[T] % [T,onlytextwidth]
+		
+		%========================================
+		% Left column
+		%========================================
+		\begin{column}{0.55\textwidth}
+			
+			\setbeamercolor{greenbox}{bg=green!10,fg=black}
+			\begin{beamercolorbox}[wd=\linewidth,sep=0.9em,rounded=true,shadow=true]{greenbox}
+				\justifying
+				\small
+				\textbf{HELP4CERN} collaboration focuses on the physics case for
+				high-energy, high-luminosity lepton-hadron colliders at CERN.
+				
+				\begin{itemize}
+					\justifying
+					\small
+					\item assess the physics potential of future lepton-hadron collider options,
+					\item develop benchmark studies for Higgs, electroweak, top, QCD, and BSM physics,
+					\item provide a common framework for phenomenology, detector studies, and future projections,
+					\item new contributions and physics studies are very welcome,
+				\end{itemize}
+				
+				\textbf{Contact:} {\color{magenta} \texttt{help-4-cern@cern.ch}}\\
+				\textbf{Visit:} {\color{magenta} \texttt{https://help4cern.web.cern.ch}}
+			\end{beamercolorbox}
+		\end{column}
+		
+		%========================================
+		% Right column
+		%========================================
+		\begin{column}{0.50\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/White_Paper.jpg}
+			
+			
+			\vspace{0.55em}
+			
+			
+			\begin{beamercolorbox}[
+				rounded=true,
+				shadow=true,
+				sep=6pt,
+				wd=0.92\linewidth
+				]{block body}
+				\scriptsize
+				\justifying
+				Next steps for HELP4CERN:
+				\begin{itemize}
+					\justifying
+					\item turn the current benchmark studies into a coherent white-paper assessment of high-energy lepton-hadron options at CERN by the end of 2026;
+					\item foster a worldwide study effort, in close coordination with the \texttt{LHeC Study Group}, aimed at preparing a dedicated {\color{magenta}HELP4CERN proposal} by 2028.
+				\end{itemize}
+			\end{beamercolorbox}
+			
+		\end{column}
+		
+	\end{columns}
+	
+	%------------------------------------------------
+	% HELP4CERN logo overlay
+	%------------------------------------------------
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=north east, xshift=-0.10cm, yshift=-0.35cm]
+		at (current page.north east)
+		{\includegraphics[width=1.5cm]{HELP4CERN.jpg}};
+	\end{tikzpicture}	
+	
+	
+\end{frame}
+
+
+
+
+
+
+
+
 
 \end{document}

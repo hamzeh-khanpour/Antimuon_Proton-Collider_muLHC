@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  19 SEP 2026 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  19 SEP 2026 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1453,21 +1453,17 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 131.
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
-1.
+0.
  (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (7.05557pt too wide) in paragraph at lines 211--211
+Overfull \hbox (7.05557pt too wide) in paragraph at lines 210--210
 [][] 
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 211.
-(pdftex.def)             Requested size: 36.37643pt x 19.84122pt.
-File: figures/HELP4CERN.jpg Graphic file (type jpg)
-<use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 211.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 210.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1475,13 +1471,13 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 211.
 
 {d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf
 -dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 1748) in paragraph at lines 290--290
+Underfull \hbox (badness 1748) in paragraph at lines 288--288
 \T1/lmss/m/n/10 of-mass en-ergy and opens the multi-TeV
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 290.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 288.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1490,30 +1486,26 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 290.
 ]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 453.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 442.
 (pdftex.def)             Requested size: 58.32823pt x 31.81473pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 453.
+(Font)              <9> on input line 442.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 453.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 442.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 453.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 442.
 
-File: figures/HELP4CERN.jpg Graphic file (type jpg)
-<use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 453.
-(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \hbox (0.4068pt too wide) in paragraph at lines 453--453
+Overfull \hbox (0.4068pt too wide) in paragraph at lines 442--442
  [][] 
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 453.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 442.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \vbox (17.47084pt too high) detected at line 453
+Overfull \vbox (3.87083pt too high) detected at line 442
  []
 
 
@@ -1523,7 +1515,7 @@ Overfull \vbox (17.47084pt too high) detected at line 453
 ]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 509.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 499.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1532,7 +1524,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 509.
 ]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 563.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 560.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1541,23 +1533,23 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 563.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 568.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 568.
+(hyperref)                removing `\gamma' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 568.
+(hyperref)                removing `\gamma' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 568.
+(hyperref)                removing `math shift' on input line 565.
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 606.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 607.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1566,7 +1558,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 606.
 {d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 648.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 653.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1576,30 +1568,31 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 648.
 <figures/Syy.jpg, id=552, 360.48964pt x 422.00517pt>
 File: figures/Syy.jpg Graphic file (type jpg)
 <use figures/Syy.jpg>
-Package pdftex.def Info: figures/Syy.jpg  used on input line 675.
+Package pdftex.def Info: figures/Syy.jpg  used on input line 686.
 (pdftex.def)             Requested size: 154.03067pt x 180.31248pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 675.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 686.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
-
-Overfull \vbox (8.93417pt too high) detected at line 675
- []
-
 
 
 [11
 
  <./figures/Syy.jpg>]
-<figures/luminosity_elastic_inelastic.png, id=597, 1955.305pt x 985.6825pt>
+<figures/luminosity_elastic_inelastic.png, id=596, 1955.305pt x 985.6825pt>
 File: figures/luminosity_elastic_inelastic.png Graphic file (type png)
 <use figures/luminosity_elastic_inelastic.png>
 Package pdftex.def Info: figures/luminosity_elastic_inelastic.png  used on inpu
-t line 700.
+t line 717.
 (pdftex.def)             Requested size: 190.68265pt x 96.12245pt.
+
+Underfull \hbox (badness 1028) in paragraph at lines 717--717
+[]\T1/lmss/m/n/8 Low pile-up means pro-
+ []
+
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 700.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 717.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1608,7 +1601,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 700.
  <./figures/luminosity_elastic_inelastic.png (PNG copy)>]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 734.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 756.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1617,37 +1610,37 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 734.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 737.
+(hyperref)                removing `math shift' on input line 759.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 737.
+(hyperref)                removing `\gamma' on input line 759.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 737.
+(hyperref)                removing `\gamma' on input line 759.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 737.
+(hyperref)                removing `math shift' on input line 759.
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 764.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 789.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [14
 
 ]
-<figures/Sgg_New.jpg, id=758, 837.1275pt x 969.6225pt>
+<figures/Sgg_New.jpg, id=757, 837.1275pt x 969.6225pt>
 File: figures/Sgg_New.jpg Graphic file (type jpg)
 <use figures/Sgg_New.jpg>
-Package pdftex.def Info: figures/Sgg_New.jpg  used on input line 789.
+Package pdftex.def Info: figures/Sgg_New.jpg  used on input line 818.
 (pdftex.def)             Requested size: 161.93138pt x 187.55911pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 789.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 818.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1656,7 +1649,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 789.
  <./figures/Sgg_New.jpg>]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 836.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 869.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1666,16 +1659,12 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 836.
 <figures/elastic_tau_tau.jpg, id=841, 403.93768pt x 476.20767pt>
 File: figures/elastic_tau_tau.jpg Graphic file (type jpg)
 <use figures/elastic_tau_tau.jpg>
-Package pdftex.def Info: figures/elastic_tau_tau.jpg  used on input line 866.
+Package pdftex.def Info: figures/elastic_tau_tau.jpg  used on input line 903.
 (pdftex.def)             Requested size: 173.29292pt x 204.30026pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 866.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 903.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
-
-Overfull \vbox (1.41487pt too high) detected at line 866
- []
-
 
 
 [17
@@ -1683,19 +1672,19 @@ Overfull \vbox (1.41487pt too high) detected at line 866
  <./figures/elastic_tau_tau.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 869.
+(hyperref)                removing `math shift' on input line 906.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tau' on input line 869.
+(hyperref)                removing `\tau' on input line 906.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 869.
+(hyperref)                removing `math shift' on input line 906.
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 908.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 949.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1705,58 +1694,55 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 908.
 <figures/tau_updated_Mtt.png, id=938, 1220.56pt x 1164.35pt>
 File: figures/tau_updated_Mtt.png Graphic file (type png)
 <use figures/tau_updated_Mtt.png>
-Package pdftex.def Info: figures/tau_updated_Mtt.png  used on input line 936.
+Package pdftex.def Info: figures/tau_updated_Mtt.png  used on input line 980.
 (pdftex.def)             Requested size: 155.34332pt x 148.17284pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 936.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 980.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [19
 
  <./figures/tau_updated_Mtt.png>]
-<figures/ww_elastic_curve.png, id=983, 1606.0pt x 1602.98875pt>
+<figures/ww_elastic_curve.png, id=982, 1606.0pt x 1602.98875pt>
 File: figures/ww_elastic_curve.png Graphic file (type png)
 <use figures/ww_elastic_curve.png>
-Package pdftex.def Info: figures/ww_elastic_curve.png  used on input line 966.
+Package pdftex.def Info: figures/ww_elastic_curve.png  used on input line 1013.
+
 (pdftex.def)             Requested size: 134.2819pt x 134.01418pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 966.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1013.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [20
 
  <./figures/ww_elastic_curve.png (PNG copy)>]
-<figures/ww_aqgc_updated.png, id=1026, 1220.56pt x 1214.5375pt>
+<figures/ww_aqgc_updated.png, id=1025, 1220.56pt x 1214.5375pt>
 File: figures/ww_aqgc_updated.png Graphic file (type png)
 <use figures/ww_aqgc_updated.png>
-Package pdftex.def Info: figures/ww_aqgc_updated.png  used on input line 998.
+Package pdftex.def Info: figures/ww_aqgc_updated.png  used on input line 1048.
 (pdftex.def)             Requested size: 149.21156pt x 148.46246pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 998.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1048.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
-
-Overfull \vbox (13.21284pt too high) detected at line 998
- []
-
 
 
 [21
 
  <./figures/ww_aqgc_updated.png (PNG copy)>]
-<figures/zz_elastic_curve.png, id=1068, 1465.475pt x 1422.31375pt>
+<figures/zz_elastic_curve.png, id=1067, 1465.475pt x 1422.31375pt>
 File: figures/zz_elastic_curve.png Graphic file (type png)
 <use figures/zz_elastic_curve.png>
-Package pdftex.def Info: figures/zz_elastic_curve.png  used on input line 1028.
+Package pdftex.def Info: figures/zz_elastic_curve.png  used on input line 1081.
 
 (pdftex.def)             Requested size: 131.92383pt x 128.02441pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1028.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1081.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1765,7 +1751,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1028.
  <./figures/zz_elastic_curve.png (PNG copy)>]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1066.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1122.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1775,12 +1761,12 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1066.
 <figures/ttbar_elastic_curve.png, id=1163, 1505.625pt x 1546.77875pt>
 File: figures/ttbar_elastic_curve.png Graphic file (type png)
 <use figures/ttbar_elastic_curve.png>
-Package pdftex.def Info: figures/ttbar_elastic_curve.png  used on input line 10
-98.
+Package pdftex.def Info: figures/ttbar_elastic_curve.png  used on input line 11
+58.
 (pdftex.def)             Requested size: 131.92383pt x 135.52219pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1098.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1158.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1790,17 +1776,33 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1098.
 <figures/susy_pair_curves.png, id=1203, 2489.3pt x 1142.2675pt>
 File: figures/susy_pair_curves.png Graphic file (type png)
 <use figures/susy_pair_curves.png>
-Package pdftex.def Info: figures/susy_pair_curves.png  used on input line 1128.
+Package pdftex.def Info: figures/susy_pair_curves.png  used on input line 1193.
 
 (pdftex.def)             Requested size: 155.20676pt x 71.21724pt.
-File: figures/HELP4CERN.jpg Graphic file (type jpg)
-<use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1128.
-(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \vbox (4.75525pt too high) detected at line 1128
+Underfull \hbox (badness 1178) in paragraph at lines 1193--1193
+\T1/lmss/m/n/8 tric charge and mass, com-ple-
  []
 
+
+Underfull \hbox (badness 1237) in paragraph at lines 1193--1193
+\T1/lmss/m/n/8 men-tary to strongly in-ter-act-ing
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 1193--1193
+\T1/lmss/m/n/8 trac-tive for com-pressed spec-tra
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 1193--1193
+\T1/lmss/m/n/8 with soft vis-i-ble prod-ucts and
+ []
+
+File: figures/HELP4CERN.jpg Graphic file (type jpg)
+<use figures/HELP4CERN.jpg>
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1193.
+(pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [25
@@ -1809,11 +1811,11 @@ Overfull \vbox (4.75525pt too high) detected at line 1128
 <figures/lbl_eta_updated.png, id=1257, 1967.35pt x 915.42pt>
 File: figures/lbl_eta_updated.png Graphic file (type png)
 <use figures/lbl_eta_updated.png>
-Package pdftex.def Info: figures/lbl_eta_updated.png  used on input line 1165.
+Package pdftex.def Info: figures/lbl_eta_updated.png  used on input line 1233.
 (pdftex.def)             Requested size: 160.75107pt x 74.78555pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1165.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1233.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1822,7 +1824,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1165.
  <./figures/lbl_eta_updated.png (PNG copy)>]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1196.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1268.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1831,7 +1833,7 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1196.
 ]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1225.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1301.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1841,47 +1843,47 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1225.
 <figures/Thank_You_2.jpg, id=1393, 911.54839pt x 577.29964pt>
 File: figures/Thank_You_2.jpg Graphic file (type jpg)
 <use figures/Thank_You_2.jpg>
-Package pdftex.def Info: figures/Thank_You_2.jpg  used on input line 1239.
+Package pdftex.def Info: figures/Thank_You_2.jpg  used on input line 1315.
 (pdftex.def)             Requested size: 381.87407pt x 241.84756pt.
 
-Overfull \hbox (35.43019pt too wide) in paragraph at lines 1239--1239
+Overfull \hbox (35.43019pt too wide) in paragraph at lines 1315--1315
  [] 
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1239.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1315.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [29
 
  <./figures/Thank_You_2.jpg>]
-Underfull \hbox (badness 5161) in paragraph at lines 1328--1328
+Underfull \hbox (badness 5161) in paragraph at lines 1396--1396
 \T1/lmss/m/n/10 elec-troweak, top, QCD, and BSM
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-328.
+396.
 (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 <figures/White_Paper.jpg, id=1433, 1796.7125pt x 929.4725pt>
 File: figures/White_Paper.jpg Graphic file (type jpg)
 <use figures/White_Paper.jpg>
-Package pdftex.def Info: figures/White_Paper.jpg  used on input line 1328.
+Package pdftex.def Info: figures/White_Paper.jpg  used on input line 1396.
 (pdftex.def)             Requested size: 173.22194pt x 89.6056pt.
 
-Underfull \hbox (badness 5460) in paragraph at lines 1328--1328
+Underfull \hbox (badness 5460) in paragraph at lines 1396--1396
 \T1/lmss/m/n/8 co-or-di-na-tion with the \T1/lmtt/m/n/8 LHeC Study
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1328.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1396.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \vbox (9.2864pt too high) detected at line 1328
+Overfull \vbox (9.2864pt too high) detected at line 1396
  []
 
 
@@ -1909,10 +1911,10 @@ Package rerunfilecheck Info: File `Hamzeh_Khanpour_Ultra-cold-muons-for-the-LHC
 (rerunfilecheck)             Checksum: 55FFB919F0BA23459F14824694AB4A4D;1396.
  ) 
 Here is how much of TeX's memory you used:
- 31173 strings out of 473190
- 648885 string characters out of 5719978
+ 31171 strings out of 473190
+ 648842 string characters out of 5719978
  1400553 words of memory out of 5000000
- 53683 multiletter control sequences out of 15000+600000
+ 53681 multiletter control sequences out of 15000+600000
  743856 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,14598b,1386s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1939,7 +1941,7 @@ m/lmsy7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/tex
 live/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><d:/texlive/2025/texmf-di
 st/fonts/type1/public/lm/lmtt8.pfb>
 Output written on Hamzeh_Khanpour_Ultra-cold-muons-for-the-LHC.pdf (30 pages, 3
-708888 bytes).
+706485 bytes).
 PDF statistics:
  1618 PDF objects out of 1728 (max. 8388607)
  1182 compressed objects within 12 object streams

@@ -69,7 +69,7 @@
 \subtitle{High-energy $\gamma\gamma$ interactions in $\mu p$ collisions}
 \author[Hamzeh Khanpour]{Hamzeh Khanpour\\{\scriptsize AGH University of Krakow}}
 \institute[AGH]{\color{magenta}\textbf{(on behalf of HELP4CERN Study Group)}}
-\date{{\setlength{\fboxsep}{4pt}\colorbox{cyan!15}{\strut Ultra-cold muons for the LHC, AGH Krakow, 24--26 September 2026}}}
+\date{{\setlength{\fboxsep}{4pt}\colorbox{cyan!15}{\strut \footnotesize   Ultra-cold muons for the LHC, AGH Krakow, 24-26 September 2026}}}
 
 
 
@@ -445,133 +445,195 @@ and \(\sim 69\) for \(t\bar t\) production.
 
 
 
-
-
-
-
 % --------------------------------------------------------------------------
-% Slide 5 -- New conceptual transition slide
-% --------------------------------------------------------------------------
+\begin{frame}{Two-photon production in lepton-proton ($\ell p$) scattering}
 
-\begin{frame}{A high-energy $\gamma\gamma$ collider inside $\mu p$ collisions}
-	
-\begin{columns}[T]
-\begin{column}{0.57\textwidth}
+\begin{columns}%[T,onlytextwidth]
+
+% ------------------------------------------------------------------
+% LEFT: pp versus lp diagrams
+% ------------------------------------------------------------------
+\begin{column}{0.65\textwidth}
+
 \centering
-\begin{tikzpicture}[scale=0.72,transform shape,>=Triangle,line cap=round]
-\coordinate (mi) at (-4,2); \coordinate (mv) at (-1.2,1.35); \coordinate (mo) at (3.7,2);
-\coordinate (pi) at (-4,-2); \coordinate (pv) at (-1.2,-1.35); \coordinate (po) at (3.7,-2);
-\coordinate (c) at (0.7,0);
-\draw[->,line width=0.8pt] (mi)--(mv)--(mo);
-\draw[->,line width=1.25pt] (pi)--(pv)--(po);
-\draw[decorate,decoration={snake,amplitude=2.2pt,segment length=7pt},line width=1pt] (mv)--(c);
-\draw[decorate,decoration={snake,amplitude=2.2pt,segment length=7pt},line width=1pt] (pv)--(c);
-\draw[fill=LHRed!18,draw=LHRed,line width=1.1pt] (c) circle (0.42);
-\draw[->,line width=0.9pt] (c)--(3.4,0.85); \draw[->,line width=0.9pt] (c)--(3.4,-0.85);
-\node[left] at (mi) {$\mu$}; \node[right] at (mo) {$\mu$};
-\node[left] at (pi) {$p$}; \node[right] at (po) {$p^{(*)}$};
-\node[above left] at (-0.2,0.75) {$\gamma^*$}; \node[below left] at (-0.2,-0.75) {$\gamma^*$};
-\node[right] at (3.4,0.85) {$X$}; \node[right] at (3.4,-0.85) {$\bar X$};
-\node[font=\scriptsize,align=center] at (0.7,-1.0) {$\gamma\gamma$ hard\\subprocess};
-\end{tikzpicture}
-\vspace{0.2em}
-{\scriptsize Both beams act as photon sources; the central system is produced by $\gamma\gamma$ fusion.}
+
+\begin{tabular}{@{}c@{\hspace{0.25cm}}c@{}}
+%
+\includegraphics[height=2.80cm]{yy_at_pp.png}
+&
+\includegraphics[height=2.80cm]{yy_at_lp.png}
+\\[-0.05cm]
+%
+{\scriptsize\bfseries\color{LHRed}
+$pp$: two hadronic beams}
+&
+{\scriptsize\bfseries\color{LHGreen}
+$\ell p$: one hadronic beam}
+%
+\end{tabular}
+
+\footnotesize \justifying 
+Two-photon searches at the LHC already demonstrate the physics potential of exclusive and semi-exclusive $\gamma\gamma$ interactions.
+Moving to a lepton-hadron collider removes one of the two hadronic initial states and therefore considerably simplifies the event environment.
+
 \end{column}
-\begin{column}{0.40\textwidth}
-\begin{block}{Factorised picture}\scriptsize
+
+
+% ------------------------------------------------------------------
+% RIGHT: factorised picture
+% ------------------------------------------------------------------
+\begin{column}{0.45\textwidth}
+			
+\begin{alertblock}{Factorised $\gamma\gamma$ picture}
+\footnotesize
+
 \[
-\mu\to\mu+\gamma^*,\qquad p\to p^{(*)}+\gamma^*,
+\ell \rightarrow \ell+\gamma^{*},
+\qquad
+p\rightarrow p^{(*)}+\gamma^{*},
 \]
+				
 \[
-\gamma\gamma\to X,\qquad \mu p\to\mu+X+p^{(*)}.
+\gamma\gamma\rightarrow X,
 \]
-\end{block}
-\begin{itemize}\scriptsize
-\item \textcolor{LHGreen}{Elastic}: proton remains intact.
-\item \textcolor{LHOrange}{Tagged elastic}: intact proton measured near the beam.
-\item \textcolor{LHRed}{Dissociative}: proton breaks into a system of mass $M_N$.
-\end{itemize}
-\begin{alertblock}{Key point}\scriptsize
-One parent $\mu p$ data set contains several distinct $\gamma\gamma$ topologies with different photon virtualities and experimental handles.
+				
+\[
+\boxed{
+\ell p\rightarrow
+\ell+X+p^{(*)}
+}
+\]
+
+\vspace{0.15em}
+
+\justifying
+The incoming lepton and proton act as sources of quasi-real photons. The hard central system $X$ is then produced through
+\textbf{$\gamma\gamma$ fusion}.
+				
 \end{alertblock}
+
 \end{column}
+		
 \end{columns}
+
+\begin{block}{From LHeC to LH$\mu$C}
+\footnotesize \justifying
+At the LH$\mu$C, the higher lepton-beam energy produces a 
+harder equivalent-photon spectrum, extending the accessible $W_{\gamma\gamma}$ range and strengthening the reach for heavy final states and high-mass EFT/BSM effects.
+\end{block}
+
 \helplogo
+	
 \end{frame}
 
 
 
-% --------------------------------------------------------------------------
-% Slide 6 -- New topology slide
-% Source: yy_lhec, Fig. 3 logic and EPA section
-% --------------------------------------------------------------------------
-\begin{frame}{Two-photon production topologies: elastic, tagged and proton-dissociative}
-	
-	
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\centering
-\begin{tikzpicture}[scale=0.70,transform shape,>=Triangle]
-\node[font=\bfseries\color{LHGreen}] at (0,2.6) {Elastic / tagged elastic};
-\coordinate (mi) at (-3.2,1.5);\coordinate (mv) at (-1.0,1.0);\coordinate (mo) at (3.1,1.5);
-\coordinate (pi) at (-3.2,-1.5);\coordinate (pv) at (-1.0,-1.0);\coordinate (po) at (3.1,-1.5);
-\coordinate (c) at (0.65,0);
-\draw[->] (mi)--(mv)--(mo);\draw[->,line width=1.1pt] (pi)--(pv)--(po);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (mv)--(c);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (pv)--(c);
-\draw[fill=LHGreen!15,draw=LHGreen] (c) circle (0.33);
-\draw[->] (c)--(2.75,0.65);\draw[->] (c)--(2.75,-0.65);
-\node[left] at (mi) {$\mu$};\node[right] at (mo) {$\mu$};\node[left] at (pi) {$p$};\node[right] at (po) {$p$};
-\node[right] at (2.75,0.65) {$X$};\node[right] at (2.75,-0.65) {$\bar X$};
-\node[draw=LHOrange,rounded corners,fill=orange!8,font=\scriptsize,align=center] at (2.3,-2.3) {optional\\near-beam $p$ tag};
-\draw[->,LHOrange] (2.3,-2.0)--(2.6,-1.55);
-\end{tikzpicture}
-\begin{itemize}\scriptsize
-\item Proton electromagnetic form factors control the elastic flux.
-\item A near-beam tag can over-constrain event kinematics.
-\end{itemize}
-\end{column}
-\begin{column}{0.48\textwidth}
-\centering
-\begin{tikzpicture}[scale=0.70,transform shape,>=Triangle]
-\node[font=\bfseries\color{LHRed}] at (0,2.6) {Proton-dissociative};
-\coordinate (mi) at (-3.2,1.5);\coordinate (mv) at (-1.0,1.0);\coordinate (mo) at (3.1,1.5);
-\coordinate (pi) at (-3.2,-1.5);\coordinate (pv) at (-1.0,-1.0);\coordinate (c) at (0.65,0);
-\draw[->] (mi)--(mv)--(mo);\draw[->,line width=1.1pt] (pi)--(pv);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (mv)--(c);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (pv)--(c);
-\draw[fill=LHRed!15,draw=LHRed] (c) circle (0.33);
-\draw[->] (c)--(2.75,0.65);\draw[->] (c)--(2.75,-0.65);
-\draw[->,line width=1.0pt] (pv)--(2.8,-1.0);\draw[->,line width=1.0pt] (pv)--(2.8,-1.5);\draw[->,line width=1.0pt] (pv)--(2.8,-2.0);
-\node[left] at (mi) {$\mu$};\node[right] at (mo) {$\mu$};\node[left] at (pi) {$p$};
-\node[right] at (2.75,0.65) {$X$};\node[right] at (2.75,-0.65) {$\bar X$};
-\node[font=\scriptsize,align=center] at (1.5,-2.35) {dissociative system\\$M_N>m_p$};
-\end{tikzpicture}
-\begin{itemize}\scriptsize
-\item Inelastic flux is described through proton structure functions.
-\item Larger $M_N$ and $Q_p^2$ increase the accessible luminosity but also modelling dependence.
-\end{itemize}
-\end{column}
-\end{columns}
 
-%\sourceline{Topology definitions follow the LHeC $\gamma\gamma$ study; the same classification carries directly to $\mu p$.}
+
+% -----------------------------------------------------------------------------
+% Gamma-gamma production topologies and experimental handles
+% -----------------------------------------------------------------------------
+
+\begin{frame}{$\gamma\gamma$ at $\ell p$: production topologies and experimental handles}
+
+\begin{columns}%[T,onlytextwidth]
+	
+\begin{column}{0.55\textwidth}
+
+\begin{block}{Photon-emission topologies}
+
+\begin{itemize}
+
+\footnotesize \justifying
+					
+\item
+\textcolor{LHGreen}{\textbf{Elastic}}
+\[
+p\rightarrow p+\gamma^{*}
+\]
+The proton remains intact. Its electromagnetic form factors
+$F_E(Q^2)$ and $F_M(Q^2)$ determine the elastic photon flux.
+					
+%\item
+%\textcolor{LHOrange}{\textbf{Tagged elastic}}
+					
+%The intact proton is measured in a near-beam detector.
+%Its momentum loss provides an additional constraint on the
+%photon momentum and on the central $\gamma\gamma$ system.
+					
+\item
+\textcolor{LHRed}{\textbf{Proton-dissociative}}
+\[
+p\rightarrow X_p+\gamma^{*},
+\qquad M_N>m_p .
+\]
+
+The proton breaks up into a hadronic system $X_p$.
+The photon flux is then described using proton structure functions.
+Allowing larger proton-dissociation masses $M_N$ and photon virtualities
+$Q_p^2$ increases the accessible $\gamma\gamma$ luminosity.					
+\end{itemize}
+				
+\end{block}
+			
+\end{column}
+		
+
+\begin{column}{0.55\textwidth}
+			
+\begin{alertblock}{Experimental handles}
+
+\begin{itemize}
+
+\footnotesize \justifying
+					
+\item
+\textbf{Low pile-up}
+preserves clean final states and makes rapidity-gap /
+exclusivity requirements particularly effective.
+					
+\item
+\textbf{Reduced hadronic re-scattering}
+compared with $pp$:
+there is no second hadronic beam and hence no analogous
+soft-survival complication on the lepton side.
+					
+%\item
+%\textbf{Acoplanarity and transverse-momentum balance}
+%help distinguish elastic and dissociative photon-induced events
+%from more inclusive backgrounds.
+					
+\item
+The \textbf{scattered lepton} constrains the photon emission
+from the lepton side; radiative corrections are predominantly QED,
+including ISR.
+					
+\item
+A \textbf{forward proton tag}, when available, can over-constrain
+the event kinematics and is especially valuable for final states
+containing missing energy.
+				
+\end{itemize}
+		
+\end{alertblock}
+	
+\end{column}
+		
+\end{columns}
 
 \helplogo
 
 \end{frame}
 
 
+
+%==================================================
 
 
 \section{Equivalent Photon Approximation and $\gamma\gamma$ luminosity}
 
 
-
-% --------------------------------------------------------------------------
-% Slide 7 -- Source: yy_lhec EPA section
-% --------------------------------------------------------------------------
-
-\begin{frame}{Equivalent Photon Approximation: factorising the $\mu p$ cross section}
+\begin{frame}{Equivalent Photon Approximation: factorising the $\ell p$ cross section}
 	
 \begin{block}{EPA master relation}\small
 \[
@@ -580,15 +642,22 @@ One parent $\mu p$ data set contains several distinct $\gamma\gamma$ topologies 
       =\int dW\;S_{\gamma\gamma}(W)\,\sigma_{\gamma\gamma}(W)}
 \]
 \end{block}
+
 \begin{columns}[T]
+	
 \begin{column}{0.55\textwidth}
-\begin{itemize}\small
+	
+\begin{itemize}
+\small \justifying 
 \item $\Phi_\mu$ and $\Phi_p$ are the equivalent-photon fluxes radiated by the two beams.
 \item The hard subprocess $\gamma\gamma\to X$ factorises from photon emission, in close analogy with partonic convolutions.
 \item $S_{\gamma\gamma}(W)$ packages the two fluxes into the effective two-photon luminosity spectrum.
 \end{itemize}
+
 \end{column}
-\begin{column}{0.41\textwidth}
+
+\begin{column}{0.45\textwidth}
+	
 \begin{alertblock}{Kinematic variables}\small
 \[
 y_\mu=\frac{E_\gamma^{(\mu)}}{E_\mu},\qquad
@@ -598,20 +667,19 @@ y_\mu=\frac{E_\gamma^{(\mu)}}{E_\mu},\qquad
 W\equiv W_{\gamma\gamma}.
 \]
 \end{alertblock}
+
 \end{column}
 \end{columns}
-
-%\sourceline{EPA formalism: yy\_lhec / draft\_yy\_lhec.}
 
 \helplogo
 
 \end{frame}
 
-% --------------------------------------------------------------------------
-% Slide 8 -- Source: yy_lhec theory input
-% --------------------------------------------------------------------------
 
-\begin{frame}{Equivalent photon fluxes from the muon and proton}
+%==================================================
+
+
+\begin{frame}{Equivalent photon fluxes from the lepton and proton}
 	
 \begin{columns}[T]
 \begin{column}{0.60\textwidth}
@@ -626,12 +694,15 @@ W\equiv W_{\gamma\gamma}.
 Q^2_{\min}=\frac{M^2y^2}{1-y}.
 \]
 \end{block}
-\begin{itemize}\scriptsize
+\begin{itemize}
+\small \justifying 
 \item Point-like lepton: $F_E=F_M=1$ and $M=m_\mu$.
 \item The muon mass raises $Q^2_{\min}$ relative to an electron at the same photon energy fraction $y$.
 \end{itemize}
 \end{column}
-\begin{column}{0.36\textwidth}
+
+\begin{column}{0.40\textwidth}
+	
 \begin{alertblock}{Elastic proton emission}\scriptsize
 \[
 F_M=G_M^2,
@@ -641,26 +712,25 @@ F_E=\frac{4m_p^2G_E^2+Q^2G_M^2}{4m_p^2+Q^2}.
 \]
 The dipole form factors suppress large $Q_p^2$.
 \end{alertblock}
-\begin{block}{Proton dissociation}\scriptsize
-For $p\to X$, structure functions replace elastic form factors and the flux depends on the dissociative mass $M_N$.
-\end{block}
+
 \end{column}
 \end{columns}
 
-%\sourceline{Photon-flux formula and proton form factors: theory input of yy\_lhec / draft\_yy\_lhec.}
+\begin{block}{Proton dissociation}
+\small \justifying 
+For $p\to X$, structure functions replace elastic form factors and the flux depends on the dissociative mass $M_N$.
+\end{block}
 
 \helplogo
 
 \end{frame}
 
 
-% --------------------------------------------------------------------------
-% Slide 9 -- Adapted from current deck Syy plot
-% --------------------------------------------------------------------------
+%==================================================
 
 \begin{frame}{The $\gamma\gamma$ luminosity spectrum $S_{\gamma\gamma}(W)$}
 \begin{columns}[T]
-\begin{column}{0.57\textwidth}
+\begin{column}{0.60\textwidth}
 \centering
 \includegraphics[width=0.78\linewidth]{Syy.jpg}
 \end{column}
@@ -974,7 +1044,6 @@ The latest draft replaces the previous illustrative point by
 \end{column}
 \end{columns}
 
-%\sourceline{Updated draft\_yy\_lhec: $\Delta a_\tau=5\times10^{-4}$ and SMEFT translation.}
 
 \helplogo
 

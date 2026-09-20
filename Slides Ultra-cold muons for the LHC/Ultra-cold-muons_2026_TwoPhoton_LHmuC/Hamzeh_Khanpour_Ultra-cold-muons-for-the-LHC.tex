@@ -679,10 +679,10 @@ W\equiv W_{\gamma\gamma}.
 %==================================================
 
 
-\begin{frame}{Equivalent photon fluxes from the lepton and proton}
+\begin{frame}{Equivalent photon fluxes from the leptons ($e$ or $\mu^+$) and proton}
 	
 \begin{columns}[T]
-\begin{column}{0.60\textwidth}
+\begin{column}{0.62\textwidth}
 \begin{block}{Generic EPA flux}\scriptsize
 \[
 \resizebox{0.96\linewidth}{!}{$\displaystyle
@@ -701,9 +701,10 @@ Q^2_{\min}=\frac{M^2y^2}{1-y}.
 \end{itemize}
 \end{column}
 
-\begin{column}{0.40\textwidth}
+\begin{column}{0.42\textwidth}
 	
-\begin{alertblock}{Elastic proton emission}\scriptsize
+\begin{alertblock}{Elastic proton emission}
+\scriptsize
 \[
 F_M=G_M^2,
 \]
@@ -728,33 +729,149 @@ For $p\to X$, structure functions replace elastic form factors and the flux depe
 
 %==================================================
 
-\begin{frame}{The $\gamma\gamma$ luminosity spectrum $S_{\gamma\gamma}(W)$}
-\begin{columns}[T]
-\begin{column}{0.60\textwidth}
-\centering
-\includegraphics[width=0.78\linewidth]{Syy.jpg}
-\end{column}
-\begin{column}{0.40\textwidth}
-\begin{block}{$S_{\gamma\gamma}$ tells us}\scriptsize
-The fraction of the parent lepton--proton luminosity available for two-photon collisions at invariant mass $W$.
+
+\begin{frame}{Beyond the simplest EPA: photon virtuality and exact $W_{\gamma\gamma}$ kinematics}
+
+\begin{columns}%[T]
+\begin{column}{0.50\textwidth}
+			
+\begin{block}{High-energy approximation}\small
+\[
+W^2\simeq y_\ell y_p s.
+\]
 \end{block}
-\begin{itemize}\scriptsize
-\item The \textcolor{LHOrange}{500 GeV LH$\mu$C} spectrum extends well beyond the LHeC reach.
-\item A harder spectrum benefits the $WW$, $ZZ$, $t\bar t$ and charged-BSM thresholds.
-\item Energy-growing EFT effects are naturally amplified in the high-$W$ tail.
+\begin{alertblock}{Exact elastic relation in the updated study}\small
+\[
+\boxed{W^2=-Q_\ell^2+y_\ell y_p s}
+\]
+{\scriptsize The paper writes $\ell=e$; the same lepton-side kinematics applies after $e\to\mu$.}
+				
+\end{alertblock}
+
+\end{column}
+
+\begin{column}{0.46\textwidth}
+\begin{itemize}
+\scriptsize \justifying 
+\item The approximation is excellent when photon virtualities are negligible relative to $W^2$.
+\item For proton dissociation, the exact expression also depends on $Q_p^2$ and $M_N$.
+\item Elastic EPA agrees at percent level with matrix-element generators once the 
+proper $W$ definition is used; inelastic modelling is more sensitive to the dissociative phase space.
 \end{itemize}
 
-\vspace{0.2em}
-{\scriptsize\color{LHRed}\textbf{LH$\mu$C message:} the gain is not only in total statistics; the $\gamma\gamma$ spectrum is substantially harder.}
+\begin{block}{Precision lesson}
+\scriptsize
+At sizeable $Q^2$, correct $W_{\gamma\gamma}$ reconstruction is part of the physics model, not a cosmetic refinement.
+\end{block}
+
+\end{column}
+\end{columns}
+	
+
+\helplogo
+	
+\end{frame}
+
+
+
+%==================================================
+
+
+
+\begin{frame}{What does the $\gamma\gamma$ luminosity spectrum \(S_{\gamma\gamma}\) encode?}
+
+\begin{columns}%[T]
+	
+\begin{column}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Sgg.jpg}
+\justifying \tiny Elastic photon-photon luminosity spectrum $S_{\gamma\gamma}$ as a function of 
+the $\gamma\gamma$ invariant mass $W$, comparing the LHeC and  \LHCmu{} benchmark configurations. 
+\end{figure}
+\end{column}
+
+\begin{column}{0.65\textwidth}
+\begin{block}{$S_{\gamma\gamma}$ tells us} 
+\scriptsize \justifying 
+\(S_{\gamma\gamma}(W)\) is the effective photon–photon luminosity density obtained from the 
+convolution of the equivalent-photon fluxes of the lepton and proton.
+It is the universal machine-level input that determines how much luminosity is 
+available at a given \(\gamma\gamma\) invariant mass \(W\).
+\end{block}
+
+\begin{itemize}
+\scriptsize \justifying 
+\item Increasing the lepton-beam energy shifts the usable \(\gamma\gamma\) luminosity to larger \(W\): the LH\(\mu\)C spectra fall more slowly than the LHeC spectrum in the high-mass region. 
+\item Already for \(E_\mu=500~\mathrm{GeV}\), the accessible high-\(W\) region is substantially enlarged; the \(1~\mathrm{TeV}\) nominal option extends it further. 
+\end{itemize}
+
+\begin{alertblock}{From luminosity to a physical process}
+\centering \small 
+\(\sigma_{\ell p\to \ell X p^{(*)}}
+=
+\int dW\,
+S_{\gamma\gamma}(W)\,
+\sigma_{\gamma\gamma\to X}(W).\)
+
+\vspace{0.4cm}
+
+\scriptsize \justifying 
+\(S_{\gamma\gamma}\) is process independent: the final-state physics enters through the subprocess cross section \(\sigma_{\gamma\gamma\to X}\).
+\end{alertblock}
 
 \end{column}
 \end{columns}
 
-%\sourceline{Existing HELP4CERN elastic-luminosity comparison; orange: $E_\mu=500$ GeV, $E_p=7$ TeV.}
-
 \helplogo
 
 \end{frame}
+
+
+
+%==================================================
+
+
+\begin{frame}{High-energy $\gamma \gamma$ physics is a natural part of the \LHCmu{} programme}
+\begin{columns}%[T]
+\begin{column}{0.61\textwidth}
+			
+\begin{alertblock}{Interesting HET directions}
+\begin{itemize}
+\justifying \footnotesize
+\item Once the photon luminosity is folded with the relevant \(\gamma\gamma\) subprocess, the LH\(\mu\)C provides access 
+to a broad and complementary two-photon programme.  
+\item Precision QED and lepton physics: \(\gamma\gamma\to\mu^+\mu^-,\,\tau^+\tau^-\), including anomalous \(\tau\) electromagnetic moments,
+\item Electroweak and EFT probes: \(\gamma\gamma\to W^+W^-\) and sensitivity to anomalous quartic gauge couplings, 
+\item Rare neutral-gauge channel: loop-induced \(\gamma\gamma\to ZZ\), with sensitivity to neutral quartic gauge interactions,
+\item Heavy charged final states: \(\gamma\gamma\to t\bar t\) and other high-threshold processes, 
+\item BSM opportunities: light-by-light scattering and pair production of new electrically charged particles.
+
+\end{itemize}
+\end{alertblock}
+			
+\end{column}
+		
+		
+\begin{column}{0.45\textwidth}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Sgg_New.jpg}
+\justifying \tiny Elastic \(S_{\gamma\gamma}(W)\) for the LHeC and LH\(\mu\)C benchmark configurations. 
+\end{figure}
+\end{column}
+		
+\end{columns}
+	
+	
+\helplogo
+	
+\end{frame}
+
+
+%==================================================
+
 
 
 % --------------------------------------------------------------------------
@@ -787,44 +904,12 @@ The detailed calculation separates elastic, tagged elastic ($0.01<y_p<0.1$), and
 
 \end{frame}
 
+
+
 % --------------------------------------------------------------------------
 % Slide 11 -- Source: draft_yy_lhec appendices C/D
 % --------------------------------------------------------------------------
 
-\begin{frame}{Beyond the simplest EPA: photon virtuality and exact $W_{\gamma\gamma}$ kinematics}
-\begin{columns}[T]
-\begin{column}{0.50\textwidth}
-	
-\begin{block}{High-energy approximation}\small
-\[
-W^2\simeq y_\ell y_p s.
-\]
-\end{block}
-\begin{alertblock}{Exact elastic relation in the updated study}\small
-\[
-\boxed{W^2=-Q_\ell^2+y_\ell y_p s}
-\]
-{\scriptsize The paper writes $\ell=e$; the same lepton-side kinematics applies after $e\to\mu$.}
-
-\end{alertblock}
-\end{column}
-\begin{column}{0.46\textwidth}
-\begin{itemize}\scriptsize
-\item The approximation is excellent when photon virtualities are negligible relative to $W^2$.
-\item For proton dissociation, the exact expression also depends on $Q_p^2$ and $M_N$.
-\item Elastic EPA agrees at percent level with matrix-element generators once the proper $W$ definition is used; inelastic modelling is more sensitive to the dissociative phase space.
-\end{itemize}
-\begin{block}{Precision lesson}\scriptsize
-At sizeable $Q^2$, correct $W_{\gamma\gamma}$ reconstruction is part of the physics model, not a cosmetic refinement.
-\end{block}
-\end{column}
-\end{columns}
-
-%\sourceline{Updated exact-kinematics study: draft\_yy\_lhec, Appendices C--E.}
-
-\helplogo
-
-\end{frame}
 
 % --------------------------------------------------------------------------
 \section{Standard-Model $\gamma\gamma$ processes}

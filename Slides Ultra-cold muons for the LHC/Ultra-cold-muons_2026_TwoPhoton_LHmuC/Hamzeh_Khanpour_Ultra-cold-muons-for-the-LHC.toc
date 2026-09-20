@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{LH$\mu $C and the $\gamma \gamma $ opportunity}{3}{0}{1}
 \beamer@sectionintoc {2}{Equivalent Photon Approximation and $\gamma \gamma $ luminosity}{9}{0}{2}
-\beamer@sectionintoc {3}{Standard-Model $\gamma \gamma $ processes}{14}{0}{3}
-\beamer@sectionintoc {4}{Precision / EFT probes: $\tau $ moments and gauge couplings}{18}{0}{4}
-\beamer@sectionintoc {5}{Heavy and BSM final states}{24}{0}{5}
-\beamer@sectionintoc {6}{Experimental opportunities and outlook}{27}{0}{6}
+\beamer@sectionintoc {3}{Standard-Model $\gamma \gamma $ processes}{15}{0}{3}
+\beamer@sectionintoc {4}{Precision / EFT probes: $\tau $ moments and gauge couplings}{19}{0}{4}
+\beamer@sectionintoc {5}{Heavy and BSM final states}{25}{0}{5}
+\beamer@sectionintoc {6}{Experimental opportunities and outlook}{28}{0}{6}

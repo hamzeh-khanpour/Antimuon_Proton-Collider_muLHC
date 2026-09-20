@@ -683,7 +683,8 @@ W\equiv W_{\gamma\gamma}.
 	
 \begin{columns}[T]
 \begin{column}{0.62\textwidth}
-\begin{block}{Generic EPA flux}\scriptsize
+\begin{block}{Generic EPA flux}
+\scriptsize
 \[
 \resizebox{0.96\linewidth}{!}{$\displaystyle
 \Phi_\gamma(y)=\frac{\alpha}{\pi y}\int\frac{dQ^2}{Q^2}
@@ -701,7 +702,7 @@ Q^2_{\min}=\frac{M^2y^2}{1-y}.
 \end{itemize}
 \end{column}
 
-\begin{column}{0.42\textwidth}
+\begin{column}{0.43\textwidth}
 	
 \begin{alertblock}{Elastic proton emission}
 \scriptsize
@@ -717,10 +718,23 @@ The dipole form factors suppress large $Q_p^2$.
 \end{column}
 \end{columns}
 
-\begin{block}{Proton dissociation}
-\small \justifying 
-For $p\to X$, structure functions replace elastic form factors and the flux depends on the dissociative mass $M_N$.
-\end{block}
+\begin{alertblock}{Proton-dissociative emission}
+\scriptsize	
+\[
+F_E(Q^2)
+=
+\int \frac{dx}{x}F_2(x,Q^2),
+\qquad
+F_M(Q^2)
+=
+\int \frac{dx}{x^3}F_2(x,Q^2).
+\]
+	
+\footnotesize \justifying 
+For \(p\to X_p+\gamma^*\), proton structure functions replace the elastic
+form factors; the flux depends on the photon virtuality \(Q_p^2\) and the
+dissociative mass \(M_N\):    {\color{blue}$M_N^2 = m_p^2 + Q^2\left(\frac{1}{x}-1\right)$}. 
+\end{alertblock}
 
 \helplogo
 
@@ -964,52 +978,52 @@ Together they illustrate the complementary precision and EFT sensitivity of the 
 % --------------------------------------------------------------------------
 \begin{frame}{Benchmark \(\gamma\gamma\) channel: \(\tau^+\tau^-\) and anomalous \(\tau\) moments}
 	
-	\begin{columns}[T]%[T,onlytextwidth]
+\begin{columns}[T]%[T,onlytextwidth]
 		
-		%========================================
-		% Left column: text + topology
-		%========================================
-		\begin{column}{0.55\textwidth}
+%========================================
+% Left column: text + topology
+%========================================
+\begin{column}{0.55\textwidth}
 			
-			{
-				\setbeamercolor{uppercol}{fg=white,bg=green!60!black}
-				\setbeamercolor{lowercol}{fg=black,bg=green!8}
+{
+\setbeamercolor{uppercol}{fg=white,bg=green!60!black}
+\setbeamercolor{lowercol}{fg=black,bg=green!8}
 				
-				\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{LH$\mu$C $\tau^+\tau^-$ physics message}
-					\justifying
-					\small
+\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{LH$\mu$C $\tau^+\tau^-$ physics message}
+\justifying
+\small
 					
-					\begin{itemize}
-						\setlength{\itemsep}{0.35em}
-						\justifying
-						\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV, and about \(70.3\) pb at the nominal
-						\(5.3~\mathrm{TeV}\) baseline. 
+\begin{itemize}
+\setlength{\itemsep}{0.35em}
+\justifying
+\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV, and about \(70.3\) pb at the nominal
+\(5.3~\mathrm{TeV}\) baseline. 
 						
-						\item This provides a high-statistics probe of the \(\gamma\tau\tau\) vertex and anomalous magnetic ($a_\tau$) and electric ($d_\tau$) dipole moments.
+\item This provides a high-statistics probe of the \(\gamma\tau\tau\) vertex and anomalous magnetic ($a_\tau$) and electric ($d_\tau$) dipole moments.
 						
-						\item Anomalous contributions harden the high-\(M_{\tau\tau}\) tail, making the invariant-mass spectrum the key discriminating observable.
+\item Anomalous contributions harden the high-\(M_{\tau\tau}\) tail, making the invariant-mass spectrum the key discriminating observable.
 						
-						\item This is one of the cleanest examples of how \LHCmu{} combines high energy with a low-background exclusive topology.
-					\end{itemize}
+\item This is one of the cleanest examples of how \LHCmu{} combines high energy with a low-background exclusive topology.
+\end{itemize}
 					
-				\end{beamerboxesrounded}
-			}
+\end{beamerboxesrounded}
+}
 			
-		\end{column}
+\end{column}
 		
-		%========================================
-		% Right column: figure
-		%========================================
-		\begin{column}{0.45\textwidth}
-			\vspace{-0.5cm}
-			\begin{figure}
-				\centering
-				\includegraphics[width=\linewidth,height=0.73\textheight,keepaspectratio]{yytautau.jpg}
-				\justifying\scriptsize Elastic $\gamma\gamma\to\tau^+\tau^-$ cross section above the threshold $W_0$, comparing the LHeC and \LHCmu{} benchmark configurations.
-			\end{figure}
-		\end{column}
+%========================================
+% Right column: figure
+%========================================
+\begin{column}{0.45\textwidth}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth,height=0.73\textheight,keepaspectratio]{yytautau.jpg}
+\justifying\scriptsize Elastic $\gamma\gamma\to\tau^+\tau^-$ cross section above the threshold $W_0$, comparing the LHeC and \LHCmu{} benchmark configurations.
+\end{figure}
+\end{column}
 		
-	\end{columns}
+\end{columns}
 	
 \helplogo
 	
@@ -1019,12 +1033,17 @@ Together they illustrate the complementary precision and EFT sensitivity of the 
 
 
 
-% Slide 16 -- Source: dedicated tau-moments deck
 % --------------------------------------------------------------------------
-
+% Slide 16A -- tau electromagnetic moments: general vertex + SMEFT
+% --------------------------------------------------------------------------
 \begin{frame}{Anomalous $\tau$ electromagnetic moments: the $\gamma\tau\tau$ vertex}
-\begin{columns}[T]
+	
+\begin{columns}%[T]
+% ------------------------------------------------------------------
+% LEFT COLUMN
+% ------------------------------------------------------------------
 \begin{column}{0.60\textwidth}
+			
 \begin{block}{General electromagnetic vertex}
 \scriptsize
 \[
@@ -1033,38 +1052,142 @@ Together they illustrate the complementary precision and EFT sensitivity of the 
 +\sigma^{\mu\nu}q_\nu\gamma_5 F_3(q^2),
 \]
 \[
-F_2(0)=a_\tau,\qquad F_3(0)=-\frac{2m_\tau}{e}\,d_\tau.
+F_2(0)=a_\tau,\qquad
+F_3(0)=-\frac{2m_\tau}{e}\,d_\tau.
 \]
 \end{block}
-\begin{itemize}\scriptsize
-\item $a_\tau$: CP-even anomalous magnetic dipole moment.
-\item $d_\tau$: CP-odd electric dipole moment.
-\item $\gamma\gamma\to\tau^+\tau^-$ probes the vertex directly.
+			
+
+\begin{itemize}
+\scriptsize \justifying 
+\item $F_1$: electric charge form factor.
+\item $a_\tau$: \textbf{CP-even} anomalous magnetic dipole moment.
+\item $d_\tau$: \textbf{CP-odd} electric dipole moment.
+\item In the SM, both are very small; any sizable deviation would signal new physics.
+\item $\gamma\gamma\to\tau^+\tau^-$ probes the \(\gamma\tau\tau\) vertex directly.
 \end{itemize}
+			
 \end{column}
-\begin{column}{0.36\textwidth}
-\begin{alertblock}{SMEFT interpretation}\tiny
-Gauge-invariant tau dipoles:
+		
+% ------------------------------------------------------------------
+% RIGHT COLUMN
+% ------------------------------------------------------------------
+\begin{column}{0.45\textwidth}
+
+\begin{center}
+\includegraphics[width=0.50\linewidth]{Ctb.png}
+\end{center}
+
+\begin{alertblock}{SMEFT interpretation}
+\scriptsize \justifying 
+Gauge-invariant dipole operators can be written as
+\tiny 
+	
 \[
-\resizebox{0.94\linewidth}{!}{$\displaystyle
-\bar L_\tau\sigma^{\mu\nu}\tau_R H
-\left(\frac{C_{\tau B}}{\Lambda^2}B_{\mu\nu}
-+\frac{C_{\tau W}}{\Lambda^2}W_{\mu\nu}\right)+\mathrm{h.c.}$}
+\resizebox{0.96\linewidth}{!}{$\displaystyle
+\bar L_\tau \sigma^{\mu\nu}\tau_R\,H
+\left(
+\frac{C_{\tau B}}{\Lambda^2} B_{\mu\nu}
++
+\frac{C_{\tau W}}{\Lambda^2} W_{\mu\nu}
+\right)
++\mathrm{h.c.}$}
 \]
-Real and imaginary coefficient combinations map respectively to magnetic and electric dipole deformations after electroweak symmetry breaking.
+	
+\scriptsize \justifying 
+After electroweak symmetry breaking, suitable real and imaginary
+combinations of \(C_{\tau B}\) and \(C_{\tau W}\) generate
+respectively magnetic and electric dipole deformations.
 \end{alertblock}
+
 \end{column}
+
 \end{columns}
 
-%\sourceline{Dedicated anomalous-$\tau$ study, April 2026; updated benchmark on the next slide.}
-
 \helplogo
-
+	
 \end{frame}
 
 
 
 
+
+
+% --------------------------------------------------------------------------
+% Slide 16B -- how the anomalous moments appear in gamma-gamma -> tau tau
+% --------------------------------------------------------------------------
+\begin{frame}{How anomalous $\tau$ moments appear in $\gamma\gamma\to\tau^+\tau^-$}
+	
+\begin{columns}%[T]
+% ------------------------------------------------------------------
+% LEFT COLUMN
+% ------------------------------------------------------------------
+\begin{column}{0.55\textwidth}
+			
+\begin{block}{Physical consequences in $\gamma\gamma\to\tau^+\tau^-$}
+
+\begin{itemize}
+\scriptsize \justifying
+\item The anomalous magnetic moment \(a_\tau\) modifies the
+\textbf{CP-even} production rate and differential distributions.
+					
+\item The electric dipole moment \(d_\tau\) is \textbf{CP-odd}; in
+unpolarised inclusive rates it typically enters quadratically, while
+dedicated CP-odd observables can provide linear sensitivity.
+					
+\item Both effects become more visible in the \textbf{hard kinematic regime},
+especially at large \(M_{\tau\tau}\), where the BSM contribution grows
+relative to the SM baseline.
+					
+\item The \(\tau\)-pair channel is therefore a natural benchmark to connect
+high-energy \(\gamma\gamma\) collisions with dipole-moment searches.
+\end{itemize}
+\end{block}
+			
+	
+\end{column}
+		
+% ------------------------------------------------------------------
+% RIGHT COLUMN
+% ------------------------------------------------------------------
+\begin{column}{0.55\textwidth}
+			
+\begin{exampleblock}{Experimental strategy before limit setting}
+
+\begin{itemize}
+\scriptsize \justifying
+\item Use the clean \(\gamma\gamma\to\tau^+\tau^-\) sample as the benchmark channel.
+					
+\item Focus on observables such as
+\[
+M_{\tau\tau},\qquad Y_{\tau\tau},\qquad p_T^\tau,
+\]
+with the \textbf{high-\(M_{\tau\tau}\) tail} providing the leading lever arm.
+					
+\item Compare the measured differential spectra with the SM expectation
+and with benchmark deformations in \(a_\tau\) and/or \(d_\tau\).
+					
+\item The next step is therefore to turn these distortions into
+\textbf{projected constraints / limits}.
+\end{itemize}
+\end{exampleblock}
+
+	
+\end{column}
+
+\end{columns}
+
+\begin{alertblock}{Why LH\(\mu\)C is promising}
+\scriptsize \justifying
+Relative to the LHeC benchmark, the LH\(\mu\)C provides a harder
+\(\gamma\gamma\) luminosity spectrum and better statistical reach in the
+high-\(M_{\tau\tau}\) tail, where sensitivity to anomalous dipole couplings
+is strongest.
+\end{alertblock}
+
+	\helplogo
+	
+\end{frame}
 
 
 
@@ -1074,73 +1197,58 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 % current limits + LHeC vs LHmuC shape leverage
 % --------------------------------------------------------------------------
 \begin{frame}{Current limits and high-\(M_{\tau\tau}\) sensitivity to \(\delta a_\tau\)}
-	
-	
-	%\vspace{-0.1cm}
-	
-	\begin{columns}[T]%[T,onlytextwidth]
-		
-		%------------------------------------------------
-		\begin{column}{0.55\textwidth}
-			
-			\begin{itemize}
-				\scriptsize
-				\justifying
-				
-				\item For the benchmark deformation \(\delta a_\tau=0.005\), the deviation
-				from the SM remains small at low \(M_{\tau\tau}\), but grows in the
-				high-\(M_{\tau\tau}\) tail; this is the main source of sensitivity.
-				
-				\item Compared with the LHeC benchmark, the nominal \LHCmu{} setup probes
-				a harder kinematic regime and retains better statistical reach in the tail,
-				giving stronger sensitivity leverage on anomalous \(\tau\) dipole couplings.
-				
-				\item These distributions therefore indicate good  expected sensitivity
-				at \LHCmu{}, but a quantitative projected limit still requires a dedicated
-				detector-level statistical analysis.
-				
-			\end{itemize}
-			\begin{alertblock}{Tail-driven sensitivity}
-				\scriptsize
-				\justifying
-				The sensitivity to anomalous \(\tau\) dipole couplings is tail-driven.
-				Relative to the LHeC benchmark, \LHCmu{} combines a larger event sample
-				with a stronger high-\(M_{\tau\tau}\) lever arm, making it a promising
-				benchmark for \(a_\tau\) and \(d_\tau\) studies.
-			\end{alertblock}			
-			
-		\end{column}
-		
-		%------------------------------------------------
-		\begin{column}{0.55\textwidth}
-			\centering	
-			\includegraphics[width=0.49\linewidth]{LHeC_tauta.jpg}
-			\includegraphics[width=0.49\linewidth]{LHmuC_tautau.jpg}
-			
-			\begin{exampleblock}{Current LHC limits on \(a_\tau\)}
-				\scriptsize
-				\justifying
-				CMS exclusive \(pp\) photon-induced \(\tau^+\tau^-\) production gives $a_\tau \in [-0.0022,\,0.0041]$ [{\color{magenta} 2406.03975 [hep-ex]}], while the ATLAS high-mass \(\tau^+\tau^-\) analysis gives $a_\tau \in [-0.0024,\,0.0047]
-				\quad (95\%~\mathrm{CL})$ [{\color{magenta}2503.19836 [hep-ex]}].
-			\end{exampleblock}
 
-		\end{column}
+	
+\begin{columns}[T]%[T,onlytextwidth]
+
+%------------------------------------------------
+\begin{column}{0.55\textwidth}
+
+\begin{itemize}
+\scriptsize \justifying
+				
+\item For the benchmark deformation \(\delta a_\tau=0.005\), the deviation
+from the SM remains small at low \(M_{\tau\tau}\), but grows in the
+high-\(M_{\tau\tau}\) tail; this is the main source of sensitivity.
+				
+\item Compared with the LHeC benchmark, the nominal \LHCmu{} setup probes
+a harder kinematic regime and retains better statistical reach in the tail,
+giving stronger sensitivity leverage on anomalous \(\tau\) dipole couplings.
+				
+\item These distributions therefore indicate good  expected sensitivity
+at \LHCmu{}, but a quantitative projected limit still requires a dedicated
+detector-level statistical analysis.
+				
+\end{itemize}
+\begin{alertblock}{Tail-driven sensitivity}
+\scriptsize \justifying
+The sensitivity to anomalous \(\tau\) dipole couplings is tail-driven.
+Relative to the LHeC benchmark, \LHCmu{} combines a larger event sample
+with a stronger high-\(M_{\tau\tau}\) lever arm, making it a promising
+benchmark for \(a_\tau\) and \(d_\tau\) studies.
+\end{alertblock}			
+			
+\end{column}
 		
-	\end{columns}
+%------------------------------------------------
+\begin{column}{0.55\textwidth}
+\centering	
+\includegraphics[width=0.49\linewidth]{LHeC_tauta.jpg}
+\includegraphics[width=0.49\linewidth]{LHmuC_tautau.jpg}
+		
+\begin{exampleblock}{Current LHC limits on \(a_\tau\)}
+\scriptsize \justifying
+CMS exclusive \(pp\) photon-induced \(\tau^+\tau^-\) production gives $a_\tau \in [-0.0022,\,0.0041]$ [{\color{magenta} 2406.03975 [hep-ex]}], while the ATLAS high-mass \(\tau^+\tau^-\) analysis gives $a_\tau \in [-0.0024,\,0.0047]
+\quad (95\%~\mathrm{CL})$ [{\color{magenta}2503.19836 [hep-ex]}].
+\end{exampleblock}
+
+\end{column}
+		
+\end{columns}
 	
 \helplogo
 	
 \end{frame}
-
-
-
-
-
-
-
-
-
-
 
 
 % --------------------------------------------------------------------------
@@ -1162,7 +1270,8 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 \boxed{\sigma_{\rm el}^{\rm LH\mu C(3.7)}\simeq0.166~\mathrm{pb}}
 \]
 \end{alertblock}
-\begin{itemize}\scriptsize
+\begin{itemize}
+\scriptsize \justifying 
 \item The $W$ threshold lies inside the high-luminosity $\gamma\gamma$ regime.
 \item The process directly tests the SM $\gamma\gamma WW$ gauge structure.
 \item The high-$M_{WW}$ tail is a clean lever arm for dimension-8 quartic-gauge operators.
@@ -1170,19 +1279,18 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 \end{column}
 \end{columns}
 
-%\sourceline{Existing HELP4CERN elastic $WW$ calculation; orange curve: LH$\mu$C@3.7 TeV.}
 
 \helplogo
 
 \end{frame}
 
+
+
+
+
 % --------------------------------------------------------------------------
 % Slide 19 -- Source: updated draft_yy_lhec WW aQGC analysis
 % --------------------------------------------------------------------------
-
-
-
-
 
 
 \begin{frame}{Anomalous quartic gauge couplings in $\gamma\gamma\to W^+W^-$}
@@ -1209,8 +1317,6 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 {\tiny\color{LHRed}\textbf{Scope:} no detector-level LH$\mu$C exclusion is claimed here; this is a defined next HELP4CERN study.}
 \end{column}
 \end{columns}
-
-%\sourceline{Updated draft\_yy\_lhec: $WW$ aQGC benchmark and EFT/SM ratio.}
 
 \helplogo
 
@@ -1251,7 +1357,6 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 \end{column}
 \end{columns}
 
-%\sourceline{Existing HELP4CERN elastic $\gamma\gamma\to t\bar t$ calculation.}
 
 \helplogo
 
@@ -1262,14 +1367,15 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 
 % --------------------------------------------------------------------------
 \section{Experimental opportunities and outlook}
-
-% Slide 25 -- New experiment-facing summary
 % --------------------------------------------------------------------------
 
 \begin{frame}{What does two-photon physics require from the LH$\mu$C experiment?}
 \begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\begin{itemize}\scriptsize
+	
+\begin{column}{0.99\textwidth}
+	
+\begin{itemize}
+\scriptsize \justifying 
 \item \textbf{Wide central tracking and lepton acceptance}, including robust $\tau$ reconstruction.
 \item \textbf{Efficient $W/Z/t$ reconstruction} for heavy $\gamma\gamma$ final states.
 \item \textbf{Exclusivity and acoplanarity} observables with sensitivity to low extra activity.
@@ -1279,19 +1385,23 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 \item Exploit the defining advantage: the \textbf{clean, low-pile-up $\mu p$ environment}.
 \end{itemize}
 
-\begin{alertblock}{Physics--detector connection}\scriptsize
-The $\gamma\gamma$ programme links central reconstruction, lepton tagging and near-beam instrumentation directly to the usable photon luminosity and kinematic closure.
+\begin{alertblock}{Physics--detector connection}
+\scriptsize \justifying 
+The $\gamma\gamma$ programme links central reconstruction, lepton tagging and near-beam instrumentation 
+directly to the usable photon luminosity and kinematic closure. 
 \end{alertblock}
 
 \end{column}
-\begin{column}{0.38\textwidth}
-\placeholdergraphic{Suggested figure: LH$\mu$C interaction-region schematic with central detector, scattered-muon acceptance and a near-beam proton tag.}{3.05cm}
-\end{column}
+
 \end{columns}
 
 \helplogo
 
 \end{frame}
+
+
+
+
 
 % --------------------------------------------------------------------------
 % Slide 26 -- Final summary, no separate 27th thank-you slide
@@ -1413,7 +1523,31 @@ Next steps for HELP4CERN:
 		
 \end{frame}
 
+
+
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1425,37 +1559,28 @@ Next steps for HELP4CERN:
 % --------------------------------------------------------------------------
 
 \begin{frame}{Elastic vs. inelastic $\gamma\gamma$ luminosity and forward proton tagging}
-	\begin{columns}[T]
-		\begin{column}{0.64\textwidth}
-			\centering
-			\includegraphics[width=0.86\linewidth]{luminosity_elastic_inelastic.png}
-		\end{column}
-		\begin{column}{0.33\textwidth}
-			\begin{alertblock}{LHeC reference study}\tiny
-				The detailed calculation separates elastic, tagged elastic ($0.01<y_p<0.1$), and proton-dissociative photon emission for several $M_N$ and $Q_p^2$ ranges.
-			\end{alertblock}
-			\begin{itemize}
-				\justifying 
-				\scriptsize
-				\item Larger allowed dissociative masses increase the usable $\gamma\gamma$ luminosity.
-				\item A forward proton tag improves kinematic closure, especially for final states with neutrinos.
-				\item Low pile-up means proton tagging need not be mandatory for every clean channel.
-			\end{itemize}
-		\end{column}
-	\end{columns}
-	
-	%\sourceline{LHeC $\gamma\gamma$ paper: luminosity spectrum and near-beam tagging discussion; topology logic transfers to LH$\mu$C.}
-	
-	\helplogo
+\begin{columns}[T]
+\begin{column}{0.64\textwidth}
+\centering
+\includegraphics[width=0.86\linewidth]{luminosity_elastic_inelastic.png}
+\end{column}
+\begin{column}{0.33\textwidth}
+\begin{alertblock}{LHeC reference study}\tiny
+The detailed calculation separates elastic, tagged elastic ($0.01<y_p<0.1$), and proton-dissociative photon emission for several $M_N$ and $Q_p^2$ ranges.
+\end{alertblock}
+\begin{itemize}
+\justifying 
+\scriptsize
+\item Larger allowed dissociative masses increase the usable $\gamma\gamma$ luminosity.
+\item A forward proton tag improves kinematic closure, especially for final states with neutrinos.
+\item Low pile-up means proton tagging need not be mandatory for every clean channel.
+\end{itemize}
+\end{column}
+\end{columns}
+
+\helplogo
 	
 \end{frame}
-
-
-
-% --------------------------------------------------------------------------
-% Slide 11 -- Source: draft_yy_lhec appendices C/D
-% --------------------------------------------------------------------------
-
 
 
 % --------------------------------------------------------------------------
@@ -1771,6 +1896,53 @@ Next steps for HELP4CERN:
 	\helplogo
 	
 \end{frame}
+
+
+
+
+
+% Slide 16 -- Source: dedicated tau-moments deck
+% --------------------------------------------------------------------------
+
+\begin{frame}{Anomalous $\tau$ electromagnetic moments: the $\gamma\tau\tau$ vertex}
+	\begin{columns}[T]
+		\begin{column}{0.60\textwidth}
+			\begin{block}{General electromagnetic vertex}
+				\scriptsize
+				\[
+				\Gamma^\mu(q^2)=\gamma^\mu F_1(q^2)
+				+\frac{i\sigma^{\mu\nu}q_\nu}{2m_\tau}F_2(q^2)
+				+\sigma^{\mu\nu}q_\nu\gamma_5 F_3(q^2),
+				\]
+				\[
+				F_2(0)=a_\tau,\qquad F_3(0)=-\frac{2m_\tau}{e}\,d_\tau.
+				\]
+			\end{block}
+			\begin{itemize}\scriptsize
+				\item $a_\tau$: CP-even anomalous magnetic dipole moment.
+				\item $d_\tau$: CP-odd electric dipole moment.
+				\item $\gamma\gamma\to\tau^+\tau^-$ probes the vertex directly.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.36\textwidth}
+			\begin{alertblock}{SMEFT interpretation}\tiny
+				Gauge-invariant tau dipoles:
+				\[
+				\resizebox{0.94\linewidth}{!}{$\displaystyle
+					\bar L_\tau\sigma^{\mu\nu}\tau_R H
+					\left(\frac{C_{\tau B}}{\Lambda^2}B_{\mu\nu}
+					+\frac{C_{\tau W}}{\Lambda^2}W_{\mu\nu}\right)+\mathrm{h.c.}$}
+				\]
+				Real and imaginary coefficient combinations map respectively to magnetic and electric dipole deformations after electroweak symmetry breaking.
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+	
+	\helplogo
+	
+\end{frame}
+
+
 
 
 

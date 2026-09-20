@@ -3,5 +3,5 @@
 \beamer@sectionintoc {2}{Equivalent Photon Approximation and $\gamma \gamma $ luminosity}{9}{0}{2}
 \beamer@sectionintoc {3}{Standard-Model $\gamma \gamma $ processes}{12}{0}{3}
 \beamer@sectionintoc {4}{Precision / EFT probes: $\tau $ moments and gauge couplings}{15}{0}{4}
-\beamer@sectionintoc {5}{Heavy final states}{20}{0}{5}
-\beamer@sectionintoc {6}{Experimental opportunities and outlook}{21}{0}{6}
+\beamer@sectionintoc {5}{Heavy final states}{21}{0}{5}
+\beamer@sectionintoc {6}{Experimental opportunities and outlook}{22}{0}{6}

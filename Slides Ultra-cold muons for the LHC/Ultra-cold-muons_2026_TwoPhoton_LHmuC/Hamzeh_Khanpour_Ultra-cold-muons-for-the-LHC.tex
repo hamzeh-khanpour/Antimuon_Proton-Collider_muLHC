@@ -732,20 +732,48 @@ For $p\to X$, structure functions replace elastic form factors and the flux depe
 
 \begin{frame}{Beyond the simplest EPA: photon virtuality and exact $W_{\gamma\gamma}$ kinematics}
 
+\vspace{-0.2cm}
+
 \begin{columns}%[T]
-\begin{column}{0.50\textwidth}
+	
+\begin{column}{0.55\textwidth}
 			
-\begin{block}{High-energy approximation}\small
+\begin{block}{High-energy approximation}
+\small
 \[
 W^2\simeq y_\ell y_p s.
 \]
 \end{block}
-\begin{alertblock}{Exact elastic relation in the updated study}\small
+
+\vspace{-0.3cm}
+
+\begin{alertblock}{Exact elastic and inelastic kinematics}
+\small
+\textbf{\textcolor{LHGreen}{Elastic:}}
 \[
-\boxed{W^2=-Q_\ell^2+y_\ell y_p s}
+W^2
+=
+-Q_\ell^2
++
+y_\ell y_p\,s
 \]
-{\scriptsize The paper writes $\ell=e$; the same lepton-side kinematics applies after $e\to\mu$.}
-				
+in which depends on the virtuality
+$Q_\ell^2$ of the photon emitted by the lepton.
+\textbf{\textcolor{LHRed}{Proton-dissociative:}}
+\[
+\begin{aligned}
+W^2 ={}&
+-Q_\ell^2-Q_p^2+y_\ell y_p\,s
+\\[0.15em]
+&+
+\frac{Q_\ell^2}{s}
+\left(Q_p^2+M_N^2-m_p^2\right)
+\end{aligned}
+\]
+\footnotesize \justifying 
+in which depend on the proton-side
+photon virtuality $Q_p^2$ and on the invariant mass $M_N$ of the dissociative hadronic system.
+	
 \end{alertblock}
 
 \end{column}
@@ -772,6 +800,10 @@ At sizeable $Q^2$, correct $W_{\gamma\gamma}$ reconstruction is part of the phys
 	
 \end{frame}
 
+
+
+% --------------------------------------------------------------------------
+\section{Standard-Model $\gamma\gamma$ processes}
 
 
 %==================================================
@@ -808,12 +840,13 @@ available at a given \(\gamma\gamma\) invariant mass \(W\).
 
 \begin{alertblock}{From luminosity to a physical process}
 \centering \small 
+{\color{blue} 
 \(\sigma_{\ell p\to \ell X p^{(*)}}
 =
 \int dW\,
 S_{\gamma\gamma}(W)\,
 \sigma_{\gamma\gamma\to X}(W).\)
-
+}
 \vspace{0.4cm}
 
 \scriptsize \justifying 
@@ -832,7 +865,7 @@ S_{\gamma\gamma}(W)\,
 %==================================================
 
 
-\begin{frame}{High-energy $\gamma \gamma$ physics is a natural part of the \LHCmu{} programme}
+\begin{frame}{The high-energy $\gamma\gamma$ physics landscape at LH$\mu$C}
 \begin{columns}%[T]
 \begin{column}{0.61\textwidth}
 			
@@ -874,57 +907,21 @@ to a broad and complementary two-photon programme.
 
 
 
-% --------------------------------------------------------------------------
-% Slide 10 -- Source: yy_lhec Fig. 2; LHeC reference topology study
-% --------------------------------------------------------------------------
-
-\begin{frame}{Elastic vs. inelastic $\gamma\gamma$ luminosity and forward proton tagging}
-\begin{columns}[T]
-\begin{column}{0.64\textwidth}
-\centering
-\includegraphics[width=0.86\linewidth]{luminosity_elastic_inelastic.png}
-\end{column}
-\begin{column}{0.33\textwidth}
-\begin{alertblock}{LHeC reference study}\tiny
-The detailed calculation separates elastic, tagged elastic ($0.01<y_p<0.1$), and proton-dissociative photon emission for several $M_N$ and $Q_p^2$ ranges.
-\end{alertblock}
-\begin{itemize}
-\justifying 
-\scriptsize
-\item Larger allowed dissociative masses increase the usable $\gamma\gamma$ luminosity.
-\item A forward proton tag improves kinematic closure, especially for final states with neutrinos.
-\item Low pile-up means proton tagging need not be mandatory for every clean channel.
-\end{itemize}
-\end{column}
-\end{columns}
-
-%\sourceline{LHeC $\gamma\gamma$ paper: luminosity spectrum and near-beam tagging discussion; topology logic transfers to LH$\mu$C.}
-
-\helplogo
-
-\end{frame}
-
-
-
-% --------------------------------------------------------------------------
-% Slide 11 -- Source: draft_yy_lhec appendices C/D
-% --------------------------------------------------------------------------
-
-
-% --------------------------------------------------------------------------
-\section{Standard-Model $\gamma\gamma$ processes}
-
 % Slide 12 -- New bridge from luminosity to subprocesses
 % --------------------------------------------------------------------------
-\begin{frame}{From photon luminosity to physics: $\gamma\gamma\to X$}
+\begin{frame}{Benchmark channels in the LH\(\mu\)C \(\gamma\gamma\) programme}
+	
 \begin{block}{Collider rate}
 \[
 \sigma\!\left(\mu p\to\mu\,X\,p^{(*)}\right)
 = S_{\gamma\gamma}\otimes\sigma(\gamma\gamma\to X).
 \]
 \end{block}
+
 \vspace{0.2em}
+
 \begin{center}
+	
 \begin{tikzpicture}[node distance=0.65cm and 0.55cm]
 \tikzset{pbox/.style={rounded corners=7pt,draw=blue!50!black,fill=blue!6,minimum height=1.15cm,text width=2.15cm,align=center,font=\small}}
 \node[pbox] (ll) {$\ell^+\ell^-$\\calibration};
@@ -936,130 +933,91 @@ The detailed calculation separates elastic, tagged elastic ($0.01<y_p<0.1$), and
 \node[pbox,right=of bsm,draw=cyan!60!black,fill=cyan!7] (lbl) {$\gamma\gamma$\\light-by-light};
 \node[pbox,right=of lbl,draw=black!60,fill=black!4] (h) {$H$\\loop-induced};
 \end{tikzpicture}
+
 \end{center}
 
-\takehome{The same photon luminosity supports precision QED, electroweak and loop physics, heavy thresholds, and direct searches for charged new states.}
-
-\helplogo
-
-\end{frame}
-
-% --------------------------------------------------------------------------
-% Slide 13 -- Adapted from existing exclusive gamma-gamma summary concept
-% --------------------------------------------------------------------------
-
-\begin{frame}{The high-energy $\gamma\gamma$ physics landscape at LH$\mu$C}
-\begin{columns}[T]
-\begin{column}{0.57\textwidth}
-\centering
-\includegraphics[width=0.82\linewidth]{Sgg_New.jpg}
-\end{column}
-\begin{column}{0.40\textwidth}
-\begin{itemize}\scriptsize
-\item \textcolor{LHGreen}{$\ell\ell,\tau\tau$}: high-rate QED calibration and dipole probes.
-\item \textcolor{LHOrange}{$WW$}: sizeable SM rate and direct $\gamma\gamma WW$ coupling.
-\item \textcolor{LHPurple}{$ZZ$}: loop-induced SM benchmark and neutral quartic couplings.
-\item \textcolor{LHRed}{$t\bar t$}: heavy threshold and top electromagnetic structure.
-\item \textcolor{LHBlue}{Charged BSM pairs}: production controlled mainly by electric charge and mass.
-\item $\gamma\gamma$ and $H$: loop-induced quantum processes and complementary searches.
-\end{itemize}
-\end{column}
-
-\end{columns}
-
-%\sourceline{Existing HELP4CERN threshold summary, adapted to the dedicated two-photon narrative.}
-
-\helplogo
-
-\end{frame}
-
-% --------------------------------------------------------------------------
-% Slide 14 -- Source: yy_lhec muon/electron-pair section
-% --------------------------------------------------------------------------
-
-\begin{frame}{$\gamma\gamma\to\ell^+\ell^-$: a standard candle for two-photon physics}
-\begin{columns}[T]
-\begin{column}{0.53\textwidth}
-\begin{itemize}\scriptsize
-\item $e^+e^-$ and $\mu^+\mu^-$ provide clean control samples for the complete $\gamma\gamma$ programme.
-\item They test EPA modelling, acoplanarity and elastic/inelastic separation.
-\item At LHeC, elastic EPA predictions agree with GRAPE and CepGen/LPAIR at the percent level for matched cuts and exact $W$ kinematics.
-\end{itemize}
-\begin{alertblock}{Elastic $\mu^+\mu^-$ benchmark at LHeC}
-\tiny
-\centering
-$Q^2_{e,p}<10~\mathrm{GeV}^2$\par\smallskip
-\begin{tabular}{lcc}
-\toprule
- & $W_0=10$ GeV & $W_0=100$ GeV\\
-\midrule
-EPA & 120.12 pb & 0.193 pb\\
-CepGen/LPAIR & 118.31 pb & 0.191 pb\\
-GRAPE (BH) & 121.37 pb & 0.193 pb\\
-\bottomrule
-\end{tabular}
+\begin{alertblock}{Benchmark studies highlighted in this talk}
+\justifying \footnotesize
+Two benchmark studies will be discussed in detail:
+\(\gamma\gamma\to\tau^+\tau^-\), probing anomalous \(\tau\) electromagnetic moments, and
+\(\gamma\gamma\to W^+W^-\), probing anomalous quartic gauge couplings.
+Together they illustrate the complementary precision and EFT sensitivity of the LH\(\mu\)C \(\gamma\gamma\) programme.
 \end{alertblock}
-\end{column}
-\begin{column}{0.43\textwidth}
-\centering
-\begin{tikzpicture}[scale=0.52,transform shape,>=Triangle]
-\coordinate (li) at (-3,1.4);\coordinate (lv) at (-1,0.9);\coordinate (lo) at (3,1.4);
-\coordinate (pi) at (-3,-1.4);\coordinate (pv) at (-1,-0.9);\coordinate (po) at (3,-1.4);\coordinate (c) at (0.7,0);
-\draw[->] (li)--(lv)--(lo);\draw[->,line width=1.1pt] (pi)--(pv)--(po);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (lv)--(c);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (pv)--(c);
-\draw[->] (c)--(3,0.55);\draw[->] (c)--(3,-0.55);
-\node[right] at (3,0.55) {$\ell^+$};\node[right] at (3,-0.55) {$\ell^-$};
-\node[left] at (li) {$\ell$};\node[left] at (pi) {$p$};\node[right] at (po) {$p$};
-\end{tikzpicture}
-\begin{block}{Why it matters for LH$\mu$C}\scriptsize
-The same QED process becomes a high-statistics calibration candle for the harder $\mu p$ photon spectrum and any forward-tagging strategy.
-\end{block}
-\end{column}
-\end{columns}
-
-%\sourceline{LHeC $\gamma\gamma$ paper, Table 1 and calibration-candle discussion.}
 
 \helplogo
 
 \end{frame}
 
-% --------------------------------------------------------------------------
-% Slide 15 -- Adapted from existing tau cross-section slide
-% --------------------------------------------------------------------------
 
-\begin{frame}{$\gamma\gamma\to\tau^+\tau^-$: a high-statistics tau factory}
-\begin{columns}[T]
-\begin{column}{0.61\textwidth}
-\centering
-\includegraphics[width=0.82\linewidth]{elastic_tau_tau.jpg}
 
-\end{column}
-\begin{column}{0.35\textwidth}
-\begin{alertblock}{Elastic benchmark}\scriptsize
-\[
-\sigma_{\rm el}^{\rm LHeC}\simeq 50.37~\mathrm{pb}
-\]
-\[
-\boxed{\sigma_{\rm el}^{\rm LH\mu C(3.7)}\simeq 58.56~\mathrm{pb}}
-\]
-\end{alertblock}
-\begin{itemize}\scriptsize
-\item Large statistics make $\tau\tau$ a natural precision channel.
-\item LH$\mu$C extends the accessible $M_{\tau\tau}$ tail.
-\item The hard tail enhances sensitivity to non-standard $\gamma\tau\tau$ interactions.
-\end{itemize}
-\end{column}
-\end{columns}
-
-%\sourceline{Elastic cross sections from the existing HELP4CERN two-photon calculations.}
-
-\helplogo
-
-\end{frame}
 
 % --------------------------------------------------------------------------
 \section{Precision / EFT probes: $\tau$ moments and gauge couplings}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 12
+% --------------------------------------------------------------------------
+\begin{frame}{Benchmark \(\gamma\gamma\) channel: \(\tau^+\tau^-\) and anomalous \(\tau\) moments}
+	
+	\begin{columns}[T]%[T,onlytextwidth]
+		
+		%========================================
+		% Left column: text + topology
+		%========================================
+		\begin{column}{0.55\textwidth}
+			
+			{
+				\setbeamercolor{uppercol}{fg=white,bg=green!60!black}
+				\setbeamercolor{lowercol}{fg=black,bg=green!8}
+				
+				\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{LH$\mu$C $\tau^+\tau^-$ physics message}
+					\justifying
+					\small
+					
+					\begin{itemize}
+						\setlength{\itemsep}{0.35em}
+						\justifying
+						\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV, and about \(70.3\) pb at the nominal
+						\(5.3~\mathrm{TeV}\) baseline. 
+						
+						\item This provides a high-statistics probe of the \(\gamma\tau\tau\) vertex and anomalous magnetic ($a_\tau$) and electric ($d_\tau$) dipole moments.
+						
+						\item Anomalous contributions harden the high-\(M_{\tau\tau}\) tail, making the invariant-mass spectrum the key discriminating observable.
+						
+						\item This is one of the cleanest examples of how \LHCmu{} combines high energy with a low-background exclusive topology.
+					\end{itemize}
+					
+				\end{beamerboxesrounded}
+			}
+			
+		\end{column}
+		
+		%========================================
+		% Right column: figure
+		%========================================
+		\begin{column}{0.45\textwidth}
+			\vspace{-0.5cm}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\linewidth,height=0.73\textheight,keepaspectratio]{yytautau.jpg}
+				\justifying\scriptsize Elastic $\gamma\gamma\to\tau^+\tau^-$ cross section above the threshold $W_0$, comparing the LHeC and \LHCmu{} benchmark configurations.
+			\end{figure}
+		\end{column}
+		
+	\end{columns}
+	
+\helplogo
+	
+\end{frame}
+
+
+
+
 
 % Slide 16 -- Source: dedicated tau-moments deck
 % --------------------------------------------------------------------------
@@ -1104,35 +1062,86 @@ Real and imaginary coefficient combinations map respectively to magnetic and ele
 
 \end{frame}
 
+
+
+
+
+
+
+
+
 % --------------------------------------------------------------------------
-% Slide 17 -- Source: updated draft_yy_lhec tau analysis
+% current limits + LHeC vs LHmuC shape leverage
 % --------------------------------------------------------------------------
+\begin{frame}{Current limits and high-\(M_{\tau\tau}\) sensitivity to \(\delta a_\tau\)}
+	
+	
+	%\vspace{-0.1cm}
+	
+	\begin{columns}[T]%[T,onlytextwidth]
+		
+		%------------------------------------------------
+		\begin{column}{0.55\textwidth}
+			
+			\begin{itemize}
+				\scriptsize
+				\justifying
+				
+				\item For the benchmark deformation \(\delta a_\tau=0.005\), the deviation
+				from the SM remains small at low \(M_{\tau\tau}\), but grows in the
+				high-\(M_{\tau\tau}\) tail; this is the main source of sensitivity.
+				
+				\item Compared with the LHeC benchmark, the nominal \LHCmu{} setup probes
+				a harder kinematic regime and retains better statistical reach in the tail,
+				giving stronger sensitivity leverage on anomalous \(\tau\) dipole couplings.
+				
+				\item These distributions therefore indicate good  expected sensitivity
+				at \LHCmu{}, but a quantitative projected limit still requires a dedicated
+				detector-level statistical analysis.
+				
+			\end{itemize}
+			\begin{alertblock}{Tail-driven sensitivity}
+				\scriptsize
+				\justifying
+				The sensitivity to anomalous \(\tau\) dipole couplings is tail-driven.
+				Relative to the LHeC benchmark, \LHCmu{} combines a larger event sample
+				with a stronger high-\(M_{\tau\tau}\) lever arm, making it a promising
+				benchmark for \(a_\tau\) and \(d_\tau\) studies.
+			\end{alertblock}			
+			
+		\end{column}
+		
+		%------------------------------------------------
+		\begin{column}{0.55\textwidth}
+			\centering	
+			\includegraphics[width=0.49\linewidth]{LHeC_tauta.jpg}
+			\includegraphics[width=0.49\linewidth]{LHmuC_tautau.jpg}
+			
+			\begin{exampleblock}{Current LHC limits on \(a_\tau\)}
+				\scriptsize
+				\justifying
+				CMS exclusive \(pp\) photon-induced \(\tau^+\tau^-\) production gives $a_\tau \in [-0.0022,\,0.0041]$ [{\color{magenta} 2406.03975 [hep-ex]}], while the ATLAS high-mass \(\tau^+\tau^-\) analysis gives $a_\tau \in [-0.0024,\,0.0047]
+				\quad (95\%~\mathrm{CL})$ [{\color{magenta}2503.19836 [hep-ex]}].
+			\end{exampleblock}
 
-\begin{frame}{Probing $\tau$ dipole moments in the high-$M_{\tau\tau}$ tail}
-\begin{columns}[T]
-\begin{column}{0.59\textwidth}
-\centering
-\includegraphics[width=0.76\linewidth]{tau_updated_Mtt.png}
-\end{column}
-\begin{column}{0.38\textwidth}
-\begin{alertblock}{Updated paper benchmark}\scriptsize
-The latest draft replaces the previous illustrative point by
-\[
-\boxed{\Delta a_\tau=5.0\times10^{-4}}.
-\]
-\end{alertblock}
-\begin{itemize}\scriptsize
-\item Shown: updated \textbf{LHeC elastic} reference calculation from the paper draft.
-\item The EFT/SM ratio exposes the growing shape distortion in the hard $M_{\tau\tau}$ region.
-\item The same SMEFT fit should be repeated for LH$\mu$C, whose harder spectrum gives more leverage at high mass.
-\end{itemize}
-\end{column}
-\end{columns}
-
-
+		\end{column}
+		
+	\end{columns}
+	
 \helplogo
-
+	
 \end{frame}
+
+
+
+
+
+
+
+
+
+
+
 
 % --------------------------------------------------------------------------
 % Slide 18 -- Adapted from existing WW benchmark
@@ -1171,6 +1180,11 @@ The latest draft replaces the previous illustrative point by
 % Slide 19 -- Source: updated draft_yy_lhec WW aQGC analysis
 % --------------------------------------------------------------------------
 
+
+
+
+
+
 \begin{frame}{Anomalous quartic gauge couplings in $\gamma\gamma\to W^+W^-$}
 \begin{columns}[T]
 \begin{column}{0.59\textwidth}
@@ -1202,86 +1216,17 @@ The latest draft replaces the previous illustrative point by
 
 \end{frame}
 
-% --------------------------------------------------------------------------
-% Slide 20 -- Adapted from existing ZZ benchmark
-% --------------------------------------------------------------------------
 
-\begin{frame}{$\gamma\gamma\to ZZ$: a loop-induced Standard-Model channel}
-\begin{columns}[T]
-\begin{column}{0.56\textwidth}
-\centering
-\includegraphics[width=0.68\linewidth]{zz_elastic_curve.png}
-\end{column}
-\begin{column}{0.40\textwidth}
-\begin{itemize}\scriptsize
-\item In the SM, $\gamma\gamma\to ZZ$ is absent at tree level and proceeds through loops.
-\item The small SM rate makes the channel a clean window on anomalous neutral quartic interactions.
-\item LH$\mu$C extends the accessible high-$M_{ZZ}$ regime.
-\end{itemize}
-\begin{alertblock}{Elastic benchmark}\scriptsize
-\[
-\sigma_{\rm el}^{\rm LHeC}\simeq0.046~\mathrm{fb}
-\]
-\[
-\boxed{\sigma_{\rm el}^{\rm LH\mu C(3.7)}\simeq0.284~\mathrm{fb}}
-\]
-\end{alertblock}
-\end{column}
-\end{columns}
 
-%\sourceline{Existing HELP4CERN elastic $ZZ$ calculation; updated draft motivates the neutral-QGC study.}
 
-\helplogo
-
-\end{frame}
-
-% --------------------------------------------------------------------------
-% Slide 21 -- Source: updated draft_yy_lhec ZZ AQGC table
-% --------------------------------------------------------------------------
-
-\begin{frame}{Neutral quartic gauge couplings in $\gamma\gamma\to ZZ$}
-\begin{columns}[T]
-\begin{column}{0.56\textwidth}
-\begin{block}{Rate model used in the updated study}\scriptsize
-\[
-\sigma_{\rm tot}\simeq\sigma_{\rm SM}^{\rm loop}+\sigma_{\rm AQGC}^{\rm tree}.
-\]
-\end{block}
-\begin{alertblock}{LHeC tagged-elastic reference}\tiny
-$\sigma_{\rm SM}=3.340\times10^{-5}$ pb; raw events assume 1 ab$^{-1}$ before $Z$ decays and detector effects.\par\smallskip
-\centering
-\begin{tabular}{cccc}
-\toprule
-$f_{M2}/\Lambda^4$ & $\sigma_{\rm AQGC}$ [pb] & events & enhancement\\
-\midrule
-0.1 & $1.17\times10^{-8}$ & 0.012 & 1.0004\\
-1.0 & $1.17\times10^{-6}$ & 1.17 & 1.035\\
-5.0 & $2.93\times10^{-5}$ & 29.3 & 1.88\\
-\bottomrule
-\end{tabular}
-\end{alertblock}
-\end{column}
-\begin{column}{0.40\textwidth}
-\begin{itemize}\scriptsize
-\item SM is loop induced; the quoted AQGC contribution is tree level.
-\item The table shows how an energy-growing neutral interaction can become competitive with a rare SM channel.
-\item These are \textbf{LHeC reference numbers}, not LH$\mu$C projected limits; the harder LH$\mu$C spectrum motivates the direct extension.
-\end{itemize}
-\end{column}
-\end{columns}
-
-%\sourceline{Updated draft\_yy\_lhec, neutral aQGC section.}
-
-\helplogo
-
-\end{frame}
 
 
 % --------------------------------------------------------------------------
-\section{Heavy and BSM final states}
+\section{Heavy final states}
 
 % Slide 22 -- Adapted from existing gamma-gamma ttbar benchmark
 % --------------------------------------------------------------------------
+
 
 \begin{frame}{Heavy final states: $\gamma\gamma\to t\bar t$}
 \begin{columns}[T]
@@ -1312,80 +1257,6 @@ $f_{M2}/\Lambda^4$ & $\sigma_{\rm AQGC}$ [pb] & events & enhancement\\
 
 \end{frame}
 
-% --------------------------------------------------------------------------
-% Slide 23 -- Source: yy_lhec SUSY section + updated compressed-SUSY discussion
-% --------------------------------------------------------------------------
-
-\begin{frame}{Beyond the Standard Model: charged-particle pair production in $\gamma\gamma$ collisions}
-\begin{columns}[T]
-\begin{column}{0.56\textwidth}
-\centering
-\includegraphics[width=0.80\linewidth]{susy_pair_curves.png}
-{\tiny Illustrative 100 GeV scalar (slepton) and fermion (higgsino) reference curves.}
-\end{column}
-\begin{column}{0.41\textwidth}
-\begin{itemize}
-\justifying 
-\scriptsize 
-\item Representative channels:
-\[
-\gamma\gamma\to\tilde\ell^+\tilde\ell^-,\qquad
-\gamma\gamma\to\tilde\chi^+\tilde\chi^-.
-\]
-\item Rates are governed mainly by electric charge and mass, complementary to strongly interacting searches.
-\item Forward kinematic closure is attractive for compressed spectra with soft visible products and missing momentum.
-\end{itemize}
-\begin{alertblock}{Updated interpretation}\tiny
-The draft notes that 100 GeV is now illustrative. Current constraints motivate roughly 300 GeV sleptons and 250--300 GeV higgsino benchmarks; LHeC rates near those thresholds are tiny, making a dedicated LH$\mu$C re-evaluation especially relevant.
-\end{alertblock}
-\end{column}
-\end{columns}
-
-%\sourceline{yy\_lhec SUSY section + updated compressed-SUSY discussion in draft\_yy\_lhec.}
-
-\helplogo
-
-\end{frame}
-
-% --------------------------------------------------------------------------
-% Slide 24 -- Source: updated LbL section + Higgs section
-% --------------------------------------------------------------------------
-
-\begin{frame}{Light-by-light scattering, Higgs production, and other $\gamma\gamma$ opportunities}
-\begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\begin{block}{Mature calculation: $\gamma\gamma\to\gamma\gamma$}\scriptsize
-SM light-by-light scattering is loop induced; all charged SM particles contribute to the box amplitude.
-\end{block}
-\centering
-\includegraphics[width=0.80\linewidth]{lbl_eta_updated.png}
-{\tiny Updated LHeC tagged-elastic SM pseudorapidity distributions.}
-\end{column}
-\begin{column}{0.39\textwidth}
-\begin{alertblock}{Exploratory: $\gamma\gamma\to H$}\scriptsize
-The Higgs channel is loop induced and rare, but it probes the effective $H\gamma\gamma$ interaction in an exceptionally clean initial state.
-\end{alertblock}
-\centering
-\begin{tikzpicture}[scale=0.60,transform shape]
-\coordinate (a) at (-2,1);\coordinate (b) at (-2,-1);\coordinate (c) at (0,0);\coordinate (h) at (2.4,0);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (a)--(c);
-\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (b)--(c);
-\draw[fill=orange!15,draw=LHOrange,line width=1.1pt] (c) circle (0.42);
-\draw[dashed,line width=1.1pt,->] (c)--(h);
-\node[left] at (a) {$\gamma$};\node[left] at (b) {$\gamma$};\node[right] at (h) {$H$};
-\node[font=\tiny] at (0,-0.75) {charged-particle loop};
-\end{tikzpicture}
-\begin{block}{LH$\mu$C opportunity}\scriptsize
-The harder photon spectrum extends the high-mass LbL region and other loop-induced or resonant searches.
-\end{block}
-\end{column}
-\end{columns}
-
-%\sourceline{Updated draft\_yy\_lhec LbL section; Higgs-via-$\gamma\gamma$ section in yy\_lhec / draft\_yy\_lhec.}
-
-\helplogo
-
-\end{frame}
 
 
 
@@ -1472,14 +1343,6 @@ Bottom line: high-energy $\gamma\gamma$ physics is one of the distinctive physic
 
 
 
-
-
-
-
-
-
-
-
 % --------------------------------------------------------------------------
 % Backup slide
 % --------------------------------------------------------------------------
@@ -1551,6 +1414,367 @@ Next steps for HELP4CERN:
 \end{frame}
 
 \end{document}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 10 -- Source: yy_lhec Fig. 2; LHeC reference topology study
+% --------------------------------------------------------------------------
+
+\begin{frame}{Elastic vs. inelastic $\gamma\gamma$ luminosity and forward proton tagging}
+	\begin{columns}[T]
+		\begin{column}{0.64\textwidth}
+			\centering
+			\includegraphics[width=0.86\linewidth]{luminosity_elastic_inelastic.png}
+		\end{column}
+		\begin{column}{0.33\textwidth}
+			\begin{alertblock}{LHeC reference study}\tiny
+				The detailed calculation separates elastic, tagged elastic ($0.01<y_p<0.1$), and proton-dissociative photon emission for several $M_N$ and $Q_p^2$ ranges.
+			\end{alertblock}
+			\begin{itemize}
+				\justifying 
+				\scriptsize
+				\item Larger allowed dissociative masses increase the usable $\gamma\gamma$ luminosity.
+				\item A forward proton tag improves kinematic closure, especially for final states with neutrinos.
+				\item Low pile-up means proton tagging need not be mandatory for every clean channel.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{LHeC $\gamma\gamma$ paper: luminosity spectrum and near-beam tagging discussion; topology logic transfers to LH$\mu$C.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 11 -- Source: draft_yy_lhec appendices C/D
+% --------------------------------------------------------------------------
+
+
+
+% --------------------------------------------------------------------------
+% Slide 13 -- Adapted from existing exclusive gamma-gamma summary concept
+% --------------------------------------------------------------------------
+
+\begin{frame}{The high-energy $\gamma\gamma$ physics landscape at LH$\mu$C}
+	\begin{columns}[T]
+		\begin{column}{0.57\textwidth}
+			\centering
+			\includegraphics[width=0.82\linewidth]{Sgg_New.jpg}
+		\end{column}
+		\begin{column}{0.40\textwidth}
+			\begin{itemize}\scriptsize
+				\item \textcolor{LHGreen}{$\ell\ell,\tau\tau$}: high-rate QED calibration and dipole probes.
+				\item \textcolor{LHOrange}{$WW$}: sizeable SM rate and direct $\gamma\gamma WW$ coupling.
+				\item \textcolor{LHPurple}{$ZZ$}: loop-induced SM benchmark and neutral quartic couplings.
+				\item \textcolor{LHRed}{$t\bar t$}: heavy threshold and top electromagnetic structure.
+				\item \textcolor{LHBlue}{Charged BSM pairs}: production controlled mainly by electric charge and mass.
+				\item $\gamma\gamma$ and $H$: loop-induced quantum processes and complementary searches.
+			\end{itemize}
+		\end{column}
+		
+	\end{columns}
+	
+	%\sourceline{Existing HELP4CERN threshold summary, adapted to the dedicated two-photon narrative.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 14 -- Source: yy_lhec muon/electron-pair section
+% --------------------------------------------------------------------------
+
+\begin{frame}{$\gamma\gamma\to\ell^+\ell^-$: a standard candle for two-photon physics}
+	\begin{columns}[T]
+		\begin{column}{0.53\textwidth}
+			\begin{itemize}\scriptsize
+				\item $e^+e^-$ and $\mu^+\mu^-$ provide clean control samples for the complete $\gamma\gamma$ programme.
+				\item They test EPA modelling, acoplanarity and elastic/inelastic separation.
+				\item At LHeC, elastic EPA predictions agree with GRAPE and CepGen/LPAIR at the percent level for matched cuts and exact $W$ kinematics.
+			\end{itemize}
+			\begin{alertblock}{Elastic $\mu^+\mu^-$ benchmark at LHeC}
+				\tiny
+				\centering
+				$Q^2_{e,p}<10~\mathrm{GeV}^2$\par\smallskip
+				\begin{tabular}{lcc}
+					\toprule
+					& $W_0=10$ GeV & $W_0=100$ GeV\\
+					\midrule
+					EPA & 120.12 pb & 0.193 pb\\
+					CepGen/LPAIR & 118.31 pb & 0.191 pb\\
+					GRAPE (BH) & 121.37 pb & 0.193 pb\\
+					\bottomrule
+				\end{tabular}
+			\end{alertblock}
+		\end{column}
+		\begin{column}{0.43\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.52,transform shape,>=Triangle]
+				\coordinate (li) at (-3,1.4);\coordinate (lv) at (-1,0.9);\coordinate (lo) at (3,1.4);
+				\coordinate (pi) at (-3,-1.4);\coordinate (pv) at (-1,-0.9);\coordinate (po) at (3,-1.4);\coordinate (c) at (0.7,0);
+				\draw[->] (li)--(lv)--(lo);\draw[->,line width=1.1pt] (pi)--(pv)--(po);
+				\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (lv)--(c);
+				\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (pv)--(c);
+				\draw[->] (c)--(3,0.55);\draw[->] (c)--(3,-0.55);
+				\node[right] at (3,0.55) {$\ell^+$};\node[right] at (3,-0.55) {$\ell^-$};
+				\node[left] at (li) {$\ell$};\node[left] at (pi) {$p$};\node[right] at (po) {$p$};
+			\end{tikzpicture}
+			\begin{block}{Why it matters for LH$\mu$C}\scriptsize
+				The same QED process becomes a high-statistics calibration candle for the harder $\mu p$ photon spectrum and any forward-tagging strategy.
+			\end{block}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{LHeC $\gamma\gamma$ paper, Table 1 and calibration-candle discussion.}
+	
+	\helplogo
+	
+\end{frame}
+
+% --------------------------------------------------------------------------
+% Slide 15 -- Adapted from existing tau cross-section slide
+% --------------------------------------------------------------------------
+
+\begin{frame}{$\gamma\gamma\to\tau^+\tau^-$: a high-statistics tau factory}
+	\begin{columns}[T]
+		\begin{column}{0.61\textwidth}
+			\centering
+			\includegraphics[width=0.82\linewidth]{elastic_tau_tau.jpg}
+			
+		\end{column}
+		\begin{column}{0.35\textwidth}
+			\begin{alertblock}{Elastic benchmark}\scriptsize
+				\[
+				\sigma_{\rm el}^{\rm LHeC}\simeq 50.37~\mathrm{pb}
+				\]
+				\[
+				\boxed{\sigma_{\rm el}^{\rm LH\mu C(3.7)}\simeq 58.56~\mathrm{pb}}
+				\]
+			\end{alertblock}
+			\begin{itemize}\scriptsize
+				\item Large statistics make $\tau\tau$ a natural precision channel.
+				\item LH$\mu$C extends the accessible $M_{\tau\tau}$ tail.
+				\item The hard tail enhances sensitivity to non-standard $\gamma\tau\tau$ interactions.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{Elastic cross sections from the existing HELP4CERN two-photon calculations.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 17 -- Source: updated draft_yy_lhec tau analysis
+% --------------------------------------------------------------------------
+
+\begin{frame}{Probing $\tau$ dipole moments in the high-$M_{\tau\tau}$ tail}
+	\begin{columns}[T]
+		\begin{column}{0.59\textwidth}
+			\centering
+			\includegraphics[width=0.76\linewidth]{tau_updated_Mtt.png}
+		\end{column}
+		\begin{column}{0.38\textwidth}
+			\begin{alertblock}{Updated paper benchmark}\scriptsize
+				The latest draft replaces the previous illustrative point by
+				\[
+				\boxed{\Delta a_\tau=5.0\times10^{-4}}.
+				\]
+			\end{alertblock}
+			\begin{itemize}\scriptsize
+				\item Shown: updated \textbf{LHeC elastic} reference calculation from the paper draft.
+				\item The EFT/SM ratio exposes the growing shape distortion in the hard $M_{\tau\tau}$ region.
+				\item The same SMEFT fit should be repeated for LH$\mu$C, whose harder spectrum gives more leverage at high mass.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 20 -- Adapted from existing ZZ benchmark
+% --------------------------------------------------------------------------
+
+\begin{frame}{$\gamma\gamma\to ZZ$: a loop-induced Standard-Model channel}
+	\begin{columns}[T]
+		\begin{column}{0.56\textwidth}
+			\centering
+			\includegraphics[width=0.68\linewidth]{zz_elastic_curve.png}
+		\end{column}
+		\begin{column}{0.40\textwidth}
+			\begin{itemize}\scriptsize
+				\item In the SM, $\gamma\gamma\to ZZ$ is absent at tree level and proceeds through loops.
+				\item The small SM rate makes the channel a clean window on anomalous neutral quartic interactions.
+				\item LH$\mu$C extends the accessible high-$M_{ZZ}$ regime.
+			\end{itemize}
+			\begin{alertblock}{Elastic benchmark}\scriptsize
+				\[
+				\sigma_{\rm el}^{\rm LHeC}\simeq0.046~\mathrm{fb}
+				\]
+				\[
+				\boxed{\sigma_{\rm el}^{\rm LH\mu C(3.7)}\simeq0.284~\mathrm{fb}}
+				\]
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{Existing HELP4CERN elastic $ZZ$ calculation; updated draft motivates the neutral-QGC study.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 21 -- Source: updated draft_yy_lhec ZZ AQGC table
+% --------------------------------------------------------------------------
+
+\begin{frame}{Neutral quartic gauge couplings in $\gamma\gamma\to ZZ$}
+	\begin{columns}[T]
+		\begin{column}{0.56\textwidth}
+			\begin{block}{Rate model used in the updated study}\scriptsize
+				\[
+				\sigma_{\rm tot}\simeq\sigma_{\rm SM}^{\rm loop}+\sigma_{\rm AQGC}^{\rm tree}.
+				\]
+			\end{block}
+			\begin{alertblock}{LHeC tagged-elastic reference}\tiny
+				$\sigma_{\rm SM}=3.340\times10^{-5}$ pb; raw events assume 1 ab$^{-1}$ before $Z$ decays and detector effects.\par\smallskip
+				\centering
+				\begin{tabular}{cccc}
+					\toprule
+					$f_{M2}/\Lambda^4$ & $\sigma_{\rm AQGC}$ [pb] & events & enhancement\\
+					\midrule
+					0.1 & $1.17\times10^{-8}$ & 0.012 & 1.0004\\
+					1.0 & $1.17\times10^{-6}$ & 1.17 & 1.035\\
+					5.0 & $2.93\times10^{-5}$ & 29.3 & 1.88\\
+					\bottomrule
+				\end{tabular}
+			\end{alertblock}
+		\end{column}
+		\begin{column}{0.40\textwidth}
+			\begin{itemize}\scriptsize
+				\item SM is loop induced; the quoted AQGC contribution is tree level.
+				\item The table shows how an energy-growing neutral interaction can become competitive with a rare SM channel.
+				\item These are \textbf{LHeC reference numbers}, not LH$\mu$C projected limits; the harder LH$\mu$C spectrum motivates the direct extension.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{Updated draft\_yy\_lhec, neutral aQGC section.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+
+
+% --------------------------------------------------------------------------
+% Slide 23 -- Source: yy_lhec SUSY section + updated compressed-SUSY discussion
+% --------------------------------------------------------------------------
+
+\begin{frame}{Beyond the Standard Model: charged-particle pair production in $\gamma\gamma$ collisions}
+	\begin{columns}[T]
+		\begin{column}{0.56\textwidth}
+			\centering
+			\includegraphics[width=0.80\linewidth]{susy_pair_curves.png}
+			{\tiny Illustrative 100 GeV scalar (slepton) and fermion (higgsino) reference curves.}
+		\end{column}
+		\begin{column}{0.41\textwidth}
+			\begin{itemize}
+				\justifying 
+				\scriptsize 
+				\item Representative channels:
+				\[
+				\gamma\gamma\to\tilde\ell^+\tilde\ell^-,\qquad
+				\gamma\gamma\to\tilde\chi^+\tilde\chi^-.
+				\]
+				\item Rates are governed mainly by electric charge and mass, complementary to strongly interacting searches.
+				\item Forward kinematic closure is attractive for compressed spectra with soft visible products and missing momentum.
+			\end{itemize}
+			\begin{alertblock}{Updated interpretation}\tiny
+				The draft notes that 100 GeV is now illustrative. Current constraints motivate roughly 300 GeV sleptons and 250--300 GeV higgsino benchmarks; LHeC rates near those thresholds are tiny, making a dedicated LH$\mu$C re-evaluation especially relevant.
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{yy\_lhec SUSY section + updated compressed-SUSY discussion in draft\_yy\_lhec.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+% --------------------------------------------------------------------------
+% Slide 24 -- Source: updated LbL section + Higgs section
+% --------------------------------------------------------------------------
+
+\begin{frame}{Light-by-light scattering, Higgs production, and other $\gamma\gamma$ opportunities}
+	\begin{columns}[T]
+		\begin{column}{0.58\textwidth}
+			\begin{block}{Mature calculation: $\gamma\gamma\to\gamma\gamma$}\scriptsize
+				SM light-by-light scattering is loop induced; all charged SM particles contribute to the box amplitude.
+			\end{block}
+			\centering
+			\includegraphics[width=0.80\linewidth]{lbl_eta_updated.png}
+			{\tiny Updated LHeC tagged-elastic SM pseudorapidity distributions.}
+		\end{column}
+		\begin{column}{0.39\textwidth}
+			\begin{alertblock}{Exploratory: $\gamma\gamma\to H$}\scriptsize
+				The Higgs channel is loop induced and rare, but it probes the effective $H\gamma\gamma$ interaction in an exceptionally clean initial state.
+			\end{alertblock}
+			\centering
+			\begin{tikzpicture}[scale=0.60,transform shape]
+				\coordinate (a) at (-2,1);\coordinate (b) at (-2,-1);\coordinate (c) at (0,0);\coordinate (h) at (2.4,0);
+				\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (a)--(c);
+				\draw[decorate,decoration={snake,amplitude=2pt,segment length=7pt}] (b)--(c);
+				\draw[fill=orange!15,draw=LHOrange,line width=1.1pt] (c) circle (0.42);
+				\draw[dashed,line width=1.1pt,->] (c)--(h);
+				\node[left] at (a) {$\gamma$};\node[left] at (b) {$\gamma$};\node[right] at (h) {$H$};
+				\node[font=\tiny] at (0,-0.75) {charged-particle loop};
+			\end{tikzpicture}
+			\begin{block}{LH$\mu$C opportunity}\scriptsize
+				The harder photon spectrum extends the high-mass LbL region and other loop-induced or resonant searches.
+			\end{block}
+		\end{column}
+	\end{columns}
+	
+	%\sourceline{Updated draft\_yy\_lhec LbL section; Higgs-via-$\gamma\gamma$ section in yy\_lhec / draft\_yy\_lhec.}
+	
+	\helplogo
+	
+\end{frame}
+
+
+
+
 
 
 

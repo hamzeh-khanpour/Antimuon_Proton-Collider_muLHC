@@ -620,7 +620,8 @@ containing missing energy.
 
 \begin{frame}{Equivalent Photon Approximation: factorising the $\ell p$ cross section}
 	
-\begin{block}{EPA master relation}\small
+\begin{block}{EPA master relation}
+\small
 \[
 \boxed{\displaystyle
 \sigma_{\mu p}=\int dy_\mu\,dy_p\;\Phi_\mu(y_\mu)\Phi_p(y_p)\,\sigma_{\gamma\gamma}(W)
@@ -628,9 +629,9 @@ containing missing energy.
 \]
 \end{block}
 
-\begin{columns}[T]
+\begin{columns}%[T]
 	
-\begin{column}{0.55\textwidth}
+\begin{column}{0.60\textwidth}
 	
 \begin{itemize}
 \small \justifying 
@@ -643,7 +644,8 @@ containing missing energy.
 
 \begin{column}{0.45\textwidth}
 	
-\begin{alertblock}{Kinematic variables}\small
+\begin{alertblock}{Kinematic variables}
+\footnotesize 
 \[
 y_\mu=\frac{E_\gamma^{(\mu)}}{E_\mu},\qquad
  y_p=\frac{E_\gamma^{(p)}}{E_p},
@@ -654,17 +656,41 @@ W\equiv W_{\gamma\gamma}.
 \end{alertblock}
 
 \end{column}
+
 \end{columns}
 
-\helplogo
 
+\begin{exampleblock}{Two-photon luminosity spectrum} 
+\justifying  \footnotesize
+\[
+S_{\gamma\gamma}(W)
+=
+\frac{2}{W}
+\int_{W^2/s}^{1}
+dy_\ell\,
+\Phi_\ell(y_\ell)\,
+y_p\,\Phi_p(y_p) = 
+\frac{2W}{s}
+\int_{W^2/s}^{1}
+\frac{dy_\ell}{y_\ell}\,
+\Phi_\ell(y_\ell)\,
+\Phi_p\!\left(
+\frac{W^2}{s\,y_\ell}
+\right)
+\]
+with $y_p=\frac{W^2}{s\,y_\ell}$. Here the standard high-energy EPA relation 
+$W^2 \simeq y_\ell y_p s$ is used. 	 
+\end{exampleblock}
+ 
+\helplogo 
+ 
 \end{frame}
 
 
 %==================================================
 
 
-\begin{frame}{Equivalent photon fluxes from the leptons ($e$ or $\mu^+$) and proton}
+\begin{frame}{Equivalent photon fluxes from the leptons ($e$ or $\mu^+$) and proton} 
 	
 \begin{columns}[T]
 \begin{column}{0.62\textwidth}

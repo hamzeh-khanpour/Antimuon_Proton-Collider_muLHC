@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  21 SEP 2026 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  22 SEP 2026 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1824,18 +1824,28 @@ Overfull \vbox (2.49478pt too high) detected at line 1630
 [21
 
  <./figures/aQGC_LHeC.png> <./figures/aQGC_LHC.png> <./figures/aQGC_LHmuC.png>]
+<figures/yy_ttbar.png, id=1188, 374.68553pt x 444.80464pt>
+File: figures/yy_ttbar.png Graphic file (type png)
+<use figures/yy_ttbar.png>
+Package pdftex.def Info: figures/yy_ttbar.png  used on input line 1743.
+(pdftex.def)             Requested size: 95.86656pt x 113.81102pt.
+<figures/yy_higgsinos.png, id=1189, 377.6968pt x 443.08392pt>
+File: figures/yy_higgsinos.png Graphic file (type png)
+<use figures/yy_higgsinos.png>
+Package pdftex.def Info: figures/yy_higgsinos.png  used on input line 1743.
+(pdftex.def)             Requested size: 97.01163pt x 113.81102pt.
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1650.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1743.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [22
 
-]
+ <./figures/yy_ttbar.png> <./figures/yy_higgsinos.png>]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1687.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1784.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
@@ -1844,57 +1854,57 @@ Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1687.
 ]
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1724.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1823.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [24
 
 ]
-<figures/Thank_You_2.jpg, id=1299, 911.54839pt x 577.29964pt>
+<figures/Thank_You_2.jpg, id=1329, 911.54839pt x 577.29964pt>
 File: figures/Thank_You_2.jpg Graphic file (type jpg)
 <use figures/Thank_You_2.jpg>
-Package pdftex.def Info: figures/Thank_You_2.jpg  used on input line 1738.
+Package pdftex.def Info: figures/Thank_You_2.jpg  used on input line 1842.
 (pdftex.def)             Requested size: 381.87407pt x 241.84756pt.
 
-Overfull \hbox (35.43019pt too wide) in paragraph at lines 1738--1738
+Overfull \hbox (35.43019pt too wide) in paragraph at lines 1842--1842
  [] 
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1738.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1842.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
 
 [25
 
  <./figures/Thank_You_2.jpg>]
-Underfull \hbox (badness 5161) in paragraph at lines 1811--1811
+Underfull \hbox (badness 5161) in paragraph at lines 1915--1915
 \T1/lmss/m/n/10 elec-troweak, top, QCD, and BSM
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-811.
+915.
 (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<figures/White_Paper.jpg, id=1340, 1796.7125pt x 929.4725pt>
+<figures/White_Paper.jpg, id=1369, 1796.7125pt x 929.4725pt>
 File: figures/White_Paper.jpg Graphic file (type jpg)
 <use figures/White_Paper.jpg>
-Package pdftex.def Info: figures/White_Paper.jpg  used on input line 1811.
+Package pdftex.def Info: figures/White_Paper.jpg  used on input line 1915.
 (pdftex.def)             Requested size: 173.22194pt x 89.6056pt.
 
-Underfull \hbox (badness 5460) in paragraph at lines 1811--1811
+Underfull \hbox (badness 5460) in paragraph at lines 1915--1915
 \T1/lmss/m/n/8 co-or-di-na-tion with the \T1/lmtt/m/n/8 LHeC Study
  []
 
 File: figures/HELP4CERN.jpg Graphic file (type jpg)
 <use figures/HELP4CERN.jpg>
-Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1811.
+Package pdftex.def Info: figures/HELP4CERN.jpg  used on input line 1915.
 (pdftex.def)             Requested size: 42.67912pt x 23.27943pt.
 
-Overfull \vbox (9.2864pt too high) detected at line 1811
+Overfull \vbox (9.2864pt too high) detected at line 1915
  []
 
 
@@ -1922,10 +1932,10 @@ Package rerunfilecheck Info: File `Hamzeh_Khanpour_Ultra-cold-muons-for-the-LHC
 (rerunfilecheck)             Checksum: 55BD463E7D0FC2F3516342CF1D81874C;1360.
  ) 
 Here is how much of TeX's memory you used:
- 30981 strings out of 473190
- 645345 string characters out of 5719978
+ 31017 strings out of 473190
+ 646611 string characters out of 5719978
  1399553 words of memory out of 5000000
- 53499 multiletter control sequences out of 15000+600000
+ 53535 multiletter control sequences out of 15000+600000
  746624 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,14598b,1386s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1952,12 +1962,13 @@ m/lmsy6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><d:/tex
 live/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dis
 t/fonts/type1/public/lm/lmsy9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/publi
 c/lm/lmtt10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb><d:
-/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Hamzeh_Khanpour_Ultra-cold-muons-for-the-LHC.pdf (26 pages, 3
-844222 bytes).
+/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on Hamzeh_Khanpour_Ultra-cold-muons-for-the-LHC.pdf (26 pages, 4
+246642 bytes).
 PDF statistics:
- 1537 PDF objects out of 1728 (max. 8388607)
- 1092 compressed objects within 11 object streams
+ 1571 PDF objects out of 1728 (max. 8388607)
+ 1107 compressed objects within 12 object streams
  59 named destinations out of 1000 (max. 500000)
- 1717 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1799 words of extra memory for PDF output out of 10000 (max. 10000000)
 

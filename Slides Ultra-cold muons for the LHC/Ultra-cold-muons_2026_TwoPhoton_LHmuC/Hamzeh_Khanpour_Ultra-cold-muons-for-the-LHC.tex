@@ -65,10 +65,12 @@
 \fbox{\parbox[c][#2][c]{0.92\linewidth}{\centering\vspace{1ex}\textbf{Figure placeholder}\\[0.6ex]\small #1\vspace{1ex}}}
 \end{center}}
 
-\title[Two-photon Physics at \LHCmu]{\justifying Two-Photon Physics at the LH$\mu$C}
+\title[Two-photon Physics at the \LHCmu]{\justifying Two-Photon Physics at the LH$\mu$C}
 \subtitle{High-energy $\gamma\gamma$ interactions in $\mu p$ collisions}
 \author[Hamzeh Khanpour]{Hamzeh Khanpour\\{\scriptsize AGH University of Krakow}}
-\institute[AGH]{\color{magenta}\textbf{(on behalf of HELP4CERN Study Group)}}
+\institute[AGH]{
+%\color{magenta}\textbf{(on behalf of HELP4CERN Study Group)}
+}
 \date{{\setlength{\fboxsep}{4pt}\colorbox{cyan!15}{\strut \footnotesize   Ultra-cold muons for the LHC, AGH Krakow, 24-26 September 2026}}}
 
 
@@ -200,7 +202,9 @@ $\mathcal{L}_{\rm int}$ (\alert{baseline}) & $1000~\mathrm{fb}^{-1}$ \\
 $\mathcal{L}_{\rm int}$ (option 2) & $1000~\mathrm{fb}^{-1}$
 \end{tabular} 
 \end{alertblock} 
-		
+\centering
+\tiny
+{\setlength{\fboxsep}{4pt}\colorbox{yellow!40}{\strut From HELP4CERN White Paper (in preparation)}}
 
 
 \end{column} 
@@ -230,9 +234,8 @@ $\mathcal{L}_{\rm int}$ (option 2) & $1000~\mathrm{fb}^{-1}$
 Moving from the LHeC to the LH\(\mu\)C strongly increases the available lepton-hadron centre-of-mass energy and opens the multi-TeV regime. The same energy lever arm is crucial for two-photon physics: the photon spectrum from the high-energy muon beam becomes significantly harder, extending the accessible photon luminosity  \(W_{\gamma\gamma}\) range. This enhances the reach for heavy \(\gamma\gamma\) final states and increases sensitivity to new interactions in the high-mass tails.
 \end{block}
 \end{column}
-		
-		
-		
+
+
 %---------------------------------------
 \begin{column}{0.56\textwidth}
 			
@@ -282,7 +285,8 @@ and \(\sim 69\) for \(t\bar t\) production.
 		
 \end{column}
 \end{columns}
-	
+
+
 
 \helplogo 
 \end{frame}
@@ -378,9 +382,10 @@ and \(\sim 69\) for \(t\bar t\) production.
 		% Central hub
 		%------------------------------------------------
 		\node[hubbox] (hub) at (0,0.00) {%
-			\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.15em]
-			{\scriptsize \textbf{Exclusive high-energy}}\\[-0.05em]
-			{\scriptsize \textbf{$\gamma\gamma$ programme}}
+			\includegraphics[width=2.05cm]{HELP4CERN.jpg}\\[-0.30em]
+			{\scriptsize \textbf{$\gamma\gamma \to \tau^+\tau^-$}}\\[-0.05em]
+			{\scriptsize \textbf{Direct probe of}}\\[-0.05em]
+			{\scriptsize \textbf{anomalous $\tau$ dipole moments}}\\[-0.01em]
 		};
 		
 		%------------------------------------------------
@@ -607,9 +612,8 @@ from the lepton side; radiative corrections are predominantly QED,
 including ISR.
 					
 \item
-A \textbf{forward proton tag}, when available, can over-constrain
-the event kinematics and is especially valuable for final states
-containing missing energy.
+A \textbf{forward proton tag}, when available, can constrain
+the event kinematics. 
 				
 \end{itemize}
 		
@@ -630,8 +634,9 @@ containing missing energy.
 
 \section{Equivalent Photon Approximation and $\gamma\gamma$ luminosity}
 
-
 \begin{frame}{Equivalent Photon Approximation: factorising the $\ell p$ cross section}
+
+\vspace{-0.5cm}
 	
 \begin{block}{EPA master relation}
 \small
@@ -655,7 +660,7 @@ containing missing energy.
 
 \end{column}
 
-\begin{column}{0.45\textwidth}
+\begin{column}{0.50\textwidth}
 	
 \begin{alertblock}{Kinematic variables}
 \footnotesize 
@@ -667,7 +672,13 @@ y_\ell=\frac{E_\gamma^{(\mu)}}{E_\ell},\qquad
 W\equiv W_{\gamma\gamma}.
 \]
 \end{alertblock}
-
+{\setlength{\fboxsep}{4pt}
+\colorbox{yellow!40}{
+\parbox{0.99\textwidth}{
+\tiny \justifying 
+\strut Laurent Forthomme, Hamzeh Khanpour, Krzysztof Piotrzkowski,\\
+Yuji Yamazaki, High energy $\gamma\gamma$ interactions at the LHeC (in preparation)
+}}}
 \end{column}
 
 \end{columns}
@@ -721,8 +732,8 @@ Q^2_{\min}=\frac{M^2y^2}{1-y}.
 \end{block}
 \begin{itemize}
 \small \justifying 
-\item Point-like lepton: $F_E=F_M=1$ and $M=m_\ell$.
-\item The muon mass raises $Q^2_{\min}$ relative to an electron at the same photon energy fraction $y$.
+\item Point-like lepton: $F_E=F_M=1$ and $M=m_\ell$. 
+\item The muon mass raises $Q^2_{\min}$ relative to an electron at the same photon energy fraction $y$. 
 \end{itemize}
 \end{column}
 
@@ -830,6 +841,14 @@ proper $W$ definition is used; inelastic modelling is more sensitive to the diss
 At sizeable $Q^2$, correct $W_{\gamma\gamma}$ reconstruction is part of the physics model, not a cosmetic refinement.
 \end{block}
 
+{\setlength{\fboxsep}{4pt}
+\colorbox{yellow!40}{
+\parbox{0.99\textwidth}{
+\tiny \justifying 
+\strut Laurent Forthomme, Hamzeh Khanpour, Krzysztof Piotrzkowski,\\
+Yuji Yamazaki, High energy $\gamma\gamma$ interactions at the LHeC (in preparation)
+}}}
+
 \end{column}
 \end{columns}
 	
@@ -843,7 +862,7 @@ At sizeable $Q^2$, correct $W_{\gamma\gamma}$ reconstruction is part of the phys
 
 
 % --------------------------------------------------------------------------
-\section{Standard-Model $\gamma\gamma$ processes} 
+\section{High-energy $\gamma\gamma$ physics landscape at LH$\mu$C } 
 % --------------------------------------------------------------------------
 
 
@@ -917,11 +936,11 @@ S_{\gamma\gamma}(W)\,
 \justifying \footnotesize
 \item Once the photon luminosity is folded with the relevant \(\gamma\gamma\) subprocess, the LH\(\mu\)C provides access 
 to a broad and complementary two-photon programme.  
-\item Precision QED and lepton physics: \(\gamma\gamma\to\mu^+\mu^-,\,\tau^+\tau^-\), including anomalous \(\tau\) electromagnetic moments,
-\item Electroweak and EFT probes: \(\gamma\gamma\to W^+W^-\) and sensitivity to anomalous quartic gauge couplings, 
-\item Rare neutral-gauge channel: loop-induced \(\gamma\gamma\to ZZ\), with sensitivity to neutral quartic gauge interactions,
-\item Heavy charged final states: \(\gamma\gamma\to t\bar t\) and other high-threshold processes, 
-\item BSM opportunities: light-by-light scattering and pair production of new electrically charged particles.
+\item {\color{magenta}{Precision QED and lepton physics}}: \(\gamma\gamma\to\mu^+\mu^-,\,\tau^+\tau^-\), including anomalous \(\tau\) electromagnetic moments,
+\item {\color{magenta}{Electroweak and EFT probes}}: \(\gamma\gamma\to W^+W^-\) and sensitivity to anomalous quartic gauge couplings, 
+\item {\color{magenta}{Rare neutral-gauge channel}}: loop-induced \(\gamma\gamma\to ZZ\), with sensitivity to neutral quartic gauge interactions,
+\item {\color{magenta}{Heavy charged final states}}: \(\gamma\gamma\to t\bar t\) and other high-threshold processes, 
+\item {\color{magenta}{BSM opportunities}}: light-by-light scattering and pair production of new electrically charged particles.
 
 \end{itemize}
 \end{alertblock}
@@ -1015,27 +1034,40 @@ Together they illustrate the complementary precision and EFT sensitivity of the 
 \setbeamercolor{lowercol}{fg=black,bg=green!8}
 				
 \begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{LH$\mu$C $\tau^+\tau^-$ physics message}
-\justifying
-\small
-					
+
+\begin{center}
+\tiny 
+\begin{tabular}{lcc}
+\hline
+\textbf{Collider} &
+\textbf{$\sqrt{s_{\ell p}}$} &
+\textbf{$\sigma^{\rm el}_{\gamma\gamma\to\tau^+\tau^-}$ [pb]} \\
+\hline
+LHeC      & $1.2~\mathrm{TeV}$ & $50.4$ \\
+LH$\mu$C  & $3.7~\mathrm{TeV}$ & $58.5$ \\
+LH$\mu$C  & $5.3~\mathrm{TeV}$ & $70.3$ \\
+\hline
+\end{tabular}
+
+\tiny \centering Elastic $\gamma\gamma\to\tau^+\tau^-$ rates for $W_0=10~\mathrm{GeV}$.\par
+\end{center}
+
 \begin{itemize}
-\setlength{\itemsep}{0.35em}
-\justifying
-\item The elastic \(\gamma\gamma\to\tau^+\tau^-\) rate at \LHCmu{}  for $W_0=10$ GeV is already very large, with \(\sigma_{\mathrm{el}}\simeq 58.5\) pb at 3.7 TeV, and about \(70.3\) pb at the nominal
-\(5.3~\mathrm{TeV}\) baseline. 
-						
+\footnotesize \justifying
+\item Even with a $500~\mathrm{GeV}$ muon beam, the LH$\mu$C already provides a larger elastic $\tau^+\tau^-$ sample than the LHeC.
+
 \item This provides a high-statistics probe of the \(\gamma\tau\tau\) vertex and anomalous magnetic ($a_\tau$) and electric ($d_\tau$) dipole moments.
-						
+
 \item Anomalous contributions harden the high-\(M_{\tau\tau}\) tail, making the invariant-mass spectrum the key discriminating observable.
-						
+
 \item This is one of the cleanest examples of how \LHCmu{} combines high energy with a low-background exclusive topology.
 \end{itemize}
-					
+
 \end{beamerboxesrounded}
 }
-			
+
 \end{column}
-		
+
 %========================================
 % Right column: figure
 %========================================
@@ -1304,12 +1336,12 @@ CMS exclusive \(pp\) photon-induced \(\tau^+\tau^-\) production gives $a_\tau \i
 $t/u$-channel $W$ exchange and the
 quartic $\gamma\gamma WW$ interaction.
 					
-\item Production turns on at $W_{\gamma\gamma} \gtrsim 2m_W \simeq 160~\mathrm{GeV}$.
+\item Production turns on at $W_{\gamma\gamma}\geq2m_W\simeq160~\mathrm{GeV}$.
 					
 \item At high energy, vector-boson pair production remains
 comparatively large:
 \[
-\sigma_{\gamma\gamma\to VV}(W) \to {\rm approximately~constant},
+\sigma_{\gamma\gamma\to WW}(W) \to {\rm approximately~constant},
 \]
 unlike the stronger high-energy suppression for fermion
 and scalar pairs.
@@ -1618,7 +1650,7 @@ The LH$\mu$C therefore gains sensitivity from the combination of
 \boxed{
 \text{higher statistics}
 +
-\text{harder} \gamma\gamma \text{spectrum}
+\text{harder} \, \gamma\gamma \, \text{spectrum}
 }
 \]
 rather than simply from an increase of the inclusive rate. 
@@ -1745,54 +1777,10 @@ becomes high.
 \end{frame}
 
 
-
 %===========================================================================
 
-
-
 % --------------------------------------------------------------------------
-\section{Experimental opportunities and outlook}
-% --------------------------------------------------------------------------
-
-\begin{frame}{What does two-photon physics require from the LH$\mu$C experiment?}
-	
-\begin{columns}[T]
-	
-\begin{column}{0.99\textwidth}
-	
-\begin{itemize}
-\justifying  \small
-\item  Wide central tracking and lepton acceptance, including robust $\tau$ reconstruction.
-\item  Efficient $W/Z/t$ reconstruction for heavy $\gamma\gamma$ final states.
-\item  Exclusivity and acoplanarity observables with sensitivity to low extra activity.
-\item  Missing-momentum performance for neutrinos and compressed BSM signatures.
-\item  Scattered-muon measurement to constrain the lepton-side photon kinematics.
-\item  Forward proton tagging where feasible, together with control of proton dissociation.
-\item Exploit the defining advantage: the clean, low-pile-up $\mu p$ environment.
-\end{itemize}
-
-\begin{alertblock}{Physics-detector connection}
-\scriptsize \justifying 
-The $\gamma\gamma$ programme links central reconstruction, lepton tagging and near-beam instrumentation 
-directly to the usable photon luminosity and kinematic closure. 
-\end{alertblock}
-
-\end{column}
-
-\end{columns}
-
-\helplogo
-
-\end{frame}
-
-
-
-
-
-
-
-% --------------------------------------------------------------------------
-% Slide 26 -- Final summary, no separate 27th thank-you slide
+\section{Summary and outlook}
 % --------------------------------------------------------------------------
 
 \begin{frame}{Summary and outlook}
@@ -1919,12 +1907,49 @@ Next steps for HELP4CERN:
 
 
 
+
+\begin{frame}{What does two-photon physics require from the LH$\mu$C experiment?}
+	
+\begin{columns}[T]
+	
+\begin{column}{1.0\textwidth}
+
+\begin{itemize}
+\justifying  \small
+\item  Wide central tracking and lepton acceptance, including robust $\tau$ reconstruction.
+\item  Efficient $W/Z/t$ reconstruction for heavy $\gamma\gamma$ final states.
+\item  Exclusivity and acoplanarity observables with sensitivity to low extra activity.
+\item  Missing-momentum performance for neutrinos and compressed BSM signatures.
+\item  Scattered-muon measurement to constrain the lepton-side photon kinematics.
+\item  Forward proton tagging where feasible, together with control of proton dissociation.
+\item Exploit the defining advantage: the clean, low-pile-up $\mu p$ environment.
+\end{itemize}
+
+\begin{alertblock}{Physics-detector connection}
+\scriptsize \justifying 
+The $\gamma\gamma$ programme links central reconstruction, lepton tagging and near-beam instrumentation 
+directly to the usable photon luminosity and kinematic closure. 
+\end{alertblock}
+			
+\end{column}
+		
+\end{columns}
+	
+\helplogo
+	
+\end{frame}
+
+
+
+
+
+
+
 \end{document}
 
-
-
-
-
+%==============================================================
+%==============================================================
+%==============================================================
 
 
 

@@ -2,7 +2,7 @@
 \beamer@sectionintoc {1}{LH$\mu $C and the $\gamma \gamma $ physics opportunity}{3}{0}{1}
 \beamer@sectionintoc {2}{Two-photon production in lepton-proton scattering}{7}{0}{2}
 \beamer@sectionintoc {3}{Equivalent Photon Approximation and $\gamma \gamma $ luminosity}{9}{0}{3}
-\beamer@sectionintoc {4}{Standard-Model $\gamma \gamma $ processes}{12}{0}{4}
+\beamer@sectionintoc {4}{High-energy $\gamma \gamma $ physics landscape at LH$\mu $C }{12}{0}{4}
 \beamer@sectionintoc {5}{Precision and EFT probes: $\tau $ moments and gauge couplings}{15}{0}{5}
 \beamer@sectionintoc {6}{Heavy final states: $t\bar t$ and $\setbox \z@ \hbox {\mathsurround \z@ $\textstyle H$}\mathaccent "0365{H}^+\setbox \z@ \hbox {\mathsurround \z@ $\textstyle H$}\mathaccent "0365{H}^-$}{22}{0}{6}
-\beamer@sectionintoc {7}{Experimental opportunities and outlook}{23}{0}{7}
+\beamer@sectionintoc {7}{Summary and outlook}{23}{0}{7}

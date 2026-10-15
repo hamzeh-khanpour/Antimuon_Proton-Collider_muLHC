@@ -1,0 +1,9 @@
+Read and execute DIS2026_LHmuC_HET_Proceedings_v2_Revision_Prompt.txt in full.
+
+Use the attached DIS2026_LHmuC_HET_Proceedings_v1.zip as the editing baseline and the supplied HELP4CERN and presentation material as scientific evidence. Review the actual current source and PDF first, then implement the complete revision, compile, inspect every page, and verify a clean build from the final package.
+
+Preserve the deliberately adopted v1 production table, machine working points, scientific numbers, and selected displays. Strengthen the physics results, qualified LHeC/HL-LHC comparisons, language, and flow. Keep deferred numerical questions separate and accurately described.
+
+The author permits up to EIGHT total PDF pages, including front matter and references; this supersedes the earlier internal seven-page ceiling. Follow the prompt's treatment of any external conference-rule discrepancy without assuming a waiver or blocking independent work.
+
+Deliver the complete final draft and exactly named DIS2026_LHmuC_HET_Proceedings_v2.zip, together with the final PDF, main TEX, and separate revision/validation note specified in the prompt. Continue through the authorized work without seeking confirmation of settled decisions. Report only checks actually completed. Do not submit the paper or contact anyone.

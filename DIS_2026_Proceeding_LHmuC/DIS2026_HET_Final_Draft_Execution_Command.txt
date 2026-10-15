@@ -1,0 +1,9 @@
+Read and execute the attached DIS2026_HET_Final_Draft_Mega_Prompt.md in full.
+
+Use HELP4CERN.zip, DIS_2026_Slides_LHmuC.zip, Ultra-cold-muons_2026_TwoPhoton_LHmuC.zip, DIS2024_Proceeding.zip (or its verified duplicate), and the updated DIS2026_HET_Source_Review_and_Content_Decisions.html report.
+
+This is the manuscript-production run. Prepare the complete proceedings article, implement the supplied PoS template, compile and visually inspect the PDF, and deliver the LaTeX manuscript, PDF, self-contained source ZIP, and separate validation/deferred-corrections note specified in the MEGA-PROMPT.
+
+Preserve the HELP4CERN numbers unchanged, with numerical corrections deferred. Include its complete Table 1, its first figure dis_eta_acceptance.pdf, the explicit LHμC energy/luminosity benchmark table, and the selected HELP4CERN Higgs vector panel. Keep the entire proceedings PDF within seven pages, including front matter and references.
+
+Follow the MEGA-PROMPT as the complete specification. Continue through the authorized work without requesting confirmation of settled decisions. Report any genuine limitation accurately; do not claim unperformed compilation, inspection, or validation. Do not submit the article or contact anyone.

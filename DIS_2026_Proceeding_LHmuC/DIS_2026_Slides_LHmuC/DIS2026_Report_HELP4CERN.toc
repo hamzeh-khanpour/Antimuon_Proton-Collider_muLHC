@@ -1,0 +1,5 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{DIS 2026 context}{3}{0}{1}
+\beamer@sectionintoc {2}{Four DIS 2026 HELP4CERN contributions}{5}{0}{2}
+\beamer@sectionintoc {3}{Visibility in DIS 2026 WG summaries}{9}{0}{3}
+\beamer@sectionintoc {4}{Feedback and next steps}{21}{0}{4}

@@ -1,0 +1,259 @@
+BEGIN ACTIVE COMMAND — CREATE THE DIS2026 HET PROCEEDINGS DRAFTING MEGA-PROMPT
+
+Version 1.0 | Author-approved decisions incorporated: 15 October 2026
+
+1. YOUR TASK IN THIS RUN
+
+Act as a senior collider phenomenologist, scientific editor, and expert in LaTeX proceedings preparation. Produce a detailed, accurate, professional, and operationally complete MEGA-PROMPT that I can use in a subsequent run to prepare the final author-review draft of my DIS2026 proceedings contribution.
+
+Your deliverable now is the MEGA-PROMPT itself. Do not execute the manuscript-writing instructions you are authoring. Do not write the proceedings article, its abstract, final captions, or its LaTeX manuscript in this run. The later model will receive your MEGA-PROMPT and the source files and will perform that work.
+
+The MEGA-PROMPT must be a self-contained execution specification, not an outline of a possible prompt, general writing advice, or a shortened summary of this command. It must tell the later model what to read, what to write, which scientific and editorial decisions are fixed, what it may decide autonomously, how to check the output, and exactly what to deliver. It must work in a fresh conversation without access to our earlier messages.
+
+Use the decisions below to remove ambiguity. Include substantive instructions rather than repeatedly asking the later model to “be accurate” or “be professional.” Resolve routine editorial and implementation choices yourself. Do not request approval for decisions already authorized here.
+
+2. FIXED MANUSCRIPT IDENTITY
+
+Embed the following identity explicitly in the MEGA-PROMPT.
+
+Exact title:
+Perspectives for HET physics studies at a muon-hadron collider at CERN
+
+Sole named author:
+Hamzeh Khanpour
+
+Exact study-group attribution:
+(on behalf of HELP4CERN Study Group)
+
+Affiliation:
+AGH University of Krakow, Faculty of Physics and Applied Computer Science, Al. Mickiewicza 30, 30-055 Kraków, Poland.
+
+Publication email:
+hamzeh.khanpour@cern.ch
+
+Keep the study-group attribution separate from the list of named authors. Do not import the coauthors, other affiliations, or other email addresses from the DIS2024 template. Preserve the appropriate speaker designation for Hamzeh Khanpour using the template conventions. Do not add academic titles to the author line or confuse a submission-account email with the publication email.
+
+The manuscript is an English-language conference contribution for a DIS/HEP research audience. HET denotes Higgs, electroweak, and top physics. Photon-induced processes and a concise BSM outlook belong within this scope. The contribution must remain recognizably connected to the DIS2026 presentation.
+
+The hard working limit is seven PDF pages in total, including the title/abstract page, all figures, tables, captions, acknowledgments, and references. “Final draft” means a complete, polished, author-review manuscript under the agreed numerical policy; it does not certify that deferred numerical corrections, collaboration approval, or submission have been completed.
+
+3. SOURCE FILES AND THEIR ROLES
+
+Expect the following attachments and reproduce their roles in the MEGA-PROMPT:
+
+- HELP4CERN.zip: primary scientific source; authority for the retained numerical results and the HELP4CERN versions of figures.
+- DIS_2026_Slides_LHmuC.zip: record of the DIS2026 presentation and anchor for the proceedings narrative.
+- Ultra-cold-muons_2026_TwoPhoton_LHmuC.zip: supporting material for photon-induced physics and clearly identified later developments.
+- DIS2024_Proceeding.zip: supplied formatting and structural starting point for the LaTeX project. An accessible duplicate named DIS2024_Proceeding(1).zip may be used after its contents are checked.
+- DIS2026_HET_Source_Review_and_Content_Decisions.html: the reviewed evidence, source locations, asset selections, and active author decisions. Use its author-updated revision dated 15 October 2026, labelled REVISION 2, when supplied.
+
+The report contains a collapsed historical audit. Its evidence and source pointers remain useful, but the active author decisions supersede its earlier numerical gates, display selection, and page allocation. If the earlier “DIS2026 HET Proceedings Source Review Mega Command.md” is also supplied, treat it as background describing the completed review stage. Its old instruction to stop before constructing a drafting mega-prompt is not the task for this run.
+
+Use the archives as evidence and the current author instructions as the task definition. Do not mistake editorial comments, commented-out LaTeX, obsolete instructions, or text after an active end-of-document marker for approved manuscript content.
+
+Require the later model to verify actual file access, preserve the original archives, extract separate working copies, follow relevant include/input dependencies, and inspect the scientific text and actual graphics supporting retained claims. Filenames in a previous message do not prove access. Do not merge same-named assets from different archives into an undifferentiated folder.
+
+When preparing the MEGA-PROMPT now, use the accessible source material and existing review efficiently. Do not repeat the entire completed audit without a concrete reason. If an input is unavailable, record the limitation and include an explicit source-access step in the MEGA-PROMPT. The decisions embedded here are sufficient to construct the MEGA-PROMPT; do not invent missing source contents or claim to have read inaccessible files.
+
+4. AUTHOR-APPROVED NUMERICAL POLICY — MANDATORY
+
+The following decision is settled:
+
+USE THE NUMBERS ALREADY PRESENT IN HELP4CERN.zip FOR THIS DRAFT. NUMERICAL CORRECTIONS ARE DEFERRED TO A LATER AUTHOR REVISION.
+
+Encode this as an operative rule throughout the MEGA-PROMPT, not merely as a passing note. For retained HELP4CERN results, preserve the reported values, units, uncertainty definitions, and associated qualifications. Do not replace them with values from the DIS slides, the workshop package, an independent calculation, or the earlier audit. Do not average incompatible results or select another version because it appears newer.
+
+This policy does not require including every numerical result in HELP4CERN. Select the strongest material that fits the agreed scope and seven pages. It also does not authorize unsupported statements that all benchmarks are consistent or all source numbers have been independently validated.
+
+Carry these three issues into a separate deferred-corrections record, without making their resolution a prerequisite for drafting:
+
+1) Higgs/top rates have inconsistent benchmark and polarization assumptions across the sources. Retain HELP4CERN Table 1 and its stated assumptions as supplied.
+2) The quoted h→bb̄ precision corresponds approximately to 500 fb⁻¹ in the previous arithmetic check, rather than the general 1000 fb⁻¹ benchmark. Retain the source precision values; keep the general machine target distinct from the particular study and do not assert that the source's 0.69% result has been independently established at 1 ab⁻¹. Do not silently turn the arithmetic interpretation into a corrected author-approved luminosity assignment.
+3) Same-named Higgs-fit figures contain different values across packages. Use the files from HELP4CERN.zip consistently. Do not mix a HELP4CERN plot with numbers or a caption copied from the other package's version.
+
+The manuscript should state the scientific assumptions and preliminary/exploratory status needed to interpret its results. Detailed audit disputes, editorial questions, and the deferred correction list belong in the accompanying review note, outside the seven-page article. Do not manufacture consistency by hiding a material assumption or by adding a stronger claim than the source supports.
+
+Correct spelling, grammar, LaTeX syntax, citation-key mismatches, and obsolete metadata where necessary. Such repairs must not become silent scientific recalculations. If a genuinely new substantive inconsistency is encountered, record it, use source-faithful qualified wording where possible, and continue all independent work.
+
+5. REQUIRED DISPLAY: COMPLETE HELP4CERN TABLE 1
+
+The MEGA-PROMPT must require the complete numerical content of the first cross-section table in HELP4CERN/main.tex, labelled tab:i, around source lines 205–219. Use the source process definitions in the typeset table; the shortened process names below are only transcription checks.
+
+All cross sections are in pb. The column order is:
+LHeC 20 GeV; LHeC 60 GeV; LHμC 500 GeV; LHμC 1 TeV; LHμC 2 TeV.
+
+Transcription checks:
+
+| Process | LHeC 20 GeV | LHeC 60 GeV | LHμC 500 GeV | LHμC 1 TeV | LHμC 2 TeV |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| CC Higgs + jet | 0.052 | 0.197 | 0.656 (unpol. 0.438) | 1.092 | 1.744 |
+| NC Higgs + jet | 0.0056 | 0.024 | 0.150 (unpol. 0.135) | 0.245 | 0.383 |
+| NC top–antitop | 0.0015 | 0.0323 | 1.03 | 2.23 | [blank] |
+| CC single top | 0.55 | 2.89 | 21.26 | 36.77 | [blank] |
+
+Preserve all columns, both explicitly unpolarized entries, and the absence of 2 TeV top-rate values. A blank means no value is supplied; it must not become zero or an estimated rate. Preserve the caption's stated 80% electron polarization and 50% antimuon polarization, without inventing a sign convention not supplied there.
+
+Remove blue editorial markup and comments from the manuscript presentation. Improve caption grammar and mention the existing 2 TeV column if necessary, while preserving its scientific content. Do not perform the source's requested 50-to-60 GeV numerical update in this run.
+
+Prefer to introduce this as proceedings Table 1, followed by the separate benchmark table, so its identity remains easy to track. Use automatic labels and references. A layout decision must never drop rows, columns, source assumptions, or required qualifiers.
+
+6. REQUIRED DISPLAY: HELP4CERN FIGURE 1
+
+The required first figure is the (x_Bj,Q²) kinematic-coverage diagram, not the later Higgs-coupling figure.
+
+Exact source asset: HELP4CERN/dis_eta_acceptance.pdf
+Source label: fig:xbj_vs_q2_phase_space
+Active include: HELP4CERN/main.tex, around lines 239–245
+
+The neighbouring include of xbjq2_diagram.pdf is commented out and must not replace the selected asset. Reuse dis_eta_acceptance.pdf as the original vector graphic. Do not redraw it, generate an illustrative replacement, edit numerical labels, or alter the physical content.
+
+Preserve its source configurations and legend, including the plotted 20/50 GeV electron options and 1/2 TeV muon options. The caption specifies 4×10⁻³<y<1. Inspect and retain the configuration-specific acceptance information in the figure. In particular, do not relabel the plot's 50 GeV LHeC curve as 60 GeV to make it appear identical to Table 1.
+
+Require the later manuscript to explain briefly why the accessible high-Q² region motivates the HET programme. Keep the general QCD discussion proportionate. Make this the first proceedings figure where feasible and retain readable axes and legends at the final printed size.
+
+7. REQUIRED LHμC ENERGY AND LUMINOSITY BENCHMARK TABLE
+
+Require a compact, separate table giving E_μ, E_p, √s_μp, and integrated luminosity, with unambiguous units and notes distinguishing a general target from study-specific exposures.
+
+The approved source-based entries are:
+
+- E_μ=500 GeV, E_p=7 TeV, √s_μp=3.74 TeV, or approximately 3.7 TeV. HELP4CERN explicitly uses 250 fb⁻¹ for the 500 GeV leptogluon study. Identify this as an analysis-specific exposure rather than claiming every 500 GeV analysis uses it.
+- E_μ=1 TeV, E_p=7 TeV, √s_μp=5.3 TeV. The HELP4CERN executive summary states an ultimate LHμC sample of 1 ab⁻¹ and an additional 250 fb⁻¹ case for the 1 TeV option. The leptogluon section separately uses 500 fb⁻¹. Keep these roles distinct.
+- E_μ=2 TeV, E_p=7 TeV, √s_μp=7.5 TeV. Use 1 ab⁻¹ under the executive summary's ultimate LHμC luminosity assumption, with that qualification.
+
+Primary source pointers are HELP4CERN/main.tex around lines 145–147 and 624–625, together with the 500 GeV machine-performance table. A short table note can carry the alternative exposures. Do not automatically import a universal 250/1000/1000 fb⁻¹ assignment from the slide decks over the source distinctions agreed here.
+
+The high-energy head-on relation s_μp≈4E_μE_p may be used to explain or check the beam-energy mapping; retain the source's quoted rounding. Distinguish centre-of-mass energy from photon-photon invariant mass and distinguish integrated luminosity in fb⁻¹ or ab⁻¹ from instantaneous luminosity in cm⁻²s⁻¹. State luminosities as projected study assumptions, not delivered measurements.
+
+Integrated luminosity is sufficient for the required table. If instantaneous luminosity is included elsewhere, retain the source status: approximately 10³⁴ cm⁻²s⁻¹ in the nominal executive-summary discussion and 4.3×10³³ cm⁻²s⁻¹ in the 500 GeV table, whose “Peak(?)” qualification must not become an unsupported definitive peak/average classification.
+
+8. SCIENTIFIC NARRATIVE TO ENCODE
+
+Require a connected, Higgs-led article rather than a sequence of abbreviated slides. Each retained result needs a physics question, the relevant mechanism and assumptions, its source-supported quantitative or qualitative message, and its significance for the proposed programme.
+
+A. Motivation, collider setup, and rate overview
+Introduce the proposed CERN muon-hadron configuration, define LHμC and the lepton-charge convention, distinguish it from the LHeC and FCC-based options, and present the required benchmark table, rate table, and kinematic figure. Explain complementarity without unsupported claims of universal superiority. Keep accelerator engineering and broad QCD background brief.
+
+B. Higgs production and precision
+Explain charged-current and neutral-current production and connect their rates to the dedicated h→bb̄ analysis and exploratory coupling fit. Separate inclusive production, decay branching fractions, selected event yields, statistical precision, and coupling extraction.
+
+Retain the HELP4CERN h→bb̄ rate precisions of 1.19% and 0.69%, and coupling precisions of 0.77% and 0.60%, in their source-defined ordering. Preserve the 0.985% relative external uncertainty on g_hWW²/Γ_h and identify the role and provenance of that input. A brief equation may explain the rate-to-coupling relation when useful, without presenting a fresh numerical fit. Do not call the coupling result a model-independent LHμC-only measurement. State essential selections, efficiencies, and uncertainty assumptions to the extent supported and needed for interpretation, without importing conflicting benchmark labels from other studies.
+
+Retain HELP4CERN/LHmuC_vector.pdf as the selected Higgs-fit graphic. Preserve the actual legend, combined datasets, HL-LHC baselines, LHeC input, exploratory rescaling assumptions, κ_V≤1 condition, and source definition 1−κ_V(68%) for the vector-modifier uncertainty. The HELP4CERN combined-stage κ_W values are 0.28%, 0.19%, and 0.16%; they must not be replaced by the differing DIS-slide version. Read the asset before assigning values to scenarios. Do not describe a combined projection as a standalone LHμC fit or equate an exploratory rescaling with a full detector-level global analysis.
+
+C. Electroweak and top physics
+Use the high-Q² reach and the source-supported single-top and top-pair mechanisms to motivate electroweak and top studies. Refer to the required rate table rather than adding another rate display. Distinguish established projections from opportunities involving weak mixing, Wtb, CKM quantities, EFT, or rare-top observables. Inclusive rates alone do not establish measurement precision. Do not invent numerical reaches to fill gaps in the source.
+
+D. Photon-induced physics
+Describe the equivalent-photon picture, effective photon luminosity, and representative τ-pair and W-pair opportunities where supported. Keep elastic/dissociative definitions, virtuality restrictions, normalization, invariant-mass thresholds, and relevant charge conventions clear. Separate μp cross sections from γγ subprocess cross sections and distinguish cumulative from differential distributions. Illustrative anomalous-coupling deformations are not exclusion limits unless a complete statistical study supports that interpretation.
+
+The optional supporting figure is the photon-luminosity and τ-pair combination using the reviewed Sgg.jpg and yytautau.jpg assets from the DIS package, or the verified identical workshop copies. Use it only if both panels and their qualifiers remain readable within seven pages. Do not redraw unavailable data. If omitted, preserve the supported physics message in concise prose. Additional workshop results must be identified as supplementary developments rather than automatically attributed to the earlier DIS presentation.
+
+E. BSM outlook and conclusions
+Keep source-supported μq and μg portals, such as R-parity-violating squarks and color-octet muons, concise and mechanism-led. Include precise numerical reaches only if selected within the agreed scope and accompanied by their source assumptions. Do not expand the article to reproduce every BSM figure or introduce a new phenomenology analysis. Keep the FCC outlook short. Conclusions should state the principal supported messages, the exploratory nature of relevant projections, and the next physics steps, without introducing new results.
+
+9. PAGE BUDGET AND COMPRESSION RULES
+
+Embed this revised working allocation in the MEGA-PROMPT:
+
+| Component | Page allocation |
+| --- | ---: |
+| Front matter, abstract, and conference block | 1.00 |
+| Collider setup, benchmarks, rate overview, and required displays | 1.65 |
+| Higgs production and precision prospects | 1.40 |
+| Electroweak and top physics | 0.60 |
+| Photon-induced physics | 0.90 |
+| BSM outlook, conclusions, and any acknowledgments | 0.45 |
+| References | 1.00 |
+| TOTAL | 7.00 |
+
+These are space allocations, including captions, headings, equations, and float spacing, not mandatory page breaks. The current body-word guides are approximately 180–240, 350–450, 230–280, 170–240, and 170–210 words for the five body blocks above. They are secondary planning aids; the compiled layout governs. A useful abstract target is approximately 140–180 words, subject to the actual title-page layout.
+
+Protect the complete source Table 1, the LHμC benchmark table, HELP4CERN Figure 1, their assumptions, and readable typography. Retain the selected Higgs vector panel in the primary plan. If space is tight, remove the optional photon figure first, then shorten BSM/FCC background, repeated motivation, long channel lists, and secondary methodological detail. Remove secondary references only when their associated claims are also removed or adequately supported elsewhere.
+
+Require actual PDF page counting after compilation. Seven pages is a ceiling, not a target to pad. Do not shrink official margins, reduce the required main font, distort graphics, or use excessive negative spacing to force compliance. Do not count only the body or omit the front page and references from the total.
+
+10. TEMPLATE, METADATA, REFERENCES, AND ATTRIBUTION
+
+Require the later model to start from a separate copy of the supplied DIS2024 LaTeX project and preserve its appropriate PoS conventions. The reviewed source uses an A4, 11-point article with pos.sty. Check official DIS2026 requirements at the later execution stage before claiming current compliance; update style files only when the official requirements justify it and record the change.
+
+Useful official source locations are:
+https://dis2026.infn.it/workshop-proceedings/
+https://agenda.infn.it/event/47074/contributions/289107/
+https://indico.cern.ch/event/1681458/
+
+These are verification starting points, not substitutes for the attached scientific sources. Require current conference title, dates, location, and contribution metadata to be checked before use. Do not carry forward DIS2024 conference text, obsolete contribution identifiers, unrelated funding statements, old coauthors, or the HELP4CERN placeholder arXiv number 1234.56789.
+
+Use a selective bibliography, initially around 12–16 relevant entries if they fit legibly. Cite the actual HELP4CERN/talk source for its specific preliminary results and primary publications for methods and established background. A software paper does not validate an unpublished numerical prediction. Verify title, authors, publication status, DOI, and arXiv identifier against primary records when available. Include consistent DOI and arXiv hyperlinks where real identifiers exist; do not manufacture identifiers for unpublished material.
+
+Keep an in-preparation work distinct from a published proceedings article even if their titles are similar. Retain relevant original attribution for figures. Correct citation-key case mismatches and remove unresolved references. Do not invent acknowledgments, grants, institutional endorsements, collaboration approval, publication status, or submission success.
+
+If authenticated portal details or a current style instruction are unavailable, record that specific limitation and continue the authorized drafting work. Do not seek credentials, submit the article, email anyone, or initiate an approval workflow. A source-access or compliance limitation must be reported honestly without reinstating the three deferred numerical issues as blockers.
+
+11. EXECUTION WORKFLOW REQUIRED INSIDE THE MEGA-PROMPT
+
+Give the later model an ordered workflow covering all of the following:
+
+1) Confirm accessible inputs and identify the active decisions; preserve original archives and work in a clean project directory.
+2) Read the relevant source text, bibliographies, captions, and actual graphics; use the existing review to focus this step.
+3) Build a compact internal claim-and-asset map linking each retained numerical statement or figure to its archive, relative path, source location, benchmark, and required qualification.
+4) Fix the section outline, display placements, and realistic page allocation; do not stop to request approval for the settled plan.
+5) Write the complete manuscript, including abstract, connected body text, captions, conclusions, citations, and valid conference metadata. Use restrained scientific prose and source-faithful numerical statements.
+6) Build a self-contained LaTeX project using the required original assets and valid bibliography, without absolute local paths or dependencies on the earlier conversation.
+7) Compile, resolve ordinary LaTeX and reference errors, inspect the rendered PDF, and revise layout or prose until the authorized content is complete and the seven-page ceiling is met.
+8) Check retained values against the selected source, inspect the required table cells and figure versions, and distinguish successful transcription from scientific reconciliation of deferred issues.
+9) Package the actual final sources, PDF, necessary assets, build instructions, and concise validation/deferred-corrections note.
+
+Do not authorize new event generation, sensitivity forecasts, physics simulations, global fits, or scientific plot generation. Basic unit checks and the beam-energy relation may be used for validation, but must not silently change frozen results. Do not replace original scientific graphics with generated imagery.
+
+If a compiler dependency is missing, attempt a routine permitted remedy and report the result. The earlier template diagnostic encountered a missing newtxtext.sty dependency; that is a useful diagnostic clue, not a reason to assume the source is broken or to alter the official font. Never claim compilation, visual inspection, page compliance, or successful validation unless it actually occurred. If a real environment limitation remains, deliver all completed source work with a precise status statement rather than fabricating the missing output.
+
+12. REQUIRED DELIVERABLES FROM THE LATER MANUSCRIPT-WRITING RUN
+
+The MEGA-PROMPT must request these concrete deliverables, using consistent descriptive filenames:
+
+- DIS2026_HET_Proceedings.tex: complete main LaTeX manuscript.
+- DIS2026_HET_Proceedings.pdf: the compiled, visually checked article, no more than seven pages, when compilation succeeds.
+- DIS2026_HET_Proceedings_Source.zip: a self-contained project containing the manuscript, the bibliography or manual bibliography content, necessary style files, the selected original figures, and a brief README with the actual build command and dependencies.
+- DIS2026_HET_Validation_and_Deferred_Corrections.md: a concise companion note recording compilation/page-count/visual-check status, the claim-and-asset map, material source decisions, and the deferred numerical issues. Keep it outside the proceedings page limit and clearly separate from the manuscript.
+
+The final handoff should link the actual files, report the measured PDF page count when available, identify the fixed HELP4CERN numerical source, and state any genuine remaining limitation. Do not include original full archives, obsolete build products, duplicate figure versions, or irrelevant temporary files in the source project. Do not present a plan or partial outline as the completed article.
+
+13. ACCEPTANCE CHECKS TO BUILD INTO THE MEGA-PROMPT
+
+Provide a concise final checklist that verifies:
+
+- Exact title, sole named author, study-group attribution, affiliation, and publication email.
+- HELP4CERN governs retained numerical claims and conflicting same-named graphics.
+- The three numerical issues are deferred, documented, and not treated as drafting-permission gates.
+- Complete Table 1, including every supplied column, unpolarized entries, polarization statements, and blank top-rate cells.
+- The correct first figure, dis_eta_acceptance.pdf, with unchanged physical labels and readable presentation.
+- Explicit LHμC beam energies, centre-of-mass energies, integrated luminosities, and study-specific exposure notes.
+- Source h→bb̄ values, external input, uncertainty definitions, and honest separation of general and analysis-specific assumptions.
+- HELP4CERN Higgs vector panel, actual combined-fit legend, and κ_V constraint/uncertainty definition.
+- A coherent Higgs-led HET narrative, proportionate photon/BSM material, and no unsupported new quantitative claims.
+- Correct scientific attribution, verified identifiers where available, and no placeholder or stale DIS2024 metadata.
+- All LaTeX citations and cross-references resolve; no omitted required asset, clipped label, unreadable caption, or overflowing table.
+- The compiled PDF has at most seven pages in total; compliance is not claimed from an estimated budget.
+- The delivered source package can be built from its own contents with the documented dependencies.
+- The companion correction/validation note is separate from the manuscript, and no submission or communication has been performed.
+
+Treat mandatory conditions as checks to satisfy through drafting and layout, not as boilerplate claims of success. If a condition cannot be met because of an actual missing input or environment limitation, state exactly which one and provide the completed work.
+
+14. WHAT YOU MUST RETURN NOW
+
+Return the following, in this order:
+
+A. The complete standalone MEGA-PROMPT, saved as DIS2026_HET_Final_Draft_Mega_Prompt.md if file creation is available. It must incorporate all fixed decisions above and give the later model a direct instruction to carry the manuscript task through to its deliverables.
+
+B. A short, ready-to-paste launch command for the later run, instructing the model to read and execute that MEGA-PROMPT with the four source archives and the updated content-decisions report. The launch command must preserve the HELP4CERN numerical policy and seven-page ceiling without creating a conflicting second specification.
+
+C. A brief coverage check mapping the principal requirements to sections of the MEGA-PROMPT, plus any actual input-access limitation encountered while preparing it. Do not repeat the full historical source audit.
+
+Embed the essential identity, source hierarchy, numerical policy, mandatory assets, benchmark distinctions, page budget, workflow, and deliverables directly in the MEGA-PROMPT. References to this command or the review report may supplement those instructions but must not replace them. Do not leave unresolved placeholders for decisions already settled here. Avoid tool-specific instructions, temporary workspace paths, opaque file identifiers, or assumptions that only work in the present conversation.
+
+If downloadable-file creation is unavailable, provide the entire MEGA-PROMPT as clearly delimited copyable text, followed by the launch command and coverage check. A filename alone is not a deliverable.
+
+Stop after producing the MEGA-PROMPT package. I will use it in the next step to request the final proceedings draft.
+
+END ACTIVE COMMAND

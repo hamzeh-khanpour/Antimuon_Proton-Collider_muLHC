@@ -1,0 +1,243 @@
+DIS2026 LHmuC HET PROCEEDINGS: SCIENTIFIC REVIEW AND FINAL V2 REVISION
+Standalone execution prompt | Author instructions updated 15 October 2026
+
+BEGIN ACTIVE REVISION COMMAND
+
+1. TASK AND REQUIRED OUTCOME
+
+Act as a senior collider phenomenologist, critical scientific reviewer, and experienced PoS proceedings editor. Read this entire prompt and inspect the attached DIS2026_LHmuC_HET_Proceedings_v1.zip before editing. Then produce a carefully reviewed, scientifically accurate, fluent, coherent, and substantially stronger final version of the proceedings paper.
+
+This is a full manuscript-revision and production request. First review the actual v1 source, its embedded PDF, graphics, references, and build information; then implement the justified corrections and improvements. Carry the work through writing, compilation, visual inspection, targeted revision, and packaging. Do not stop at a review, outline, suggested changes, another prompt, or an offer to proceed later. Do not wait for section-by-section pasting or approval of routine editorial choices.
+
+The author intends to use v2 for submission. Apply careful scientific and editorial checks, and deliver polished manuscript prose without placeholders, unresolved references, editorial questions, or internal workflow language. Submission intent does not authorize inventing results or claiming that deferred scientific questions, collaboration approval, or external acceptance have been resolved. Do not submit the paper, contact anyone, seek credentials, or perform an external approval action.
+
+The principal required delivery is the complete final project:
+DIS2026_LHmuC_HET_Proceedings_v2.zip
+
+Also deliver the final compiled PDF and editable main TEX separately for convenient review. Section 14 defines the filenames and package contents.
+
+2. LENGTH: CURRENT AUTHOR DECISION
+
+The author now permits a manuscript of up to EIGHT PDF pages in total, including the title/abstract page, every figure/table/caption, acknowledgments if supported, and references. This supersedes the earlier internal requirement to force the draft into seven pages. Seven or eight pages are acceptable; do not pad a shorter complete article or remove valuable results merely to recover seven pages.
+
+Preserve the supplied PoS typography, normal main font, and page geometry. Achieve concise writing and clear layouts without excessive negative spacing, distorted graphics, hidden material, or unreadable labels.
+
+Distinguish the author's eight-page working allowance from verified conference requirements. Public DIS2026 instructions previously specified seven pages for contributed talks, including front matter and bibliography. Recheck the official instruction at execution time and record any remaining discrepancy briefly in the separate validation note. Do not claim that an eight-page allowance or waiver has been granted by the organizers. Continue preparing the author-authorized v2 without making this a permission gate or inserting administrative commentary into the scientific article.
+
+3. INPUTS, ACCESS, AND PRECEDENCE
+
+Primary editing input:
+- DIS2026_LHmuC_HET_Proceedings_v1.zip: the current author-edited manuscript, six scientific figure assets, inline CC/NC Feynman diagrams, references.tex, supplied PoS style/logo, embedded PDF, README, and old build outputs.
+
+Supporting scientific inputs, when supplied or accessible:
+- HELP4CERN.zip, including a numbered duplicate such as HELP4CERN(3).zip: primary source for the retained dedicated Higgs projections, selected coupling-fit panels, photon results, and supporting physics discussion.
+- DIS_2026_Slides_LHmuC.zip: provenance of the presentation-based production table and adopted machine benchmarks.
+- Ultra-cold-muons_2026_TwoPhoton_LHmuC.zip: supporting photon interpretation and explicitly identified supplementary developments.
+- Prior review/content-decisions material, if attached: evidence and context, subject to the later decisions stated here.
+
+Use this precedence:
+1) Current explicit author instructions and this revision specification.
+2) The deliberate later choices already implemented in v1, especially its production table, stage labels/luminosities, paired diagrams, and three-panel Higgs figure.
+3) The selected HELP4CERN results and actual graphic versions for their assigned scientific claims.
+4) Presentation/workshop material in its appropriate supporting role.
+5) Earlier commands, initial drafting plans, and historical review advice.
+
+Do not restore the initial five-energy-column HELP4CERN rate table or its 60 GeV electron heading over the author's later slide-based Table 1. Do not replace the adopted first-option/nominal-baseline/second-option labels with “leptogluon study” or “ultimate” labels. Do not reinstate the superseded seven-page working ceiling. Improve attribution and scientific qualifications around these choices.
+
+Preserve original archives and work in a separate v2 project. Verify actual access and ZIP integrity, find the real main TEX and included bibliography, and inspect the PDF and retained graphics. Keep identically named assets from different archives distinguishable. Comments, historical instructions, placeholders, and text after the active end-of-document marker are not approved manuscript content.
+
+If a supporting source is unavailable, use the accessible v1 conservatively, complete independent work, and record precisely what could not be checked. Do not invent missing source contents or attribute a new quantitative claim to an unread source. A missing supplementary source does not justify abandoning revisions supported by the current package.
+
+4. FIXED MANUSCRIPT IDENTITY
+
+Preserve these details exactly:
+
+Title: Perspectives for HET physics studies at a muon-hadron collider at CERN
+Sole named author: Hamzeh Khanpour
+Separate attribution: (on behalf of HELP4CERN Study Group)
+Affiliation: AGH University of Krakow, Faculty of Physics and Applied Computer Science, Al. Mickiewicza 30, 30-055 Kraków, Poland.
+Publication email: hamzeh.khanpour@cern.ch
+Speaker designation: retain the appropriate supplied PoS convention.
+
+Conference identity: 33rd International Workshop on Deep Inelastic Scattering and Related Subjects (DIS2026), 4–8 May 2026, Bologna, Italy; verify official metadata before finalizing it. Preserve the English-language DIS/HEP research audience. HET denotes Higgs, electroweak, and top physics.
+
+Do not add coauthors, unrelated affiliations, unprovided grants, endorsements, or acknowledgments.
+
+5. NUMERICAL POLICY AND ADOPTED BENCHMARKS
+
+Preserve the author-selected numerical results. This revision strengthens scientific exposition, comparisons, attribution, and presentation; it does not authorize new simulations, event generation, fits, sensitivity forecasts, or replacement numerical results.
+
+Keep the current v1 Table 1 values and units:
+
+Process                     LHeC20GeV   LHeC50GeV   LHmuC500GeV   LHmuC1TeV
+CC Higgs + jet [fb]          52           164          438            731
+NC Higgs + jet [fb]          5.6          19           135            221
+NC top pair [pb]            0.0015       0.0323       1.03           2.23
+CC single top [pb]          0.55         2.89         21.26          36.77
+
+Use the source process definitions in the typeset table. Retain the mixed units clearly: Higgs rows in fb and top rows in pb. Do not add a 2 TeV column or borrow its numbers from another benchmark version. Attribute the adopted table to the actual presentation/study source. Retain supported polarization qualifications, but do not invent a sign or impose the white paper's 50% antimuon assumption universally on these selected values. In HELP4CERN, the 500 GeV Higgs values corresponding to 438 and 135 fb are explicitly unpolarized; check the available source before describing the other entries.
+
+Keep v1 Table 2 as the adopted machine working points:
+
+Configuration       E_mu       E_p      sqrt(s_mu p)     L_int
+First option        500 GeV    7 TeV     about 3.7 TeV      250 fb^-1
+Nominal baseline    1 TeV      7 TeV     about 5.3 TeV      1000 fb^-1
+Second option       2 TeV      7 TeV     about 7.5 TeV      1000 fb^-1
+
+Use proper spacing and mathematical typesetting in the article. The source's 3.74 TeV and the slide's rounded 3.7 TeV describe the same first-stage energy; choose consistent rounding without presenting a scientific correction. Cite the presentation for these adopted working benchmarks. These are projected samples, and individual studies may use different exposures.
+
+Preserve the dedicated h→bb results: statistical rate uncertainties 1.19% and 0.69%, coupling uncertainties 0.77% and 0.60%, and the external relative uncertainty 0.985% on R=g_hWW^2/Gamma_h. Preserve the study ordering and external-input provenance. Do not infer a corrected exposure from an uncertainty or assert that the 0.69% result has been independently established at the generic 1 ab^-1 benchmark.
+
+Retain these three deferred matters in the companion note, without treating them as blockers or falsely resolving them:
+- Benchmark, reference-energy, polarization, and calculation-metadata differences across Higgs/top sources.
+- The previous arithmetic observation that the second h→bb precision corresponds approximately to 500 fb^-1 rather than the generic 1000 fb^-1; this is not an author-approved replacement exposure assignment.
+- Different values in same-named Higgs-fit graphics across source packages; the HELP4CERN versions remain selected.
+
+Correct demonstrable transcription, unit-notation, charge-label, citation, or grammatical mistakes with a recorded reason. Distinguish those repairs from changing a source-reported physical result. Simple ratios and N=sigma*L bookkeeping may explain the adopted benchmarks if checked and clearly identified; they are not new experimental sensitivity forecasts.
+
+6. SCIENTIFIC AND EDITORIAL OBJECTIVE
+
+Make the contribution more result-led. For each main topic, explain the physics question, relevant mechanism, principal supported result, meaningful comparison, and its interpretation. Replace repeated general motivation and repeated limitations with concise scientific statements. Preserve assumptions needed to interpret a result where the reader encounters it; reserve the detailed audit history for the companion note.
+
+The existing overall order is appropriate: collider setup/rates; Higgs production and dedicated h→bb analysis; combined coupling fit; EW/top; photon-induced physics; concise BSM perspectives; conclusions. Improve transitions and paragraph order without expanding into a general collider review. Distinguish the inclusive samples, selected yields, statistical rate precision, and model-dependent coupling constraints.
+
+Rewrite the abstract after the body is stable. Include one or two representative verified findings and their physics significance, rather than only listing topics. Make the conclusions recall the supported comparative results and finish with the physics case. Keep the necessary exploratory qualification concise.
+
+7. REQUIRED COMPARATIVE EMPHASIS
+
+A. Higgs fit versus LHeC and HL-LHC
+
+The original panels already support meaningful LHeC comparisons. Useful transcription checks, all in percent, are:
+
+Modifier      LHeC reference   LHeC+500GeV   LHeC+1TeV   LHeC+2TeV
+kappa_W       0.33             0.28          0.19         0.16
+kappa_Z       0.65             0.53          0.32         0.28
+kappa_b       1.00             0.88          0.58         0.50
+kappa_c       3.6              2.7           1.4          1.2
+kappa_g       1.1              1.0           0.83         0.75
+kappa_gamma   1.4              1.3           1.2          1.1
+
+These are checks for the revision, not a request to add a second coupling table to the article. Verify them against the actual HELP4CERN panels. Explain selectively how the higher-energy combinations improve vector and bottom constraints, give percent-level charm sensitivity, and offer more modest changes for some other modifiers. Do not list every bar in prose.
+
+Keep the entire coupling-fit discussion to one substantive, coherent paragraph if practicable, followed by one combined figure/caption. Remove the duplicated methodological introduction and repeated closing limitations in v1. Preserve the actual datasets/legend, HL-LHC baselines, improved PDF/alpha_s treatment, SMEFiT context, exploratory rescaling, kappa_V(kappa_W,kappa_Z)<=1 condition, and the definition 1-kappa_V(68%) for vector uncertainties. Do not reinterpret these as symmetric errors or present combined projections as standalone LHmuC measurements. Branching-fraction bounds are not relative coupling uncertainties.
+
+Make the HL-LHC complementarity explicit but match or identify fit assumptions. Verify the exact no-BSM-decay and total-width treatment of the specific cited HL-LHC fit before making numerical comparisons, including how its coupling modifiers are extracted. Do not infer a fixed SM width solely from BR_BSM=0: some kappa fits compute the total width from rescaled partial widths. The HELP4CERN panels include exotic branching fractions under kappa_V<=1; qualify comparisons accordingly. Do not silently treat all plotted baselines as identical fits, assign exact improvement factors from unlabelled dashed-line heights, or claim universal superiority over all colliders. Do not import the white paper's older 4% hbb HL-LHC comparison as the current universally applicable benchmark.
+
+B. Production and top physics
+
+Interpret Table 1 rather than simply announcing it. From the adopted 50 GeV LHeC and 500 GeV/1 TeV muon entries, single-top cross-section ratios are approximately 7–13 and top-pair ratios approximately 32–69. Verify any ratio retained and describe it as a comparison of the stated production benchmarks, not an isolated energy effect with all other assumptions matched or an improvement factor in measurement precision.
+
+Alternatively, the nominal 1 TeV/1 ab^-1 entries imply approximately 3.7*10^7 produced single-top events and2.2*10^6 top-pair events before decays, acceptance, and selection. Use counts only if they materially improve the argument; both a long ratio list and a long event-count list are unnecessary. Explain their relevance to Wtb/CKM observables and rare or flavour-changing top processes. Do not manufacture projected limits.
+
+C. Photon-induced physics
+
+Retain the EPA interpretation, meaningful normalization/units, elastic virtuality conditions, and distinction between W_gamma gamma and sqrt(s_mu p). The existing cumulative tau-pair benchmarks above W0=10 GeV are 50.37, 58.56, and 70.3 pb for 50 GeV electrons and 500/1000 GeV muons on 7 TeV protons. Preserve them with correct attribution.
+
+Restore the absent absolute WW rates 0.037, 0.166, and 0.258 pb in that same configuration order before referring to their approximately 4.5-fold and 7-fold enhancements. These are folded elastic lepton–proton production cross-sections, not gamma-gamma subprocess cross-sections. State that larger cross-sections give larger produced samples at equal integrated luminosity; do not assert that every staged benchmark delivers more selected events. Tau-pair rate enhancements are more modest and channel dependence matters.
+
+Retain explicit mention of loop-induced gamma gamma→ZZ, gamma gamma→ttbar, charged higgsino-like states, and slepton pairs. Distinguish rare heavy channels with fb-scale cross-sections from the pb-scale tau/WW examples. Do not add unsupported BSM reaches or claim precision from a small inclusive heavy-channel sample.
+
+Figure 4 shows photon luminosities and SM tau-pair rates, not anomalous-coupling deformations. Remove or rewrite “our anomalous-coupling deformations illustrate…” as a prospective opportunity. Do not imply a new calculation, displayed anomaly curve, or exclusion limit that v1 does not contain.
+
+D. EW, BSM, and detector interpretation
+
+Add only compact, supported substance: the running weak mixing angle and electroweak-parameter opportunities at high Q^2; the muon-specific resonant mu q and mu g production mechanisms; and their complementarity to proton-collider pair production. The HELP4CERN RPV discussion explains stronger NC sensitivity through valence-quark participation relative to a sea-quark CC contribution. Use this explanation only after checking its process conventions.
+
+Keep any precise BSM reach conditional on all required assumptions and reliable provenance. In particular, the white-paper leptogluon prose and plot use different HL-LHC luminosity labels, 1 versus 3 ab^-1. Do not silently reconcile them or promote the comparison to a newly validated result. A qualitative mechanism-led BSM paragraph is sufficient.
+
+One short detector qualification may explain that low pileup does not remove muon-decay beam backgrounds and that shielding/acceptance matter. Do not add an engineering section. Empty source placeholders for Higgs self-interactions or toponium are not developed results to import.
+
+8. FIGURES, TABLES, AND EQUATIONS
+
+Retain the author's selected display content in the primary plan:
+- The adopted production-rate and machine-benchmark tables.
+- The original vector dis_eta_acceptance.pdf with unchanged 20/50 GeV electron and 1/2 TeV muon labels and configuration-specific acceptance conventions.
+- The paired CC/NC Higgs Feynman diagrams, with the upper CC W^- and lower W^+ labels and correct antifermion arrows. The displayed quark flavours are representative contributions, not the complete proton-level processes.
+- All three original HELP4CERN coupling panels together in ONE figure: LHmuC_fermion.pdf, LHmuC_vector.pdf, LHmuC_loop.pdf. Use a compact two-above/one-below arrangement or another layout that preserves print-scale legibility. Use one shared caption and consistent reference; do not split them into three full-size floats.
+- The existing photon-luminosity and cumulative tau-pair panels together, with source attribution and essential conditions.
+
+Do not silently omit an author-requested panel to meet the old seven-page target. Within eight pages, improve prose and normal float layout first. Preserve original scientific graphics and numerical labels; do not redraw or generate substitutes. Uniform scaling/cropping of empty margins is allowed, never clipping physical content. Explain the photon panels' negative-muon labels only within unpolarized purely electromagnetic charge equivalence; do not extend that statement to weak or polarization-sensitive observables. Give the intended Q_l^2,Q_p^2<M_Z^2 restriction clearly in text/caption without silently editing the source artwork's redundant units.
+
+Introduce each display and interpret its relevance. Preserve equation definitions and cross-references, including the statistical-rate and external-input coupling relations and EPA convolution. Avoid repeating equations or adding unneeded formalism.
+
+9. SOURCE-SPECIFIC ISSUES TO VERIFY, NOT BLINDLY REPEAT
+
+The inspected v1 has duplicated coupling-fit text, missing absolute WW rates, unsupported anomalous-deformation wording, and insufficient Higgs-study exposure qualification. Check their actual state and repair them if present.
+
+The older separate PDF review found an unresolved tau-pair citation, but the current v1 TEX already uses a valid Khanpour:DIS2026 key and contains 13 bibliography entries. Do not manufacture an unresolved-citation finding from a stale review. Verify the final source and rebuilt PDF directly.
+
+Correct actual language errors such as “We uses,” “coupling precision” for two precisions, “possible necessarily extensions,” “dedicated studies need,” and “S_gamma gamma need to be convoluted.” Remove unnecessary “however” and repeated generic claims. Use conventional scientific English, consistent spelling, notation, beam-charge conventions, units, confidence definitions, and Higgs symbols.
+
+The existing README is stale: it names an older project/main file, claims seven pages and 12 references, omits newly retained displays, and mentions a validation file not present in v1. Rewrite it from the actual final files and measured build outcome. Never copy these old claims into v2.
+
+Inspect redundant or potentially conflicting package loading, including hyperref/xcolor already loaded by the PoS style. Remove or repair ordinary implementation conflicts without altering the official appearance. TikZ-Feynman can warn about automatic graph layout under pdfLaTeX even though these diagrams use explicit coordinates; verify actual rendering and engine compatibility rather than treating every warning as a failure or mandating an engine change without need.
+
+10. ATTRIBUTION AND BIBLIOGRAPHY
+
+Use HELP4CERN/talk references for their specific preliminary results and primary papers for methods and established background. A software/framework paper alone does not validate unpublished numerical projections. Describe the work consistently as presenting the HELP4CERN studies; do not imply that a fresh simulation or fit was performed during this revision.
+
+Verify retained reference metadata through primary records where available. Keep consistent DOI and arXiv hyperlinks, resolve citation-key spelling/case, and include only cited entries. Preserve the verified Andre:2025iar reference and its DOI 10.1088/1367-2630/ae2e31 and arXiv 2503.20475 after checking. HELP4CERN remains an in-preparation working draft unless a real public identifier is verified; never copy its placeholder 1234.56789. Do not assign a published photon paper's DOI to a different in-preparation work.
+
+Official verification starting points:
+https://dis2026.infn.it/workshop-proceedings/
+https://agenda.infn.it/event/47074/contributions/289107/
+https://arxiv.org/abs/2504.00672
+https://arxiv.org/abs/2503.17727
+https://arxiv.org/abs/2604.16596
+
+Use available records without seeking private access or contacting others. Record a genuine metadata limitation precisely rather than inventing missing information.
+
+11. ORDERED EXECUTION WORKFLOW
+
+1) Inspect and preserve inputs; inventory the actual v1 project and distinguish current source from old PDF/log/README claims.
+2) Read the manuscript, supporting scientific passages, captions, bibliography, and actual included graphics. Build a compact internal claim/asset map with source, benchmark, qualification, and intended treatment.
+3) Identify substantive corrections, repetitions, missing comparisons, and layout problems. Keep the review focused and proceed directly to implementation.
+4) Revise the entire manuscript for scientific content, results/comparisons, grammar, transitions, consistency, and concision. Retain the current agreed numbers and displays. Rewrite abstract and conclusions after the body is stable.
+5) Assemble a portable v2 LaTeX project, with correct filenames, relative paths, references, style/logo, and figures. Update README and the separate revision/validation note.
+6) Compile with the appropriate engine and necessary passes until references/labels stabilize. Attempt routine permitted remedies for missing dependencies; do not fake a compiled output or replace the PoS fonts merely to bypass a dependency.
+7) Count actual pages and inspect every rendered page. Check all figures at print scale, tables/units, diagram charges/arrows, equation alignment, title block, running headers, citations, references, clipping, missing glyphs, and paragraph continuity.
+8) Repair concrete issues and rebuild. Remain within eight total pages using clear prose and normal typography. Repeat checks only for changed material or unresolved concrete problems.
+9) Perform a final source-fidelity pass: check every retained numerical statement and comparison, graphic version, unit, exposure qualification, fit/width convention, and source attribution. Separate successful transcription from unresolved scientific reconciliation.
+10) Create the exact final ZIP, extract it into a clean directory, and build using its README command and documented TeX dependencies. Ensure the delivered PDF corresponds to those sources and every required asset is present.
+11) Deliver the actual files and factual validation status. Do not stop at a revision plan or a report of what ought to be done.
+
+12. FINAL VALIDATION CONDITIONS
+
+Before claiming completion, establish:
+- Exact manuscript identity, appropriate speaker attribution, and conference metadata.
+- Current author-selected tables and stage labels preserved, with truthful source/polarization/exposure wording.
+- Dedicated and combined Higgs results distinguished; original three-panel values and vector uncertainty definition preserved.
+- Explicit, supported LHeC comparisons and properly qualified HL-LHC comparisons.
+- Quantitative top motivation without invented experimental precision.
+- Correct photon normalization, absolute WW rates, benchmark order, thresholds/virtuality restrictions, channel names, and event-yield interpretation.
+- No reference to absent anomalous-coupling plots or unperformed new analyses.
+- No duplicated method/limitation passages, grammar errors, TODOs, placeholders, missing citations, or stale review claims.
+- All author-requested displays present, readable, correctly captioned, and referenced.
+- Actual final PDF no more than eight pages including everything; measured count and page-by-page visual check recorded.
+- Final ZIP passes a clean extracted build with documented dependencies and matches the delivered PDF.
+- README and companion note match the actual final files, build, bibliography, and remaining limitations.
+- Deferred scientific issues and any external page-rule discrepancy are reported honestly outside the article.
+
+Do not turn this checklist into boilerplate assertions. If a real access/build limitation remains, complete all independent work and identify the exact unmet condition and its consequence. Do not claim submission readiness beyond the checks actually completed.
+
+13. COMPANION REVISION AND VALIDATION NOTE
+
+Keep a concise separate note with: actual input access; principal scientific/editorial changes; a compact provenance map; any justified omission/technical change; build command/engine/dependencies; measured page count and visual-review status; clean-ZIP build result; the three deferred numerical issues; and any specific remaining scientific, metadata, or conference-rule limitation.
+
+Do not put this editorial/audit note inside the proceedings PDF. Avoid a long historic review. Preserve the distinction between a polished final manuscript and verified resolution of every source discrepancy.
+
+14. EXACT DELIVERABLES AND HANDOFF
+
+Deliver:
+1) DIS2026_LHmuC_HET_Proceedings_v2.pdf
+2) DIS2026_LHmuC_HET_Proceedings_v2.tex
+3) DIS2026_LHmuC_HET_Proceedings_v2.zip
+4) DIS2026_LHmuC_HET_Proceedings_v2_Revision_and_Validation.md
+
+The ZIP must contain one clearly named v2 project directory with the final main TEX, matching compiled PDF, references.tex or complete bibliography inputs, required pos.sty and logo, all selected figure assets, README with the actual build command/dependencies, and the companion note. Keep the inline diagrams or provide faithfully rendered vector assets plus editable sources if a technical conversion is justified. Every file needed to build must be inside the project apart from documented standard TeX dependencies.
+
+Exclude old aux/log/out/synctex files, stale PDFs, obsolete drafts, full input archives, temporary previews, private paths, and unrelated material. Do not rename the v1 ZIP and call it v2. Do not deliver a ZIP containing only suggestions or disconnected replacement sections.
+
+In the final response, link the actual deliverables, state the measured page count and successful/unsuccessful compilation, visual inspection, and clean-package build status, summarize the main improvements briefly, and identify any consequential unresolved limitation. The author intends to submit the result, but no submission, approval, waiver, or scientific reconciliation may be claimed without evidence.
+
+END ACTIVE REVISION COMMAND

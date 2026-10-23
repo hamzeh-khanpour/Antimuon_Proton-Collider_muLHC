@@ -1,0 +1,13 @@
+Python: 3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+PYTHON SYNTAX OK: analyze_lhe.py
+PYTHON SYNTAX OK: collect_results.py
+PYTHON SYNTAX OK: configure_run.py
+PYTHON SYNTAX OK: lhe_io.py
+PYTHON SYNTAX OK: physics.py
+PYTHON SYNTAX OK: processes.py
+PYTHON SYNTAX OK: run_workflow.py
+PYTHON SYNTAX OK: tests/test_suite.py
+SHELL SYNTAX OK: run_all.sh
+SHELL SYNTAX OK: run_tests.sh
+JSON OK: configuration.json
+JSON OK: docs/SOURCES.json

@@ -1,0 +1,2835 @@
+NEW WORK DIRECTORY: /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f
+
+=== mue_HH ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mue_HH.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ e- > ve vm~ h h QCD=0 QED=4
+[1;34mInterpreting 'QED=4' as 'QED<=4'[0m
+INFO: Trying process: mu+ e- > ve vm~ h h QCD=0 QED<=4 @1  
+INFO: Process has 4 diagrams 
+1 processes with 4 diagrams generated in 0.004 s
+Total: 1 processes with 4 diagrams
+output mue_HH
+INFO: initialize a new directory: mue_HH 
+INFO: remove old information in mue_HH 
+INFO: Generating Helas calls for process: mu+ e- > ve vm~ h h QCD=0 QED<=4 @1 
+INFO: Processing color information for process: mu+ e- > ve vm~ h h QCD=0 QED<=4 @1 
+INFO: Creating files in directory P1_mupem_vevmxhh 
+[1mINFO: Some T-channel width have been set to zero [new since 2.8.0]
+ if you want to keep this width please set "zerowidth_tchannel" to False [0m
+INFO: Finding symmetric diagrams for process mu+ e- > ve vm~ h h QCD=0 QED<=4 @1 
+INFO: Generating Feynman diagrams for Process: mu+ e- > ve vm~ h h QCD=0 QED<=4 @1 
+Generated helas calls for 1 subprocesses (4 diagrams) in 0.003 s
+Wrote files for 15 helas calls in 0.016 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 4 routines in  0.379 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_HH/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 1.89s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_HH done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_HH/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_HH/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_HH/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301026
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupem_vevmxhh  
+INFO:  Idle: 1,  Running: 0,  Completed: 0 [ current time: 13h10 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 1 [  0.095s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 1 [  0.095s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 0 second
+INFO: Effective Luminosity 540208790.6976047 pb^-1 
+INFO: need to improve 2 channels 
+- Current estimate of cross-section: 6.66409e-05 +- 2.966117984234612e-06
+    P1_mupem_vevmxhh 
+INFO:  Idle: 17,  Running: 20,  Completed: 0 [ current time: 13h10 ] 
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+INFO:  Idle: 0,  Running: 0,  Completed: 37 [  2.6s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 55 seconds
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 2.869415760040283 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   6.95e-05 +- 1.105e-07 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mue_HH: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 6.94974e-05 pb; acceptance = 0.99080033
+Fiducial sigma = 0.0491244854 fb
+MC errors [integration, selection] = [7.813e-05, 3.986e-06] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+CAUTION: The model-card branching fraction differs from 0.582. The reference normalization is separate and not used for the primary result.
+
+=== mue_4b ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mue_4b.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ e- > ve vm~ b b~ b b~ QCD=2 QED=6
+[1;34mInterpreting 'QED=6' as 'QED<=6'[0m
+[1;34mInterpreting 'QCD=2' as 'QCD<=2'[0m
+INFO: Trying process: mu+ e- > ve vm~ b b~ b b~ QCD<=2 QED<=6 @1  
+INFO: Process has 622 diagrams 
+1 processes with 622 diagrams generated in 0.351 s
+Total: 1 processes with 622 diagrams
+output mue_4b
+INFO: initialize a new directory: mue_4b 
+INFO: remove old information in mue_4b 
+INFO: Generating Helas calls for process: mu+ e- > ve vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Processing color information for process: mu+ e- > ve vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Creating files in directory P1_mupem_vevmxbbxbbx 
+[1mINFO: Some T-channel width have been set to zero [new since 2.8.0]
+ if you want to keep this width please set "zerowidth_tchannel" to False [0m
+INFO: Finding symmetric diagrams for process mu+ e- > ve vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Generating Feynman diagrams for Process: mu+ e- > ve vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+Generated helas calls for 1 subprocesses (622 diagrams) in 0.569 s
+Wrote files for 765 helas calls in 1.298 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 12 routines in  1.786 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 1.81s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301126
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupem_vevmxbbxbbx  
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+INFO:  Idle: 102,  Running: 20,  Completed: 0 [ current time: 13h11 ] 
+INFO:  Idle: 101,  Running: 20,  Completed: 1 [  11.3s  ] 
+INFO:  Idle: 92,  Running: 20,  Completed: 10 [  17.5s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 16 [  24s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 23 [  32.2s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 26 [  37.6s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 30 [  40.7s  ] 
+INFO:  Idle: 71,  Running: 20,  Completed: 31 [  47.4s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 33 [  53.1s  ] 
+INFO:  Idle: 64,  Running: 20,  Completed: 38 [  1m 0s  ] 
+INFO:  Idle: 62,  Running: 20,  Completed: 40 [  1m 5s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 43 [  1m 9s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 45 [  1m 20s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 46 [  1m 27s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 47 [  1m 31s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 48 [  1m 38s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 50 [  1m 42s  ] 
+INFO:  Idle: 49,  Running: 20,  Completed: 53 [  1m 50s  ] 
+INFO:  Idle: 45,  Running: 20,  Completed: 57 [  1m 57s  ] 
+INFO:  Idle: 43,  Running: 20,  Completed: 59 [  2m 1s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 62 [  2m 4s  ] 
+INFO:  Idle: 38,  Running: 20,  Completed: 64 [  2m 11s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 66 [  2m 15s  ] 
+INFO:  Idle: 35,  Running: 20,  Completed: 67 [  2m 19s  ] 
+INFO:  Idle: 33,  Running: 20,  Completed: 69 [  2m 22s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 70 [  2m 29s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 71 [  2m 32s  ] 
+INFO:  Idle: 28,  Running: 20,  Completed: 74 [  2m 36s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 76 [  2m 39s  ] 
+INFO:  Idle: 24,  Running: 20,  Completed: 78 [  2m 42s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 79 [  2m 46s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 81 [  2m 50s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 84 [  2m 59s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 85 [  3m 2s  ] 
+INFO:  Idle: 13,  Running: 20,  Completed: 89 [  3m 6s  ] 
+INFO:  Idle: 10,  Running: 20,  Completed: 92 [  3m 10s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 93 [  3m 14s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 95 [  3m 17s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 100 [  3m 20s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 102 [  3m 30s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 103 [  3m 42s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 105 [  3m 45s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 110 [  3m 48s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 115 [  3m 53s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 118 [  3m 57s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 119 [  4m 7s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 120 [  4m 14s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 121 [  4m 35s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 122 [  4m 42s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 122 [  4m 42s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 1h17m32s
+INFO: Effective Luminosity 41496379.26065291 pb^-1 
+INFO: need to improve 71 channels 
+- Current estimate of cross-section: 0.0008675455700332727 +- 1.963625881980113e-05
+    P1_mupem_vevmxbbxbbx 
+INFO:  Idle: 75,  Running: 20,  Completed: 0 [ current time: 13h16 ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 1 [  4.9s  ] 
+INFO:  Idle: 70,  Running: 20,  Completed: 5 [  8.5s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 6 [  11.9s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 9 [  15.1s  ] 
+INFO:  Idle: 63,  Running: 20,  Completed: 12 [  19.9s  ] 
+INFO:  Idle: 61,  Running: 20,  Completed: 14 [  27.8s  ] 
+INFO:  Idle: 60,  Running: 20,  Completed: 15 [  31.3s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 18 [  36.6s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 20 [  39.8s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 21 [  43.4s  ] 
+INFO:  Idle: 53,  Running: 20,  Completed: 22 [  48.4s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 24 [  54.3s  ] 
+INFO:  Idle: 49,  Running: 20,  Completed: 26 [  1m 0s  ] 
+INFO:  Idle: 45,  Running: 20,  Completed: 30 [  1m 3s  ] 
+INFO:  Idle: 44,  Running: 20,  Completed: 31 [  1m 34s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 34 [  1m 38s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 36 [  1m 41s  ] 
+INFO:  Idle: 37,  Running: 20,  Completed: 38 [  1m 47s  ] 
+INFO:  Idle: 35,  Running: 20,  Completed: 40 [  1m 55s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 44 [  2m 7s  ] 
+INFO:  Idle: 29,  Running: 20,  Completed: 46 [  2m 13s  ] 
+INFO:  Idle: 27,  Running: 20,  Completed: 48 [  2m 18s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 49 [  2m 21s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 50 [  2m 25s  ] 
+INFO:  Idle: 22,  Running: 20,  Completed: 53 [  2m 30s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 55 [  2m 38s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 57 [  2m 44s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 60 [  2m 49s  ] 
+INFO:  Idle: 14,  Running: 20,  Completed: 61 [  3m 0s  ] 
+INFO:  Idle: 12,  Running: 20,  Completed: 63 [  3m 5s  ] 
+INFO:  Idle: 11,  Running: 20,  Completed: 64 [  3m 10s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 66 [  3m 14s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 68 [  3m 17s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 70 [  3m 24s  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 71 [  3m 28s  ] 
+INFO:  Idle: 1,  Running: 20,  Completed: 74 [  3m 31s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 76 [  3m 35s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 78 [  3m 41s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 79 [  3m 49s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 82 [  3m 57s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 84 [  4m 2s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 86 [  4m 10s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 88 [  4m 13s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 89 [  4m 25s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 90 [  4m 29s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 91 [  5m 5s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 94 [  5m 40s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 95 [  6m 32s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 95 [  6m 32s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 2h24m50s
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 6.480108976364136 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.0008661 +- 1.636e-06 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mue_4b: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 0.0008661058 pb; acceptance = 0.061833333
+Fiducial sigma = 0.0535542086 fb
+MC errors [integration, selection] = [0.0001012, 0.001204] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+
+=== mumu_HH_e ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mumu_HH_e.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ mu- > ve ve~ h h QCD=0 QED=4
+[1;34mInterpreting 'QED=4' as 'QED<=4'[0m
+INFO: Trying process: mu+ mu- > ve ve~ h h QCD=0 QED<=4 @1  
+INFO: Process has 4 diagrams 
+1 processes with 4 diagrams generated in 0.004 s
+Total: 1 processes with 4 diagrams
+output mumu_HH_e
+INFO: initialize a new directory: mumu_HH_e 
+INFO: remove old information in mumu_HH_e 
+INFO: Generating Helas calls for process: mu+ mu- > ve ve~ h h QCD=0 QED<=4 @1 
+INFO: Processing color information for process: mu+ mu- > ve ve~ h h QCD=0 QED<=4 @1 
+INFO: Creating files in directory P1_mupmum_vevexhh 
+INFO: Finding symmetric diagrams for process mu+ mu- > ve ve~ h h QCD=0 QED<=4 @1 
+INFO: Generating Feynman diagrams for Process: mu+ mu- > ve ve~ h h QCD=0 QED<=4 @1 
+Generated helas calls for 1 subprocesses (4 diagrams) in 0.003 s
+Wrote files for 15 helas calls in 0.018 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 5 routines in  0.398 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_e/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 1.79s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_e done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_e/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_e/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_e/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301226
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vevexhh  
+INFO:  Idle: 1,  Running: 1,  Completed: 0 [ current time: 13h23 ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 1 [  0.14s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 2 [  0.14s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 1 seconds
+INFO: Effective Luminosity 4405262624.626102 pb^-1 
+INFO: need to improve 3 channels 
+- Current estimate of cross-section: 8.172044000000001e-06 +- 1.2067315758237208e-07
+    P1_mupmum_vevexhh 
+INFO:  Idle: 17,  Running: 20,  Completed: 0 [ current time: 13h23 ] 
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+INFO:  Idle: 0,  Running: 0,  Completed: 37 [  1.9s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 41 seconds
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 3.4274981021881104 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   8.121e-06 +- 1.068e-08 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mumu_HH_e: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 8.120524e-06 pb; acceptance = 0.99977733
+Fiducial sigma = 0.00579202801 fb
+MC errors [integration, selection] = [7.62e-06, 5.215e-08] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+CAUTION: The model-card branching fraction differs from 0.582. The reference normalization is separate and not used for the primary result.
+
+=== mumu_HH_mu ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mumu_HH_mu.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ mu- > vm vm~ h h QCD=0 QED=4
+[1;34mInterpreting 'QED=4' as 'QED<=4'[0m
+INFO: Trying process: mu+ mu- > vm vm~ h h QCD=0 QED<=4 @1  
+INFO: Process has 8 diagrams 
+1 processes with 8 diagrams generated in 0.007 s
+Total: 1 processes with 8 diagrams
+output mumu_HH_mu
+INFO: initialize a new directory: mumu_HH_mu 
+INFO: remove old information in mumu_HH_mu 
+INFO: Generating Helas calls for process: mu+ mu- > vm vm~ h h QCD=0 QED<=4 @1 
+INFO: Processing color information for process: mu+ mu- > vm vm~ h h QCD=0 QED<=4 @1 
+INFO: Creating files in directory P1_mupmum_vmvmxhh 
+[1mINFO: Some T-channel width have been set to zero [new since 2.8.0]
+ if you want to keep this width please set "zerowidth_tchannel" to False [0m
+INFO: Finding symmetric diagrams for process mu+ mu- > vm vm~ h h QCD=0 QED<=4 @1 
+INFO: Generating Feynman diagrams for Process: mu+ mu- > vm vm~ h h QCD=0 QED<=4 @1 
+Generated helas calls for 1 subprocesses (8 diagrams) in 0.007 s
+Wrote files for 23 helas calls in 0.021 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 5 routines in  0.411 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_mu/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 1.89s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_mu done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_mu/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_mu/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_mu/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301326
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vmvmxhh  
+INFO:  Idle: 1,  Running: 2,  Completed: 0 [ current time: 13h24 ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 1 [  0.13s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 3 [  0.16s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 2 seconds
+INFO: Effective Luminosity 451721119.5772432 pb^-1 
+INFO: need to improve 4 channels 
+- Current estimate of cross-section: 7.9695189e-05 +- 2.3251563203833202e-06
+    P1_mupmum_vmvmxhh 
+INFO:  Idle: 19,  Running: 20,  Completed: 0 [ current time: 13h24 ] 
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+INFO:  Idle: 0,  Running: 0,  Completed: 39 [  2.9s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 39 [  2.9s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 1m00s
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 3.0262393951416016 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   8.262e-05 +- 1.365e-07 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mumu_HH_mu: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 8.2616e-05 pb; acceptance = 0.99896367
+Fiducial sigma = 0.0588785586 fb
+MC errors [integration, selection] = [9.73e-05, 1.125e-06] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+CAUTION: The model-card branching fraction differs from 0.582. The reference normalization is separate and not used for the primary result.
+
+=== mumu_HH_tau ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mumu_HH_tau.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ mu- > vt vt~ h h QCD=0 QED=4
+[1;34mInterpreting 'QED=4' as 'QED<=4'[0m
+INFO: Trying process: mu+ mu- > vt vt~ h h QCD=0 QED<=4 @1  
+INFO: Process has 4 diagrams 
+1 processes with 4 diagrams generated in 0.004 s
+Total: 1 processes with 4 diagrams
+output mumu_HH_tau
+INFO: initialize a new directory: mumu_HH_tau 
+INFO: remove old information in mumu_HH_tau 
+INFO: Generating Helas calls for process: mu+ mu- > vt vt~ h h QCD=0 QED<=4 @1 
+INFO: Processing color information for process: mu+ mu- > vt vt~ h h QCD=0 QED<=4 @1 
+INFO: Creating files in directory P1_mupmum_vtvtxhh 
+INFO: Finding symmetric diagrams for process mu+ mu- > vt vt~ h h QCD=0 QED<=4 @1 
+INFO: Generating Feynman diagrams for Process: mu+ mu- > vt vt~ h h QCD=0 QED<=4 @1 
+Generated helas calls for 1 subprocesses (4 diagrams) in 0.003 s
+Wrote files for 15 helas calls in 0.016 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 5 routines in  0.449 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 2.07s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301426
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vtvtxhh  
+INFO:  Idle: 1,  Running: 1,  Completed: 0 [ current time: 13h26 ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 1 [  0.16s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 2 [  0.17s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 1 seconds
+INFO: Effective Luminosity 4421140666.572922 pb^-1 
+INFO: need to improve 3 channels 
+- Current estimate of cross-section: 8.142695e-06 +- 1.0389320059032978e-07
+    P1_mupmum_vtvtxhh 
+INFO:  Idle: 17,  Running: 20,  Completed: 0 [ current time: 13h26 ] 
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+INFO:  Idle: 0,  Running: 0,  Completed: 37 [  1.9s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 42 seconds
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 3.8840572834014893 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   8.137e-06 +- 1.032e-08 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mumu_HH_tau: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 8.137045e-06 pb; acceptance = 0.99978567
+Fiducial sigma = 0.00580386012 fb
+MC errors [integration, selection] = [7.362e-06, 5.073e-08] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+CAUTION: The model-card branching fraction differs from 0.582. The reference normalization is separate and not used for the primary result.
+
+=== mumu_4b_e ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mumu_4b_e.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ mu- > ve ve~ b b~ b b~ QCD=2 QED=6
+[1;34mInterpreting 'QED=6' as 'QED<=6'[0m
+[1;34mInterpreting 'QCD=2' as 'QCD<=2'[0m
+INFO: Trying process: mu+ mu- > ve ve~ b b~ b b~ QCD<=2 QED<=6 @1  
+INFO: Process has 834 diagrams 
+1 processes with 834 diagrams generated in 0.645 s
+Total: 1 processes with 834 diagrams
+output mumu_4b_e
+INFO: initialize a new directory: mumu_4b_e 
+INFO: remove old information in mumu_4b_e 
+INFO: Generating Helas calls for process: mu+ mu- > ve ve~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Processing color information for process: mu+ mu- > ve ve~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Creating files in directory P1_mupmum_vevexbbxbbx 
+INFO: Finding symmetric diagrams for process mu+ mu- > ve ve~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Generating Feynman diagrams for Process: mu+ mu- > ve ve~ b b~ b b~ QCD<=2 QED<=6 @1 
+Generated helas calls for 1 subprocesses (834 diagrams) in 0.934 s
+Wrote files for 1056 helas calls in 2.445 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 8 routines in  1.400 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_e/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 2.27s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_e done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_e/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_e/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_e/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301526
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vevexbbxbbx  
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+INFO:  Idle: 417,  Running: 20,  Completed: 0 [ current time: 13h28 ] 
+INFO:  Idle: 416,  Running: 20,  Completed: 1 [  46.4s  ] 
+INFO:  Idle: 412,  Running: 20,  Completed: 5 [  1m 3s  ] 
+INFO:  Idle: 409,  Running: 20,  Completed: 8 [  1m 9s  ] 
+INFO:  Idle: 406,  Running: 20,  Completed: 11 [  1m 32s  ] 
+INFO:  Idle: 405,  Running: 20,  Completed: 12 [  1m 40s  ] 
+INFO:  Idle: 404,  Running: 20,  Completed: 13 [  1m 59s  ] 
+INFO:  Idle: 401,  Running: 20,  Completed: 16 [  2m 3s  ] 
+INFO:  Idle: 398,  Running: 20,  Completed: 19 [  2m 6s  ] 
+INFO:  Idle: 397,  Running: 20,  Completed: 20 [  2m 12s  ] 
+INFO:  Idle: 393,  Running: 20,  Completed: 24 [  2m 20s  ] 
+INFO:  Idle: 391,  Running: 20,  Completed: 26 [  2m 40s  ] 
+INFO:  Idle: 389,  Running: 20,  Completed: 28 [  2m 52s  ] 
+INFO:  Idle: 387,  Running: 20,  Completed: 30 [  2m 57s  ] 
+INFO:  Idle: 384,  Running: 20,  Completed: 33 [  3m 2s  ] 
+INFO:  Idle: 383,  Running: 20,  Completed: 34 [  3m 5s  ] 
+INFO:  Idle: 380,  Running: 20,  Completed: 37 [  3m 11s  ] 
+INFO:  Idle: 379,  Running: 20,  Completed: 38 [  3m 27s  ] 
+INFO:  Idle: 378,  Running: 20,  Completed: 39 [  3m 31s  ] 
+INFO:  Idle: 377,  Running: 20,  Completed: 40 [  3m 34s  ] 
+INFO:  Idle: 376,  Running: 20,  Completed: 41 [  3m 38s  ] 
+INFO:  Idle: 375,  Running: 20,  Completed: 42 [  3m 52s  ] 
+INFO:  Idle: 372,  Running: 20,  Completed: 45 [  3m 55s  ] 
+INFO:  Idle: 371,  Running: 20,  Completed: 46 [  4m 0s  ] 
+INFO:  Idle: 369,  Running: 20,  Completed: 48 [  4m 4s  ] 
+INFO:  Idle: 367,  Running: 20,  Completed: 50 [  4m 9s  ] 
+INFO:  Idle: 366,  Running: 20,  Completed: 51 [  4m 14s  ] 
+INFO:  Idle: 365,  Running: 20,  Completed: 52 [  4m 31s  ] 
+INFO:  Idle: 363,  Running: 20,  Completed: 54 [  4m 55s  ] 
+INFO:  Idle: 361,  Running: 20,  Completed: 56 [  4m 59s  ] 
+INFO:  Idle: 359,  Running: 20,  Completed: 58 [  5m 5s  ] 
+INFO:  Idle: 358,  Running: 20,  Completed: 59 [  5m 12s  ] 
+INFO:  Idle: 357,  Running: 20,  Completed: 60 [  5m 22s  ] 
+INFO:  Idle: 356,  Running: 20,  Completed: 61 [  5m 30s  ] 
+INFO:  Idle: 355,  Running: 20,  Completed: 62 [  5m 36s  ] 
+INFO:  Idle: 354,  Running: 20,  Completed: 63 [  5m 41s  ] 
+INFO:  Idle: 351,  Running: 20,  Completed: 66 [  5m 54s  ] 
+INFO:  Idle: 349,  Running: 20,  Completed: 68 [  6m 3s  ] 
+INFO:  Idle: 347,  Running: 20,  Completed: 70 [  6m 9s  ] 
+INFO:  Idle: 346,  Running: 20,  Completed: 71 [  6m 12s  ] 
+INFO:  Idle: 345,  Running: 20,  Completed: 72 [  6m 24s  ] 
+INFO:  Idle: 344,  Running: 20,  Completed: 73 [  6m 39s  ] 
+INFO:  Idle: 343,  Running: 20,  Completed: 74 [  6m 56s  ] 
+INFO:  Idle: 341,  Running: 20,  Completed: 76 [  7m 1s  ] 
+INFO:  Idle: 340,  Running: 20,  Completed: 77 [  7m 27s  ] 
+INFO:  Idle: 339,  Running: 20,  Completed: 78 [  7m 37s  ] 
+INFO:  Idle: 337,  Running: 20,  Completed: 80 [  7m 43s  ] 
+INFO:  Idle: 336,  Running: 20,  Completed: 81 [  7m 46s  ] 
+INFO:  Idle: 335,  Running: 20,  Completed: 82 [  7m 56s  ] 
+INFO:  Idle: 331,  Running: 20,  Completed: 86 [  8m 2s  ] 
+INFO:  Idle: 330,  Running: 20,  Completed: 87 [  8m 11s  ] 
+INFO:  Idle: 328,  Running: 20,  Completed: 89 [  8m 16s  ] 
+INFO:  Idle: 326,  Running: 20,  Completed: 91 [  8m 20s  ] 
+INFO:  Idle: 325,  Running: 20,  Completed: 92 [  8m 32s  ] 
+INFO:  Idle: 323,  Running: 20,  Completed: 94 [  8m 36s  ] 
+INFO:  Idle: 322,  Running: 20,  Completed: 95 [  8m 41s  ] 
+INFO:  Idle: 321,  Running: 20,  Completed: 96 [  8m 54s  ] 
+INFO:  Idle: 320,  Running: 20,  Completed: 97 [  9m 0s  ] 
+INFO:  Idle: 316,  Running: 20,  Completed: 101 [  9m 9s  ] 
+INFO:  Idle: 315,  Running: 20,  Completed: 102 [  9m 17s  ] 
+INFO:  Idle: 314,  Running: 20,  Completed: 103 [  9m 39s  ] 
+INFO:  Idle: 311,  Running: 20,  Completed: 106 [  9m 48s  ] 
+INFO:  Idle: 309,  Running: 20,  Completed: 108 [  9m 52s  ] 
+INFO:  Idle: 308,  Running: 20,  Completed: 109 [  9m 58s  ] 
+INFO:  Idle: 305,  Running: 20,  Completed: 112 [  10m 8s  ] 
+INFO:  Idle: 303,  Running: 20,  Completed: 114 [  10m 15s  ] 
+INFO:  Idle: 302,  Running: 20,  Completed: 115 [  10m 31s  ] 
+INFO:  Idle: 301,  Running: 20,  Completed: 116 [  10m 37s  ] 
+INFO:  Idle: 299,  Running: 20,  Completed: 118 [  10m 42s  ] 
+INFO:  Idle: 297,  Running: 20,  Completed: 120 [  10m 48s  ] 
+INFO:  Idle: 295,  Running: 20,  Completed: 122 [  10m 55s  ] 
+INFO:  Idle: 293,  Running: 20,  Completed: 124 [  11m 0s  ] 
+INFO:  Idle: 292,  Running: 20,  Completed: 125 [  11m 7s  ] 
+INFO:  Idle: 291,  Running: 20,  Completed: 126 [  11m 11s  ] 
+INFO:  Idle: 289,  Running: 20,  Completed: 128 [  11m 14s  ] 
+INFO:  Idle: 287,  Running: 20,  Completed: 130 [  11m 22s  ] 
+INFO:  Idle: 285,  Running: 20,  Completed: 132 [  11m 25s  ] 
+INFO:  Idle: 284,  Running: 20,  Completed: 133 [  11m 34s  ] 
+INFO:  Idle: 281,  Running: 20,  Completed: 136 [  11m 38s  ] 
+INFO:  Idle: 280,  Running: 20,  Completed: 137 [  11m 53s  ] 
+INFO:  Idle: 278,  Running: 20,  Completed: 139 [  12m 12s  ] 
+INFO:  Idle: 277,  Running: 20,  Completed: 140 [  12m 17s  ] 
+INFO:  Idle: 276,  Running: 20,  Completed: 141 [  12m 25s  ] 
+INFO:  Idle: 271,  Running: 20,  Completed: 146 [  12m 37s  ] 
+INFO:  Idle: 269,  Running: 20,  Completed: 148 [  13m 0s  ] 
+INFO:  Idle: 267,  Running: 20,  Completed: 150 [  13m 5s  ] 
+INFO:  Idle: 266,  Running: 20,  Completed: 151 [  13m 10s  ] 
+INFO:  Idle: 265,  Running: 20,  Completed: 152 [  13m 14s  ] 
+INFO:  Idle: 263,  Running: 20,  Completed: 154 [  13m 19s  ] 
+INFO:  Idle: 262,  Running: 20,  Completed: 155 [  13m 33s  ] 
+INFO:  Idle: 260,  Running: 20,  Completed: 157 [  13m 53s  ] 
+INFO:  Idle: 259,  Running: 20,  Completed: 158 [  13m 59s  ] 
+INFO:  Idle: 256,  Running: 20,  Completed: 161 [  14m 4s  ] 
+INFO:  Idle: 254,  Running: 20,  Completed: 163 [  14m 13s  ] 
+INFO:  Idle: 252,  Running: 20,  Completed: 165 [  14m 19s  ] 
+INFO:  Idle: 250,  Running: 20,  Completed: 167 [  14m 29s  ] 
+INFO:  Idle: 248,  Running: 20,  Completed: 169 [  14m 44s  ] 
+INFO:  Idle: 247,  Running: 20,  Completed: 170 [  14m 53s  ] 
+INFO:  Idle: 245,  Running: 20,  Completed: 172 [  14m 57s  ] 
+INFO:  Idle: 243,  Running: 20,  Completed: 174 [  15m 2s  ] 
+INFO:  Idle: 240,  Running: 20,  Completed: 177 [  15m 15s  ] 
+INFO:  Idle: 239,  Running: 20,  Completed: 178 [  15m 24s  ] 
+INFO:  Idle: 237,  Running: 20,  Completed: 180 [  15m 28s  ] 
+INFO:  Idle: 236,  Running: 20,  Completed: 181 [  15m 32s  ] 
+INFO:  Idle: 235,  Running: 20,  Completed: 182 [  15m 44s  ] 
+INFO:  Idle: 233,  Running: 20,  Completed: 184 [  15m 54s  ] 
+INFO:  Idle: 230,  Running: 20,  Completed: 187 [  15m 57s  ] 
+INFO:  Idle: 228,  Running: 20,  Completed: 189 [  16m 8s  ] 
+INFO:  Idle: 227,  Running: 20,  Completed: 190 [  16m 16s  ] 
+INFO:  Idle: 226,  Running: 20,  Completed: 191 [  16m 20s  ] 
+INFO:  Idle: 225,  Running: 20,  Completed: 192 [  16m 27s  ] 
+INFO:  Idle: 223,  Running: 20,  Completed: 194 [  16m 38s  ] 
+INFO:  Idle: 222,  Running: 20,  Completed: 195 [  16m 47s  ] 
+INFO:  Idle: 221,  Running: 20,  Completed: 196 [  16m 51s  ] 
+INFO:  Idle: 220,  Running: 20,  Completed: 197 [  16m 58s  ] 
+INFO:  Idle: 217,  Running: 20,  Completed: 200 [  17m 17s  ] 
+INFO:  Idle: 216,  Running: 20,  Completed: 201 [  17m 24s  ] 
+INFO:  Idle: 214,  Running: 20,  Completed: 203 [  17m 28s  ] 
+INFO:  Idle: 211,  Running: 20,  Completed: 206 [  17m 33s  ] 
+INFO:  Idle: 210,  Running: 20,  Completed: 207 [  17m 40s  ] 
+INFO:  Idle: 209,  Running: 20,  Completed: 208 [  17m 45s  ] 
+INFO:  Idle: 208,  Running: 20,  Completed: 209 [  17m 50s  ] 
+INFO:  Idle: 207,  Running: 20,  Completed: 210 [  17m 55s  ] 
+INFO:  Idle: 206,  Running: 20,  Completed: 211 [  18m 2s  ] 
+INFO:  Idle: 204,  Running: 20,  Completed: 213 [  18m 14s  ] 
+INFO:  Idle: 201,  Running: 20,  Completed: 216 [  18m 21s  ] 
+INFO:  Idle: 200,  Running: 20,  Completed: 217 [  18m 32s  ] 
+INFO:  Idle: 199,  Running: 20,  Completed: 218 [  18m 37s  ] 
+INFO:  Idle: 197,  Running: 20,  Completed: 220 [  18m 43s  ] 
+INFO:  Idle: 196,  Running: 20,  Completed: 221 [  18m 56s  ] 
+INFO:  Idle: 194,  Running: 20,  Completed: 223 [  19m 0s  ] 
+INFO:  Idle: 193,  Running: 20,  Completed: 224 [  19m 9s  ] 
+INFO:  Idle: 192,  Running: 20,  Completed: 225 [  19m 15s  ] 
+INFO:  Idle: 191,  Running: 20,  Completed: 226 [  19m 20s  ] 
+INFO:  Idle: 188,  Running: 20,  Completed: 229 [  19m 23s  ] 
+INFO:  Idle: 186,  Running: 20,  Completed: 231 [  19m 27s  ] 
+INFO:  Idle: 185,  Running: 20,  Completed: 232 [  19m 31s  ] 
+INFO:  Idle: 184,  Running: 20,  Completed: 233 [  19m 42s  ] 
+INFO:  Idle: 183,  Running: 20,  Completed: 234 [  20m 6s  ] 
+INFO:  Idle: 181,  Running: 20,  Completed: 236 [  20m 9s  ] 
+INFO:  Idle: 179,  Running: 20,  Completed: 238 [  20m 12s  ] 
+INFO:  Idle: 177,  Running: 20,  Completed: 240 [  20m 32s  ] 
+INFO:  Idle: 175,  Running: 20,  Completed: 242 [  20m 41s  ] 
+INFO:  Idle: 174,  Running: 20,  Completed: 243 [  20m 45s  ] 
+INFO:  Idle: 172,  Running: 20,  Completed: 245 [  20m 51s  ] 
+INFO:  Idle: 170,  Running: 20,  Completed: 247 [  21m 3s  ] 
+INFO:  Idle: 169,  Running: 20,  Completed: 248 [  21m 19s  ] 
+INFO:  Idle: 168,  Running: 20,  Completed: 249 [  21m 31s  ] 
+INFO:  Idle: 166,  Running: 20,  Completed: 251 [  21m 34s  ] 
+INFO:  Idle: 163,  Running: 20,  Completed: 254 [  21m 37s  ] 
+INFO:  Idle: 162,  Running: 20,  Completed: 255 [  21m 42s  ] 
+INFO:  Idle: 160,  Running: 20,  Completed: 257 [  21m 51s  ] 
+INFO:  Idle: 158,  Running: 20,  Completed: 259 [  21m 55s  ] 
+INFO:  Idle: 156,  Running: 20,  Completed: 261 [  22m 0s  ] 
+INFO:  Idle: 155,  Running: 20,  Completed: 262 [  22m 6s  ] 
+INFO:  Idle: 153,  Running: 20,  Completed: 264 [  22m 9s  ] 
+INFO:  Idle: 150,  Running: 20,  Completed: 267 [  22m 23s  ] 
+INFO:  Idle: 146,  Running: 20,  Completed: 271 [  22m 27s  ] 
+INFO:  Idle: 143,  Running: 20,  Completed: 274 [  22m 36s  ] 
+INFO:  Idle: 142,  Running: 20,  Completed: 275 [  22m 41s  ] 
+INFO:  Idle: 140,  Running: 20,  Completed: 277 [  22m 45s  ] 
+INFO:  Idle: 138,  Running: 20,  Completed: 279 [  22m 58s  ] 
+INFO:  Idle: 137,  Running: 20,  Completed: 280 [  23m 4s  ] 
+INFO:  Idle: 134,  Running: 20,  Completed: 283 [  23m 21s  ] 
+INFO:  Idle: 132,  Running: 20,  Completed: 285 [  23m 25s  ] 
+INFO:  Idle: 131,  Running: 20,  Completed: 286 [  23m 29s  ] 
+INFO:  Idle: 130,  Running: 20,  Completed: 287 [  23m 32s  ] 
+INFO:  Idle: 128,  Running: 20,  Completed: 289 [  23m 36s  ] 
+INFO:  Idle: 127,  Running: 20,  Completed: 290 [  24m 3s  ] 
+INFO:  Idle: 124,  Running: 20,  Completed: 293 [  24m 8s  ] 
+INFO:  Idle: 123,  Running: 20,  Completed: 294 [  24m 11s  ] 
+INFO:  Idle: 122,  Running: 20,  Completed: 295 [  24m 21s  ] 
+INFO:  Idle: 121,  Running: 20,  Completed: 296 [  24m 26s  ] 
+INFO:  Idle: 118,  Running: 20,  Completed: 299 [  24m 36s  ] 
+INFO:  Idle: 117,  Running: 20,  Completed: 300 [  24m 44s  ] 
+INFO:  Idle: 115,  Running: 20,  Completed: 302 [  24m 52s  ] 
+INFO:  Idle: 114,  Running: 20,  Completed: 303 [  25m 0s  ] 
+INFO:  Idle: 111,  Running: 20,  Completed: 306 [  25m 5s  ] 
+INFO:  Idle: 110,  Running: 20,  Completed: 307 [  25m 22s  ] 
+INFO:  Idle: 108,  Running: 20,  Completed: 309 [  25m 28s  ] 
+INFO:  Idle: 107,  Running: 20,  Completed: 310 [  25m 39s  ] 
+INFO:  Idle: 106,  Running: 20,  Completed: 311 [  25m 44s  ] 
+INFO:  Idle: 103,  Running: 20,  Completed: 314 [  25m 48s  ] 
+INFO:  Idle: 100,  Running: 20,  Completed: 317 [  25m 52s  ] 
+INFO:  Idle: 98,  Running: 20,  Completed: 319 [  25m 58s  ] 
+INFO:  Idle: 97,  Running: 20,  Completed: 320 [  26m 2s  ] 
+INFO:  Idle: 95,  Running: 20,  Completed: 322 [  26m 20s  ] 
+INFO:  Idle: 93,  Running: 20,  Completed: 324 [  26m 26s  ] 
+INFO:  Idle: 91,  Running: 20,  Completed: 326 [  26m 39s  ] 
+INFO:  Idle: 90,  Running: 20,  Completed: 327 [  26m 43s  ] 
+INFO:  Idle: 89,  Running: 20,  Completed: 328 [  26m 58s  ] 
+INFO:  Idle: 88,  Running: 20,  Completed: 329 [  27m 6s  ] 
+INFO:  Idle: 85,  Running: 20,  Completed: 332 [  27m 9s  ] 
+INFO:  Idle: 83,  Running: 20,  Completed: 334 [  27m 18s  ] 
+INFO:  Idle: 81,  Running: 20,  Completed: 336 [  27m 25s  ] 
+INFO:  Idle: 80,  Running: 20,  Completed: 337 [  27m 29s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 338 [  27m 49s  ] 
+INFO:  Idle: 78,  Running: 20,  Completed: 339 [  27m 53s  ] 
+INFO:  Idle: 77,  Running: 20,  Completed: 340 [  28m 18s  ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 343 [  28m 29s  ] 
+INFO:  Idle: 73,  Running: 20,  Completed: 344 [  28m 39s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 345 [  28m 56s  ] 
+INFO:  Idle: 70,  Running: 20,  Completed: 347 [  28m 59s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 348 [  29m 9s  ] 
+INFO:  Idle: 68,  Running: 20,  Completed: 349 [  29m 13s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 351 [  29m 18s  ] 
+INFO:  Idle: 65,  Running: 20,  Completed: 352 [  29m 31s  ] 
+INFO:  Idle: 64,  Running: 20,  Completed: 353 [  29m 37s  ] 
+INFO:  Idle: 62,  Running: 20,  Completed: 355 [  29m 46s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 358 [  29m 50s  ] 
+INFO:  Idle: 58,  Running: 20,  Completed: 359 [  30m 5s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 362 [  30m 24s  ] 
+INFO:  Idle: 53,  Running: 20,  Completed: 364 [  30m 28s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 365 [  30m 31s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 366 [  30m 36s  ] 
+INFO:  Idle: 48,  Running: 20,  Completed: 369 [  30m 42s  ] 
+INFO:  Idle: 47,  Running: 20,  Completed: 370 [  30m 54s  ] 
+INFO:  Idle: 46,  Running: 20,  Completed: 371 [  30m 58s  ] 
+INFO:  Idle: 43,  Running: 20,  Completed: 374 [  31m 9s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 376 [  31m 13s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 377 [  31m 25s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 378 [  31m 39s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 381 [  31m 46s  ] 
+INFO:  Idle: 34,  Running: 20,  Completed: 383 [  31m 49s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 385 [  31m 52s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 386 [  31m 55s  ] 
+INFO:  Idle: 28,  Running: 20,  Completed: 389 [  31m 59s  ] 
+INFO:  Idle: 27,  Running: 20,  Completed: 390 [  32m 2s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 392 [  32m 14s  ] 
+INFO:  Idle: 24,  Running: 20,  Completed: 393 [  32m 18s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 396 [  32m 27s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 397 [  32m 33s  ] 
+INFO:  Idle: 19,  Running: 20,  Completed: 398 [  32m 37s  ] 
+INFO:  Idle: 16,  Running: 20,  Completed: 401 [  32m 57s  ] 
+INFO:  Idle: 14,  Running: 20,  Completed: 403 [  33m 4s  ] 
+INFO:  Idle: 13,  Running: 20,  Completed: 404 [  33m 9s  ] 
+INFO:  Idle: 12,  Running: 20,  Completed: 405 [  33m 15s  ] 
+INFO:  Idle: 10,  Running: 20,  Completed: 407 [  33m 28s  ] 
+INFO:  Idle: 8,  Running: 20,  Completed: 409 [  33m 33s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 410 [  33m 39s  ] 
+INFO:  Idle: 6,  Running: 20,  Completed: 411 [  34m 9s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 412 [  34m 15s  ] 
+INFO:  Idle: 3,  Running: 20,  Completed: 414 [  34m 27s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 415 [  34m 35s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 418 [  35m 3s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 421 [  35m 9s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 422 [  35m 12s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 424 [  35m 18s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 425 [  35m 23s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 426 [  35m 27s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 427 [  35m 30s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 429 [  35m 34s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 431 [  36m 22s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 432 [  36m 36s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 433 [  37m 42s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 434 [  38m 16s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 435 [  38m 33s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 436 [  39m 27s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 437 [  40m 7s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 437 [  40m 7s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 11h42m05s
+INFO: Effective Luminosity 1581713600.654721 pb^-1 
+INFO: need to improve 132 channels 
+- Current estimate of cross-section: 2.2760125464621703e-05 +- 5.691065876636029e-07
+    P1_mupmum_vevexbbxbbx 
+INFO:  Idle: 134,  Running: 20,  Completed: 0 [ current time: 14h08 ] 
+INFO:  Idle: 133,  Running: 20,  Completed: 1 [  14.9s  ] 
+INFO:  Idle: 127,  Running: 20,  Completed: 7 [  19.7s  ] 
+INFO:  Idle: 126,  Running: 20,  Completed: 8 [  33.5s  ] 
+INFO:  Idle: 123,  Running: 20,  Completed: 11 [  50s  ] 
+INFO:  Idle: 121,  Running: 20,  Completed: 13 [  56s  ] 
+INFO:  Idle: 120,  Running: 20,  Completed: 14 [  1m 1s  ] 
+INFO:  Idle: 119,  Running: 20,  Completed: 15 [  1m 9s  ] 
+INFO:  Idle: 118,  Running: 20,  Completed: 16 [  1m 16s  ] 
+INFO:  Idle: 117,  Running: 20,  Completed: 17 [  1m 29s  ] 
+INFO:  Idle: 116,  Running: 20,  Completed: 18 [  1m 32s  ] 
+INFO:  Idle: 114,  Running: 20,  Completed: 20 [  1m 37s  ] 
+INFO:  Idle: 111,  Running: 20,  Completed: 23 [  1m 51s  ] 
+INFO:  Idle: 110,  Running: 20,  Completed: 24 [  1m 59s  ] 
+INFO:  Idle: 109,  Running: 20,  Completed: 25 [  2m 29s  ] 
+INFO:  Idle: 108,  Running: 20,  Completed: 26 [  2m 35s  ] 
+INFO:  Idle: 107,  Running: 20,  Completed: 27 [  2m 40s  ] 
+INFO:  Idle: 106,  Running: 20,  Completed: 28 [  2m 46s  ] 
+INFO:  Idle: 105,  Running: 20,  Completed: 29 [  2m 53s  ] 
+INFO:  Idle: 104,  Running: 20,  Completed: 30 [  2m 58s  ] 
+INFO:  Idle: 102,  Running: 20,  Completed: 32 [  3m 2s  ] 
+INFO:  Idle: 101,  Running: 20,  Completed: 33 [  3m 7s  ] 
+INFO:  Idle: 98,  Running: 20,  Completed: 36 [  3m 19s  ] 
+INFO:  Idle: 97,  Running: 20,  Completed: 37 [  3m 28s  ] 
+INFO:  Idle: 96,  Running: 20,  Completed: 38 [  4m 14s  ] 
+INFO:  Idle: 95,  Running: 20,  Completed: 39 [  4m 22s  ] 
+INFO:  Idle: 94,  Running: 20,  Completed: 40 [  4m 54s  ] 
+INFO:  Idle: 93,  Running: 20,  Completed: 41 [  5m 0s  ] 
+INFO:  Idle: 92,  Running: 20,  Completed: 42 [  5m 30s  ] 
+INFO:  Idle: 91,  Running: 20,  Completed: 43 [  6m 6s  ] 
+INFO:  Idle: 89,  Running: 20,  Completed: 45 [  6m 23s  ] 
+INFO:  Idle: 88,  Running: 20,  Completed: 46 [  6m 42s  ] 
+INFO:  Idle: 87,  Running: 20,  Completed: 47 [  6m 53s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 48 [  7m 3s  ] 
+INFO:  Idle: 85,  Running: 20,  Completed: 49 [  7m 20s  ] 
+INFO:  Idle: 84,  Running: 20,  Completed: 50 [  7m 24s  ] 
+INFO:  Idle: 83,  Running: 20,  Completed: 51 [  7m 40s  ] 
+INFO:  Idle: 81,  Running: 20,  Completed: 53 [  8m 6s  ] 
+INFO:  Idle: 80,  Running: 20,  Completed: 54 [  8m 13s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 55 [  8m 16s  ] 
+INFO:  Idle: 78,  Running: 20,  Completed: 56 [  8m 23s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 58 [  8m 29s  ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 60 [  8m 34s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 62 [  8m 52s  ] 
+INFO:  Idle: 71,  Running: 20,  Completed: 63 [  8m 57s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 65 [  9m 11s  ] 
+INFO:  Idle: 68,  Running: 20,  Completed: 66 [  9m 22s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 68 [  9m 26s  ] 
+INFO:  Idle: 65,  Running: 20,  Completed: 69 [  10m 9s  ] 
+INFO:  Idle: 63,  Running: 20,  Completed: 71 [  10m 27s  ] 
+INFO:  Idle: 62,  Running: 20,  Completed: 72 [  10m 35s  ] 
+INFO:  Idle: 61,  Running: 20,  Completed: 73 [  10m 39s  ] 
+INFO:  Idle: 60,  Running: 20,  Completed: 74 [  10m 45s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 75 [  10m 51s  ] 
+INFO:  Idle: 58,  Running: 20,  Completed: 76 [  11m 19s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 78 [  11m 35s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 80 [  11m 39s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 82 [  11m 54s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 83 [  12m 7s  ] 
+INFO:  Idle: 50,  Running: 20,  Completed: 84 [  12m 42s  ] 
+INFO:  Idle: 49,  Running: 20,  Completed: 85 [  12m 52s  ] 
+INFO:  Idle: 48,  Running: 20,  Completed: 86 [  12m 59s  ] 
+INFO:  Idle: 47,  Running: 20,  Completed: 87 [  13m 7s  ] 
+INFO:  Idle: 46,  Running: 20,  Completed: 88 [  13m 11s  ] 
+INFO:  Idle: 44,  Running: 20,  Completed: 90 [  13m 45s  ] 
+INFO:  Idle: 42,  Running: 20,  Completed: 92 [  14m 30s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 93 [  14m 48s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 94 [  15m 8s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 95 [  15m 19s  ] 
+INFO:  Idle: 38,  Running: 20,  Completed: 96 [  15m 27s  ] 
+INFO:  Idle: 37,  Running: 20,  Completed: 97 [  15m 45s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 98 [  16m 51s  ] 
+INFO:  Idle: 35,  Running: 20,  Completed: 99 [  17m 6s  ] 
+INFO:  Idle: 34,  Running: 20,  Completed: 100 [  17m 21s  ] 
+INFO:  Idle: 33,  Running: 20,  Completed: 101 [  17m 41s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 102 [  17m 50s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 103 [  18m 25s  ] 
+INFO:  Idle: 30,  Running: 20,  Completed: 104 [  18m 43s  ] 
+INFO:  Idle: 29,  Running: 20,  Completed: 105 [  19m 25s  ] 
+INFO:  Idle: 28,  Running: 20,  Completed: 106 [  19m 37s  ] 
+INFO:  Idle: 27,  Running: 20,  Completed: 107 [  19m 44s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 108 [  19m 55s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 109 [  20m 23s  ] 
+INFO:  Idle: 24,  Running: 20,  Completed: 110 [  20m 49s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 111 [  20m 55s  ] 
+INFO:  Idle: 22,  Running: 20,  Completed: 112 [  21m 9s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 113 [  21m 15s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 114 [  21m 38s  ] 
+INFO:  Idle: 19,  Running: 20,  Completed: 115 [  21m 48s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 116 [  22m 12s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 117 [  22m 20s  ] 
+INFO:  Idle: 16,  Running: 20,  Completed: 118 [  22m 30s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 119 [  22m 38s  ] 
+INFO:  Idle: 13,  Running: 20,  Completed: 121 [  23m 18s  ] 
+INFO:  Idle: 11,  Running: 20,  Completed: 123 [  24m 19s  ] 
+INFO:  Idle: 10,  Running: 20,  Completed: 124 [  24m 37s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 127 [  25m 41s  ] 
+INFO:  Idle: 6,  Running: 20,  Completed: 128 [  25m 57s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 129 [  26m 1s  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 130 [  26m 16s  ] 
+INFO:  Idle: 3,  Running: 20,  Completed: 131 [  26m 39s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 132 [  26m 44s  ] 
+INFO:  Idle: 1,  Running: 20,  Completed: 133 [  27m 2s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 134 [  27m 21s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 135 [  27m 49s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 136 [  27m 59s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 137 [  29m 1s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 138 [  32m 33s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 139 [  33m 23s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 140 [  35m 36s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 141 [  36m 22s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 142 [  45m 7s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 143 [  48m 2s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 144 [  48m 43s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 145 [  49m 26s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 146 [  53m 31s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 147 [  54m 26s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 148 [  59m 31s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 149 [  1h 10m  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 150 [  1h 16m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 151 [  1h 18m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 152 [  1h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 153 [  1h 23m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 154 [  1h 24m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 154 [  1h 24m  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 1 day,0h21m23s
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+INFO:  Idle: 0,  Running: 2,  Completed: 38 [  3s  ] 
+combination of events done in 16.22266435623169 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   2.394e-05 +- 3.111e-08 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mumu_4b_e: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 2.393667e-05 pb; acceptance = 0.2458
+Fiducial sigma = 0.00588363349 fb
+MC errors [integration, selection] = [7.648e-06, 5.95e-05] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+
+=== mumu_4b_mu ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mumu_4b_mu.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ mu- > vm vm~ b b~ b b~ QCD=2 QED=6
+[1;34mInterpreting 'QED=6' as 'QED<=6'[0m
+[1;34mInterpreting 'QCD=2' as 'QCD<=2'[0m
+INFO: Trying process: mu+ mu- > vm vm~ b b~ b b~ QCD<=2 QED<=6 @1  
+INFO: Process has 1456 diagrams 
+1 processes with 1456 diagrams generated in 0.798 s
+Total: 1 processes with 1456 diagrams
+output mumu_4b_mu
+INFO: initialize a new directory: mumu_4b_mu 
+INFO: remove old information in mumu_4b_mu 
+INFO: Generating Helas calls for process: mu+ mu- > vm vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Processing color information for process: mu+ mu- > vm vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Creating files in directory P1_mupmum_vmvmxbbxbbx 
+[1mINFO: Some T-channel width have been set to zero [new since 2.8.0]
+ if you want to keep this width please set "zerowidth_tchannel" to False [0m
+INFO: Computing Color-Flow optimization [1676 term] 
+INFO: Color-Flow passed to 1240 term in 2s. Introduce 218 contraction 
+INFO: Finding symmetric diagrams for process mu+ mu- > vm vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Generating Feynman diagrams for Process: mu+ mu- > vm vm~ b b~ b b~ QCD<=2 QED<=6 @1 
+Generated helas calls for 1 subprocesses (1456 diagrams) in 1.241 s
+Wrote files for 1737 helas calls in 4.173 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 12 routines in  1.718 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 1.71s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301626
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vmvmxbbxbbx  
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+INFO:  Idle: 538,  Running: 20,  Completed: 0 [ current time: 15h34 ] 
+INFO:  Idle: 537,  Running: 20,  Completed: 1 [  43.7s  ] 
+INFO:  Idle: 534,  Running: 20,  Completed: 4 [  48.5s  ] 
+INFO:  Idle: 531,  Running: 20,  Completed: 7 [  51.8s  ] 
+INFO:  Idle: 530,  Running: 20,  Completed: 8 [  1m 22s  ] 
+INFO:  Idle: 525,  Running: 20,  Completed: 13 [  1m 27s  ] 
+INFO:  Idle: 522,  Running: 20,  Completed: 16 [  1m 41s  ] 
+INFO:  Idle: 521,  Running: 20,  Completed: 17 [  1m 44s  ] 
+INFO:  Idle: 518,  Running: 20,  Completed: 20 [  1m 55s  ] 
+INFO:  Idle: 517,  Running: 20,  Completed: 21 [  2m 0s  ] 
+INFO:  Idle: 516,  Running: 20,  Completed: 22 [  2m 14s  ] 
+INFO:  Idle: 515,  Running: 20,  Completed: 23 [  2m 21s  ] 
+INFO:  Idle: 513,  Running: 20,  Completed: 25 [  2m 24s  ] 
+INFO:  Idle: 512,  Running: 20,  Completed: 26 [  2m 29s  ] 
+INFO:  Idle: 509,  Running: 20,  Completed: 29 [  2m 34s  ] 
+INFO:  Idle: 507,  Running: 20,  Completed: 31 [  2m 38s  ] 
+INFO:  Idle: 504,  Running: 20,  Completed: 34 [  2m 46s  ] 
+INFO:  Idle: 503,  Running: 20,  Completed: 35 [  2m 59s  ] 
+INFO:  Idle: 501,  Running: 20,  Completed: 37 [  3m 9s  ] 
+INFO:  Idle: 500,  Running: 20,  Completed: 38 [  3m 12s  ] 
+INFO:  Idle: 499,  Running: 20,  Completed: 39 [  3m 18s  ] 
+INFO:  Idle: 498,  Running: 20,  Completed: 40 [  3m 26s  ] 
+INFO:  Idle: 497,  Running: 20,  Completed: 41 [  3m 36s  ] 
+INFO:  Idle: 496,  Running: 20,  Completed: 42 [  3m 42s  ] 
+INFO:  Idle: 494,  Running: 20,  Completed: 44 [  3m 59s  ] 
+INFO:  Idle: 493,  Running: 20,  Completed: 45 [  4m 2s  ] 
+INFO:  Idle: 490,  Running: 20,  Completed: 48 [  4m 7s  ] 
+INFO:  Idle: 489,  Running: 20,  Completed: 49 [  4m 12s  ] 
+INFO:  Idle: 488,  Running: 20,  Completed: 50 [  4m 23s  ] 
+INFO:  Idle: 487,  Running: 20,  Completed: 51 [  4m 35s  ] 
+INFO:  Idle: 486,  Running: 20,  Completed: 52 [  4m 39s  ] 
+INFO:  Idle: 485,  Running: 20,  Completed: 53 [  4m 55s  ] 
+INFO:  Idle: 483,  Running: 20,  Completed: 55 [  5m 1s  ] 
+INFO:  Idle: 481,  Running: 20,  Completed: 57 [  5m 11s  ] 
+INFO:  Idle: 479,  Running: 20,  Completed: 59 [  5m 44s  ] 
+INFO:  Idle: 478,  Running: 20,  Completed: 60 [  5m 50s  ] 
+INFO:  Idle: 477,  Running: 20,  Completed: 61 [  5m 54s  ] 
+INFO:  Idle: 476,  Running: 20,  Completed: 62 [  6m 0s  ] 
+INFO:  Idle: 474,  Running: 20,  Completed: 64 [  6m 4s  ] 
+INFO:  Idle: 473,  Running: 20,  Completed: 65 [  6m 27s  ] 
+INFO:  Idle: 472,  Running: 20,  Completed: 66 [  6m 37s  ] 
+INFO:  Idle: 471,  Running: 20,  Completed: 67 [  6m 42s  ] 
+INFO:  Idle: 468,  Running: 20,  Completed: 70 [  6m 45s  ] 
+INFO:  Idle: 467,  Running: 20,  Completed: 71 [  6m 49s  ] 
+INFO:  Idle: 466,  Running: 20,  Completed: 72 [  7m 1s  ] 
+INFO:  Idle: 463,  Running: 20,  Completed: 75 [  7m 14s  ] 
+INFO:  Idle: 462,  Running: 20,  Completed: 76 [  7m 35s  ] 
+INFO:  Idle: 460,  Running: 20,  Completed: 78 [  7m 47s  ] 
+INFO:  Idle: 459,  Running: 20,  Completed: 79 [  7m 53s  ] 
+INFO:  Idle: 458,  Running: 20,  Completed: 80 [  7m 57s  ] 
+INFO:  Idle: 457,  Running: 20,  Completed: 81 [  8m 3s  ] 
+INFO:  Idle: 455,  Running: 20,  Completed: 83 [  8m 25s  ] 
+INFO:  Idle: 454,  Running: 20,  Completed: 84 [  8m 37s  ] 
+INFO:  Idle: 453,  Running: 20,  Completed: 85 [  8m 42s  ] 
+INFO:  Idle: 452,  Running: 20,  Completed: 86 [  8m 46s  ] 
+INFO:  Idle: 451,  Running: 20,  Completed: 87 [  8m 54s  ] 
+INFO:  Idle: 449,  Running: 20,  Completed: 89 [  9m 1s  ] 
+INFO:  Idle: 448,  Running: 20,  Completed: 90 [  9m 4s  ] 
+INFO:  Idle: 447,  Running: 20,  Completed: 91 [  9m 16s  ] 
+INFO:  Idle: 444,  Running: 20,  Completed: 94 [  9m 20s  ] 
+INFO:  Idle: 443,  Running: 20,  Completed: 95 [  9m 24s  ] 
+INFO:  Idle: 442,  Running: 20,  Completed: 96 [  9m 38s  ] 
+INFO:  Idle: 440,  Running: 20,  Completed: 98 [  9m 48s  ] 
+INFO:  Idle: 439,  Running: 20,  Completed: 99 [  10m 10s  ] 
+INFO:  Idle: 438,  Running: 20,  Completed: 100 [  10m 17s  ] 
+INFO:  Idle: 435,  Running: 20,  Completed: 103 [  10m 22s  ] 
+INFO:  Idle: 434,  Running: 20,  Completed: 104 [  10m 45s  ] 
+INFO:  Idle: 432,  Running: 20,  Completed: 106 [  10m 52s  ] 
+INFO:  Idle: 431,  Running: 20,  Completed: 107 [  11m 1s  ] 
+INFO:  Idle: 430,  Running: 20,  Completed: 108 [  11m 6s  ] 
+INFO:  Idle: 429,  Running: 20,  Completed: 109 [  11m 14s  ] 
+INFO:  Idle: 428,  Running: 20,  Completed: 110 [  11m 19s  ] 
+INFO:  Idle: 427,  Running: 20,  Completed: 111 [  11m 26s  ] 
+INFO:  Idle: 426,  Running: 20,  Completed: 112 [  11m 29s  ] 
+INFO:  Idle: 425,  Running: 20,  Completed: 113 [  11m 34s  ] 
+INFO:  Idle: 424,  Running: 20,  Completed: 114 [  11m 37s  ] 
+INFO:  Idle: 423,  Running: 20,  Completed: 115 [  11m 40s  ] 
+INFO:  Idle: 422,  Running: 20,  Completed: 116 [  11m 46s  ] 
+INFO:  Idle: 421,  Running: 20,  Completed: 117 [  11m 53s  ] 
+INFO:  Idle: 420,  Running: 20,  Completed: 118 [  12m 5s  ] 
+INFO:  Idle: 417,  Running: 20,  Completed: 121 [  12m 13s  ] 
+INFO:  Idle: 416,  Running: 20,  Completed: 122 [  12m 20s  ] 
+INFO:  Idle: 414,  Running: 20,  Completed: 124 [  12m 44s  ] 
+INFO:  Idle: 413,  Running: 20,  Completed: 125 [  12m 48s  ] 
+INFO:  Idle: 411,  Running: 20,  Completed: 127 [  12m 52s  ] 
+INFO:  Idle: 410,  Running: 20,  Completed: 128 [  13m 4s  ] 
+INFO:  Idle: 408,  Running: 20,  Completed: 130 [  13m 13s  ] 
+INFO:  Idle: 406,  Running: 20,  Completed: 132 [  13m 24s  ] 
+INFO:  Idle: 402,  Running: 20,  Completed: 136 [  13m 30s  ] 
+INFO:  Idle: 401,  Running: 20,  Completed: 137 [  13m 47s  ] 
+INFO:  Idle: 400,  Running: 20,  Completed: 138 [  13m 52s  ] 
+INFO:  Idle: 398,  Running: 20,  Completed: 140 [  14m 2s  ] 
+INFO:  Idle: 397,  Running: 20,  Completed: 141 [  14m 7s  ] 
+INFO:  Idle: 396,  Running: 20,  Completed: 142 [  14m 20s  ] 
+INFO:  Idle: 394,  Running: 20,  Completed: 144 [  14m 29s  ] 
+INFO:  Idle: 393,  Running: 20,  Completed: 145 [  14m 34s  ] 
+INFO:  Idle: 392,  Running: 20,  Completed: 146 [  14m 54s  ] 
+INFO:  Idle: 391,  Running: 20,  Completed: 147 [  15m 19s  ] 
+INFO:  Idle: 389,  Running: 20,  Completed: 149 [  15m 28s  ] 
+INFO:  Idle: 388,  Running: 20,  Completed: 150 [  15m 40s  ] 
+INFO:  Idle: 387,  Running: 20,  Completed: 151 [  15m 46s  ] 
+INFO:  Idle: 385,  Running: 20,  Completed: 153 [  15m 54s  ] 
+INFO:  Idle: 384,  Running: 20,  Completed: 154 [  15m 59s  ] 
+INFO:  Idle: 383,  Running: 20,  Completed: 155 [  16m 14s  ] 
+INFO:  Idle: 382,  Running: 20,  Completed: 156 [  16m 21s  ] 
+INFO:  Idle: 381,  Running: 20,  Completed: 157 [  16m 30s  ] 
+INFO:  Idle: 379,  Running: 20,  Completed: 159 [  16m 36s  ] 
+INFO:  Idle: 377,  Running: 20,  Completed: 161 [  16m 40s  ] 
+INFO:  Idle: 376,  Running: 20,  Completed: 162 [  16m 44s  ] 
+INFO:  Idle: 375,  Running: 20,  Completed: 163 [  16m 50s  ] 
+INFO:  Idle: 374,  Running: 20,  Completed: 164 [  17m 3s  ] 
+INFO:  Idle: 373,  Running: 20,  Completed: 165 [  17m 14s  ] 
+INFO:  Idle: 371,  Running: 20,  Completed: 167 [  17m 38s  ] 
+INFO:  Idle: 368,  Running: 20,  Completed: 170 [  17m 41s  ] 
+INFO:  Idle: 366,  Running: 20,  Completed: 172 [  17m 48s  ] 
+INFO:  Idle: 365,  Running: 20,  Completed: 173 [  18m 11s  ] 
+INFO:  Idle: 364,  Running: 20,  Completed: 174 [  18m 14s  ] 
+INFO:  Idle: 363,  Running: 20,  Completed: 175 [  18m 23s  ] 
+INFO:  Idle: 362,  Running: 20,  Completed: 176 [  18m 32s  ] 
+INFO:  Idle: 360,  Running: 20,  Completed: 178 [  18m 36s  ] 
+INFO:  Idle: 358,  Running: 20,  Completed: 180 [  18m 42s  ] 
+INFO:  Idle: 355,  Running: 20,  Completed: 183 [  18m 51s  ] 
+INFO:  Idle: 354,  Running: 20,  Completed: 184 [  18m 58s  ] 
+INFO:  Idle: 353,  Running: 20,  Completed: 185 [  19m 31s  ] 
+INFO:  Idle: 352,  Running: 20,  Completed: 186 [  19m 34s  ] 
+INFO:  Idle: 351,  Running: 20,  Completed: 187 [  19m 39s  ] 
+INFO:  Idle: 349,  Running: 20,  Completed: 189 [  19m 42s  ] 
+INFO:  Idle: 347,  Running: 20,  Completed: 191 [  19m 47s  ] 
+INFO:  Idle: 346,  Running: 20,  Completed: 192 [  20m 4s  ] 
+INFO:  Idle: 345,  Running: 20,  Completed: 193 [  20m 7s  ] 
+INFO:  Idle: 343,  Running: 20,  Completed: 195 [  20m 37s  ] 
+INFO:  Idle: 341,  Running: 20,  Completed: 197 [  20m 46s  ] 
+INFO:  Idle: 340,  Running: 20,  Completed: 198 [  20m 54s  ] 
+INFO:  Idle: 338,  Running: 20,  Completed: 200 [  21m 3s  ] 
+INFO:  Idle: 335,  Running: 20,  Completed: 203 [  21m 29s  ] 
+INFO:  Idle: 333,  Running: 20,  Completed: 205 [  21m 34s  ] 
+INFO:  Idle: 332,  Running: 20,  Completed: 206 [  21m 52s  ] 
+INFO:  Idle: 330,  Running: 20,  Completed: 208 [  21m 59s  ] 
+INFO:  Idle: 327,  Running: 20,  Completed: 211 [  22m 14s  ] 
+INFO:  Idle: 324,  Running: 20,  Completed: 214 [  22m 18s  ] 
+INFO:  Idle: 323,  Running: 20,  Completed: 215 [  22m 34s  ] 
+INFO:  Idle: 322,  Running: 20,  Completed: 216 [  22m 49s  ] 
+INFO:  Idle: 321,  Running: 20,  Completed: 217 [  23m 6s  ] 
+INFO:  Idle: 320,  Running: 20,  Completed: 218 [  23m 10s  ] 
+INFO:  Idle: 315,  Running: 20,  Completed: 223 [  23m 41s  ] 
+INFO:  Idle: 314,  Running: 20,  Completed: 224 [  23m 49s  ] 
+INFO:  Idle: 313,  Running: 20,  Completed: 225 [  24m 1s  ] 
+INFO:  Idle: 310,  Running: 20,  Completed: 228 [  24m 5s  ] 
+INFO:  Idle: 308,  Running: 20,  Completed: 230 [  24m 15s  ] 
+INFO:  Idle: 306,  Running: 20,  Completed: 232 [  24m 26s  ] 
+INFO:  Idle: 305,  Running: 20,  Completed: 233 [  24m 30s  ] 
+INFO:  Idle: 304,  Running: 20,  Completed: 234 [  24m 46s  ] 
+INFO:  Idle: 303,  Running: 20,  Completed: 235 [  24m 52s  ] 
+INFO:  Idle: 302,  Running: 20,  Completed: 236 [  24m 57s  ] 
+INFO:  Idle: 300,  Running: 20,  Completed: 238 [  25m 20s  ] 
+INFO:  Idle: 299,  Running: 20,  Completed: 239 [  25m 45s  ] 
+INFO:  Idle: 298,  Running: 20,  Completed: 240 [  25m 49s  ] 
+INFO:  Idle: 297,  Running: 20,  Completed: 241 [  26m 2s  ] 
+INFO:  Idle: 295,  Running: 20,  Completed: 243 [  26m 8s  ] 
+INFO:  Idle: 294,  Running: 20,  Completed: 244 [  26m 30s  ] 
+INFO:  Idle: 293,  Running: 20,  Completed: 245 [  26m 33s  ] 
+INFO:  Idle: 292,  Running: 20,  Completed: 246 [  26m 38s  ] 
+INFO:  Idle: 290,  Running: 20,  Completed: 248 [  26m 42s  ] 
+INFO:  Idle: 288,  Running: 20,  Completed: 250 [  26m 49s  ] 
+INFO:  Idle: 285,  Running: 20,  Completed: 253 [  26m 57s  ] 
+INFO:  Idle: 283,  Running: 20,  Completed: 255 [  27m 4s  ] 
+INFO:  Idle: 282,  Running: 20,  Completed: 256 [  27m 10s  ] 
+INFO:  Idle: 281,  Running: 20,  Completed: 257 [  27m 23s  ] 
+INFO:  Idle: 280,  Running: 20,  Completed: 258 [  27m 27s  ] 
+INFO:  Idle: 278,  Running: 20,  Completed: 260 [  27m 33s  ] 
+INFO:  Idle: 275,  Running: 20,  Completed: 263 [  27m 51s  ] 
+INFO:  Idle: 274,  Running: 20,  Completed: 264 [  27m 55s  ] 
+INFO:  Idle: 272,  Running: 20,  Completed: 266 [  27m 58s  ] 
+INFO:  Idle: 271,  Running: 20,  Completed: 267 [  28m 3s  ] 
+INFO:  Idle: 268,  Running: 20,  Completed: 270 [  28m 12s  ] 
+INFO:  Idle: 267,  Running: 20,  Completed: 271 [  28m 23s  ] 
+INFO:  Idle: 266,  Running: 20,  Completed: 272 [  28m 28s  ] 
+INFO:  Idle: 263,  Running: 20,  Completed: 275 [  28m 31s  ] 
+INFO:  Idle: 262,  Running: 20,  Completed: 276 [  28m 38s  ] 
+INFO:  Idle: 260,  Running: 20,  Completed: 278 [  28m 50s  ] 
+INFO:  Idle: 258,  Running: 20,  Completed: 280 [  28m 56s  ] 
+INFO:  Idle: 257,  Running: 20,  Completed: 281 [  29m 7s  ] 
+INFO:  Idle: 256,  Running: 20,  Completed: 282 [  29m 11s  ] 
+INFO:  Idle: 255,  Running: 20,  Completed: 283 [  29m 22s  ] 
+INFO:  Idle: 254,  Running: 20,  Completed: 284 [  29m 26s  ] 
+INFO:  Idle: 252,  Running: 20,  Completed: 286 [  29m 31s  ] 
+INFO:  Idle: 248,  Running: 20,  Completed: 290 [  29m 35s  ] 
+INFO:  Idle: 246,  Running: 20,  Completed: 292 [  29m 51s  ] 
+INFO:  Idle: 243,  Running: 20,  Completed: 295 [  30m 9s  ] 
+INFO:  Idle: 242,  Running: 20,  Completed: 296 [  30m 19s  ] 
+INFO:  Idle: 239,  Running: 20,  Completed: 299 [  30m 23s  ] 
+INFO:  Idle: 238,  Running: 20,  Completed: 300 [  30m 30s  ] 
+INFO:  Idle: 236,  Running: 20,  Completed: 302 [  30m 36s  ] 
+INFO:  Idle: 233,  Running: 20,  Completed: 305 [  30m 45s  ] 
+INFO:  Idle: 232,  Running: 20,  Completed: 306 [  30m 51s  ] 
+INFO:  Idle: 230,  Running: 20,  Completed: 308 [  31m 9s  ] 
+INFO:  Idle: 229,  Running: 20,  Completed: 309 [  31m 13s  ] 
+INFO:  Idle: 226,  Running: 20,  Completed: 312 [  31m 20s  ] 
+INFO:  Idle: 225,  Running: 20,  Completed: 313 [  31m 24s  ] 
+INFO:  Idle: 223,  Running: 20,  Completed: 315 [  31m 30s  ] 
+INFO:  Idle: 221,  Running: 20,  Completed: 317 [  31m 34s  ] 
+INFO:  Idle: 219,  Running: 20,  Completed: 319 [  31m 38s  ] 
+INFO:  Idle: 218,  Running: 20,  Completed: 320 [  31m 44s  ] 
+INFO:  Idle: 217,  Running: 20,  Completed: 321 [  31m 48s  ] 
+INFO:  Idle: 215,  Running: 20,  Completed: 323 [  31m 54s  ] 
+INFO:  Idle: 213,  Running: 20,  Completed: 325 [  32m 18s  ] 
+INFO:  Idle: 211,  Running: 20,  Completed: 327 [  32m 24s  ] 
+INFO:  Idle: 210,  Running: 20,  Completed: 328 [  32m 30s  ] 
+INFO:  Idle: 209,  Running: 20,  Completed: 329 [  32m 35s  ] 
+INFO:  Idle: 207,  Running: 20,  Completed: 331 [  32m 43s  ] 
+INFO:  Idle: 206,  Running: 20,  Completed: 332 [  32m 52s  ] 
+INFO:  Idle: 204,  Running: 20,  Completed: 334 [  33m 14s  ] 
+INFO:  Idle: 202,  Running: 20,  Completed: 336 [  33m 30s  ] 
+INFO:  Idle: 200,  Running: 20,  Completed: 338 [  33m 34s  ] 
+INFO:  Idle: 199,  Running: 20,  Completed: 339 [  33m 45s  ] 
+INFO:  Idle: 198,  Running: 20,  Completed: 340 [  33m 54s  ] 
+INFO:  Idle: 196,  Running: 20,  Completed: 342 [  34m 4s  ] 
+INFO:  Idle: 195,  Running: 20,  Completed: 343 [  34m 12s  ] 
+INFO:  Idle: 194,  Running: 20,  Completed: 344 [  34m 37s  ] 
+INFO:  Idle: 193,  Running: 20,  Completed: 345 [  34m 45s  ] 
+INFO:  Idle: 192,  Running: 20,  Completed: 346 [  34m 50s  ] 
+INFO:  Idle: 191,  Running: 20,  Completed: 347 [  34m 59s  ] 
+INFO:  Idle: 190,  Running: 20,  Completed: 348 [  35m 6s  ] 
+INFO:  Idle: 187,  Running: 20,  Completed: 351 [  35m 28s  ] 
+INFO:  Idle: 186,  Running: 20,  Completed: 352 [  35m 33s  ] 
+INFO:  Idle: 184,  Running: 20,  Completed: 354 [  35m 38s  ] 
+INFO:  Idle: 182,  Running: 20,  Completed: 356 [  35m 47s  ] 
+INFO:  Idle: 180,  Running: 20,  Completed: 358 [  35m 52s  ] 
+INFO:  Idle: 178,  Running: 20,  Completed: 360 [  35m 59s  ] 
+INFO:  Idle: 177,  Running: 20,  Completed: 361 [  36m 3s  ] 
+INFO:  Idle: 176,  Running: 20,  Completed: 362 [  36m 10s  ] 
+INFO:  Idle: 175,  Running: 20,  Completed: 363 [  36m 19s  ] 
+INFO:  Idle: 174,  Running: 20,  Completed: 364 [  36m 22s  ] 
+INFO:  Idle: 173,  Running: 20,  Completed: 365 [  36m 27s  ] 
+INFO:  Idle: 172,  Running: 20,  Completed: 366 [  36m 49s  ] 
+INFO:  Idle: 170,  Running: 20,  Completed: 368 [  36m 52s  ] 
+INFO:  Idle: 167,  Running: 20,  Completed: 371 [  37m 12s  ] 
+INFO:  Idle: 165,  Running: 20,  Completed: 373 [  37m 25s  ] 
+INFO:  Idle: 164,  Running: 20,  Completed: 374 [  37m 36s  ] 
+INFO:  Idle: 163,  Running: 20,  Completed: 375 [  37m 51s  ] 
+INFO:  Idle: 160,  Running: 20,  Completed: 378 [  37m 56s  ] 
+INFO:  Idle: 158,  Running: 20,  Completed: 380 [  38m 51s  ] 
+INFO:  Idle: 157,  Running: 20,  Completed: 381 [  38m 55s  ] 
+INFO:  Idle: 155,  Running: 20,  Completed: 383 [  39m 7s  ] 
+INFO:  Idle: 154,  Running: 20,  Completed: 384 [  39m 12s  ] 
+INFO:  Idle: 153,  Running: 20,  Completed: 385 [  39m 31s  ] 
+INFO:  Idle: 150,  Running: 20,  Completed: 388 [  39m 37s  ] 
+INFO:  Idle: 149,  Running: 20,  Completed: 389 [  40m 11s  ] 
+INFO:  Idle: 147,  Running: 20,  Completed: 391 [  40m 23s  ] 
+INFO:  Idle: 144,  Running: 20,  Completed: 394 [  41m 4s  ] 
+INFO:  Idle: 143,  Running: 20,  Completed: 395 [  41m 10s  ] 
+INFO:  Idle: 142,  Running: 20,  Completed: 396 [  41m 15s  ] 
+INFO:  Idle: 141,  Running: 20,  Completed: 397 [  41m 26s  ] 
+INFO:  Idle: 139,  Running: 20,  Completed: 399 [  42m 5s  ] 
+INFO:  Idle: 137,  Running: 20,  Completed: 401 [  42m 18s  ] 
+INFO:  Idle: 136,  Running: 20,  Completed: 402 [  42m 40s  ] 
+INFO:  Idle: 135,  Running: 20,  Completed: 403 [  43m 2s  ] 
+INFO:  Idle: 134,  Running: 20,  Completed: 404 [  43m 8s  ] 
+INFO:  Idle: 133,  Running: 20,  Completed: 405 [  43m 40s  ] 
+INFO:  Idle: 132,  Running: 20,  Completed: 406 [  43m 54s  ] 
+INFO:  Idle: 131,  Running: 20,  Completed: 407 [  44m 4s  ] 
+INFO:  Idle: 130,  Running: 20,  Completed: 408 [  44m 9s  ] 
+INFO:  Idle: 129,  Running: 20,  Completed: 409 [  44m 15s  ] 
+INFO:  Idle: 128,  Running: 20,  Completed: 410 [  44m 30s  ] 
+INFO:  Idle: 127,  Running: 20,  Completed: 411 [  44m 43s  ] 
+INFO:  Idle: 126,  Running: 20,  Completed: 412 [  44m 52s  ] 
+INFO:  Idle: 125,  Running: 20,  Completed: 413 [  45m 7s  ] 
+INFO:  Idle: 124,  Running: 20,  Completed: 414 [  45m 11s  ] 
+INFO:  Idle: 123,  Running: 20,  Completed: 415 [  45m 16s  ] 
+INFO:  Idle: 122,  Running: 20,  Completed: 416 [  45m 24s  ] 
+INFO:  Idle: 121,  Running: 20,  Completed: 417 [  46m 6s  ] 
+INFO:  Idle: 119,  Running: 20,  Completed: 419 [  46m 26s  ] 
+INFO:  Idle: 118,  Running: 20,  Completed: 420 [  46m 32s  ] 
+INFO:  Idle: 116,  Running: 20,  Completed: 422 [  46m 36s  ] 
+INFO:  Idle: 115,  Running: 20,  Completed: 423 [  46m 52s  ] 
+INFO:  Idle: 113,  Running: 20,  Completed: 425 [  46m 55s  ] 
+INFO:  Idle: 111,  Running: 20,  Completed: 427 [  47m 27s  ] 
+INFO:  Idle: 110,  Running: 20,  Completed: 428 [  47m 36s  ] 
+INFO:  Idle: 109,  Running: 20,  Completed: 429 [  47m 53s  ] 
+INFO:  Idle: 108,  Running: 20,  Completed: 430 [  47m 57s  ] 
+INFO:  Idle: 107,  Running: 20,  Completed: 431 [  48m 4s  ] 
+INFO:  Idle: 105,  Running: 20,  Completed: 433 [  48m 34s  ] 
+INFO:  Idle: 104,  Running: 20,  Completed: 434 [  48m 38s  ] 
+INFO:  Idle: 103,  Running: 20,  Completed: 435 [  48m 55s  ] 
+INFO:  Idle: 100,  Running: 20,  Completed: 438 [  49m 2s  ] 
+INFO:  Idle: 99,  Running: 20,  Completed: 439 [  49m 6s  ] 
+INFO:  Idle: 97,  Running: 20,  Completed: 441 [  49m 16s  ] 
+INFO:  Idle: 96,  Running: 20,  Completed: 442 [  49m 36s  ] 
+INFO:  Idle: 95,  Running: 20,  Completed: 443 [  49m 48s  ] 
+INFO:  Idle: 94,  Running: 20,  Completed: 444 [  50m 0s  ] 
+INFO:  Idle: 93,  Running: 20,  Completed: 445 [  50m 4s  ] 
+INFO:  Idle: 92,  Running: 20,  Completed: 446 [  50m 9s  ] 
+INFO:  Idle: 91,  Running: 20,  Completed: 447 [  50m 16s  ] 
+INFO:  Idle: 90,  Running: 20,  Completed: 448 [  50m 28s  ] 
+INFO:  Idle: 89,  Running: 20,  Completed: 449 [  50m 38s  ] 
+INFO:  Idle: 87,  Running: 20,  Completed: 451 [  50m 51s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 452 [  51m 2s  ] 
+INFO:  Idle: 85,  Running: 20,  Completed: 453 [  51m 11s  ] 
+INFO:  Idle: 84,  Running: 20,  Completed: 454 [  51m 16s  ] 
+INFO:  Idle: 82,  Running: 20,  Completed: 456 [  51m 24s  ] 
+INFO:  Idle: 80,  Running: 20,  Completed: 458 [  51m 42s  ] 
+INFO:  Idle: 78,  Running: 20,  Completed: 460 [  51m 50s  ] 
+INFO:  Idle: 77,  Running: 20,  Completed: 461 [  51m 53s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 462 [  51m 57s  ] 
+INFO:  Idle: 75,  Running: 20,  Completed: 463 [  52m 43s  ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 464 [  52m 54s  ] 
+INFO:  Idle: 73,  Running: 20,  Completed: 465 [  52m 57s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 466 [  53m 6s  ] 
+INFO:  Idle: 71,  Running: 20,  Completed: 467 [  53m 19s  ] 
+INFO:  Idle: 70,  Running: 20,  Completed: 468 [  53m 23s  ] 
+INFO:  Idle: 68,  Running: 20,  Completed: 470 [  53m 28s  ] 
+INFO:  Idle: 67,  Running: 20,  Completed: 471 [  53m 41s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 472 [  54m 0s  ] 
+INFO:  Idle: 64,  Running: 20,  Completed: 474 [  54m 4s  ] 
+INFO:  Idle: 63,  Running: 20,  Completed: 475 [  54m 19s  ] 
+INFO:  Idle: 61,  Running: 20,  Completed: 477 [  54m 22s  ] 
+INFO:  Idle: 60,  Running: 20,  Completed: 478 [  54m 28s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 479 [  54m 32s  ] 
+INFO:  Idle: 58,  Running: 20,  Completed: 480 [  54m 39s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 482 [  54m 43s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 483 [  54m 54s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 484 [  55m 0s  ] 
+INFO:  Idle: 53,  Running: 20,  Completed: 485 [  55m 20s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 486 [  55m 31s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 487 [  55m 35s  ] 
+INFO:  Idle: 50,  Running: 20,  Completed: 488 [  55m 42s  ] 
+INFO:  Idle: 48,  Running: 20,  Completed: 490 [  55m 47s  ] 
+INFO:  Idle: 47,  Running: 20,  Completed: 491 [  55m 53s  ] 
+INFO:  Idle: 46,  Running: 20,  Completed: 492 [  55m 56s  ] 
+INFO:  Idle: 42,  Running: 20,  Completed: 496 [  56m 1s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 497 [  56m 6s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 498 [  56m 13s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 499 [  56m 27s  ] 
+INFO:  Idle: 38,  Running: 20,  Completed: 500 [  56m 38s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 502 [  56m 42s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 506 [  56m 46s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 507 [  56m 52s  ] 
+INFO:  Idle: 30,  Running: 20,  Completed: 508 [  56m 58s  ] 
+INFO:  Idle: 28,  Running: 20,  Completed: 510 [  57m 5s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 512 [  57m 9s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 513 [  57m 34s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 515 [  57m 41s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 518 [  57m 47s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 520 [  58m 7s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 521 [  58m 15s  ] 
+INFO:  Idle: 16,  Running: 20,  Completed: 522 [  58m 26s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 523 [  58m 37s  ] 
+INFO:  Idle: 13,  Running: 20,  Completed: 525 [  58m 47s  ] 
+INFO:  Idle: 11,  Running: 20,  Completed: 527 [  59m 1s  ] 
+INFO:  Idle: 10,  Running: 20,  Completed: 528 [  59m 14s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 529 [  59m 23s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 531 [  59m 29s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 533 [  1h 0m  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 534 [  1h 0m  ] 
+INFO:  Idle: 3,  Running: 20,  Completed: 535 [  1h 0m  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 536 [  1h 0m  ] 
+INFO:  Idle: 1,  Running: 20,  Completed: 537 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 538 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 539 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 541 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 543 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 546 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 547 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 548 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 549 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 551 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 552 [  1h 2m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 553 [  1h 2m  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 554 [  1h 2m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 555 [  1h 2m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 556 [  1h 3m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 557 [  1h 3m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 558 [  1h 4m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 558 [  1h 4m  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 20h32m46s
+INFO: Effective Luminosity 39296118.387015276 pb^-1 
+INFO: need to improve 124 channels 
+- Current estimate of cross-section: 0.0009161210185048603 +- 1.5647028560970274e-05
+    P1_mupmum_vmvmxbbxbbx 
+INFO:  Idle: 126,  Running: 20,  Completed: 0 [ current time: 16h38 ] 
+INFO:  Idle: 125,  Running: 20,  Completed: 1 [  20.4s  ] 
+INFO:  Idle: 116,  Running: 20,  Completed: 10 [  41.6s  ] 
+INFO:  Idle: 115,  Running: 20,  Completed: 11 [  52.6s  ] 
+INFO:  Idle: 111,  Running: 20,  Completed: 15 [  60s  ] 
+INFO:  Idle: 110,  Running: 20,  Completed: 16 [  1m 9s  ] 
+INFO:  Idle: 109,  Running: 20,  Completed: 17 [  1m 17s  ] 
+INFO:  Idle: 108,  Running: 20,  Completed: 18 [  1m 27s  ] 
+INFO:  Idle: 107,  Running: 20,  Completed: 19 [  1m 54s  ] 
+INFO:  Idle: 106,  Running: 20,  Completed: 20 [  2m 14s  ] 
+INFO:  Idle: 103,  Running: 20,  Completed: 23 [  2m 41s  ] 
+INFO:  Idle: 101,  Running: 20,  Completed: 25 [  2m 46s  ] 
+INFO:  Idle: 99,  Running: 20,  Completed: 27 [  3m 14s  ] 
+INFO:  Idle: 97,  Running: 20,  Completed: 29 [  3m 42s  ] 
+INFO:  Idle: 96,  Running: 20,  Completed: 30 [  3m 57s  ] 
+INFO:  Idle: 95,  Running: 20,  Completed: 31 [  4m 0s  ] 
+INFO:  Idle: 94,  Running: 20,  Completed: 32 [  4m 3s  ] 
+INFO:  Idle: 93,  Running: 20,  Completed: 33 [  4m 17s  ] 
+INFO:  Idle: 92,  Running: 20,  Completed: 34 [  4m 27s  ] 
+INFO:  Idle: 91,  Running: 20,  Completed: 35 [  4m 40s  ] 
+INFO:  Idle: 90,  Running: 20,  Completed: 36 [  4m 55s  ] 
+INFO:  Idle: 89,  Running: 20,  Completed: 37 [  5m 5s  ] 
+INFO:  Idle: 87,  Running: 20,  Completed: 39 [  5m 13s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 40 [  5m 21s  ] 
+INFO:  Idle: 85,  Running: 20,  Completed: 41 [  5m 26s  ] 
+INFO:  Idle: 84,  Running: 20,  Completed: 42 [  5m 42s  ] 
+INFO:  Idle: 82,  Running: 20,  Completed: 44 [  5m 50s  ] 
+INFO:  Idle: 81,  Running: 20,  Completed: 45 [  6m 0s  ] 
+INFO:  Idle: 80,  Running: 20,  Completed: 46 [  6m 10s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 47 [  6m 16s  ] 
+INFO:  Idle: 78,  Running: 20,  Completed: 48 [  6m 26s  ] 
+INFO:  Idle: 77,  Running: 20,  Completed: 49 [  6m 43s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 50 [  6m 47s  ] 
+INFO:  Idle: 75,  Running: 20,  Completed: 51 [  7m 0s  ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 52 [  7m 12s  ] 
+INFO:  Idle: 73,  Running: 20,  Completed: 53 [  7m 27s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 54 [  7m 31s  ] 
+INFO:  Idle: 71,  Running: 20,  Completed: 55 [  7m 39s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 57 [  8m 1s  ] 
+INFO:  Idle: 68,  Running: 20,  Completed: 58 [  8m 5s  ] 
+INFO:  Idle: 67,  Running: 20,  Completed: 59 [  8m 11s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 60 [  8m 14s  ] 
+INFO:  Idle: 65,  Running: 20,  Completed: 61 [  8m 22s  ] 
+INFO:  Idle: 64,  Running: 20,  Completed: 62 [  8m 38s  ] 
+INFO:  Idle: 61,  Running: 20,  Completed: 65 [  8m 43s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 67 [  8m 50s  ] 
+INFO:  Idle: 58,  Running: 20,  Completed: 68 [  8m 55s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 69 [  9m 2s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 70 [  9m 10s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 71 [  9m 37s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 72 [  9m 46s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 74 [  9m 58s  ] 
+INFO:  Idle: 50,  Running: 20,  Completed: 76 [  10m 3s  ] 
+INFO:  Idle: 49,  Running: 20,  Completed: 77 [  10m 21s  ] 
+INFO:  Idle: 48,  Running: 20,  Completed: 78 [  10m 50s  ] 
+INFO:  Idle: 45,  Running: 20,  Completed: 81 [  11m 10s  ] 
+INFO:  Idle: 43,  Running: 20,  Completed: 83 [  11m 24s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 86 [  11m 30s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 87 [  11m 34s  ] 
+INFO:  Idle: 37,  Running: 20,  Completed: 89 [  11m 40s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 90 [  11m 57s  ] 
+INFO:  Idle: 34,  Running: 20,  Completed: 92 [  12m 1s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 94 [  12m 5s  ] 
+INFO:  Idle: 30,  Running: 20,  Completed: 96 [  12m 19s  ] 
+INFO:  Idle: 29,  Running: 20,  Completed: 97 [  12m 35s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 100 [  12m 40s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 101 [  12m 48s  ] 
+INFO:  Idle: 24,  Running: 20,  Completed: 102 [  13m 0s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 103 [  13m 5s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 105 [  13m 14s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 106 [  13m 38s  ] 
+INFO:  Idle: 19,  Running: 20,  Completed: 107 [  13m 41s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 109 [  13m 54s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 111 [  14m 6s  ] 
+INFO:  Idle: 14,  Running: 20,  Completed: 112 [  14m 12s  ] 
+INFO:  Idle: 12,  Running: 20,  Completed: 114 [  14m 17s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 117 [  14m 44s  ] 
+INFO:  Idle: 8,  Running: 20,  Completed: 118 [  14m 48s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 119 [  14m 52s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 121 [  14m 55s  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 122 [  15m 2s  ] 
+INFO:  Idle: 3,  Running: 20,  Completed: 123 [  15m 26s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 124 [  15m 33s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 126 [  15m 39s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 127 [  15m 58s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 128 [  16m 2s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 130 [  16m 23s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 131 [  16m 28s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 133 [  16m 35s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 135 [  17m 6s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 137 [  17m 33s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 138 [  17m 55s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 139 [  18m 6s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 140 [  18m 11s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 141 [  20m 25s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 142 [  20m 29s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 143 [  23m 44s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 144 [  24m 17s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 145 [  28m 39s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 146 [  38m 28s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 146 [  38m 28s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 1 day,0h11m47s
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+INFO:  Idle: 0,  Running: 0,  Completed: 40 [  2.8s  ] 
+combination of events done in 13.595615148544312 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.0009322 +- 1.833e-06 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mumu_4b_mu: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 0.0009322257 pb; acceptance = 0.068166667
+Fiducial sigma = 0.0635467186 fb
+MC errors [integration, selection] = [0.000125, 0.001357] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+
+=== mumu_4b_tau ===
+WARNING:root:[91mpython3.12+ support: For reweighting feature, please use 3.6.X release.[0m
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                 2025-10-30         *
+*         GIT                                              *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../../../../MG5_aMC_v3_6_6/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set ninja to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set collier to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lib
+set lhapdf to lhapdf-config
+set lhapdf to /home/hamzeh-khanpour/MG5_aMC_v3_6_6/HEPTools/lhapdf6_py3/bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/cards/mumu_4b_tau.mg5
+The import format was not given, so we guess it as command
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set group_subprocesses False
+Set group_subprocesses to False
+Note that you need to regenerate all processes
+import model sm
+INFO: Restrict model sm with file ../../../../../../../MG5_aMC_v3_6_6/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+generate mu+ mu- > vt vt~ b b~ b b~ QCD=2 QED=6
+[1;34mInterpreting 'QED=6' as 'QED<=6'[0m
+[1;34mInterpreting 'QCD=2' as 'QCD<=2'[0m
+INFO: Trying process: mu+ mu- > vt vt~ b b~ b b~ QCD<=2 QED<=6 @1  
+INFO: Process has 834 diagrams 
+1 processes with 834 diagrams generated in 0.535 s
+Total: 1 processes with 834 diagrams
+output mumu_4b_tau
+INFO: initialize a new directory: mumu_4b_tau 
+INFO: remove old information in mumu_4b_tau 
+INFO: Generating Helas calls for process: mu+ mu- > vt vt~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Processing color information for process: mu+ mu- > vt vt~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Creating files in directory P1_mupmum_vtvtxbbxbbx 
+INFO: Finding symmetric diagrams for process mu+ mu- > vt vt~ b b~ b b~ QCD<=2 QED<=6 @1 
+INFO: Generating Feynman diagrams for Process: mu+ mu- > vt vt~ b b~ b b~ QCD<=2 QED<=6 @1 
+Generated helas calls for 1 subprocesses (834 diagrams) in 0.788 s
+Wrote files for 1056 helas calls in 1.984 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 8 routines in  1.110 s
+The option group_subprocesses is modified [Auto] but will not be written in the configuration files.
+If you want to make this value the default for future session, you can run 'save options --all'
+save configuration file to /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_tau/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+INFO: Generating MadAnalysis5 default cards tailored to this process 
+INFO: Cards created in 1.73s 
+Output to directory /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_tau done.
+Type "launch" to generate events from this process, or see
+/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_tau/README
+Run "open index.html" to see more information about this process.
+quit
+quit
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_tau/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_tau/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301726
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vtvtxbbxbbx  
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+INFO:  Idle: 417,  Running: 20,  Completed: 0 [ current time: 17h17 ] 
+INFO:  Idle: 416,  Running: 20,  Completed: 1 [  33.1s  ] 
+INFO:  Idle: 410,  Running: 20,  Completed: 7 [  48.8s  ] 
+INFO:  Idle: 408,  Running: 20,  Completed: 9 [  52.9s  ] 
+INFO:  Idle: 404,  Running: 20,  Completed: 13 [  56s  ] 
+INFO:  Idle: 403,  Running: 20,  Completed: 14 [  1m 23s  ] 
+INFO:  Idle: 400,  Running: 20,  Completed: 17 [  1m 36s  ] 
+INFO:  Idle: 398,  Running: 20,  Completed: 19 [  1m 40s  ] 
+INFO:  Idle: 395,  Running: 20,  Completed: 22 [  1m 45s  ] 
+INFO:  Idle: 390,  Running: 20,  Completed: 27 [  1m 52s  ] 
+INFO:  Idle: 389,  Running: 20,  Completed: 28 [  1m 59s  ] 
+INFO:  Idle: 388,  Running: 20,  Completed: 29 [  2m 14s  ] 
+INFO:  Idle: 386,  Running: 20,  Completed: 31 [  2m 22s  ] 
+INFO:  Idle: 384,  Running: 20,  Completed: 33 [  2m 29s  ] 
+INFO:  Idle: 383,  Running: 20,  Completed: 34 [  2m 32s  ] 
+INFO:  Idle: 381,  Running: 20,  Completed: 36 [  2m 42s  ] 
+INFO:  Idle: 380,  Running: 20,  Completed: 37 [  2m 47s  ] 
+INFO:  Idle: 379,  Running: 20,  Completed: 38 [  2m 50s  ] 
+INFO:  Idle: 378,  Running: 20,  Completed: 39 [  2m 54s  ] 
+INFO:  Idle: 375,  Running: 20,  Completed: 42 [  3m 4s  ] 
+INFO:  Idle: 373,  Running: 20,  Completed: 44 [  3m 11s  ] 
+INFO:  Idle: 371,  Running: 20,  Completed: 46 [  3m 16s  ] 
+INFO:  Idle: 369,  Running: 20,  Completed: 48 [  3m 22s  ] 
+INFO:  Idle: 368,  Running: 20,  Completed: 49 [  3m 46s  ] 
+INFO:  Idle: 366,  Running: 20,  Completed: 51 [  3m 50s  ] 
+INFO:  Idle: 365,  Running: 20,  Completed: 52 [  3m 57s  ] 
+INFO:  Idle: 363,  Running: 20,  Completed: 54 [  4m 2s  ] 
+INFO:  Idle: 362,  Running: 20,  Completed: 55 [  4m 9s  ] 
+INFO:  Idle: 360,  Running: 20,  Completed: 57 [  4m 25s  ] 
+INFO:  Idle: 359,  Running: 20,  Completed: 58 [  4m 32s  ] 
+INFO:  Idle: 357,  Running: 20,  Completed: 60 [  4m 43s  ] 
+INFO:  Idle: 355,  Running: 20,  Completed: 62 [  4m 48s  ] 
+INFO:  Idle: 354,  Running: 20,  Completed: 63 [  4m 52s  ] 
+INFO:  Idle: 351,  Running: 20,  Completed: 66 [  5m 2s  ] 
+INFO:  Idle: 348,  Running: 20,  Completed: 69 [  5m 6s  ] 
+INFO:  Idle: 347,  Running: 20,  Completed: 70 [  5m 11s  ] 
+INFO:  Idle: 343,  Running: 20,  Completed: 74 [  5m 39s  ] 
+INFO:  Idle: 342,  Running: 20,  Completed: 75 [  5m 44s  ] 
+INFO:  Idle: 341,  Running: 20,  Completed: 76 [  5m 55s  ] 
+INFO:  Idle: 339,  Running: 20,  Completed: 78 [  6m 0s  ] 
+INFO:  Idle: 338,  Running: 20,  Completed: 79 [  6m 7s  ] 
+INFO:  Idle: 337,  Running: 20,  Completed: 80 [  6m 14s  ] 
+INFO:  Idle: 334,  Running: 20,  Completed: 83 [  6m 24s  ] 
+INFO:  Idle: 332,  Running: 20,  Completed: 85 [  6m 30s  ] 
+INFO:  Idle: 331,  Running: 20,  Completed: 86 [  6m 38s  ] 
+INFO:  Idle: 330,  Running: 20,  Completed: 87 [  6m 44s  ] 
+INFO:  Idle: 328,  Running: 20,  Completed: 89 [  6m 56s  ] 
+INFO:  Idle: 324,  Running: 20,  Completed: 93 [  7m 2s  ] 
+INFO:  Idle: 322,  Running: 20,  Completed: 95 [  7m 9s  ] 
+INFO:  Idle: 321,  Running: 20,  Completed: 96 [  7m 13s  ] 
+INFO:  Idle: 320,  Running: 20,  Completed: 97 [  7m 18s  ] 
+INFO:  Idle: 319,  Running: 20,  Completed: 98 [  7m 25s  ] 
+INFO:  Idle: 317,  Running: 20,  Completed: 100 [  7m 31s  ] 
+INFO:  Idle: 316,  Running: 20,  Completed: 101 [  7m 40s  ] 
+INFO:  Idle: 315,  Running: 20,  Completed: 102 [  7m 43s  ] 
+INFO:  Idle: 313,  Running: 20,  Completed: 104 [  7m 49s  ] 
+INFO:  Idle: 312,  Running: 20,  Completed: 105 [  7m 53s  ] 
+INFO:  Idle: 311,  Running: 20,  Completed: 106 [  7m 56s  ] 
+INFO:  Idle: 310,  Running: 20,  Completed: 107 [  8m 9s  ] 
+INFO:  Idle: 308,  Running: 20,  Completed: 109 [  8m 12s  ] 
+INFO:  Idle: 307,  Running: 20,  Completed: 110 [  8m 18s  ] 
+INFO:  Idle: 305,  Running: 20,  Completed: 112 [  8m 21s  ] 
+INFO:  Idle: 303,  Running: 20,  Completed: 114 [  8m 27s  ] 
+INFO:  Idle: 302,  Running: 20,  Completed: 115 [  8m 36s  ] 
+INFO:  Idle: 301,  Running: 20,  Completed: 116 [  8m 40s  ] 
+INFO:  Idle: 299,  Running: 20,  Completed: 118 [  8m 58s  ] 
+INFO:  Idle: 298,  Running: 20,  Completed: 119 [  9m 3s  ] 
+INFO:  Idle: 296,  Running: 20,  Completed: 121 [  9m 8s  ] 
+INFO:  Idle: 295,  Running: 20,  Completed: 122 [  9m 14s  ] 
+INFO:  Idle: 294,  Running: 20,  Completed: 123 [  9m 20s  ] 
+INFO:  Idle: 292,  Running: 20,  Completed: 125 [  9m 24s  ] 
+INFO:  Idle: 291,  Running: 20,  Completed: 126 [  9m 28s  ] 
+INFO:  Idle: 289,  Running: 20,  Completed: 128 [  9m 35s  ] 
+INFO:  Idle: 286,  Running: 20,  Completed: 131 [  9m 48s  ] 
+INFO:  Idle: 283,  Running: 20,  Completed: 134 [  9m 56s  ] 
+INFO:  Idle: 281,  Running: 20,  Completed: 136 [  10m 1s  ] 
+INFO:  Idle: 280,  Running: 20,  Completed: 137 [  10m 4s  ] 
+INFO:  Idle: 278,  Running: 20,  Completed: 139 [  10m 16s  ] 
+INFO:  Idle: 277,  Running: 20,  Completed: 140 [  10m 31s  ] 
+INFO:  Idle: 276,  Running: 20,  Completed: 141 [  10m 37s  ] 
+INFO:  Idle: 274,  Running: 20,  Completed: 143 [  10m 43s  ] 
+INFO:  Idle: 273,  Running: 20,  Completed: 144 [  10m 54s  ] 
+INFO:  Idle: 270,  Running: 20,  Completed: 147 [  11m 6s  ] 
+INFO:  Idle: 269,  Running: 20,  Completed: 148 [  11m 13s  ] 
+INFO:  Idle: 268,  Running: 20,  Completed: 149 [  11m 19s  ] 
+INFO:  Idle: 265,  Running: 20,  Completed: 152 [  11m 25s  ] 
+INFO:  Idle: 264,  Running: 20,  Completed: 153 [  11m 42s  ] 
+INFO:  Idle: 263,  Running: 20,  Completed: 154 [  11m 55s  ] 
+INFO:  Idle: 261,  Running: 20,  Completed: 156 [  11m 59s  ] 
+INFO:  Idle: 259,  Running: 20,  Completed: 158 [  12m 6s  ] 
+INFO:  Idle: 258,  Running: 20,  Completed: 159 [  12m 19s  ] 
+INFO:  Idle: 257,  Running: 20,  Completed: 160 [  12m 29s  ] 
+INFO:  Idle: 254,  Running: 20,  Completed: 163 [  12m 35s  ] 
+INFO:  Idle: 252,  Running: 20,  Completed: 165 [  12m 44s  ] 
+INFO:  Idle: 251,  Running: 20,  Completed: 166 [  12m 48s  ] 
+INFO:  Idle: 250,  Running: 20,  Completed: 167 [  12m 55s  ] 
+INFO:  Idle: 249,  Running: 20,  Completed: 168 [  13m 1s  ] 
+INFO:  Idle: 247,  Running: 20,  Completed: 170 [  13m 5s  ] 
+INFO:  Idle: 246,  Running: 20,  Completed: 171 [  13m 15s  ] 
+INFO:  Idle: 242,  Running: 20,  Completed: 175 [  13m 20s  ] 
+INFO:  Idle: 241,  Running: 20,  Completed: 176 [  13m 24s  ] 
+INFO:  Idle: 239,  Running: 20,  Completed: 178 [  13m 43s  ] 
+INFO:  Idle: 237,  Running: 20,  Completed: 180 [  13m 48s  ] 
+INFO:  Idle: 236,  Running: 20,  Completed: 181 [  13m 58s  ] 
+INFO:  Idle: 234,  Running: 20,  Completed: 183 [  14m 3s  ] 
+INFO:  Idle: 232,  Running: 20,  Completed: 185 [  14m 11s  ] 
+INFO:  Idle: 230,  Running: 20,  Completed: 187 [  14m 16s  ] 
+INFO:  Idle: 227,  Running: 20,  Completed: 190 [  14m 30s  ] 
+INFO:  Idle: 225,  Running: 20,  Completed: 192 [  14m 42s  ] 
+INFO:  Idle: 224,  Running: 20,  Completed: 193 [  14m 50s  ] 
+INFO:  Idle: 223,  Running: 20,  Completed: 194 [  14m 53s  ] 
+INFO:  Idle: 221,  Running: 20,  Completed: 196 [  14m 58s  ] 
+INFO:  Idle: 220,  Running: 20,  Completed: 197 [  15m 2s  ] 
+INFO:  Idle: 218,  Running: 20,  Completed: 199 [  15m 9s  ] 
+INFO:  Idle: 217,  Running: 20,  Completed: 200 [  15m 19s  ] 
+INFO:  Idle: 216,  Running: 20,  Completed: 201 [  15m 26s  ] 
+INFO:  Idle: 214,  Running: 20,  Completed: 203 [  15m 57s  ] 
+INFO:  Idle: 212,  Running: 20,  Completed: 205 [  16m 0s  ] 
+INFO:  Idle: 209,  Running: 20,  Completed: 208 [  16m 10s  ] 
+INFO:  Idle: 208,  Running: 20,  Completed: 209 [  16m 17s  ] 
+INFO:  Idle: 207,  Running: 20,  Completed: 210 [  16m 21s  ] 
+INFO:  Idle: 204,  Running: 20,  Completed: 213 [  16m 32s  ] 
+INFO:  Idle: 202,  Running: 20,  Completed: 215 [  16m 55s  ] 
+INFO:  Idle: 201,  Running: 20,  Completed: 216 [  17m 2s  ] 
+INFO:  Idle: 196,  Running: 20,  Completed: 221 [  17m 6s  ] 
+INFO:  Idle: 194,  Running: 20,  Completed: 223 [  17m 12s  ] 
+INFO:  Idle: 193,  Running: 20,  Completed: 224 [  17m 38s  ] 
+INFO:  Idle: 191,  Running: 20,  Completed: 226 [  17m 42s  ] 
+INFO:  Idle: 189,  Running: 20,  Completed: 228 [  17m 47s  ] 
+INFO:  Idle: 188,  Running: 20,  Completed: 229 [  17m 53s  ] 
+INFO:  Idle: 186,  Running: 20,  Completed: 231 [  17m 58s  ] 
+INFO:  Idle: 185,  Running: 20,  Completed: 232 [  18m 2s  ] 
+INFO:  Idle: 184,  Running: 20,  Completed: 233 [  18m 15s  ] 
+INFO:  Idle: 183,  Running: 20,  Completed: 234 [  18m 26s  ] 
+INFO:  Idle: 181,  Running: 20,  Completed: 236 [  18m 32s  ] 
+INFO:  Idle: 180,  Running: 20,  Completed: 237 [  18m 35s  ] 
+INFO:  Idle: 179,  Running: 20,  Completed: 238 [  18m 45s  ] 
+INFO:  Idle: 176,  Running: 20,  Completed: 241 [  18m 51s  ] 
+INFO:  Idle: 175,  Running: 20,  Completed: 242 [  18m 59s  ] 
+INFO:  Idle: 174,  Running: 20,  Completed: 243 [  19m 23s  ] 
+INFO:  Idle: 172,  Running: 20,  Completed: 245 [  19m 29s  ] 
+INFO:  Idle: 169,  Running: 20,  Completed: 248 [  19m 38s  ] 
+INFO:  Idle: 165,  Running: 20,  Completed: 252 [  19m 50s  ] 
+INFO:  Idle: 163,  Running: 20,  Completed: 254 [  19m 58s  ] 
+INFO:  Idle: 161,  Running: 20,  Completed: 256 [  20m 4s  ] 
+INFO:  Idle: 159,  Running: 20,  Completed: 258 [  20m 10s  ] 
+INFO:  Idle: 157,  Running: 20,  Completed: 260 [  20m 25s  ] 
+INFO:  Idle: 154,  Running: 20,  Completed: 263 [  20m 28s  ] 
+INFO:  Idle: 153,  Running: 20,  Completed: 264 [  20m 35s  ] 
+INFO:  Idle: 151,  Running: 20,  Completed: 266 [  20m 39s  ] 
+INFO:  Idle: 149,  Running: 20,  Completed: 268 [  20m 42s  ] 
+INFO:  Idle: 147,  Running: 20,  Completed: 270 [  20m 49s  ] 
+INFO:  Idle: 145,  Running: 20,  Completed: 272 [  20m 55s  ] 
+INFO:  Idle: 142,  Running: 20,  Completed: 275 [  21m 2s  ] 
+INFO:  Idle: 140,  Running: 20,  Completed: 277 [  21m 9s  ] 
+INFO:  Idle: 137,  Running: 20,  Completed: 280 [  21m 17s  ] 
+INFO:  Idle: 134,  Running: 20,  Completed: 283 [  21m 32s  ] 
+INFO:  Idle: 133,  Running: 20,  Completed: 284 [  21m 45s  ] 
+INFO:  Idle: 132,  Running: 20,  Completed: 285 [  21m 49s  ] 
+INFO:  Idle: 130,  Running: 20,  Completed: 287 [  21m 53s  ] 
+INFO:  Idle: 128,  Running: 20,  Completed: 289 [  21m 57s  ] 
+INFO:  Idle: 127,  Running: 20,  Completed: 290 [  22m 2s  ] 
+INFO:  Idle: 125,  Running: 20,  Completed: 292 [  22m 8s  ] 
+INFO:  Idle: 124,  Running: 20,  Completed: 293 [  22m 12s  ] 
+INFO:  Idle: 121,  Running: 20,  Completed: 296 [  22m 26s  ] 
+INFO:  Idle: 120,  Running: 20,  Completed: 297 [  22m 29s  ] 
+INFO:  Idle: 119,  Running: 20,  Completed: 298 [  22m 38s  ] 
+INFO:  Idle: 116,  Running: 20,  Completed: 301 [  22m 42s  ] 
+INFO:  Idle: 114,  Running: 20,  Completed: 303 [  22m 48s  ] 
+INFO:  Idle: 111,  Running: 20,  Completed: 306 [  22m 53s  ] 
+INFO:  Idle: 109,  Running: 20,  Completed: 308 [  22m 56s  ] 
+INFO:  Idle: 107,  Running: 20,  Completed: 310 [  23m 15s  ] 
+INFO:  Idle: 104,  Running: 20,  Completed: 313 [  23m 20s  ] 
+INFO:  Idle: 100,  Running: 20,  Completed: 317 [  23m 23s  ] 
+INFO:  Idle: 99,  Running: 20,  Completed: 318 [  23m 36s  ] 
+INFO:  Idle: 97,  Running: 20,  Completed: 320 [  23m 45s  ] 
+INFO:  Idle: 96,  Running: 20,  Completed: 321 [  23m 49s  ] 
+INFO:  Idle: 93,  Running: 20,  Completed: 324 [  23m 57s  ] 
+INFO:  Idle: 90,  Running: 20,  Completed: 327 [  24m 2s  ] 
+INFO:  Idle: 89,  Running: 20,  Completed: 328 [  24m 12s  ] 
+INFO:  Idle: 88,  Running: 20,  Completed: 329 [  24m 24s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 331 [  24m 35s  ] 
+INFO:  Idle: 85,  Running: 20,  Completed: 332 [  24m 41s  ] 
+INFO:  Idle: 84,  Running: 20,  Completed: 333 [  24m 44s  ] 
+INFO:  Idle: 83,  Running: 20,  Completed: 334 [  24m 52s  ] 
+INFO:  Idle: 82,  Running: 20,  Completed: 335 [  24m 57s  ] 
+INFO:  Idle: 80,  Running: 20,  Completed: 337 [  25m 1s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 338 [  25m 9s  ] 
+INFO:  Idle: 78,  Running: 20,  Completed: 339 [  25m 22s  ] 
+INFO:  Idle: 77,  Running: 20,  Completed: 340 [  25m 33s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 341 [  25m 45s  ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 343 [  25m 54s  ] 
+INFO:  Idle: 73,  Running: 20,  Completed: 344 [  25m 57s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 345 [  26m 3s  ] 
+INFO:  Idle: 71,  Running: 20,  Completed: 346 [  26m 7s  ] 
+INFO:  Idle: 70,  Running: 20,  Completed: 347 [  26m 16s  ] 
+INFO:  Idle: 68,  Running: 20,  Completed: 349 [  26m 21s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 351 [  26m 26s  ] 
+INFO:  Idle: 64,  Running: 20,  Completed: 353 [  26m 34s  ] 
+INFO:  Idle: 62,  Running: 20,  Completed: 355 [  26m 41s  ] 
+INFO:  Idle: 61,  Running: 20,  Completed: 356 [  26m 44s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 358 [  26m 51s  ] 
+INFO:  Idle: 58,  Running: 20,  Completed: 359 [  26m 57s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 360 [  27m 3s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 361 [  27m 7s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 363 [  27m 15s  ] 
+INFO:  Idle: 53,  Running: 20,  Completed: 364 [  27m 22s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 366 [  27m 28s  ] 
+INFO:  Idle: 50,  Running: 20,  Completed: 367 [  27m 32s  ] 
+INFO:  Idle: 48,  Running: 20,  Completed: 369 [  27m 35s  ] 
+INFO:  Idle: 46,  Running: 20,  Completed: 371 [  27m 40s  ] 
+INFO:  Idle: 43,  Running: 20,  Completed: 374 [  27m 44s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 376 [  27m 49s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 377 [  27m 53s  ] 
+INFO:  Idle: 38,  Running: 20,  Completed: 379 [  28m 5s  ] 
+INFO:  Idle: 37,  Running: 20,  Completed: 380 [  28m 12s  ] 
+INFO:  Idle: 34,  Running: 20,  Completed: 383 [  28m 16s  ] 
+INFO:  Idle: 30,  Running: 20,  Completed: 387 [  28m 20s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 391 [  28m 24s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 392 [  28m 31s  ] 
+INFO:  Idle: 24,  Running: 20,  Completed: 393 [  28m 36s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 394 [  28m 40s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 396 [  28m 50s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 397 [  28m 57s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 400 [  29m 4s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 402 [  29m 9s  ] 
+INFO:  Idle: 13,  Running: 20,  Completed: 404 [  29m 18s  ] 
+INFO:  Idle: 12,  Running: 20,  Completed: 405 [  29m 22s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 408 [  29m 32s  ] 
+INFO:  Idle: 8,  Running: 20,  Completed: 409 [  29m 42s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 410 [  29m 45s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 412 [  29m 52s  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 413 [  30m 1s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 415 [  30m 7s  ] 
+INFO:  Idle: 1,  Running: 20,  Completed: 416 [  30m 10s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 418 [  30m 22s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 420 [  30m 26s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 424 [  30m 35s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 425 [  30m 39s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 426 [  30m 42s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 428 [  30m 50s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 431 [  31m 0s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 432 [  31m 11s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 433 [  31m 56s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 434 [  32m 15s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 435 [  33m 5s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 436 [  33m 10s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 437 [  33m 43s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 437 [  33m 43s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 10h20m28s
+INFO: Effective Luminosity 1523762167.1903305 pb^-1 
+INFO: need to improve 131 channels 
+- Current estimate of cross-section: 2.3625734235402697e-05 +- 1.1585177908772434e-06
+    P1_mupmum_vtvtxbbxbbx 
+INFO:  Idle: 131,  Running: 20,  Completed: 0 [ current time: 17h51 ] 
+INFO:  Idle: 130,  Running: 20,  Completed: 1 [  14.1s  ] 
+INFO:  Idle: 122,  Running: 20,  Completed: 9 [  21.5s  ] 
+INFO:  Idle: 121,  Running: 20,  Completed: 10 [  29.9s  ] 
+INFO:  Idle: 119,  Running: 20,  Completed: 12 [  34.7s  ] 
+INFO:  Idle: 117,  Running: 20,  Completed: 14 [  38s  ] 
+INFO:  Idle: 116,  Running: 20,  Completed: 15 [  46s  ] 
+INFO:  Idle: 115,  Running: 20,  Completed: 16 [  52.4s  ] 
+INFO:  Idle: 113,  Running: 20,  Completed: 18 [  1m 3s  ] 
+INFO:  Idle: 112,  Running: 20,  Completed: 19 [  1m 18s  ] 
+INFO:  Idle: 110,  Running: 20,  Completed: 21 [  1m 28s  ] 
+INFO:  Idle: 109,  Running: 20,  Completed: 22 [  1m 31s  ] 
+INFO:  Idle: 108,  Running: 20,  Completed: 23 [  1m 46s  ] 
+INFO:  Idle: 105,  Running: 20,  Completed: 26 [  1m 50s  ] 
+INFO:  Idle: 104,  Running: 20,  Completed: 27 [  2m 6s  ] 
+INFO:  Idle: 102,  Running: 20,  Completed: 29 [  2m 12s  ] 
+INFO:  Idle: 101,  Running: 20,  Completed: 30 [  2m 30s  ] 
+INFO:  Idle: 100,  Running: 20,  Completed: 31 [  2m 33s  ] 
+INFO:  Idle: 99,  Running: 20,  Completed: 32 [  2m 41s  ] 
+INFO:  Idle: 98,  Running: 20,  Completed: 33 [  2m 45s  ] 
+INFO:  Idle: 97,  Running: 20,  Completed: 34 [  2m 50s  ] 
+INFO:  Idle: 96,  Running: 20,  Completed: 35 [  3m 2s  ] 
+INFO:  Idle: 95,  Running: 20,  Completed: 36 [  3m 7s  ] 
+INFO:  Idle: 94,  Running: 20,  Completed: 37 [  3m 20s  ] 
+INFO:  Idle: 93,  Running: 20,  Completed: 38 [  3m 25s  ] 
+INFO:  Idle: 91,  Running: 20,  Completed: 40 [  3m 41s  ] 
+INFO:  Idle: 90,  Running: 20,  Completed: 41 [  4m 5s  ] 
+INFO:  Idle: 89,  Running: 20,  Completed: 42 [  4m 10s  ] 
+INFO:  Idle: 88,  Running: 20,  Completed: 43 [  4m 39s  ] 
+INFO:  Idle: 87,  Running: 20,  Completed: 44 [  4m 42s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 45 [  5m 4s  ] 
+INFO:  Idle: 85,  Running: 20,  Completed: 46 [  5m 18s  ] 
+INFO:  Idle: 83,  Running: 20,  Completed: 48 [  5m 46s  ] 
+INFO:  Idle: 82,  Running: 20,  Completed: 49 [  5m 50s  ] 
+INFO:  Idle: 81,  Running: 20,  Completed: 50 [  6m 3s  ] 
+INFO:  Idle: 80,  Running: 20,  Completed: 51 [  6m 28s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 52 [  6m 49s  ] 
+INFO:  Idle: 77,  Running: 20,  Completed: 54 [  7m 5s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 55 [  7m 10s  ] 
+INFO:  Idle: 75,  Running: 20,  Completed: 56 [  7m 22s  ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 57 [  7m 47s  ] 
+INFO:  Idle: 73,  Running: 20,  Completed: 58 [  8m 15s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 59 [  8m 20s  ] 
+INFO:  Idle: 70,  Running: 20,  Completed: 61 [  8m 32s  ] 
+INFO:  Idle: 68,  Running: 20,  Completed: 63 [  8m 36s  ] 
+INFO:  Idle: 67,  Running: 20,  Completed: 64 [  8m 45s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 65 [  8m 52s  ] 
+INFO:  Idle: 65,  Running: 20,  Completed: 66 [  9m 24s  ] 
+INFO:  Idle: 63,  Running: 20,  Completed: 68 [  9m 28s  ] 
+INFO:  Idle: 62,  Running: 20,  Completed: 69 [  9m 47s  ] 
+INFO:  Idle: 60,  Running: 20,  Completed: 71 [  9m 56s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 72 [  10m 11s  ] 
+INFO:  Idle: 58,  Running: 20,  Completed: 73 [  10m 25s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 74 [  10m 48s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 75 [  10m 54s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 76 [  11m 9s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 77 [  11m 16s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 79 [  11m 31s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 80 [  11m 34s  ] 
+INFO:  Idle: 50,  Running: 20,  Completed: 81 [  11m 38s  ] 
+INFO:  Idle: 48,  Running: 20,  Completed: 83 [  11m 53s  ] 
+INFO:  Idle: 47,  Running: 20,  Completed: 84 [  11m 59s  ] 
+INFO:  Idle: 45,  Running: 20,  Completed: 86 [  12m 33s  ] 
+INFO:  Idle: 44,  Running: 20,  Completed: 87 [  12m 42s  ] 
+INFO:  Idle: 43,  Running: 20,  Completed: 88 [  13m 13s  ] 
+INFO:  Idle: 42,  Running: 20,  Completed: 89 [  13m 55s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 90 [  14m 23s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 91 [  14m 44s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 92 [  14m 58s  ] 
+INFO:  Idle: 38,  Running: 20,  Completed: 93 [  15m 3s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 95 [  15m 22s  ] 
+INFO:  Idle: 35,  Running: 20,  Completed: 96 [  16m 15s  ] 
+INFO:  Idle: 34,  Running: 20,  Completed: 97 [  16m 24s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 99 [  16m 46s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 100 [  17m 14s  ] 
+INFO:  Idle: 30,  Running: 20,  Completed: 101 [  17m 20s  ] 
+INFO:  Idle: 29,  Running: 20,  Completed: 102 [  17m 34s  ] 
+INFO:  Idle: 28,  Running: 20,  Completed: 103 [  17m 55s  ] 
+INFO:  Idle: 27,  Running: 20,  Completed: 104 [  18m 13s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 105 [  18m 48s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 106 [  19m 5s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 108 [  19m 9s  ] 
+INFO:  Idle: 22,  Running: 20,  Completed: 109 [  19m 19s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 110 [  19m 23s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 111 [  19m 27s  ] 
+INFO:  Idle: 19,  Running: 20,  Completed: 112 [  19m 32s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 113 [  20m 14s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 114 [  20m 24s  ] 
+INFO:  Idle: 16,  Running: 20,  Completed: 115 [  20m 33s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 116 [  20m 43s  ] 
+INFO:  Idle: 14,  Running: 20,  Completed: 117 [  21m 13s  ] 
+INFO:  Idle: 12,  Running: 20,  Completed: 119 [  21m 29s  ] 
+INFO:  Idle: 10,  Running: 20,  Completed: 121 [  21m 43s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 122 [  21m 48s  ] 
+INFO:  Idle: 8,  Running: 20,  Completed: 123 [  21m 57s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 124 [  22m 41s  ] 
+INFO:  Idle: 6,  Running: 20,  Completed: 125 [  22m 51s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 126 [  22m 59s  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 127 [  23m 8s  ] 
+INFO:  Idle: 3,  Running: 20,  Completed: 128 [  23m 20s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 129 [  23m 25s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 131 [  23m 53s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 132 [  24m 10s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 135 [  24m 35s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 136 [  26m 33s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 137 [  27m 26s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 138 [  33m 30s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 139 [  36m 11s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 140 [  43m 42s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 141 [  46m 27s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 142 [  48m 27s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 143 [  54m 2s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 144 [  56m 30s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 145 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 146 [  1h 17m  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 147 [  1h 19m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 149 [  1h 21m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 151 [  1h 24m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 151 [  1h 24m  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 1 day,0h52m01s
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+INFO:  Idle: 0,  Running: 3,  Completed: 37 [  2.7s  ] 
+combination of events done in 22.222073316574097 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   2.387e-05 +- 3.274e-08 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  
+mumu_4b_tau: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 2.387059e-05 pb; acceptance = 0.2457
+Fiducial sigma = 0.00586500396 fb
+MC errors [integration, selection] = [8.043e-06, 5.933e-05] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.
+
+Reports: /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/results.csv
+Do not call these precision results until integration and sample convergence are checked.

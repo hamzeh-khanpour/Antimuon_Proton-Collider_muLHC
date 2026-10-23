@@ -1,0 +1,42 @@
+[
+  {
+    "process": "mue_HH",
+    "status": "NOT_RUN",
+    "components_required": "mue_HH",
+    "components_missing": "mue_HH",
+    "sigma_fb": null,
+    "mc_integration_error_fb": null,
+    "mc_selection_error_fb": null,
+    "mc_error_quadrature_approx_fb": null
+  },
+  {
+    "process": "mue_4b",
+    "status": "NOT_RUN",
+    "components_required": "mue_4b",
+    "components_missing": "mue_4b",
+    "sigma_fb": null,
+    "mc_integration_error_fb": null,
+    "mc_selection_error_fb": null,
+    "mc_error_quadrature_approx_fb": null
+  },
+  {
+    "process": "mumu_HH",
+    "status": "NOT_RUN",
+    "components_required": "mumu_HH_e,mumu_HH_mu,mumu_HH_tau",
+    "components_missing": "mumu_HH_e,mumu_HH_mu,mumu_HH_tau",
+    "sigma_fb": null,
+    "mc_integration_error_fb": null,
+    "mc_selection_error_fb": null,
+    "mc_error_quadrature_approx_fb": null
+  },
+  {
+    "process": "mumu_4b",
+    "status": "NOT_RUN",
+    "components_required": "mumu_4b_e,mumu_4b_mu,mumu_4b_tau",
+    "components_missing": "mumu_4b_e,mumu_4b_mu,mumu_4b_tau",
+    "sigma_fb": null,
+    "mc_integration_error_fb": null,
+    "mc_selection_error_fb": null,
+    "mc_error_quadrature_approx_fb": null
+  }
+]

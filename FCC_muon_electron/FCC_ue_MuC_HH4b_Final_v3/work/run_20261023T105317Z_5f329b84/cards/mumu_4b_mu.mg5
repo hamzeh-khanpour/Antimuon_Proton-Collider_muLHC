@@ -1,0 +1,7 @@
+# No HH diagram removal or resonant restriction in the four-bottom amplitude.
+set automatic_html_opening False
+set group_subprocesses False
+import model sm
+generate mu+ mu- > vm vm~ b b~ b b~ QCD=2 QED=6
+output mumu_4b_mu
+quit

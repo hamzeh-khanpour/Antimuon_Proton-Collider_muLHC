@@ -1,0 +1,84 @@
+{
+  "package_version": "3.0.0",
+  "date": "2026-10-23",
+  "model": "sm",
+  "beam_setups": {
+    "mue": {
+      "pdgs": [
+        -13,
+        11
+      ],
+      "energies_GeV": [
+        2000.0,
+        120.0
+      ],
+      "energy_status": "Explicitly confirmed by Krzysztof",
+      "positive_z": "mu+"
+    },
+    "mumu": {
+      "pdgs": [
+        -13,
+        13
+      ],
+      "energies_GeV": [
+        500.0,
+        500.0
+      ],
+      "energy_status": "Symmetric baseline inferred from the original 1 TeV request; not separately confirmed",
+      "positive_z": "mu+"
+    }
+  },
+  "selection": {
+    "eta_abs_max": 5.0,
+    "eta_boundary": "strict",
+    "mass_window_GeV": [
+      110.0,
+      130.0
+    ],
+    "mass_window_boundary": "inclusive",
+    "pairing": "any_valid_disjoint_opposite_charge",
+    "min_pt_GeV": 0.0,
+    "min_deltaR": 0.0,
+    "frame": "laboratory",
+    "objects": "four final-state massive bottom partons, not clustered detector jets"
+  },
+  "physics_conventions": {
+    "polarization_percent": [
+      0.0,
+      0.0
+    ],
+    "initial_lepton_masses": "zero in the default restricted sm model",
+    "initial_lepton_yukawas": "zero in the default restricted sm model",
+    "mumu_neutrino_flavors": [
+      "e",
+      "mu",
+      "tau"
+    ],
+    "fourb_definition": "complete tree-level final state within the stated SM model, including Higgs diagrams and interference",
+    "hh_definition": "on-shell HH production followed by independent isotropic H to bbbar decays, in the narrow-width approximation",
+    "signal_br_scheme": "derive Gamma_LO(H->bbbar)/Gamma_H from the same actual param_card used for all components",
+    "reference_br_hbb": 0.582,
+    "reference_br_note": "Secondary reference only; NEVER used for the primary four-rate table",
+    "renormalization_scale_GeV": 125.0,
+    "scale_note": "Explicit fixed reference scale, a calculation convention rather than an instruction from Krzysztof",
+    "ISR": false,
+    "beamstrahlung": false,
+    "showering": false,
+    "hadronization": false,
+    "detector_simulation": false,
+    "b_tag_efficiency_applied": false
+  },
+  "required_model_values": {
+    "mass_5_GeV": 4.7,
+    "mass_25_GeV": 125.0,
+    "mass_11_GeV": 0.0,
+    "mass_13_GeV": 0.0
+  },
+  "runtime": {
+    "nevents_per_component": 30000,
+    "decays_per_hh_event": 100,
+    "seed": 2301026,
+    "integration_accuracy_target": 0.01
+  },
+  "status": "AUDITED_SETUP_ONLY_NO_MADGRAPH_RUN_OR_PHYSICS_CROSS_SECTIONS"
+}

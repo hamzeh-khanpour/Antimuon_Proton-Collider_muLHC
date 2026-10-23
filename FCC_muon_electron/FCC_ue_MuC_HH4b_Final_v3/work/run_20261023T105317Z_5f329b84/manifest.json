@@ -1,0 +1,27 @@
+{
+  "package_version": "3.0.0",
+  "started_utc": "20261023T105317Z",
+  "work": "/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T105317Z_5f329b84",
+  "mg5_path": "/home/hamzeh-khanpour/MG5_aMC_v3_6_6/bin/mg5_aMC",
+  "mg5_version_file": "version = 3.6.6\ndate = 2025-10-30\n",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "components": [
+    "mue_HH"
+  ],
+  "prepare_only": true,
+  "effective_configuration_sha256": "440a10f796dc2736275b4bf206da46c36450e60fb8fe8ff5ce0dc691ee0e5c91",
+  "scripts_sha256": {
+    "analyze_lhe.py": "77fe7c3b2725b2e9bc5d171691a29a70107496ca4e7644aa2f52e861685976b3",
+    "run_workflow.py": "665c1f750e09dc0f1a55ab724bb7fcd2a9f9a804c80cc6142425155ebbdd9286",
+    "collect_results.py": "f692696d60a0e60df782adbe23fbce29916b09105b722bf2b3e2f966468b09ec",
+    "processes.py": "4c5b6433f4f9f27cf92ea178792feb1f5b848bf03f18cf432d53be4678129ac9",
+    "physics.py": "f266f38ab76d3b0332420ee69483cc6ad13ff1c5aad0f3f0cad3605419af05ce",
+    "lhe_io.py": "819d360eb44f254699165f350e5d26b0c187e46d708e1e1cf90160e73a3035dd",
+    "configure_run.py": "fa7d140fd75a1252532a5d74b43cf35a7907a79e2de92a241dd490fdb77c0336"
+  },
+  "execution": {
+    "mue_HH": "PREPARED_NOT_INTEGRATED"
+  },
+  "overall_status": "PREPARED_ONLY"
+}

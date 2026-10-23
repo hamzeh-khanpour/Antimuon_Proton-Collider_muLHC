@@ -1,0 +1,81 @@
+COMMAND: ['/usr/bin/python3', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110007Z_59811465/mue_HH/bin/generate_events', '-f']
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110007Z_59811465/mue_HH/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110007Z_59811465/mue_HH/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+INFO: compile directory 
+compile Source Directory
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+Using random number seed offset = 2301026
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupem_vevmxhh  
+INFO:  Idle: 1,  Running: 0,  Completed: 0 [ current time: 13h00 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 1 [  0.096s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 1 [  0.096s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 0 second
+INFO: Effective Luminosity 540208790.6976047 pb^-1 
+INFO: need to improve 2 channels 
+- Current estimate of cross-section: 6.66409e-05 +- 2.966117984234612e-06
+    P1_mupem_vevmxhh 
+INFO:  Idle: 17,  Running: 20,  Completed: 0 [ current time: 13h00 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 37 [  2.4s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 52 seconds
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+[1;31mCommand "generate_events -f" interrupted with error:
+AttributeError : 'list' object has no attribute 'lower'
+Please report this bug on https://bugs.launchpad.net/mg5amcnlo
+More information is found in '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110007Z_59811465/mue_HH/run_01_tag_1_debug.log'.
+Please attach this file to your report.[0m
+quit
+INFO:  

@@ -1,0 +1,62 @@
+test_beam_cuts_settings (test_suite.InputsAndCards.test_beam_cuts_settings) ... ok
+test_fortran_exponents (test_suite.InputsAndCards.test_fortran_exponents) ... ok
+test_four_totals_eight_components (test_suite.InputsAndCards.test_four_totals_eight_components) ... ok
+test_hidden_cuts_neutralized (test_suite.InputsAndCards.test_hidden_cuts_neutralized) ... ok
+test_inconsistent_higgs_width_rejected (test_suite.InputsAndCards.test_inconsistent_higgs_width_rejected) ... ok
+test_massless_b_rejected (test_suite.InputsAndCards.test_massless_b_rejected) ... ok
+test_model_consistent_branching (test_suite.InputsAndCards.test_model_consistent_branching) ... ok
+test_mumu_energy_is_not_reset_to_match_mue (test_suite.InputsAndCards.test_mumu_energy_is_not_reset_to_match_mue) ... ok
+test_no_exclusion_or_destructive_output (test_suite.InputsAndCards.test_no_exclusion_or_destructive_output) ... ok
+test_already_lab_no_double_boost (test_suite.Kinematics.test_already_lab_no_double_boost) ... ok
+test_beam_energy_and_boost (test_suite.Kinematics.test_beam_energy_and_boost) ... ok
+test_boost_roundtrip (test_suite.Kinematics.test_boost_roundtrip) ... ok
+test_boosted_decay_conservation (test_suite.Kinematics.test_boosted_decay_conservation) ... ok
+test_cm_sample_boosted (test_suite.Kinematics.test_cm_sample_boosted) ... ok
+test_decay_threshold_fails (test_suite.Kinematics.test_decay_threshold_fails) ... ok
+test_eta_definition (test_suite.Kinematics.test_eta_definition) ... ok
+test_massive_eta_is_not_rapidity (test_suite.Kinematics.test_massive_eta_is_not_rapidity) ... ok
+test_nonfinite_vector_fails (test_suite.Kinematics.test_nonfinite_vector_fails) ... ok
+test_rest_scalar_decay (test_suite.Kinematics.test_rest_scalar_decay) ... ok
+test_spacelike_mass_fails (test_suite.Kinematics.test_spacelike_mass_fails) ... ok
+test_strict_eta_boundary (test_suite.Kinematics.test_strict_eta_boundary) ... ok
+test_undefined_eta_rejected (test_suite.Kinematics.test_undefined_eta_rejected) ... ok
+test_wrong_beams_fail (test_suite.Kinematics.test_wrong_beams_fail) ... ok
+test_wrong_invariant_energy_fails (test_suite.Kinematics.test_wrong_invariant_energy_fails) ... ok
+test_cli_end_to_end_synthetic_only (test_suite.LHEAndAnalysis.test_cli_end_to_end_synthetic_only) ... ok
+test_cm_and_lab_results_identical (test_suite.LHEAndAnalysis.test_cm_and_lab_results_identical) ... ok
+test_extra_pt_cut_refused (test_suite.LHEAndAnalysis.test_extra_pt_cut_refused) ... ok
+test_fourb_sigma_no_extra_branching (test_suite.LHEAndAnalysis.test_fourb_sigma_no_extra_branching) ... ok
+test_mismatched_header_fails (test_suite.LHEAndAnalysis.test_mismatched_header_fails) ... ok
+test_missing_document_close_rejected (test_suite.LHEAndAnalysis.test_missing_document_close_rejected) ... ok
+test_plain_and_gzip_and_event_attributes (test_suite.LHEAndAnalysis.test_plain_and_gzip_and_event_attributes) ... ok
+test_signal_branching_applied_once (test_suite.LHEAndAnalysis.test_signal_branching_applied_once) ... ok
+test_truncated_event_rejected (test_suite.LHEAndAnalysis.test_truncated_event_rejected) ... ok
+test_wrong_mode_fails (test_suite.LHEAndAnalysis.test_wrong_mode_fails) ... ok
+test_zero_selected_not_measured_zero (test_suite.LHEAndAnalysis.test_zero_selected_not_measured_zero) ... ok
+test_any_valid_not_always_minchi (test_suite.Pairing.test_any_valid_not_always_minchi) ... ok
+test_bad_multiplicity_fails (test_suite.Pairing.test_bad_multiplicity_fails) ... ok
+test_both_assignments_count_once (test_suite.Pairing.test_both_assignments_count_once) ... ok
+test_cross_pair_only (test_suite.Pairing.test_cross_pair_only) ... ok
+test_direct_pair_only (test_suite.Pairing.test_direct_pair_only) ... ok
+test_inclusive_mass_window_boundaries (test_suite.Pairing.test_inclusive_mass_window_boundaries) ... ok
+test_permutation_invariance (test_suite.Pairing.test_permutation_invariance) ... ok
+test_reusing_one_bottom_is_forbidden (test_suite.Pairing.test_reusing_one_bottom_is_forbidden) ... ok
+test_same_charge_pairing_is_not_used (test_suite.Pairing.test_same_charge_pairing_is_not_used) ... ok
+test_decay_trials_clustered_by_production_event (test_suite.Statistics.test_decay_trials_clustered_by_production_event) ... ok
+test_equal_weight_acceptance_and_se (test_suite.Statistics.test_equal_weight_acceptance_and_se) ... ok
+test_negative_weight_rejected (test_suite.Statistics.test_negative_weight_rejected) ... ok
+test_too_few_events_fail (test_suite.Statistics.test_too_few_events_fail) ... ok
+test_weight_scale_invariance (test_suite.Statistics.test_weight_scale_invariance) ... ok
+test_ambiguous_event_outputs_fail (test_suite.Workflow.test_ambiguous_event_outputs_fail) ... ok
+test_full_workflow_with_explicit_offline_mock (test_suite.Workflow.test_full_workflow_with_explicit_offline_mock)
+Mock MG process creation/adapter/launch/analysis/collection; NOT physics. ... ok
+test_independent_flavors_sum_in_quadrature (test_suite.Workflow.test_independent_flavors_sum_in_quadrature) ... ok
+test_no_mg_path_fails_cleanly (test_suite.Workflow.test_no_mg_path_fails_cleanly) ... ok
+test_partial_flavor_sum_not_reported (test_suite.Workflow.test_partial_flavor_sum_not_reported) ... ok
+test_swallowed_error_is_detected (test_suite.Workflow.test_swallowed_error_is_detected) ... ok
+test_unrun_rows_are_blank_not_zero (test_suite.Workflow.test_unrun_rows_are_blank_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 6.106s
+
+OK

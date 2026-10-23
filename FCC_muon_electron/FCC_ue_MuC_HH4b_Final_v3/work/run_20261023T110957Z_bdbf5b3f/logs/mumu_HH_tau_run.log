@@ -1,0 +1,80 @@
+COMMAND: ['/usr/bin/python3', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/bin/generate_events', '-f']
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_tau/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301426
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupmum_vtvtxhh  
+INFO:  Idle: 1,  Running: 1,  Completed: 0 [ current time: 13h26 ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 1 [  0.16s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 2 [  0.17s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 1 seconds
+INFO: Effective Luminosity 4421140666.572922 pb^-1 
+INFO: need to improve 3 channels 
+- Current estimate of cross-section: 8.142695e-06 +- 1.0389320059032978e-07
+    P1_mupmum_vtvtxhh 
+INFO:  Idle: 17,  Running: 20,  Completed: 0 [ current time: 13h26 ] 
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+INFO:  Idle: 0,  Running: 0,  Completed: 37 [  1.9s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 42 seconds
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 3.8840572834014893 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   8.137e-06 +- 1.032e-08 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  

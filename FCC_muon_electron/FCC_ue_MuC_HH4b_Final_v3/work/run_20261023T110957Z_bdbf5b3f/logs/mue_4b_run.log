@@ -1,1 +1,176 @@
 COMMAND: ['/usr/bin/python3', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/bin/generate_events', '-f']
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.6                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/Cards/me5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/MG5_aMC_v3_6_6/input/mg5_configuration.txt  
+INFO: load configuration from /home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mue_4b/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events -f
+stty: 'standard input': Inappropriate ioctl for device
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 30000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 2301126
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_mupem_vevmxbbxbbx  
+[GFX1-]: Failed to create EGLSurface!: 0x3009
+[GFX1-]: Failed to create EGLSurface. 1 renderers, 0 active.
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback WR to SW-WR
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=false
+INFO:  Idle: 102,  Running: 20,  Completed: 0 [ current time: 13h11 ] 
+INFO:  Idle: 101,  Running: 20,  Completed: 1 [  11.3s  ] 
+INFO:  Idle: 92,  Running: 20,  Completed: 10 [  17.5s  ] 
+INFO:  Idle: 86,  Running: 20,  Completed: 16 [  24s  ] 
+INFO:  Idle: 79,  Running: 20,  Completed: 23 [  32.2s  ] 
+INFO:  Idle: 76,  Running: 20,  Completed: 26 [  37.6s  ] 
+INFO:  Idle: 72,  Running: 20,  Completed: 30 [  40.7s  ] 
+INFO:  Idle: 71,  Running: 20,  Completed: 31 [  47.4s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 33 [  53.1s  ] 
+INFO:  Idle: 64,  Running: 20,  Completed: 38 [  1m 0s  ] 
+INFO:  Idle: 62,  Running: 20,  Completed: 40 [  1m 5s  ] 
+INFO:  Idle: 59,  Running: 20,  Completed: 43 [  1m 9s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 45 [  1m 20s  ] 
+INFO:  Idle: 56,  Running: 20,  Completed: 46 [  1m 27s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 47 [  1m 31s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 48 [  1m 38s  ] 
+INFO:  Idle: 52,  Running: 20,  Completed: 50 [  1m 42s  ] 
+INFO:  Idle: 49,  Running: 20,  Completed: 53 [  1m 50s  ] 
+INFO:  Idle: 45,  Running: 20,  Completed: 57 [  1m 57s  ] 
+INFO:  Idle: 43,  Running: 20,  Completed: 59 [  2m 1s  ] 
+INFO:  Idle: 40,  Running: 20,  Completed: 62 [  2m 4s  ] 
+INFO:  Idle: 38,  Running: 20,  Completed: 64 [  2m 11s  ] 
+INFO:  Idle: 36,  Running: 20,  Completed: 66 [  2m 15s  ] 
+INFO:  Idle: 35,  Running: 20,  Completed: 67 [  2m 19s  ] 
+INFO:  Idle: 33,  Running: 20,  Completed: 69 [  2m 22s  ] 
+INFO:  Idle: 32,  Running: 20,  Completed: 70 [  2m 29s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 71 [  2m 32s  ] 
+INFO:  Idle: 28,  Running: 20,  Completed: 74 [  2m 36s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 76 [  2m 39s  ] 
+INFO:  Idle: 24,  Running: 20,  Completed: 78 [  2m 42s  ] 
+INFO:  Idle: 23,  Running: 20,  Completed: 79 [  2m 46s  ] 
+INFO:  Idle: 21,  Running: 20,  Completed: 81 [  2m 50s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 84 [  2m 59s  ] 
+INFO:  Idle: 17,  Running: 20,  Completed: 85 [  3m 2s  ] 
+INFO:  Idle: 13,  Running: 20,  Completed: 89 [  3m 6s  ] 
+INFO:  Idle: 10,  Running: 20,  Completed: 92 [  3m 10s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 93 [  3m 14s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 95 [  3m 17s  ] 
+INFO:  Idle: 2,  Running: 20,  Completed: 100 [  3m 20s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 102 [  3m 30s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 103 [  3m 42s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 105 [  3m 45s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 110 [  3m 48s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 115 [  3m 53s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 118 [  3m 57s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 119 [  4m 7s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 120 [  4m 14s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 121 [  4m 35s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 122 [  4m 42s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 122 [  4m 42s  ] 
+INFO: End survey 
+refine 30000
+Creating Jobs
+INFO: Refine results to 30000 
+INFO: Generating 30000.0 unweighted events. 
+sum of cpu time of last step: 1h17m32s
+INFO: Effective Luminosity 41496379.26065291 pb^-1 
+INFO: need to improve 71 channels 
+- Current estimate of cross-section: 0.0008675455700332727 +- 1.963625881980113e-05
+    P1_mupem_vevmxbbxbbx 
+INFO:  Idle: 75,  Running: 20,  Completed: 0 [ current time: 13h16 ] 
+INFO:  Idle: 74,  Running: 20,  Completed: 1 [  4.9s  ] 
+INFO:  Idle: 70,  Running: 20,  Completed: 5 [  8.5s  ] 
+INFO:  Idle: 69,  Running: 20,  Completed: 6 [  11.9s  ] 
+INFO:  Idle: 66,  Running: 20,  Completed: 9 [  15.1s  ] 
+INFO:  Idle: 63,  Running: 20,  Completed: 12 [  19.9s  ] 
+INFO:  Idle: 61,  Running: 20,  Completed: 14 [  27.8s  ] 
+INFO:  Idle: 60,  Running: 20,  Completed: 15 [  31.3s  ] 
+INFO:  Idle: 57,  Running: 20,  Completed: 18 [  36.6s  ] 
+INFO:  Idle: 55,  Running: 20,  Completed: 20 [  39.8s  ] 
+INFO:  Idle: 54,  Running: 20,  Completed: 21 [  43.4s  ] 
+INFO:  Idle: 53,  Running: 20,  Completed: 22 [  48.4s  ] 
+INFO:  Idle: 51,  Running: 20,  Completed: 24 [  54.3s  ] 
+INFO:  Idle: 49,  Running: 20,  Completed: 26 [  1m 0s  ] 
+INFO:  Idle: 45,  Running: 20,  Completed: 30 [  1m 3s  ] 
+INFO:  Idle: 44,  Running: 20,  Completed: 31 [  1m 34s  ] 
+INFO:  Idle: 41,  Running: 20,  Completed: 34 [  1m 38s  ] 
+INFO:  Idle: 39,  Running: 20,  Completed: 36 [  1m 41s  ] 
+INFO:  Idle: 37,  Running: 20,  Completed: 38 [  1m 47s  ] 
+INFO:  Idle: 35,  Running: 20,  Completed: 40 [  1m 55s  ] 
+INFO:  Idle: 31,  Running: 20,  Completed: 44 [  2m 7s  ] 
+INFO:  Idle: 29,  Running: 20,  Completed: 46 [  2m 13s  ] 
+INFO:  Idle: 27,  Running: 20,  Completed: 48 [  2m 18s  ] 
+INFO:  Idle: 26,  Running: 20,  Completed: 49 [  2m 21s  ] 
+INFO:  Idle: 25,  Running: 20,  Completed: 50 [  2m 25s  ] 
+INFO:  Idle: 22,  Running: 20,  Completed: 53 [  2m 30s  ] 
+INFO:  Idle: 20,  Running: 20,  Completed: 55 [  2m 38s  ] 
+INFO:  Idle: 18,  Running: 20,  Completed: 57 [  2m 44s  ] 
+INFO:  Idle: 15,  Running: 20,  Completed: 60 [  2m 49s  ] 
+INFO:  Idle: 14,  Running: 20,  Completed: 61 [  3m 0s  ] 
+INFO:  Idle: 12,  Running: 20,  Completed: 63 [  3m 5s  ] 
+INFO:  Idle: 11,  Running: 20,  Completed: 64 [  3m 10s  ] 
+INFO:  Idle: 9,  Running: 20,  Completed: 66 [  3m 14s  ] 
+INFO:  Idle: 7,  Running: 20,  Completed: 68 [  3m 17s  ] 
+INFO:  Idle: 5,  Running: 20,  Completed: 70 [  3m 24s  ] 
+INFO:  Idle: 4,  Running: 20,  Completed: 71 [  3m 28s  ] 
+INFO:  Idle: 1,  Running: 20,  Completed: 74 [  3m 31s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 76 [  3m 35s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 78 [  3m 41s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 79 [  3m 49s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 82 [  3m 57s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 84 [  4m 2s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 86 [  4m 10s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 88 [  4m 13s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 89 [  4m 25s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 90 [  4m 29s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 91 [  5m 5s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 94 [  5m 40s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 95 [  6m 32s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 95 [  6m 32s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 2h24m50s
+INFO: finish refine 
+refine 30000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+combination of events done in 6.480108976364136 s 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.0008661 +- 1.636e-06 pb
+     Nb of events :  30000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: storing files of previous run 
+INFO: Done 
+quit
+INFO:  

@@ -1,5 +1,5 @@
 process,status,components_required,components_missing,sigma_fb,mc_integration_error_fb,mc_selection_error_fb,mc_error_quadrature_approx_fb
 mue_HH,ESTIMATE_NOT_CONVERGENCE_VALIDATED,mue_HH,,0.04912448540279768,7.81268288138299e-05,3.985504634329844e-06,7.822841956537116e-05
-mue_4b,NOT_RUN,mue_4b,mue_4b,,,,
-mumu_HH,NOT_RUN,"mumu_HH_e,mumu_HH_mu,mumu_HH_tau","mumu_HH_e,mumu_HH_mu,mumu_HH_tau",,,,
-mumu_4b,NOT_RUN,"mumu_4b_e,mumu_4b_mu,mumu_4b_tau","mumu_4b_e,mumu_4b_mu,mumu_4b_tau",,,,
+mue_4b,ESTIMATE_NOT_CONVERGENCE_VALIDATED,mue_4b,,0.053554208633324475,0.00010115203699998326,0.0012043948413528413,0.0012086350435373705
+mumu_HH,ESTIMATE_NOT_CONVERGENCE_VALIDATED,"mumu_HH_e,mumu_HH_mu,mumu_HH_tau",,0.07047444671721596,9.787227548665346e-05,1.1273462770451139e-06,9.787876796611079e-05
+mumu_4b,ESTIMATE_NOT_CONVERGENCE_VALIDATED,"mumu_4b_e,mumu_4b_mu,mumu_4b_tau",,0.0752953559990156,0.00012546918359650222,0.0013591095885056666,0.0013648887828685585

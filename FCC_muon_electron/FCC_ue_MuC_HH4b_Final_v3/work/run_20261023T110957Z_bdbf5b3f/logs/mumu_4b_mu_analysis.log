@@ -1,0 +1,7 @@
+COMMAND: ['/usr/bin/python3', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/analyze_lhe.py', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu/Events/run_01/unweighted_events.lhe.gz', '--component', 'mumu_4b_mu', '--param-card', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_4b_mu/Cards/param_card.dat', '--config', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/configuration.json', '--decays', '100', '--seed', '2321626', '--json', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/reports/mumu_4b_mu.json']
+mumu_4b_mu: ESTIMATE_NOT_CONVERGENCE_VALIDATED
+Generated sigma = 0.0009322257 pb; acceptance = 0.068166667
+Fiducial sigma = 0.0635467186 fb
+MC errors [integration, selection] = [0.000125, 0.001357] fb
+CAUTION: Not convergence-validated. Repeat with independent seeds and increased statistics.
+CAUTION: Combined MC error below neglects covariance between generator normalization and selection; no theory/systematic errors included.

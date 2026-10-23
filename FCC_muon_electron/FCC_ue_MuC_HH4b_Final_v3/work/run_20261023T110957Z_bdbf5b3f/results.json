@@ -11,32 +11,32 @@
   },
   {
     "process": "mue_4b",
-    "status": "NOT_RUN",
+    "status": "ESTIMATE_NOT_CONVERGENCE_VALIDATED",
     "components_required": "mue_4b",
-    "components_missing": "mue_4b",
-    "sigma_fb": null,
-    "mc_integration_error_fb": null,
-    "mc_selection_error_fb": null,
-    "mc_error_quadrature_approx_fb": null
+    "components_missing": "",
+    "sigma_fb": 0.053554208633324475,
+    "mc_integration_error_fb": 0.00010115203699998326,
+    "mc_selection_error_fb": 0.0012043948413528413,
+    "mc_error_quadrature_approx_fb": 0.0012086350435373705
   },
   {
     "process": "mumu_HH",
-    "status": "NOT_RUN",
+    "status": "ESTIMATE_NOT_CONVERGENCE_VALIDATED",
     "components_required": "mumu_HH_e,mumu_HH_mu,mumu_HH_tau",
-    "components_missing": "mumu_HH_e,mumu_HH_mu,mumu_HH_tau",
-    "sigma_fb": null,
-    "mc_integration_error_fb": null,
-    "mc_selection_error_fb": null,
-    "mc_error_quadrature_approx_fb": null
+    "components_missing": "",
+    "sigma_fb": 0.07047444671721596,
+    "mc_integration_error_fb": 9.787227548665346e-05,
+    "mc_selection_error_fb": 1.1273462770451139e-06,
+    "mc_error_quadrature_approx_fb": 9.787876796611079e-05
   },
   {
     "process": "mumu_4b",
-    "status": "NOT_RUN",
+    "status": "ESTIMATE_NOT_CONVERGENCE_VALIDATED",
     "components_required": "mumu_4b_e,mumu_4b_mu,mumu_4b_tau",
-    "components_missing": "mumu_4b_e,mumu_4b_mu,mumu_4b_tau",
-    "sigma_fb": null,
-    "mc_integration_error_fb": null,
-    "mc_selection_error_fb": null,
-    "mc_error_quadrature_approx_fb": null
+    "components_missing": "",
+    "sigma_fb": 0.0752953559990156,
+    "mc_integration_error_fb": 0.00012546918359650222,
+    "mc_selection_error_fb": 0.0013591095885056666,
+    "mc_error_quadrature_approx_fb": 0.0013648887828685585
   }
 ]

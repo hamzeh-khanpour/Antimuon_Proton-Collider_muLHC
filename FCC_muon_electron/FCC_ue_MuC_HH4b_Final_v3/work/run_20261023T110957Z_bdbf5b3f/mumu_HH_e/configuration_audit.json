@@ -1,0 +1,545 @@
+{
+  "component": "mumu_HH_e",
+  "model_inputs": {
+    "mb_GeV": 4.7,
+    "mh_GeV": 125.0,
+    "ymb_GeV": 4.7,
+    "GF_GeV_minus2": 1.16639e-05,
+    "higgs_width_GeV": 0.006382339,
+    "hbb_partial_width_LO_GeV": 0.005390778958043033,
+    "br_hbb_model": 0.8446400227319534,
+    "all_slha_inputs": {
+      "mass:5": 4.7,
+      "mass:6": 173.0,
+      "mass:15": 1.777,
+      "mass:23": 91.188,
+      "mass:25": 125.0,
+      "mass:1": 0.0,
+      "mass:2": 0.0,
+      "mass:3": 0.0,
+      "mass:4": 0.0,
+      "mass:11": 0.0,
+      "mass:12": 0.0,
+      "mass:13": 0.0,
+      "mass:14": 0.0,
+      "mass:16": 0.0,
+      "mass:21": 0.0,
+      "mass:22": 0.0,
+      "mass:24": 80.419,
+      "sminputs:1": 132.507,
+      "sminputs:2": 1.16639e-05,
+      "sminputs:3": 0.118,
+      "yukawa:5": 4.7,
+      "yukawa:6": 173.0,
+      "yukawa:15": 1.777,
+      "decay:6": 1.4915,
+      "decay:23": 2.441404,
+      "decay:24": 2.0476,
+      "decay:25": 0.006382339,
+      "decay:1": 0.0,
+      "decay:2": 0.0,
+      "decay:3": 0.0,
+      "decay:4": 0.0,
+      "decay:5": 0.0,
+      "decay:11": 0.0,
+      "decay:12": 0.0,
+      "decay:13": 0.0,
+      "decay:14": 0.0,
+      "decay:15": 0.0,
+      "decay:16": 0.0,
+      "decay:21": 0.0,
+      "decay:22": 0.0
+    }
+  },
+  "all_cut_changes": {
+    "cut_decays": {
+      "before": false,
+      "after": false
+    },
+    "dsqrt_shat": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "dsqrt_shatmax": {
+      "before": -1,
+      "after": -1
+    },
+    "ptj": {
+      "before": 20.0,
+      "after": 0.0
+    },
+    "ptb": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "pta": {
+      "before": 10.0,
+      "after": 0.0
+    },
+    "ptl": {
+      "before": 10.0,
+      "after": 0.0
+    },
+    "misset": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptheavy": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptjmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptbmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptamax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptlmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "missetmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ej": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "eb": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ea": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "el": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ejmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ebmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "eamax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "elmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "etaj": {
+      "before": 5.0,
+      "after": -1.0
+    },
+    "etab": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "etaa": {
+      "before": 2.5,
+      "after": -1.0
+    },
+    "etal": {
+      "before": 2.5,
+      "after": -1.0
+    },
+    "etajmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "etabmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "etaamin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "etalmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "drjj": {
+      "before": 0.4,
+      "after": 0.0
+    },
+    "drbb": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "drll": {
+      "before": 0.4,
+      "after": 0.0
+    },
+    "draa": {
+      "before": 0.4,
+      "after": 0.0
+    },
+    "drbj": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "draj": {
+      "before": 0.4,
+      "after": 0.0
+    },
+    "drjl": {
+      "before": 0.4,
+      "after": 0.0
+    },
+    "drab": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "drbl": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "dral": {
+      "before": 0.4,
+      "after": 0.0
+    },
+    "drjjmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drbbmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drllmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "draamax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drbjmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drajmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drjlmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drabmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "drblmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "dralmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "mmjj": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "mmbb": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "mmaa": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "mmll": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "mmjjmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "mmbbmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "mmaamax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "mmllmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "mmnl": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "mmnlmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptllmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptllmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "xptj": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "xptb": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "xpta": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "xptl": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptj1min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptj1max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptj2min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptj2max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptj3min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptj3max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptj4min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptj4max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "cutuse": {
+      "before": 0,
+      "after": 0
+    },
+    "ptl1min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptl1max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptl2min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptl2max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptl3min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptl3max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptl4min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ptl4max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "htjmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "htjmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ihtmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ihtmax": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ht2min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ht3min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ht4min": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "ht2max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ht3max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ht4max": {
+      "before": -1.0,
+      "after": -1.0
+    },
+    "ptgmin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "xetamin": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "deltaeta": {
+      "before": 0.0,
+      "after": -1.0
+    },
+    "ktdurham": {
+      "before": -1.0,
+      "after": 0.0
+    },
+    "ptlund": {
+      "before": -1.0,
+      "after": 0.0
+    },
+    "xqcut": {
+      "before": 0.0,
+      "after": 0.0
+    },
+    "pt_min_pdg": {
+      "before": {},
+      "after": {}
+    },
+    "pt_max_pdg": {
+      "before": {},
+      "after": {}
+    },
+    "e_min_pdg": {
+      "before": {},
+      "after": {}
+    },
+    "e_max_pdg": {
+      "before": {},
+      "after": {}
+    },
+    "eta_min_pdg": {
+      "before": {},
+      "after": {}
+    },
+    "eta_max_pdg": {
+      "before": {},
+      "after": {}
+    },
+    "mxx_min_pdg": {
+      "before": {},
+      "after": {}
+    }
+  },
+  "settings": {
+    "nevents": 30000,
+    "iseed": 2301226,
+    "lpp1": 0,
+    "lpp2": 0,
+    "ebeam1": 500.0,
+    "ebeam2": 500.0,
+    "polbeam1": 0.0,
+    "polbeam2": 0.0,
+    "maxjetflavor": 4,
+    "ptj": 0.0,
+    "ptb": 0.0,
+    "ptheavy": 0.0,
+    "ptl": 0.0,
+    "misset": 0.0,
+    "etab": -1.0,
+    "etaj": -1.0,
+    "drbb": 0.0,
+    "drjj": 0.0,
+    "mmbb": 0.0,
+    "mmbbmax": -1.0,
+    "mmjj": 0.0,
+    "mmjjmax": -1.0,
+    "ickkw": 0,
+    "xqcut": 0.0,
+    "ktdurham": -1.0,
+    "ptlund": -1.0,
+    "cut_decays": false,
+    "auto_ptj_mjj": false,
+    "fixed_ren_scale": true,
+    "scale": 125.0,
+    "dsqrt_q2fact1": 125.0,
+    "dsqrt_q2fact2": 125.0,
+    "fixed_fac_scale1": true,
+    "fixed_fac_scale2": true,
+    "use_syst": false,
+    "event_norm": "average",
+    "custom_fcts": [],
+    "pdlabel": "none",
+    "boost_event": "False",
+    "fixed_fac_scale": true
+  },
+  "bypass_check_serialized_value_removed": "[]",
+  "optional_keys_absent": [
+    "req_acc"
+  ],
+  "secondary_stage_cards_disabled": [
+    "madanalysis5_parton_card.dat",
+    "madanalysis5_hadron_card.dat"
+  ],
+  "analysis_cuts_only": {
+    "eta_abs_max": 5.0,
+    "eta_boundary": "strict",
+    "mass_window_GeV": [
+      110.0,
+      130.0
+    ],
+    "mass_window_boundary": "inclusive",
+    "pairing": "any_valid_disjoint_opposite_charge",
+    "min_pt_GeV": 0.0,
+    "min_deltaR": 0.0,
+    "frame": "laboratory",
+    "objects": "four final-state massive bottom partons, not clustered detector jets"
+  },
+  "note": "No generator eta/mass/pT/DeltaR selection; final cuts are evaluated on LHE four-vectors."
+}

@@ -1,0 +1,3 @@
+COMMAND: ['/usr/bin/python3', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/configure_run.py', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/mumu_HH_mu', '--mg-root', '/home/hamzeh-khanpour/MG5_aMC_v3_6_6', '--component', 'mumu_HH_mu', '--config', '/home/hamzeh-khanpour/Documents/GitHub/Antimuon_Proton-Collider_muLHC/FCC_muon_electron/FCC_ue_MuC_HH4b_Final_v3/work/run_20261023T110957Z_bdbf5b3f/configuration.json', '--nevents', '30000', '--seed', '2301326']
+All registered generation cuts disabled; beam settings and full card audited.
+Model-consistent BR(H->bbbar): 0.8446400227319534

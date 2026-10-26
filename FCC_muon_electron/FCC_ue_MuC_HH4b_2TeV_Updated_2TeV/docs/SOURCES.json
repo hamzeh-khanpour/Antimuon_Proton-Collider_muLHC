@@ -1,0 +1,51 @@
+{
+  "checked_on": "2026-10-23",
+  "note": "Public 3.x source branch is mutable. Record and inspect the installed version at execution; no exact source commit is claimed here.",
+  "sources": [
+    {
+      "title": "MadGraph5_aMC@NLO official repository",
+      "url": "https://github.com/mg5amcnlo/mg5amcnlo",
+      "used_for": "Generator scope and source provenance; not a compatibility test"
+    },
+    {
+      "title": "MadGraph input syntax",
+      "url": "https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/InputEx",
+      "used_for": "Process syntax, explicit coupling orders and cautions on resonant diagram selection"
+    },
+    {
+      "title": "MG5 RunCard schema and writing implementation",
+      "url": "https://raw.githubusercontent.com/mg5amcnlo/mg5amcnlo/3.x/madgraph/various/banner.py",
+      "used_for": "Registered cuts, hidden fields, RunCardLO writing and remove-all-cut conventions"
+    },
+    {
+      "title": "MG5 default SM restriction inputs",
+      "url": "https://raw.githubusercontent.com/mg5amcnlo/mg5amcnlo/3.x/models/sm/restrict_default.dat",
+      "used_for": "Masses, Yukawa inputs and illustrative fixed Higgs width"
+    },
+    {
+      "title": "SM UFO Higgs partial-width expression",
+      "url": "https://raw.githubusercontent.com/mg5amcnlo/mg5amcnlo/3.x/models/sm/decays.py",
+      "used_for": "Tree-level H to bbbar partial-width convention"
+    },
+    {
+      "title": "MG5 run-card template",
+      "url": "https://raw.githubusercontent.com/mg5amcnlo/mg5amcnlo/3.x/Template/LO/Cards/run_card.dat",
+      "used_for": "Run-card settings and cut meanings"
+    },
+    {
+      "title": "MG5 cut implementation",
+      "url": "https://raw.githubusercontent.com/mg5amcnlo/mg5amcnlo/3.x/Template/LO/SubProcesses/cuts.f",
+      "used_for": "Cut implementation and frame considerations"
+    },
+    {
+      "title": "A standard format for Les Houches Event Files",
+      "url": "https://arxiv.org/abs/hep-ph/0609017",
+      "used_for": "Event/interprocess metadata structure and cross-section/weight conventions"
+    },
+    {
+      "title": "LHCHWG-2025-008 Higgs-Boson Decays: Updates",
+      "url": "https://arxiv.org/html/2510.24658v1",
+      "used_for": "Distinguishing precision-SM branching fractions around 58% from a specific tree-model fixed-width convention"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+
+\documentclass[11pt,a4paper]{article}
+
+
+\usepackage[margin=19mm,top=17mm,bottom=17mm]{geometry}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\usepackage{enumitem}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.24}
+\definecolor{Ink}{HTML}{000000}
+\definecolor{Accent}{HTML}{000000}
+\definecolor{Muted}{HTML}{000000}
+\definecolor{Pale}{HTML}{FFFFFF}
+\definecolor{PaleAlt}{HTML}{FFFFFF}
+
+
+\newcommand{\sectionlabel}[1]{%
+  \par\vspace{8pt}\noindent{\large\bfseries\color{Ink}#1}\par\vspace{2pt}%
+}
+
+
+\begin{document}
+	
+\color{Ink}
+
+\noindent{\fontsize{17.5}{21}\selectfont\bfseries FCC-ue and Muon Collider: $HH\!\to\!4b$ and $\nu\bar\nu 4b$ Rates}\par
+\vspace{4pt}
+{\color{Muted}\small Updated unpolarized beam configurations and preliminary LO parton-level cross sections}\par
+\vspace{4pt}{\color{Accent}\rule{\linewidth}{1pt}}\vspace{2pt}
+
+
+\noindent\textbf{Updated collider configurations.} This comparison uses
+$\mu^+(5\,\mathrm{TeV})+e^-(183\,\mathrm{GeV})$ at FCC-ue
+($\sqrt{s}=1.913\,\mathrm{TeV}$) and
+$\mu^+(1\,\mathrm{TeV})+\mu^-(1\,\mathrm{TeV})$ at the muon collider
+($\sqrt{s}=2.000\,\mathrm{TeV}$). Both beams are \textbf{unpolarized}
+in the present results
+%; the proposed 80\% $\mu^+$ polarization and $ZZ$-fusion process are not included.
+
+\sectionlabel{Beam-energy configurations}
+
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{48mm}X>{\raggedleft\arraybackslash}p{27mm}@{}}
+\toprule
+\textbf{Collider} & \textbf{Incoming beams} & \textbf{$\sqrt{s}$}\\
+\midrule
+FCC-ue ($\mu^+e^-$) & $E_{\mu^+}=5.0\,\mathrm{TeV}$, $E_{e^-}=183\,\mathrm{GeV}$ & $1.913\,\mathrm{TeV}$\\
+Muon collider ($\mu^+\mu^-$) & $E_{\mu^+}=E_{\mu^-}=1.0\,\mathrm{TeV}$ & $2.000\,\mathrm{TeV}$\\
+\bottomrule
+\end{tabularx}
+
+
+\sectionlabel{Fiducial selection}
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt,topsep=1pt,parsep=0pt]
+\item All four final-state $b/\bar b$ partons satisfy $|\eta_b^{\rm lab}|<5$.
+\item Form two \emph{disjoint}, opposite-charge $b\bar b$ pairs. Accept the event if either distinct pairing has \emph{both} masses in $110\le m_{b\bar b}^{(1,2)}\le130\,\mathrm{GeV}$; count each event once.
+\item \textbf{No minimum $p_T$ cut} is applied (in particular, the optional $5\,\mathrm{GeV}$ threshold is \emph{not} used).  
+\item These are parton-level estimates (no showering, jet clustering, tagging or detector simulation).
+\end{itemize}
+
+
+
+\sectionlabel{Cross sections before and after cuts} 
+
+{\small\color{Muted}All entries are in fb. After-cuts errors are approximate Monte Carlo statistical uncertainties only.}\vspace{3pt} 
+
+
+
+{\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{25mm}X>{\raggedleft\arraybackslash}p{24mm}>{\raggedleft\arraybackslash}p{43mm}@{}}
+\toprule[1pt]
+\textbf{Collider / beams} &
+\textbf{Final state} &
+\textbf{Before cuts} &
+\textbf{After cuts $\pm\delta_{\rm MC}$}\\
+\midrule
+
+
+
+\shortstack[l]{FCC-ue\\$\mu^+e^-$}
+& $\nu_e\bar\nu_\mu HH\to\nu_e\bar\nu_\mu\,4b$
+& $0.274277$
+& $\mathbf{0.264782\pm0.000430}$\\
+
+& $\nu_e\bar\nu_\mu\,4b$
+& $2.532894$
+& $\mathbf{0.281573\pm0.004625}$\\
+
+\midrule
+
+\shortstack[l]{Muon collider\\$\mu^+\mu^-$}
+& $\sum_{\ell=e,\mu,\tau}\nu_\ell\bar\nu_\ell\,HH(\to4b)$
+& $0.307077$
+& $\mathbf{0.306240\pm0.000542}$\\
+
+& $\sum_{\ell=e,\mu,\tau}\nu_\ell\bar\nu_\ell\,4b$
+& $2.745109$
+& $\mathbf{0.324799\pm0.005085}$\\
+
+\bottomrule[1pt]
+\end{tabularx}
+}
+
+
+
+\end{document}
+
+

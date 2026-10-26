@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  23 OCT 2026 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  25 OCT 2026 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**FCC_ue_MuC_HH4b_CERN.tex
-(./FCC_ue_MuC_HH4b_CERN.tex
+**FCC_ue_MuC_HH4b_CERN_2TeV.tex
+(./FCC_ue_MuC_HH4b_CERN_2TeV.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (d:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -289,8 +289,8 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box58
 )
-(./FCC_ue_MuC_HH4b_CERN.aux)
-\openout1 = `FCC_ue_MuC_HH4b_CERN.aux'.
+(./FCC_ue_MuC_HH4b_CERN_2TeV.aux)
+\openout1 = `FCC_ue_MuC_HH4b_CERN_2TeV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -424,13 +424,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (d:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 43.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 43.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 43.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
+4.
 
 (d:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
@@ -443,7 +449,7 @@ texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/texlive/2025/texmf-dist/fonts/enc/d
 vips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.
 enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/t
 exmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{d:/texlive/2025/texmf-dist/fonts/enc/d
-vips/lm/lm-mathex.enc}] (./FCC_ue_MuC_HH4b_CERN.aux)
+vips/lm/lm-mathex.enc}] (./FCC_ue_MuC_HH4b_CERN_2TeV.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -451,12 +457,12 @@ L3 programming layer <2025-01-18>
  ) 
 Here is how much of TeX's memory you used:
  6703 strings out of 473190
- 103272 string characters out of 5719978
- 546590 words of memory out of 5000000
+ 103332 string characters out of 5719978
+ 548605 words of memory out of 5000000
  29776 multiletter control sequences out of 15000+600000
  637549 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,14n,70p,1017b,340s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,14n,70p,1022b,340s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><d:/texlive/2025
 /texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/
 type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lm
@@ -470,7 +476,7 @@ t/fonts/type1/public/lm/lmr7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public
 exlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-
 dist/fonts/type1/public/lm/lmsy6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/pu
 blic/lm/lmsy7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on FCC_ue_MuC_HH4b_CERN.pdf (1 page, 208847 bytes).
+Output written on FCC_ue_MuC_HH4b_CERN_2TeV.pdf (1 page, 210911 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

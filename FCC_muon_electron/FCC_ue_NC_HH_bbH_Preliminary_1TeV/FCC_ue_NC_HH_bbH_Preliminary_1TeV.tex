@@ -1,0 +1,69 @@
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=18mm,top=17mm,bottom=16mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+
+\definecolor{ink}{HTML}{182B43}
+\definecolor{accent}{HTML}{007A81}
+\definecolor{muted}{HTML}{546779}
+\definecolor{light}{HTML}{EFF6F7}
+\definecolor{warn}{HTML}{8C5523}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\footnotesize\color{muted} FCC-ue / NC $4b$ / preliminary LO results}
+\fancyfoot[R]{\footnotesize\color{muted} 27 October 2026\quad|\quad\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4.5pt}
+\setlist[itemize]{leftmargin=14pt,itemsep=1.6pt,topsep=2pt,parsep=0pt}
+\newcommand{\ts}{\,}
+
+\begin{document}
+	
+{\color{accent}\rule{\linewidth}{2.2pt}}\vspace{5pt}
+
+{\LARGE\bfseries\color{ink} Neutral-current Higgs-related $4b$ production}\par
+{\large\color{muted} FCC-ue, unpolarized  $1$ TeV benchmark \quad\textbar\quad Preliminary LO results}\vspace{4pt}
+
+\begin{tcolorbox}[colback=light,colframe=light,boxrule=0pt,arc=2pt,left=10pt,right=10pt,top=6pt,bottom=6pt]
+\textbf{Beam configuration:}\ \ $E_{\mu^+}=2000$ GeV, $E_{e^-}=120$ GeV; $\sqrt{s}=979.796$ GeV; $P_{\mu^+}=P_{e^-}=0$.\\[3pt]
+\textbf{Generator:}\ MadGraph5\_aMC@NLO 3.6.4, LO,  Standard Model.
+\end{tcolorbox}
+
+{\large\bfseries\color{ink} Processes and cross sections}\vspace{1pt}
+
+\renewcommand{\arraystretch}{1.36}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{32mm} >{\raggedleft\arraybackslash}p{44mm}@{}}
+\toprule
+\textbf{Partonic production channel} & \textbf{Before $b$ cuts [fb]} & \textbf{After $b$ cuts [fb]}\\
+\midrule
+$\mu^+ e^-\!\to\!\mu^+e^- HH\to\mu^+e^-4b$ & $0.00643724$ & $0.00638240\pm0.00000990$\\
+$\mu^+ e^-\!\to\!\mu^+e^-b\bar b H\to\mu^+e^-4b$ & $0.02040127$ & $0.01292500\pm0.00005939$\\
+\bottomrule
+\end{tabularx}
+\vspace{1pt}
+
+
+{\large\bfseries\color{ink} Fiducial definition}\vspace{1pt}
+\begin{itemize}
+\item \textbf{Offline $4b$ selection:} four massive bottom partons with $|\eta_b|<5$; there must exist two disjoint opposite-charge $b\bar b$ pairings with $110\le m_{b\bar b}\le130$ GeV for both pairs. No minimum $b$-parton $p_T$ or $\Delta R$ cut.
+\end{itemize}
+
+
+\vfill
+{\color{accent}\rule{\linewidth}{0.8pt}}\par
+{\footnotesize\color{muted}\textbf{Audit trace:} 4 diagrams ($HH$); 86 diagrams ($b\bar bH$). Both MadGraph runs and offline analyses completed; results remain preliminary. Distinct outgoing charged-lepton states do not interfere with the previously studied charged-current neutrino final state.}
+\end{document}

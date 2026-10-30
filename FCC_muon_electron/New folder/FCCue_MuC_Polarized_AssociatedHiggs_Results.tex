@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm,top=20mm,bottom=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\pagestyle{empty}
+\definecolor{navy}{HTML}{183653}
+\definecolor{muted}{HTML}{526273}
+\definecolor{pale}{HTML}{EDF3F7}
+\definecolor{lineblue}{HTML}{CBD7E0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.28}
+\newcommand{\bandtitle}[1]{\par\vspace{3pt}\noindent{\large\bfseries\color{navy}#1}\par\vspace{2pt}{\color{lineblue}\hrule height .7pt}\vspace{4pt}}
+\newcommand{\crosssections}[2]{%
+\noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{52mm}@{}}
+\rowcolor{pale} Before four-bottom fiducial cuts & \(\mathbf{#1}\ \mathrm{fb}\)\\
+After four-bottom fiducial cuts & \(\mathbf{#2}\ \mathrm{fb}\)\\
+\end{tabularx}}
+\begin{document}
+
+{\color{navy}\LARGE\bfseries Polarized associated-Higgs production}\par
+\vspace{2pt}
+{\color{muted}\normalsize FCC-ue and muon-collider configurations \quad\textbullet\quad Preliminary leading-order results}
+\vspace{8pt}
+{\color{navy}\hrule height 1.2pt}
+\vspace{11pt}
+
+\bandtitle{1. FCC-ue: 5 TeV \(\mu^+\) on 183 GeV \(e^-\)}
+\noindent\textbf{Beam configuration:}\quad \(E_{\mu^+}=5\,\mathrm{TeV},\ E_{e^-}=183\,\mathrm{GeV},\ \sqrt{s}\simeq1.91\,\mathrm{TeV}.\)
+
+\noindent\textbf{Polarization:}\quad \(P_{\mu^+}=+80\%,\quad P_{e^-}=0.\)
+
+\noindent\textbf{Process:}
+\begin{equation*}
+\mu^+e^-\ \longrightarrow\ \mu^+e^-b\bar b H\ \longrightarrow\ \mu^+e^-b\bar b b\bar b.
+\end{equation*}
+\crosssections{0.101456}{0.081843\pm0.000255}
+
+\vspace{10pt}
+\bandtitle{2. Muon collider: 1 TeV \(\mu^+\) on 1 TeV \(\mu^-\)}
+\noindent\textbf{Beam configuration:}\quad \(E_{\mu^+}=1\,\mathrm{TeV},\ E_{\mu^-}=1\,\mathrm{TeV},\ \sqrt{s}=2\,\mathrm{TeV}.\)
+
+\noindent\textbf{Polarization:}\quad \(P_{\mu^+}=+80\%,\quad P_{\mu^-}=0.\)
+
+\noindent\textbf{Process:}
+\begin{equation*}
+\mu^+\mu^-\ \longrightarrow\ \mu^+\mu^-b\bar b H\ \longrightarrow\ \mu^+\mu^-b\bar b b\bar b.
+\end{equation*}
+\crosssections{0.116070}{0.094913\pm0.000570}
+
+\vspace{11pt}
+\bandtitle{Common fiducial selection}
+\noindent\begin{minipage}{\linewidth}
+	
+\begin{itemize}[leftmargin=18pt,topsep=2pt,itemsep=2pt,parsep=0pt]
+\item Four bottom quarks with \(\lvert\eta_b\rvert<5\).
+\item Two disjoint \(b\bar b\) invariant-mass windows: \(110<m_{b\bar b}^{(1)},m_{b\bar b}^{(2)}<130\,\mathrm{GeV}\).
+\item \textbf{No minimum bottom-quark transverse-momentum cut.}
+\item Outgoing charged leptons: \(p_T(\ell)>1\,\mathrm{GeV}\) at generator level.
+\end{itemize}
+\end{minipage}
+
+
+\end{document}

@@ -3,36 +3,40 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: TwoPhoton_Physics_LHeC_LHmuC.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 12 entries,
+Repeated entry---line 180 of file references.bib
+ : @article{CMS2024
+ :                 ,
+I'm skipping whatever remains of this entry
+You've used 15 entries,
             314 wiz_defined-function locations,
-            294 strings with 4055 characters,
-and the built_in function-call counts, 1212 in all, are:
-= -- 10
-> -- 99
+            318 strings with 4832 characters,
+and the built_in function-call counts, 1545 in all, are:
+= -- 12
+> -- 132
 < -- 0
-+ -- 33
-- -- 33
-* -- 184
-:= -- 159
++ -- 44
+- -- 44
+* -- 237
+:= -- 207
 add.period$ -- 0
-call.type$ -- 12
+call.type$ -- 15
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 12
+cite$ -- 15
 duplicate$ -- 0
-empty$ -- 132
-format.name$ -- 33
-if$ -- 196
+empty$ -- 164
+format.name$ -- 44
+if$ -- 249
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 41
-num.names$ -- 12
+newline$ -- 50
+num.names$ -- 15
 pop$ -- 0
 preamble$ -- 0
 purify$ -- 0
 quote$ -- 0
-skip$ -- 6
+skip$ -- 7
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -41,6 +45,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 12
+while$ -- 15
 width$ -- 0
-write$ -- 238
+write$ -- 295
+(There was 1 error message)

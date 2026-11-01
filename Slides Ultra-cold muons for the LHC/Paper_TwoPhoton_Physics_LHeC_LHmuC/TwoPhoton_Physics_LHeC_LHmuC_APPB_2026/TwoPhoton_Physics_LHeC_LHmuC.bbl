@@ -64,6 +64,14 @@ A.~V. Manohar, P.~Nason, G.~P. Salam and G.~Zanderighi, {\enquotehep{The Photon
   \href{https://doi.org/10.1007/JHEP12(2017)046}{doi:\nolinkurl{10.1007/JHEP12(2017)046}}
   \href{https://arxiv.org/abs/1708.01256}{arXiv:1708.01256 [hep-ph]}
 
+\bibitem{Andre:2025iar}
+K.~D.~J. Andr{\'e}, L.~Forthomme, B.~Holzer and K.~Piotrzkowski,
+  {\enquotehep{An electron--hadron collider at the high-luminosity LHC}},
+  \href{https://doi.org/10.1088/1367-2630/ae2e31}{{\em New J. Phys.}
+  \textbf{28}, 013001 (2026)}.
+  \href{https://doi.org/10.1088/1367-2630/ae2e31}{doi:\nolinkurl{10.1088/1367-2630/ae2e31}}
+  \href{https://arxiv.org/abs/2503.20475}{arXiv:2503.20475 [hep-ex]}
+
 \bibitem{CMS2024}
 {CMS Collaboration}, {\enquotehep{Observation of {$\gamma\gamma\to\tau\tau$} in
   Proton--Proton Collisions and Limits on the Anomalous Electromagnetic Moments
@@ -72,6 +80,21 @@ A.~V. Manohar, P.~Nason, G.~P. Salam and G.~Zanderighi, {\enquotehep{The Photon
   \textbf{87}, 107801 (2024)}.
   \href{https://doi.org/10.1088/1361-6633/ad6fcb}{doi:\nolinkurl{10.1088/1361-6633/ad6fcb}}
   \href{https://arxiv.org/abs/2406.03975}{arXiv:2406.03975 [hep-ex]}
+
+\bibitem{Buttazzo2026}
+D.~Buttazzo, G.~Levati, Y.~Ma, F.~Maltoni, P.~Paradisi and Z.~Wang,
+  {\enquotehep{Probing {$\tau$} lepton dipole moments at future Lepton
+  Colliders}}, (2026). \href{https://arxiv.org/abs/2604.14281}{arXiv:2604.14281
+  [hep-ph]}
+
+\bibitem{ATLAS2025}
+{ATLAS Collaboration}, {\enquotehep{A measurement of the high-mass
+  {$\tau\bar{\tau}$} production cross-section at {$\sqrt{s}=13$ TeV} with the
+  ATLAS detector and constraints on new particles and couplings}},
+  \href{https://doi.org/10.1007/JHEP10(2025)054}{{\em JHEP} \textbf{10}, 054
+  (2025)}.
+  \href{https://doi.org/10.1007/JHEP10(2025)054}{doi:\nolinkurl{10.1007/JHEP10(2025)054}}
+  \href{https://arxiv.org/abs/2503.19836}{arXiv:2503.19836 [hep-ex]}
 
 \bibitem{Eboli2006}
 O.~J.~P. {\'E}boli, M.~C. Gonzalez-Garcia and J.~K. Mizukoshi,

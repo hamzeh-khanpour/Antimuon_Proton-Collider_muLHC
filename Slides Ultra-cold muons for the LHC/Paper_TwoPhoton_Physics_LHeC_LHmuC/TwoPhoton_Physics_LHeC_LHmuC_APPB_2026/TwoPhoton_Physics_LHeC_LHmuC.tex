@@ -1,4 +1,9 @@
 
+%
+% Two-Photon Physics at a Lepton-Proton Collider at CERN
+% Hamzeh Khanpour; AGH University of Krakow
+% 
+
 \documentclass[11pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 
@@ -22,6 +27,7 @@
 \setlength\textfloatsep{9pt plus 2pt minus 2pt}
 \setlength\intextsep{8pt plus 2pt minus 2pt}
 \graphicspath{{figures/}}
+
 \newcommand{\lhmc}{LH$\mu$C}
 \newcommand{\sgg}{S_{\gamma\gamma}}
 \newcommand{\wgg}{W_{\gamma\gamma}}
@@ -54,22 +60,33 @@ Krak\'ow, Poland\par}
 \vspace{-4pt}
 
 
+
 %===========================================================
 \begin{abstract}
 \noindent
-High-energy photon-photon scattering is a complementary component of the 
-physics programme at future CERN lepton-proton facilities. We examine the equivalent-photon description 
-of elastic and proton-dissociative two-photon reactions and discuss their prospects at 
-the Large Hadron-electron Collider (LHeC) and a proposed muon-proton collider (LH$\mu$C). 
-The photon luminosity determines the rate of a hard two-photon subprocess. 
-Two illustrative precision benchmarks are emphasized: tau-lepton pair production as a probe of 
-electromagnetic dipole interactions, and $W$-boson pair production as a test of the 
-electroweak quartic gauge sector. We distinguish previously studied collider benchmarks from newer, 
-higher-energy muon-beam proposals and discuss how high-invariant-mass 
-distributions may amplify beyond-Standard-Model effects. Loop-induced neutral gauge-boson production, 
-top pairs, charged electroweak states and light-by-light scattering provide 
-additional opportunities. The quantitative interpretation of anomalous-coupling effects requires 
-consistent photon-emission selections, effective-field-theory validity checks and detector-level studies.
+High-energy photon-photon scattering is a complementary component
+of the physics programme at future CERN lepton-proton facilities.
+We examine the equivalent-photon description of elastic and
+proton-dissociative two-photon reactions and investigate their
+physics potential at the Large Hadron-electron Collider (LHeC)
+and the proposed muon-proton collider (LH$\mu$C). 
+The photon-photon luminosity determines the
+available rates for hard two-photon subprocesses.
+Two representative precision benchmarks are emphasized:
+tau-lepton pair production as a probe of anomalous
+electromagnetic dipole interactions, and $W$-boson pair
+production as a test of the electroweak quartic gauge sector.
+We examine how the higher collision energies and harder
+photon-photon luminosity spectra of the LH$\mu$C, compared
+with the LHeC, extend the accessible high-invariant-mass
+region and can enhance sensitivity to energy-dependent
+beyond Standard Model contributions.
+Loop-induced neutral gauge-boson production, top-quark pairs,
+charged electroweak states, and light-by-light scattering
+provide additional physics opportunities.
+Quantitative sensitivity projections require consistent
+photon-emission selections, effective-field-theory validity
+checks, and realistic detector-level studies.
 \end{abstract}
 %===========================================================
 
@@ -83,11 +100,13 @@ consistent photon-emission selections, effective-field-theory validity checks an
 %===========================================================
 
 Photon-photon fusion offers a particularly transparent route to the production of 
-electrically charged and electroweakly coupled final states. A relativistic lepton and proton radiate photons, 
+electrically charged and electroweakly coupled final states. 
+A relativistic lepton and proton radiate photons, 
 which subsequently undergo a hard collision, $\gamma\gamma\to X$. The radiating particles may 
-remain intact, giving a fully exclusive topology, or the proton may dissociate into a low- or high-mass hadronic system. 
+remain intact, giving a fully exclusive topology, or the proton 
+may dissociate into a low- or high-mass hadronic system. 
 This separation of electromagnetic emission and the short-distance subprocess underlies the 
-equivalent photon approximation (EPA)~\cite{Budnev1975,Drees1989}.
+equivalent photon approximation (EPA)~\cite{Budnev1975,Drees1989}. 
 
 The proposed Large Hadron-electron Collider (LHeC) combines a lepton beam of order $50\GeV$ with 
 the $7\TeV$ LHC proton beam, yielding $\sqrt{s_{ep}}\simeq1.2\TeV$~\cite{LHeCCDR2012,LHeC2025}. 
@@ -96,58 +115,37 @@ has one rather than two colored incoming beams and is expected to have much less
 pileup than high-luminosity proton-proton collisions. Neither advantage removes 
 detector inefficiencies, proton dissociation or all soft-interaction uncertainties, but both simplify 
 the experimental interpretation of photon-fusion signatures~\cite{ForthommeDIS2024,ForthommeICHEP2024}.
-
-A complementary LH$\mu$C concept uses energetic positive muons against LHC proton beams. 
-%Early two-photon studies employed $E_{\mu}=0.5\TeV$, corresponding to $\sqrt{s_{\mu p}}\simeq3.74\TeV$. 
-The recent proposal of Ref.~\cite{Piotrzkowski2026} emphasizes $1$ and $2\TeV$ muon beams, leading to $\sqrt{s_{\mu p}}\simeq5.3$ and $7.5\TeV$, 
-respectively, with a projected average luminosity approaching $10^{34}\,\mathrm{cm}^{-2}\mathrm{s}^{-1}$. 
-These are machine scenarios: published photon-fusion predictions must be associated with the 
-particular energy and photon selections actually used in each calculation.
-
-We outline the EPA and the energy dependence of its luminosity function, and focus on two physics 
-cases that connect Standard-Model (SM) cross sections with higher-dimensional 
-interactions: $\gamma\gamma\to\tau^+\tau^-$ and $\gamma\gamma\to W^+W^-$. Other charged and neutral final 
-states complete a broader programme in which a high-energy photon spectrum, clean event 
-topology and differential observables are complementary assets.
+A complementary LH$\mu$C concept employs energetic positive-muon
+beams colliding with the LHC proton beam. The recent proposal
+of Ref.~\cite{Piotrzkowski2026} emphasizes muon-beam energies
+of $1$ and $2\TeV$, corresponding to centre-of-mass energies
+of $\sqrt{s_{\mu p}}\simeq 5.3$ and $7.5\TeV$, respectively,
+with a projected average luminosity approaching
+$10^{34}\,\mathrm{cm}^{-2}\mathrm{s}^{-1}$.  
 
 
-
-%===========================================================
-\section{Theoretical framework for two-photon interactions}
-
-\subsection{Equivalent photon approximation}
-%===========================================================
-
-
-For $\ell=e^-$ or $\mu^+$, the generic reaction is $\ell p\to\ell+X+p^{(*)}$. 
-In the quasi-real limit the cross section can be written as a convolution of photon 
-spectra and the elementary photon-photon cross section,
-
-%--------------------------------------
-\begin{equation}
-\sigma_{\ell p\to\ell Xp^{(*)}} = \int_0^1dy_\ell\int_0^1dy_p\,\Phi_\ell(y_\ell)\Phi_p(y_p)\,\hat\sigma_{\gamma\gamma\to X}(\wgg),
-\label{eq:epa}
-\end{equation}
-%--------------------------------------
-
-where $y_i$ is the fractional energy carried by the photon and $\Phi_i(y_i)=dN_{\gamma/i}/dy_i$. 
-Here $\wgg$ denotes the diphoton invariant mass, with $\wgg^2\simeq y_\ell y_p s_{\ell p}$ for 
-collinear, quasi-real emission. Its natural generalization is
-
-%--------------------------------------
-\begin{equation}
-\begin{aligned}
-\sigma_{\ell p}&=\int_{W_{\rm thr}}^{\sqrt{s_{\ell p}}}dW\,\sgg(W)\,\hat\sigma_{\gamma\gamma\to X}(W),\\
-\sgg(W)&=\frac{2W}{s_{\ell p}}\int_{W^2/s_{\ell p}}^1\frac{dy_\ell}{y_\ell}\,\Phi_\ell(y_\ell)\Phi_p\!\left(\frac{W^2}{s_{\ell p}y_\ell}\right).
-\end{aligned}
-\label{eq:lum}
-\end{equation}
-%--------------------------------------
-
-Thus $\sgg$ has dimensions of inverse energy, and its integral over $W$ gives a 
-dimensionless effective two-photon luminosity fraction. Equation~(\ref{eq:lum}) is a 
-collinear EPA identity, not an exact statement at arbitrarily high photon virtuality.
-
+In this work, we consider three LH$\mu$C configurations
+at $\sqrt{s_{\mu p}}\simeq 3.7$, $5.3$, and $7.5\TeV$
+and investigate their two-photon physics potential
+in comparison with the LHeC. We examine the equivalent
+photon approximation (EPA) and the energy dependence of
+the photon-photon luminosity spectrum, emphasizing the
+enhanced high-invariant-mass reach of the LH$\mu$C and
+its implications for precision electroweak measurements
+and searches for physics beyond the Standard Model (BSM).
+Particular attention is devoted to two representative
+processes: $\gamma\gamma\to\tau^+\tau^-$, which provides
+sensitivity to anomalous tau electromagnetic dipole moments,
+and $\gamma\gamma\to W^+W^-$, which probes the electroweak
+quartic gauge sector. Representative Standard Model (SM)
+Feynman diagrams for these photon-induced processes in
+lepton-proton collisions are shown in
+Fig.~\ref{fig:topologies}. Additional channels, including
+neutral gauge-boson pairs, top-quark pairs, and charged
+BSM states, further extend the physics opportunities,
+particularly in the high-energy region where the harder
+photon-photon luminosity spectrum of the LH$\mu$C
+offers significant advantages over the LHeC.
 
 
 
@@ -174,18 +172,75 @@ collinear EPA identity, not an exact statement at arbitrarily high photon virtua
 \caption{Representative Standard Model Feynman diagrams
 for photon-induced $\tau^+\tau^-$ (left) and $W^+W^-$ (right)
 production in lepton--proton collisions,
-$\ell p\to\ell Xp^{(*)}$, with $\ell=e,\mu^+$.
-%The hard subprocess proceeds through $\gamma^*\gamma^*\to X$.
-}
+$\ell p\to\ell Xp^{(*)}$, with $\ell=e,\mu^+$.}
 \label{fig:topologies}
 \end{figure}
+
+
+
+
+%===========================================================
+\section{Theoretical framework for two-photon interactions}
+
+\subsection{Equivalent photon approximation}
+%===========================================================
+
+
+For $\ell=e^-$ or $\mu^+$, the generic reaction is $\ell p\to\ell+X+p^{(*)}$. 
+In the quasi-real limit the cross section can be written as a convolution of photon 
+spectra and the elementary photon-photon cross section,
+
+%--------------------------------------
+\begin{equation}
+\sigma_{\ell p\to\ell Xp^{(*)}} = \int_0^1dy_\ell\int_0^1dy_p\,\Phi_\ell(y_\ell)\Phi_p(y_p)\,\hat\sigma_{\gamma\gamma\to X}(\wgg),
+\label{eq:epa}
+\end{equation}
+%--------------------------------------
+
+
+where $y_i$ denotes the fraction of the incoming particle's
+longitudinal momentum carried by the emitted photon, and
+$\Phi_i(y_i)=dN_{\gamma/i}/dy_i$ represents the equivalent-photon
+flux of the emitting particle $i=\ell,p$, with $\ell=e,\mu$.
+Thus, $\Phi_\ell(y_\ell)$ and $\Phi_p(y_p)$ describe the
+photon spectra associated with the lepton and proton beams,
+respectively. 
+The quantity
+$\hat{\sigma}_{\gamma\gamma\to X}(\wgg)$ denotes the
+elementary cross section for the hard photon-photon
+subprocess $\gamma\gamma\to X$, evaluated at $\wgg$. 
+Here $\wgg$ denotes the diphoton invariant mass, with $\wgg^2\simeq y_\ell y_p s_{\ell p}$ for 
+collinear, quasi-real emission. Its natural generalization is
+
+%--------------------------------------
+\begin{equation}
+\begin{aligned}
+\sigma_{\ell p}&=\int_{W_{\rm thr}}^{\sqrt{s_{\ell p}}}dW\,\sgg(W)\,\hat\sigma_{\gamma\gamma\to X}(W),\\
+\sgg(W)&=\frac{2W}{s_{\ell p}}\int_{W^2/s_{\ell p}}^1\frac{dy_\ell}{y_\ell}\,\Phi_\ell(y_\ell)\Phi_p\!\left(\frac{W^2}{s_{\ell p}y_\ell}\right).
+\end{aligned}
+\label{eq:lum}
+\end{equation}
+%--------------------------------------
+
+Thus, $S_{\gamma\gamma}(W)$ has dimensions of inverse energy,
+and its integral over $W$ represents the dimensionless
+effective photon-photon luminosity. This expression is
+derived within the collinear equivalent-photon approximation,
+where $W_{\gamma\gamma}^2\simeq y_\ell y_p s_{\ell p}$.
+For non-negligible photon virtualities, corrections to the
+two-photon invariant-mass kinematics and the virtuality
+dependence of the hard subprocess must be taken into account,
+as discussed in Sec.\ref{sec:Validity_EPA}. 
+
+
 
 
 %===========================================================
 \subsection{Equivalent-photon spectra and photon virtuality}
 %===========================================================
 
-For a point-like lepton of mass $m_\ell$, an illustrative virtuality-integrated EPA spectrum is~\cite{Budnev1975}
+For a point-like lepton of mass $m_\ell$, an illustrative 
+virtuality-integrated EPA spectrum is~\cite{Budnev1975} 
 
 %--------------------------------------
 \begin{equation}
@@ -225,15 +280,27 @@ M_N^2-m_p^2=Q_p^2\left(\frac{1}{x}-1\right).
 \end{equation}
 %--------------------------------------
 
-An expanded dissociation phase space can raise the predicted rate, but it changes 
-the final-state topology and increases sensitivity to the structure-function treatment. 
-In particular, an inclusive photon PDF and a proton-tagged elastic flux should not be 
-regarded as interchangeable inputs.
+
+Extending the allowed proton-dissociation mass $M_N$ and photon
+virtuality $Q_p^2$ ranges can increase the photon-induced
+production cross section by enlarging the accessible inelastic
+phase space. However, the resulting final state contains a
+hadronic dissociation system, and the corresponding photon
+flux depends on the proton electromagnetic structure functions
+and the imposed kinematic selections. Consequently, elastic
+and proton-dissociative contributions must be treated
+consistently and distinguished when comparing the LHeC and
+LH$\mu$C predictions. In particular, an inclusive photon PDF,
+which may contain both elastic and inelastic contributions,
+cannot be directly substituted for a proton-tagged elastic
+photon flux without accounting for the different final-state
+definitions and acceptance requirements.
+
 
 
 
 %===========================================================
-\subsection{Validity of the approximation}
+\subsection{Validity of the approximation}\label{sec:Validity_EPA}
 %===========================================================
 
 For $Q_\ell^2,Q_p^2\ll W_{\gamma\gamma}^2$, transverse quasi-real
@@ -295,13 +362,27 @@ between the LHeC and LH$\mu$C configurations.
 \section{Photon-photon luminosity at the LHeC and LH$\mu$C}
 %===========================================================
 
-Table~\ref{tab:machines} summarizes representative beam configurations. 
-The relation $s_{\ell p}\simeq4E_\ell E_p$ is sufficient for the displayed 
-high-energy values. The $0.5\TeV$ muon scenario was used in earlier 
-phenomenological studies, while the $1$ and $2\TeV$ configurations are highlighted 
-in the newer machine proposal~\cite{Piotrzkowski2026}. A higher $\sqrt{s_{\ell p}}$ 
-permits a harder photon--photon spectrum; however, neither the shape nor 
-normalization of $\sgg$ can be inferred from $\sqrt{s}$ alone.
+
+Table~\ref{tab:machines} summarizes the representative
+beam configurations considered in this work for the LHeC
+and the proposed LH$\mu$C
+~\cite{LHeC2025,Andre:2025iar,Piotrzkowski2026}.
+Assuming a $7\TeV$ proton beam, the corresponding
+centre-of-mass energies are obtained from the
+high-energy approximation $s_{\ell p}\simeq 4E_\ell E_p$.
+For the LH$\mu$C, we consider three muon-beam energies:
+$500\GeV$ (option 1), $1\TeV$ (baseline), and
+$2\TeV$ (option 2), corresponding to
+$\sqrt{s_{\mu p}}\simeq 3.7$, $5.3$, and $7.5\TeV$,
+respectively. The baseline and higher-energy configurations
+are emphasized in the recent machine proposal
+of Ref.~\cite{Piotrzkowski2026}.
+Increasing the muon-beam energy extends the accessible
+photon-photon invariant-mass range, while the shape
+and normalization of the photon-photon luminosity
+spectrum also depend on the photon fluxes and the
+imposed kinematic selections.
+
 
 
 %--------------------------------------------------------------
@@ -313,7 +394,7 @@ normalization of $\sgg$ can be inferred from $\sqrt{s}$ alone.
 \small
 \caption{
 Representative LHeC and LH$\mu$C benchmark configurations,
-assuming a $7\TeV$ proton beam~\cite{Piotrzkowski2026}.}
+assuming a $7\TeV$ proton beam~\cite{LHeC2025,Piotrzkowski2026,Andre:2025iar}.}
 \label{tab:machines}
 \setlength{\tabcolsep}{7pt}
 \renewcommand{\arraystretch}{1.12}
@@ -323,16 +404,11 @@ Configuration
 & $E_\ell$ [GeV]
 & $\sqrt{s_{\ell p}}$ [TeV] \\
 \midrule
-LHeC ($e^-p$)
-& 20   & 0.75 \\
-LHeC ($e^-p$)
-& 50   & 1.18 \\
-LH$\mu$C (option 1)
-& 500  & 3.74 \\
-LH$\mu$C (baseline)
-& 1000 & 5.29 \\
-LH$\mu$C (option 2)
-& 2000 & 7.48 \\
+LHeC ($e^-p$) & 20   & 0.75 \\
+LHeC ($e^-p$) & 50   & 1.18 \\
+LH$\mu$C (option 1)  & 500  & 3.74 \\
+LH$\mu$C (baseline)  & 1000 & 5.29 \\
+LH$\mu$C (option 2)  & 2000 & 7.48 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -371,8 +447,8 @@ two-photon invariant mass $W$ at the LHeC
 ($E_e=50~\mathrm{GeV}$) and LH$\mu$C
 ($E_\mu=500$ and $1000~\mathrm{GeV}$),
 assuming a $7~\mathrm{TeV}$ proton beam.
-The higher-energy muon--proton configurations
-provide an enhanced photon--photon luminosity
+The higher-energy muon-proton configurations
+provide an enhanced photon-photon luminosity
 in the large-$W$ region, extending the
 kinematic reach for heavy final states.}
 \label{fig:sgg}
@@ -414,7 +490,6 @@ $\ell p\to\ell Xp$ production cross sections,
 with $X=\tau^+\tau^-$ or $W^+W^-$,
 before decay branching fractions and detector effects.}
 \label{tab:rates}
-	
 \small
 \setlength{\tabcolsep}{7pt}
 \renewcommand{\arraystretch}{1.15}
@@ -437,15 +512,26 @@ LH$\mu$C
 %--------------------------------------
 
 
+The elastic photon-induced cross sections presented in
+Table~\ref{tab:rates} illustrate the energy dependence
+of tau-pair production at the LHeC and LH$\mu$C.
+The total cross section increases from $50.40\pb$
+at the LHeC ($\sqrt{s_{ep}}\simeq 1.2\TeV$)
+to $58.5\pb$ and $70.3\pb$ at the LH$\mu$C
+configurations with $\sqrt{s_{\mu p}}\simeq 3.7$
+and $5.3\TeV$, respectively.
+Although the increase in the integrated cross section
+is relatively modest, the higher collision energies
+extend the accessible diphoton invariant-mass range.
+The photon-photon luminosity spectra shown in
+Fig.~\ref{fig:sgg} further illustrate the enhanced
+high-invariant-mass reach of the LH$\mu$C compared
+with the LHeC. This feature is particularly relevant
+for the high-mass tail of the $M_{\tau\tau}$
+distribution, where contributions from anomalous
+tau electromagnetic interactions may become
+more pronounced.
 
-The collaborative benchmark values collected in Table~\ref{tab:rates} illustrate a 
-modest increase in the total elastic tau-pair rate as the muon beam energy is raised. 
-Since the underlying acceptance and virtuality definitions could not be recovered here 
-in a machine-readable form, these numbers are treated as \emph{indicative reference inputs}, 
-not independently reproduced predictions; they are intentionally not combined with 
-the separate illustrative flux calculation of Fig.~\ref{fig:sgg}. The key physical 
-observation is more robust than any single integral: more energetic photon-photon 
-collisions extend the measurable $M_{\tau\tau}$ distribution beyond a low-mass dominated inclusive sample.
 
 
 
@@ -454,60 +540,162 @@ collisions extend the measurable $M_{\tau\tau}$ distribution beyond a low-mass d
 \subsection{Dipole interactions and their EFT interpretation}
 %===========================================================
 
+The coupling of an on-shell tau lepton to a quasi-real photon can
+be modified by anomalous electromagnetic dipole interactions,
 
-A convenient on-shell description of non-standard tau electromagnetic interactions uses
 
 %--------------------------------------
 \begin{equation}
-\mathcal L_{\tau\tau\gamma}^{\rm dip}=\frac{e\,\delta a_\tau}{4m_\tau}\,\bar\tau\sigma^{\mu\nu}\tau F_{\mu\nu}-\frac{i\,d_\tau}{2}\,\bar\tau\sigma^{\mu\nu}\gamma_5\tau F_{\mu\nu},
+\mathcal L_{\tau\tau\gamma}^{\rm dip}
+=
+\frac{e\,\delta a_\tau}{4m_\tau}
+\bar\tau\sigma^{\mu\nu}\tau F_{\mu\nu}
+-
+\frac{i\,d_\tau}{2}
+\bar\tau\sigma^{\mu\nu}\gamma_5\tau F_{\mu\nu},
 \label{eq:dipole}
 \end{equation}
 %--------------------------------------
 
 
-where $\delta a_\tau$ denotes the deviation from the SM magnetic moment and $d_\tau$ 
-is the electric dipole moment; the sign conventions are conventional and must be kept 
-fixed when matching amplitudes. The magnetic term is CP even, whereas the electric term 
-violates CP. At scales above electroweak symmetry breaking, the corresponding new-physics 
-interactions may be embedded in gauge-invariant dimension-six SMEFT operators,
+where $\delta a_\tau=a_\tau-a_\tau^{\rm SM}$ denotes the
+new-physics contribution to the anomalous magnetic moment,
+$a_\tau=(g_\tau-2)/2$, and $d_\tau$ is the electric dipole
+moment. The magnetic interaction is CP even, whereas the electric
+dipole term is CP odd. In the Standard Model effective field theory
+(SMEFT), these interactions arise from the electroweak-gauge-invariant
+dimension-six operators~\cite{CMS2024,Buttazzo2026}
 
 
 %--------------------------------------
 \begin{equation}
-\mathcal O_{eB}^{33}=(\bar L_3\sigma^{\mu\nu}\tau_R)H B_{\mu\nu},\qquad \mathcal O_{eW}^{33}=(\bar L_3\sigma^{\mu\nu}\tau_R)\sigma^I H W^I_{\mu\nu},
+\begin{aligned}
+\mathcal O_{eB}^{33}
+&= (\bar L_3\sigma^{\mu\nu}\tau_R)H B_{\mu\nu},\\
+\mathcal O_{eW}^{33}
+&= (\bar L_3\sigma^{\mu\nu}\tau_R)\sigma^I H W^I_{\mu\nu},
+\end{aligned}
 \label{eq:tauops}
 \end{equation}
 %--------------------------------------
 
 
-with $\Delta\mathcal L=(C_{eB}^{33}\mathcal O_{eB}^{33}+C_{eW}^{33}\mathcal O_{eW}^{33})/\Lambda^2+\mathrm{h.c.}$. 
-The physical photon coupling depends on the weak mixing angle and on the real and imaginary parts 
-of the Wilson-coefficient combination. The exact numerical matching should follow the 
-normalization chosen for the SU(2) generators and the dipole vertex.
+with $\Delta\mathcal L=(C_{eB}^{33}\mathcal O_{eB}^{33}
++C_{eW}^{33}\mathcal O_{eW}^{33})/\Lambda^2+\mathrm{h.c.}$.
+Here $L_3$ is the third-generation left-handed lepton doublet,
+$H$ is the Higgs doublet, and $B_{\mu\nu}$ and $W^I_{\mu\nu}$
+are the electroweak field strengths; $\sigma^I$ are the Pauli
+matrices. After electroweak symmetry breaking, the photon-dipole
+combination is
 
 
+%--------------------------------------
+\begin{equation}
+\begin{aligned}
+C_{\tau\gamma}
+&=c_W C_{eB}^{33}-s_W C_{eW}^{33},\\
+\delta a_\tau
+&=\frac{2\sqrt{2}\,m_\tau v}{e\Lambda^2}
+\operatorname{Re}C_{\tau\gamma},\\
+d_\tau
+&=-\frac{\sqrt{2}\,v}{\Lambda^2}
+\operatorname{Im}C_{\tau\gamma},
+\end{aligned}
+\label{eq:tau_matching}
+\end{equation}
+%--------------------------------------
+
+
+where $s_W=\sin\theta_W$, $c_W=\cos\theta_W$ and
+$v\simeq246\,\mathrm{GeV}$. The sign in the final line follows
+the electric-dipole convention of Eq.~\eqref{eq:dipole}.
 
 
 %===========================================================
 \subsection{High-mass distributions and sensitivity}
 %===========================================================
 
-The amplitude may be organized schematically as $\mathcal M=\mathcal M_{\rm SM}+\delta a_\tau\mathcal M_a+d_\tau\mathcal M_d$. 
-Consequently a differential distribution contains interference and higher-order dipole terms, 
-while the CP-odd interference may vanish in sufficiently inclusive CP-even observables. 
-The behavior of $d\sigma/dM_{\tau\tau}$, rather than only the integrated cross section, 
-can therefore improve the separation of anomalous scenarios from the SM. This enhancement 
-must be weighed against the rapid decrease in photon luminosity and the efficiency of 
-reconstructing visible tau decays with escaping neutrinos.
 
-Earlier exploratory plots used $\delta a_\tau=0.008$, whereas an updated study 
-considered $\delta a_\tau=5\times10^{-4}$. Because the original numerical files 
-and curve definitions are not available in the present portable package, we do not 
-reproduce or relabel the corresponding distributions. A genuine exclusion analysis 
-would need binned event yields, backgrounds, systematic uncertainties, correlations 
-and an explicit treatment of the dipole operator's range of validity. It is therefore 
-more accurate here to identify the high-$M_{\tau\tau}$ region as a 
-promising \emph{observable} than to advertise a new confidence-level reach.
+At leading order in the anomalous couplings, the
+$\gamma\gamma\to\tau^+\tau^-$ amplitude may be expressed
+schematically as
+$\mathcal M\simeq\mathcal M_{\rm SM}
++\delta a_\tau\mathcal M_a+d_\tau\mathcal M_d$.
+The resulting differential rate contains interference with the
+SM amplitude and terms quadratic in the dipole couplings;
+additional higher powers can arise when both photon--tau
+vertices contain anomalous insertions. The magnetic dipole
+interaction can modify CP-even invariant-mass distributions
+through interference, whereas the interference linear in
+$d_\tau$ cancels for CP-even observables with CP-symmetric
+phase-space integration. Dedicated CP-odd observables can
+instead provide linear sensitivity to the electric dipole moment.
+
+Figure~\ref{fig:tau_dipole_spectra} compares the Standard Model
+prediction with the illustrative deformation
+$\delta a_\tau=0.005$ in the $\tau^+\tau^-$ invariant-mass
+spectrum at the LHeC ($\sqrt{s_{ep}}\simeq1.2\,\mathrm{TeV}$)
+and the LH$\mu$C baseline
+($\sqrt{s_{\mu p}}\simeq5.3\,\mathrm{TeV}$).
+The spectra are dominated by the lower-mass region, where
+the SM and anomalous-coupling curves nearly coincide.
+The ratio panels show that the relative deformation grows
+towards larger $M_{\tau\tau}$, where the dipole interaction
+becomes more influential. The higher-energy LH$\mu$C
+configuration accesses a harder photon--photon spectrum
+and offers a potentially more effective high-mass lever arm
+than the LHeC, subject to luminosity and acceptance.
+
+%-----------------------------------------------------------
+% Differential tau-pair distributions
+%-----------------------------------------------------------
+\begin{figure}[t]
+\centering
+\begin{minipage}{0.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/LHeC_tautau.jpg}
+\par\vspace{1mm}
+{\small (a) LHeC, $\sqrt{s_{ep}}\simeq1.2\,\mathrm{TeV}$}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/LHmuC_tautau.jpg}
+\par\vspace{1mm}
+{\small (b) LH$\mu$C, $\sqrt{s_{\mu p}}\simeq5.3\,\mathrm{TeV}$}
+\end{minipage}
+\caption{
+Photon-induced $\tau^+\tau^-$ invariant-mass
+spectra for the Standard Model and the illustrative
+anomalous magnetic dipole benchmark $\delta a_\tau=0.005$.
+The lower panels display the ratio of the anomalous-coupling
+to the SM prediction, highlighting the increasing relative
+impact at large $M_{\tau\tau}$. The insets show the
+$\tau$-pair rapidity distributions. These are benchmark-level
+differential predictions, not detector-level sensitivity limits.}
+\label{fig:tau_dipole_spectra}
+\end{figure}
+%-----------------------------------------------------------
+
+For context, CMS photon-induced $\tau$-pair production and
+ATLAS high-mass $\tau$-pair measurements constrain the
+\emph{total} anomalous magnetic moment to
+$-0.0022<a_\tau<0.0041$ and
+$-0.0024<a_\tau<0.0047$, respectively, at $95\%$
+confidence level~\cite{CMS2024,ATLAS2025}.
+The choice $\delta a_\tau=0.005$ in
+Fig.~\ref{fig:tau_dipole_spectra} is therefore intended to
+illustrate the spectral response, not to represent a new
+exclusion limit or a presently allowed one-coefficient
+benchmark. Quantitative projections for the LH$\mu$C
+require realistic integrated luminosities, tau-decay
+reconstruction, background and systematic-uncertainty
+modelling, and checks of EFT validity. Extending the
+same differential analysis to the $3.7$ and $7.5\,\mathrm{TeV}$
+LH$\mu$C configurations will allow a consistent comparison
+of all three scenarios with the LHeC.
+
+
 
 
 %===========================================================

@@ -1,0 +1,82 @@
+% file: lp_yy_WW.tex
+\documentclass[11pt,border=6pt]{standalone}
+\usepackage{feynmp-auto}
+\begin{document}
+	
+	\begin{fmffile}{lp_yy_WW}
+		
+		%==============================================================================
+		% Figure: gamma gamma -> W+ W- in lepton-proton collisions
+		%==============================================================================
+		
+		\begin{fmfchar*}(240,95)
+			
+			%---------------- Left panel: Elastic ----------------
+			\begin{fmfgraph*}(105,72)
+				\fmfleft{i1,i2}
+				\fmfright{o1,o2,o3,o4}
+				
+				% incoming / outgoing beam labels
+				\fmflabel{$\ell$}{i1}
+				\fmflabel{$p$}{i2}
+				\fmflabel{$\ell$}{o1}
+				\fmflabel{$p$}{o4}
+				\fmflabel{$W^+$}{o2}
+				\fmflabel{$W^-$}{o3}
+				
+				% beam lines
+				\fmf{fermion}{i1,v1,o1}
+				\fmf{fermion}{i2,v2,o4}
+				
+				% hard interaction blob
+				\fmfv{decor.shape=circle,decor.filled=shaded,decor.size=14thick}{h}
+				
+				% photons entering hard interaction
+				\fmf{photon,label=$\gamma^\ast$,label.side=left,tension=1.0}{v1,h}
+				\fmf{photon,label=$\gamma^\ast$,label.side=left,tension=1.0}{v2,h}
+				
+				% W bosons
+				\fmf{boson,tension=1.1}{h,o2}
+				\fmf{boson,tension=1.1}{h,o3}
+				
+				% title
+				\fmfv{label={\Large\bf Elastic},label.dist=8}{vpath(__v1,__o1)}
+			\end{fmfgraph*}
+			
+			%---------------- Right panel: Proton dissociation ----------------
+			\hspace{1.2cm}
+			\begin{fmfgraph*}(105,72)
+				\fmfleft{i1,i2}
+				\fmfright{o1,o2,o3,o4}
+				
+				% incoming / outgoing beam labels
+				\fmflabel{$\ell$}{i1}
+				\fmflabel{$p$}{i2}
+				\fmflabel{$\ell$}{o1}
+				\fmflabel{$N^\ast$}{o4}
+				\fmflabel{$W^+$}{o2}
+				\fmflabel{$W^-$}{o3}
+				
+				% beam lines
+				\fmf{fermion}{i1,v1,o1}
+				\fmf{fermion}{i2,v2,o4}
+				
+				% hard interaction blob
+				\fmfv{decor.shape=circle,decor.filled=shaded,decor.size=14thick}{h}
+				
+				% photons entering hard interaction
+				\fmf{photon,label=$\gamma^\ast$,label.side=left,tension=1.0}{v1,h}
+				\fmf{photon,label=$\gamma^\ast$,label.side=left,tension=1.0}{v2,h}
+				
+				% W bosons
+				\fmf{boson,tension=1.1}{h,o2}
+				\fmf{boson,tension=1.1}{h,o3}
+				
+				% title
+				\fmfv{label={\Large\bf Proton dissociation},label.dist=8}{vpath(__v1,__o1)}
+			\end{fmfgraph*}
+			
+		\end{fmfchar*}
+		
+	\end{fmffile}
+\end{document}

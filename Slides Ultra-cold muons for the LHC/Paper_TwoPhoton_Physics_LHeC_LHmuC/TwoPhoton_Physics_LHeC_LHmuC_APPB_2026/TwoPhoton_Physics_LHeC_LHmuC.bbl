@@ -1,71 +1,95 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{99}
+\small
+\providecommand{\enquotehep}[1]{``#1''}
 
 \bibitem{Budnev1975}
-V.~M. Budnev, I.~F. Ginzburg, G.~V. Meledin, and V.~G. Serbo.
-\newblock The two-photon particle production mechanism: Physical problems,
-  applications, equivalent photon approximation.
-\newblock {\em Physics Reports}, 15:181--282, 1975.
+V.~M. Budnev, I.~F. Ginzburg, G.~V. Meledin and V.~G. Serbo, {\enquotehep{The
+  Two-Photon Particle Production Mechanism: Physical Problems, Applications,
+  Equivalent Photon Approximation}},
+  \href{https://doi.org/10.1016/0370-1573(75)90009-5}{{\em Phys. Rep.}
+  \textbf{15}, 181--282 (1975)}.
+  \href{https://doi.org/10.1016/0370-1573(75)90009-5}{doi:\nolinkurl{10.1016/0370-1573(75)90009-5}}
 
 \bibitem{Drees1989}
-M.~Drees and D.~Zeppenfeld.
-\newblock Production of supersymmetric particles in elastic ep collisions.
-\newblock {\em Physical Review D}, 39:2536--2546, 1989.
+M.~Drees and D.~Zeppenfeld, {\enquotehep{Production of Supersymmetric Particles
+  in Elastic {$ep$} Collisions}},
+  \href{https://doi.org/10.1103/PhysRevD.39.2536}{{\em Phys. Rev. D}
+  \textbf{39}, 2536--2546 (1989)}.
+  \href{https://doi.org/10.1103/PhysRevD.39.2536}{doi:\nolinkurl{10.1103/PhysRevD.39.2536}}
 
 \bibitem{LHeCCDR2012}
-{LHeC Study Group}.
-\newblock A large hadron electron collider at cern: Report on the physics and
-  design concepts for machine and detector.
-\newblock {\em Journal of Physics G}, 39:075001, 2012.
+J.~L. Abelleira~Fernandez et~al., {\enquotehep{A Large Hadron Electron Collider
+  at {CERN}: Report on the Physics and Design Concepts for Machine and
+  Detector}}, \href{https://doi.org/10.1088/0954-3899/39/7/075001}{{\em J.
+  Phys. G} \textbf{39}, 075001 (2012)}.
+  \href{https://doi.org/10.1088/0954-3899/39/7/075001}{doi:\nolinkurl{10.1088/0954-3899/39/7/075001}}
+  \href{https://arxiv.org/abs/1206.2913}{arXiv:1206.2913 [physics.acc-ph]}
 
 \bibitem{LHeC2025}
-{LHeC Collaboration}.
-\newblock The large hadron electron collider as a bridge project for cern,
-  2025.
+F.~Ahmadova et~al., {\enquotehep{The Large Hadron Electron Collider as a Bridge
+  Project for {CERN}}}, (2025).
+  \href{https://arxiv.org/abs/2503.17727}{arXiv:2503.17727 [hep-ex]}
 
 \bibitem{ForthommeDIS2024}
-Laurent Forthomme, Hamzeh Khanpour, Krzysztof Piotrzkowski, and Yuji Yamazaki.
-\newblock High energy $\gamma\gamma$ interactions at the lhec.
-\newblock {\em Proceedings of Science}, DIS2024:269, 2025.
+L.~Forthomme, H.~Khanpour, K.~Piotrzkowski and Y.~Yamazaki, {\enquotehep{High
+  Energy {$\gamma\gamma$} Interactions at the {LHeC}}},
+  \href{https://doi.org/10.22323/1.469.0269}{{\em PoS} \textbf{DIS2024}, 269
+  (2025)}.
+  \href{https://doi.org/10.22323/1.469.0269}{doi:\nolinkurl{10.22323/1.469.0269}}
 
 \bibitem{ForthommeICHEP2024}
-Laurent Forthomme, Hamzeh Khanpour, Krzysztof Piotrzkowski, and Yuji Yamazaki.
-\newblock High energy $\gamma\gamma$ interactions at the lhec.
-\newblock {\em Proceedings of Science}, ICHEP2024:329, 2025.
+L.~Forthomme, H.~Khanpour, K.~Piotrzkowski and Y.~Yamazaki, {\enquotehep{High
+  Energy {$\gamma\gamma$} Interactions at the {LHeC}}},
+  \href{https://doi.org/10.22323/1.476.0329}{{\em PoS} \textbf{ICHEP2024}, 329
+  (2025)}.
+  \href{https://doi.org/10.22323/1.476.0329}{doi:\nolinkurl{10.22323/1.476.0329}}
 
 \bibitem{Piotrzkowski2026}
-Krzysztof Piotrzkowski.
-\newblock {LH}$\mu${C}: A high energy, high luminosity muon-hadron collider at
-  cern, 2026.
-\newblock On behalf of the HELP4CERN Study Group.
+K.~Piotrzkowski, {\enquotehep{{LH$\mu$C}: A High Energy, High Luminosity
+  Muon--Hadron Collider at {CERN}}}, (2026).
+  \href{https://arxiv.org/abs/2610.35154}{arXiv:2610.35154 [hep-ex]}
 
 \bibitem{Manohar2016}
-Aneesh Manohar, Paolo Nason, Gavin~P. Salam, and Giulia Zanderighi.
-\newblock How bright is the proton? a precise determination of the photon
-  parton distribution function.
-\newblock {\em Physical Review Letters}, 117:242002, 2016.
+A.~Manohar, P.~Nason, G.~P. Salam and G.~Zanderighi, {\enquotehep{How Bright Is
+  the Proton? A Precise Determination of the Photon Parton Distribution
+  Function}}, \href{https://doi.org/10.1103/PhysRevLett.117.242002}{{\em Phys.
+  Rev. Lett.} \textbf{117}, 242002 (2016)}.
+  \href{https://doi.org/10.1103/PhysRevLett.117.242002}{doi:\nolinkurl{10.1103/PhysRevLett.117.242002}}
+  \href{https://arxiv.org/abs/1607.04266}{arXiv:1607.04266 [hep-ph]}
 
 \bibitem{Manohar2017}
-Aneesh~V. Manohar, Paolo Nason, Gavin~P. Salam, and Giulia Zanderighi.
-\newblock The photon content of the proton.
-\newblock {\em Journal of High Energy Physics}, 12:046, 2017.
+A.~V. Manohar, P.~Nason, G.~P. Salam and G.~Zanderighi, {\enquotehep{The Photon
+  Content of the Proton}}, \href{https://doi.org/10.1007/JHEP12(2017)046}{{\em
+  JHEP} \textbf{12}, 046 (2017)}.
+  \href{https://doi.org/10.1007/JHEP12(2017)046}{doi:\nolinkurl{10.1007/JHEP12(2017)046}}
+  \href{https://arxiv.org/abs/1708.01256}{arXiv:1708.01256 [hep-ph]}
 
 \bibitem{CMS2024}
-{CMS Collaboration}.
-\newblock Observation of $\gamma\gamma\rightarrow\tau\tau$ in proton-proton
-  collisions and limits on the anomalous electromagnetic moments of the $\tau$
-  lepton.
-\newblock {\em Reports on Progress in Physics}, 87:107801, 2024.
+{CMS Collaboration}, {\enquotehep{Observation of {$\gamma\gamma\to\tau\tau$} in
+  Proton--Proton Collisions and Limits on the Anomalous Electromagnetic Moments
+  of the {$\tau$} Lepton}},
+  \href{https://doi.org/10.1088/1361-6633/ad6fcb}{{\em Rep. Prog. Phys.}
+  \textbf{87}, 107801 (2024)}.
+  \href{https://doi.org/10.1088/1361-6633/ad6fcb}{doi:\nolinkurl{10.1088/1361-6633/ad6fcb}}
+  \href{https://arxiv.org/abs/2406.03975}{arXiv:2406.03975 [hep-ex]}
 
 \bibitem{Eboli2006}
-O.~J.~P. {\'E}boli, M.~C. Gonzalez-Garcia, and J.~K. Mizukoshi.
-\newblock $pp\to jje^\pm\mu^\pm\nu\nu$ and $jje^\pm\mu^\mp\nu\nu$ at
-  $o(\alpha_{\mathrm em}^6)$ and $o(\alpha_{\mathrm em}^4\alpha_s^2)$ for the
-  study of the quartic electroweak gauge boson vertex at the cern lhc.
-\newblock {\em Physical Review D}, 74:073005, 2006.
+O.~J.~P. {\'E}boli, M.~C. Gonzalez-Garcia and J.~K. Mizukoshi,
+  {\enquotehep{{$pp\to jj e^{\pm}\mu^{\pm}\nu\nu$} and {$jj
+  e^{\pm}\mu^{\mp}\nu\nu$} at {$\mathcal{O}(\alpha_{\mathrm{em}}^6)$} and
+  {$\mathcal{O}(\alpha_{\mathrm{em}}^4\alpha_s^2)$} for the Study of the
+  Quartic Electroweak Gauge Boson Vertex at the {CERN} {LHC}}},
+  \href{https://doi.org/10.1103/PhysRevD.74.073005}{{\em Phys. Rev. D}
+  \textbf{74}, 073005 (2006)}.
+  \href{https://doi.org/10.1103/PhysRevD.74.073005}{doi:\nolinkurl{10.1103/PhysRevD.74.073005}}
+  \href{https://arxiv.org/abs/hep-ph/0606118}{arXiv:hep-ph/0606118 [hep-ph]}
 
 \bibitem{Eboli2016}
-O.~J.~P. {\'E}boli and M.~C. Gonzalez-Garcia.
-\newblock Classifying the bosonic quartic couplings.
-\newblock {\em Physical Review D}, 93:093013, 2016.
+O.~J.~P. {\'E}boli and M.~C. Gonzalez-Garcia, {\enquotehep{Classifying the
+  Bosonic Quartic Couplings}},
+  \href{https://doi.org/10.1103/PhysRevD.93.093013}{{\em Phys. Rev. D}
+  \textbf{93}, 093013 (2016)}.
+  \href{https://doi.org/10.1103/PhysRevD.93.093013}{doi:\nolinkurl{10.1103/PhysRevD.93.093013}}
+  \href{https://arxiv.org/abs/1604.03555}{arXiv:1604.03555 [hep-ph]}
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  30 OCT 2026 23:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  1 NOV 2026 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,7 +417,22 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen180
 \Gm@dimlist=\toks28
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29
+(d:/texlive/2025/texmf-dist/tex/latex/feynmp-auto/feynmp-auto.sty
+Package: feynmp-auto 2013/05/03 v1.1 Automatic processing of feynmp graphics
+
+(d:/texlive/2025/texmf-dist/tex/latex/feynmf/feynmp.sty
+Package: feynmp 1996/12/02 v1.08 LaTeX/MetaPost Feynman Diagram Package (ohl)
+\@outfmf=\write3
+\fmfbuf@=\toks29
+\c@fmfgraph=\count303
+)
+(d:/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(d:/texlive/2025/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+))
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 41
 .
 
 (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -425,44 +440,44 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
+\l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box57
 )
 (./TwoPhoton_Physics_LHeC_LHmuC.aux)
 \openout1 = `TwoPhoton_Physics_LHeC_LHmuC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Info: Redefining \microtypecontext on input line 29.
-Package microtype Info: Applying patch `item' on input line 29.
-Package microtype Info: Applying patch `toc' on input line 29.
-Package microtype Info: Applying patch `eqnum' on input line 29.
-Package microtype Info: Applying patch `footnote' on input line 29.
-Package microtype Info: Applying patch `verbatim' on input line 29.
-LaTeX Info: Redefining \microtypesetup on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Info: Redefining \microtypecontext on input line 41.
+Package microtype Info: Applying patch `item' on input line 41.
+Package microtype Info: Applying patch `toc' on input line 41.
+Package microtype Info: Applying patch `eqnum' on input line 41.
+Package microtype Info: Applying patch `footnote' on input line 41.
+Package microtype Info: Applying patch `verbatim' on input line 41.
+LaTeX Info: Redefining \microtypesetup on input line 41.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 29.
+LaTeX Info: Redefining \showhyphens on input line 41.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -473,17 +488,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
+\scratchcounter=\count305
 \scratchdimen=\dimen181
 \scratchbox=\box58
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count307
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count308
 \MPscratchDim=\dimen182
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks31
 ) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -493,11 +508,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 41.
 
 (./TwoPhoton_Physics_LHeC_LHmuC.out) (./TwoPhoton_Physics_LHeC_LHmuC.out)
-\@outlinefile=\write3
-\openout3 = `TwoPhoton_Physics_LHeC_LHmuC.out'.
+\@outlinefile=\write4
+\openout4 = `TwoPhoton_Physics_LHeC_LHmuC.out'.
 
 
 *geometry* driver: auto-detecting
@@ -536,36 +551,36 @@ Package hyperref Info: Link coloring ON on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
 3.
 (d:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
 3.
 
 (d:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-43.
+63.
 
 (d:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-43.
+63.
 
 (d:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 43.
+(Font)              <10> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 43.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+(Font)              <5> on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
 
 (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -574,7 +589,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (d:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -584,11 +599,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 47.
+(Font)              <10.95> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 47.
+(Font)              <6> on input line 87.
 
 
 [1
@@ -597,39 +612,94 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/texlive/2025/texmf-dist/fonts/enc/d
 vips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.
 enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-<figures/gamma_gamma_topologies.pdf, id=102, 493.3873pt x 132.6588pt>
-File: figures/gamma_gamma_topologies.pdf Graphic file (type pdf)
-<use figures/gamma_gamma_topologies.pdf>
-Package pdftex.def Info: figures/gamma_gamma_topologies.pdf  used on input line
- 73.
-(pdftex.def)             Requested size: 400.1885pt x 107.60078pt.
+<figures/ggtautau.png, id=102, 491.58656pt x 338.76563pt>
+File: figures/ggtautau.png Graphic file (type png)
+<use figures/ggtautau.png>
+Package pdftex.def Info: figures/ggtautau.png  used on input line 163.
+(pdftex.def)             Requested size: 165.02345pt x 113.72108pt.
+<figures/ggWW.png, id=104, 521.69907pt x 345.54094pt>
+File: figures/ggWW.png Graphic file (type png)
+<use figures/ggWW.png>
+Package pdftex.def Info: figures/ggWW.png  used on input line 170.
+(pdftex.def)             Requested size: 165.02345pt x 109.2994pt.
 
 
-[2{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./figures/gamm
-a_gamma_topologies.pdf>]
+[2{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./figures/ggta
+utau.png> <./figures/ggWW.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 104.
+(Font)              <14.4> on input line 295.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 104.
+(hyperref)                removing `math shift' on input line 295.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 104.
+(hyperref)                removing `\mu' on input line 295.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 104.
+(hyperref)                removing `math shift' on input line 295.
 
-<figures/photon_luminosity.pdf, id=149, 484.49477pt x 201.33458pt>
-File: figures/photon_luminosity.pdf Graphic file (type pdf)
-<use figures/photon_luminosity.pdf>
-Package pdftex.def Info: figures/photon_luminosity.pdf  used on input line 120.
 
-(pdftex.def)             Requested size: 387.81206pt x 161.16312pt.
+
+[3]
+<figures/syy.png, id=143, 465.99094pt x 543.53062pt>
+File: figures/syy.png Graphic file (type png)
+<use figures/syy.png>
+Package pdftex.def Info: figures/syy.png  used on input line 366.
+(pdftex.def)             Requested size: 206.28247pt x 240.60558pt.
+
+
+[4 <./figures/syy.png>]
+
+[5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 514.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 515.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+
+[6]
+
+[7] (./TwoPhoton_Physics_LHeC_LHmuC.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-21.
+1.
+
 (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -639,96 +709,46 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-[3]
+[8])
 
-[4 <./figures/photon_luminosity.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 160.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 160.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 161.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\to' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 161.
-
-
-
-[5]
-<figures/heavy_thresholds.pdf, id=201, 486.36423pt x 130.71109pt>
-File: figures/heavy_thresholds.pdf Graphic file (type pdf)
-<use figures/heavy_thresholds.pdf>
-Package pdftex.def Info: figures/heavy_thresholds.pdf  used on input line 185.
-(pdftex.def)             Requested size: 371.30594pt x 99.79219pt.
-
-
-[6] (./TwoPhoton_Physics_LHeC_LHmuC.bbl
-
-[7 <./figures/heavy_thresholds.pdf>])
-
-[8] (./TwoPhoton_Physics_LHeC_LHmuC.aux)
+[9] (./TwoPhoton_Physics_LHeC_LHmuC.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `TwoPhoton_Physics_LHeC_LHmuC.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 1B50D449FA38DF2399450BB420BC7FF5;4196.
+(rerunfilecheck)             Checksum: BD9BE736041FCB7A7D6D14D42DD38CAF;4193.
  ) 
 Here is how much of TeX's memory you used:
- 13644 strings out of 473190
- 210958 string characters out of 5719978
- 656328 words of memory out of 5000000
- 36424 multiletter control sequences out of 15000+600000
- 660269 words of font info for 221 fonts, out of 8000000 for 9000
+ 13864 strings out of 473190
+ 213970 string characters out of 5719978
+ 659177 words of memory out of 5000000
+ 36624 multiletter control sequences out of 15000+600000
+ 660614 words of font info for 224 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1383b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><d:/texlive/2025
-/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/
-type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lm
-mi10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texli
-ve/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><d:/texlive/2025/texmf-dist/
-fonts/type1/public/lm/lmmi7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/
-lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/te
-xlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><d:/texlive/2025/texmf-dis
-t/fonts/type1/public/lm/lmr7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public
-/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/t
-exlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-
-dist/fonts/type1/public/lm/lmsy6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/pu
-blic/lm/lmsy7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><
-d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on TwoPhoton_Physics_LHeC_LHmuC.pdf (8 pages, 338208 bytes).
+ 75i,15n,79p,1025b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb><d:/texlive/202
+5/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><d:/texlive/2025/texmf-dist/fonts
+/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/l
+mbx7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texli
+ve/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/texlive/2025/texmf-dist
+/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/publi
+c/lm/lmmi6.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><d:/
+texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-
+dist/fonts/type1/public/lm/lmmib10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmmib7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pf
+b><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><d:/texlive/2025/t
+exmf-dist/fonts/type1/public/lm/lmr7.pfb><d:/texlive/2025/texmf-dist/fonts/type
+1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.p
+fb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/202
+5/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><d:/texlive/2025/texmf-dist/fonts/
+type1/public/lm/lmsy7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lms
+y8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on TwoPhoton_Physics_LHeC_LHmuC.pdf (9 pages, 899891 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 274 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  51864 words of extra memory for PDF output out of 61914 (max. 10000000)
 

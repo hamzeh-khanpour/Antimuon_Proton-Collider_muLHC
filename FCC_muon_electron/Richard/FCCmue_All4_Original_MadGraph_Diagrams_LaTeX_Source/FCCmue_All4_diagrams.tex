@@ -1,0 +1,95 @@
+% FCC-mue original MadGraph Feynman diagrams: annotated 4-page companion.
+% Faithful, editable LaTeX reconstruction of the provided four-page PDF.
+% The original document was not delivered with a TeX source; this is a new
+% reproducible LaTeX implementation using UNMODIFIED original MG5 PDFs.
+%
+% Compile: pdflatex -interaction=nonstopmode -halt-on-error
+%          FCCmue_All4_Original_MadGraph_Diagrams_Annotated.tex
+%
+% All four *_matrix.pdf files must be in the same folder as this source.
+\documentclass[a4paper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{margin=0pt,noheadfoot}
+\pagestyle{empty}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{heading}{HTML}{19354D}
+\definecolor{bodytext}{HTML}{2E3440}
+\definecolor{muted}{HTML}{576573}
+
+% Positioned in PDF points (bp), measured from A4's upper-left corner.
+\newcommand{\atxy}[3]{%
+  \node[anchor=north west,inner sep=0pt,outer sep=0pt] at
+  ([xshift=#1 bp,yshift=-#2 bp]current page.north west) {#3};%
+}
+\newcommand{\pagetitle}[2]{%
+  \atxy{38}{32}{\color{heading}\bfseries\fontsize{17}{20}\selectfont}%
+  \atxy{38}{62}{\color{bodytext}\bfseries\fontsize{13.4}{16}\selectfont #1 \textbar{} #2}%
+}
+\newcommand{\pageprocess}[1]{%
+  \atxy{38}{89}{\color{bodytext}\ttfamily\fontsize{9.2}{11}\selectfont Process: #1}%
+}
+
+\newcommand{\HHdiagrams}[1]{%
+  % Cropped to actual full set of four graphics (the source is vector PDF).
+  % Left/right/top/bottom trims are expressed in PostScript bp.
+  \atxy{44}{159}{\includegraphics[trim=60bp 307bp 30bp 110bp,clip,width=537.825bp]{#1}}%
+  \atxy{530}{132}{\color{muted}\fontsize{8}{10}\selectfont page 1/1}%
+}
+\newcommand{\Hdiagrams}[1]{%
+  % Crop just the original single-graph image, preserving MG5 numbering.
+  \atxy{51}{247.5}{\includegraphics[trim=60bp 527bp 285bp 110bp,clip,width=261.25bp]{#1}}%
+  \atxy{530}{132}{\color{muted}\fontsize{8}{10}\selectfont page 1/1}%
+}
+
+
+
+\newcommand{\startdiagramspage}{%
+  \null\vfill\begin{tikzpicture}[remember picture,overlay]
+}
+\newcommand{\finishdiagramspage}{%
+  \end{tikzpicture}\vfill\null\newpage
+}
+\begin{document}
+
+% Page 1: charged-current HH. Complete four MadGraph diagrams.
+\startdiagramspage
+  \pagetitle{Charged current}{double Higgs}
+  \pageprocess{e- mu+ -> ve vm\textasciitilde{} h h\quad QCD=0}
+  \HHdiagrams{CC_HH_matrix.pdf}
+  \HHnotes{WW}
+  \sourcefooter{1}
+\finishdiagramspage
+
+% Page 2: neutral-current HH. Complete four MadGraph diagrams.
+\startdiagramspage
+  \pagetitle{Neutral current}{double Higgs}
+  \pageprocess{e- mu+ -> e- mu+ h h\quad QCD=0}
+  \HHdiagrams{NC_HH_matrix.pdf}
+  \HHnotes{ZZ}
+  \sourcefooter{2}
+\finishdiagramspage
+
+% Page 3: charged-current single-Higgs production.
+\startdiagramspage
+  \pagetitle{Charged current}{single Higgs}
+  \pageprocess{e- mu+ -> ve vm\textasciitilde{} h\quad QCD=0}
+  \Hdiagrams{CC_H_matrix.pdf}
+  \Hnotes{W}
+  \sourcefooter{3}
+\finishdiagramspage
+
+% Page 4: neutral-current single-Higgs production.
+\startdiagramspage
+  \pagetitle{Neutral current}{single Higgs}
+  \pageprocess{e- mu+ -> e- mu+ h\quad QCD=0}
+  \Hdiagrams{NC_H_matrix.pdf}
+  \Hnotes{Z}
+  \sourcefooter{4}
+\finishdiagramspage
+
+\end{document}

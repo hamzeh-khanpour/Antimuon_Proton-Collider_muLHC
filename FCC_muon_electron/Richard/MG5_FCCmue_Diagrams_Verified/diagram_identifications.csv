@@ -1,0 +1,11 @@
+process,MG5_diagram_number,topology,key_vertex
+CC_HH,1,HHVV contact,HHWW
+CC_HH,2,"separate H emission, one ordering",HWW x 2
+CC_HH,3,"separate H emission, second ordering",HWW x 2
+CC_HH,4,off-shell H* -> HH,HWW and HHH
+NC_HH,1,HHVV contact,HHZZ
+NC_HH,2,"separate H emission, one ordering",HZZ x 2
+NC_HH,3,"separate H emission, second ordering",HZZ x 2
+NC_HH,4,off-shell H* -> HH,HZZ and HHH
+CC_H,1,single Higgs VBF,HWW
+NC_H,1,single Higgs VBF,HZZ

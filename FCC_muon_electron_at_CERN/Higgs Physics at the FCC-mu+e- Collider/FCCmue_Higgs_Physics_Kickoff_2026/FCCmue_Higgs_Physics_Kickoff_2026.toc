@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{FCC-$\mu e$ concept}{1}{1}{1}
+\beamer@sectionintoc {2}{Calculations and definitions}{9}{2}{2}
+\beamer@sectionintoc {3}{Inclusive H/HH and polarization}{13}{3}{3}
+\beamer@sectionintoc {4}{Fiducial four-bottom portfolio}{26}{4}{4}
+\beamer@sectionintoc {5}{Higgs potential and research plan}{35}{5}{5}
+\beamer@sectionintoc {6}{Backup materials}{41}{7}{6}

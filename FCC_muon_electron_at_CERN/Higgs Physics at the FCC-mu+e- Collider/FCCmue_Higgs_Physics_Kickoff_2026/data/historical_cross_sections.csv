@@ -1,0 +1,9 @@
+collider,sqrts_TeV,process,sigma_p0_fb,sigma_p80_fb,selection_or_norm
+FCC-mue,0.979796,HH_to_4b,0.04912,0.08816,eta_b<5; 2 disjoint bb pairs in 110-130 GeV; historical BR_H_bb=0.844640
+FCC-mue,0.979796,complete_neutrino_4b,0.05355,0.09195,eta_b<5; 2 disjoint bb pairs in 110-130 GeV
+mumu,1.0,HH_to_4b,0.07047,0.11582,eta_b<5; 2 disjoint bb pairs in 110-130 GeV; historical BR_H_bb=0.844640
+mumu,1.0,complete_neutrino_4b,0.0753,0.12472,eta_b<5; 2 disjoint bb pairs in 110-130 GeV
+FCC-mue,1.913113,HH_to_4b,0.26478,0.47611,eta_b<5; 2 disjoint bb pairs in 110-130 GeV; historical BR_H_bb=0.844640
+FCC-mue,1.913113,complete_neutrino_4b,0.28157,0.50745,eta_b<5; 2 disjoint bb pairs in 110-130 GeV
+mumu,2.0,HH_to_4b,0.30624,0.54606,eta_b<5; 2 disjoint bb pairs in 110-130 GeV; historical BR_H_bb=0.844640
+mumu,2.0,complete_neutrino_4b,0.3248,0.57873,eta_b<5; 2 disjoint bb pairs in 110-130 GeV

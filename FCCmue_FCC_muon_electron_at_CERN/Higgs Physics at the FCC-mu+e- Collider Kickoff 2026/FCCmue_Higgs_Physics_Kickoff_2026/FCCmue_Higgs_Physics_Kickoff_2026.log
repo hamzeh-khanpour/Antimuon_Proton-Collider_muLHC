@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  8 NOV 2026 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  8 NOV 2026 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,7 +1236,7 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
 
 {d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf
 -dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 []\T1/lmss/m/n/10 Original Mad-Graph Feynman-
  []
 
@@ -1246,34 +1246,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--80
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 101.
+(Font)              <10.95> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 101.
+(Font)              <8> on input line 104.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 101.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 104.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 101.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 104.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 101.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 104.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 101.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 104.
 
 
 
 [3
 
 ]
+Underfull \hbox (badness 2277) in paragraph at lines 136--136
+[]$\T1/lmss/m/sl/10 WW\OML/lmm/m/it/10 =\T1/lmss/m/sl/10 ZZ$\T1/lmss/m/n/10 -me
+diated Higgs pro-duc-
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 136--136
+[]\T1/lmss/m/n/10 Direct tree-level sen-si-tiv-ity to $\OML/lmm/m/it/10 ^^U[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]\T1/lmss/m/n/10 Distinct CLFV and long-lived-
+ []
+
+
 
 [4
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 178.
+(Font)              <12> on input line 189.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 189.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 178.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 189.
 
 
 
@@ -1281,34 +1297,28 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 
 {d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 205.
+(Font)              <9> on input line 217.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 205.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 217.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 205.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 217.
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
-5.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
+7.
 
 (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (1.54747pt too wide) in paragraph at lines 205--205
-[]\T1/lmss/m/n/9 v2 dis-cusses multi-ab$[]$ pos-si-bil-i-ties in-te-grated over
- FCC-ee stages; dis-tri-bu-tion among
- []
-
-
 
 [6
 
 ]
-Underfull \hbox (badness 2027) in paragraph at lines 239--239
+Underfull \hbox (badness 2027) in paragraph at lines 252--252
 []$\T1/lmss/m/sl/10 ZH$ \T1/lmss/m/n/10 re-coil method, Higgs cou-
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 239--239
+Underfull \hbox (badness 2189) in paragraph at lines 252--252
 []\T1/lmss/m/n/10 Precision $\T1/lmss/m/sl/10 HZZ$\T1/lmss/m/n/10 , $\T1/lmss/m
 /sl/10 HWW$\T1/lmss/m/n/10 , heavy-
  []
@@ -1326,23 +1336,32 @@ Underfull \hbox (badness 2189) in paragraph at lines 239--239
 [9
 
 ]
-<figures/Figure_scan_workflow.pdf, id=441, 630.55576pt x 164.70332pt>
+<figures/Figure_scan_workflow.pdf, id=423, 630.55576pt x 164.70332pt>
 File: figures/Figure_scan_workflow.pdf Graphic file (type pdf)
 <use figures/Figure_scan_workflow.pdf>
 Package pdftex.def Info: figures/Figure_scan_workflow.pdf  used on input line 3
-39.
-(pdftex.def)             Requested size: 229.63618pt x 59.98175pt.
+58.
+(pdftex.def)             Requested size: 346.45074pt x 90.49411pt.
+
+Underfull \hbox (badness 1755) in paragraph at lines 358--358
+[]\T1/lmss/m/n/9 48 exact-energy HT-Con-dor jobs on
+ []
+
+
+Overfull \vbox (2.91228pt too high) detected at line 358
+ []
+
 
 
 [10
 
  <./figures/Figure_scan_workflow.pdf>]
-Underfull \hbox (badness 1168) in paragraph at lines 364--364
+Underfull \hbox (badness 1168) in paragraph at lines 384--384
 []|\T1/lmss/m/n/10 Resonant $\T1/lmss/m/sl/10 HH \OMS/lmsy/m/n/10 !
  []
 
 
-Overfull \hbox (2.22688pt too wide) in paragraph at lines 364--364
+Overfull \hbox (2.22688pt too wide) in paragraph at lines 384--384
  [] 
  []
 
@@ -1356,7 +1375,7 @@ Overfull \hbox (2.22688pt too wide) in paragraph at lines 364--364
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-27.
+44.
  (d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1364,40 +1383,50 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [13
 
 ]
-<figures/CC_H_diagrams_cropped.pdf, id=623, 291.0875pt x 230.8625pt>
+<figures/CC_H_diagrams_cropped.pdf, id=586, 291.0875pt x 230.8625pt>
 File: figures/CC_H_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/CC_H_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/CC_H_diagrams_cropped.pdf  used on input line 
-452.
-(pdftex.def)             Requested size: 138.1081pt x 109.534pt.
-<figures/NC_H_diagrams_cropped.pdf, id=624, 291.0875pt x 230.8625pt>
+469.
+(pdftex.def)             Requested size: 169.75916pt x 134.63657pt.
+<figures/NC_H_diagrams_cropped.pdf, id=587, 291.0875pt x 230.8625pt>
 File: figures/NC_H_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/NC_H_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/NC_H_diagrams_cropped.pdf  used on input line 
-452.
-(pdftex.def)             Requested size: 138.1081pt x 109.534pt.
+469.
+(pdftex.def)             Requested size: 164.41144pt x 130.39526pt.
 
 
 [14
 
  <./figures/CC_H_diagrams_cropped.pdf> <./figures/NC_H_diagrams_cropped.pdf>]
-<figures/CC_HH_diagrams_cropped.pdf, id=652, 526.96875pt x 471.7625pt>
+<figures/CC_HH_diagrams_cropped.pdf, id=614, 526.96875pt x 471.7625pt>
 File: figures/CC_HH_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/CC_HH_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/CC_HH_diagrams_cropped.pdf  used on input line
- 477.
-(pdftex.def)             Requested size: 157.30383pt x 140.82439pt.
+ 496.
+(pdftex.def)             Requested size: 189.3548pt x 169.51762pt.
+
+Underfull \hbox (badness 3000) in paragraph at lines 496--496
+[]\T1/lmss/bx/n/9 2,3: \T1/lmss/m/n/9 sep-a-rate Higgs emis-sions
+ []
+
 
 
 [15
 
  <./figures/CC_HH_diagrams_cropped.pdf>]
-<figures/NC_HH_diagrams_cropped.pdf, id=688, 526.96875pt x 471.7625pt>
+<figures/NC_HH_diagrams_cropped.pdf, id=651, 526.96875pt x 471.7625pt>
 File: figures/NC_HH_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/NC_HH_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/NC_HH_diagrams_cropped.pdf  used on input line
- 500.
-(pdftex.def)             Requested size: 157.30383pt x 140.82439pt.
+ 521.
+(pdftex.def)             Requested size: 189.3548pt x 169.51762pt.
+
+Underfull \hbox (badness 3000) in paragraph at lines 521--521
+[]\T1/lmss/bx/n/9 2,3: \T1/lmss/m/n/9 sep-a-rate Higgs emis-sions
+ []
+
 
 
 [16
@@ -1408,17 +1437,17 @@ Package pdftex.def Info: figures/NC_HH_diagrams_cropped.pdf  used on input line
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 554.
+(Font)              <17.28> on input line 581.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 554.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 581.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 554.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 581.
 
 File: figures/Figure_scan_workflow.pdf Graphic file (type pdf)
 <use figures/Figure_scan_workflow.pdf>
 Package pdftex.def Info: figures/Figure_scan_workflow.pdf  used on input line 5
-54.
-(pdftex.def)             Requested size: 229.63618pt x 59.98175pt.
+81.
+(pdftex.def)             Requested size: 346.45074pt x 90.49411pt.
 
 
 [18
@@ -1432,22 +1461,22 @@ Package pdftex.def Info: figures/Figure_scan_workflow.pdf  used on input line 5
 [20
 
 ]
-<figures/Figure_1_absolute_cross_sections.pdf, id=868, 896.148pt x 650.43pt>
+<figures/Figure_1_absolute_cross_sections.pdf, id=825, 896.148pt x 650.43pt>
 File: figures/Figure_1_absolute_cross_sections.pdf Graphic file (type pdf)
 <use figures/Figure_1_absolute_cross_sections.pdf>
 Package pdftex.def Info: figures/Figure_1_absolute_cross_sections.pdf  used on 
-input line 623.
+input line 650.
 (pdftex.def)             Requested size: 233.55362pt x 169.51472pt.
 
 
 [21
 
  <./figures/Figure_1_absolute_cross_sections.pdf>]
-<figures/Figure_2_polarization_ratios.pdf, id=926, 896.148pt x 650.43pt>
+<figures/Figure_2_polarization_ratios.pdf, id=884, 896.148pt x 650.43pt>
 File: figures/Figure_2_polarization_ratios.pdf Graphic file (type pdf)
 <use figures/Figure_2_polarization_ratios.pdf>
 Package pdftex.def Info: figures/Figure_2_polarization_ratios.pdf  used on inpu
-t line 639.
+t line 666.
 (pdftex.def)             Requested size: 233.55362pt x 169.51472pt.
 
 
@@ -1462,11 +1491,11 @@ t line 639.
 [24
 
 ]
-<figures/Figure_energy_scaling.pdf, id=1052, 760.03902pt x 311.96503pt>
+<figures/Figure_energy_scaling.pdf, id=1012, 760.03902pt x 311.96503pt>
 File: figures/Figure_energy_scaling.pdf Graphic file (type pdf)
 <use figures/Figure_energy_scaling.pdf>
 Package pdftex.def Info: figures/Figure_energy_scaling.pdf  used on input line 
-712.
+747.
 (pdftex.def)             Requested size: 207.86903pt x 85.32176pt.
 
 
@@ -1485,6 +1514,11 @@ Package pdftex.def Info: figures/Figure_energy_scaling.pdf  used on input line
 [28
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
+[]\T1/lmss/m/n/10 Single-resonant and con-tin-uum
+ []
+
+
 
 [29
 
@@ -1505,38 +1539,69 @@ Package pdftex.def Info: figures/Figure_energy_scaling.pdf  used on input line
 [33
 
 ]
+Underfull \hbox (badness 1515) in paragraph at lines 1013--1013
+[]\T1/lmss/m/n/10 NC associated-Higgs and full $4\T1/lmss/m/sl/10 b$
+ []
+
+
 
 [34
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1053
+[]\T1/lmss/m/n/10 Common SM in-put, con-sis-tent
+ []
+
+
 
 [35
 
 ]
+Underfull \hbox (badness 2753) in paragraph at lines 1090--1090
+[]$\T1/lmss/m/sl/10 m[]$\T1/lmss/m/n/10 , es-pe-cially thresh-old ver-sus
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 1090--1090
+[]\T1/lmss/m/n/10 SMEFT: gauge-invariant op-er-a-tor
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 1090--1090
+[]\T1/lmss/m/n/10 Joint CC+NC+FCC-ee in-puts for
+ []
+
+
 
 [36
 
 ]
+Underfull \hbox (badness 4353) in paragraph at lines 1126--1126
+[]\T1/lmss/m/n/10 Evaluate $\OML/lmm/m/it/10 ^^[[] \OMS/lmsy/m/n/10 ^^B L$ \T1/
+lmss/m/n/10 be-fore de-
+ []
+
+
 
 [37
 
 ]
-Underfull \hbox (badness 1655) in paragraph at lines 1081--1081
+Underfull \hbox (badness 1655) in paragraph at lines 1149--1149
 []|\T1/lmss/m/n/9 WP1: base-line
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
+Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
 []|\T1/lmss/m/n/9 WP2: Higgs
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 1081--1081
+Underfull \hbox (badness 6001) in paragraph at lines 1149--1149
 []|\T1/lmss/m/n/9 WP4: ex-per-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
+Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
 []|\T1/lmss/m/n/9 WP5: triple
  []
 
@@ -1545,17 +1610,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
 [38
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+[]\T1/lmss/m/n/9 Original MG5 $\T1/lmss/m/sl/9 HHVV$\T1/lmss/m/n/9 , separate-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 1185--1185
+\T1/lmss/m/n/9 emission and $\T1/lmss/m/sl/9 H[] \OMS/lmsy/m/n/9 ! \T1/lmss/m/s
+l/9 HH$ \T1/lmss/m/n/9 di-a-grams
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 1185--1185
+[]\T1/lmss/m/n/9 Common ma-chine/physics bench-
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 1185--1185
+[]\T1/lmss/m/n/9 Consistent Higgs branch-ing frac-
+ []
+
+
 
 [39
 
 ]
-<Thank_You_2.jpg, id=1635, 911.54839pt x 577.29964pt>
+<Thank_You_2.jpg, id=1586, 911.54839pt x 577.29964pt>
 File: Thank_You_2.jpg Graphic file (type jpg)
 <use Thank_You_2.jpg>
-Package pdftex.def Info: Thank_You_2.jpg  used on input line 1129.
+Package pdftex.def Info: Thank_You_2.jpg  used on input line 1201.
 (pdftex.def)             Requested size: 381.87407pt x 241.84756pt.
 
-Overfull \hbox (35.43019pt too wide) in paragraph at lines 1129--1129
+Overfull \hbox (35.43019pt too wide) in paragraph at lines 1201--1201
  [] 
  []
 
@@ -1583,35 +1669,35 @@ Overfull \hbox (35.43019pt too wide) in paragraph at lines 1129--1129
 File: figures/CC_H_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/CC_H_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/CC_H_diagrams_cropped.pdf  used on input line 
-1270.
+1350.
 (pdftex.def)             Requested size: 55.89793pt x 44.33284pt.
 File: figures/CC_HH_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/CC_HH_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/CC_HH_diagrams_cropped.pdf  used on input line
- 1270.
+ 1350.
 (pdftex.def)             Requested size: 96.12877pt x 86.05814pt.
 File: figures/NC_H_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/NC_H_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/NC_H_diagrams_cropped.pdf  used on input line 
-1270.
+1350.
 (pdftex.def)             Requested size: 55.89793pt x 44.33284pt.
 File: figures/NC_HH_diagrams_cropped.pdf Graphic file (type pdf)
 <use figures/NC_HH_diagrams_cropped.pdf>
 Package pdftex.def Info: figures/NC_HH_diagrams_cropped.pdf  used on input line
- 1270.
+ 1350.
 (pdftex.def)             Requested size: 96.12877pt x 86.05814pt.
 
 
 [45
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1371
 []|\T1/lmss/m/n/10 NC $\T1/lmss/m/sl/10 HH\OML/lmm/m/it/10 =\T1/lmss/m/sl/10 b[
 ]H$\T1/lmss/m/n/10 /full
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1371
 []|\T1/lmss/m/n/10 Muon-collider
  []
 
@@ -1620,6 +1706,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1290--1290
 [46
 
 ]
+Underfull \hbox (badness 2600) in paragraph at lines 1407--1407
+[]\T1/lmss/m/n/9 Original di-a-grams in-de-pen-dently in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1407--1407
+[]\T1/lmss/m/n/9 Detector/beam-background and
+ []
+
+
 
 [47
 
@@ -1648,11 +1744,11 @@ ot changed.
 (rerunfilecheck)             Checksum: 30052F8C8C53C5AADF639630C279F979;2225.
  ) 
 Here is how much of TeX's memory you used:
- 28657 strings out of 473190
- 575956 string characters out of 5719978
- 1314221 words of memory out of 5000000
- 51182 multiletter control sequences out of 15000+600000
- 768226 words of font info for 169 fonts, out of 8000000 for 9000
+ 28629 strings out of 473190
+ 574810 string characters out of 5719978
+ 1312221 words of memory out of 5000000
+ 51154 multiletter control sequences out of 15000+600000
+ 765455 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,14638b,1385s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025
@@ -1679,11 +1775,11 @@ xlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><d:/texlive/2025/texmf-di
 st/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/publ
 ic/lm/lmsy9.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><d
 :/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on FCCmue_Higgs_Physics_Kickoff_2026.pdf (48 pages, 1510667 byte
+Output written on FCCmue_Higgs_Physics_Kickoff_2026.pdf (48 pages, 1497119 byte
 s).
 PDF statistics:
- 2048 PDF objects out of 2073 (max. 8388607)
- 1104 compressed objects within 12 object streams
+ 1978 PDF objects out of 2073 (max. 8388607)
+ 1072 compressed objects within 11 object streams
  115 named destinations out of 1000 (max. 500000)
- 3336 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

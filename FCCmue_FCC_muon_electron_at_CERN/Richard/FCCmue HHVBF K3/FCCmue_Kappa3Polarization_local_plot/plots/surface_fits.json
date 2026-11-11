@@ -1,0 +1,3397 @@
+{
+  "coefficient_order": [
+    "1",
+    "kappa3",
+    "kappa3^2",
+    "P",
+    "P*kappa3",
+    "P*kappa3^2"
+  ],
+  "P_unit": "fraction, 1 = 100%",
+  "by_energy": {
+    "E1": {
+      "CC_HH": {
+        "coefficients_fb": [
+          0.24490105258726136,
+          -0.2520325676934496,
+          0.08136011309155017,
+          0.2449028315171162,
+          -0.25204608872634127,
+          0.08135986581808097
+        ],
+        "covariance_fb2": [
+          [
+            8.859576368228289e-09,
+            -7.983974148977887e-09,
+            1.3496008793441386e-09,
+            -1.3483142138421356e-08,
+            1.2190337502215501e-08,
+            -2.0615581460872263e-09
+          ],
+          [
+            -7.983974148977894e-09,
+            9.019882991558077e-09,
+            -2.0227896826224484e-09,
+            1.2192250527799236e-08,
+            -1.3853201703826522e-08,
+            3.1167998731047727e-09
+          ],
+          [
+            1.3496008793441409e-09,
+            -2.022789682622449e-09,
+            6.544759410186304e-10,
+            -2.0620989168866054e-09,
+            3.1169924705255914e-09,
+            -1.0152563279389888e-09
+          ],
+          [
+            -1.3483142138421404e-08,
+            1.2192250527799285e-08,
+            -2.062098916886617e-09,
+            3.952400780037319e-08,
+            -3.596826574774311e-08,
+            6.099731478267773e-09
+          ],
+          [
+            1.2190337502215564e-08,
+            -1.3853201703826592e-08,
+            3.116992470525607e-09,
+            -3.596826574774312e-08,
+            4.114714771556969e-08,
+            -9.286198005764168e-09
+          ],
+          [
+            -2.0615581460872445e-09,
+            3.1167998731047913e-09,
+            -1.0152563279389927e-09,
+            6.099731478267781e-09,
+            -9.286198005764172e-09,
+            3.04212355015198e-09
+          ]
+        ],
+        "chi2": 124.00032885960523,
+        "dof": 132,
+        "max_abs_fit_pull": 3.306625438083592,
+        "endpoint_checks": [
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 20,
+            "pull": 0.32720192061389974
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 40,
+            "pull": 1.294047478294289
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 60,
+            "pull": 0.5666039890770346
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 80,
+            "pull": 2.0156026933976854
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 20,
+            "pull": 0.9299738691967936
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 40,
+            "pull": 0.7169385693150185
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 60,
+            "pull": 0.599173605421768
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 80,
+            "pull": 0.4100775478554388
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 20,
+            "pull": 0.8568400316356289
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 40,
+            "pull": -0.09006274746449754
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 60,
+            "pull": 0.1895369433423945
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 80,
+            "pull": -0.3826943906888639
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 20,
+            "pull": -0.12975007919131956
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 40,
+            "pull": 1.5695086519907702
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 60,
+            "pull": 0.06363923449962901
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 80,
+            "pull": 2.3046282563409655
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 20,
+            "pull": 0.19948858970950412
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 40,
+            "pull": 0.8527212673033111
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 60,
+            "pull": 0.5349475013774725
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 80,
+            "pull": -0.3643543215856576
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 20,
+            "pull": 1.648741398474356
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 40,
+            "pull": -0.14565601277084453
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 60,
+            "pull": 0.40398446861169746
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 80,
+            "pull": 0.5189103989892568
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 20,
+            "pull": -0.09748958609695359
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 40,
+            "pull": 0.0035281356269526026
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 60,
+            "pull": -0.688463734401997
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 80,
+            "pull": -0.023080040764286124
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 20,
+            "pull": -0.28631233027424535
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 40,
+            "pull": -0.5418908311371894
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 60,
+            "pull": -1.1012019861835782
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 80,
+            "pull": -1.585386304792032
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 20,
+            "pull": -0.16359561453833113
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 40,
+            "pull": 0.6286615380033811
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 60,
+            "pull": 0.8287173142058546
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 80,
+            "pull": 0.4701071039831544
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 20,
+            "pull": 0.8082208369372396
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 40,
+            "pull": -0.7596893042718229
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 60,
+            "pull": -1.096279925274924
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 80,
+            "pull": -0.747428973751837
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 20,
+            "pull": -1.23644310250691
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 40,
+            "pull": 1.120837076743098
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 60,
+            "pull": -1.1128150178158311
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 80,
+            "pull": -0.2332348501643249
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 20,
+            "pull": 1.5233706329449777
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 40,
+            "pull": -0.6443462747520114
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 60,
+            "pull": 0.2914474195571825
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 80,
+            "pull": -0.11457880679291198
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 20,
+            "pull": -0.6339505694606994
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 40,
+            "pull": -0.551871018354821
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 60,
+            "pull": -2.2623891294166136
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 80,
+            "pull": -1.5789769783229193
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 20,
+            "pull": 0.7154435487350559
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 40,
+            "pull": 1.9320114672313957
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 60,
+            "pull": 1.1594640066325665
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 80,
+            "pull": -0.3364854206044263
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 20,
+            "pull": 0.4538982034451085
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 40,
+            "pull": 0.5636707454398774
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 60,
+            "pull": 0.1640774158693625
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 80,
+            "pull": -0.6400051054637724
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 20,
+            "pull": -0.642245595184685
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 40,
+            "pull": -0.6850647553704353
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 60,
+            "pull": -0.23080997936972583
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 80,
+            "pull": -0.718259161134436
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 20,
+            "pull": -0.9222882508179704
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 40,
+            "pull": -0.39567611775121925
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 60,
+            "pull": -1.1862105591140661
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 80,
+            "pull": 0.6973754612387306
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 20,
+            "pull": 1.6994563947394838
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 40,
+            "pull": 0.7742498963370857
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 60,
+            "pull": 1.252882792036281
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 80,
+            "pull": 0.1194712375839142
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 20,
+            "pull": -0.1336824389911199
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 40,
+            "pull": 1.3853755762144881
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 60,
+            "pull": 0.6835726517209689
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 80,
+            "pull": -0.323349907382023
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 20,
+            "pull": -2.4992703208552545
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 40,
+            "pull": 1.0656395763879605
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 60,
+            "pull": 1.2232514918220787
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 80,
+            "pull": 0.41789542044274924
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 20,
+            "pull": 0.2960077444007515
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 40,
+            "pull": -0.6113454637480438
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 60,
+            "pull": 0.20684371117437328
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 80,
+            "pull": 0.5200710347539288
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 20,
+            "pull": 1.8243028506762349
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 40,
+            "pull": 0.9107478481150872
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 60,
+            "pull": 2.015560536886845
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 80,
+            "pull": 0.831960503347204
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 20,
+            "pull": -0.7161628617934775
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 40,
+            "pull": -1.3881130653532612
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 60,
+            "pull": -0.096293719219864
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 80,
+            "pull": -0.055787586924904355
+          }
+        ],
+        "max_abs_endpoint_pull": 2.4992703208552545,
+        "cc_scaling_checks": [
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 20,
+            "pull": -0.34871921595849087
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 40,
+            "pull": 0.14170766734175072
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 60,
+            "pull": -0.7426287238448258
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 80,
+            "pull": -0.1845512417425767
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 100,
+            "pull": -1.8422165094613587
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 20,
+            "pull": 0.3081052068243581
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 40,
+            "pull": -0.24394974005458225
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 60,
+            "pull": -0.39139459372983465
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 80,
+            "pull": -0.8074789167613521
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 100,
+            "pull": -1.3730835983325518
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 20,
+            "pull": 0.8222770762304744
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 40,
+            "pull": -0.01632511225785641
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 60,
+            "pull": 0.24468655861773342
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 80,
+            "pull": -0.28540324573132
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 100,
+            "pull": 0.10670278057402272
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 20,
+            "pull": -0.37070139413749953
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 40,
+            "pull": 0.8575310332537478
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 60,
+            "pull": -0.5309481974532814
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 80,
+            "pull": 1.3355582126756282
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 100,
+            "pull": -0.8447562600293107
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 20,
+            "pull": 0.19471530272991774
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 40,
+            "pull": 0.7610496636330074
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 60,
+            "pull": 0.5035200232417453
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 80,
+            "pull": -0.26760205754506794
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 100,
+            "pull": 0.05796878339489844
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 20,
+            "pull": 1.7467471535541417
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 40,
+            "pull": 0.37125533730677335
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 60,
+            "pull": 0.9892259436631408
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 80,
+            "pull": 1.3200474498983485
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 100,
+            "pull": 0.9026060460282361
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 20,
+            "pull": 0.22806339305957585
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 40,
+            "pull": 0.5247562814061589
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 60,
+            "pull": 0.08634285023739298
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 80,
+            "pull": 0.7723917915319733
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 100,
+            "pull": 0.9111626307648829
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 20,
+            "pull": 0.09537186504480201
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 40,
+            "pull": 0.13829350557660114
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 60,
+            "pull": -0.11153728351887236
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 80,
+            "pull": -0.6109224507707217
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 100,
+            "pull": 1.1457189674189356
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 20,
+            "pull": -0.12572281626650714
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 40,
+            "pull": 0.5760438423107385
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 60,
+            "pull": 0.7686750964203725
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 80,
+            "pull": 0.4738618531655532
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 100,
+            "pull": 0.051724366655258154
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 20,
+            "pull": 0.9902856437440889
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 40,
+            "pull": -0.17442967000258208
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 60,
+            "pull": -0.40985359465596116
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 80,
+            "pull": 0.04675464986862559
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 100,
+            "pull": 0.8788355558629788
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 20,
+            "pull": -0.8250882371167613
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 40,
+            "pull": 1.4795881927505876
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 60,
+            "pull": -0.33051381536206903
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 80,
+            "pull": 0.5703030742022301
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 100,
+            "pull": 0.8644839823636271
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 20,
+            "pull": 1.3262723747531036
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 40,
+            "pull": -0.5752015669925498
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 60,
+            "pull": 0.23560967726345997
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 80,
+            "pull": -0.13951546145380006
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 100,
+            "pull": -0.033026732196422826
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 20,
+            "pull": -0.3013209011943753
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 40,
+            "pull": -0.02573019298273902
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 60,
+            "pull": -1.3827185796477057
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 80,
+            "pull": -0.7262455068783744
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 100,
+            "pull": 0.7798616176763162
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 20,
+            "pull": 0.6189612038312003
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 40,
+            "pull": 1.6447815337446936
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 60,
+            "pull": 1.029091976385013
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 80,
+            "pull": -0.34758695751576474
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 100,
+            "pull": -0.03191161402171516
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 20,
+            "pull": 0.31789337372379023
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 40,
+            "pull": 0.3698684013033678
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 60,
+            "pull": -0.03875937752132068
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 80,
+            "pull": -0.9012097919468457
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 100,
+            "pull": -0.24813666393766873
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 20,
+            "pull": -0.9812746359983427
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 40,
+            "pull": -1.3359565084442935
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 60,
+            "pull": -1.2780542082556134
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 80,
+            "pull": -1.8465728709677374
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 100,
+            "pull": -1.3039444775018048
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 20,
+            "pull": -0.6212040635713524
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 40,
+            "pull": 0.0022679791366858864
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 60,
+            "pull": -0.6637052727422499
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 80,
+            "pull": 1.3031945953911368
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 100,
+            "pull": 0.5899889812735409
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 20,
+            "pull": 1.4215840000863242
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 40,
+            "pull": 0.5773812332540663
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 60,
+            "pull": 0.9827497120827297
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 80,
+            "pull": -0.11364697932420449
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 100,
+            "pull": -0.24744514621585323
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 20,
+            "pull": 0.10688099200947558
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 40,
+            "pull": 1.690461471212124
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 60,
+            "pull": 1.2109898144483635
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 80,
+            "pull": 0.29519781750937396
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 100,
+            "pull": 0.6467572223212971
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 20,
+            "pull": -2.885547565366901
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 40,
+            "pull": -0.28260382746177365
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 60,
+            "pull": -0.2974118461243702
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 80,
+            "pull": -1.5431219157314275
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 100,
+            "pull": -2.0380501064097905
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 20,
+            "pull": 0.21081188993333747
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 40,
+            "pull": -0.6051904438365096
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 60,
+            "pull": 0.08448022726404628
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 80,
+            "pull": 0.35315745330857434
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 100,
+            "pull": -0.14208034917780274
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 20,
+            "pull": 1.939422484651065
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 40,
+            "pull": 1.2967200222776216
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 60,
+            "pull": 2.696412909712473
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 80,
+            "pull": 1.6139619239320697
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 100,
+            "pull": 0.47749299278234614
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 20,
+            "pull": -0.52636420604495
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 40,
+            "pull": -1.0743520819895287
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 60,
+            "pull": 0.20599218366694316
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 80,
+            "pull": 0.3331179830714097
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 100,
+            "pull": 0.33037152668184094
+          }
+        ],
+        "max_abs_cc_scaling_pull": 2.885547565366901
+      },
+      "NC_HH": {
+        "coefficients_fb": [
+          0.028514326612529728,
+          -0.027081441420141097,
+          0.008201281614674094,
+          0.006249595840416327,
+          -0.0059455095878376985,
+          0.0017872780409329929
+        ],
+        "covariance_fb2": [
+          [
+            9.984865901972928e-11,
+            -8.839513438568702e-11,
+            1.4206195224672973e-11,
+            -1.39680169362724e-10,
+            1.234624220403527e-10,
+            -1.9810328614583927e-11
+          ],
+          [
+            -8.839513438568724e-11,
+            9.729458704919224e-11,
+            -2.02144315575666e-11,
+            1.2344375304020351e-10,
+            -1.3584132798962613e-10,
+            2.8287504551753402e-11
+          ],
+          [
+            1.420619522467308e-11,
+            -2.021443155756667e-11,
+            6.073926614985143e-12,
+            -1.9792968630042733e-11,
+            2.827664570280977e-11,
+            -8.544821357288794e-12
+          ],
+          [
+            -1.396801693627238e-10,
+            1.2344375304020295e-10,
+            -1.9792968630042516e-11,
+            3.041521280727684e-10,
+            -2.6500170923395494e-10,
+            4.1749572069367447e-11
+          ],
+          [
+            1.234624220403531e-10,
+            -1.358413279896261e-10,
+            2.827664570280964e-11,
+            -2.6500170923395577e-10,
+            2.880654948842137e-10,
+            -5.936001564412661e-11
+          ],
+          [
+            -1.9810328614584128e-11,
+            2.8287504551753538e-11,
+            -8.544821357288796e-12,
+            4.1749572069367815e-11,
+            -5.936001564412685e-11,
+            1.7907089403842796e-11
+          ]
+        ],
+        "chi2": 86.26566480429534,
+        "dof": 132,
+        "max_abs_fit_pull": 2.151439411076509,
+        "endpoint_checks": [
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 20,
+            "pull": 0.9717158818163503
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 40,
+            "pull": -1.0644480408056414
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 60,
+            "pull": -0.5507712400691419
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 80,
+            "pull": -0.9084830915818831
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 20,
+            "pull": -0.9162713157973285
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 40,
+            "pull": 0.38997942448657763
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 60,
+            "pull": 0.2921239014565741
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 80,
+            "pull": -1.4806615340072102
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 20,
+            "pull": -0.07960516124293923
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 40,
+            "pull": -1.0170505847089728
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 60,
+            "pull": -0.15574087756834856
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 80,
+            "pull": 0.0006314848065765064
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 20,
+            "pull": 0.19497011811671333
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 40,
+            "pull": 0.8774391034013079
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 60,
+            "pull": 0.7802324994493374
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 80,
+            "pull": 0.2116696997636774
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 20,
+            "pull": -0.01065927477201885
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 40,
+            "pull": 0.9870775836249049
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 60,
+            "pull": -0.14039767976324308
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 80,
+            "pull": 0.8576907598259228
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 20,
+            "pull": -0.3077937521825698
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 40,
+            "pull": 0.17452197108480974
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 60,
+            "pull": 0.955136045246607
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 80,
+            "pull": 0.29913998443138584
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 20,
+            "pull": 0.884998567776536
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 40,
+            "pull": -0.6328420854237234
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 60,
+            "pull": 0.5949083600668608
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 80,
+            "pull": -0.5568922051378998
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 20,
+            "pull": -0.7594277300924105
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 40,
+            "pull": 0.6028923864041686
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 60,
+            "pull": 1.248204677208041
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 80,
+            "pull": -0.6401846856457921
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 20,
+            "pull": 0.26661685766251547
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 40,
+            "pull": -0.38203010147690103
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 60,
+            "pull": -0.8749736784594115
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 80,
+            "pull": -0.25319888971280224
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 20,
+            "pull": 0.3208173514422552
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 40,
+            "pull": -0.5583078231182066
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 60,
+            "pull": -0.7064571583361713
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 80,
+            "pull": 0.5015557495188903
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 20,
+            "pull": 1.2984996724901718
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 40,
+            "pull": 0.5504971040379475
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 60,
+            "pull": -0.09682995292849328
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 80,
+            "pull": 0.5386864547312018
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 20,
+            "pull": -0.21575240384602892
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 40,
+            "pull": 0.2818040992978442
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 60,
+            "pull": -0.7192351057502602
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 80,
+            "pull": 0.7988284734517263
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 20,
+            "pull": 0.7857981849154366
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 40,
+            "pull": 0.3992977663103789
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 60,
+            "pull": -0.41145779677154193
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 80,
+            "pull": 0.23405879207713445
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 20,
+            "pull": 0.524027270610134
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 40,
+            "pull": 0.1987792681623317
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 60,
+            "pull": -0.059902298493892114
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 80,
+            "pull": 0.031938556035636764
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 20,
+            "pull": -1.6648605600298776
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 40,
+            "pull": 0.871259074612894
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 60,
+            "pull": 0.6897445511831685
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 80,
+            "pull": 0.027447537110492814
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 20,
+            "pull": 1.0635489983475002
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 40,
+            "pull": 0.07397981542547391
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 60,
+            "pull": -0.5655228747305826
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 80,
+            "pull": -0.5086506604255194
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 20,
+            "pull": -1.18272330311615
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 40,
+            "pull": -0.5673476993450918
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 60,
+            "pull": -0.2537484924449535
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 80,
+            "pull": -0.03248730701371654
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 20,
+            "pull": -1.3372017285838453
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 40,
+            "pull": 0.9915050571445576
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 60,
+            "pull": -0.9827433929778401
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 80,
+            "pull": 1.1257118913842086
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 20,
+            "pull": 0.43663035259791255
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 40,
+            "pull": 1.0391413522211894
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 60,
+            "pull": 0.2730171220906593
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 80,
+            "pull": 1.4915422850506574
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 20,
+            "pull": -0.19906506431395768
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 40,
+            "pull": -0.8361462102200145
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 60,
+            "pull": 0.10225473360787891
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 80,
+            "pull": -0.055561724302030324
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 20,
+            "pull": -0.724723933342856
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 40,
+            "pull": 0.8388942527487263
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 60,
+            "pull": -0.4315319631817484
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 80,
+            "pull": -0.608912541324571
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 20,
+            "pull": -0.4278382720711764
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 40,
+            "pull": -1.2614524476732412
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 60,
+            "pull": -1.3370303899018108
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 80,
+            "pull": -0.5049458766479391
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 20,
+            "pull": -0.14025653727919907
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 40,
+            "pull": 0.41043472598368574
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 60,
+            "pull": -1.3620034730540853
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 80,
+            "pull": -1.5872191861020215
+          }
+        ],
+        "max_abs_endpoint_pull": 1.6648605600298776
+      },
+      "total": {
+        "coefficients_fb": [
+          0.2734153791997911,
+          -0.2791140091135907,
+          0.08956139470622426,
+          0.2511524273575325,
+          -0.25799159831417895,
+          0.08314714385901396
+        ],
+        "covariance_fb2": [
+          [
+            8.959425027248018e-09,
+            -8.072369283363574e-09,
+            1.3638070745688116e-09,
+            -1.362282230778408e-08,
+            1.2313799924255853e-08,
+            -2.0813684747018102e-09
+          ],
+          [
+            -8.072369283363581e-09,
+            9.11717757860727e-09,
+            -2.043004114180015e-09,
+            1.2315694280839439e-08,
+            -1.3989043031816148e-08,
+            3.145087377656526e-09
+          ],
+          [
+            1.3638070745688139e-09,
+            -2.0430041141800158e-09,
+            6.605498676336156e-10,
+            -2.081891885516648e-09,
+            3.1452691162284014e-09,
+            -1.0238011492962776e-09
+          ],
+          [
+            -1.3622822307784129e-08,
+            1.2315694280839489e-08,
+            -2.0818918855166597e-09,
+            3.9828159928445954e-08,
+            -3.623326745697707e-08,
+            6.14148105033714e-09
+          ],
+          [
+            1.2313799924255918e-08,
+            -1.3989043031816218e-08,
+            3.1452691162284167e-09,
+            -3.6233267456977074e-08,
+            4.1435213210453904e-08,
+            -9.345558021408294e-09
+          ],
+          [
+            -2.081368474701829e-09,
+            3.1450873776565446e-09,
+            -1.0238011492962815e-09,
+            6.141481050337149e-09,
+            -9.345558021408299e-09,
+            3.060030639555823e-09
+          ]
+        ]
+      }
+    },
+    "E2": {
+      "CC_HH": {
+        "coefficients_fb": [
+          1.0135704420958682,
+          -0.8575396354760226,
+          0.2635363222674171,
+          1.0126147545310717,
+          -0.8569058414603861,
+          0.2633173417986088
+        ],
+        "covariance_fb2": [
+          [
+            1.3743662563105485e-07,
+            -1.1441915252985301e-07,
+            1.679103920308173e-08,
+            -2.116014082727841e-07,
+            1.7641353878105617e-07,
+            -2.604677563972717e-08
+          ],
+          [
+            -1.1441915252985317e-07,
+            1.3130552066846583e-07,
+            -2.6757686573793197e-08,
+            1.7642220073840068e-07,
+            -2.0273444095723916e-07,
+            4.1566536066553975e-08
+          ],
+          [
+            1.6791039203081788e-08,
+            -2.6757686573793234e-08,
+            8.285889692931174e-09,
+            -2.6052456385566946e-08,
+            4.157096771166768e-08,
+            -1.2906468635006504e-08
+          ],
+          [
+            -2.116014082727842e-07,
+            1.7642220073840065e-07,
+            -2.605245638556688e-08,
+            6.151940729957598e-07,
+            -5.138426970853765e-07,
+            7.66519805683312e-08
+          ],
+          [
+            1.7641353878105644e-07,
+            -2.0273444095723927e-07,
+            4.157096771166763e-08,
+            -5.138426970853766e-07,
+            5.900187096419751e-07,
+            -1.21942148457463e-07
+          ],
+          [
+            -2.6046775639727274e-08,
+            4.1566536066554074e-08,
+            -1.2906468635006507e-08,
+            7.665198056833132e-08,
+            -1.2194214845746312e-07,
+            3.789047358155423e-08
+          ]
+        ],
+        "chi2": 97.66987712955535,
+        "dof": 132,
+        "max_abs_fit_pull": 2.6451801775986254,
+        "endpoint_checks": [
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 20,
+            "pull": 0.835122900209223
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 40,
+            "pull": -0.04219908038844886
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 60,
+            "pull": -0.6131293006930563
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 80,
+            "pull": 0.3223515536150472
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 20,
+            "pull": 0.6468315934929142
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 40,
+            "pull": -0.1485071006895533
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 60,
+            "pull": -0.09465945850283168
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 80,
+            "pull": 0.7377302823865806
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 20,
+            "pull": -0.2700880813001545
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 40,
+            "pull": 0.4196208341687295
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 60,
+            "pull": 0.005177082015757216
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 80,
+            "pull": 1.0374440746610627
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 20,
+            "pull": 0.2720172384965725
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 40,
+            "pull": -1.5304444737248988
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 60,
+            "pull": -1.4785754486923568
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 80,
+            "pull": 1.2558971240917232
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 20,
+            "pull": 0.9909617342202421
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 40,
+            "pull": 0.35516205939039913
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 60,
+            "pull": -1.1742874351179007
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 80,
+            "pull": 0.39042583439259243
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 20,
+            "pull": -0.16502208339308178
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 40,
+            "pull": 0.01688039633898243
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 60,
+            "pull": -0.4073679585244212
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 80,
+            "pull": -0.8650475910738233
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 20,
+            "pull": 2.2214896592855307
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 40,
+            "pull": 0.7644822196640816
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 60,
+            "pull": 0.7648565683790417
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 80,
+            "pull": 0.6936288103723846
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 20,
+            "pull": -1.7491190898330877
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 40,
+            "pull": -1.5815313632401644
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 60,
+            "pull": -1.337246014734265
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 80,
+            "pull": -1.8682470529379793
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 20,
+            "pull": -1.0679160389868119
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 40,
+            "pull": -0.827469210115843
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 60,
+            "pull": -0.03668898663657685
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 80,
+            "pull": -0.4735134420797331
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 20,
+            "pull": 0.13527731842786211
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 40,
+            "pull": -1.1972061037653692
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 60,
+            "pull": -0.7522249691979748
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 80,
+            "pull": 0.3887951846159687
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 20,
+            "pull": -0.01023403561055017
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 40,
+            "pull": -1.065664194154081
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 60,
+            "pull": -0.2770804452480496
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 80,
+            "pull": 0.3344583012375808
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 20,
+            "pull": 0.4810257912627056
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 40,
+            "pull": 0.6031230030417098
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 60,
+            "pull": 0.4270585185872426
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 80,
+            "pull": -0.8459102727821212
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 20,
+            "pull": 0.4261707018263463
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 40,
+            "pull": 0.21727155590248123
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 60,
+            "pull": -0.1820558210576136
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 80,
+            "pull": 0.04056999617887257
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 20,
+            "pull": 0.7024650520657144
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 40,
+            "pull": -0.7107196479656382
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 60,
+            "pull": -0.7547956662608853
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 80,
+            "pull": -0.2827974635535849
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 20,
+            "pull": -1.56734810502456
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 40,
+            "pull": 1.5559956335570102
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 60,
+            "pull": -1.010527873273176
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 80,
+            "pull": -0.1832435119527115
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 20,
+            "pull": -0.13234640734843334
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 40,
+            "pull": 0.1302861492467601
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 60,
+            "pull": -0.3949529477989541
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 80,
+            "pull": -0.3854324531083344
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 20,
+            "pull": -0.041913199433314445
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 40,
+            "pull": 0.5728085074803578
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 60,
+            "pull": 0.5866274786870679
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 80,
+            "pull": -0.0032758529933217904
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 20,
+            "pull": 0.2595681253268105
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 40,
+            "pull": 1.1230765055402399
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 60,
+            "pull": -0.2715907268929102
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 80,
+            "pull": 0.03041861792256765
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 20,
+            "pull": -0.3686517515624773
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 40,
+            "pull": 0.09866451008498053
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 60,
+            "pull": 0.35314996111653024
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 80,
+            "pull": -0.4070577248963827
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 20,
+            "pull": 0.3692236881948008
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 40,
+            "pull": -0.7486747587699207
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 60,
+            "pull": -0.866854508422575
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 80,
+            "pull": -0.708109783097171
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 20,
+            "pull": -0.7637554956299689
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 40,
+            "pull": -1.6480351903369752
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 60,
+            "pull": 1.184340054681584
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 80,
+            "pull": 0.1653355468380623
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 20,
+            "pull": -0.030664872660998085
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 40,
+            "pull": -0.8534603866708398
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 60,
+            "pull": -0.47841542843328544
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 80,
+            "pull": -0.3012158670062965
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 20,
+            "pull": -0.6942797923540389
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 40,
+            "pull": -0.9971678694325872
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 60,
+            "pull": 0.40953392895019414
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 80,
+            "pull": -0.624298104923352
+          }
+        ],
+        "max_abs_endpoint_pull": 2.2214896592855307,
+        "cc_scaling_checks": [
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 20,
+            "pull": 0.7610007384960596
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 40,
+            "pull": 0.03780011666856329
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 60,
+            "pull": -0.4329220078447069
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 80,
+            "pull": 0.3854230228366036
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 100,
+            "pull": 0.1364602714852445
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 20,
+            "pull": 0.3359687768204497
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 40,
+            "pull": -0.4977316657037253
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 60,
+            "pull": -0.4915185789669648
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 80,
+            "pull": 0.15817116128814912
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 100,
+            "pull": -0.590734510962048
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 20,
+            "pull": -0.21873900781879843
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 40,
+            "pull": 0.3823713045725578
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 60,
+            "pull": 0.04803032559498121
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 80,
+            "pull": 1.003118217835466
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 100,
+            "pull": 0.06029125389052922
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 20,
+            "pull": 0.07769357333751352
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 40,
+            "pull": -1.6415412215083813
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 60,
+            "pull": -1.7282186386218477
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 80,
+            "pull": 0.857459539771756
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 100,
+            "pull": -0.45175715687571655
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 20,
+            "pull": 0.49511120844979495
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 40,
+            "pull": -0.3628198872973389
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 60,
+            "pull": -1.9617637615914958
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 80,
+            "pull": -0.697289727575128
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 100,
+            "pull": -1.136170709232573
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 20,
+            "pull": 8.61881912976128e-14
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 40,
+            "pull": 0.2898212381516216
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 60,
+            "pull": -0.02978189735359024
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 80,
+            "pull": -0.4076966062753577
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 100,
+            "pull": 0.4656531822636328
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 20,
+            "pull": 2.2850293253061245
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 40,
+            "pull": 1.2067122646498847
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 60,
+            "pull": 1.437858425065541
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 80,
+            "pull": 1.554853299682758
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 100,
+            "pull": 0.9825781482024429
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 20,
+            "pull": -1.1374812635750053
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 40,
+            "pull": -0.7059465109035389
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 60,
+            "pull": -0.3135127513431417
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 80,
+            "pull": -0.6713634645547848
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 100,
+            "pull": 1.175077692864633
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 20,
+            "pull": -1.4284944721470592
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 40,
+            "pull": -1.568629313233764
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 60,
+            "pull": -1.1204164308162181
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 80,
+            "pull": -1.7610996798212644
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 100,
+            "pull": -1.5000659249039718
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 20,
+            "pull": 0.22650477272459657
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 40,
+            "pull": -0.8403577740487219
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 60,
+            "pull": -0.4108230484919317
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 80,
+            "pull": 0.6491069191330496
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 100,
+            "pull": 0.3201698909978613
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 20,
+            "pull": 0.010420091379162779
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 40,
+            "pull": -0.8567759134913302
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 60,
+            "pull": -0.19576010966443472
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 80,
+            "pull": 0.3494386508197444
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 100,
+            "pull": 0.05905336605431872
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 20,
+            "pull": 0.37457426092503815
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 40,
+            "pull": 0.44493446033185446
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 60,
+            "pull": 0.27303141318534097
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 80,
+            "pull": -0.9388685311651169
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 100,
+            "pull": -0.1438039461346054
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 20,
+            "pull": 0.23827789012949854
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 40,
+            "pull": -0.054045212236135017
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 60,
+            "pull": -0.5061291524285841
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 80,
+            "pull": -0.34855300156041663
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 100,
+            "pull": -0.42487686789786727
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 20,
+            "pull": 0.5003297604318508
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 40,
+            "pull": -0.7849848304188786
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 60,
+            "pull": -0.8964572953280624
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 80,
+            "pull": -0.5399527598228674
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 100,
+            "pull": -0.3095230703264731
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 20,
+            "pull": -1.4747693062475102
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 40,
+            "pull": 1.1207218930151037
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 60,
+            "pull": -1.1471051576862223
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 80,
+            "pull": -0.48151570280527595
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 100,
+            "pull": -0.3537762072448703
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 20,
+            "pull": -0.41579542945128645
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 40,
+            "pull": -0.4178607007054193
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 60,
+            "pull": -1.1138630317569989
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 80,
+            "pull": -1.2578329508652526
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 100,
+            "pull": -0.8906872143836942
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 20,
+            "pull": -0.18579751659804056
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 40,
+            "pull": 0.22695005426062428
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 60,
+            "pull": 0.1647332788889613
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 80,
+            "pull": -0.42732084643475704
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 100,
+            "pull": -0.4732937591646716
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 20,
+            "pull": 0.11574965860326768
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 40,
+            "pull": 0.7935487624476433
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 60,
+            "pull": -0.4782342745201035
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 80,
+            "pull": -0.27281396569333427
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 100,
+            "pull": -0.3278296586171065
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 20,
+            "pull": 0.1192987695036763
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 40,
+            "pull": 0.8685873639652942
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 60,
+            "pull": 1.2969024236993223
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 80,
+            "pull": 0.7727734501428758
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 100,
+            "pull": 1.3946053175375686
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 20,
+            "pull": 0.09776411275628333
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 40,
+            "pull": -1.036069313412172
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 60,
+            "pull": -1.2502378226736466
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 80,
+            "pull": -1.1575811804146283
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 100,
+            "pull": -0.6710081604581821
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 20,
+            "pull": -1.2939062287035077
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 40,
+            "pull": -2.50055137028069
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 60,
+            "pull": -0.2719059928620603
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 80,
+            "pull": -1.4193792899135684
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 100,
+            "pull": -1.80416644190645
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 20,
+            "pull": 0.11013484709096216
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 40,
+            "pull": -0.447233134597066
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 60,
+            "pull": -0.11769640896511566
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 80,
+            "pull": 0.13297978973238078
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 100,
+            "pull": 0.37413198259362535
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 20,
+            "pull": -0.7655316396342393
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 40,
+            "pull": -1.1380705975718743
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 60,
+            "pull": -0.10199761864567113
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 80,
+            "pull": -1.087106287598626
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 100,
+            "pull": -0.5116235207532335
+          }
+        ],
+        "max_abs_cc_scaling_pull": 2.50055137028069
+      },
+      "NC_HH": {
+        "coefficients_fb": [
+          0.1225118602871562,
+          -0.09490684488334447,
+          0.027109839030685617,
+          0.02692700974017031,
+          -0.020872374560186903,
+          0.005935842968522027
+        ],
+        "covariance_fb2": [
+          [
+            1.6152509841053495e-09,
+            -1.3017226618031418e-09,
+            1.9013609857713124e-10,
+            -2.253833661994595e-09,
+            1.821016888679998e-09,
+            -2.669679646666467e-10
+          ],
+          [
+            -1.3017226618031425e-09,
+            1.4429147263479448e-09,
+            -2.7596400836068046e-10,
+            1.820367552976613e-09,
+            -2.0337047213576938e-09,
+            3.941400429819957e-10
+          ],
+          [
+            1.9013609857713217e-10,
+            -2.7596400836068103e-10,
+            7.493590147943463e-11,
+            -2.66547208746975e-10,
+            3.9368407467408297e-10,
+            -1.0912152311600951e-10
+          ],
+          [
+            -2.2538336619945906e-09,
+            1.8203675529766076e-09,
+            -2.6654720874697316e-10,
+            4.936181232415091e-09,
+            -4.0091603874386035e-09,
+            5.864621577979514e-10
+          ],
+          [
+            1.8210168886799963e-09,
+            -2.033704721357691e-09,
+            3.9368407467408167e-10,
+            -4.0091603874386085e-09,
+            4.5399868897363235e-09,
+            -8.906637268216022e-10
+          ],
+          [
+            -2.669679646666471e-10,
+            3.941400429819959e-10,
+            -1.0912152311600944e-10,
+            5.864621577979539e-10,
+            -8.906637268216039e-10,
+            2.538327487394453e-10
+          ]
+        ],
+        "chi2": 103.50860011218933,
+        "dof": 132,
+        "max_abs_fit_pull": 2.7243382069706246,
+        "endpoint_checks": [
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 20,
+            "pull": -0.1793820735716772
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 40,
+            "pull": -0.9777126526316754
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 60,
+            "pull": -1.1800494982357408
+          },
+          {
+            "kappa3": -10.0,
+            "polarization_percent": 80,
+            "pull": -0.8999032041313821
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 20,
+            "pull": 1.1135395364085736
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 40,
+            "pull": -0.06873455341894784
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 60,
+            "pull": -0.43841457746037665
+          },
+          {
+            "kappa3": -5.0,
+            "polarization_percent": 80,
+            "pull": -2.673160378229355
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 20,
+            "pull": 0.49852733278722855
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 40,
+            "pull": -0.3380887246840338
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 60,
+            "pull": 0.13473998654006264
+          },
+          {
+            "kappa3": -3.0,
+            "polarization_percent": 80,
+            "pull": -0.6010552469900424
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 20,
+            "pull": 0.5648157136336357
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 40,
+            "pull": -1.329163834041284
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 60,
+            "pull": -0.5929221839005043
+          },
+          {
+            "kappa3": -2.0,
+            "polarization_percent": 80,
+            "pull": -1.5549340090958017
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 20,
+            "pull": 0.19750695192844678
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 40,
+            "pull": -0.0008553223314383243
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 60,
+            "pull": -0.620568018774914
+          },
+          {
+            "kappa3": -1.0,
+            "polarization_percent": 80,
+            "pull": -0.21662683466315688
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 20,
+            "pull": 1.0665765169722787
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 40,
+            "pull": -0.6592576563319918
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 60,
+            "pull": -1.7749840184635677
+          },
+          {
+            "kappa3": 0.0,
+            "polarization_percent": 80,
+            "pull": -0.7218835069348298
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 20,
+            "pull": 0.36461556016222507
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 40,
+            "pull": 0.4824090805573926
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 60,
+            "pull": -0.1986521724551855
+          },
+          {
+            "kappa3": 0.1,
+            "polarization_percent": 80,
+            "pull": 1.0477689128642909
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 20,
+            "pull": -1.331237696473505
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 40,
+            "pull": -1.7728675855823341
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 60,
+            "pull": -2.6108204719082546
+          },
+          {
+            "kappa3": 0.5,
+            "polarization_percent": 80,
+            "pull": -0.8933328343976352
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 20,
+            "pull": 0.5712887108473049
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 40,
+            "pull": -0.536470898873251
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 60,
+            "pull": -0.40669088682129145
+          },
+          {
+            "kappa3": 0.7,
+            "polarization_percent": 80,
+            "pull": 1.0730087677704023
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 20,
+            "pull": -1.7984988511918825
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 40,
+            "pull": 0.7940440966545722
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 60,
+            "pull": -0.3757675846519414
+          },
+          {
+            "kappa3": 0.8,
+            "polarization_percent": 80,
+            "pull": 0.5863482976026806
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 20,
+            "pull": 1.2551399540154928
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 40,
+            "pull": 0.5601448341806616
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 60,
+            "pull": 1.147094815622621
+          },
+          {
+            "kappa3": 0.9,
+            "polarization_percent": 80,
+            "pull": 0.31558571953735876
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 20,
+            "pull": 0.4238213243735843
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 40,
+            "pull": 0.9191974094089338
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 60,
+            "pull": -1.1545542977363108
+          },
+          {
+            "kappa3": 1.0,
+            "polarization_percent": 80,
+            "pull": 0.2904899341937041
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 20,
+            "pull": 0.18755945597681317
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 40,
+            "pull": -1.2049208907968907
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 60,
+            "pull": -1.1788592944603884
+          },
+          {
+            "kappa3": 1.1,
+            "polarization_percent": 80,
+            "pull": -1.6210427538059038
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 20,
+            "pull": -0.705345619358903
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 40,
+            "pull": 0.001867072390400143
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 60,
+            "pull": 0.4814272987675655
+          },
+          {
+            "kappa3": 1.2,
+            "polarization_percent": 80,
+            "pull": -0.6817779935593837
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 20,
+            "pull": -0.4056122376119602
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 40,
+            "pull": 0.08522654163706656
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 60,
+            "pull": 1.028313141494848
+          },
+          {
+            "kappa3": 1.3,
+            "polarization_percent": 80,
+            "pull": -0.18396974691024623
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 20,
+            "pull": -0.6785415823147055
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 40,
+            "pull": -0.6340970439510352
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 60,
+            "pull": -0.17697515170118097
+          },
+          {
+            "kappa3": 1.5,
+            "polarization_percent": 80,
+            "pull": -0.6077439517106025
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 20,
+            "pull": 1.7270915482842453
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 40,
+            "pull": -0.8947734035942918
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 60,
+            "pull": -0.45120642795446286
+          },
+          {
+            "kappa3": 1.9,
+            "polarization_percent": 80,
+            "pull": 0.07471484396209271
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 20,
+            "pull": -1.3619400997054945
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 40,
+            "pull": 1.6045675872261962
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 60,
+            "pull": 0.17148079744253075
+          },
+          {
+            "kappa3": 2.0,
+            "polarization_percent": 80,
+            "pull": 0.6352311524926711
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 20,
+            "pull": -1.6059141862302477
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 40,
+            "pull": -0.25954271299793624
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 60,
+            "pull": 0.7713796012998045
+          },
+          {
+            "kappa3": 3.0,
+            "polarization_percent": 80,
+            "pull": 0.3303957341980229
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 20,
+            "pull": 0.16574874458536612
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 40,
+            "pull": 0.9691761446504524
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 60,
+            "pull": 0.8916132298868851
+          },
+          {
+            "kappa3": 4.0,
+            "polarization_percent": 80,
+            "pull": 1.3565589856511762
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 20,
+            "pull": 0.09796967653965973
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 40,
+            "pull": 0.41235304305417636
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 60,
+            "pull": 0.5710564817666554
+          },
+          {
+            "kappa3": 5.0,
+            "polarization_percent": 80,
+            "pull": 0.41124561217733996
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 20,
+            "pull": 0.6110096435028792
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 40,
+            "pull": 0.3403087590677702
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 60,
+            "pull": 0.9741373539370491
+          },
+          {
+            "kappa3": 7.0,
+            "polarization_percent": 80,
+            "pull": -0.057129569124529676
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 20,
+            "pull": 1.3879009771131043
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 40,
+            "pull": 1.5211419725850017
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 60,
+            "pull": -0.04102029053052696
+          },
+          {
+            "kappa3": 10.0,
+            "polarization_percent": 80,
+            "pull": -0.07690340591158722
+          }
+        ],
+        "max_abs_endpoint_pull": 2.673160378229355
+      },
+      "total": {
+        "coefficients_fb": [
+          1.1360823023830244,
+          -0.9524464803593671,
+          0.2906461612981027,
+          1.0395417642712421,
+          -0.8777782160205729,
+          0.2692531847671308
+        ],
+        "covariance_fb2": [
+          [
+            1.390518766151602e-07,
+            -1.1572087519165615e-07,
+            1.6981175301658864e-08,
+            -2.1385524193477868e-07,
+            1.7823455566973617e-07,
+            -2.631374360439382e-08
+          ],
+          [
+            -1.1572087519165631e-07,
+            1.3274843539481376e-07,
+            -2.7033650582153876e-08,
+            1.782425682913773e-07,
+            -2.0476814567859687e-07,
+            4.196067610953597e-08
+          ],
+          [
+            1.698117530165892e-08,
+            -2.7033650582153916e-08,
+            8.360825594410608e-09,
+            -2.631900359431392e-08,
+            4.196465178634176e-08,
+            -1.3015590158122513e-08
+          ],
+          [
+            -2.138552419347788e-07,
+            1.7824256829137725e-07,
+            -2.6319003594313855e-08,
+            6.201302542281749e-07,
+            -5.178518574728151e-07,
+            7.723844272612915e-08
+          ],
+          [
+            1.7823455566973644e-07,
+            -2.0476814567859695e-07,
+            4.196465178634171e-08,
+            -5.178518574728153e-07,
+            5.945586965317115e-07,
+            -1.228328121842846e-07
+          ],
+          [
+            -2.631374360439392e-08,
+            4.196067610953607e-08,
+            -1.3015590158122516e-08,
+            7.723844272612927e-08,
+            -1.2283281218428473e-07,
+            3.814430633029368e-08
+          ]
+        ]
+      }
+    }
+  }
+}

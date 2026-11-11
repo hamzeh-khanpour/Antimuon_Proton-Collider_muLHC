@@ -1,0 +1,73 @@
+{
+  "comparisons": [
+    {
+      "energy_id": "E1",
+      "job_id": "smclosure_v1_1_E1_CC_HH_P000",
+      "n_events": 30000,
+      "process_id": "CC_HH",
+      "pull": -0.6839794382833481,
+      "ratio_to_reference": 0.9982993608823426,
+      "reference_job_id": "full_exact_E1_CC_HH_P000",
+      "reference_mc_err_fb": 0.0001273876,
+      "reference_sigma_fb": 0.0743838,
+      "seed": 64110037,
+      "sigma_fb": 0.0742573,
+      "sigma_mc_err_fb": 0.00013408139999999998,
+      "status": "COMPATIBLE_WITH_REFERENCE_3SIGMA"
+    },
+    {
+      "energy_id": "E1",
+      "job_id": "smclosure_v1_1_E1_NC_HH_P000",
+      "n_events": 30000,
+      "process_id": "NC_HH",
+      "pull": 0.7540090933072136,
+      "ratio_to_reference": 1.0016403121790582,
+      "reference_job_id": "full_exact_E1_NC_HH_P000",
+      "reference_mc_err_fb": 1.455268e-05,
+      "reference_sigma_fb": 0.00962012,
+      "seed": 64120037,
+      "sigma_fb": 0.009635900000000001,
+      "sigma_mc_err_fb": 1.5040149999999999e-05,
+      "status": "COMPATIBLE_WITH_REFERENCE_3SIGMA"
+    },
+    {
+      "energy_id": "E2",
+      "job_id": "smclosure_v1_1_E2_CC_HH_P000",
+      "n_events": 30000,
+      "process_id": "CC_HH",
+      "pull": 1.3286140010514624,
+      "ratio_to_reference": 1.0029437767317388,
+      "reference_job_id": "full_exact_E2_CC_HH_P000",
+      "reference_mc_err_fb": 0.0006567856,
+      "reference_sigma_fb": 0.41851,
+      "seed": 64210037,
+      "sigma_fb": 0.419742,
+      "sigma_mc_err_fb": 0.0006545875,
+      "status": "COMPATIBLE_WITH_REFERENCE_3SIGMA"
+    },
+    {
+      "energy_id": "E2",
+      "job_id": "smclosure_v1_1_E2_NC_HH_P000",
+      "n_events": 30000,
+      "process_id": "NC_HH",
+      "pull": 0.0059856443542388406,
+      "ratio_to_reference": 1.0000127943617076,
+      "reference_job_id": "full_exact_E2_NC_HH_P000",
+      "reference_mc_err_fb": 8.505412e-05,
+      "reference_sigma_fb": 0.0547116,
+      "seed": 64220037,
+      "sigma_fb": 0.0547123,
+      "sigma_mc_err_fb": 8.026378e-05,
+      "status": "COMPATIBLE_WITH_REFERENCE_3SIGMA"
+    }
+  ],
+  "interpretation": "3 sigma diagnostic with independent-seed MC errors added in quadrature; not a statistical discovery test.",
+  "limitations": [
+    "The original reference rates have not been independently convergence-certified.",
+    "Agreement does not replace integration convergence or phase-space stability checks.",
+    "No kappa3 scan, HH decay, angular analysis, shower, detector or background study has been performed by this pilot."
+  ],
+  "missing": [],
+  "problems": [],
+  "status": "FOUR_POINT_SM_RATE_CLOSURE_COMPATIBLE"
+}

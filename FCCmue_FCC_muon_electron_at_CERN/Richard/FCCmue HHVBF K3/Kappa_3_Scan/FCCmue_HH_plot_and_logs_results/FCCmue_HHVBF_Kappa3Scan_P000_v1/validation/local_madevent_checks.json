@@ -1,0 +1,79 @@
+{
+  "scope": "Four local validation jobs; the 88-job CERN scan is a separate production run.",
+  "mg5_version": "3.6.4",
+  "fortran_version": "14.2.0",
+  "checks": [
+    {
+      "job_id": "kappa3_E1_CC_HH_km100",
+      "process_id": "CC_HH",
+      "sqrts_GeV": 1000.0,
+      "kappa3": -10.0,
+      "seed": 74100037,
+      "n_events": 30000,
+      "sigma_fb": 10.91293,
+      "sigma_mc_err_fb": 0.01534495,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": -10.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "2edbf18f3d864609b5a15a229b299337c6d13c2972c4d7eb31794f02cd36e5b7"
+    },
+    {
+      "job_id": "kappa3_E1_NC_HH_kp000",
+      "process_id": "NC_HH",
+      "sqrts_GeV": 1000.0,
+      "kappa3": 0.0,
+      "seed": 74205072,
+      "n_events": 30000,
+      "sigma_fb": 0.028547,
+      "sigma_mc_err_fb": 5.094e-05,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 0.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "8bebe0546a2211f4fb2d0d4a23dd88be202857edc61847aaa20f442a1eb3ea85"
+    },
+    {
+      "job_id": "kappa3_E2_CC_HH_kp001",
+      "process_id": "CC_HH",
+      "sqrts_GeV": 2000.0,
+      "kappa3": 0.1,
+      "seed": 74306079,
+      "n_events": 30000,
+      "sigma_fb": 0.9271227,
+      "sigma_mc_err_fb": 0.0012585690000000002,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 0.1,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "1457a5ab587752d1c7d0fc5db93a11d3ca3e170c36b4c0b2829de3254981140b"
+    },
+    {
+      "job_id": "kappa3_E2_NC_HH_kp100",
+      "process_id": "NC_HH",
+      "sqrts_GeV": 2000.0,
+      "kappa3": 10.0,
+      "seed": 74421184,
+      "n_events": 30000,
+      "sigma_fb": 1.88298,
+      "sigma_mc_err_fb": 0.001867399,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 10.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "9af4c11cdea6b9cb1bc787dcd568814eeb041e3d920a6e44c71f606211964179"
+    }
+  ]
+}

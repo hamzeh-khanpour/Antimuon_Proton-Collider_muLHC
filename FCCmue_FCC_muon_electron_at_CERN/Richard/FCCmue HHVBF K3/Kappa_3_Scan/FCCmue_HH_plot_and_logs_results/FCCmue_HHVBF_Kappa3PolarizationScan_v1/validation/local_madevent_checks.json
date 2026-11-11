@@ -1,0 +1,124 @@
+{
+  "scope": "Independent local checks with 4000 events and separate seeds",
+  "mg5_version": "3.6.4",
+  "fortran_version": "14.2.0",
+  "checks": [
+    {
+      "job_id": "polscan_E1_CC_HH_P020_kp010",
+      "process_id": "CC_HH",
+      "sqrts_GeV": 1000.0,
+      "kappa3": 1.0,
+      "polarization_percent": 20,
+      "seed": 76111136,
+      "n_events": 4000,
+      "sigma_fb": 0.0893202,
+      "sigma_mc_err_fb": 0.0004510046,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 1.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "1d7db86bd2ac4eea8ee9c0d33328022f537dc4b5ce79d5823de406b7c9835896",
+      "pull_from_cc_helicity_scaling": 0.4415618563555066
+    },
+    {
+      "job_id": "polscan_E1_CC_HH_P100_kp010",
+      "process_id": "CC_HH",
+      "sqrts_GeV": 1000.0,
+      "kappa3": 1.0,
+      "polarization_percent": 100,
+      "seed": 76203964,
+      "n_events": 4000,
+      "sigma_fb": 0.14784,
+      "sigma_mc_err_fb": 0.0005698920999999999,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 1.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "6b73ddfdf50d636461cf6604af346a6c0459531692a72d91b5de9fb3bbb8a81b",
+      "pull_from_cc_helicity_scaling": -1.0710793465592436
+    },
+    {
+      "job_id": "polscan_E1_NC_HH_P040_kp010",
+      "process_id": "NC_HH",
+      "sqrts_GeV": 1000.0,
+      "kappa3": 1.0,
+      "polarization_percent": 40,
+      "seed": 76250378,
+      "n_events": 4000,
+      "sigma_fb": 0.010478630000000001,
+      "sigma_mc_err_fb": 4.389492e-05,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 1.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "5ca002a3b1efd9ea9e492ec2e749fb718baf720d2f24a59b46d5d6feab1ef213"
+    },
+    {
+      "job_id": "polscan_E1_NC_HH_P100_kp010",
+      "process_id": "NC_HH",
+      "sqrts_GeV": 1000.0,
+      "kappa3": 1.0,
+      "polarization_percent": 100,
+      "seed": 76319999,
+      "n_events": 4000,
+      "sigma_fb": 0.01179312,
+      "sigma_mc_err_fb": 5.0439289999999996e-05,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 1.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "fb5b8adfd08ed77c5387ca46e22b6c1c990a52470a4a20b45edc32bf0ffb2602"
+    },
+    {
+      "job_id": "polscan_E2_CC_HH_P080_kp001",
+      "process_id": "CC_HH",
+      "sqrts_GeV": 2000.0,
+      "kappa3": 0.1,
+      "polarization_percent": 80,
+      "seed": 76407782,
+      "n_events": 4000,
+      "sigma_fb": 1.6758330000000001,
+      "sigma_mc_err_fb": 0.0056315490000000005,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 0.1,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "fc1801f5a1f4e47504d4c3e553cd852ef151c41a2224e507869d3bfcd1acbbfa",
+      "pull_from_cc_helicity_scaling": 1.1551875806357679
+    },
+    {
+      "job_id": "polscan_E2_NC_HH_P060_kp050",
+      "process_id": "NC_HH",
+      "sqrts_GeV": 2000.0,
+      "kappa3": 5.0,
+      "polarization_percent": 60,
+      "seed": 76514736,
+      "n_events": 4000,
+      "sigma_fb": 0.36749299999999996,
+      "sigma_mc_err_fb": 0.001154427,
+      "lhe_parameters": {
+        "C2V": 1.0,
+        "C3": 5.0,
+        "CV": 1.0,
+        "MW_GeV": 80.41900244576,
+        "sm_reference_sha256": "1782870ce8b7f2744f8607e646fdaf77ce99c64175821c2a8e2e5280f995cbfe"
+      },
+      "lhe_sha256": "2ae31061630c2499634c88d696f362b8b1462664b356e0ad24a99525fa31d248"
+    }
+  ]
+}
